@@ -814,3 +814,102 @@ BM25 and fusion responsibilities; [ ] explain why IDF and old chunks can affect 
 **Resume point:** Finish the local corpus resource estimate, pilot 1,000 records, record actual
 throughput and costs, then begin the full resumable run if it fits the remaining target.
 Stop the web process while importing: both are writers and this version has no distributed lock.
+
+### Session 4 — pilot measurement and a real interruption
+
+The full no-API scan measured 50,024 records, A=52,246 chunks / 6,148,592 tokens,
+B=52,307 chunks / 6,141,058 tokens. At $0.02 per million embedding tokens, their
+combined estimate before reuse is $0.245793. Dense float32 vectors alone total
+160,593,408 bytes; payloads, BM25, HNSW and database overhead are additional.
+See `docs/index-estimate.json`; prices checked against the OpenAI embedding model page.
+
+The first 1,000-record real-cloud pilot completed in 184.732 seconds (5.41 records/sec),
+wrote 1,042 A / 1,043 B chunks, and used 135,273 paid embedding tokens ($0.00270546).
+A linear projection at that initial rate is about 2.6 hours for the full corpus. This is
+an estimate, not a deadline guarantee; free-tier load, network and batch sizes matter.
+Most short sources produce identical A/B chunks, so the shared embedding cache materially
+reduces cost. That does not make the chunking comparison invalid: different long-source
+boundaries still produce different candidates, and both indexes stay independent.
+
+A later larger-batch run lost a Qdrant connection after 1,792 active records. It stopped
+before activating the incomplete batch. A resume reached 2,000 in 14.662 seconds, activating
+208 and skipping 1,792, with **zero additional embedding calls**: the interrupted batch's
+embeddings had already been cached. Reports preserve both observations. This is actual
+failure/recovery evidence rather than a simulated success claim.
+
+Optimization: deduplicate texts across both configurations before embedding, request compact
+base64 float32 embeddings (also used by OpenAI's Python client), batch local cache reads,
+close SQLite connections explicitly, and allow two concurrent idempotent chunk writes.
+The local CLI retries a failed storage batch at most twice; model requests are never
+silently retried. Larger batches save round trips but increase per-request memory and network
+size. The app's canonical revision is still activated only after both configurations settle.
+George has not yet independently reproduced this run or reviewed these decisions.
+
+## Session 5 — first validated cited answer
+
+**What changed:** `POST /api/investigations` runs one hybrid search and one structured Responses
+API generation. The model returns atomic claims with exact quotes and evidence IDs. The server
+constructs answer text from those validated claims. It returns active source offsets, source
+locations, a search trace, model/profile/prompt settings, latency, and generation usage.
+
+**Why:** A first end-to-end path makes it possible to inspect what the model actually received
+before introducing a tool loop. The trace exposes searches and evidence, never private model
+reasoning. Claims require citations; unknown IDs, invented quotes, invalid status combinations,
+and uncited claims fail with HTTP 502. Provider errors also remain errors, never abstention.
+
+**Alternative:** Free-form prose with citation-looking strings is easier to prompt, but makes
+it harder to validate every returned claim. Another LLM judge could check semantic entailment,
+but adds cost, latency, and another fallible model; semantic citation accuracy stays an explicit
+evaluation/manual-review responsibility. Exact quote validity alone does not prove support.
+
+**Mechanism:** On the real development question about NOVA-DEVELOPMENT-01, hybrid search gave
+E1 to the relevant fictional incident source. The model returned its 11-minute recovery claim
+and a literal supporting quote. The server checked that quote against E1, rechecked active
+revision eligibility after generation, then displayed the claim with `[E1]`.
+
+**Verification:** `uv run python scripts/verify_first_answer.py` returned HTTP 200, answered,
+11 minutes, 4,915 ms, 1,038 input / 79 output generation tokens, estimated generation $0.001134.
+The script fetched each cited canonical document again and verified revision IDs and chunk
+character offsets. Raw trace/context evidence is in ignored `artifacts/first-cited-answer.json`;
+a compact committed report is `docs/first-answer-verification.json`. This checks one development
+example; it is not a final evaluation or proof of general factual accuracy.
+
+Reliability limits: one generation call, no automatic paid retries, 1,200 output tokens,
+8,000 input-context tokens, eight evidence chunks, 90-second whole-workflow timeout. A global
+one-process limit permits six investigations per minute and one concurrent investigation.
+The local ledger defaults to $4.50 to leave contingency within the $5 target. Its file/cache
+is local and can disappear on Render restart; it is not an account-wide hard spending cap.
+Prices must be updated with model changes. A provider refusal/incomplete response becomes 502.
+If evidence is deleted/replaced during generation the result becomes 409 instead of showing
+an outdated answer. Empty eligible evidence skips generation and returns insufficient_evidence.
+
+**My understanding (George):** [ ] Open the raw trace; [ ] locate the exact model context;
+[ ] follow E1 to canonical source text; [ ] distinguish citation integrity from semantic support;
+[ ] explain why a provider failure differs from missing evidence. All remain pending.
+
+**AI contribution:** Codex drafted the service, tests, smoke script, and documentation and ran
+them with configured providers. George has not yet independently reviewed the implementation.
+No final question was sent to a model. The UI remains the foundation screen until slice 7.
+
+**Resume point:** Review slices 4/5 using `docs/retrieval-and-first-answer.md`. Slice 6 will
+introduce the validated `search_documents` tool and bounded entity-follow-up retrieval;
+this checkpoint deliberately reports `workflow: single_search_v1`.
+
+### Slices 4/5 — final review and background run
+
+The full import was launched locally as a hidden background Python worker after the pilots and
+fixture-source import; progress is in `artifacts/index-full.json` / `.log`, errors in
+`artifacts/index-full.error.log`, and its worker ID in `artifacts/index-full.pid`. At this entry
+it has passed 5,000 source rows; **the complete cloud corpus is not yet claimed**. It continues
+independently while the machine stays awake. The walkthrough documents inspection, pause,
+resume, and stopping the web writer during imports. The committed local source corpus hash
+and frozen fixtures were not changed.
+
+Final self-review covered correctness, module boundaries, input/secret handling, bounded calls,
+query and storage contracts, memory, and explanation quality. The quote-membership condition
+was deliberately inverted: the focused citation suite failed, then passed after restoration.
+This checks that the tests can detect a broken validator, rather than merely execute it.
+The implementation suite has 83 passing tests with warnings treated as errors; Ruff checks pass.
+A real cloud pilot/recovery and a real cited-answer smoke check complement the HTTP-level fakes.
+Docker/Render/public deployment are still unverified; no claim of a deployed application is made.
+George's independent learning checkboxes remain unchecked. Slice 6 has not been started.

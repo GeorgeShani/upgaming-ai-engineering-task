@@ -13,6 +13,9 @@ from app.documents.security import DocumentMutationBoundary
 from app.documents.service import DocumentService
 from app.documents.store import QdrantDocumentStore, StoreUnavailable
 from app.health import HealthReport, check_health
+from app.investigations.routes import DemoRateLimit
+from app.investigations.routes import router as investigation_router
+from app.investigations.service import InvestigationService
 from app.providers import BudgetExceeded, OpenAIProvider, ProviderError
 from app.retrieval.index import ChunkIndex
 from app.retrieval.search import SearchService
@@ -34,6 +37,9 @@ def create_app(
             config = app.state.settings
             app.state.parsing_slots = asyncio.Semaphore(1)
             app.state.search_service = None
+            app.state.investigation_service = None
+            app.state.investigation_slots = asyncio.Semaphore(1)
+            app.state.investigation_rate_limit = DemoRateLimit()
             app.state.provider = None
             app.state.document_service = None
             if config.qdrant_url and config.qdrant_api_key.get_secret_value():
@@ -45,11 +51,15 @@ def create_app(
                 app.state.document_service = DocumentService(store, indexer)
                 if indexer:
                     app.state.search_service = SearchService(indexer, app.state.document_service)
+                    app.state.investigation_service = InvestigationService(
+                        app.state.search_service, app.state.provider
+                    )
             yield
 
     app = FastAPI(title="AI Investigation Engine", version="0.1.0", lifespan=lifespan)
     app.add_middleware(DocumentMutationBoundary, settings=lambda: app.state.settings)
     app.include_router(document_router)
+    app.include_router(investigation_router)
 
     @app.exception_handler(ProviderError)
     async def provider_error(request: Request, error: ProviderError):
