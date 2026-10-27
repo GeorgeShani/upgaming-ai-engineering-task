@@ -2,7 +2,8 @@
 
 The document API is implemented. Use FastAPI's interactive interface at
 http://127.0.0.1:8000/docs to verify it. The React document screen is scheduled for slice 7.
-The existing 50,024-record corpus remains local; its import and indexing belong to slice 4.
+Slice 4 now imports the 50,024-record local corpus into persistent hybrid indexes; see
+[the indexing walkthrough](retrieval-and-first-answer.md) for progress and resume commands.
 
 ## Start and configure
 
@@ -31,6 +32,7 @@ Authorized multipart request
   -> normalized canonical text, locations, SHA-256
   -> active-content duplicate check
   -> immutable revision written to Qdrant
+  -> both chunk configurations prepared when OpenAI is configured
   -> document manifest points to that revision
 ```
 
@@ -56,7 +58,8 @@ Mixed PDFs report pages without extractable text in metadata, so partial extract
    local `.env`, without the `Bearer ` prefix. Swagger adds that prefix. Keep the token local.
 2. Expand **POST /api/documents**, select **Try it out**, and upload
    `fixtures/uploads/incident.pdf`. Expect HTTP 201, `duplicate: false`, a document ID, a revision ID,
-   and an `ETag` response header. `index_status: pending` means text is stored but not yet indexed.
+   and an `ETag` response header. With both providers configured, `index_status: ready` means
+   both configurations were staged before activation. `pending` means the text needs indexing.
 3. Upload `incident.docx` and `incident.txt`. Their normalized text matches the PDF. Expect HTTP 200,
    `duplicate: true`, and the same document/revision IDs. First-retained filename/locations remain.
 4. Call **GET /api/documents**. It lists active document summaries, with `limit` from 1 to 100 and
@@ -93,8 +96,9 @@ A transactional SQL store would make that easier, but introduces another databas
 Deletion writes a tombstone. Old revisions are retained, rather than physically erased. Cleanup
 of old/orphan revisions is future maintenance, and storage use grows with replacements. The
 `filter_active_revisions` gate rejects missing, deleted, and superseded revision candidates.
-Slice 4 must use it after retrieval and build revision-scoped index data before activating a
-replacement. There are no chunks or embeddings in this slice, and parsed records remain pending.
+Slice 4 now applies it after retrieval and prepares both chunk configurations before activating
+a replacement. Without OpenAI configured, parsing-only writes remain pending. Re-uploading
+identical content with providers configured repairs a pending index without changing its revision.
 
 ## Storage and verification
 
@@ -127,5 +131,6 @@ This uses your configured Qdrant account, creates only a fictional sample, check
 formats and replacement, starts fresh app instances to read durable state, and soft-deletes the
 new sample. It stops without modifying an already-active matching document. It leaves a
 tombstone/revisions and writes its report to ignored `artifacts/ingestion-live-check.json`.
-No OpenAI generation or embedding calls occur. The committed `docs/ingestion-verification.json`
-records the successful implementation run, not a claim that every future provider run will pass.
+Since slice 4, this smoke script can make paid embedding calls when OpenAI is configured;
+it makes no generation calls. The committed `docs/ingestion-verification.json` records the
+historical slice-3 run before indexing existed, not a claim that later runs make no model calls.

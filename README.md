@@ -1,10 +1,11 @@
 # AI Investigation Engine
 
 An evidence-based investigation engine built in small, reviewed sessions for the Applied AI
-assignment. **Current stage: Session 3, file ingestion and document management.** The React
-interface still shows the connection page; `/docs` provides interactive document upload/list/
-inspect/replace/delete. Source preparation is available through the offline CLI. Search, answer
-generation, and evaluation scoring remain planned.
+assignment. **Current stage: Sessions 4/5, hybrid retrieval and first cited answer.** The React
+interface still shows the connection page; `/docs` provides interactive document management
+and questions. Two chunking configurations, dense/BM25 retrieval, custom rank fusion, resumable
+local indexing, and validated cited answers are implemented. Tool-driven multi-step retrieval,
+the complete React workflows, and comparative evaluation remain later slices.
 No public demo URL has been verified yet.
 
 Start with [the plan](tasks/plan.md), [the checklist](tasks/todo.md), and
@@ -13,6 +14,8 @@ records actual assistance and independent work.
 
 See the [document management walkthrough](docs/document-management.md) for PDF/DOCX/TXT examples,
 admin authorization, ETag-based replacement/deletion, persistence, and verification commands.
+The [retrieval and first-answer walkthrough](docs/retrieval-and-first-answer.md) explains
+indexing, fusion, the actual model context, provider costs, and hands-on verification.
 
 ## Prepare and verify the dataset
 
@@ -143,6 +146,8 @@ Open http://127.0.0.1:8000. The built frontend must exist before starting the se
 | --- | --- |
 | `GET /api/live` | 200 while Python is running; no dependency calls |
 | `GET /api/health` | 200 when all configured provider access checks pass; otherwise 503 plus a structured report |
+| `/api/documents` | Upload/list/inspect/replace/delete; mutations require the demo admin token |
+| `POST /api/investigations` | One hybrid search and a validated cited answer, or an explicit status/error |
 | `/docs` | Interactive FastAPI API documentation |
 
 Other planned API endpoints return 404 until their implementation sessions.
@@ -162,8 +167,9 @@ management walkthrough. Original binary files and historical revisions have no p
 
 The host health check uses liveness so a provider outage does not cause a deployment restart loop.
 No paid infrastructure is required. Render Free has limited memory, sleeps after idle periods,
-and discards local files on restart. Future persistent documents and indexes therefore belong in
-Qdrant, not a local SQLite database or uploads directory. The free database also has inactivity
+and discards local files on restart. Persistent documents and indexes therefore live in
+Qdrant. Local SQLite is only an embedding cache/spending ledger; it can disappear on restart,
+so its spending ceiling is not an account-wide budget. The free database also has inactivity
 restrictions. The $5 API target is separate from infrastructure hosting.
 
 Docker is optional for local development. To check the actual image locally:

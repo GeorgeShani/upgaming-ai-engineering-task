@@ -31,15 +31,15 @@ does not claim that George has completed his review. Estimates are focused worki
 
 ## Session 4: Chunking and retrieval (2 hours; depends on 3)
 
-- [ ] Two specified token/sentence chunkers with boundary and location tests.
-- [ ] Dense and BM25 sparse retrieval plus tested custom RRF and document diversity cap.
-- [ ] Benchmark 1,000 records, estimate resources/cost, start resumable bulk indexing.
+- [x] Two specified token/sentence chunkers with boundary and location tests.
+- [x] Dense and BM25 sparse retrieval plus tested custom RRF and document diversity cap.
+- [x] Benchmark 1,000 records, estimate resources/cost, start resumable bulk indexing.
 - [ ] George: calculate RRF and explain rank versus confidence.
 
 ## Session 5: First cited answer (2 hours; depends on 4)
 
-- [ ] End-to-end real retrieval and generation with structured evidence references.
-- [ ] Validate citation IDs and quote text; test invalid evidence rejection.
+- [x] End-to-end real retrieval and generation with structured evidence references.
+- [x] Validate citation IDs and quote text; test invalid evidence rejection.
 - [ ] George: inspect every citation in one answer and identify the model's context.
 
 ## Session 6: Multi-step investigation (2 hours; depends on 5)

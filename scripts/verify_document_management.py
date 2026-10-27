@@ -10,7 +10,11 @@ from fastapi.testclient import TestClient
 
 settings = Settings()
 headers = {"Authorization": "Bearer " + settings.demo_admin_token.get_secret_value()}
-summary = {"storage": "real Qdrant", "model_calls": 0}
+summary = {
+    "storage": "real Qdrant",
+    "generation_calls": 0,
+    "embedding_calls_possible": bool(settings.openai_api_key.get_secret_value()),
+}
 identifier = etag = None
 try:
     with TestClient(create_app(settings)) as client:
