@@ -13,12 +13,12 @@ does not claim that George has completed his review. Estimates are focused worki
 - [ ] Publish the first Render deployment and verify its public URL.
 - [ ] George: run locally, trace a health request, explain liveness vs dependency readiness.
 
-## Session 2: Corpus and evaluation fixtures (2 hours; depends on 1 review)
+## Session 2: Corpus and evaluation fixtures (2 hours; explicitly started by George)
 
-- [ ] Deterministic HotpotQA selection with revision, hashes, and >=50,000 distinct source records.
-- [ ] Clearly labelled synthetic incident corpus.
-- [ ] Freeze 40 final questions (8 simple / 12 bridge / 8 comparison / 6 absent / 6 conflict).
-- [ ] Separate development examples; prevent questions/answers/labels entering the index.
+- [x] Deterministic HotpotQA selection with revision, hashes, and >=50,000 distinct source records.
+- [x] Clearly labelled synthetic incident corpus.
+- [x] Freeze 40 final questions (8 simple / 12 bridge / 8 comparison / 6 absent / 6 conflict).
+- [x] Separate development examples; prevent questions/answers/labels entering the corpus.
 - [ ] George: verify gold answers/support and explain records versus chunks.
 
 ## Session 3: Document lifecycle (2 hours; depends on 2)

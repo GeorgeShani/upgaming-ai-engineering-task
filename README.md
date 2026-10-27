@@ -1,12 +1,56 @@
 # AI Investigation Engine
 
 An evidence-based investigation engine built in small, reviewed sessions for the Applied AI
-assignment. **Current stage: Session 1 foundation.** Document ingestion, search, investigations,
-and evaluation are planned, not yet implemented. No public demo URL has been verified yet.
+assignment. **Current stage: Session 2, dataset preparation and evaluation fixtures.** The web
+interface still shows the verified connection page. Source preparation is available through the
+offline CLI; document ingestion, search, answer generation, and evaluation scoring remain planned.
+No public demo URL has been verified yet.
 
 Start with [the plan](tasks/plan.md), [the checklist](tasks/todo.md), and
 [the engineering journal](docs/engineering-journal.md). The [AI usage report](docs/ai-usage-report.md)
 records actual assistance and independent work.
+
+## Prepare and verify the dataset
+
+The committed fixtures contain 40 final questions, 8 development questions, and their 72 supporting
+source records. The large corpus is generated locally under ignored `data/`, not stored in Git.
+Read the [fixture review sheet](docs/evaluation-fixtures.md) before accepting reference answers.
+
+From the repository root:
+
+```powershell
+uv sync --frozen --group data
+uv run --group data python -m backend.app.dataset_cli prepare
+uv run --group data python -m backend.app.dataset_cli verify
+```
+
+Preparation streams a pinned HotpotQA revision, includes required evaluation support, deduplicates
+normalized source text, and selects 50,000 distinct HotpotQA passages. It appends 24 explicitly
+fictional source records. It creates `data/prepared/corpus.jsonl` and `manifest.json`, and refuses
+to overwrite an existing output. If these files already exist, run `verify`; to reproduce separately:
+
+```powershell
+uv run --group data python -m backend.app.dataset_cli prepare --output data/reproduced
+uv run --group data python -m backend.app.dataset_cli verify --output data/reproduced
+```
+
+The corpus hashes should match for the same inputs and settings. An explicitly smaller `--count`
+is permitted for experiments, but its manifest truthfully reports whether it reaches 50,000
+HotpotQA passages. Counts below the required support set are rejected. Preparation makes no
+embedding or generation calls and does not write to Qdrant. This is not the later indexing job;
+failed preparation restarts deterministically, while interrupted output is not published.
+
+The [verification report](docs/dataset-preparation-report.json) records the actual count and byte
+hash of this run. It is not a retrieval-quality report. See [fixture conventions](fixtures/README.md)
+for schema, provenance, licensing, leakage prevention, and deliberate benchmark limitations.
+
+```powershell
+uv run --group data pytest -W error
+```
+
+The offline tests use tiny synthetic training inputs plus committed fixtures; they do not download
+the full dataset, contact model providers, or spend API credit. The optional `data` group contains
+Datasets/PyArrow/Pandas tooling and is not installed by the production Docker build.
 
 ## Run locally (PowerShell)
 

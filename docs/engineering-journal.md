@@ -329,6 +329,110 @@ completed independent verification of this slice. No embeddings or answer genera
 
 > Pending George's review.
 
+## Session 2, checkpoint B: corpus preparation and frozen evaluation
+
+### What changed
+
+Offline commands now freeze reference cases, prepare a corpus, verify it, and render a readable
+question/evidence review sheet. Corpus output lives under ignored `data/prepared/`; small source
+fixtures, reference labels, provenance, and a verification report are committed. Nothing has
+been indexed into Qdrant or embedded yet. The web interface remains the connection page.
+
+### Actual preparation results
+
+The verified output contains 50,000 unique normalized HotpotQA passages and 24 fictional records:
+50,024 source records total, before any chunking. Training selection consumed 5,457 QA rows and
+skipped 4,313 repeated source occurrences. The final corpus is 86,321,736 bytes. Its SHA-256 is
+`7fb92aae4a89727ca1d274d23ee25ba1dfafa052808fce75086f17c7c088c5eb`.
+
+The frozen set contains 40 final cases (8 simple, 12 bridge, 8 comparison, 6 absent, 6 conflict)
+and 8 development cases. There are 72 small source fixtures: 48 HotpotQA support passages and
+24 fictional records. Every labelled document ID, original sentence ID, and quote matches a
+canonical source in the full corpus. Reference correctness still needs George's review; data
+integrity checks cannot establish that a question is unambiguous or every reference is complete.
+
+The dataset library retried one Windows socket error while reading training data and completed.
+Its unauthenticated-download and Windows cache/symlink notices did not prevent preparation.
+No model inference or embedding charges were incurred by these preparation commands.
+
+### Trace one bridge question
+
+`final-bridge-01` asks which government position was held by the woman who played Corliss Archer
+in Kiss and Tell. The first source, `Kiss and Tell (1945 film)`, sentence 0, identifies Shirley
+Temple as the actress. The second, `Shirley Temple`, sentence 1, names Chief of Protocol among
+her adult roles. The native HotpotQA answer is `Chief of Protocol`.
+
+This is the future two-search mechanism: find the actress, then search for her government role.
+It does not require a knowledge graph or multiple agents. The source also mentions ambassador
+roles, which illustrates why a single benchmark reference may not exhaust all valid answers.
+Review ambiguity before interpreting exact-match scores. This slice preserves the source label
+without claiming it is the only defensible wording.
+
+For `final-conflict-01`, two explicitly fictional reports give retry limits of 3 and 5 attempts
+for the same service, case, and timestamp. Neither report has precedence. The expected status is
+`conflicting_evidence`, not a guessed winner. For the missing-approver questions, the unique
+fictional case has no approver recorded; evidence and gold answer are intentionally empty.
+
+### Choices and alternatives
+
+- Native HotpotQA labels make multi-document cases reproducible. Fictional cases provide clear
+  absence/conflict conditions without claiming real incidents occurred.
+- We seed required support passages before adding training-context distractors. This deliberately
+  guarantees evidence is present; it measures retrieval/answering conditional on that membership,
+  not unbiased coverage of arbitrary questions. The fixed source-order subset is order-biased.
+- Questions and labels are separate from source JSONL. Copying a whole QA row into an index could
+  retrieve the answer key instead of connecting evidence. Strict source models reject those fields.
+- JSONL is inspectable and streamable before a database is introduced. SQLite could support local
+  transactions, but would not establish the final cloud index and is unnecessary for this step.
+- Frozen file hashes detect accidental edits; they are integrity checks, not proof of correct
+  reference answers. LF attributes keep hashes stable across Windows and Unix checkouts.
+- Development examples are available for later tuning. The final 40 stay fixed while choosing
+  chunking settings. Small synthetic patterns and public benchmark facts limit generalization.
+- Preparation refuses existing outputs and publishes a complete directory only after success.
+  It restarts deterministically after failure; resumable embedding/index writes are slice 4 work.
+
+### Reproduce and verify
+
+Run from the repository root:
+
+```powershell
+uv run --group data python -m backend.app.dataset_cli verify
+uv run python -m backend.app.dataset_cli review
+uv run --group data pytest -W error
+```
+
+`verify` checks the existing full corpus without downloading or using model APIs. `review` builds
+`docs/evaluation-fixtures.md` from the frozen labels without network access. To reproduce the
+corpus in another directory, use `prepare --output data/reproduced`, followed by verification
+and comparison of corpus hashes. Never overwrite the reference files to improve a score.
+
+The automated suite currently has 25 passing tests. New cases protect normalized identity,
+provenance, native evidence extraction, label leakage, deterministic output bytes, exact category
+counts, missing gold documents, cross-split duplicates, tampered corpus/labels, partial output,
+overwrite refusal, revision mismatch, and conflicts without a single gold answer.
+Deliberately inverting the deduplication condition made its targeted test fail; the original
+condition was restored. A separate fixture regeneration from the same pinned validation data
+produced identical hashes for all three frozen JSONL files. An actual second `prepare` invocation
+against the existing output was refused before any network download or file overwrite.
+
+### My understanding (George writes this)
+
+- [ ] I ran `verify` and inspected the real record counts and corpus hash.
+- [ ] I traced the bridge example from question to two source sentences.
+- [ ] I checked a simple, comparison, conflict, and absent case in the review sheet.
+- [ ] I can explain what integrity checks prove and why gold correctness remains a human check.
+- [ ] I can explain why 50,024 source records are not 50,024 vectors or retrieval chunks.
+- [ ] I can explain the subset bias and why gold documents were deliberately included.
+
+> Pending George's review. Do not mark reference review complete on his behalf.
+
+### AI contribution and resume point
+
+Codex drafted the source pipeline, fixtures, tests, review sheet, and documentation, downloaded
+the public pinned data, and executed integrity checks. George's independent reference review
+and explanation are pending. Review these artifacts before slice 3's document lifecycle work.
+Public deployment remains an outstanding item from the first slice.
+
 ## Template for later sessions
 
 ### What changed
