@@ -1,3 +1,4 @@
+import asyncio
 from contextlib import asynccontextmanager
 from pathlib import Path
 
@@ -7,6 +8,10 @@ from fastapi.responses import FileResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 
 from app.config import Settings
+from app.documents.routes import router as document_router
+from app.documents.security import DocumentMutationBoundary
+from app.documents.service import DocumentService
+from app.documents.store import QdrantDocumentStore, StoreUnavailable
 from app.health import HealthReport, check_health
 
 FRONTEND_DIST = Path(__file__).resolve().parents[2] / "frontend" / "dist"
@@ -23,9 +28,24 @@ def create_app(
         app.state.settings = settings if settings is not None else Settings()
         async with httpx.AsyncClient(timeout=5.0, transport=transport) as client:
             app.state.http_client = client
+            config = app.state.settings
+            app.state.parsing_slots = asyncio.Semaphore(1)
+            app.state.document_service = (
+                DocumentService(QdrantDocumentStore(client, config))
+                if config.qdrant_url and config.qdrant_api_key.get_secret_value()
+                else None
+            )
             yield
 
     app = FastAPI(title="AI Investigation Engine", version="0.1.0", lifespan=lifespan)
+    app.add_middleware(DocumentMutationBoundary, settings=lambda: app.state.settings)
+    app.include_router(document_router)
+
+    @app.exception_handler(StoreUnavailable)
+    async def storage_error(request: Request, error: StoreUnavailable):
+        return JSONResponse(
+            {"detail": "Document storage is unavailable. Retry the operation."}, 503
+        )
 
     @app.get("/api/live")
     async def live() -> dict[str, str]:

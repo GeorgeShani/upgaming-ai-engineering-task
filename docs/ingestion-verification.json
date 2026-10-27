@@ -1,0 +1,13 @@
+{
+  "storage": "real Qdrant",
+  "model_calls": 0,
+  "pdf_create": 201,
+  "incident.docx_deduplicated": true,
+  "incident.txt_deduplicated": true,
+  "page_locations": true,
+  "replacement": true,
+  "persisted_across_app_restart": true,
+  "stale_delete_rejected": true,
+  "delete": true,
+  "deletion_persisted_across_app_restart": true
+}

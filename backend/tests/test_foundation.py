@@ -102,7 +102,7 @@ def test_frontend_is_served_but_unknown_api_paths_remain_404s(tmp_path: Path):
     with TestClient(app) as client:
         assert "Test frontend" in client.get("/").text
         assert client.get("/assets/app.js").status_code == 200
-        missing = client.get("/api/documents")
+        missing = client.get("/api/not-implemented")
         assert missing.status_code == 404
         assert missing.json() == {"detail": "Not Found"}
 

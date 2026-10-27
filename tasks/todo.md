@@ -23,10 +23,10 @@ does not claim that George has completed his review. Estimates are focused worki
 
 ## Session 3: Document lifecycle (2 hours; depends on 2)
 
-- [ ] PDF/DOCX/TXT extraction, provenance, locations, exact deduplication, 5 MB limit.
-- [ ] Persistent canonical documents, listing, inspection, replacement, and deletion.
-- [ ] Inactive/deleted revisions remain excluded after failures; mutation admin token.
-- [ ] Tests protect parsing, duplicates, replacement, and deletion.
+- [x] PDF/DOCX/TXT extraction, provenance, locations, exact deduplication, 5 MB limit.
+- [x] Persistent canonical documents, listing, inspection, replacement, and deletion.
+- [x] Revision eligibility gate rejects inactive/deleted candidates after failures; mutation admin token.
+- [x] Tests protect parsing, duplicates, replacement, and deletion.
 - [ ] George: trace a document through the lifecycle.
 
 ## Session 4: Chunking and retrieval (2 hours; depends on 3)

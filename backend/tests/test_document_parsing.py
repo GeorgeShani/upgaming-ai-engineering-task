@@ -59,6 +59,7 @@ def test_three_formats_share_normalized_identity_and_preserve_locations():
     assert parsed[0].locations[0].kind == "page"
     assert parsed[1].locations[0].kind == "paragraph"
     assert parsed[0].metadata["author"] == "Fixture author"
+    assert parsed[0].metadata["page_count"] == "2"
     assert all(doc.text[loc.start : loc.end] == loc.text for doc in parsed for loc in doc.locations)
 
 
@@ -92,6 +93,9 @@ def test_encrypted_and_textless_pdf_are_explicitly_rejected():
         parse_upload("locked.pdf", pdf_bytes(encrypted=True))
     with pytest.raises(ParseError, match="No extractable text"):
         parse_upload("scan.pdf", pdf_bytes(lines=("",)))
+    mixed = parse_upload("mixed.pdf", pdf_bytes(lines=("Readable page.", "")))
+    assert mixed.metadata["pages_without_text"] == "2"
+    assert [location.number for location in mixed.locations] == [1]
 
 
 def test_docx_expansion_is_bounded_before_document_loading():
@@ -112,3 +116,8 @@ def test_utf8_bom_and_non_latin_text_are_supported():
     parsed = parse_upload("incident.txt", "\ufeffქართული ტექსტი.\n\nSecond paragraph.".encode())
     assert parsed.text == "ქართული ტექსტი. Second paragraph."
     assert [loc.number for loc in parsed.locations] == [1, 2]
+
+
+def test_txt_paragraph_expansion_is_bounded():
+    with pytest.raises(ParseError, match="processing limit"):
+        parse_upload("blocks.txt", b"Fact.\n\n" * 2002)

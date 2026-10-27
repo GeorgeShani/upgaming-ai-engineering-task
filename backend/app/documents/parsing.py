@@ -46,7 +46,7 @@ def parse_pdf(data: bytes):
             raise ParseError("Extracted document text exceeds the character limit.")
         units.append(("page", number, text))
     metadata = reader.metadata
-    return units, {
+    details = {
         key: str(value)[:500]
         for key, value in {
             "title": getattr(metadata, "title", None),
@@ -54,6 +54,11 @@ def parse_pdf(data: bytes):
         }.items()
         if value
     }
+    details["page_count"] = str(len(reader.pages))
+    empty_pages = [str(number) for _, number, text in units if not normalize_text(text)]
+    if empty_pages:
+        details["pages_without_text"] = ", ".join(empty_pages)
+    return units, details
 
 
 def parse_docx(data: bytes):
@@ -82,6 +87,8 @@ def parse_docx(data: bytes):
                 parts.append(block.text)
             elif isinstance(block, Table):
                 for row in block.rows:
+                    if len(parts) >= MAX_UNITS:
+                        raise ParseError("DOCX contains too many text blocks.")
                     parts.append(" | ".join(cell_text(cell, depth + 1) for cell in row.cells))
         return " ".join(parts)
 
@@ -91,6 +98,8 @@ def parse_docx(data: bytes):
             units.append(("paragraph", paragraph, block.text))
         elif isinstance(block, Table):
             for row in block.rows:
+                if len(units) >= MAX_UNITS:
+                    raise ParseError("DOCX contains too many text blocks.")
                 table_row += 1
                 units.append(("table_row", table_row, " | ".join(cell_text(c) for c in row.cells)))
         if len(units) > MAX_UNITS:
@@ -138,7 +147,9 @@ def parse_upload(filename: str, data: bytes) -> ParsedDocument:
                 raise ParseError("TXT must contain UTF-8 text, not binary data.")
             units = [
                 ("paragraph", n, text)
-                for n, text in enumerate(re.split(r"\n\s*\n", raw.replace("\r\n", "\n")), 1)
+                for n, text in enumerate(
+                    re.split(r"\n\s*\n", raw.replace("\r\n", "\n"), maxsplit=MAX_UNITS), 1
+                )
             ]
             metadata = {}
     except ParseError:

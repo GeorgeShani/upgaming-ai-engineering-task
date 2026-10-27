@@ -1,14 +1,18 @@
 # AI Investigation Engine
 
 An evidence-based investigation engine built in small, reviewed sessions for the Applied AI
-assignment. **Current stage: Session 2, dataset preparation and evaluation fixtures.** The web
-interface still shows the verified connection page. Source preparation is available through the
-offline CLI; document ingestion, search, answer generation, and evaluation scoring remain planned.
+assignment. **Current stage: Session 3, file ingestion and document management.** The React
+interface still shows the connection page; `/docs` provides interactive document upload/list/
+inspect/replace/delete. Source preparation is available through the offline CLI. Search, answer
+generation, and evaluation scoring remain planned.
 No public demo URL has been verified yet.
 
 Start with [the plan](tasks/plan.md), [the checklist](tasks/todo.md), and
 [the engineering journal](docs/engineering-journal.md). The [AI usage report](docs/ai-usage-report.md)
 records actual assistance and independent work.
+
+See the [document management walkthrough](docs/document-management.md) for PDF/DOCX/TXT examples,
+admin authorization, ETag-based replacement/deletion, persistence, and verification commands.
 
 ## Prepare and verify the dataset
 
@@ -102,6 +106,9 @@ Edit the root `.env` locally; never paste API keys into frontend code, Git, or t
 - `QDRANT_URL`: the HTTPS URL of your Qdrant Cloud Free cluster.
 - `QDRANT_API_KEY`: the cluster's API key.
 - Models and embedding dimensions have the accepted plan's defaults in `.env.example`.
+- `DEMO_ADMIN_TOKEN`: server-side token for POST/PUT/DELETE document requests. It is entered in
+  Swagger's Authorize dialog for manual testing; it is not embedded in frontend code.
+- `DOCUMENT_COLLECTION_PREFIX`: optional namespace for uploaded manifests/revisions.
 
 Restart Python after changing configuration and click **Check connections**. The backend reads
 model metadata for both OpenAI models and lists Qdrant collections. It does not generate answers
@@ -139,6 +146,8 @@ Open http://127.0.0.1:8000. The built frontend must exist before starting the se
 | `/docs` | Interactive FastAPI API documentation |
 
 Other planned API endpoints return 404 until their implementation sessions.
+The document endpoints are now implemented; their contracts are in `/docs` and the document
+management walkthrough. Original binary files and historical revisions have no public download API.
 
 ## Deploy on Render Free
 

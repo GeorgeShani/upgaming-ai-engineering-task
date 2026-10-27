@@ -606,8 +606,10 @@ so dataset preparation and runtime uploads share one implementation. The corpus 
 unchanged. Added parsers for PDF, DOCX, and UTF-8 TXT, with canonical text locations and selected
 title/author metadata. Filenames are display metadata, never filesystem destinations.
 
-PDF locations are one-based page numbers. DOCX locations identify body paragraphs and table rows;
-table cells are flattened as text, including nested tables within bounded depth. TXT paragraphs
+PDF locations are one-based page numbers. DOCX locations identify body paragraphs and table rows.
+PDF metadata also reports page count and any pages without extractable text, making partial
+extraction visible when a document mixes readable text and scanned or blank pages.
+Table cells are flattened as text, including nested tables within bounded depth. TXT paragraphs
 are separated by blank lines. Character offsets refer to normalized text, not original binary
 bytes. PDF reading order and Word tracked changes/headers are not guaranteed layout fidelity.
 
@@ -630,6 +632,102 @@ Exact normalization deduplicates identical extracted text; different reading ord
 remain distinct. OCR and semantic deduplication are later possibilities, not hidden capabilities.
 
 Codex drafted these changes and tests. George's hands-on review remains pending.
+
+## Session 3, checkpoint B: durable document lifecycle
+
+### What changed and why
+
+POST/GET/PUT/DELETE document routes now store canonical text and metadata in Qdrant, not the
+ephemeral web filesystem. Two payload-only collections hold stable document manifests and
+immutable parsed revisions. We reuse HTTPX for the small REST adapter; a Qdrant SDK would add
+convenient typed operations, but also another dependency. Necessary payload indexes were created
+for Cloud strict-mode filters. Read requests do not create collections.
+
+A document has a stable management UUID. Its content fingerprint supports exact deduplication;
+its revision UUID identifies one parsed snapshot. Uploading the same normalized text in another
+format returns the existing active document, preserving the first filename and locations.
+Replacing with changed text preserves the document ID and changes the revision ID. Replacing
+with another active document's text is rejected with 409; unchanged text is a duplicate/no-op.
+
+Replacement writes the complete parsed revision first, then switches one manifest point. If
+preparation or the pointer write fails before commit, the old revision remains active. A timeout
+can mean the pointer write actually succeeded; return 503 and reload state rather than deleting
+the prepared revision. Orphaned, superseded, and deleted revisions are never eligible unless an
+active manifest points to them. There is no physical garbage collection in this version.
+
+Deletion writes a tombstone, so fresh app instances and future retrieval can still identify the
+document as deleted. A SQL transaction could provide stronger cross-process coordination, but
+would add a second database. This app serializes mutations with a process-local lock and requires
+the previous revision's quoted ETag in If-Match for replacement/deletion. Missing preconditions
+return 428; stale ones return 412. The design supports the planned single process, not multiple
+workers/replicas without a stronger concurrency mechanism.
+
+### Authentication, request limits, and current indexing boundary
+
+The existing local DEMO_ADMIN_TOKEN was preserved. Mutations require its bearer header before
+multipart parsing begins. The entire streamed request is bounded, including requests without
+Content-Length; file bytes have their own 5 MB limit. Missing admin configuration disables writes.
+Provider keys stay server-side. Public GET routes expose the shared demo corpus's extracted text
+and selected metadata; this is not private per-user storage.
+
+Parsed documents report `index_status: pending`. No chunks, vectors, or embeddings were created.
+Slice 4 must insert revision-scoped index preparation before pointer activation and call the
+existing active-revision gate after retrieval. Tests exercise that gate with candidate pairs;
+they do not pretend an actual semantic search was performed. The 50,024-record dataset remains
+local and its frozen fixture hashes remain unchanged.
+
+### Verified results
+
+- 56 offline tests pass with warnings treated as errors. They include parser boundaries, early
+  authentication, whole-body and file limits, cross-format duplicates, cursor pagination, stale
+  edits, concurrent edits, rejected replacement content, uncommitted revisions, and ambiguous
+  write timeouts. An HTTP-level fake exercises actual Qdrant request shapes without credentials.
+  Deliberately inverting the active/deleted revision gate failed its lifecycle test; the original
+  condition was restored before the full suite passed again.
+- Real Qdrant verification uploaded a PDF, recognized DOCX/TXT duplicates, inspected page locations,
+  replaced text, and rejected a stale delete. New app instances read the replacement and continued
+  to hide the document after deletion. The sample was soft-deleted; its tombstone and revisions
+  remain. This proves actual provider write/read behaviour, separately from the mock tests.
+- No generation/embedding calls occurred. The report is `docs/ingestion-verification.json`.
+- The interactive `/docs` page shows all five management operations and a real upload file picker.
+  Browser warning/error logs were empty during that check. React management UI remains slice 7.
+- PDF/DOCX fixtures are explicitly binary in Git attributes, preventing line-ending conversion
+  from corrupting PDF cross-reference offsets on Windows checkouts.
+
+### Walk through it yourself
+
+Use `docs/document-management.md` and `fixtures/uploads/`. In Swagger, authorize with your local
+admin token, upload the PDF, upload its two equivalent formats, GET the document and its ETag,
+replace using `incident-updated.txt`, reject a stale edit, then delete with the current ETag.
+The supplied updated file changes recovery time from 12 to 8 minutes. Re-read after restarting
+Python. The reproducible real-provider smoke command is:
+
+```powershell
+uv run python scripts/verify_document_management.py
+```
+
+It touches only newly created fictional sample data and stops before modifying a pre-existing
+matching document. The offline suite is `uv run --group data pytest -W error`.
+
+### My understanding (George writes this)
+
+- [ ] I uploaded all three formats and inspected locations and metadata.
+- [ ] I can distinguish document identity, revision identity, and content hash.
+- [ ] I can explain why a replacement is staged before its pointer changes.
+- [ ] I reproduced missing/stale If-Match errors and understand which edit they protect.
+- [ ] I confirmed replacement/deletion survive a fresh app instance.
+- [ ] I understand tombstones retain data and are not physical erasure.
+- [ ] I can explain why parsed text is still pending indexing and how slice 4 will add it.
+
+> Pending George's review. No understanding checkbox is completed on his behalf.
+
+### AI contribution and resume point
+
+Codex drafted and verified the implementation, tests, fixtures, and documentation. The walkthrough
+and independent explanation are George's checkpoint before slice 4. Known limits are no OCR or
+original binary downloads, imperfect complex document layout, process-local mutation locking,
+no revision garbage collection, and no OS-level parser sandbox. Public Render deployment remains
+pending. Future verified work continues directly on main as George requested.
 
 ## Template for later sessions
 

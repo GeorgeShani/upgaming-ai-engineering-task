@@ -1,4 +1,4 @@
-from pydantic import HttpUrl, SecretStr, field_validator
+from pydantic import Field, HttpUrl, SecretStr, field_validator
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
@@ -11,6 +11,10 @@ class Settings(BaseSettings):
     generation_model: str = "gpt-5.4-mini-2026-03-17"
     embedding_model: str = "text-embedding-3-small"
     embedding_dimensions: int = 384
+    demo_admin_token: SecretStr = SecretStr("")
+    document_collection_prefix: str = Field(
+        default="investigation", pattern=r"^[a-zA-Z0-9_-]{1,48}$"
+    )
 
     # An empty template value should mean "not configured", rather than an invalid URL.
     @field_validator("qdrant_url", mode="before")
