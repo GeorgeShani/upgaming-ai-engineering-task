@@ -1,11 +1,12 @@
 # AI Investigation Engine
 
 An evidence-based investigation engine built in small, reviewed sessions for the Applied AI
-assignment. **Current stage: Sessions 4/5, hybrid retrieval and first cited answer.** The React
+assignment. **Current stage: Session 6, bounded multi-step investigation.** The React
 interface still shows the connection page; `/docs` provides interactive document management
 and questions. Two chunking configurations, dense/BM25 retrieval, custom rank fusion, resumable
-local indexing, and validated cited answers are implemented. Tool-driven multi-step retrieval,
-the complete React workflows, and comparative evaluation remain later slices.
+local indexing, and validated cited answers are implemented. The investigation uses real model
+tool calls, evidence-grounded follow-ups, and a required verification round. The full 50,024-source
+import is complete. React workflows and comparative evaluation remain later slices.
 No public demo URL has been verified yet.
 
 Start with [the plan](tasks/plan.md), [the checklist](tasks/todo.md), and
@@ -16,6 +17,8 @@ See the [document management walkthrough](docs/document-management.md) for PDF/D
 admin authorization, ETag-based replacement/deletion, persistence, and verification commands.
 The [retrieval and first-answer walkthrough](docs/retrieval-and-first-answer.md) explains
 indexing, fusion, the actual model context, provider costs, and hands-on verification.
+Continue with the [multi-step investigation walkthrough](docs/multi-step-investigation.md)
+for tool execution, quote IDs, conflicts, abstention, failure cases, and repeatable checks.
 
 ## Prepare and verify the dataset
 
@@ -147,7 +150,7 @@ Open http://127.0.0.1:8000. The built frontend must exist before starting the se
 | `GET /api/live` | 200 while Python is running; no dependency calls |
 | `GET /api/health` | 200 when all configured provider access checks pass; otherwise 503 plus a structured report |
 | `/api/documents` | Upload/list/inspect/replace/delete; mutations require the demo admin token |
-| `POST /api/investigations` | One hybrid search and a validated cited answer, or an explicit status/error |
+| `POST /api/investigations` | Bounded tool-driven hybrid searches and cited claims, or an explicit status/error |
 | `/docs` | Interactive FastAPI API documentation |
 
 Other planned API endpoints return 404 until their implementation sessions.

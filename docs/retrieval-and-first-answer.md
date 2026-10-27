@@ -2,8 +2,8 @@
 
 These slices implement two chunkers, persistent dense/BM25 search, our own rank fusion,
 resumable local corpus indexing, and one cited-answer request. The React screen remains the
-connection screen until slice 7. Use `/docs` for the new endpoint. Slice 6 adds model tool calls
-and entity follow-up searches; the current response explicitly says `single_search_v1`.
+connection screen until slice 7. This guide records the slice-4/5 foundation. The endpoint now
+uses slice 6's `bounded_tools_v1` workflow; see the [current investigation walkthrough](multi-step-investigation.md).
 
 ## 1. Understand the stored objects
 
@@ -62,8 +62,8 @@ the browser. Canonical text and indexes are durable in Qdrant; the cache/ledger 
 under ignored `data/usage.sqlite3`. Keep that file to retain embeddings and cost reservations.
 
 Use one corpus importer and stop the web server during imports: the single-writer deployment
-does not have a distributed lock. Do not run two imports simultaneously. A full run has already
-been started during implementation; inspect its progress before launching another:
+does not have a distributed lock. Do not run two imports simultaneously. The implementation's
+full run is complete, with 50,024 active documents confirmed; inspect its report before another run:
 
 ```powershell
 Get-Content artifacts/index-full.log -Tail 5
@@ -89,8 +89,8 @@ A/B. A timeout can occur after a write committed, so resume reloads current mani
 than assuming failure. A tombstone is never resurrected; an edit is never overwritten by import.
 Exact upload/import duplicates retain the first active source instead of adding a second document.
 
-For the implementation's hidden background process, `artifacts/index-full.pid` identifies the
-actual worker. If you want to pause it to verify the web app, inspect that process first:
+For a future registered background run, its PID file identifies the worker. The implementation's
+worker already exited; do not stop a stale PID. To pause a currently running importer, inspect it first:
 
 ```powershell
 $indexWorker = [int](Get-Content artifacts/index-full.pid)
@@ -180,7 +180,8 @@ Configuration A is provisional; deployment selection belongs to development eval
 
 **Try:** Ask who approved that incident's rollback. It should return `insufficient_evidence`;
 read the source to confirm why. This is a useful manual probe, not a guarantee that one-search
-retrieval discovers every missing fact or conflict. Two-hop questions belong to slice 6.
+retrieval discovers every missing fact or conflict. The [slice-6 guide](multi-step-investigation.md)
+demonstrates the current two-hop workflow.
 
 ## 6. Understand validation and error boundaries
 
@@ -202,9 +203,11 @@ Semantic support and actual contradictions require evaluation: a model can cite 
 irrelevant quote. The prompt treats source text as untrusted data; this reduces prompt-injection
 risk without proving the model will always ignore embedded instructions.
 
-Generation has one call, 1,200 output tokens, no automatic paid retries, and an 8,000-token context
-cap. The trace shows selected evidence, not private reasoning. Generation usage is per request;
-embedding/indexing usage is in the local ledger. Cached embedding hits incur no new embedding call.
+Final generation has one call and 1,200 output tokens. Slice 6 adds up to two planning calls,
+bounded verification searches, and quote-ID selection/resolution. There are no automatic paid
+retries. The trace shows evidence, not private reasoning. Request usage includes planning,
+generation and query embeddings; the local ledger also records indexing. See the current guide
+for context/payload limits. Cached embedding hits incur no new embedding call.
 
 ## 7. Run the independent checks before moving on
 

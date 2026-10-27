@@ -44,9 +44,9 @@ does not claim that George has completed his review. Estimates are focused worki
 
 ## Session 6: Multi-step investigation (2 hours; depends on 5)
 
-- [ ] Real validated search tool; <=2 rounds and <=3 searches.
-- [ ] Follow-up entity search, conflicts, abstention, provider errors, bounded retries/context.
-- [ ] Investigations are rate-limited; usage and cost recorded.
+- [x] Real validated search tool; <=2 rounds and <=3 searches.
+- [x] Follow-up entity search, conflicts, abstention, provider errors, bounded retries/context.
+- [x] Investigations are rate-limited; usage and cost recorded.
 - [ ] George: demonstrate and explain multi-step, conflicting, absent, and failing cases.
 
 ## Session 7: Complete React workflows (2 hours; depends on 6)
