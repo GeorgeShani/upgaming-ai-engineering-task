@@ -1,22 +1,8 @@
-import hashlib
-import re
-import unicodedata
 from typing import Literal
-from uuid import NAMESPACE_URL, uuid5
 
 from pydantic import BaseModel, ConfigDict, Field, model_validator
 
-
-def normalize_text(text: str) -> str:
-    return re.sub(r"\s+", " ", unicodedata.normalize("NFKC", text)).strip()
-
-
-def content_hash(text: str) -> str:
-    return hashlib.sha256(normalize_text(text).encode("utf-8")).hexdigest()
-
-
-def document_id(digest: str) -> str:
-    return str(uuid5(NAMESPACE_URL, f"investigation-engine:text:v1:{digest}"))
+from ..text import content_hash, document_id, normalize_text
 
 
 class StrictModel(BaseModel):
