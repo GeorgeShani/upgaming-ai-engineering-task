@@ -1,0 +1,10 @@
+{
+  "dataset": "hotpotqa/hotpot_qa",
+  "configuration": "distractor",
+  "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+  "target_hotpot_passages": 50000,
+  "normalization": "NFKC plus whitespace collapse, version 1",
+  "selection": "Seed labelled validation support passages, then take first unseen normalized training passages in dataset order; append fictional fixtures.",
+  "license": "CC-BY-SA-4.0",
+  "dataset_url": "https://huggingface.co/datasets/hotpotqa/hotpot_qa"
+}

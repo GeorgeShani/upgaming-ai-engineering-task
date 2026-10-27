@@ -265,6 +265,70 @@ Write your own answers in the understanding section above:
 
 If any answer is unclear, trace that part again before adding ingestion or retrieval code.
 
+## Session 2, checkpoint A: source records and evidence contracts
+
+### Git history and working agreement
+
+George explicitly authorized starting slice 2. The earlier understanding checklist remains his
+to complete; starting this slice does not claim that he has answered those questions.
+
+The remote initially had no `main`; the first pushed branch had become GitHub's default. We
+established `main` at the existing planning commit, opened foundation PR #1, and rebase-merged it.
+Main now contains one linear chain of commits, with no merge commit. Slice 2 starts on
+`codex/dataset-fixtures` from that result. GitHub rebase merging changes commit hashes, so the
+old foundation branch's hashes differ from the equivalent commits now on main.
+
+### What changed and why
+
+The dataset boundary now separates immutable source records from evaluation cases. Source records
+contain a title, canonical text, content hash, provenance, and sentence locations. Evaluation
+cases contain questions, expected answers/statuses, and labelled evidence. Strict models reject
+unexpected fields, including accidental question/answer labels on a source record.
+
+Normalize text with Unicode NFKC and whitespace collapse, then hash it with SHA-256. Derive a
+stable UUID from that hash. Two occurrences of the same normalized passage therefore count once,
+even under different titles. Distinct text under the same title remains distinct. The first
+selected occurrence supplies provenance; duplicate occurrence counts are retained, not every
+alternate occurrence's metadata. These immutable preparation IDs do not yet implement mutable
+uploaded-document identities or revisions; that lifecycle belongs to slice 3.
+
+Sentence IDs retain HotpotQA's original zero-based numbering, including gaps from empty sentences.
+Character offsets refer to canonical text, not the raw Wikipedia page. A validator checks the
+hash, identifier, and locations together. Normalization gives consistent identity, but is not
+semantic near-duplicate detection.
+
+### Alternatives and trade-offs
+
+- Hashing filenames would count repeated passages multiple times. Text hashing avoids that but
+  deliberately treats whitespace/compatibility Unicode differences as equivalent.
+- Random UUIDs are useful for mutable user documents but do not identify repeated source content.
+- A random sample would be less order-biased, but requires another sampling rule and often a
+  larger scan. A fixed revision and deterministic source order are simpler for this deadline.
+- HotpotQA provides native bridge/comparison questions and sentence evidence. RAGBench offers
+  other domains, but would require different label handling. This benchmark is not a representative
+  measure of all business investigations.
+- The Datasets library supports pinned-revision streaming. Its PyArrow/Pandas dependencies are
+  in the optional `data` group, rather than the deployed web application's runtime requirements.
+
+### Verification and AI contribution
+
+Six source-boundary tests cover normalized deduplication, changed content, sentence locations,
+malformed context arrays, label separation, and native support extraction. They pass. The earlier
+foundation suite also remains green. Before merging PR #1, deliberately inverting the readiness
+condition caused its targeted test to fail; the original code was restored.
+
+Codex drafted these models and tests and fetched the dataset documentation. George has not yet
+completed independent verification of this slice. No embeddings or answer generation have run.
+
+### My understanding (George writes this)
+
+- [ ] I can distinguish a QA dataset row, a source passage, and a future retrieval chunk.
+- [ ] I can explain why repeated source text does not increase the 50,000-record count.
+- [ ] I can find one source's dataset revision and original sentence IDs.
+- [ ] I can explain why the evaluation question and answer must stay out of corpus records.
+
+> Pending George's review.
+
 ## Template for later sessions
 
 ### What changed
