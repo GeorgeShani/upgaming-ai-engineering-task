@@ -1,0 +1,410 @@
+{
+  "scope": "development smoke checks; final evaluation not executed",
+  "cases": [
+    {
+      "case_id": "development-bridge-01",
+      "question": "The Vermont Catamounts men's soccer team currently competes in a conference that was formerly known as what from 1988 to 1996?",
+      "answer": "The Vermont Catamounts men's soccer team competes in the America East Conference. [E1] The America East Conference was formerly known as the North Atlantic Conference from 1988 to 1996. [E3]",
+      "status": "answered",
+      "execution": {
+        "planning_rounds": 2,
+        "retrieval_rounds": 2,
+        "tool_calls": 2,
+        "searches": 2,
+        "llm_calls": 3,
+        "embedding_calls": 2,
+        "total_provider_calls": 5,
+        "stop_reason": "retrieval_limit",
+        "limits": {
+          "retrieval_rounds": 2,
+          "searches": 3,
+          "llm_calls": 3,
+          "embedding_calls": 3,
+          "total_provider_calls": 6
+        }
+      },
+      "usage": {
+        "planning": [
+          {
+            "input_tokens": 535,
+            "output_tokens": 43,
+            "estimated_cost_usd": 0.00059475,
+            "model": "gpt-5.4-mini-2026-03-17"
+          },
+          {
+            "input_tokens": 1625,
+            "output_tokens": 50,
+            "estimated_cost_usd": 0.00144375,
+            "model": "gpt-5.4-mini-2026-03-17"
+          }
+        ],
+        "generation": {
+          "input_tokens": 3962,
+          "output_tokens": 107,
+          "estimated_cost_usd": 0.003453,
+          "model": "gpt-5.4-mini-2026-03-17"
+        },
+        "embeddings": [
+          {
+            "model": "text-embedding-3-small",
+            "input_tokens": 22,
+            "api_calls": 1,
+            "cache_hits": 0,
+            "estimated_cost_usd": 4.4e-07
+          },
+          {
+            "model": "text-embedding-3-small",
+            "input_tokens": 16,
+            "api_calls": 1,
+            "cache_hits": 0,
+            "estimated_cost_usd": 3.2e-07
+          }
+        ],
+        "estimated_model_cost_usd": 0.0054915,
+        "estimated_total_cost_usd": 0.00549226
+      },
+      "configuration": {
+        "strategy": "a",
+        "profile": "1a8846753a25",
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimensions": 384,
+        "generation_model": "gpt-5.4-mini-2026-03-17",
+        "prompt_version": "bounded_tools_quote_ids_v1"
+      },
+      "latency_ms": 9840,
+      "checks": [
+        {
+          "evidence_id": "E1",
+          "document_id": "c3bbe7be-f3e6-5752-ba9b-73d3043faf06",
+          "source_and_quote_match": true
+        },
+        {
+          "evidence_id": "E3",
+          "document_id": "2e15a777-e170-53b1-b34a-e4ddd0a95606",
+          "source_and_quote_match": true
+        }
+      ],
+      "searches": [
+        {
+          "round": 1,
+          "query": "Vermont Catamounts men's soccer conference formerly known as what from 1988 to 1996",
+          "follow_up": null,
+          "executed": true
+        },
+        {
+          "round": 2,
+          "query": "North Atlantic Conference 1988 to 1996 former name of America East Conference",
+          "follow_up": {
+            "evidence_id": "E3",
+            "entity": "America East Conference"
+          },
+          "executed": true
+        }
+      ]
+    },
+    {
+      "case_id": "development-bridge-02",
+      "question": "Roger O. Egeberg was Assistant Secretary for Health and Scientific Affairs during the administration of a president that served during what years?",
+      "answer": "Roger O. Egeberg served during the Nixon administration. [E1] Richard Nixon was President of the United States from 1969 until 1974. [E9]",
+      "status": "answered",
+      "execution": {
+        "planning_rounds": 2,
+        "retrieval_rounds": 2,
+        "tool_calls": 2,
+        "searches": 2,
+        "llm_calls": 3,
+        "embedding_calls": 1,
+        "total_provider_calls": 4,
+        "stop_reason": "retrieval_limit",
+        "limits": {
+          "retrieval_rounds": 2,
+          "searches": 3,
+          "llm_calls": 3,
+          "embedding_calls": 3,
+          "total_provider_calls": 6
+        }
+      },
+      "usage": {
+        "planning": [
+          {
+            "input_tokens": 532,
+            "output_tokens": 41,
+            "estimated_cost_usd": 0.0005835,
+            "model": "gpt-5.4-mini-2026-03-17"
+          },
+          {
+            "input_tokens": 1670,
+            "output_tokens": 44,
+            "estimated_cost_usd": 0.0014505,
+            "model": "gpt-5.4-mini-2026-03-17"
+          }
+        ],
+        "generation": {
+          "input_tokens": 5495,
+          "output_tokens": 93,
+          "estimated_cost_usd": 0.00453975,
+          "model": "gpt-5.4-mini-2026-03-17"
+        },
+        "embeddings": [
+          {
+            "model": "text-embedding-3-small",
+            "input_tokens": 0,
+            "api_calls": 0,
+            "cache_hits": 1,
+            "estimated_cost_usd": 0.0
+          },
+          {
+            "model": "text-embedding-3-small",
+            "input_tokens": 10,
+            "api_calls": 1,
+            "cache_hits": 0,
+            "estimated_cost_usd": 2.0000000000000002e-07
+          }
+        ],
+        "estimated_model_cost_usd": 0.006573750000000001,
+        "estimated_total_cost_usd": 0.00657395
+      },
+      "configuration": {
+        "strategy": "a",
+        "profile": "1a8846753a25",
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimensions": 384,
+        "generation_model": "gpt-5.4-mini-2026-03-17",
+        "prompt_version": "bounded_tools_quote_ids_v1"
+      },
+      "latency_ms": 5525,
+      "checks": [
+        {
+          "evidence_id": "E1",
+          "document_id": "dd3eb721-7c42-57bf-9777-03324193bc82",
+          "source_and_quote_match": true
+        },
+        {
+          "evidence_id": "E9",
+          "document_id": "a32660ca-4199-5c58-9ded-759d1562ebab",
+          "source_and_quote_match": true
+        }
+      ],
+      "searches": [
+        {
+          "round": 1,
+          "query": "Roger O. Egeberg Assistant Secretary for Health and Scientific Affairs president served during what years",
+          "follow_up": null,
+          "executed": true
+        },
+        {
+          "round": 2,
+          "query": "Nixon administration served during what years president office years",
+          "follow_up": {
+            "evidence_id": "E1",
+            "entity": "Nixon administration"
+          },
+          "executed": true
+        }
+      ]
+    },
+    {
+      "case_id": "development-conflict-01",
+      "question": "What was payment-router's retry limit for fictional case NOVA-CONFLICT-DEVELOPMENT-01 at 12:00 UTC on 2026-03-12?",
+      "answer": "Sources conflict. For fictional case NOVA-CONFLICT-DEVELOPMENT-01, payment-router's retry limit at 12:00 UTC on 2026-03-12 was 3 attempts. [E1] For fictional case NOVA-CONFLICT-DEVELOPMENT-01, payment-router's retry limit at 12:00 UTC on 2026-03-12 was 5 attempts. [E2]",
+      "status": "conflicting_evidence",
+      "execution": {
+        "planning_rounds": 2,
+        "retrieval_rounds": 2,
+        "tool_calls": 2,
+        "searches": 2,
+        "llm_calls": 3,
+        "embedding_calls": 1,
+        "total_provider_calls": 4,
+        "stop_reason": "retrieval_limit",
+        "limits": {
+          "retrieval_rounds": 2,
+          "searches": 3,
+          "llm_calls": 3,
+          "embedding_calls": 3,
+          "total_provider_calls": 6
+        }
+      },
+      "usage": {
+        "planning": [
+          {
+            "input_tokens": 540,
+            "output_tokens": 47,
+            "estimated_cost_usd": 0.0006165,
+            "model": "gpt-5.4-mini-2026-03-17"
+          },
+          {
+            "input_tokens": 1341,
+            "output_tokens": 64,
+            "estimated_cost_usd": 0.00129375,
+            "model": "gpt-5.4-mini-2026-03-17"
+          }
+        ],
+        "generation": {
+          "input_tokens": 3126,
+          "output_tokens": 147,
+          "estimated_cost_usd": 0.003006,
+          "model": "gpt-5.4-mini-2026-03-17"
+        },
+        "embeddings": [
+          {
+            "model": "text-embedding-3-small",
+            "input_tokens": 0,
+            "api_calls": 0,
+            "cache_hits": 1,
+            "estimated_cost_usd": 0.0
+          },
+          {
+            "model": "text-embedding-3-small",
+            "input_tokens": 33,
+            "api_calls": 1,
+            "cache_hits": 0,
+            "estimated_cost_usd": 6.6e-07
+          }
+        ],
+        "estimated_model_cost_usd": 0.0049162500000000005,
+        "estimated_total_cost_usd": 0.004916910000000001
+      },
+      "configuration": {
+        "strategy": "a",
+        "profile": "1a8846753a25",
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimensions": 384,
+        "generation_model": "gpt-5.4-mini-2026-03-17",
+        "prompt_version": "bounded_tools_quote_ids_v1"
+      },
+      "latency_ms": 7044,
+      "checks": [
+        {
+          "evidence_id": "E1",
+          "document_id": "ec1b5fd7-2b87-5ab4-bcaa-b28c5b5ff414",
+          "source_and_quote_match": true
+        },
+        {
+          "evidence_id": "E2",
+          "document_id": "f551791a-713a-5cef-8201-27a0f58c2620",
+          "source_and_quote_match": true
+        }
+      ],
+      "searches": [
+        {
+          "round": 1,
+          "query": "payment-router retry limit NOVA-CONFLICT-DEVELOPMENT-01 2026-03-12 12:00 UTC",
+          "follow_up": null,
+          "executed": true
+        },
+        {
+          "round": 2,
+          "query": "payment-router NOVA-CONFLICT-DEVELOPMENT-01 retry limit 12:00 UTC 2026-03-12 report-1 report-2",
+          "follow_up": {
+            "evidence_id": "E1",
+            "entity": "payment-router"
+          },
+          "executed": true
+        }
+      ]
+    },
+    {
+      "case_id": "development-unanswerable-01",
+      "question": "Who approved the rollback for fictional incident NOVA-DEVELOPMENT-01?",
+      "answer": "The retrieved sources do not provide enough evidence to answer this question.",
+      "status": "insufficient_evidence",
+      "execution": {
+        "planning_rounds": 2,
+        "retrieval_rounds": 2,
+        "tool_calls": 2,
+        "searches": 2,
+        "llm_calls": 3,
+        "embedding_calls": 1,
+        "total_provider_calls": 4,
+        "stop_reason": "retrieval_limit",
+        "limits": {
+          "retrieval_rounds": 2,
+          "searches": 3,
+          "llm_calls": 3,
+          "embedding_calls": 3,
+          "total_provider_calls": 6
+        }
+      },
+      "usage": {
+        "planning": [
+          {
+            "input_tokens": 521,
+            "output_tokens": 34,
+            "estimated_cost_usd": 0.00054375,
+            "model": "gpt-5.4-mini-2026-03-17"
+          },
+          {
+            "input_tokens": 1264,
+            "output_tokens": 34,
+            "estimated_cost_usd": 0.001101,
+            "model": "gpt-5.4-mini-2026-03-17"
+          }
+        ],
+        "generation": {
+          "input_tokens": 3043,
+          "output_tokens": 25,
+          "estimated_cost_usd": 0.00239475,
+          "model": "gpt-5.4-mini-2026-03-17"
+        },
+        "embeddings": [
+          {
+            "model": "text-embedding-3-small",
+            "input_tokens": 0,
+            "api_calls": 0,
+            "cache_hits": 1,
+            "estimated_cost_usd": 0.0
+          },
+          {
+            "model": "text-embedding-3-small",
+            "input_tokens": 13,
+            "api_calls": 1,
+            "cache_hits": 0,
+            "estimated_cost_usd": 2.6e-07
+          }
+        ],
+        "estimated_model_cost_usd": 0.0040395,
+        "estimated_total_cost_usd": 0.00403976
+      },
+      "configuration": {
+        "strategy": "a",
+        "profile": "1a8846753a25",
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimensions": 384,
+        "generation_model": "gpt-5.4-mini-2026-03-17",
+        "prompt_version": "bounded_tools_quote_ids_v1"
+      },
+      "latency_ms": 6727,
+      "checks": [],
+      "searches": [
+        {
+          "round": 1,
+          "query": "NOVA-DEVELOPMENT-01 rollback approved by who",
+          "follow_up": null,
+          "executed": true
+        },
+        {
+          "round": 2,
+          "query": "NOVA-DEVELOPMENT-01 rollback approved approver approval",
+          "follow_up": null,
+          "executed": true
+        }
+      ]
+    }
+  ],
+  "simulated_provider_failure_http": 502,
+  "usage_before": {
+    "calls": 281,
+    "reserved_usd": 0.36197729,
+    "estimated_actual_usd": 0.17882954,
+    "input_tokens": 6936233,
+    "output_tokens": 1741
+  },
+  "usage_after": {
+    "calls": 299,
+    "reserved_usd": 0.44259367,
+    "estimated_actual_usd": 0.19985242,
+    "input_tokens": 6959981,
+    "output_tokens": 2470
+  }
+}

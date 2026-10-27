@@ -21,6 +21,53 @@ def indexed_api(tmp_path):
                 storage.response_calls.append(body)
                 if storage.response_mode == "provider_error":
                     return httpx.Response(500, text="private-provider-details")
+                if (
+                    storage.response_mode == "second_provider_error"
+                    and "tools" in body
+                    and len(body["input"]) > 1
+                ):
+                    return httpx.Response(500, text="private-provider-details")
+                if "tools" in body:
+                    if hasattr(storage, "plan_batches") and storage.plan_batches:
+                        output = storage.plan_batches.pop(0)
+                    elif len(body["input"]) == 1:
+                        question = json.loads(body["input"][0]["content"])["question"]
+                        output = [
+                            {
+                                "type": "function_call",
+                                "call_id": "initial",
+                                "name": "search_documents",
+                                "arguments": json.dumps(
+                                    {
+                                        "query": question,
+                                        "follow_up": None,
+                                    }
+                                ),
+                            }
+                        ]
+                    else:
+                        question = json.loads(body["input"][0]["content"])["question"]
+                        output = [
+                            {
+                                "type": "function_call",
+                                "call_id": "verification",
+                                "name": "search_documents",
+                                "arguments": json.dumps(
+                                    {
+                                        "query": question + " corroborating report",
+                                        "follow_up": None,
+                                    }
+                                ),
+                            }
+                        ]
+                    return httpx.Response(
+                        200,
+                        json={
+                            "status": "completed",
+                            "output": output,
+                            "usage": {"input_tokens": 100, "output_tokens": 20},
+                        },
+                    )
                 context = json.loads(body["input"])
                 first = context["evidence"][0]
                 claim = {
@@ -28,12 +75,16 @@ def indexed_api(tmp_path):
                     "citations": [
                         {
                             "evidence_id": first["evidence_id"],
-                            "quote": first["text"],
+                            "quote_id": next(
+                                quote["quote_id"]
+                                for quote in context["quote_choices"]
+                                if quote["evidence_id"] == first["evidence_id"]
+                            ),
                         }
                     ],
                 }
                 if storage.response_mode == "bad_quote":
-                    claim["citations"][0]["quote"] = "An entirely invented quote."
+                    claim["citations"][0]["quote_id"] = "Q999"
                 draft = {"status": "answered", "claims": [claim], "conflicting_claims": []}
                 if storage.response_mode == "abstain":
                     draft = {

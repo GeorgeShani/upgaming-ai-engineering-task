@@ -972,3 +972,85 @@ and round limits, forbidden tool names, malformed/extra/blank/long arguments, du
 and deduplicated query execution. These tests began red before the dispatcher existed.
 George's hands-on explanation remains pending. Resume: connect this tested dispatcher to the
 investigation endpoint and exercise the two-round path, conflicts, abstention, and failures.
+
+### Session 6 — checkpoint C: real multi-step workflow and development failures
+
+**What changed:** The investigation endpoint now executes a real `search_documents` function
+loop. One initial search is followed, when evidence exists, by one required verification round
+with one or two searches. The host permits at most two rounds, three tool requests/searches,
+three LLM requests (two planning plus synthesis), and three query embedding requests. Duplicate
+queries reuse their results. Empty first-round evidence ends early without synthesis. All calls
+share a 90-second deadline, existing six-per-minute / one-concurrent-request demo limits,
+input-context/payload limits, output limits, and local cost reservations. The response records
+planning, generation, and query embedding usage separately, including cache hits and total cost.
+
+**Why / final decision:** The initial adaptive planner could say ready too early. In a real
+Egeberg development run it identified the Nixon administration but the final answer supplied
+presidential years using an Egeberg quote that did not establish those years. Citation integrity
+alone did not catch semantic misuse. We therefore require a second verification search when
+there is evidence. This costs an extra retrieval for simple questions; the alternative adaptive
+stop is cheaper but was less reliable in observed development checks. It still does not prove
+semantic correctness. Independent labelled citation review remains necessary in slice 8.
+
+**Quote decision and observed failures:** Early generation inserted an editorial ellipsis into
+an otherwise relevant quotation, and exact-substring validation correctly rejected it. Stronger
+prompt wording alone did not reliably prevent this. A schema enum containing literal quotations
+then hit a real provider HTTP 400 `invalid_json_schema` for double quotation marks in an enum
+string. We replaced literal-quote generation with **quote ID selection**: Python offers exact
+chunk/fragment and sentence excerpts as context, the model chooses Q IDs, Python checks each
+Q ID's association with its E ID, resolves the original string, and checks it against source text.
+Only short ASCII IDs enter schema enums. Quotes containing quotation marks remain intact in
+context and output. Tiny sources such as `Paris` can now be quoted; an arbitrary eight-character
+minimum did not establish support and could create an empty quote catalogue for valid short text.
+
+The catalogue includes complete <=1,000-character fragments plus up to 16 choices per source
+(or enough to retain every fragment). Shorter sentence choices improve readability. Its extra
+context increases input tokens; selecting IDs reduces generated output and avoids transcription
+errors. The source text, IDs, and exact excerpts are verifiable, but entailment is still a model
+and evaluation responsibility. The public response retains literal `citations[].quote` strings.
+
+Provider HTTP 503 failures were also observed during development and returned sanitized 502s.
+They did not become abstentions or trigger automatic paid retries. Manual diagnostic attempts
+are included in the local ledger; they are not hidden or presented as a perfect first run.
+The final prompt version is `bounded_tools_quote_ids_v1`; final evaluation questions were untouched.
+
+**Real mechanism and verification:** `uv run python scripts/verify_multistep.py` passed all four
+**development** cases. It verified known answers/statuses, literal quotes, canonical chunk offsets,
+active revisions, both labelled supporting documents for bridges, both conflict sources, and
+an actual evidence-grounded entity follow-up. The committed `docs/multistep-verification.json`
+contains the observed queries, usage, model/prompt settings and citation checks.
+
+- Vermont soccer -> America East Conference -> North Atlantic Conference, with both documents cited.
+- Roger O. Egeberg -> `Nixon administration` discovered in E1 -> Richard Nixon's 1969–1974 presidency,
+  citing the Egeberg source (E1) and newly retrieved Nixon source (E9). E IDs stay stable; E2–E8
+  were other first-round candidates, so a new source can legitimately be E9.
+- Fictional retry reports preserved 3 attempts and 5 attempts as conflicting_evidence.
+- Missing rollback approver returned insufficient_evidence with no factual claims.
+- An isolated HTTP fake demonstrated a provider failure returning 502, with no real failed request
+  required for that probe. Future probes use a separate local ledger, not the real spending ledger.
+
+Observed latencies were 9,840 / 5,525 / 7,044 / 6,727 ms. The four successful questions' total
+estimated API cost was $0.02102288. The ledger after the run recorded estimated known usage
+$0.19985242 and conservative reservations $0.44259367, including prior indexing and diagnostics;
+uncertain/failed calls keep reservations. These are application estimates, not an invoice or
+account-wide spending cap. The corpus was not re-embedded for this slice.
+
+**Review:** Unit/integration tests cover max-three requests, max-two rounds, full-batch validation
+before side effects, grounded entities, stable IDs, global evidence caps, malformed/refused provider
+outputs, source/quote-ID mismatches, schema/context limits, budget rejection before network,
+provider/storage errors, concurrency/rate limits, evidence changing mid-answer, and deadlines.
+Deliberately removing the search-budget guard made the over-budget test fail; restoration passes.
+This confirms the test detects that specific missing safety condition.
+
+**My understanding (George):** [ ] Trace E1 -> second query -> E9; [ ] explain why required
+verification was chosen; [ ] follow Q IDs to literal source strings in the saved context/draft;
+[ ] inspect both conflict sources; [ ] distinguish absence, model failure, and semantic misuse.
+These remain unchecked. **AI contribution:** Codex implemented, diagnosed, tested, and documented
+this work; George has not yet independently verified it. **Resume point:** Follow
+`docs/multi-step-investigation.md`; begin slice 7 only when George requests it.
+
+Final slice-6 verification: **120 tests pass** with warnings treated as errors; Ruff lint and
+format checks pass. Final self-review also hardened malformed provider message handling and
+ensured recorded reservations never fall below known returned usage cost. The successful
+four-case report was captured before these defensive changes; model prompts/tool behavior
+were unchanged by them. The frozen final fixtures and prepared corpus were not modified.
