@@ -1,0 +1,68 @@
+import asyncio
+import json
+
+import httpx
+import pytest
+from app.config import Settings
+from app.providers import BudgetExceeded, OpenAIProvider, ProviderError, UsageLedger
+
+
+def test_embedding_cache_survives_provider_restart_and_validates_dimensions(tmp_path):
+    calls = []
+
+    def handler(request):
+        body = json.loads(request.content)
+        calls.append(body)
+        assert body["dimensions"] == 384 and body["encoding_format"] == "float"
+        return httpx.Response(
+            200,
+            json={
+                "data": [
+                    {"index": i, "embedding": [0.01] * 384} for i, _ in enumerate(body["input"])
+                ],
+                "usage": {"prompt_tokens": 2, "total_tokens": 2},
+            },
+        )
+
+    config = Settings(_env_file=None, openai_api_key="fixture", usage_db=tmp_path / "usage.db")
+
+    async def run():
+        async with httpx.AsyncClient(transport=httpx.MockTransport(handler)) as client:
+            one = OpenAIProvider(client, config)
+            assert len(await one.embed(["hello", "hello"])) == 2
+            two = OpenAIProvider(client, config)
+            assert len((await two.embed(["hello"]))[0]) == 384
+
+    asyncio.run(run())
+    assert len(calls) == 1 and calls[0]["input"] == ["hello"]
+
+
+def test_budget_reserves_before_network_and_keeps_uncertain_calls(tmp_path):
+    ledger = UsageLedger(tmp_path / "usage.db", 0.1)
+    ledger.reserve("embedding", 0.09)
+    with pytest.raises(BudgetExceeded):
+        ledger.reserve("embedding", 0.02)
+    assert ledger.summary()["reserved_usd"] == pytest.approx(0.09)
+
+
+@pytest.mark.parametrize("mode", ["http", "dimensions", "nan"])
+def test_provider_errors_are_not_missing_evidence(tmp_path, mode):
+    def handler(request):
+        if mode == "http":
+            return httpx.Response(429, text="private-provider-details")
+        return httpx.Response(
+            200,
+            json={
+                "data": [{"index": 0, "embedding": [0.1] * (2 if mode == "dimensions" else 384)}],
+                "usage": {"prompt_tokens": "bad" if mode == "nan" else 1},
+            },
+        )
+
+    config = Settings(_env_file=None, openai_api_key="fixture", usage_db=tmp_path / "usage.db")
+
+    async def run():
+        async with httpx.AsyncClient(transport=httpx.MockTransport(handler)) as client:
+            with pytest.raises(ProviderError):
+                await OpenAIProvider(client, config).embed(["source"])
+
+    asyncio.run(run())

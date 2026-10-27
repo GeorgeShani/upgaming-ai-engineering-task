@@ -739,3 +739,41 @@ pending. Future verified work continues directly on main as George requested.
 ### My understanding (George writes this)
 ### AI contribution and independent changes
 ### Resume point
+
+## Session 4 — checkpoint A: chunk boundaries, fusion, and provider costs
+
+**What changed:** `backend/app/retrieval/chunking.py` implements fixed 256-token windows
+with 40-token overlap and sentence groups targeting 256 tokens with one-sentence overlap.
+Oversized sentences split into bounded fragments. `fusion.py` combines ranks with
+`1 / (60 + rank)`, deduplicates each list, breaks ties by chunk ID, and caps evidence at
+eight chunks / two per document. `providers.py` adds bounded REST calls, a SQLite embedding
+cache, and a conservative local usage ledger.
+
+**Why:** Keep token limits and rank fusion explicit enough to inspect without an orchestration
+framework. Character offsets point back to canonical source text. BPE tokens sometimes end
+inside a Unicode character; windows cut only at shared token/character boundaries, so overlap
+can differ slightly from 40 tokens for such text. Sentence overlap is dropped when retaining
+it would prevent new content from fitting; oversized sentence overlap uses a fragment.
+
+**Alternative:** Character windows are simpler but do not enforce model token limits.
+A local sparse embedding model adds runtime downloads and memory. Raw score addition mixes
+incompatible score scales. An in-memory cache loses progress on restart.
+
+**Mechanism:** A chunk ranked second in dense and first in keyword results scores
+`1/62 + 1/61 = 0.032522...`. That is a relevance ranking score, not answer confidence.
+Embedding cache keys include model, dimensions, and exact chunk text; identical texts in
+both configurations share their embedding while retaining separate chunk identities.
+
+**Verification:** Wrote failing tests before the implementations; eight algorithm/provider
+tests now pass. Tests cover Unicode coverage, sentence splitting/overlap, rank fusion,
+diversity, persistent cache reuse, budget rejection, malformed vectors, and provider failures.
+No paid calls at this checkpoint. `tiktoken` is the only added runtime dependency.
+
+**My understanding (George):** [ ] Trace one window; [ ] calculate the fusion example;
+[ ] explain why a timeout keeps its cost reservation. Not yet independently reviewed.
+
+**AI contribution:** Codex drafted implementation/tests and ran them. George's verification
+and explanations remain pending. No final evaluation questions were run.
+
+**Resume point:** Add Qdrant dense/BM25 collections, stage chunks before revision activation,
+and build a resumable local importer. Then measure 1,000 source records before bulk work.
