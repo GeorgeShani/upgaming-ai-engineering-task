@@ -6,9 +6,9 @@ does not claim that George has completed his review. Estimates are focused worki
 ## Session 1: Skeleton and early deployment (1 hour)
 
 - [x] Save the accepted plan and committed learning workflow.
-- [ ] Implement React -> FastAPI -> read-only dependency checks.
-- [ ] Verify backend tests, frontend build, and actual browser behaviour.
-- [ ] Commit the verified local foundation.
+- [x] Implement React -> FastAPI -> read-only dependency checks.
+- [x] Verify backend tests, frontend build, and actual browser behaviour.
+- [x] Commit the verified local foundation.
 - [ ] Set up real OpenAI and Qdrant credentials; verify provider access.
 - [ ] Publish the first Render deployment and verify its public URL.
 - [ ] George: run locally, trace a health request, explain liveness vs dependency readiness.

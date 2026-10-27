@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: upgaming-investigation-engine
+    runtime: docker
+    plan: free
+    healthCheckPath: /api/live
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: QDRANT_URL
+        sync: false
+      - key: QDRANT_API_KEY
+        sync: false
