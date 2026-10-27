@@ -15,7 +15,7 @@ MAX_SEARCHES = 3
 
 class FollowUp(StrictModel):
     evidence_id: str = Field(min_length=2, max_length=10)
-    entity: str = Field(min_length=3, max_length=200)
+    entity: str = Field(min_length=1, max_length=200)
 
 
 class SearchArguments(StrictModel):
@@ -36,6 +36,7 @@ class ToolCall(BaseModel):
     call_id: str = Field(min_length=1, max_length=64)
     name: Literal["search_documents"]
     arguments: str = Field(max_length=2000)
+    status: Literal["completed"] | None = None
 
 
 SEARCH_TOOL = {
@@ -87,7 +88,12 @@ class SearchTools:
                 for item in output
                 if item.get("type") == "function_call"
             ]
-            if round_number == 1 and len(calls) != 1 or self.tool_calls + len(calls) > MAX_SEARCHES:
+            if (
+                not calls
+                or round_number == 1
+                and len(calls) != 1
+                or self.tool_calls + len(calls) > MAX_SEARCHES
+            ):
                 raise ValueError("Search limit")
             ids = [call.call_id for call in calls]
             if len(set(ids)) != len(ids) or self.call_ids.intersection(ids):

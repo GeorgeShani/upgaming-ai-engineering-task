@@ -16,7 +16,7 @@ from app.health import HealthReport, check_health
 from app.investigations.routes import DemoRateLimit
 from app.investigations.routes import router as investigation_router
 from app.investigations.service import InvestigationService
-from app.providers import BudgetExceeded, OpenAIProvider, ProviderError
+from app.providers import BudgetExceeded, ContextLimitExceeded, OpenAIProvider, ProviderError
 from app.retrieval.index import ChunkIndex
 from app.retrieval.search import SearchService
 
@@ -68,6 +68,12 @@ def create_app(
     @app.exception_handler(BudgetExceeded)
     async def budget_error(request: Request, error: BudgetExceeded):
         return JSONResponse({"detail": "Local API spending limit reached."}, 503)
+
+    @app.exception_handler(ContextLimitExceeded)
+    async def context_error(request: Request, error: ContextLimitExceeded):
+        return JSONResponse(
+            {"detail": "Investigation context limit reached. Shorten the question."}, 422
+        )
 
     @app.exception_handler(StoreUnavailable)
     async def storage_error(request: Request, error: StoreUnavailable):

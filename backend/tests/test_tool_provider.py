@@ -4,7 +4,7 @@ import json
 import httpx
 import pytest
 from app.config import Settings
-from app.providers import OpenAIProvider, ProviderError
+from app.providers import ContextLimitExceeded, OpenAIProvider, ProviderError
 
 
 def test_planner_uses_real_function_tool_contract_and_records_usage(tmp_path):
@@ -53,7 +53,17 @@ def test_planner_uses_real_function_tool_contract_and_records_usage(tmp_path):
     assert "text" not in body
 
 
-@pytest.mark.parametrize("mode", ["refusal", "incomplete", "missing_usage", "negative_usage"])
+@pytest.mark.parametrize(
+    "mode",
+    [
+        "refusal",
+        "incomplete",
+        "missing_usage",
+        "negative_usage",
+        "malformed_output",
+        "malformed_message",
+    ],
+)
 def test_invalid_planning_responses_fail_without_silent_retry(tmp_path, mode):
     calls = []
 
@@ -77,8 +87,12 @@ def test_invalid_planning_responses_fail_without_silent_retry(tmp_path, mode):
             data["status"] = "incomplete"
         elif mode == "missing_usage":
             data.pop("usage")
-        else:
+        elif mode == "negative_usage":
             data["usage"]["input_tokens"] = -1
+        elif mode == "malformed_output":
+            data["output"] = [None]
+        else:
+            data["output"] = [{"type": "message", "content": [None]}]
         return httpx.Response(200, json=data)
 
     async def run():
@@ -91,3 +105,18 @@ def test_invalid_planning_responses_fail_without_silent_retry(tmp_path, mode):
 
     asyncio.run(run())
     assert len(calls) == 1
+
+
+def test_context_limit_rejects_before_reserving_or_sending_paid_request(tmp_path):
+    def unexpected(request):
+        raise AssertionError("Oversized input must not reach the provider")
+
+    async def run():
+        config = Settings(_env_file=None, openai_api_key="fixture", usage_db=tmp_path / "cost.db")
+        async with httpx.AsyncClient(transport=httpx.MockTransport(unexpected)) as client:
+            provider = OpenAIProvider(client, config)
+            with pytest.raises(ContextLimitExceeded):
+                await provider.plan_searches("Search", "long input " * 9000, {}, first_round=True)
+            assert provider.ledger.summary()["calls"] == 0
+
+    asyncio.run(run())

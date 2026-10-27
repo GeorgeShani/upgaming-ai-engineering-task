@@ -157,3 +157,48 @@ def test_three_call_budget_and_duplicate_queries_do_not_repeat_search():
         assert len({e["evidence_id"] for e in runner.selected_evidence()}) == 2
 
     asyncio.run(run())
+
+
+def test_three_distinct_searches_keep_bridge_anchors_within_global_evidence_cap():
+    class ManySources:
+        def __init__(self):
+            self.count = 0
+
+        async def search(self, query, strategy):
+            self.count += 1
+            return {
+                "query": query,
+                "strategy": strategy,
+                "evidence": [
+                    {
+                        "chunk_id": f"{self.count}-{i}",
+                        "document_id": f"doc-{self.count}-{i}",
+                        "revision_id": "revision",
+                        "evidence_id": f"E{i + 1}",
+                        "text": "Anchor Corporation is mentioned in this fictional source.",
+                        "title": "Source",
+                        "fusion_score": 0.03,
+                    }
+                    for i in range(8)
+                ],
+            }
+
+    search = ManySources()
+    runner = SearchTools(search, "a")
+
+    async def run():
+        await runner.run_round([call()], 1)
+        follow = {"evidence_id": "E1", "entity": "Anchor Corporation"}
+        await runner.run_round(
+            [
+                call("two", "Anchor Corporation history", follow),
+                call("three", "Anchor Corporation owner", follow),
+            ],
+            2,
+        )
+        selected = runner.selected_evidence()
+        assert search.count == 3 and len(runner.evidence) == 24
+        assert len(selected) == 8
+        assert {"E1", "E9", "E17"}.issubset({e["evidence_id"] for e in selected})
+
+    asyncio.run(run())

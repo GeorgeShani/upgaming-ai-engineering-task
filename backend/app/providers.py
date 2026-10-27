@@ -23,6 +23,10 @@ class BudgetExceeded(Exception):
     pass
 
 
+class ContextLimitExceeded(Exception):
+    pass
+
+
 class UsageLedger:
     def __init__(self, path, ceiling):
         self.path, self.ceiling = path, ceiling
@@ -53,8 +57,9 @@ class UsageLedger:
     def complete(self, call, input_tokens, output_tokens, actual_usd):
         with self.connect() as db:
             db.execute(
-                "UPDATE calls SET input_tokens=?, output_tokens=?, actual_usd=? WHERE id=?",
-                (input_tokens, output_tokens, actual_usd, call),
+                "UPDATE calls SET input_tokens=?, output_tokens=?, actual_usd=?, "
+                "reserved=MAX(reserved, ?) WHERE id=?",
+                (input_tokens, output_tokens, actual_usd, actual_usd, call),
             )
 
     def summary(self):
@@ -123,11 +128,12 @@ class OpenAIProvider:
         identity = f"{self.settings.embedding_model}:{self.settings.embedding_dimensions}:{text}"
         return sha256(identity.encode()).hexdigest()
 
-    async def embed(self, texts):
+    async def embed(self, texts, *, include_usage=False):
         async with self.embedding_lock:
             unique = {self.cache_key(text): text for text in texts}
             vectors = self.ledger.cached_many(unique)
             missing = [key for key in unique if key not in vectors]
+            input_tokens, api_calls = 0, 0
             for start in range(0, len(missing), 512):
                 # Indexed chunks are <=256 tokens: <=131,072 tokens per call,
                 # below the documented 300,000 aggregate token limit.
@@ -163,6 +169,8 @@ class OpenAIProvider:
                             raise ValueError("Invalid embedding vector")
                         vectors[key] = vector
                     used = int(data["usage"]["prompt_tokens"])
+                    input_tokens += used
+                    api_calls += 1
                     self.ledger.complete(
                         call,
                         used,
@@ -172,7 +180,15 @@ class OpenAIProvider:
                     self.ledger.cache([(key, vectors[key]) for key in keys])
                 except (KeyError, ValueError, TypeError) as error:
                     raise ProviderError from error
-            return [vectors[self.cache_key(text)] for text in texts]
+            result = [vectors[self.cache_key(text)] for text in texts]
+            usage = {
+                "model": self.settings.embedding_model,
+                "input_tokens": input_tokens,
+                "api_calls": api_calls,
+                "cache_hits": len(unique) - len(missing),
+                "estimated_cost_usd": input_tokens * self.settings.embedding_usd_per_million / 1e6,
+            }
+            return (result, usage) if include_usage else result
 
     async def generate(self, instructions, context, schema):
         body = {
@@ -215,7 +231,7 @@ class OpenAIProvider:
             "reasoning": {"effort": "none"},
             "max_output_tokens": 600,
             "tools": [tool],
-            "tool_choice": "required" if first_round else "auto",
+            "tool_choice": "required",
             "parallel_tool_calls": not first_round,
         }
         return await self.respond(body, "planning", output_only=True)
@@ -223,9 +239,13 @@ class OpenAIProvider:
     async def respond(self, body, kind, *, output_only=False):
         # Schema and protocol overhead included, with a margin. Reservations remain
         # charged on uncertain failures, independently of the number of tool rounds.
-        if token_count(json.dumps(body["input"])) > 8000:
-            raise ProviderError
-        estimate = int(token_count(json.dumps(body)) * 1.2) + 1024
+        request_tokens = token_count(json.dumps(body, ensure_ascii=False))
+        if (
+            token_count(json.dumps(body["input"], ensure_ascii=False)) > 8000
+            or request_tokens > 12000
+        ):
+            raise ContextLimitExceeded
+        estimate = int(request_tokens * 1.2) + 1024
         call = self.ledger.reserve(
             kind,
             (
@@ -248,8 +268,18 @@ class OpenAIProvider:
             if data["status"] != "completed":
                 raise ValueError("Incomplete response")
             output = data["output"]
-            if not isinstance(output, list) or not output:
+            if (
+                not isinstance(output, list)
+                or not output
+                or not all(isinstance(item, dict) for item in output)
+            ):
                 raise ValueError("Missing output")
+            for item in output:
+                if item.get("type") == "message" and (
+                    not isinstance(item.get("content"), list)
+                    or not all(isinstance(part, dict) for part in item["content"])
+                ):
+                    raise ValueError("Malformed message content")
             if any(
                 part.get("type") == "refusal"
                 for item in output

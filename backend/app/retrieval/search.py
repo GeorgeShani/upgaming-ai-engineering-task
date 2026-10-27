@@ -8,7 +8,8 @@ class SearchService:
         self.index, self.documents = index, documents
 
     async def search(self, query, strategy):
-        vector = (await self.index.provider.embed([query]))[0]
+        vectors, embedding_usage = await self.index.provider.embed([query], include_usage=True)
+        vector = vectors[0]
 
         async def candidates(using, value):
             result = await self.index.store.request(
@@ -45,6 +46,7 @@ class SearchService:
             "query": query,
             "strategy": strategy,
             "profile": self.index.profile,
+            "embedding_usage": embedding_usage,
             "candidate_counts": {
                 "dense": len(dense),
                 "bm25": len(sparse),

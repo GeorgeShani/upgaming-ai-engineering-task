@@ -32,9 +32,12 @@ def test_embedding_cache_survives_provider_restart_and_validates_dimensions(tmp_
     async def run():
         async with httpx.AsyncClient(transport=httpx.MockTransport(handler)) as client:
             one = OpenAIProvider(client, config)
-            assert len(await one.embed(["hello", "hello"])) == 2
+            vectors, usage = await one.embed(["hello", "hello"], include_usage=True)
+            assert len(vectors) == 2 and usage["api_calls"] == 1 and usage["input_tokens"] == 2
             two = OpenAIProvider(client, config)
-            assert len((await two.embed(["hello"]))[0]) == 384
+            cached, usage = await two.embed(["hello"], include_usage=True)
+            assert len(cached[0]) == 384 and usage["api_calls"] == 0
+            assert usage["cache_hits"] == 1 and usage["estimated_cost_usd"] == 0
 
     asyncio.run(run())
     assert len(calls) == 1 and calls[0]["input"] == ["hello"]
@@ -46,6 +49,8 @@ def test_budget_reserves_before_network_and_keeps_uncertain_calls(tmp_path):
     with pytest.raises(BudgetExceeded):
         ledger.reserve("embedding", 0.02)
     assert ledger.summary()["reserved_usd"] == pytest.approx(0.09)
+    ledger.complete(1, 10, 0, 0.11)
+    assert ledger.summary()["reserved_usd"] == pytest.approx(0.11)
 
 
 @pytest.mark.parametrize("mode", ["http", "dimensions", "nan"])
