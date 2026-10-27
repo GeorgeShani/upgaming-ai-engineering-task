@@ -1,109 +1,47 @@
-import { useEffect, useState } from 'react';
-
-type DependencyHealth = {
-  status: 'unconfigured' | 'reachable' | 'unavailable';
-  message: string;
-};
-
-type HealthReport = {
-  status: 'ready' | 'degraded';
-  app: 'running';
-  dependencies: Record<string, DependencyHealth>;
-};
-
-const labels = { unconfigured: 'Needs setup', reachable: 'Connected', unavailable: 'Unavailable' };
+import { useRef, useState } from 'react';
+import { ConnectionStatus } from './components/ConnectionStatus.tsx';
+import { Documents } from './components/Documents.tsx';
+import { InvestigationPanel } from './components/InvestigationPanel.tsx';
+import { SourceDialog } from './components/SourceDialog.tsx';
+import type { SourceTarget } from './types.ts';
 
 export function App() {
-  const [health, setHealth] = useState<HealthReport | null>(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState('');
-
-  async function refresh(signal?: AbortSignal) {
-    setLoading(true);
-    setError('');
-    try {
-      const response = await fetch('/api/health', { signal });
-      if (!response.ok && response.status !== 503) {
-        throw new Error(`Server returned HTTP ${response.status}.`);
-      }
-      const report: HealthReport = await response.json();
-      setHealth(report);
-    } catch (cause) {
-      if (signal?.aborted) return;
-      setError('Could not check the API. Make sure the Python server is running, then retry.');
-      setHealth(null);
-    } finally {
-      if (!signal?.aborted) setLoading(false);
-    }
+  const [view, setView] = useState<'investigate' | 'documents'>('investigate');
+  const [target, setTarget] = useState<SourceTarget | null>(null);
+  const [token, setToken] = useState('');
+  const [corpusVersion, setCorpusVersion] = useState(0);
+  const [notice, setNotice] = useState('');
+  const [removedId, setRemovedId] = useState<string | null>(null);
+  const opener = useRef<HTMLElement | null>(null);
+  function openSource(source: SourceTarget) {
+    opener.current = document.activeElement instanceof HTMLElement ? document.activeElement : null;
+    setTarget(source);
   }
-
-  useEffect(() => {
-    const controller = new AbortController();
-    void refresh(controller.signal);
-    return () => controller.abort();
-  }, []);
-
-  return (
-    <main>
-      <header>
-        <p className="eyebrow">APPLIED AI / SESSION 01</p>
-        <h1>Investigation Engine</h1>
-        <p className="intro">Find connections. Follow the evidence. Know where an answer comes from.</p>
-      </header>
-
-      <section aria-labelledby="setup-title">
-        <div className="section-heading">
-          <div>
-            <p className="eyebrow">FOUNDATION CHECK</p>
-            <h2 id="setup-title">Connect the pieces</h2>
-          </div>
-          <button type="button" onClick={() => void refresh()} disabled={loading}>
-            {loading ? 'Checking…' : 'Check connections'}
-          </button>
-        </div>
-        <div role="status" aria-live="polite" aria-busy={loading}>
-          {error && <p className="error">{error}</p>}
-          {loading && <p>Checking the Python API and configured services…</p>}
-          {!loading && health && (
-            <>
-              <p className="summary">
-                {health.status === 'ready'
-                  ? 'API running. External access checks passed.'
-                  : 'API running. External services still need attention.'}
-              </p>
-              <dl>
-                <div className="service">
-                  <dt>Python API</dt><dd><strong>Running</strong></dd>
-                </div>
-                {Object.entries(health.dependencies).map(([name, dependency]) => (
-                  <div className="service" key={name}>
-                    <dt>{name === 'openai' ? 'OpenAI' : 'Qdrant'}</dt>
-                    <dd>
-                      <strong>{labels[dependency.status]}</strong>
-                      <span>{dependency.message}</span>
-                    </dd>
-                  </div>
-                ))}
-              </dl>
-            </>
-          )}
-        </div>
-        <p className="footnote">
-          These checks read service metadata. They do not generate answers, create embeddings,
-          or prove that indexing works. Add credentials only to the server environment.
-        </p>
-      </section>
-
-      <aside aria-labelledby="next-title">
-        <p className="eyebrow">ONE SLICE AT A TIME</p>
-        <h2 id="next-title">First, understand the connection.</h2>
-        <p>
-          This page calls the Python API. The API checks external services and returns their
-          status. Your browser never receives the API keys.
-        </p>
-        <p>Document management, retrieval, and investigations arrive in the next sessions.</p>
-      </aside>
-      <footer>Session 01 · Foundation · See the engineering journal for the walkthrough.</footer>
-    </main>
-  );
+  function closeSource() {
+    setTarget(null);
+    requestAnimationFrame(() => {
+      if (opener.current?.isConnected) opener.current.focus();
+      else document.getElementById('documents-nav')?.focus();
+    });
+  }
+  function changed(message: string, removed?: string) { setNotice(message); setRemovedId(removed ?? null); setCorpusVersion(n => n + 1); }
+  return <>
+    <a className="skip-link" href="#workspace">Skip to workspace</a>
+    <div className="app-shell">
+      <header className="app-header"><div><p className="eyebrow">APPLIED AI / INVESTIGATION WORKSPACE</p>
+        <h1>Investigation Engine</h1><p className="intro">Ask a question. Follow the sources.</p></div>
+        <ConnectionStatus /></header>
+      <nav aria-label="Workspace views" className="view-navigation">
+        <button type="button" aria-pressed={view === 'investigate'} onClick={() => setView('investigate')}>Investigate</button>
+        <button id="documents-nav" type="button" aria-pressed={view === 'documents'} onClick={() => setView('documents')}>Documents</button>
+      </nav>
+      <main id="workspace">
+        {notice && <p role="status" className="operation-notice">{notice}</p>}
+        <div hidden={view !== 'investigate'}><InvestigationPanel corpusVersion={corpusVersion} onOpen={openSource} /></div>
+        <div hidden={view !== 'documents'}><Documents token={token} setToken={setToken} corpusVersion={corpusVersion} onChanged={changed} onOpen={openSource} removedId={removedId} /></div>
+      </main>
+      <footer>Evidence from a shared document collection. Source text is public; original files are not retained.</footer>
+    </div>
+    <SourceDialog target={target} token={token} onClose={closeSource} onChanged={changed} />
+  </>;
 }

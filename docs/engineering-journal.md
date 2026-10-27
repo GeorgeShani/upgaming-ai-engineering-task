@@ -1054,3 +1054,45 @@ format checks pass. Final self-review also hardened malformed provider message h
 ensured recorded reservations never fall below known returned usage cost. The successful
 four-case report was captured before these defensive changes; model prompts/tool behavior
 were unchanged by them. The frozen final fixtures and prepared corpus were not modified.
+
+## Session 7 — checkpoint A: React workflows and API boundaries
+
+**What changed:** Added Investigate/Documents views, a typed same-origin API client, paginated
+source lists, in-memory admin access, file upload/dedup feedback, source inspection, ETag-based
+replacement/deletion, cited claim/status rendering, and expandable search traces. The shared
+native dialog shows retrieved evidence separately from current canonical text. The existing
+quiet green/neutral palette and compact type hierarchy were retained; no UI framework was added.
+
+**Why:** Two views and a shared source viewer keep state ownership visible. React state is enough
+at this size; routing/global stores would add concepts without solving an immediate requirement.
+Both views stay mounted so navigating does not discard a question, result or entered token.
+The token is masked and held in memory, never local/session storage; server validation remains
+authoritative. No credentials are compiled into the frontend. Browser FormData supplies its own
+multipart boundary, and edits copy the server's exact quoted ETag into If-Match.
+
+**Mechanism:** Upload -> server metadata -> open source by returned ID, even if that UUID is not
+on page one of the large corpus. A quick-access last-upload link persists across views. A cited
+claim opens an E-ID snapshot, then fetches the canonical source; changed revisions are labelled
+and deleted sources retain only the retrieved snapshot. Text renders as React text, not HTML.
+Python offsets count Unicode code points, so highlight slicing uses Array.from instead of raw
+UTF-16 string indices; a Georgian/emoji test verifies the difference.
+
+**Alternatives:** Optimistic deletion would feel faster but could hide a failed write. Persisting
+the admin token would avoid re-entry but retain a credential after the page closes. Rendering
+model text as HTML/Markdown introduces avoidable injection risks. Cursor pagination avoids loading
+50,024 sources into the browser but does not provide title search or a total count in this slice.
+
+**Verification:** Frontend build/typecheck and four Node unit tests pass. Two Playwright browser
+checks pass against the compiled Vite preview and real FastAPI routes with shared HTTP provider
+fakes: upload -> ask -> citation -> trace -> delete, plus duplicate upload and replacement.
+The answered desktop screen had no axe violations; page runtime errors were empty. These checks
+prove integration, not model answer quality. A separate live-provider UI smoke is still pending.
+The test transport was extracted from existing backend integration tests instead of duplicated;
+those 15 relevant backend tests remain green. Test-only reset/header markers live in browser_app,
+which is never registered on the production FastAPI app.
+
+**My understanding (George):** [ ] Trace fetch/FormData/If-Match; [ ] explain memory state versus
+server state; [ ] compare a citation snapshot to a changed current revision. Not independently
+verified yet. **AI contribution:** Codex drafted components, styles, helpers and tests and ran them.
+**Resume point:** Exercise stale writes, errors, pagination, safe text, keyboard/mobile access,
+then run one bounded live-provider browser smoke and document the final walkthrough.
