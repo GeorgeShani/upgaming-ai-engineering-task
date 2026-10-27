@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "dataset_revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+  "selection": "First valid multi-document validation questions in source order, by category",
+  "final_counts": {
+    "simple": 8,
+    "bridge": 12,
+    "comparison": 8,
+    "unanswerable": 6,
+    "conflict": 6
+  },
+  "development_counts": {
+    "simple": 2,
+    "bridge": 2,
+    "comparison": 2,
+    "unanswerable": 1,
+    "conflict": 1
+  },
+  "reference_review": "pending George's independent review",
+  "skipped_candidates": [],
+  "files": {
+    "source-documents.jsonl": "22be27ee79d97ed7b5644c44ba627f07b0fbcb669d37b0b09761de6496e957a9",
+    "evaluation/final.jsonl": "bd6ce03083e204c94991515d5449448685267933b9def44899aeb53bb2062dbf",
+    "evaluation/development.jsonl": "e204a912aa5ffba1e6fd2529f833ea9c6b876db96f93d045fc0ea8abaf22600d"
+  }
+}

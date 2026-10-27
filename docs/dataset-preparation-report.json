@@ -1,0 +1,14 @@
+{
+  "verified": true,
+  "dataset_revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+  "unique_source_records": 50024,
+  "hotpot_passages": 50000,
+  "synthetic_passages": 24,
+  "evaluation_cases": 48,
+  "meets_assignment_minimum": true,
+  "corpus_sha256": "7fb92aae4a89727ca1d274d23ee25ba1dfafa052808fce75086f17c7c088c5eb",
+  "corpus_bytes": 86321736,
+  "final_cases": 40,
+  "development_cases": 8,
+  "reference_review": "pending George's independent review"
+}
