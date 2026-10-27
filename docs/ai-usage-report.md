@@ -6,6 +6,7 @@ This is a living report, not a claim that the assignment is complete.
 | --- | --- | --- |
 | Planning | Codex read the assignment, discussed constraints, researched docs, drafted the plan | George chose time budget, React UI, tracked journal, AI drafting workflow, and $5 API target |
 | Foundation | Codex drafted React/FastAPI skeleton, health checks, tests, deployment files, and explanations; tool verification is recorded in the journal | Pending George's code review and hands-on checkpoint |
+| Foundation follow-up | Codex added automatic-build preview, verified real read-only connections, and documented the request trace and verification exercises | George added provider credentials locally; understanding exercises remain pending |
 
 Later entries must name actual independent work, rather than assume that reading generated code
 is equivalent to having written or understood it. Infrastructure and evaluation results remain

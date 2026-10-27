@@ -31,6 +31,25 @@ Open http://127.0.0.1:5173. API docs: http://127.0.0.1:8000/docs.
 An unconfigured setup is expected to show "Needs setup". It does not require paid API calls.
 Only copy the template once: do not overwrite an existing `.env` containing your credentials.
 
+### Preview the built website
+
+Keep the Python server running on port 8000. In the frontend terminal:
+
+```powershell
+npm run preview
+```
+
+Open http://127.0.0.1:4173. The `prepreview` script runs `npm run build` automatically before
+starting Vite's preview server. This avoids previewing an old build. Preview forwards `/api`
+to the Python server, just like development. The port is strict: if 4173 is occupied, stop the
+existing preview rather than accidentally opening another instance on a different port.
+
+Preview serves built files and does not hot-reload source changes. Restart `npm run preview`
+after editing frontend code, or use `npm run dev` for hot reload. Preview does not start Python
+and is for local verification; production serves the compiled files directly through FastAPI.
+The full [Session 1 walkthrough](docs/engineering-journal.md#session-1-hands-on-walkthrough)
+explains the request path and verification exercises.
+
 ## Configure providers
 
 Edit the root `.env` locally; never paste API keys into frontend code, Git, or the journal.
