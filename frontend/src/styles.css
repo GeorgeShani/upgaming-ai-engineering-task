@@ -1,0 +1,41 @@
+:root {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #202c28;
+  background: #f4f5f2;
+  font-synthesis: none;
+  line-height: 1.6;
+  --muted: #52615a;
+  --border: #d5ddd5;
+}
+* { box-sizing: border-box; }
+body { margin: 0; }
+main { max-width: 880px; margin: 0 auto; padding: 64px 24px 32px; }
+header { margin-bottom: 40px; }
+h1 { font-size: clamp(2rem, 5vw, 3.2rem); letter-spacing: -0.045em; line-height: 1.15; margin: 12px 0; }
+h2 { font-size: 1.25rem; line-height: 1.35; margin: 4px 0 12px; }
+p { margin: 0 0 16px; }
+.eyebrow { color: var(--muted); font-size: .75rem; letter-spacing: .12em; font-weight: 700; margin: 0; }
+.intro { color: var(--muted); max-width: 560px; }
+section { background: white; border: 1px solid var(--border); border-radius: 12px; padding: 28px; }
+.section-heading { display: flex; align-items: center; justify-content: space-between; gap: 20px; margin-bottom: 20px; }
+button { font: inherit; font-size: .9rem; font-weight: 600; background: #1d5140; color: white; border: 0; border-radius: 6px; padding: 10px 16px; cursor: pointer; }
+button:disabled { opacity: .7; cursor: wait; }
+button:hover:not(:disabled) { background: #123e2f; }
+button:focus-visible { outline: 3px solid #2778ae; outline-offset: 4px; }
+.summary { font-weight: 600; }
+dl { margin: 0; }
+.service { display: grid; grid-template-columns: 130px 1fr; gap: 16px; padding: 16px 0; border-top: 1px solid var(--border); }
+dt { font-weight: 600; }
+dd { margin: 0; }
+dd span { display: block; color: var(--muted); font-size: .9rem; overflow-wrap: anywhere; }
+.footnote { color: var(--muted); font-size: .85rem; margin: 12px 0 0; }
+.error { color: #9a3024; }
+aside { margin: 32px 0; border-left: 3px solid #9db4a5; padding: 0 24px; }
+aside p:not(.eyebrow) { color: var(--muted); }
+footer { border-top: 1px solid var(--border); padding-top: 24px; font-size: .8rem; color: var(--muted); }
+@media (max-width: 600px) {
+  main { padding: 32px 16px 24px; }
+  section { padding: 20px; }
+  .section-heading { align-items: flex-start; flex-direction: column; }
+  .service { grid-template-columns: 1fr; gap: 4px; }
+}
