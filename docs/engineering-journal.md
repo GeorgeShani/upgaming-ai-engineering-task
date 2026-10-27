@@ -433,6 +433,170 @@ the public pinned data, and executed integrity checks. George's independent refe
 and explanation are pending. Review these artifacts before slice 3's document lifecycle work.
 Public deployment remains an outstanding item from the first slice.
 
+## Session 2 guided review: selection, identity, and evaluation
+
+### Working branch and current verification
+
+George requested working directly on main from now on. PR #2 was already rebase-merged when this
+review began. Codex fetched the remote and fast-forwarded the local main branch; no history was
+rewritten. Future verified changes go directly on main unless George requests another workflow.
+The full corpus verifier and all 25 tests passed again on main. George's understanding and gold
+reference review remain pending; neither is inferred from this walkthrough.
+
+### Step 1: Distinguish three units of data
+
+A HotpotQA row contains a question, answer, several context passages, and supporting-fact labels.
+A source record is one of those passages, with its title and provenance. A retrieval chunk will
+be a piece of a source record created later, in slice 4. We have 50,024 source records now, not
+50,024 QA rows, chunks, embeddings, or indexed vectors.
+
+Only context passages become corpus records. The question, answer, and support labels become
+evaluation fixtures separately. This prevents the future search engine from retrieving its own
+answer key. The originating QA record ID is retained as provenance, without copying its labels.
+
+### Step 2: Follow selection in execution order
+
+1. `dataset-selection.json` pins HotpotQA's `distractor` configuration to the immutable revision
+   `1908d6afbbead072334abe2965f91bd2709910ab`.
+2. The one-time fixture generator selects the first valid validation questions in source order:
+   12 bridge and 8 comparison final cases, then 2 of each category for development. Multi-source
+   cases must reference at least two distinct source documents. Skips would be recorded; none
+   were needed for this selection.
+3. The prepared-record map starts with 72 committed source fixtures: 48 native support passages
+   plus 24 fictional records. Only the 48 native passages count toward the HotpotQA target.
+4. Stream training rows in source order. Extract their context passages, normalize them, and add
+   unseen content until the HotpotQA count is exactly 50,000. Thus 49,952 newly selected training
+   passages join the 48 native seeds. Synthetic records are outside that quota.
+5. Sort all 50,024 records by stable document ID and write JSONL, then record counts and hashes
+   in the manifest. Publish the output directory only after its files are complete.
+
+The actual run consumed 5,457 training rows and skipped 4,313 repeated passage occurrences.
+The library streams the upstream data, but preparation retains the selected records in memory;
+this is bounded local work, not constant-memory processing on the free web server.
+
+Why this choice: a fixed revision and order are straightforward to reproduce. Random sampling
+could reduce ordering bias but needs a fixed sampling rule/seed and potentially a wider scan.
+Seeding evidence avoids confusing retrieval failure with an accidentally absent source. The cost
+is a benchmark deliberately conditioned on evidence being present, rather than unbiased corpus
+coverage. Both custom development and final native questions come from HotpotQA's validation
+split; our evaluation split names are distinct from the upstream split names.
+
+### Step 3: Trace deduplication with a real example
+
+The following was executed against `normalize_text`, `content_hash`, and `document_id`:
+
+```text
+"  Payment\nrouter\tfailed. " -> "Payment router failed."
+"Payment router failed."     -> "Payment router failed."
+```
+
+Both produce SHA-256 prefix `24d7906cc20f` and document ID
+`5210b38e-c0ea-5a79-8498-0bddd59655bc`. `Payment router recovered.` instead produces prefix
+`773913ce0f88` and ID `240cf7d5-7d41-5585-8b83-5d48b2a592ee`.
+
+The pipeline first applies Unicode NFKC compatibility normalization, then collapses whitespace
+and trims its ends. SHA-256 fingerprints the normalized text. A deterministic UUID derived from
+that fingerprint is the lookup key in a dictionary. If the key is already present, increment the
+duplicate counter and skip the occurrence; otherwise retain the record.
+
+Titles are not part of the hash, so the same normalized passage under another title still counts
+once. Different text under the same title remains separate. We do not lowercase or detect
+paraphrases, so this is normalized exact deduplication, not semantic deduplication. The first
+retained occurrence supplies provenance; retaining every alternate occurrence is not implemented.
+These content IDs describe immutable prepared records, not yet mutable upload identities.
+
+Alternative: filename hashes would miss the same text in differently named files. Random IDs
+would not expose repeated content. Semantic similarity could find paraphrases but introduces
+thresholds, model work, and a risk of merging distinct evidence, including contradictory versions.
+
+### Step 4: Understand the fixtures as test inputs, not test results
+
+Each evaluation case stores a question, category, expected status, reference answer when one
+exists, and evidence labels. A label names a document ID, original zero-based sentence ID, and
+exact normalized quote. Sources retain canonical character offsets, so the quote can be checked
+against stored text. These offsets are not positions in today's live Wikipedia page.
+
+| Category | Final | Development | Expected behaviour |
+| --- | ---: | ---: | --- |
+| Simple | 8 | 2 | Return a recorded fictional recovery time |
+| Bridge | 12 | 2 | Link native evidence across documents |
+| Comparison | 8 | 2 | Compare native evidence from multiple documents |
+| Unanswerable | 6 | 1 | Report insufficient evidence for an unrecorded approver |
+| Conflict | 6 | 1 | Show incompatible fictional reports without choosing a winner |
+
+The 8 development questions support future configuration choices. Keep the 40 final questions
+fixed while tuning. Distinct question IDs/text are enforced across those splits; background
+documents can overlap. Passing the 25 Python tests means the preparation/validation code passes
+its tests. It does not mean the investigation engine answered 25 questions: generation and the
+evaluation runner do not exist yet.
+
+Fixture hashes detect accidental drift against the manifest. They do not prove that a reference
+answer is true, complete, or the only valid answer. A legitimate reference correction should be
+explicit and versioned before evaluation, rather than silently tailored to a model's output.
+
+### Step 5: Inspect one example of each important behaviour
+
+- `final-bridge-01`: film passage identifies Shirley Temple; her biography names Chief of
+  Protocol. Read both sources. The biography also names ambassador roles, so discuss whether
+  other answers should count before later exact-match grading.
+- `final-comparison-01`: the Scott Derrickson and Ed Wood passages each identify American
+  nationality. Both sources are needed to justify the reference answer `yes`.
+- `final-conflict-01`: two fictional reports say 3 versus 5 attempts for the same retry setting,
+  service, and timestamp. Neither has priority; the expected status is conflicting evidence.
+- `final-unanswerable-01`: a fictional incident has a documented recovery time but no recorded
+  approver. A valid response should abstain, not guess an employee name.
+
+### Step 6: Verify it yourself from the repository root
+
+```powershell
+git branch --show-current
+uv run python -m backend.app.dataset_cli verify
+uv run --group data pytest -W error
+```
+
+Expected: main; verified true; 50,000 HotpotQA passages; 24 fictional records; 40 final and 8
+development cases; corpus hash beginning `7fb92aae4a89`; 25 passing tests. These commands do not
+call model inference APIs or require rebuilding the corpus.
+
+Inspect one source record and the first final question without reading the entire 86 MB file:
+
+```powershell
+Get-Content data/prepared/corpus.jsonl -TotalCount 1 | ConvertFrom-Json | Format-List
+Get-Content fixtures/evaluation/final.jsonl -TotalCount 1 | ConvertFrom-Json | Format-List
+```
+
+Regenerate/open the readable review sheet if useful:
+
+```powershell
+uv run python -m backend.app.dataset_cli review
+```
+
+Check the four cases above against their quotes and sentence IDs. Confirm that a source record
+has no question, gold answer, or supporting-fact label fields. The schema rejects those fields;
+the original QA ID in provenance is not an answer label. The verifier checks all records, not
+only the displayed example.
+
+Optional reproducibility exercise, if you want another download/scan and another 86 MB output:
+
+```powershell
+uv run --group data python -m backend.app.dataset_cli prepare --output data/reproduced
+uv run python -m backend.app.dataset_cli verify --output data/reproduced
+```
+
+Use a fresh output directory; preparation refuses existing outputs. Compare its corpus hash
+with the existing one. A prior full-corpus run, the small deterministic test, and a separate
+matching fixture regeneration are already recorded; a second full-corpus reproduction is optional.
+
+### Your checkpoint before the next slice
+
+Explain in your own words: why 5,457 rows can produce 50,000 unique passages; why a changed retry
+value must survive deduplication; why gold labels stay outside the corpus; why a valid quote is
+not proof of an unambiguous answer; and what the 8/40 split protects. Record your findings or
+questions in your understanding section. Those checkboxes remain yours to complete.
+
+Codex drafted this walkthrough and re-ran the verification. No ingestion, chunking, embedding,
+or investigation features were added during this review.
+
 ## Template for later sessions
 
 ### What changed

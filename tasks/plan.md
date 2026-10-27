@@ -18,6 +18,8 @@ processing. This is an ambitious assisted build, not a promise of mastery in two
 - Keep the checklist in `tasks/todo.md` and explanations in `docs/engineering-journal.md`.
 - Commit each verified slice with a meaningful message. Record actual history, not invented effort.
 - Defer visual polish, streaming, multiple models, and other bonuses until mandatory work is done.
+- Git workflow update from George: work directly on `main` from now on. Keep verified increments
+  as commits on main; create another branch or pull request only if George explicitly requests it.
 
 ## Architecture and trade-offs
 
