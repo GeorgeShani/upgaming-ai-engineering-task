@@ -777,3 +777,40 @@ and explanations remain pending. No final evaluation questions were run.
 
 **Resume point:** Add Qdrant dense/BM25 collections, stage chunks before revision activation,
 and build a resumable local importer. Then measure 1,000 source records before bulk work.
+
+## Session 4 — checkpoint B: persistent hybrid indexes and resumable import
+
+**What changed:** Two versioned Qdrant chunk collections hold named `dense` vectors and
+BM25 sparse vectors. `ChunkIndex.prepare` stages both before document activation.
+`SearchService` requests 30 candidates per method, checks current manifests, and applies
+custom fusion/diversity. Chunks carry canonical offsets and page/paragraph or original
+HotpotQA sentence IDs; canonical text stays in the revision collection.
+
+**Why:** Separate collections let us compare A/B without changing models or retrieval settings.
+Qdrant's built-in `qdrant/bm25` computes sparse term weights; its IDF modifier gives rarer
+terms more weight. It avoids loading a sparse model in Render's small process. Collection
+names include a profile fingerprint so different embedding dimensions/models do not mix.
+
+**Alternative:** One collection with a strategy filter saves a collection, but mixes BM25
+corpus statistics between configurations. A distributed transaction is unnecessary here:
+stage immutable data, activate one pointer, and reject inactive pairs at retrieval time.
+
+**Mechanism:** A replacement stores canonical revision R2, writes its A/B chunks, then switches
+the manifest from R1 to R2. If the last write fails, R2 chunks remain invisible. After deletion,
+either revision fails the active gate. Old/staged chunks remain physically stored, so they can
+occupy top-30 candidate slots and affect BM25 IDF; future garbage collection/overfetch can
+improve recall. Filtering guarantees exclusion, not perfect candidate recall.
+
+**Verification:** HTTP-level tests exercise both index shapes, original source locations,
+replacement/deletion, failed chunk staging, failed activation, and resume without re-embedding.
+The fake checks request contracts; a real-cloud pilot will separately verify provider support.
+The importer never resurrects a tombstone or overwrites a modified document on resume.
+
+**My understanding (George):** [ ] Explain staged versus active data; [ ] identify dense,
+BM25 and fusion responsibilities; [ ] explain why IDF and old chunks can affect recall.
+
+**AI contribution:** Codex drafted and tested this checkpoint; George's review remains pending.
+
+**Resume point:** Finish the local corpus resource estimate, pilot 1,000 records, record actual
+throughput and costs, then begin the full resumable run if it fits the remaining target.
+Stop the web process while importing: both are writers and this version has no distributed lock.

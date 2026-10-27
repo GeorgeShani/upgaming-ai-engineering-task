@@ -13,6 +13,9 @@ from app.documents.security import DocumentMutationBoundary
 from app.documents.service import DocumentService
 from app.documents.store import QdrantDocumentStore, StoreUnavailable
 from app.health import HealthReport, check_health
+from app.providers import BudgetExceeded, OpenAIProvider, ProviderError
+from app.retrieval.index import ChunkIndex
+from app.retrieval.search import SearchService
 
 FRONTEND_DIST = Path(__file__).resolve().parents[2] / "frontend" / "dist"
 
@@ -30,16 +33,31 @@ def create_app(
             app.state.http_client = client
             config = app.state.settings
             app.state.parsing_slots = asyncio.Semaphore(1)
-            app.state.document_service = (
-                DocumentService(QdrantDocumentStore(client, config))
-                if config.qdrant_url and config.qdrant_api_key.get_secret_value()
-                else None
-            )
+            app.state.search_service = None
+            app.state.provider = None
+            app.state.document_service = None
+            if config.qdrant_url and config.qdrant_api_key.get_secret_value():
+                store = QdrantDocumentStore(client, config)
+                indexer = None
+                if config.openai_api_key.get_secret_value():
+                    app.state.provider = OpenAIProvider(client, config)
+                    indexer = ChunkIndex(store, app.state.provider, config)
+                app.state.document_service = DocumentService(store, indexer)
+                if indexer:
+                    app.state.search_service = SearchService(indexer, app.state.document_service)
             yield
 
     app = FastAPI(title="AI Investigation Engine", version="0.1.0", lifespan=lifespan)
     app.add_middleware(DocumentMutationBoundary, settings=lambda: app.state.settings)
     app.include_router(document_router)
+
+    @app.exception_handler(ProviderError)
+    async def provider_error(request: Request, error: ProviderError):
+        return JSONResponse({"detail": "Model provider failed. No answer was produced."}, 502)
+
+    @app.exception_handler(BudgetExceeded)
+    async def budget_error(request: Request, error: BudgetExceeded):
+        return JSONResponse({"detail": "Local API spending limit reached."}, 503)
 
     @app.exception_handler(StoreUnavailable)
     async def storage_error(request: Request, error: StoreUnavailable):

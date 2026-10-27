@@ -16,8 +16,9 @@ from .store import QdrantDocumentStore, StoreUnavailable
 
 
 class DocumentService:
-    def __init__(self, store: QdrantDocumentStore):
+    def __init__(self, store: QdrantDocumentStore, indexer=None):
         self.store = store
+        self.indexer = indexer
         # One process is part of the deployment contract. This is not a distributed lock.
         self.mutation_lock = asyncio.Lock()
 
@@ -82,7 +83,8 @@ class DocumentService:
             )
             # Persist all prepared content before committing the active revision pointer.
             await self.store.put(self.store.revisions, revision.revision_id, revision.model_dump())
-            # Slice 4 must prepare revision-scoped index data here before activating its pointer.
+            if self.indexer:
+                await self.indexer.prepare([revision])
             manifest = DocumentSummary(
                 document_id=document_id,
                 revision_id=revision.revision_id,
@@ -92,6 +94,8 @@ class DocumentService:
                 content_sha256=parsed.content_sha256,
                 created_at=old["created_at"] if old else now,
                 updated_at=now,
+                index_status="ready" if self.indexer else "pending",
+                index_profile=self.indexer.profile if self.indexer else None,
             )
             await self.store.put(
                 self.store.documents, document_id, {**manifest.model_dump(), "deleted": False}

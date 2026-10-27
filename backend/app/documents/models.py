@@ -4,7 +4,7 @@ from pydantic import BaseModel, ConfigDict
 
 
 class Location(BaseModel):
-    kind: Literal["page", "paragraph", "table_row"]
+    kind: Literal["page", "paragraph", "table_row", "sentence"]
     number: int
     start: int
     end: int
@@ -14,7 +14,7 @@ class Location(BaseModel):
 class ParsedDocument(BaseModel):
     model_config = ConfigDict(extra="forbid")
     filename: str
-    format: Literal["pdf", "docx", "txt"]
+    format: Literal["pdf", "docx", "txt", "dataset"]
     title: str
     text: str
     content_sha256: str
@@ -33,12 +33,12 @@ class DocumentSummary(BaseModel):
     revision_id: str
     filename: str
     title: str
-    format: Literal["pdf", "docx", "txt"]
+    format: Literal["pdf", "docx", "txt", "dataset"]
     content_sha256: str
     created_at: str
     updated_at: str
-    # Parsed content is durable, but has not been embedded/indexed in this slice.
-    index_status: Literal["pending"] = "pending"
+    index_status: Literal["pending", "ready"] = "pending"
+    index_profile: str | None = None
 
 
 class DocumentView(DocumentSummary):

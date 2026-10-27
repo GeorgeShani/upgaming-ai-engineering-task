@@ -54,12 +54,15 @@ class QdrantDocumentStore:
             self.initialized = True
 
     async def put(self, collection, point_id, payload):
+        await self.put_many(collection, [(point_id, payload)])
+
+    async def put_many(self, collection, rows):
         result = await self.request(
             "PUT",
             collection,
             "/points?wait=true",
             body={
-                "points": [{"id": point_id, "vector": {}, "payload": payload}],
+                "points": [{"id": key, "vector": {}, "payload": payload} for key, payload in rows],
             },
         )
         if not isinstance(result, dict) or result.get("status") != "completed":

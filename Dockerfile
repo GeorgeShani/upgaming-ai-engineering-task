@@ -11,6 +11,8 @@ WORKDIR /app
 ENV PYTHONUNBUFFERED=1
 COPY pyproject.toml uv.lock .python-version ./
 RUN uv sync --frozen --no-dev
+ENV TIKTOKEN_CACHE_DIR=/opt/tiktoken-cache
+RUN uv run --frozen --no-dev python -c "import tiktoken; tiktoken.get_encoding('cl100k_base')"
 COPY backend/ ./backend/
 COPY --from=frontend /build/dist ./frontend/dist
 EXPOSE 8000
