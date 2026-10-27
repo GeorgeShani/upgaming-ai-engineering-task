@@ -913,3 +913,62 @@ The implementation suite has 83 passing tests with warnings treated as errors; R
 A real cloud pilot/recovery and a real cited-answer smoke check complement the HTTP-level fakes.
 Docker/Render/public deployment are still unverified; no claim of a deployed application is made.
 George's independent learning checkboxes remain unchecked. Slice 6 has not been started.
+
+## Session 6 — checkpoint A: tool-calling provider boundary
+
+**What changed:** Added a real Responses API function-calling request alongside structured
+answer generation. The first planning request requires one tool call; the second can request
+follow-up searches. Both use the same conservative usage ledger, sanitized provider errors,
+600-token planning output caps, and no automatic paid retries. Refused, incomplete, malformed,
+or invalid-usage responses fail explicitly instead of masquerading as missing evidence.
+
+**Why:** The model proposes queries; application code remains responsible for validation,
+execution, and limits. Reusing the existing REST/usage boundary keeps credentials server-side
+and accounts for planning cost as well as final generation.
+
+**Alternative:** A framework-managed agent loop would save some plumbing but add abstractions
+and make the two-round/three-search rule less visible. JSON describing hypothetical searches
+without actual function calls would not demonstrate the assignment's tool-calling requirement.
+
+**Mechanism:** The API receives a strict `search_documents` function schema. A returned
+`function_call` has a call ID, name, and JSON arguments. Python will execute the approved search
+and return a `function_call_output` with the same call ID. That evidence becomes the next
+planning request's context; no hidden reasoning is exposed in the public trace.
+
+**Verification:** Five new provider tests were red before implementation. They now verify tool
+request shape, usage recording, refused/incomplete responses and failure without retries.
+Existing first-answer and embedding tests also remain green. No new paid call yet.
+
+**My understanding (George):** [ ] Explain a model function request versus Python execution;
+[ ] explain why strict JSON schema does not replace server validation. Review pending.
+
+**AI contribution:** Codex drafted and ran this checkpoint; no independent George verification
+is inferred. **Resume point:** Implement the host's bounded tool dispatcher and evidence pool.
+
+The previous background run completed in 1,987.588 seconds, processing all 50,024 prepared rows.
+It activated 47,953 and skipped 2,071 already imported sources; a separate read-only exact Qdrant
+count now confirms **50,024 active documents**. The ledger after the bulk run recorded estimated
+actual API cost $0.138972. `docs/index-full.json` preserves that run; cost includes prior calls,
+not only its newly activated rows. Full corpus audit/evaluation and deployment remain later work.
+
+### Session 6 — checkpoint B: bounded dispatcher and evidence identity
+
+`SearchTools` validates the complete model-requested batch before executing it. It accepts only
+`search_documents`, rejects extra/invalid arguments, enforces one initial search, at most two
+rounds / three requested searches, and rejects reused call IDs. Duplicate normalized queries
+reuse a prior result instead of spending another embedding/search call. Follow-up arguments
+name an earlier evidence ID and an exact entity from that source; the query must include it.
+This checks grounding of the query, not whether its inferred relationship is true.
+
+Search-local evidence IDs are reassigned into one request-wide namespace, so E1 never changes
+meaning across rounds. Final context merges query rankings with RRF and preserves a grounded
+bridge source plus the top result of its follow-up, retaining the eight-chunk / two-per-document
+cap. This small anchor reservation prevents repeated first-hop hits from crowding out the bridge.
+Alternative: simply sum result ranks and trust all supporting sources to survive; simpler, but
+can discard the very first document needed to justify a two-document answer.
+
+Thirteen new dispatcher tests cover actual result replay, stable IDs, entity grounding, search
+and round limits, forbidden tool names, malformed/extra/blank/long arguments, duplicate IDs,
+and deduplicated query execution. These tests began red before the dispatcher existed.
+George's hands-on explanation remains pending. Resume: connect this tested dispatcher to the
+investigation endpoint and exercise the two-round path, conflicts, abstention, and failures.

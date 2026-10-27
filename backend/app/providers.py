@@ -191,28 +191,8 @@ class OpenAIProvider:
                 }
             },
         }
-        # Schema and protocol overhead included, with a margin. This is an estimate,
-        # not a provider-enforced account budget. Keep uncertain reservations charged.
-        estimate = int(token_count(json.dumps(body)) * 1.2) + 1024
-        call = self.ledger.reserve(
-            "generation",
-            (
-                estimate * self.settings.generation_input_usd_per_million
-                + 1200 * self.settings.generation_output_usd_per_million
-            )
-            / 1e6,
-        )
-        data = await self.post("responses", body)
+        data, usage = await self.respond(body, "generation")
         try:
-            usage = data["usage"]
-            input_tokens, output_tokens = int(usage["input_tokens"]), int(usage["output_tokens"])
-            actual = (
-                input_tokens * self.settings.generation_input_usd_per_million
-                + output_tokens * self.settings.generation_output_usd_per_million
-            ) / 1e6
-            self.ledger.complete(call, input_tokens, output_tokens, actual)
-            if data["status"] != "completed":
-                raise ValueError("Incomplete response")
             parts = [
                 part["text"]
                 for item in data["output"]
@@ -221,8 +201,63 @@ class OpenAIProvider:
                 if part["type"] == "output_text"
             ]
             if len(parts) != 1:
-                raise ValueError("Missing or refused response")
-            return json.loads(parts[0]), {
+                raise ValueError("Missing response")
+            return json.loads(parts[0]), usage
+        except (KeyError, ValueError, TypeError) as error:
+            raise ProviderError from error
+
+    async def plan_searches(self, instructions, inputs, tool, *, first_round):
+        body = {
+            "model": self.settings.generation_model,
+            "store": False,
+            "instructions": instructions,
+            "input": inputs,
+            "reasoning": {"effort": "none"},
+            "max_output_tokens": 600,
+            "tools": [tool],
+            "tool_choice": "required" if first_round else "auto",
+            "parallel_tool_calls": not first_round,
+        }
+        return await self.respond(body, "planning", output_only=True)
+
+    async def respond(self, body, kind, *, output_only=False):
+        # Schema and protocol overhead included, with a margin. Reservations remain
+        # charged on uncertain failures, independently of the number of tool rounds.
+        if token_count(json.dumps(body["input"])) > 8000:
+            raise ProviderError
+        estimate = int(token_count(json.dumps(body)) * 1.2) + 1024
+        call = self.ledger.reserve(
+            kind,
+            (
+                estimate * self.settings.generation_input_usd_per_million
+                + body["max_output_tokens"] * self.settings.generation_output_usd_per_million
+            )
+            / 1e6,
+        )
+        data = await self.post("responses", body)
+        try:
+            usage = data["usage"]
+            input_tokens, output_tokens = usage["input_tokens"], usage["output_tokens"]
+            if any(type(value) is not int or value < 0 for value in (input_tokens, output_tokens)):
+                raise ValueError("Invalid usage")
+            actual = (
+                input_tokens * self.settings.generation_input_usd_per_million
+                + output_tokens * self.settings.generation_output_usd_per_million
+            ) / 1e6
+            self.ledger.complete(call, input_tokens, output_tokens, actual)
+            if data["status"] != "completed":
+                raise ValueError("Incomplete response")
+            output = data["output"]
+            if not isinstance(output, list) or not output:
+                raise ValueError("Missing output")
+            if any(
+                part.get("type") == "refusal"
+                for item in output
+                if item.get("type") == "message"
+                for part in item["content"]
+            ):
+                raise ValueError("Refused response")
+            return (output if output_only else data), {
                 "input_tokens": input_tokens,
                 "output_tokens": output_tokens,
                 "estimated_cost_usd": actual,
