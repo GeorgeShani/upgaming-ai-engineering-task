@@ -26,7 +26,7 @@ class QdrantDocumentStore:
                 f"{self.base}/collections/{collection}{suffix}",
                 headers=self.headers,
                 json=body,
-                timeout=15.0,
+                timeout=60.0 if suffix.startswith("/points?wait=true") else 15.0,
             )
             if missing_ok and response.status_code == 404:
                 return None
@@ -85,10 +85,12 @@ class QdrantDocumentStore:
     async def get(self, collection, point_id):
         return (await self.get_many(collection, [point_id])).get(point_id)
 
-    async def scroll(self, *, limit=20, cursor=None, digest=None):
+    async def scroll(self, *, limit=20, cursor=None, digest=None, digests=None):
         conditions = [{"key": "deleted", "match": {"value": False}}]
         if digest:
             conditions.append({"key": "content_sha256", "match": {"value": digest}})
+        if digests:
+            conditions.append({"key": "content_sha256", "match": {"any": digests}})
         result = await self.request(
             "POST",
             self.documents,

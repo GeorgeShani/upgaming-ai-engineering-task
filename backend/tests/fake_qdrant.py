@@ -79,7 +79,12 @@ class FakeQdrant:
             rows = [
                 {"id": key, "payload": value}
                 for key, value in sorted(points.items())
-                if all(value.get(c["key"]) == c["match"]["value"] for c in conditions)
+                if all(
+                    value.get(c["key"]) in c["match"]["any"]
+                    if "any" in c["match"]
+                    else value.get(c["key"]) == c["match"]["value"]
+                    for c in conditions
+                )
                 and (not body.get("offset") or key >= body["offset"])
             ]
             limit = body["limit"]

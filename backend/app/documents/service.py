@@ -34,7 +34,7 @@ class DocumentService:
         if revision is None or revision["document_id"] != document_id:
             raise StoreUnavailable
         return DocumentView(
-            **DocumentSummary.model_validate(manifest).model_dump(),
+            **self.summary(manifest).model_dump(),
             text=revision["text"],
             locations=revision["locations"],
             metadata=revision["metadata"],
@@ -42,9 +42,13 @@ class DocumentService:
 
     async def list_documents(self, limit, cursor):
         items, next_cursor = await self.store.scroll(limit=limit, cursor=cursor)
-        return DocumentPage(
-            items=[DocumentSummary.model_validate(item) for item in items], next_cursor=next_cursor
-        )
+        return DocumentPage(items=[self.summary(item) for item in items], next_cursor=next_cursor)
+
+    def summary(self, manifest):
+        summary = DocumentSummary.model_validate(manifest)
+        if self.indexer and summary.index_profile != self.indexer.profile:
+            summary.index_status = "pending"
+        return summary
 
     @staticmethod
     def check_version(manifest, if_match):
@@ -70,9 +74,21 @@ class DocumentService:
                             "document_id": duplicate["document_id"],
                         },
                     )
-                return MutationResult(
-                    document=DocumentSummary.model_validate(duplicate), duplicate=True
-                )
+                if self.indexer and (
+                    duplicate.get("index_status") != "ready"
+                    or duplicate.get("index_profile") != self.indexer.profile
+                ):
+                    raw = await self.store.get(self.store.revisions, duplicate["revision_id"])
+                    if raw is None:
+                        raise StoreUnavailable
+                    await self.indexer.prepare([Revision.model_validate(raw)])
+                    duplicate = {
+                        **duplicate,
+                        "index_status": "ready",
+                        "index_profile": self.indexer.profile,
+                    }
+                    await self.store.put(self.store.documents, duplicate["document_id"], duplicate)
+                return MutationResult(document=self.summary(duplicate), duplicate=True)
             now = datetime.now(UTC).isoformat()
             document_id = document_id or str(uuid4())
             revision = Revision(

@@ -1,10 +1,12 @@
 """Small REST boundary with durable local embedding reuse and conservative reservations."""
 
 import asyncio
+import base64
 import json
 import math
 import sqlite3
 from array import array
+from contextlib import closing, contextmanager
 from datetime import UTC, datetime
 from hashlib import sha256
 
@@ -31,8 +33,10 @@ class UsageLedger:
                 id INTEGER PRIMARY KEY, kind TEXT, reserved REAL, created TEXT,
                 input_tokens INTEGER, output_tokens INTEGER, actual_usd REAL)""")
 
+    @contextmanager
     def connect(self):
-        return sqlite3.connect(self.path, timeout=10)
+        with closing(sqlite3.connect(self.path, timeout=10)) as db, db:
+            yield db
 
     def reserve(self, kind, amount):
         with self.connect() as db:
@@ -67,13 +71,23 @@ class UsageLedger:
         )
 
     def cached(self, key):
+        return self.cached_many([key]).get(key)
+
+    def cached_many(self, keys):
+        result = {}
+        keys = list(keys)
         with self.connect() as db:
-            row = db.execute("SELECT vector FROM embeddings WHERE key=?", (key,)).fetchone()
-        if row is None:
-            return None
-        vector = array("f")
-        vector.frombytes(row[0])
-        return list(vector)
+            for start in range(0, len(keys), 500):
+                batch = keys[start : start + 500]
+                placeholders = ",".join("?" for _ in batch)
+                for key, blob in db.execute(
+                    f"SELECT key, vector FROM embeddings WHERE key IN ({placeholders})",
+                    batch,
+                ):
+                    vector = array("f")
+                    vector.frombytes(blob)
+                    result[key] = list(vector)
+        return result
 
     def cache(self, values):
         with self.connect() as db:
@@ -112,10 +126,12 @@ class OpenAIProvider:
     async def embed(self, texts):
         async with self.embedding_lock:
             unique = {self.cache_key(text): text for text in texts}
-            vectors = {key: self.ledger.cached(key) for key in unique}
-            missing = [key for key in unique if vectors[key] is None]
-            for start in range(0, len(missing), 64):
-                keys = missing[start : start + 64]
+            vectors = self.ledger.cached_many(unique)
+            missing = [key for key in unique if key not in vectors]
+            for start in range(0, len(missing), 512):
+                # Indexed chunks are <=256 tokens: <=131,072 tokens per call,
+                # below the documented 300,000 aggregate token limit.
+                keys = missing[start : start + 512]
                 batch = [unique[key] for key in keys]
                 tokens = sum(token_count(text) for text in batch)
                 call = self.ledger.reserve(
@@ -127,7 +143,7 @@ class OpenAIProvider:
                     {
                         "model": self.settings.embedding_model,
                         "dimensions": self.settings.embedding_dimensions,
-                        "encoding_format": "float",
+                        "encoding_format": "base64",
                         "input": batch,
                     },
                 )
@@ -137,6 +153,10 @@ class OpenAIProvider:
                         raise ValueError("Invalid embedding indexes")
                     for key, row in zip(keys, rows, strict=True):
                         vector = row["embedding"]
+                        if isinstance(vector, str):
+                            decoded = array("f")
+                            decoded.frombytes(base64.b64decode(vector, validate=True))
+                            vector = list(decoded)
                         if len(vector) != self.settings.embedding_dimensions or not all(
                             isinstance(v, (int, float)) and math.isfinite(v) for v in vector
                         ):

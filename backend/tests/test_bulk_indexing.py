@@ -3,7 +3,7 @@ from pathlib import Path
 import pytest
 from app.documents.store import StoreUnavailable
 from app.retrieval.bulk import import_batch, read_corpus
-from test_document_management import AUTH, replace
+from test_document_management import AUTH, replace, upload
 from test_indexed_documents import indexed_api as indexed_api
 
 
@@ -52,3 +52,13 @@ def test_interrupted_bulk_activation_reuses_cached_embeddings_on_resume(indexed_
     before = index.provider.ledger.summary()["calls"]
     assert client.portal.call(import_batch, documents, index)["activated"] == 2
     assert index.provider.ledger.summary()["calls"] == before
+
+
+def test_import_deduplicates_an_existing_upload_with_a_different_management_id(indexed_api):
+    client, _, app = indexed_api
+    documents = list(read_corpus(Path("fixtures/source-documents.jsonl"), 1))
+    first = upload(client, documents[0].text.encode())
+    assert first.status_code == 201
+    result = client.portal.call(import_batch, documents, app.state.search_service.index)
+    assert result["activated"] == 0 and result["skipped"] == 1
+    assert len(client.get("/api/documents").json()["items"]) == 1

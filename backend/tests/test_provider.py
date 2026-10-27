@@ -1,5 +1,7 @@
 import asyncio
+import base64
 import json
+from array import array
 
 import httpx
 import pytest
@@ -13,12 +15,13 @@ def test_embedding_cache_survives_provider_restart_and_validates_dimensions(tmp_
     def handler(request):
         body = json.loads(request.content)
         calls.append(body)
-        assert body["dimensions"] == 384 and body["encoding_format"] == "float"
+        assert body["dimensions"] == 384 and body["encoding_format"] == "base64"
         return httpx.Response(
             200,
             json={
                 "data": [
-                    {"index": i, "embedding": [0.01] * 384} for i, _ in enumerate(body["input"])
+                    {"index": i, "embedding": base64.b64encode(array("f", [0.01] * 384)).decode()}
+                    for i, _ in enumerate(body["input"])
                 ],
                 "usage": {"prompt_tokens": 2, "total_tokens": 2},
             },

@@ -81,28 +81,39 @@ class ChunkIndex:
     async def prepare(self, revisions):
         await self.initialize()
         chunks = await asyncio.to_thread(self.chunks, revisions)
-        counts = {}
-        for strategy, points in chunks.items():
-            counts[strategy] = len(points)
-            for start in range(0, len(points), 64):
-                batch = points[start : start + 64]
-                vectors = await self.provider.embed([point["payload"]["text"] for point in batch])
-                indexed = [
-                    {
-                        **point,
-                        "vector": {
-                            "dense": vector,
-                            "bm25": {"text": point["payload"]["text"], "model": "qdrant/bm25"},
-                        },
-                    }
-                    for point, vector in zip(batch, vectors, strict=True)
-                ]
+        all_points = [point for points in chunks.values() for point in points]
+        vectors = await self.provider.embed([point["payload"]["text"] for point in all_points])
+        by_id = {point["id"]: vector for point, vector in zip(all_points, vectors, strict=True)}
+        slots = asyncio.Semaphore(2)
+
+        async def write(strategy, batch):
+            indexed = [
+                {
+                    **point,
+                    "vector": {
+                        "dense": by_id[point["id"]],
+                        "bm25": {"text": point["payload"]["text"], "model": "qdrant/bm25"},
+                    },
+                }
+                for point in batch
+            ]
+            async with slots:
                 result = await self.store.request(
                     "PUT",
                     self.collections[strategy],
                     "/points?wait=true",
                     body={"points": indexed},
                 )
-                if not isinstance(result, dict) or result.get("status") != "completed":
-                    raise StoreUnavailable
-        return counts
+            if not isinstance(result, dict) or result.get("status") != "completed":
+                raise StoreUnavailable
+
+        jobs = []
+        for strategy, points in chunks.items():
+            for start in range(0, len(points), 256):
+                jobs.append(write(strategy, points[start : start + 256]))
+        # Settle every stage before reporting a failure. Never activate on partial success.
+        results = await asyncio.gather(*jobs, return_exceptions=True)
+        for result in results:
+            if isinstance(result, BaseException):
+                raise result
+        return {strategy: len(points) for strategy, points in chunks.items()}

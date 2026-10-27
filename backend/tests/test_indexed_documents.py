@@ -11,10 +11,49 @@ from test_document_management import AUTH, replace, settings, upload
 @pytest.fixture
 def indexed_api(tmp_path):
     storage = FakeQdrant()
+    storage.response_mode = "valid"
+    storage.response_calls = []
 
     def transport(request):
         if request.url.host == "api.openai.com":
             body = json.loads(request.content)
+            if request.url.path.endswith("/responses"):
+                storage.response_calls.append(body)
+                if storage.response_mode == "provider_error":
+                    return httpx.Response(500, text="private-provider-details")
+                context = json.loads(body["input"])
+                first = context["evidence"][0]
+                claim = {
+                    "text": "A fictional source fact.",
+                    "citations": [
+                        {
+                            "evidence_id": first["evidence_id"],
+                            "quote": first["text"],
+                        }
+                    ],
+                }
+                if storage.response_mode == "bad_quote":
+                    claim["citations"][0]["quote"] = "An entirely invented quote."
+                draft = {"status": "answered", "claims": [claim], "conflicting_claims": []}
+                if storage.response_mode == "abstain":
+                    draft = {
+                        "status": "insufficient_evidence",
+                        "claims": [],
+                        "conflicting_claims": [],
+                    }
+                return httpx.Response(
+                    200,
+                    json={
+                        "status": "completed",
+                        "output": [
+                            {
+                                "type": "message",
+                                "content": [{"type": "output_text", "text": json.dumps(draft)}],
+                            }
+                        ],
+                        "usage": {"input_tokens": 200, "output_tokens": 40},
+                    },
+                )
             return httpx.Response(
                 200,
                 json={
@@ -82,3 +121,16 @@ def test_failed_chunk_preparation_never_activates_replacement(indexed_api):
     assert result.status_code == 503
     assert client.get(f"/api/documents/{document_id}").headers["etag"] == first.headers["etag"]
     assert search(indexed_api)["evidence"][0]["text"] == "A fictional source fact."
+
+
+def test_reupload_repairs_pending_index_without_changing_content_revision(indexed_api):
+    client, storage, app = indexed_api
+    first = upload(client)
+    identifier = first.json()["document"]["document_id"]
+    manifest = storage.collections[app.state.document_service.store.documents][identifier]
+    manifest["index_profile"] = "old-profile"
+    assert client.get("/api/documents/" + identifier).json()["index_status"] == "pending"
+    repeated = upload(client)
+    assert repeated.status_code == 200 and repeated.json()["duplicate"]
+    assert repeated.json()["document"]["index_status"] == "ready"
+    assert repeated.headers["etag"] == first.headers["etag"]

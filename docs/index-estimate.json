@@ -1,0 +1,21 @@
+{
+  "corpus_sha256": "7fb92aae4a89727ca1d274d23ee25ba1dfafa052808fce75086f17c7c088c5eb",
+  "documents": 50024,
+  "embedding_model": "text-embedding-3-small",
+  "dimensions": 384,
+  "configurations": {
+    "a": {
+      "chunks": 52246,
+      "tokens": 6148592,
+      "embedding_cost_upper_estimate_usd": 0.12297184,
+      "dense_vector_bytes_float32": 80249856
+    },
+    "b": {
+      "chunks": 52307,
+      "tokens": 6141058,
+      "embedding_cost_upper_estimate_usd": 0.12282116,
+      "dense_vector_bytes_float32": 80343552
+    }
+  },
+  "note": "Before cache reuse; excludes payload, sparse vectors, HNSW and provider overhead."
+}

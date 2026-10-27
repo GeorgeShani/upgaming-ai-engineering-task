@@ -1,0 +1,30 @@
+{
+  "corpus_sha256": "22be27ee79d97ed7b5644c44ba627f07b0fbcb669d37b0b09761de6496e957a9",
+  "documents_seen": 72,
+  "activated": 71,
+  "skipped": 1,
+  "chunks_written": {
+    "a": 71,
+    "b": 71
+  },
+  "profile": "1a8846753a25",
+  "collections": {
+    "a": "investigation_chunks_a_1a8846753a25",
+    "b": "investigation_chunks_b_1a8846753a25"
+  },
+  "elapsed_seconds": 7.582,
+  "usage_before": {
+    "calls": 45,
+    "reserved_usd": 0.00543384,
+    "estimated_actual_usd": 0.00543384,
+    "input_tokens": 271692,
+    "output_tokens": 0
+  },
+  "usage_after": {
+    "calls": 46,
+    "reserved_usd": 0.00554054,
+    "estimated_actual_usd": 0.00554054,
+    "input_tokens": 277027,
+    "output_tokens": 0
+  }
+}

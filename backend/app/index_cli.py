@@ -11,8 +11,8 @@ from pathlib import Path
 import httpx
 
 from .config import Settings
-from .documents.store import QdrantDocumentStore
-from .providers import OpenAIProvider, UsageLedger
+from .documents.store import QdrantDocumentStore, StoreUnavailable
+from .providers import BudgetExceeded, OpenAIProvider, ProviderError, UsageLedger
 from .retrieval.bulk import corpus_revision, import_batch, read_corpus, report_json
 from .retrieval.chunking import chunk_spans, token_count
 from .retrieval.index import ChunkIndex
@@ -73,7 +73,15 @@ async def run(args, config):
         await store.initialize()
         await index.initialize()
         for batch in batched(read_corpus(args.corpus, args.limit), args.batch_size):
-            result = await import_batch(batch, index)
+            for attempt in range(3):
+                try:
+                    result = await import_batch(batch, index)
+                    break
+                except StoreUnavailable:
+                    if attempt == 2:
+                        raise
+                    print("Storage interrupted; retrying this idempotent batch.", flush=True)
+                    await asyncio.sleep(1)
             report["documents_seen"] += len(batch)
             for key in ("activated", "skipped"):
                 report[key] += result[key]
@@ -102,7 +110,7 @@ def main():
     parser.add_argument("--corpus", type=Path, default=Path("data/prepared/corpus.jsonl"))
     parser.add_argument("--limit", type=int)
     parser.add_argument(
-        "--batch-size", type=int, default=128, choices=range(1, 257), metavar="1..256"
+        "--batch-size", type=int, default=256, choices=range(1, 257), metavar="1..256"
     )
     parser.add_argument("--report", type=Path, default=Path("artifacts/indexing-report.json"))
     args = parser.parse_args()
@@ -112,9 +120,15 @@ def main():
     if args.command == "usage":
         print(report_json(UsageLedger(config.usage_db, config.api_budget_usd).summary()))
         return
-    report = (
-        estimate(args, config) if args.command == "estimate" else asyncio.run(run(args, config))
-    )
+    try:
+        report = (
+            estimate(args, config) if args.command == "estimate" else asyncio.run(run(args, config))
+        )
+    except (StoreUnavailable, ProviderError, BudgetExceeded) as error:
+        raise SystemExit(
+            f"{type(error).__name__}: stopped safely. Re-run to resume; cached embeddings remain. "
+            "The report contains the last fully completed batch, not staged writes."
+        ) from None
     args.report.parent.mkdir(parents=True, exist_ok=True)
     args.report.write_text(report_json(report), encoding="utf-8")
     print(report_json(report))

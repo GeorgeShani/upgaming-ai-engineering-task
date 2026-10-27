@@ -37,9 +37,25 @@ def read_corpus(path, limit=None):
 async def import_batch(documents, index):
     store = index.store
     manifests = await store.get_many(store.documents, [doc.document_id for doc in documents])
+    # An upload may already contain a corpus passage under a random management ID.
+    # Preserve exact deduplication across the upload/import boundary too.
+    missing_hashes = [doc.content_sha256 for doc in documents if doc.document_id not in manifests]
+    other_ids = {}
+    if missing_hashes:
+        cursor = None
+        while True:
+            duplicates, cursor = await store.scroll(
+                limit=256, cursor=cursor, digests=missing_hashes
+            )
+            other_ids.update({item["content_sha256"]: item["document_id"] for item in duplicates})
+            if not cursor:
+                break
     revisions, pending, skipped = [], [], 0
     for document in documents:
         old = manifests.get(document.document_id)
+        if not old and document.content_sha256 in other_ids:
+            skipped += 1
+            continue
         if old and (
             old.get("deleted") is not False
             or old.get("content_sha256") != document.content_sha256
