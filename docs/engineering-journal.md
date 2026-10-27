@@ -597,6 +597,40 @@ questions in your understanding section. Those checkboxes remain yours to comple
 Codex drafted this walkthrough and re-ran the verification. No ingestion, chunking, embedding,
 or investigation features were added during this review.
 
+## Session 3, checkpoint A: parsing files into canonical text
+
+### What changed and why
+
+Working directly on main, moved the existing canonical normalization/hash helpers into `app/text.py`
+so dataset preparation and runtime uploads share one implementation. The corpus hash remains
+unchanged. Added parsers for PDF, DOCX, and UTF-8 TXT, with canonical text locations and selected
+title/author metadata. Filenames are display metadata, never filesystem destinations.
+
+PDF locations are one-based page numbers. DOCX locations identify body paragraphs and table rows;
+table cells are flattened as text, including nested tables within bounded depth. TXT paragraphs
+are separated by blank lines. Character offsets refer to normalized text, not original binary
+bytes. PDF reading order and Word tracked changes/headers are not guaranteed layout fidelity.
+
+Pypdf and python-docx are explicit, format-specific dependencies. A universal conversion service
+could cover more formats and OCR, but adds deployment/runtime requirements. Image-only and
+encrypted PDFs receive clear errors. File extensions, signatures, encoding, decoded PDF streams,
+DOCX ZIP expansion, text length, page count, and block count are bounded. Parsing runs off the
+event loop, with one parse slot per app process. These are bounded demo parsers, not OS-isolated
+workers for arbitrary hostile files.
+
+### Verification and alternatives
+
+Thirteen parser tests cover all formats, cross-format normalized identity, exact locations,
+DOCX tables, metadata, malformed/empty/encrypted/textless inputs, UTF-8 Georgian text, size limits,
+archive expansion, and safe filename handling. A Windows test-runner issue exposed automatic
+test IDs expanding a 5 MB input into a path; short explicit IDs fixed the harness. It was not a
+parser failure. Dataset verification and the original tests still pass after sharing helpers.
+
+Exact normalization deduplicates identical extracted text; different reading order or paraphrases
+remain distinct. OCR and semantic deduplication are later possibilities, not hidden capabilities.
+
+Codex drafted these changes and tests. George's hands-on review remains pending.
+
 ## Template for later sessions
 
 ### What changed

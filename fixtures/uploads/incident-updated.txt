@@ -1,0 +1,3 @@
+Payment router failed.
+
+Recovery took 8 minutes.
