@@ -19,12 +19,14 @@ export function App() {
   }
   function closeSource() {
     setTarget(null);
-    requestAnimationFrame(() => {
-      if (opener.current?.isConnected) opener.current.focus();
-      else document.getElementById('documents-nav')?.focus();
-    });
+  }
+  function restoreSourceFocus() {
+    // Native close fires after the modal releases its focus trap.
+    if (opener.current?.isConnected) opener.current.focus();
+    else document.getElementById('documents-nav')?.focus();
   }
   function changed(message: string, removed?: string) {
+    if (removed) opener.current = null;
     setNotice(message);
     setRemovedId(removed ?? null);
     setCorpusVersion((n) => n + 1);
@@ -85,7 +87,13 @@ export function App() {
           retained.
         </footer>
       </div>
-      <SourceDialog target={target} token={token} onClose={closeSource} onChanged={changed} />
+      <SourceDialog
+        target={target}
+        token={token}
+        onClose={closeSource}
+        onClosed={restoreSourceFocus}
+        onChanged={changed}
+      />
     </>
   );
 }

@@ -25,7 +25,9 @@ type Props = { corpusVersion: number; onOpen: (target: SourceTarget) => void };
 export function InvestigationPanel({ corpusVersion, onOpen }: Props) {
   const [question, setQuestion] = useState('');
   const [pending, setPending] = useState(false);
-  const [error, setError] = useState('');
+  const [error, setError] = useState<{ kind: 'validation' | 'request'; message: string } | null>(
+    null,
+  );
   const [answered, setAnswered] = useState<{
     result: Investigation;
     question: string;
@@ -41,14 +43,14 @@ export function InvestigationPanel({ corpusVersion, onOpen }: Props) {
     const text = question.trim();
     if (pending) return;
     if (Array.from(text).length < 3 || Array.from(text).length > 1000) {
-      setError('Enter a question between 3 and 1,000 characters.');
+      setError({ kind: 'validation', message: 'Enter a question between 3 and 1,000 characters.' });
       return;
     }
     const request = new AbortController();
     controller.current = request;
     const timeout = window.setTimeout(() => request.abort(), 105_000);
     setPending(true);
-    setError('');
+    setError(null);
     setAnswered(null);
     try {
       const { data } = await api.investigate(text, request.signal);
@@ -57,11 +59,12 @@ export function InvestigationPanel({ corpusVersion, onOpen }: Props) {
         requestAnimationFrame(() => heading.current?.focus());
       }
     } catch (cause) {
-      setError(
-        request.signal.aborted
+      setError({
+        kind: 'request',
+        message: request.signal.aborted
           ? 'The request timed out before a result was received. It may have incurred API usage. Try again only when you are ready to submit a new investigation.'
           : errorMessage(cause),
-      );
+      });
     } finally {
       window.clearTimeout(timeout);
       setPending(false);
@@ -153,11 +156,14 @@ export function InvestigationPanel({ corpusVersion, onOpen }: Props) {
         )}
         {error && (
           <div className="error-panel" role="alert">
-            <strong>Investigation could not finish</strong>
-            <p>{error}</p>
+            <strong>
+              {error.kind === 'request' ? 'Investigation could not finish' : 'Check your question'}
+            </strong>
+            <p>{error.message}</p>
             <p className="small">
-              This is an API error, not an insufficient-evidence result. Nothing is resubmitted
-              automatically.
+              {error.kind === 'request'
+                ? 'This is an API error, not an insufficient-evidence result. Nothing is resubmitted automatically.'
+                : 'Nothing has been submitted.'}
             </p>
           </div>
         )}

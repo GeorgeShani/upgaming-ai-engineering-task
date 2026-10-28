@@ -7,10 +7,11 @@ type Props = {
   target: SourceTarget | null;
   token: string;
   onClose: () => void;
+  onClosed: () => void;
   onChanged: (message: string, removedId?: string) => void;
 };
 
-export function SourceDialog({ target, token, onClose, onChanged }: Props) {
+export function SourceDialog({ target, token, onClose, onClosed, onChanged }: Props) {
   const dialog = useRef<HTMLDialogElement>(null);
   const replaceForm = useRef<HTMLFormElement>(null);
   const [source, setSource] = useState<{ data: DocumentView; etag: string | null } | null>(null);
@@ -140,6 +141,7 @@ export function SourceDialog({ target, token, onClose, onChanged }: Props) {
       ref={dialog}
       className="source-dialog"
       aria-labelledby="source-title"
+      onClose={onClosed}
       onCancel={(event) => {
         if (busy) event.preventDefault();
         else onClose();

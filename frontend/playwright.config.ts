@@ -26,7 +26,8 @@ export default defineConfig({
       reuseExistingServer: false,
     },
     {
-      command: 'npm run preview -- --port 4174',
+      command:
+        'node node_modules/typescript/bin/tsc --noEmit && node node_modules/vite/bin/vite.js build && node node_modules/vite/bin/vite.js preview --host 127.0.0.1 --strictPort --port 4174',
       env: { API_PROXY_TARGET: 'http://127.0.0.1:8001' },
       url: 'http://127.0.0.1:4174',
       reuseExistingServer: false,
