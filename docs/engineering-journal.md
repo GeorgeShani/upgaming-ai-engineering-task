@@ -1451,3 +1451,35 @@ screenshots are under ignored artifacts. Cloud restart/update/delete persistence
 pending; the earlier local Docker readiness failure is not overwritten or counted as success.
 George requested the available Impeccable update be deferred to a later session; no skill
 update was performed.
+
+## Session 9 — cloud probe exposed a proxy ETag incompatibility
+
+**Observed failure:** The first public probe created two uniquely labelled fictional sources
+but stopped before replacement. The hosted response had `ETag: W/"<revision>"`; the server's
+exact If-Match revision comparison correctly rejected that value with HTTP 412. A separate
+reproduction confirmed the 412 and unchanged active revision without model generation.
+Evidence is in `docs/deployment/weak-etag-reproduction.json`. Test sources remain owned by
+the saved probe checkpoint for cleanup after the fix deploys. No failed question was retried.
+
+**Fix / why:** Document GET/POST/PUT now additionally expose `X-Document-ETag`, containing
+the server's exact quoted revision token. React and the deployment helper prefer it, falling
+back to ETag for older/local servers. This keeps transport compression validators separate
+from the application revision precondition. Server comparison stays strict: stale and weak
+If-Match values still receive 412. Accepting any weak tag or disabling concurrency protection
+would hide stale-edit bugs. Custom response headers are available here because production
+serves UI/API from the same origin. RFC 9110 section 13.1.1 specifies strong comparison for
+If-Match; the fix does not strip the weak prefix and pretend the representation is identical.
+
+**Verification:** Backend lifecycle assertions cover the dedicated header on create/read/replace
+and continued rejection of weak/stale tags. Client/helper tests simulate proxy-weakened ETags.
+Five client tests and all 21 fixture browser workflows pass; targeted backend checks pass.
+The new two-phase cloud script checkpoints ownership before further writes, never adopts
+duplicates, refuses cleanup after external edits, rejects an unchanged boot ID, and reserves
+host budget before paid steps. Six offline tests cover those guards. Public verification
+continues after deploying the fix. George confirmed the Render instance is Free and its
+API_BUDGET_USD is 1.0; this is user-confirmed account configuration, not a public API claim.
+
+**AI contribution / learning:** Codex diagnosed and patched this hosted-only boundary bug;
+George's review is pending. Explain why a browser reload is not a server restart, why a weak
+ETag cannot satisfy an exact revision precondition, and why source storage must outlive a
+web process. Resume with cleanup of the failed probe, then a fresh complete restart run.

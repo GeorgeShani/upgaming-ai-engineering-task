@@ -56,7 +56,12 @@ async function request<T>(path: string, options: RequestInit = {}) {
   if (!data || typeof data !== 'object')
     throw new ApiError(502, 'The API returned an unexpected response.');
   // Static contracts mirror the Python models; this is the one JSON-to-TypeScript boundary.
-  return { data: data as T, etag: response.headers.get('ETag') };
+  // Hosting proxies can weaken the representation ETag when compressing JSON.
+  // Keep the server's exact revision precondition independently of that representation.
+  return {
+    data: data as T,
+    etag: response.headers.get('X-Document-ETag') ?? response.headers.get('ETag'),
+  };
 }
 
 export const api = {

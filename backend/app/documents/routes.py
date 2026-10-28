@@ -55,6 +55,7 @@ async def list_documents(
 async def get_document(document_id: UUID, request: Request, response: Response):
     document = await service(request).read(str(document_id))
     response.headers["ETag"] = f'"{document.revision_id}"'
+    response.headers["X-Document-ETag"] = f'"{document.revision_id}"'
     response.headers["Cache-Control"] = "no-store"
     return document
 
@@ -71,6 +72,7 @@ async def create_document(request: Request, response: Response, file: UploadFile
     result = await manager.save(await parsed_file(request, file))
     response.status_code = 200 if result.duplicate else 201
     response.headers["ETag"] = f'"{result.document.revision_id}"'
+    response.headers["X-Document-ETag"] = f'"{result.document.revision_id}"'
     return result
 
 
@@ -85,6 +87,7 @@ async def replace_document(
     manager = service(request)
     result = await manager.save(await parsed_file(request, file), str(document_id), if_match)
     response.headers["ETag"] = f'"{result.document.revision_id}"'
+    response.headers["X-Document-ETag"] = f'"{result.document.revision_id}"'
     return result
 
 

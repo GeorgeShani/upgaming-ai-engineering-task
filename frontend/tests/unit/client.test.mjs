@@ -44,6 +44,25 @@ test('API errors stay errors and expose useful stale/rate-limit recovery', async
   assert.match(errorMessage(new ApiError(503, 'Unavailable'), true), /may have reached/);
 });
 
+test('a proxy-weakened representation ETag does not corrupt the revision precondition', async (t) => {
+  const calls = [];
+  t.mock.method(globalThis, 'fetch', async (url, init) => {
+    calls.push(init);
+    return init.method === 'DELETE'
+      ? new Response(null, { status: 204 })
+      : Response.json(
+          { document_id: 'one' },
+          {
+            headers: { ETag: 'W/"compressed-representation"', 'X-Document-ETag': '"revision-one"' },
+          },
+        );
+  });
+  const read = await api.read('one');
+  assert.equal(read.etag, '"revision-one"');
+  await api.delete('one', 'fixture-token', read.etag);
+  assert.equal(calls[1].headers['If-Match'], '"revision-one"');
+});
+
 test('file validation agrees with the 5,000,000 byte server boundary', () => {
   assert.equal(validateFile(new File([new Uint8Array(5_000_000)], 'source.PDF')), '');
   assert.match(validateFile(new File([new Uint8Array(5_000_001)], 'source.txt')), /5 MB/);

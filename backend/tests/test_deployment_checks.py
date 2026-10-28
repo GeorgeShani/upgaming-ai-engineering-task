@@ -54,6 +54,17 @@ def test_duplicate_upload_is_never_owned_or_deleted_by_the_probe():
         assert probe.owned == set()
 
 
+def test_document_revision_header_survives_a_proxy_weakened_etag():
+    response = httpx.Response(
+        200,
+        headers={
+            "ETag": 'W/"compressed"',
+            "X-Document-ETag": '"revision"',
+        },
+    )
+    assert checks.document_etag(response) == '"revision"'
+
+
 def test_paid_container_usage_is_imported_once_and_budget_failure_is_atomic(tmp_path):
     ledger = UsageLedger(tmp_path / "usage.db", 0.025)
     row = {

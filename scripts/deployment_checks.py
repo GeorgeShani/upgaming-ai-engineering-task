@@ -22,6 +22,10 @@ def origin(value):
     return value.rstrip("/")
 
 
+def document_etag(response):
+    return response.headers.get("x-document-etag") or response.headers["etag"]
+
+
 class DeploymentChecks:
     def __init__(self, client, base_url, token, secrets=()):
         self.client, self.base, self.token = client, origin(base_url), token
@@ -52,7 +56,7 @@ class DeploymentChecks:
         document = response.json()["document"]
         self.owned.add(document["document_id"])
         assert document["index_status"] == "ready", "Source is not indexed."
-        return document, response.headers["etag"]
+        return document, document_etag(response)
 
     def replace(self, identifier, etag, text, filename):
         assert identifier in self.owned, "Only this probe's new documents may be changed."
@@ -64,7 +68,7 @@ class DeploymentChecks:
             files={"file": (filename, text.encode(), "text/plain")},
         )
         assert response.status_code == 200, "Probe replacement failed."
-        return response.json()["document"], response.headers["etag"]
+        return response.json()["document"], document_etag(response)
 
     def remove(self, identifier, etag):
         assert identifier in self.owned, "Only this probe's new documents may be deleted."

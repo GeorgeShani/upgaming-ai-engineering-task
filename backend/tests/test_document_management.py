@@ -57,9 +57,12 @@ def test_upload_list_inspect_replace_delete_and_revision_gate(api):
     assert read.json()["text"] == "A fictional source fact."
     assert read.json()["locations"][0]["number"] == 1
     assert read.headers["etag"] == created.headers["etag"]
+    assert created.headers["x-document-etag"] == created.headers["etag"]
+    assert read.headers["x-document-etag"] == read.headers["etag"]
     assert len(client.get("/api/documents").json()["items"]) == 1
     updated = replace(client, identifier, read.headers["etag"], b"Changed fictional fact.")
     assert updated.status_code == 200
+    assert updated.headers["x-document-etag"] == updated.headers["etag"]
     current = updated.json()["document"]
     assert current["document_id"] == identifier
     assert current["revision_id"] != original["revision_id"]
@@ -129,6 +132,7 @@ def test_invalid_replacement_and_stale_versions_do_not_modify_document(api):
     assert invalid.status_code == 422
     assert client.delete(f"/api/documents/{identifier}", headers=AUTH).status_code == 428
     assert replace(client, identifier, '"stale"', b"Fact.").status_code == 412
+    assert replace(client, identifier, "W/" + original.headers["etag"], b"Fact.").status_code == 412
     updated = replace(client, identifier, original.headers["etag"], b"New content.")
     assert updated.status_code == 200
     assert (
