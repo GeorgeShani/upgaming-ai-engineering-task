@@ -1,0 +1,88 @@
+{
+  "checked_at": "2026-10-28T12:46:53.424419+00:00",
+  "reviewed_repo_revision": "78c7fa232e5c3df4e55c50953dbb7f89e95b2b90",
+  "live": {
+    "checked_at": "2026-10-28T12:39:31.558212+00:00",
+    "pdf_sha256": "807d37d4e30ff8977d58cacf6279b84b29fde252a836b2843f12407880fc9240",
+    "pdf_pages": 8,
+    "public_health": "ready",
+    "live_release": "a4789c447eed137f96f23659947b2f994d434ea4",
+    "active_sources": 50024,
+    "physical_chunks": {
+      "a": 52258,
+      "b": 52319
+    },
+    "counts_match_complete_audit": true,
+    "scope": "Fresh readiness/count check; full per-point/content audit is the separate recorded deployment receipt; no paid calls or mutations",
+    "public_surface": {
+      "liveness_http": 200,
+      "instance_id": "a42c79d3f3d9469686633ba4abf7cea8",
+      "release_revision": "a4789c447eed137f96f23659947b2f994d434ea4",
+      "health": {
+        "status": "ready",
+        "dependencies": {
+          "openai": "reachable",
+          "qdrant": "reachable"
+        }
+      },
+      "compiled_assets": [
+        "/assets/index-CR2UQ6Zm.js",
+        "/assets/index-BodD1BKy.css"
+      ],
+      "private_paths_hidden": true,
+      "test_reset_absent": true,
+      "anonymous_mutations_rejected": true,
+      "invalid_question_rejected": true,
+      "known_secrets_absent_from_checked_content": true
+    }
+  },
+  "fresh_checks": {
+    "backend_passed": 158,
+    "backend_warnings_as_errors": true,
+    "client_tests_passed": 5,
+    "browser_expected": 21,
+    "browser_failed": 0,
+    "production_build": "passed",
+    "ruff_lint_and_format": "passed"
+  },
+  "final_fixture_counts": {
+    "bridge": 12,
+    "comparison": 8,
+    "conflict": 6,
+    "simple": 8,
+    "unanswerable": 6
+  },
+  "final_unique_questions": 40,
+  "offline_evaluation": {
+    "development": {
+      "attempts": 16,
+      "summary_reproduced": true,
+      "scores_reproduced": true,
+      "errors": 1
+    },
+    "final": {
+      "attempts": 80,
+      "summary_reproduced": true,
+      "scores_reproduced": true,
+      "errors": 3
+    },
+    "selection_before_final": true,
+    "archive_hashes_checked": true,
+    "different_code_bytes": [
+      "backend/app/documents/routes.py",
+      "backend/app/main.py"
+    ]
+  },
+  "earlier_delivery_evidence_fingerprints": "all matched",
+  "deployed_app_source_matches_reviewed_repository": true,
+  "paid_generation_calls_in_this_audit": 0,
+  "corpus_mutations_in_this_audit": 0,
+  "verdict": "Mandatory implementation/artifact categories covered, with demonstrated semantic and experimental limitations; independent human review/defence pending",
+  "not_proven": [
+    "Universal factual grounding or semantic citation accuracy",
+    "An independent human correctness rating",
+    "A causal advantage of chunking configuration A",
+    "George performing code defence/debugging/change without AI",
+    "An exhaustive security or billing audit"
+  ]
+}

@@ -211,6 +211,9 @@ semantic citation support remain substantive limitations documented in the evalu
 
 ## Delivery and understanding
 
+[PDF requirement-by-requirement audit](docs/pdf-requirements-audit.md) records verified coverage,
+demonstrated quality limitations and independent-review items against all eight assignment pages.
+
 [Submission checklist](docs/submission.md) · [Interview rehearsal](docs/interview-rehearsal.md) ·
 [AI usage report](docs/ai-usage-report.md) · [Engineering journal](docs/engineering-journal.md) ·
 [Accepted plan](tasks/plan.md) · [Progress and independent-review checklist](tasks/todo.md).

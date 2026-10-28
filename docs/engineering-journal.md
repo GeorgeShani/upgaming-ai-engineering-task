@@ -1569,3 +1569,28 @@ the pipeline, calculate RRF, diagnose one recorded failure, and make/test the su
 retrieval change locally. Record your own dated journal entry before checking personal review
 items. Software/deployment/delivery checks for slices 9/10 are complete; independent rehearsal
 and source/semantic review are the remaining human work.
+
+## Verification against the original PDF — 28 October 2026
+
+Codex read all eight PDF pages and audited the literal requirements independently of our own
+plan/checklist. `docs/pdf-requirements-audit.md` maps document processing, hybrid/custom search,
+LLM/tool/RAG behavior, evaluation, dataset, backend/UI, free deployment, technical quality and
+submission artifacts to implementation/evidence, and separates optional bonuses. The PDF's
+source hash and fresh results are recorded in `docs/pdf-requirements-checks.json`.
+
+Fresh checks pass: 158 backend tests with warnings as errors, five client tests, 21 browser
+tests, production build and Ruff lint/format. Both archived evaluation summaries and every
+score reproduce without provider calls. The live app is ready; fresh counts still match
+50,024 active sources and the earlier complete chunk audit. GitHub is public on main, and
+the deployed app/dependency source is identical to the reviewed repository's application code.
+The earlier delivery receipt fingerprints remain unchanged. No paid generation or corpus
+mutation was performed during this audit.
+
+The mandatory implementation/artifact categories are covered, but an unconditional all-clear
+would overstate output quality. Existing results contain unsupported claims, wrong-entity
+citations and reversed comparisons; literal checks are not semantic correctness. Required
+sources have identical A/B boundaries, weakening the chunking experiment. George's independent
+gold/citation review and no-AI code defence remain pending. Dedicated injection testing,
+streaming, multiple-model comparison and full monitoring are optional and are not represented
+as completed. Historical evaluation-stage status text is identified as historical rather than
+silently rewriting the study. No prompts, labels, retrieval settings or source code changed.
