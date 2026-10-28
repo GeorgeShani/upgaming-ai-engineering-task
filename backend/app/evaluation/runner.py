@@ -24,10 +24,10 @@ class RecordingSearch(SearchService):
 
 def maximum_reservation(config):
     # Provider's existing 12k body limit, 20%+1024 input reservation margin;
-    # planning outputs <=600+600, answer <=1200, <=3 queries of <=500 Unicode chars.
+    # planning <=600+600, answer <=1200, review <=1200; <=3 queries of <=500 chars.
     return (
-        3 * (int(12000 * 1.2) + 1024) * config.generation_input_usd_per_million
-        + 2400 * config.generation_output_usd_per_million
+        4 * (int(12000 * 1.2) + 1024) * config.generation_input_usd_per_million
+        + 3600 * config.generation_output_usd_per_million
         + 3 * 2000 * config.embedding_usd_per_million
     ) / 1e6
 

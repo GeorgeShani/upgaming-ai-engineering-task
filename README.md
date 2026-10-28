@@ -38,10 +38,18 @@ A uses 256-token windows/40-token overlap. B uses sentence groups up to 256 toke
 overlap, and splits oversized sentences. Rankings are relevance scores, not truth probabilities.
 
 The real `search_documents` model tool has validated arguments, at most two retrieval rounds,
-three searches and three language-model calls. Follow-up entities must come from earlier
+three searches and four language-model calls (two planners, one draft, one cited-claim review).
+Follow-up entities must come from earlier
 retrieved evidence. Responses contain `answered`, `insufficient_evidence` or
 `conflicting_evidence`, claims/citations and a public search trace. Quote/ID validation proves
-citation integrity; it does not prove semantic entailment. Provider errors remain API errors.
+citation integrity. A separate review checks support, entity binding, comparison premises and
+question coverage; Python recomputes numeric relations supplied by the reviewer. Unsupported
+or uncertain drafts are withheld in full. Review can still miss errors; it does not prove
+semantic entailment. Provider errors remain API errors. See the
+[grounding walkthrough and development checks](docs/claim-grounding.md).
+
+The archived evaluation measures the earlier workflow. Its results are preserved; they do not
+measure this new review stage. No new held-out accuracy result is claimed.
 
 Default hosted models are `text-embedding-3-small` with 384 dimensions and
 `gpt-5.4-mini-2026-03-17`. All model/rate settings are server-side and configurable.

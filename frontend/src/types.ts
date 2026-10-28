@@ -61,6 +61,11 @@ export type Investigation = {
   evidence: Evidence[];
   search_trace: SearchTrace[];
   latency_ms: number;
+  verification?: {
+    outcome: 'passed' | 'withheld' | 'not_needed';
+    reviewed_claims: number;
+    comparisons_checked: number;
+  };
   execution: { retrieval_rounds: number; searches: number; llm_calls: number; stop_reason: string };
   usage: { estimated_total_cost_usd: number };
   configuration: { strategy: 'a' | 'b'; generation_model: string; prompt_version: string };

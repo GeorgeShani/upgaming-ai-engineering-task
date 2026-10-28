@@ -191,23 +191,29 @@ class OpenAIProvider:
             return (result, usage) if include_usage else result
 
     async def generate(self, instructions, context, schema):
+        return await self.structured(instructions, context, schema, "generation", 1200)
+
+    async def verify(self, instructions, context, schema):
+        return await self.structured(instructions, context, schema, "verification", 1200)
+
+    async def structured(self, instructions, context, schema, kind, output_limit):
         body = {
             "model": self.settings.generation_model,
             "store": False,
             "instructions": instructions,
             "input": context,
             "reasoning": {"effort": "none"},
-            "max_output_tokens": 1200,
+            "max_output_tokens": output_limit,
             "text": {
                 "format": {
                     "type": "json_schema",
-                    "name": "investigation",
+                    "name": "claim_support_review" if kind == "verification" else "investigation",
                     "strict": True,
                     "schema": schema,
                 }
             },
         }
-        data, usage = await self.respond(body, "generation")
+        data, usage = await self.respond(body, kind)
         try:
             parts = [
                 part["text"]

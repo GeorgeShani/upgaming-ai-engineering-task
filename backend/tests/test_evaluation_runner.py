@@ -10,7 +10,7 @@ from app.providers import BudgetExceeded, ProviderError, UsageLedger
 def test_budget_preflight_prevents_network_when_full_attempt_would_exceed_ceiling(tmp_path):
     config = Settings(_env_file=None)
     ledger = UsageLedger(tmp_path / "usage.db", 0.04)
-    assert maximum_reservation(config) == pytest.approx(0.045624)
+    assert maximum_reservation(config) == pytest.approx(0.062592)
     with pytest.raises(BudgetExceeded):
         guard_budget(ledger, config)
 

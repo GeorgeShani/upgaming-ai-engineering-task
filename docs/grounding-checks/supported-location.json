@@ -1,0 +1,87 @@
+{
+  "state": "complete",
+  "started_at": "2026-10-28T16:43:25.057710+00:00",
+  "ledger_before": {
+    "calls": 789,
+    "reserved_usd": 2.52724184,
+    "estimated_actual_usd": 0.72149657,
+    "input_tokens": 7550391,
+    "output_tokens": 20467
+  },
+  "scope": "synthetic development regression, not held-out evaluation",
+  "model": "gpt-5.4-mini-2026-03-17",
+  "context": {
+    "question": "Where did Copper Field originate?",
+    "status": "answered",
+    "claims": [
+      {
+        "claim_index": 0,
+        "text": "Copper Field originated in Luma.",
+        "citations": [
+          {
+            "evidence_id": "E1",
+            "quote": "The band Copper Field originated in Luma."
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "evidence_id": "E1",
+        "title": "Fictional source 1",
+        "text": "The band Copper Field originated in Luma."
+      }
+    ]
+  },
+  "expected_pass": true,
+  "review": {
+    "claims": [
+      {
+        "claim_index": 0,
+        "verdict": "supported",
+        "reason": "supported",
+        "comparison": null
+      }
+    ],
+    "answers_question": true,
+    "conflict_supported": false
+  },
+  "verification": {
+    "method": "cited_claim_review_v1",
+    "outcome": "passed",
+    "reviewed_claims": 1,
+    "rejected_claims": 0,
+    "comparisons_checked": 0,
+    "reasons": []
+  },
+  "safe_result": {
+    "status": "answered",
+    "claims": [
+      {
+        "text": "Copper Field originated in Luma.",
+        "citations": [
+          {
+            "evidence_id": "E1",
+            "quote": "The band Copper Field originated in Luma."
+          }
+        ]
+      }
+    ],
+    "conflicting_claims": []
+  },
+  "usage": {
+    "input_tokens": 809,
+    "output_tokens": 43,
+    "estimated_cost_usd": 0.00080025,
+    "model": "gpt-5.4-mini-2026-03-17"
+  },
+  "passed": true,
+  "elapsed_ms": 1045,
+  "ledger_after": {
+    "calls": 790,
+    "reserved_usd": 2.53441559,
+    "estimated_actual_usd": 0.72229682,
+    "input_tokens": 7551200,
+    "output_tokens": 20510
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "state": "complete",
+  "started_at": "2026-10-28T16:43:18.983954+00:00",
+  "ledger_before": {
+    "calls": 785,
+    "reserved_usd": 2.49848159,
+    "estimated_actual_usd": 0.71800982,
+    "input_tokens": 7547086,
+    "output_tokens": 20243
+  },
+  "scope": "synthetic development regression, not held-out evaluation",
+  "model": "gpt-5.4-mini-2026-03-17",
+  "context": {
+    "question": "Where did Silver Pier originate?",
+    "status": "answered",
+    "claims": [
+      {
+        "claim_index": 0,
+        "text": "Silver Pier originated in Luma.",
+        "citations": [
+          {
+            "evidence_id": "E1",
+            "quote": "The band Copper Field originated in Luma."
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "evidence_id": "E1",
+        "title": "Fictional source 1",
+        "text": "The band Copper Field originated in Luma."
+      }
+    ]
+  },
+  "expected_pass": false,
+  "review": {
+    "claims": [
+      {
+        "claim_index": 0,
+        "verdict": "unsupported",
+        "reason": "wrong_entity",
+        "comparison": null
+      }
+    ],
+    "answers_question": false,
+    "conflict_supported": false
+  },
+  "verification": {
+    "method": "cited_claim_review_v1",
+    "outcome": "withheld",
+    "reviewed_claims": 1,
+    "rejected_claims": 1,
+    "comparisons_checked": 0,
+    "reasons": [
+      "missing_premise",
+      "wrong_entity"
+    ]
+  },
+  "safe_result": {
+    "status": "insufficient_evidence",
+    "claims": [],
+    "conflicting_claims": []
+  },
+  "usage": {
+    "input_tokens": 809,
+    "output_tokens": 44,
+    "estimated_cost_usd": 0.00080475,
+    "model": "gpt-5.4-mini-2026-03-17"
+  },
+  "passed": true,
+  "elapsed_ms": 1037,
+  "ledger_after": {
+    "calls": 786,
+    "reserved_usd": 2.50565459,
+    "estimated_actual_usd": 0.71881457,
+    "input_tokens": 7547895,
+    "output_tokens": 20287
+  }
+}

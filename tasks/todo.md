@@ -78,4 +78,7 @@ does not claim that George has completed his review. Estimates are focused worki
 
 ## Contingency (2 hours)
 
+- [x] Follow-up: support review, numeric comparison checks, development regressions and an honest account of remaining semantic limits (`docs/claim-grounding.md`).
+- [ ] George: inspect a rejected and an accepted draft, and explain why arithmetic cannot establish the meaning of a claim.
+
 - [ ] Use for unmet requirements or misunderstandings before optional features.

@@ -108,6 +108,24 @@ for (const status of [429, 502, 503]) {
   });
 }
 
+test('a withheld draft explains the evidence review without exposing rejected claims', async ({
+  page,
+}) => {
+  const report = result('insufficient_evidence');
+  report.answer = 'The cited evidence could not support the complete answer. No claims are shown.';
+  report.verification = { outcome: 'withheld', reviewed_claims: 1, comparisons_checked: 1 };
+  await page.route('**/api/investigations', (route) => route.fulfill({ json: report }));
+  await page.getByLabel('Your question').fill('Who is older, Arden or Bryn?');
+  await page.getByRole('main').getByRole('button', { name: 'Investigate', exact: true }).click();
+  await expect(page.getByText(report.answer)).toBeVisible();
+  await page.locator('details.search-trace > summary').click();
+  await page.getByText('Run details', { exact: true }).click();
+  await expect(
+    page.getByText('Answer withheld · 1 claims reviewed · 1 numeric comparisons checked'),
+  ).toBeVisible();
+  await expect(page.getByRole('button', { name: /Open citation/ })).toHaveCount(0);
+});
+
 test('pending questions cannot submit a second paid request', async ({ page }) => {
   let calls = 0;
   let finish = () => {};

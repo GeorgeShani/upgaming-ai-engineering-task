@@ -1,0 +1,1209 @@
+{
+  "state": "complete",
+  "started_at": "2026-10-28T16:44:19.439473+00:00",
+  "ledger_before": {
+    "calls": 795,
+    "reserved_usd": 2.56209012,
+    "estimated_actual_usd": 0.72957285,
+    "input_tokens": 7559385,
+    "output_tokens": 20765
+  },
+  "scope": "existing development fixture, not held-out evaluation",
+  "question": "Roger O. Egeberg was Assistant Secretary for Health and Scientific Affairs during the administration of a president that served during what years?",
+  "expected_status": "answered",
+  "http_status": 200,
+  "result": {
+    "status": "answered",
+    "claims": [
+      {
+        "text": "Roger O. Egeberg served during the Nixon administration.",
+        "citations": [
+          {
+            "evidence_id": "E1",
+            "quote": "His other roles included Assistant Secretary for Health and Scientific Affairs in the Department of Health, Education, and Welfare (now the United States Department of Health and Human Services) during the Nixon administration and Dean of the University of Southern California's medical school."
+          }
+        ]
+      },
+      {
+        "text": "Richard Nixon served as President of the United States from 1969 until 1974.",
+        "citations": [
+          {
+            "evidence_id": "E12",
+            "quote": "Richard Milhous Nixon (January 9, 1913 – April 22, 1994) was the 37th President of the United States from 1969 until 1974, when he resigned from office, the only U.S. president to do so. He had previously served as the 36th Vice President of the United States from 1953 to 1961, and prior to that as a U.S. Representative and also Senator from California."
+          }
+        ]
+      }
+    ],
+    "conflicting_claims": [],
+    "answer": "Roger O. Egeberg served during the Nixon administration. [E1] Richard Nixon served as President of the United States from 1969 until 1974. [E12]",
+    "evidence": [
+      {
+        "evidence_id": "E1",
+        "chunk_id": "2b97e59c-a15f-59c9-bfcd-0990240e82c8",
+        "document_id": "dd3eb721-7c42-57bf-9777-03324193bc82",
+        "revision_id": "2b72a625-f5b9-5d55-b99b-8fa86abc0fb4",
+        "strategy": "a",
+        "text": "Roger Olaf Egeberg, M.D. (13 November 1902 – 13 September 1997 Washington, D.C.) was an American medical educator, administrator and advocate of public health. He was General Douglas MacArthur's personal physician during World War II in the Pacific theater. His other roles included Assistant Secretary for Health and Scientific Affairs in the Department of Health, Education, and Welfare (now the United States Department of Health and Human Services) during the Nixon administration and Dean of the University of Southern California's medical school.",
+        "title": "Roger O. Egeberg",
+        "start": 0,
+        "end": 552,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 159
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 160,
+            "end": 257
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 258,
+            "end": 552
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "validation",
+          "record_id": "5ae0d4c9554299603e418468",
+          "url": "https://en.wikipedia.org/wiki/Roger_O._Egeberg",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.03278688524590164
+      },
+      {
+        "evidence_id": "E9",
+        "chunk_id": "128e514e-b3a9-5d50-8844-83b630de6df2",
+        "document_id": "0247fa91-b211-5570-a985-7720ae241dd5",
+        "revision_id": "1a9523a2-84de-53dc-975c-6fdaa7f9fa5e",
+        "strategy": "a",
+        "text": "David Nixon (29 December 1919 – 1 December 1978) was an English magician and television personality. At the height of his career, Nixon was the best-known magician in the UK.",
+        "title": "David Nixon (magician)",
+        "start": 0,
+        "end": 174,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 100
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 101,
+            "end": 174
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5ae336ef5542991a06ce995d",
+          "url": "https://en.wikipedia.org/wiki/David_Nixon_%28magician%29",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.03057889822595705
+      },
+      {
+        "evidence_id": "E2",
+        "chunk_id": "3f83cb4e-bfef-5adc-a0c2-500d6f2a25f2",
+        "document_id": "84288cd5-8e54-5797-adfa-93da46fba1e9",
+        "revision_id": "4713b17a-5e91-5911-9a40-a4bace903fb7",
+        "strategy": "a",
+        "text": "Nils Daulaire (born 1948) is an American physician and the former Assistant Secretary for Global Affairs at the United States Department of Health and Human Services (HHS). Daulaire has been at HHS since 2010, and became Assistant Secretary in December 2012. He also served as the U.S. Representative on the World Health Organization’s (WHO) Executive Board, a post he was nominated to by President Barack Obama.",
+        "title": "Nils Daulaire",
+        "start": 0,
+        "end": 412,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 172
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 173,
+            "end": 258
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 259,
+            "end": 412
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5adde85b5542997dc79070a2",
+          "url": "https://en.wikipedia.org/wiki/Nils_Daulaire",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.03225806451612903
+      },
+      {
+        "evidence_id": "E10",
+        "chunk_id": "9752faad-cb42-568f-8ee8-0604a2c241be",
+        "document_id": "5cd1d31f-92c8-5f09-9001-5ca86fb3d0ae",
+        "revision_id": "2db7970b-2307-5203-b839-d21a96b5aef0",
+        "strategy": "a",
+        "text": "Gerald Rudolph Ford Jr. (born Leslie Lynch King Jr.; July 14, 1913 – December 26, 2006) was an American politician who served as the 38th President of the United States from August 1974 to January 1977, following the resignation of Richard Nixon. Prior to this he served eight months as the 40th Vice President of the United States, following the resignation of Spiro Agnew. He was the first person appointed to the vice presidency under the terms of the 25th Amendment, and consequently the only person to have served as both Vice President and President of the United States without being elected to executive office. Before his appointment to the vice presidency, Ford served 25 years as U.S. Representative from Michigan's 5th congressional district, the final nine of them as the House Minority Leader.",
+        "title": "Gerald Ford",
+        "start": 0,
+        "end": 807,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 246
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 247,
+            "end": 374
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 375,
+            "end": 619
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 620,
+            "end": 807
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a7c994055429935c91b524f",
+          "url": "https://en.wikipedia.org/wiki/Gerald_Ford",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.029236022193768675
+      },
+      {
+        "evidence_id": "E3",
+        "chunk_id": "7bca3a39-858b-556b-a234-f354f9e61a8a",
+        "document_id": "9b1349fc-8060-5eda-8f7c-e11ec4fb50bc",
+        "revision_id": "4841f8d7-c3d4-597e-8169-ced806ae0e9f",
+        "strategy": "a",
+        "text": "Bradford P. Campbell was the Assistant Secretary for Employee Benefits Security of the United States Department of Labor (DOL), the official in charge of the Employee Benefits Security Administration (EBSA). Mr. Campbell was nominated by President George W. Bush as Assistant Secretary on May 3, 2007, and was unanimously confirmed by the United States Senate on August 3, 2007. He held the position until January 20, 2009. Prior to his confirmation as Assistant Secretary, Mr. Campbell had served as Acting Assistant Secretary since October 30, 2006 and as EBSA's Deputy Assistant Secretary for Policy since March 5, 2004.",
+        "title": "Bradford P. Campbell",
+        "start": 0,
+        "end": 623,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 207
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 208,
+            "end": 378
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 379,
+            "end": 423
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 424,
+            "end": 623
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5adde85b5542997dc79070a2",
+          "url": "https://en.wikipedia.org/wiki/Bradford_P._Campbell",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.028006267136701922
+      },
+      {
+        "evidence_id": "E11",
+        "chunk_id": "b9146391-4061-577e-a9c0-5dcf6bb1d79d",
+        "document_id": "4ffecebe-c3b6-5792-a7c7-5a95db043c31",
+        "revision_id": "c758520f-a2cc-51b7-8c0a-cfb84753fc88",
+        "strategy": "a",
+        "text": "David Nixon is an American film director and film producer. He is the director and producer of \"Letters to God\" and a co-producer and assistant director of \"Fireproof\" and \"Facing the Giants\".",
+        "title": "David Nixon (director)",
+        "start": 0,
+        "end": 192,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 59
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 60,
+            "end": 192
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5ae336ef5542991a06ce995d",
+          "url": "https://en.wikipedia.org/wiki/David_Nixon_%28director%29",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.028949545078577336
+      },
+      {
+        "evidence_id": "E12",
+        "chunk_id": "74151fbe-bed3-5360-b3b0-0bb419301edc",
+        "document_id": "a32660ca-4199-5c58-9ded-759d1562ebab",
+        "revision_id": "2e57a8f9-e508-572c-b8b1-32206a83eed6",
+        "strategy": "a",
+        "text": "Richard Milhous Nixon (January 9, 1913 – April 22, 1994) was the 37th President of the United States from 1969 until 1974, when he resigned from office, the only U.S. president to do so. He had previously served as the 36th Vice President of the United States from 1953 to 1961, and prior to that as a U.S. Representative and also Senator from California.",
+        "title": "Richard Nixon",
+        "start": 0,
+        "end": 355,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 186
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 187,
+            "end": 355
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "validation",
+          "record_id": "5ae0d4c9554299603e418468",
+          "url": "https://en.wikipedia.org/wiki/Richard_Nixon",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.02844163539403516
+      },
+      {
+        "evidence_id": "E4",
+        "chunk_id": "d41a9e08-c3cc-574b-b25f-10bd6c5ddec0",
+        "document_id": "8f430be8-a969-5023-b286-5dcce4c3d7c5",
+        "revision_id": "3501c87e-1a05-59d3-9d8c-a3d105b243bc",
+        "strategy": "a",
+        "text": "Hershel Wayne Gober (born December 21, 1936) is a former government official and Vietnam War veteran. He served as acting United States Secretary of Veterans Affairs (VA) on two occasions during the administration of Bill Clinton: first from July 1, 1997, until January 2, 1998, between the resignation of Secretary Jesse Brown and the appointment of Togo D. West, Jr. as acting secretary, and the second time from July 25, 2000, until January 20, 2001, after the resignation of Secretary West; this time Gober served in the post until the end of the Clinton presidency.",
+        "title": "Hershel Gober",
+        "start": 0,
+        "end": 570,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 101
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 102,
+            "end": 570
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5adeb3715542995534e8c6da",
+          "url": "https://en.wikipedia.org/wiki/Hershel_Gober",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.027222222222222224
+      }
+    ],
+    "search_trace": [
+      {
+        "query": "Roger O. Egeberg Assistant Secretary for Health and Scientific Affairs president served during what years",
+        "strategy": "a",
+        "profile": "1a8846753a25",
+        "embedding_usage": {
+          "model": "text-embedding-3-small",
+          "input_tokens": 0,
+          "api_calls": 0,
+          "cache_hits": 1,
+          "estimated_cost_usd": 0.0
+        },
+        "document_ranking": [
+          "dd3eb721-7c42-57bf-9777-03324193bc82",
+          "84288cd5-8e54-5797-adfa-93da46fba1e9",
+          "9b1349fc-8060-5eda-8f7c-e11ec4fb50bc",
+          "8f430be8-a969-5023-b286-5dcce4c3d7c5",
+          "abb70a24-fe9f-5b76-9168-9a8bdf806d55",
+          "816e22cd-9bbc-539a-b95c-565c4982d1b5",
+          "2baeb51c-1472-5b8c-b226-8360b78fb5c0",
+          "95137d06-be14-5f77-984c-2c4847436a13",
+          "24d5a402-e4cb-5a5c-a214-78b5cc459f28",
+          "d7e788dd-e1b0-5eda-b9e2-1b8a246e6231"
+        ],
+        "candidate_counts": {
+          "dense": 30,
+          "bm25": 30,
+          "active_dense": 30,
+          "active_bm25": 30
+        },
+        "evidence": [
+          {
+            "evidence_id": "E1",
+            "chunk_id": "2b97e59c-a15f-59c9-bfcd-0990240e82c8",
+            "document_id": "dd3eb721-7c42-57bf-9777-03324193bc82",
+            "revision_id": "2b72a625-f5b9-5d55-b99b-8fa86abc0fb4",
+            "strategy": "a",
+            "text": "Roger Olaf Egeberg, M.D. (13 November 1902 – 13 September 1997 Washington, D.C.) was an American medical educator, administrator and advocate of public health. He was General Douglas MacArthur's personal physician during World War II in the Pacific theater. His other roles included Assistant Secretary for Health and Scientific Affairs in the Department of Health, Education, and Welfare (now the United States Department of Health and Human Services) during the Nixon administration and Dean of the University of Southern California's medical school.",
+            "title": "Roger O. Egeberg",
+            "start": 0,
+            "end": 552,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 159
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 160,
+                "end": 257
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 258,
+                "end": 552
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5ae0d4c9554299603e418468",
+              "url": "https://en.wikipedia.org/wiki/Roger_O._Egeberg",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03278688524590164
+          },
+          {
+            "evidence_id": "E2",
+            "chunk_id": "3f83cb4e-bfef-5adc-a0c2-500d6f2a25f2",
+            "document_id": "84288cd5-8e54-5797-adfa-93da46fba1e9",
+            "revision_id": "4713b17a-5e91-5911-9a40-a4bace903fb7",
+            "strategy": "a",
+            "text": "Nils Daulaire (born 1948) is an American physician and the former Assistant Secretary for Global Affairs at the United States Department of Health and Human Services (HHS). Daulaire has been at HHS since 2010, and became Assistant Secretary in December 2012. He also served as the U.S. Representative on the World Health Organization’s (WHO) Executive Board, a post he was nominated to by President Barack Obama.",
+            "title": "Nils Daulaire",
+            "start": 0,
+            "end": 412,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 172
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 173,
+                "end": 258
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 259,
+                "end": 412
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5adde85b5542997dc79070a2",
+              "url": "https://en.wikipedia.org/wiki/Nils_Daulaire",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03225806451612903
+          },
+          {
+            "evidence_id": "E3",
+            "chunk_id": "7bca3a39-858b-556b-a234-f354f9e61a8a",
+            "document_id": "9b1349fc-8060-5eda-8f7c-e11ec4fb50bc",
+            "revision_id": "4841f8d7-c3d4-597e-8169-ced806ae0e9f",
+            "strategy": "a",
+            "text": "Bradford P. Campbell was the Assistant Secretary for Employee Benefits Security of the United States Department of Labor (DOL), the official in charge of the Employee Benefits Security Administration (EBSA). Mr. Campbell was nominated by President George W. Bush as Assistant Secretary on May 3, 2007, and was unanimously confirmed by the United States Senate on August 3, 2007. He held the position until January 20, 2009. Prior to his confirmation as Assistant Secretary, Mr. Campbell had served as Acting Assistant Secretary since October 30, 2006 and as EBSA's Deputy Assistant Secretary for Policy since March 5, 2004.",
+            "title": "Bradford P. Campbell",
+            "start": 0,
+            "end": 623,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 207
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 208,
+                "end": 378
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 379,
+                "end": 423
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 424,
+                "end": 623
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5adde85b5542997dc79070a2",
+              "url": "https://en.wikipedia.org/wiki/Bradford_P._Campbell",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.028006267136701922
+          },
+          {
+            "evidence_id": "E4",
+            "chunk_id": "d41a9e08-c3cc-574b-b25f-10bd6c5ddec0",
+            "document_id": "8f430be8-a969-5023-b286-5dcce4c3d7c5",
+            "revision_id": "3501c87e-1a05-59d3-9d8c-a3d105b243bc",
+            "strategy": "a",
+            "text": "Hershel Wayne Gober (born December 21, 1936) is a former government official and Vietnam War veteran. He served as acting United States Secretary of Veterans Affairs (VA) on two occasions during the administration of Bill Clinton: first from July 1, 1997, until January 2, 1998, between the resignation of Secretary Jesse Brown and the appointment of Togo D. West, Jr. as acting secretary, and the second time from July 25, 2000, until January 20, 2001, after the resignation of Secretary West; this time Gober served in the post until the end of the Clinton presidency.",
+            "title": "Hershel Gober",
+            "start": 0,
+            "end": 570,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 101
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 102,
+                "end": 570
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5adeb3715542995534e8c6da",
+              "url": "https://en.wikipedia.org/wiki/Hershel_Gober",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.027222222222222224
+          },
+          {
+            "evidence_id": "E5",
+            "chunk_id": "27c010f6-6b34-5e9e-8363-ee0a44ae203f",
+            "document_id": "abb70a24-fe9f-5b76-9168-9a8bdf806d55",
+            "revision_id": "87656687-ccb0-510b-9870-d26f27f28ab8",
+            "strategy": "a",
+            "text": "based on experiences as an Assistant Chaplain at New Jersey Neuro Psychiatric Institute—dealt with patterns of schizophrenic speech. He was awarded a Ph.D. in anthropology from the University of Connecticut in 1981. His dissertation advisors were Seth Leacock, Dennison J. Nash, and Ronald M. Wintrob. Glazier served as book review editor of the journal Anthropology of Consciousness. He was elected for two terms as President of the Society for the Anthropology of Consciousness. In addition, he served as Vice-President and Secretary of the Society for the Anthropology of Religion. SAR and as a Council Member and as Secretary of the Society for the Scientific Study of Religion.",
+            "title": "Stephen D. Glazier",
+            "start": 1013,
+            "end": 1695,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 9,
+                "start": 1006,
+                "end": 1145
+              },
+              {
+                "kind": "sentence",
+                "number": 10,
+                "start": 1146,
+                "end": 1228
+              },
+              {
+                "kind": "sentence",
+                "number": 11,
+                "start": 1229,
+                "end": 1314
+              },
+              {
+                "kind": "sentence",
+                "number": 12,
+                "start": 1315,
+                "end": 1397
+              },
+              {
+                "kind": "sentence",
+                "number": 13,
+                "start": 1398,
+                "end": 1493
+              },
+              {
+                "kind": "sentence",
+                "number": 14,
+                "start": 1494,
+                "end": 1597
+              },
+              {
+                "kind": "sentence",
+                "number": 15,
+                "start": 1598,
+                "end": 1695
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ab747b9554299110f219af2",
+              "url": "https://en.wikipedia.org/wiki/Stephen_D._Glazier",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015873015873015872
+          },
+          {
+            "evidence_id": "E6",
+            "chunk_id": "be94d313-a0c2-53ec-95f4-e6d162b27088",
+            "document_id": "816e22cd-9bbc-539a-b95c-565c4982d1b5",
+            "revision_id": "47250ffe-8dd9-597e-a312-d66bf9e74f9f",
+            "strategy": "a",
+            "text": "Edward C. Rochette (born February 17, 1927) has devoted nearly all of his adult life in service to the American Numismatic Association. His first exposure to the ANA was as an editor of \"The Numismatist\" in 1966. Later, he would spend most of his 20 years as executive vice president. In 1987 he was elected to the ANA Board of Governors, and would serve as its president from 1991 to 1993.",
+            "title": "Edward C. Rochette",
+            "start": 0,
+            "end": 390,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 135
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 136,
+                "end": 212
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 213,
+                "end": 284
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 285,
+                "end": 390
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ac47249554299194317399c",
+              "url": "https://en.wikipedia.org/wiki/Edward_C._Rochette",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015873015873015872
+          },
+          {
+            "evidence_id": "E7",
+            "chunk_id": "dd7c66e6-5615-5167-84ef-c066b986f4ae",
+            "document_id": "2baeb51c-1472-5b8c-b226-8360b78fb5c0",
+            "revision_id": "bb918163-fad2-51e9-ab56-f1ad6d7f66bb",
+            "strategy": "a",
+            "text": "Harvey Curtiss Barnum Jr. (born July 21, 1940) is a former United States Marine Corps officer who received the Medal of Honor for valor during the Vietnam War. He was the fourth Marine to receive the medal for valor in Vietnam. He retired from the Marine Corps in 1989 after more than 27 years of service. Barnum served as Deputy Assistant Secretary of the Navy for Reserve Affairs from July 23, 2001 to January 20, 2009. He also served as Acting Assistant Secretary of the Navy (Manpower and Reserve Affairs) from January 21, 2009 to April 30, 2009.",
+            "title": "Harvey C. Barnum Jr.",
+            "start": 0,
+            "end": 550,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 159
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 160,
+                "end": 227
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 228,
+                "end": 305
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 306,
+                "end": 421
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 422,
+                "end": 550
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a89fdc555429946c8d6ea32",
+              "url": "https://en.wikipedia.org/wiki/Harvey_C._Barnum_Jr.",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015625
+          },
+          {
+            "evidence_id": "E8",
+            "chunk_id": "f322fe08-92f1-5a2d-bb05-67c594c5d607",
+            "document_id": "95137d06-be14-5f77-984c-2c4847436a13",
+            "revision_id": "a619cea8-7f63-5666-926b-ebccae2df8f8",
+            "strategy": "a",
+            "text": "Eric B. Schoomaker (born September 15, 1948) is a former United States Army lieutenant general who served as the 42nd Surgeon General of the United States Army and Commanding General, United States Army Medical Command, and a practicing hematologist. He previously served as Commanding General, North Atlantic Regional Medical Command and Walter Reed Army Medical Center. He assumed the post of U.S. Army Surgeon General on December 11, 2007.",
+            "title": "Eric Schoomaker",
+            "start": 0,
+            "end": 442,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 250
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 251,
+                "end": 371
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 372,
+                "end": 442
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a73d85055429905862fe0e3",
+              "url": "https://en.wikipedia.org/wiki/Eric_Schoomaker",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015625
+          }
+        ],
+        "round": 1,
+        "tool_call_id": "call_A3MiuxvUiNwSpakdU8xHiAM6",
+        "executed": true,
+        "follow_up": null,
+        "requested_query": "Roger O. Egeberg Assistant Secretary for Health and Scientific Affairs president served during what years",
+        "query_adjusted": false
+      },
+      {
+        "query": "Nixon administration years",
+        "strategy": "a",
+        "profile": "1a8846753a25",
+        "embedding_usage": {
+          "model": "text-embedding-3-small",
+          "input_tokens": 4,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 8e-08
+        },
+        "document_ranking": [
+          "0247fa91-b211-5570-a985-7720ae241dd5",
+          "5cd1d31f-92c8-5f09-9001-5ca86fb3d0ae",
+          "4ffecebe-c3b6-5792-a7c7-5a95db043c31",
+          "a32660ca-4199-5c58-9ded-759d1562ebab",
+          "6f974ac8-3dcb-54d1-996e-5233aa9b9cfe",
+          "1f52e728-9edd-5570-8958-749b29384991",
+          "a7b1f4a5-5c1e-587a-bf6f-433ac098fbc0",
+          "994efd47-c94f-5dbe-bcf9-fa279283352d",
+          "9189734c-10f5-551c-825a-cf51b615dcd8",
+          "4942405f-a0de-508a-b287-d7811081ea09"
+        ],
+        "candidate_counts": {
+          "dense": 30,
+          "bm25": 30,
+          "active_dense": 30,
+          "active_bm25": 30
+        },
+        "evidence": [
+          {
+            "evidence_id": "E9",
+            "chunk_id": "128e514e-b3a9-5d50-8844-83b630de6df2",
+            "document_id": "0247fa91-b211-5570-a985-7720ae241dd5",
+            "revision_id": "1a9523a2-84de-53dc-975c-6fdaa7f9fa5e",
+            "strategy": "a",
+            "text": "David Nixon (29 December 1919 – 1 December 1978) was an English magician and television personality. At the height of his career, Nixon was the best-known magician in the UK.",
+            "title": "David Nixon (magician)",
+            "start": 0,
+            "end": 174,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 100
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 101,
+                "end": 174
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ae336ef5542991a06ce995d",
+              "url": "https://en.wikipedia.org/wiki/David_Nixon_%28magician%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03057889822595705
+          },
+          {
+            "evidence_id": "E10",
+            "chunk_id": "9752faad-cb42-568f-8ee8-0604a2c241be",
+            "document_id": "5cd1d31f-92c8-5f09-9001-5ca86fb3d0ae",
+            "revision_id": "2db7970b-2307-5203-b839-d21a96b5aef0",
+            "strategy": "a",
+            "text": "Gerald Rudolph Ford Jr. (born Leslie Lynch King Jr.; July 14, 1913 – December 26, 2006) was an American politician who served as the 38th President of the United States from August 1974 to January 1977, following the resignation of Richard Nixon. Prior to this he served eight months as the 40th Vice President of the United States, following the resignation of Spiro Agnew. He was the first person appointed to the vice presidency under the terms of the 25th Amendment, and consequently the only person to have served as both Vice President and President of the United States without being elected to executive office. Before his appointment to the vice presidency, Ford served 25 years as U.S. Representative from Michigan's 5th congressional district, the final nine of them as the House Minority Leader.",
+            "title": "Gerald Ford",
+            "start": 0,
+            "end": 807,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 246
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 247,
+                "end": 374
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 375,
+                "end": 619
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 620,
+                "end": 807
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a7c994055429935c91b524f",
+              "url": "https://en.wikipedia.org/wiki/Gerald_Ford",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.029236022193768675
+          },
+          {
+            "evidence_id": "E11",
+            "chunk_id": "b9146391-4061-577e-a9c0-5dcf6bb1d79d",
+            "document_id": "4ffecebe-c3b6-5792-a7c7-5a95db043c31",
+            "revision_id": "c758520f-a2cc-51b7-8c0a-cfb84753fc88",
+            "strategy": "a",
+            "text": "David Nixon is an American film director and film producer. He is the director and producer of \"Letters to God\" and a co-producer and assistant director of \"Fireproof\" and \"Facing the Giants\".",
+            "title": "David Nixon (director)",
+            "start": 0,
+            "end": 192,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 59
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 60,
+                "end": 192
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ae336ef5542991a06ce995d",
+              "url": "https://en.wikipedia.org/wiki/David_Nixon_%28director%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.028949545078577336
+          },
+          {
+            "evidence_id": "E12",
+            "chunk_id": "74151fbe-bed3-5360-b3b0-0bb419301edc",
+            "document_id": "a32660ca-4199-5c58-9ded-759d1562ebab",
+            "revision_id": "2e57a8f9-e508-572c-b8b1-32206a83eed6",
+            "strategy": "a",
+            "text": "Richard Milhous Nixon (January 9, 1913 – April 22, 1994) was the 37th President of the United States from 1969 until 1974, when he resigned from office, the only U.S. president to do so. He had previously served as the 36th Vice President of the United States from 1953 to 1961, and prior to that as a U.S. Representative and also Senator from California.",
+            "title": "Richard Nixon",
+            "start": 0,
+            "end": 355,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 186
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 187,
+                "end": 355
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5ae0d4c9554299603e418468",
+              "url": "https://en.wikipedia.org/wiki/Richard_Nixon",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.02844163539403516
+          },
+          {
+            "evidence_id": "E13",
+            "chunk_id": "440a4d53-308f-5afc-9d72-568f6ee0cea2",
+            "document_id": "6f974ac8-3dcb-54d1-996e-5233aa9b9cfe",
+            "revision_id": "5046f1c7-8e0e-5ca0-ac07-b44965c69387",
+            "strategy": "a",
+            "text": "Everette Howard Hunt Jr. (October 9, 1918 – January 23, 2007), better known as E. Howard Hunt, was an American intelligence officer and writer. From 1949 to 1970, Hunt served as an officer in the Central Intelligence Agency (CIA). Along with G. Gordon Liddy and others, Hunt was one of the Nixon administration \"plumbers\", a secret team of operatives charged with fixing \"leaks\" – real or perceived causes of confidential administration information being leaked to outside parties. Hunt and Liddy plotted the Watergate burglaries and other undercover operations for the Nixon administration. In the ensuing Watergate scandal, Hunt was convicted of burglary, conspiracy, and wiretapping, eventually serving 33 months in prison.",
+            "title": "E. Howard Hunt",
+            "start": 0,
+            "end": 726,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 143
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 144,
+                "end": 230
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 231,
+                "end": 481
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 482,
+                "end": 591
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 592,
+                "end": 726
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5adf888d5542995ec70e902d",
+              "url": "https://en.wikipedia.org/wiki/E._Howard_Hunt",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.028021349599695006
+          },
+          {
+            "evidence_id": "E14",
+            "chunk_id": "afaa7e66-61e8-5e16-bdd7-0092acd51e13",
+            "document_id": "1f52e728-9edd-5570-8958-749b29384991",
+            "revision_id": "9e82b6b8-ff1b-5645-9e49-831e60f14979",
+            "strategy": "a",
+            "text": "David Nixon (born March 16, 1985 in College Station, Texas) is a former American football linebacker. He was undrafted in the 2009 NFL Draft to the Oakland Raiders. He played college football at Brigham Young University.",
+            "title": "David Nixon (American football)",
+            "start": 0,
+            "end": 220,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 101
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 102,
+                "end": 164
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 165,
+                "end": 220
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ae336ef5542991a06ce995d",
+              "url": "https://en.wikipedia.org/wiki/David_Nixon_%28American_football%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.02797067901234568
+          },
+          {
+            "evidence_id": "E15",
+            "chunk_id": "f24d0565-7ea5-5edc-8112-549cd2c2c9ff",
+            "document_id": "a7b1f4a5-5c1e-587a-bf6f-433ac098fbc0",
+            "revision_id": "6520c4f4-60ed-5754-9ffb-aad38ff7afd9",
+            "strategy": "a",
+            "text": "Michael Charles Nelson (born June 11, 1949) is an American political scientist, noted for his work on the Presidency, Southern Politics, and elections. Currently, he is the Fulmer Professor of Political Science at Rhodes College, a Senior Fellow at the University of Virginia’s Miller Center, and a Fellow at Southern Methodist University’s Center for Presidential History. Nelson is an award winning writer and editor, winning prestigious awards such as the American Political Science Association (APSA) Richard E. Neustadt Award for the Outstanding book on the Presidency and Executive Politics published during the previous year for his book \"Resilient America: Electing Nixon in 1968, Channeling Dissent, and Dividing Government\" (University Press of Kansas), and the V.O. Key Award for Outstanding Book on Southern Politics for \"How the South Joined the Gambling Nation: The Politics of State Policy Innovation\" (2009).",
+            "title": "Michael Nelson (political scientist)",
+            "start": 0,
+            "end": 924,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 151
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 152,
+                "end": 373
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 374,
+                "end": 924
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a823d4b55429903bc27ba4f",
+              "url": "https://en.wikipedia.org/wiki/Michael_Nelson_%28political_scientist%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.02651914295749912
+          },
+          {
+            "evidence_id": "E16",
+            "chunk_id": "7cfb69ae-7341-5ef9-bc3d-efdac548ce38",
+            "document_id": "994efd47-c94f-5dbe-bcf9-fa279283352d",
+            "revision_id": "e0a5a121-0081-50e1-8069-5335f9cdd615",
+            "strategy": "a",
+            "text": "Louis Patrick \"Pat\" Gray III (July 18, 1916 – July 6, 2005) was Acting Director of the Federal Bureau of Investigation (FBI) from May 2, 1972 to April 27, 1973. During this time, the FBI was in charge of the initial investigation into the burglaries that sparked the Watergate scandal, which eventually led to the resignation of President Nixon. Gray was nominated as permanent Director by Nixon on February 15, 1973, but failed to win Senate confirmation. He resigned as acting FBI director on April 27, 1973, after he admitted to destroying documents received on June 28, 1972, 11 days after the Watergate burglary, that had come from convicted Watergate conspirator E. Howard Hunt's safe, given to him by White House counsel John Dean.",
+            "title": "L. Patrick Gray",
+            "start": 0,
+            "end": 738,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 160
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 161,
+                "end": 345
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 346,
+                "end": 456
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 457,
+                "end": 738
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5adf888d5542995ec70e902d",
+              "url": "https://en.wikipedia.org/wiki/L._Patrick_Gray",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.02474946856969329
+          }
+        ],
+        "round": 2,
+        "tool_call_id": "call_CBzIB2RXpWc1vikXIODFhJds",
+        "executed": true,
+        "follow_up": {
+          "evidence_id": "E1",
+          "entity": "Nixon administration"
+        },
+        "requested_query": "Nixon administration years",
+        "query_adjusted": false
+      }
+    ],
+    "workflow": "bounded_tools_verified_v2",
+    "verification": {
+      "method": "cited_claim_review_v1",
+      "outcome": "passed",
+      "reviewed_claims": 2,
+      "rejected_claims": 0,
+      "comparisons_checked": 0,
+      "reasons": []
+    },
+    "execution": {
+      "planning_rounds": 2,
+      "retrieval_rounds": 2,
+      "tool_calls": 2,
+      "searches": 2,
+      "llm_calls": 4,
+      "embedding_calls": 1,
+      "total_provider_calls": 5,
+      "stop_reason": "retrieval_limit",
+      "limits": {
+        "retrieval_rounds": 2,
+        "searches": 3,
+        "llm_calls": 4,
+        "embedding_calls": 3,
+        "total_provider_calls": 7
+      }
+    },
+    "configuration": {
+      "strategy": "a",
+      "profile": "1a8846753a25",
+      "embedding_model": "text-embedding-3-small",
+      "embedding_dimensions": 384,
+      "generation_model": "gpt-5.4-mini-2026-03-17",
+      "prompt_version": "bounded_tools_verified_v2"
+    },
+    "usage": {
+      "planning": [
+        {
+          "input_tokens": 534,
+          "output_tokens": 41,
+          "estimated_cost_usd": 0.000585,
+          "model": "gpt-5.4-mini-2026-03-17"
+        },
+        {
+          "input_tokens": 1672,
+          "output_tokens": 38,
+          "estimated_cost_usd": 0.001425,
+          "model": "gpt-5.4-mini-2026-03-17"
+        }
+      ],
+      "generation": {
+        "input_tokens": 4323,
+        "output_tokens": 94,
+        "estimated_cost_usd": 0.00366525,
+        "model": "gpt-5.4-mini-2026-03-17"
+      },
+      "verification": {
+        "input_tokens": 1235,
+        "output_tokens": 67,
+        "estimated_cost_usd": 0.00122775,
+        "model": "gpt-5.4-mini-2026-03-17"
+      },
+      "embeddings": [
+        {
+          "model": "text-embedding-3-small",
+          "input_tokens": 0,
+          "api_calls": 0,
+          "cache_hits": 1,
+          "estimated_cost_usd": 0.0
+        },
+        {
+          "model": "text-embedding-3-small",
+          "input_tokens": 4,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 8e-08
+        }
+      ],
+      "estimated_model_cost_usd": 0.006902999999999999,
+      "estimated_total_cost_usd": 0.00690308
+    },
+    "latency_ms": 6181
+  },
+  "passed": true,
+  "elapsed_ms": 6197,
+  "ledger_after": {
+    "calls": 800,
+    "reserved_usd": 2.58935495,
+    "estimated_actual_usd": 0.73647593,
+    "input_tokens": 7567153,
+    "output_tokens": 21005
+  }
+}

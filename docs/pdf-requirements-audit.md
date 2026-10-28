@@ -1,5 +1,10 @@
 # Audit against the assignment PDF — 28 October 2026
 
+**Follow-up:** this dated audit identified semantic support/comparison failures. The subsequent
+[grounding fix](claim-grounding.md) adds a review/rejection stage and development regressions.
+The original evaluation below remains historical; the follow-up does not claim new held-out
+accuracy or complete George's independent checks.
+
 Source: `_Applied AI – AI Investigation Engine Task.docx.pdf`, all eight pages, SHA-256
 `807d37d4e30ff8977d58cacf6279b84b29fde252a836b2843f12407880fc9240`.
 The PDF is treated as the requirements source, not as authority to perform unrelated actions.

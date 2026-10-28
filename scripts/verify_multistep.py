@@ -108,7 +108,7 @@ def main():
             assert result["status"] == case["expected_status"]
             execution = result["execution"]
             assert execution["retrieval_rounds"] <= 2 and execution["tool_calls"] <= 3
-            assert execution["llm_calls"] <= 3 and execution["total_provider_calls"] <= 6
+            assert execution["llm_calls"] <= 4 and execution["total_provider_calls"] <= 7
             checks = verify_citations(client, result)
             if case["category"] == "bridge":
                 required = {e["document_id"] for e in case["evidence"]}

@@ -94,7 +94,7 @@ class CloudCheck:
         return document, document_etag(response)
 
     def question(self, state, phase):
-        call = self.reserve(state, f"question-{phase}", 0.06)
+        call = self.reserve(state, f"question-{phase}", 0.08)
         response = self.probe.request(
             "POST",
             "/api/investigations",
@@ -110,7 +110,11 @@ class CloudCheck:
             result = response.json()
             state[f"question_{phase}"]["result"] = result
             usage = result["usage"]
-            rows = usage["planning"] + [usage["generation"]] + usage["embeddings"]
+            rows = (
+                usage["planning"]
+                + [usage["generation"], usage.get("verification")]
+                + usage["embeddings"]
+            )
             rows = [row for row in rows if row]
             self.ledger.complete(
                 call,

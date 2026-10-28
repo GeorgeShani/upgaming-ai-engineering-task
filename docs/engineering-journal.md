@@ -1594,3 +1594,75 @@ gold/citation review and no-AI code defence remain pending. Dedicated injection 
 streaming, multiple-model comparison and full monitoring are optional and are not represented
 as completed. Historical evaluation-stage status text is identified as historical rather than
 silently rewriting the study. No prompts, labels, retrieval settings or source code changed.
+
+## Follow-up — claim support and comparison rejection, 28 October 2026
+
+**What changed:** `investigations/verification.py` adds a separate typed review of the proposed
+claims against their cited excerpts, question coverage and conflict scope. `service.py` invokes
+it after quote validation, then rechecks active revisions. Unsupported/uncertain claims or missing
+premises withhold the whole draft; malformed reviews remain HTTP 502. Python recomputes numeric
+relations supplied by the reviewer using quote-bound operands and explicit scales. The provider
+records review usage separately. The UI shows review outcome/counts in Run details. Workflow and
+prompt version are now `bounded_tools_verified_v2`, policy `cited_claim_review_v1`.
+
+**Why:** The PDF audit found real wrong-entity citations and reversed comparisons. Exact quote
+matching answers “did this excerpt occur?”, not “does it establish this claim?”. Both checks are
+needed. Withholding the whole draft prevents a true fragment from masquerading as a complete
+bridge/comparison. This changes behavior rather than editing the recorded failures away.
+
+**Alternative:** Prompt-only reminders cost less but have no subsequent rejection boundary.
+A different reviewer model could reduce correlated errors at added configuration/cost; a local
+entailment model needs memory and calibration. A repair loop might recover valid answers but
+introduces more calls/claims. Full natural-language comparison parsing is beyond this small
+change. The added reviewer is bounded to one request, with no automatic repair/retry.
+
+**Mechanism:** For a proposed “Arden is older than Bryn”, quotes give birth years 1986 and 1972.
+The intended relation is `1986 < 1972`; Python rejects it even when a fake reviewer marks it
+supported. Explicit `1.2 billion > 900 million` becomes `1200000000 > 900000000`. The real-model
+reversed-age receipt instead rejected the claim semantically while supplying `gt` for those
+years. The outcome was safe, but the operator interpretation was wrong: arithmetic alone did
+not catch it. `docs/claim-grounding.md` walks through this limit and both rejection paths.
+
+**Verification:** The central unsupported-value regression failed against the original pipeline
+(it returned `answered`) and passed after the change. All **185 backend tests** now pass with
+warnings treated as errors, including malformed reviews, wrong entities/values, missing premises,
+scope errors, scale validation and deletion during review. All **five client tests** and **22
+browser tests** pass; build/type checking, Prettier and Ruff pass. The first browser run had one
+failure: my test's broad Search trace text selector clicked guide text, leaving the disclosure
+closed. Targeting its summary fixed that test; the complete rerun passed. No application failure
+was hidden by weakening an assertion.
+
+Eight paid synthetic development reviews passed expected pass/withhold checks ($0.0071775
+estimated). Four actual development pipeline questions passed: both bridges cite their two
+required sources and use grounded entity follow-ups, the conflict retains same-service/time
+3/5-attempt reports, and the unavailable answer abstains ($0.02470914 estimated; 6.2–14.4 seconds).
+Receipts preserve contexts, verdicts, outputs, timing and usage in `docs/grounding-checks/`.
+The script saves pending attempts before requests and refuses automatic paid reruns. These
+synthetic facts were never uploaded and the corpus/index settings were not changed.
+
+The local ledger moved from 782 calls / $2.47683284 reserved / $0.71511932 estimated actual to
+809 / $2.63349773 / $0.74700596. The $0.03188664 increase is estimated usage, not an invoice;
+public visitors and ephemeral Render ledgers limit account-wide completeness. Four model calls
+and three embedding requests are now the maximum; search remains two rounds/three searches.
+The full-attempt conservative reservation bound rises to $0.062592 at configured rates; cloud
+probes reserve $0.08 and include review tokens. The overall timeout remains 90 seconds.
+
+All 96 frozen evaluation attempts, scores and summaries still reproduce offline. Their code
+fingerprints correctly differ now; the archived outputs/labels were neither modified nor rerun
+as fresh held-out evidence. This development check does not quantify general accuracy gains or
+false abstentions. The current reviewer can still approve errors, reject supported answers, omit
+a comparison or choose an incorrect relation; the same model's errors can correlate.
+
+**My understanding (George):** [ ] Trace one accepted and one withheld draft; [ ] calculate the
+year/scaled-number examples; [ ] explain why literal validity, semantic review and truth differ;
+[ ] inspect the live review's incorrect operator and explain why the result was still withheld.
+These are independent learning tasks, not completed by Codex's checks.
+
+**AI contribution:** Codex diagnosed, drafted and tested the implementation, ran the paid
+development checks and wrote these explanations. George authorized work on main and verification
+before commit/push. No independent understanding, human review or new benchmark score is assumed.
+
+**Resume point:** After the verified main commit is pushed, check the Render release identity
+and one public development answer. Record that result separately, then George can follow the
+walkthrough and add his own understanding entry. A fresh independently reviewed held-out study
+remains a separate next step.

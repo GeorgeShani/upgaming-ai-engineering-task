@@ -1,0 +1,80 @@
+{
+  "state": "complete",
+  "started_at": "2026-10-28T16:43:17.717653+00:00",
+  "ledger_before": {
+    "calls": 784,
+    "reserved_usd": 2.49129434,
+    "estimated_actual_usd": 0.71719307,
+    "input_tokens": 7546261,
+    "output_tokens": 20199
+  },
+  "scope": "synthetic development regression, not held-out evaluation",
+  "model": "gpt-5.4-mini-2026-03-17",
+  "context": {
+    "question": "What is Luma's population?",
+    "status": "answered",
+    "claims": [
+      {
+        "claim_index": 0,
+        "text": "Luma has 82 million residents.",
+        "citations": [
+          {
+            "evidence_id": "E1",
+            "quote": "Luma has 14 million residents. Neris has 82 million residents."
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "evidence_id": "E1",
+        "title": "Fictional source 1",
+        "text": "Luma has 14 million residents. Neris has 82 million residents."
+      }
+    ]
+  },
+  "expected_pass": false,
+  "review": {
+    "claims": [
+      {
+        "claim_index": 0,
+        "verdict": "unsupported",
+        "reason": "wrong_entity",
+        "comparison": null
+      }
+    ],
+    "answers_question": false,
+    "conflict_supported": false
+  },
+  "verification": {
+    "method": "cited_claim_review_v1",
+    "outcome": "withheld",
+    "reviewed_claims": 1,
+    "rejected_claims": 1,
+    "comparisons_checked": 0,
+    "reasons": [
+      "missing_premise",
+      "wrong_entity"
+    ]
+  },
+  "safe_result": {
+    "status": "insufficient_evidence",
+    "claims": [],
+    "conflicting_claims": []
+  },
+  "usage": {
+    "input_tokens": 825,
+    "output_tokens": 44,
+    "estimated_cost_usd": 0.00081675,
+    "model": "gpt-5.4-mini-2026-03-17"
+  },
+  "passed": true,
+  "elapsed_ms": 1243,
+  "ledger_after": {
+    "calls": 785,
+    "reserved_usd": 2.49848159,
+    "estimated_actual_usd": 0.71800982,
+    "input_tokens": 7547086,
+    "output_tokens": 20243
+  }
+}

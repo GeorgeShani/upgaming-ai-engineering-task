@@ -1,5 +1,10 @@
 # Slice 6: follow evidence through a bounded investigation
 
+**Current workflow update (28 October 2026):** the original slice's observed runs below used
+three language-model calls. The current `bounded_tools_verified_v2` adds one bounded claim
+review after drafting. [Grounding walkthrough](claim-grounding.md) explains the new behavior,
+development-only evidence and limitations. The earlier run receipts remain historical.
+
 The API runs real model-requested searches. Work stays on `main`. The
 [slice-7 React workflows](react-workflows.md) now expose these searches and citations through
 the website; `/docs` remains available. The full corpus import has completed: a read-only exact
@@ -16,8 +21,10 @@ flowchart TD
     P2 --> V2[Python checks grounding and remaining budget]
     V2 --> S[Hybrid retrieval and bounded evidence selection]
     S --> A[LLM returns claims and quote IDs]
-    A --> C[Python resolves exact quotes and rechecks active revisions]
-    C --> R[Answer, conflict, insufficient evidence, or explicit error]
+    A --> C[Python resolves exact quotes]
+    C --> G[Separate cited-claim review and numeric arithmetic checks]
+    G --> M[Python rechecks active revisions]
+    M --> R[Answer, conflict, insufficient evidence, or explicit error]
 ```
 
 The LLM proposes **arguments**, not executable Python. Only the registered `search_documents`
@@ -83,11 +90,11 @@ Inspect these fields:
 | Field | What to verify |
 | --- | --- |
 | `workflow` | `bounded_tools_v1` |
-| `execution` | At most two retrieval rounds, three tool requests/searches, three LLM calls |
+| `execution` | At most two retrieval rounds, three tool requests/searches, four LLM calls |
 | `search_trace` | Query, round, call ID, executed/reused flag, grounded follow-up, retrieved evidence |
 | `evidence` | At most eight chunks and two per document, with stable IDs and canonical offsets |
 | `claims[].citations` | Actual source quotes with evidence IDs; verify their meaning yourself |
-| `usage` | Separate planning, generation, and query embedding costs; cached embeddings cost zero |
+| `usage` | Separate planning, generation, support review, and query embedding costs; cached embeddings cost zero |
 | `configuration` | Actual model names, dimensions, strategy, index profile and prompt version |
 
 The trace contains searches and evidence, not private reasoning. Raw tool protocol is replayed
@@ -181,10 +188,10 @@ Intermediate development failures are described honestly in the journal; these a
 evaluation results or evidence of universal citation accuracy.
 
 Limits are enforced in Python: two rounds / three searches, eight final chunks / two per document,
-600 output tokens per planning request, 1,200 for synthesis, 8,000 estimated input-context tokens,
+600 output tokens per planning request, 1,200 each for synthesis and support review, 8,000 estimated input-context tokens,
 12,000 estimated request-payload tokens including schema, and 90 seconds overall. Token guards
 use `cl100k_base` estimates; returned provider usage supplies the recorded billing estimate.
-At most three LLM requests and three query-embedding requests are possible; cached/reused searches
+At most four LLM requests and three query-embedding requests are possible; cached/reused searches
 reduce actual provider calls. The local $4.50 reservation guard remains separate from provider
 account billing and can reset if Render discards its temporary disk.
 

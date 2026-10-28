@@ -1,0 +1,87 @@
+{
+  "checked_at": "2026-10-28T16:50:18.102137+00:00",
+  "scope": "development regression and implementation checks; not a new held-out evaluation",
+  "workflow": "bounded_tools_verified_v2",
+  "support_policy": "cited_claim_review_v1",
+  "automated": {
+    "backend": {
+      "command": "uv run pytest -q -W error",
+      "passed": 185
+    },
+    "client_unit": {
+      "command": "npm run test:unit",
+      "passed": 5
+    },
+    "browser": {
+      "command": "npm run test:browser",
+      "passed": 22,
+      "failed": 0,
+      "note": "First run: 21 passed/1 failed due to broad text selector; specific summary selector fixed; full rerun 22 passed."
+    },
+    "build_and_typecheck": "passed",
+    "prettier": "passed",
+    "ruff_check_and_format": "passed",
+    "known_credential_scan": "passed"
+  },
+  "development_checks": {
+    "synthetic_reviews": 8,
+    "pipeline": 4,
+    "passed": 12,
+    "review_estimated_cost_usd": 0.0071775,
+    "pipeline_estimated_cost_usd": 0.02470914,
+    "raw_receipts": {
+      "correct-age": "8583d1fff9cc3d7df39cc344bb1bcbdd9eb73dd799cf4e9086e5be897c53df95",
+      "development-bridge-01": "684343e0807d21db88247473b7d0bad48dac273b83155f9e14633ebb8ced8535",
+      "development-bridge-02": "b7da7818db32735a76b63c01521283bbf04ab11cf399d184a96edafa6b801a66",
+      "development-conflict-01": "120eb4b765a70d4b860f03ae92e5c9759b43e74ba3dab584ac043a1660ac5bda",
+      "development-unanswerable-01": "760abed85f2312dba031eca11adf1428deedc1b699b7cfcbff09a4210a3293bc",
+      "missing-premise": "f4b65137e0918c3902d1e42cf0f7e405bc1b53ca1f56b6380e0c13b221152139",
+      "nationality-scope": "b9b0c5cd76c8e6aa68844855f78b1d20b85b0919d3ea2e441b4c9425965abc0c",
+      "reversed-age": "d53c51c784344e2bb93b409af211900907ce9fafbff47e783a01b42c1beea465",
+      "scaled-populations": "71d3e76e053802346b47854b5ec26168605da640c058be1f3c542355d7916dc3",
+      "supported-location": "b546d6ddbebfc8f67177d03c0287cbb902dfdb3bcf8f011adaa1b1b847b64eb8",
+      "wrong-band": "0273cff85bc509a65bcf46ca0f8cca944710abfbf7bb6bf3a5b69a30b3eb3c95",
+      "wrong-entity": "ab3b41d50672b8066ca890324416602acbcdcb07a3ab1f975ac5c1135e8f7e7d"
+    }
+  },
+  "ledger_before": {
+    "calls": 782,
+    "reserved_usd": 2.47683284,
+    "estimated_actual_usd": 0.71511932,
+    "input_tokens": 7544522,
+    "output_tokens": 20028
+  },
+  "ledger_after": {
+    "calls": 809,
+    "reserved_usd": 2.63349773,
+    "estimated_actual_usd": 0.74700596,
+    "input_tokens": 7578345,
+    "output_tokens": 21486
+  },
+  "archived_evaluation": {
+    "identity": "9b288d4bdc562919d1a7e1a78271d590453a5fd7c27f4c218bd391b948f0d07f",
+    "attempts": 96,
+    "scores_and_summaries_reproduced": true,
+    "source_fingerprints_match": false,
+    "note": "Runtime changes are real; archived results remain baseline for old workflow. No final question rerun."
+  },
+  "source_sha256_lf_normalized": {
+    "backend/app/investigations/verification.py": "c66353224dbade4ed5736a17248079037c25b6d3bf914ef734a58d4c259ce84e",
+    "backend/app/investigations/service.py": "0f47e36ed1b291d49f6b1196d3d5881926afc64e5b42e7a732eb0e7b5cb24e59",
+    "backend/app/providers.py": "f7c6fb4dc54a267bdd6ae16505557a432d82e1483b9bf13299af59059b590f12",
+    "backend/app/evaluation/runner.py": "e40f4dd367524f004a4f399f769fd5e5d542f4bba9f5b54370c33ae232de61b5",
+    "frontend/src/components/SearchTrace.tsx": "22d7153f401cefd7cfe427adbf85aef3a746b723763bb39df8cbbaa424caef78",
+    "frontend/src/types.ts": "fee615046d0027fd2d776874822717fe922efa7922679c857810f91fde908ae8",
+    "scripts/verify_claim_grounding.py": "cca79367e64d19f8a44af4da1e8d964440e153ce70c25cae466625c56382c281"
+  },
+  "deployment": {
+    "status": "pending push and Render release verification",
+    "previous_revision": "a4789c447eed137f96f23659947b2f994d434ea4"
+  },
+  "limitations": [
+    "Same-model review can approve unsupported claims or reject supported claims.",
+    "Python checks supplied arithmetic, not the meaning of English claims or omitted comparisons.",
+    "Development checks are selected regressions, not a held-out accuracy measurement.",
+    "George independent review and rehearsal remain pending."
+  ]
+}

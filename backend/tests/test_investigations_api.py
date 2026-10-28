@@ -29,8 +29,10 @@ def test_question_to_hybrid_search_to_validated_cited_answer(indexed_api):
     assert len(data["search_trace"]) == 2 and len(storage.queries) == 4
     assert data["configuration"]["strategy"] == "b"
     assert data["usage"]["generation"]["input_tokens"] == 200
-    assert data["workflow"] == "bounded_tools_v1"
-    assert data["execution"]["searches"] == 2 and data["execution"]["llm_calls"] == 3
+    assert data["workflow"] == "bounded_tools_verified_v2"
+    assert data["execution"]["searches"] == 2 and data["execution"]["llm_calls"] == 4
+    assert data["verification"]["outcome"] == "passed"
+    assert data["usage"]["verification"]["input_tokens"] == 90
     assert len(data["usage"]["planning"]) == 2
     planner = storage.response_calls[0]
     assert planner["tools"][0]["name"] == "search_documents"
@@ -38,11 +40,38 @@ def test_question_to_hybrid_search_to_validated_cited_answer(indexed_api):
     replay = storage.response_calls[1]["input"]
     assert replay[-1]["type"] == "function_call_output"
     assert replay[-1]["call_id"] == "initial"
-    sent = storage.response_calls[-1]
+    sent = storage.response_calls[-2]
     assert sent["store"] is False and sent["max_output_tokens"] == 1200
     assert sent["text"]["format"]["strict"] is True
     assert len(json.loads(sent["input"])["evidence"]) == 1
     assert "tools" not in sent  # Final synthesis cannot start another retrieval round.
+    review = storage.response_calls[-1]
+    assert review["text"]["format"]["name"] == "claim_support_review"
+    assert review["text"]["format"]["strict"] is True
+    assert review["store"] is False and review["max_output_tokens"] == 1200
+    assert "tools" not in review
+
+
+def test_semantic_rejection_is_an_abstention_with_no_claims(indexed_api):
+    client, storage, _ = indexed_api
+    upload(client)
+    storage.response_mode = "unsupported_claim"
+    result = ask(client)
+    assert result.status_code == 200
+    assert result.json()["status"] == "insufficient_evidence"
+    assert result.json()["claims"] == []
+    assert result.json()["verification"]["outcome"] == "withheld"
+
+
+@pytest.mark.parametrize("mode", ["bad_review", "review_provider_error"])
+def test_review_protocol_or_provider_failure_is_not_missing_evidence(indexed_api, mode):
+    client, storage, _ = indexed_api
+    upload(client)
+    storage.response_mode = mode
+    result = ask(client)
+    assert result.status_code == 502
+    assert "answer" not in result.json() and "private-review" not in result.text
+    assert len(storage.response_calls) == 4
 
 
 @pytest.mark.parametrize("mode", ["provider_error", "bad_quote"])
@@ -111,6 +140,23 @@ def test_replacement_during_generation_invalidates_answer(indexed_api):
         return value
 
     app.state.provider.generate = generate_then_delete
+    result = ask(client)
+    assert result.status_code == 409 and "answer" not in result.json()
+
+
+def test_deletion_during_support_review_invalidates_answer(indexed_api):
+    client, _, app = indexed_api
+    created = upload(client)
+    original_verify = app.state.provider.verify
+
+    async def verify_then_delete(*args):
+        value = await original_verify(*args)
+        await app.state.document_service.delete(
+            created.json()["document"]["document_id"], created.headers["etag"]
+        )
+        return value
+
+    app.state.provider.verify = verify_then_delete
     result = ask(client)
     assert result.status_code == 409 and "answer" not in result.json()
 

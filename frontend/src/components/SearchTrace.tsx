@@ -91,6 +91,17 @@ export function SearchTrace({
               {result.execution.stop_reason.replaceAll('_', ' ')}
             </dd>
           </div>
+          {result.verification && (
+            <div className="metadata-row">
+              <dt>Evidence review</dt>
+              <dd>
+                {result.verification.outcome === 'not_needed'
+                  ? 'No claims to review'
+                  : `${result.verification.outcome === 'passed' ? 'Passed' : 'Answer withheld'} · ${result.verification.reviewed_claims} claims reviewed · ${result.verification.comparisons_checked} numeric comparisons checked`}
+                <p className="muted small">Model review can miss errors. Inspect the citations.</p>
+              </dd>
+            </div>
+          )}
         </dl>
       </details>
     </details>

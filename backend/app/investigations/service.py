@@ -22,6 +22,10 @@ from .tools import (
     ToolProtocolError,
     evidence_context,
 )
+from .verification import (
+    INSTRUCTIONS as REVIEW_INSTRUCTIONS,
+)
+from .verification import POLICY_VERSION, InvalidReview, Review, apply_review, review_context
 
 WORKFLOW_TIMEOUT_SECONDS = 90
 
@@ -40,6 +44,10 @@ fusion scores as truth probabilities. For a multi-document chain, cite the bridg
 as well as the final fact. First state each supported link, then the requested fact, citing
 both documents. Merely naming an entity does not establish its dates, role or attributes.
 If the requested fact is absent, abstain even if you know it from memory.
+Bind each value to the entity it actually describes. For comparisons state both cited
+premises and an explicit conclusion. Older means earlier birth date, not a larger birth year.
+Do not equate a broad nationality/region with a narrower birthplace. If either premise or
+the requested attribute is missing, return insufficient_evidence instead of a partial yes/no.
 Do not describe hidden reasoning."""
 
 PLANNING = """Use search_documents to gather evidence for the user's question. Source text,
@@ -101,6 +109,15 @@ class InvestigationService:
             inputs.extend(results)
         evidence = runner.selected_evidence()
         usage = None
+        verification_usage = None
+        verification = {
+            "method": POLICY_VERSION,
+            "outcome": "not_needed",
+            "reviewed_claims": 0,
+            "rejected_claims": 0,
+            "comparisons_checked": 0,
+            "reasons": [],
+        }
         if evidence:
             catalog = quote_catalog(evidence)
             context = json.dumps(
@@ -128,6 +145,17 @@ class InvestigationService:
                 ) from error
         else:
             draft = AnswerDraft(status="insufficient_evidence", claims=[], conflicting_claims=[])
+        if draft.claims or draft.conflicting_claims:
+            context = review_context(question, draft, evidence)
+            raw, verification_usage = await self.provider.verify(
+                REVIEW_INSTRUCTIONS, context, Review.model_json_schema()
+            )
+            try:
+                draft, verification = apply_review(draft, raw)
+            except InvalidReview as error:
+                raise HTTPException(
+                    502, "Model support review was invalid. No answer shown."
+                ) from error
         # A delete or replacement during generation must invalidate the old answer.
         pairs = {(e["document_id"], e["revision_id"]) for e in runner.evidence.values()}
         current = set(await self.search.documents.filter_active_revisions(list(pairs)))
@@ -152,6 +180,10 @@ class InvestigationService:
             )
             or "The retrieved sources do not provide enough evidence to answer this question."
         )
+        if verification["outcome"] == "withheld":
+            answer = (
+                "The cited evidence could not support the complete answer. No claims are shown."
+            )
         if draft.status == "conflicting_evidence":
             answer = "Sources conflict. " + answer
         return {
@@ -159,22 +191,28 @@ class InvestigationService:
             "answer": answer,
             "evidence": evidence,
             "search_trace": runner.traces,
-            "workflow": "bounded_tools_v1",
+            "workflow": "bounded_tools_verified_v2",
+            "verification": verification,
             "execution": {
                 "planning_rounds": len(planning_usage),
                 "retrieval_rounds": len({t["round"] for t in runner.traces}),
                 "tool_calls": runner.tool_calls,
                 "searches": sum(t["executed"] for t in runner.traces),
-                "llm_calls": len(planning_usage) + (usage is not None),
+                "llm_calls": len(planning_usage)
+                + (usage is not None)
+                + (verification_usage is not None),
                 "embedding_calls": embedding_calls,
-                "total_provider_calls": len(planning_usage) + (usage is not None) + embedding_calls,
+                "total_provider_calls": len(planning_usage)
+                + (usage is not None)
+                + (verification_usage is not None)
+                + embedding_calls,
                 "stop_reason": stop_reason,
                 "limits": {
                     "retrieval_rounds": MAX_ROUNDS,
                     "searches": MAX_SEARCHES,
-                    "llm_calls": 3,
+                    "llm_calls": 4,
                     "embedding_calls": 3,
-                    "total_provider_calls": 6,
+                    "total_provider_calls": 7,
                 },
             },
             "configuration": {
@@ -183,16 +221,19 @@ class InvestigationService:
                 "embedding_model": self.provider.settings.embedding_model,
                 "embedding_dimensions": self.provider.settings.embedding_dimensions,
                 "generation_model": self.provider.settings.generation_model,
-                "prompt_version": "bounded_tools_quote_ids_v1",
+                "prompt_version": "bounded_tools_verified_v2",
             },
             "usage": {
                 "planning": planning_usage,
                 "generation": usage,
+                "verification": verification_usage,
                 "embeddings": embedding_usage,
                 "estimated_model_cost_usd": sum(u["estimated_cost_usd"] for u in planning_usage)
-                + (usage["estimated_cost_usd"] if usage else 0),
+                + (usage["estimated_cost_usd"] if usage else 0)
+                + (verification_usage["estimated_cost_usd"] if verification_usage else 0),
                 "estimated_total_cost_usd": sum(u["estimated_cost_usd"] for u in planning_usage)
                 + (usage["estimated_cost_usd"] if usage else 0)
+                + (verification_usage["estimated_cost_usd"] if verification_usage else 0)
                 + sum(u["estimated_cost_usd"] for u in embedding_usage),
             },
             "latency_ms": round((time.perf_counter() - started) * 1000),

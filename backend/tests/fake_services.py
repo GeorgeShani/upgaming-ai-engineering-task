@@ -70,6 +70,41 @@ def fake_services():
                         },
                     )
                 context = json.loads(body["input"])
+                if body["text"]["format"]["name"] == "claim_support_review":
+                    review = {
+                        "claims": [
+                            {
+                                "claim_index": c["claim_index"],
+                                "verdict": "supported",
+                                "reason": "supported",
+                                "comparison": None,
+                            }
+                            for c in context["claims"]
+                        ],
+                        "answers_question": True,
+                        "conflict_supported": True,
+                    }
+                    if storage.response_mode == "unsupported_claim":
+                        review["claims"][0].update(verdict="unsupported", reason="wrong_entity")
+                    if storage.response_mode == "bad_review":
+                        review["claims"] = []
+                    if storage.response_mode == "review_provider_error":
+                        return httpx.Response(500, text="private-review-provider-details")
+                    return httpx.Response(
+                        200,
+                        json={
+                            "status": "completed",
+                            "output": [
+                                {
+                                    "type": "message",
+                                    "content": [
+                                        {"type": "output_text", "text": json.dumps(review)}
+                                    ],
+                                }
+                            ],
+                            "usage": {"input_tokens": 90, "output_tokens": 30},
+                        },
+                    )
                 first = context["evidence"][0]
                 claim = {
                     "text": first["text"][:400],

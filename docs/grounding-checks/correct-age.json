@@ -1,0 +1,112 @@
+{
+  "state": "complete",
+  "started_at": "2026-10-28T16:43:15.423694+00:00",
+  "ledger_before": {
+    "calls": 783,
+    "reserved_usd": 2.48406359,
+    "estimated_actual_usd": 0.71615882,
+    "input_tokens": 7545392,
+    "output_tokens": 20114
+  },
+  "scope": "synthetic development regression, not held-out evaluation",
+  "model": "gpt-5.4-mini-2026-03-17",
+  "context": {
+    "question": "Who is older, Arden or Bryn?",
+    "status": "answered",
+    "claims": [
+      {
+        "claim_index": 0,
+        "text": "Bryn is older than Arden.",
+        "citations": [
+          {
+            "evidence_id": "E1",
+            "quote": "Arden was born in 1986."
+          },
+          {
+            "evidence_id": "E2",
+            "quote": "Bryn was born in 1972."
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "evidence_id": "E1",
+        "title": "Fictional source 1",
+        "text": "Arden was born in 1986."
+      },
+      {
+        "evidence_id": "E2",
+        "title": "Fictional source 2",
+        "text": "Bryn was born in 1972."
+      }
+    ]
+  },
+  "expected_pass": true,
+  "review": {
+    "claims": [
+      {
+        "claim_index": 0,
+        "verdict": "supported",
+        "reason": "supported",
+        "comparison": {
+          "left": {
+            "citation_index": 1,
+            "literal": "1972",
+            "scale": "one"
+          },
+          "operator": "lt",
+          "right": {
+            "citation_index": 0,
+            "literal": "1986",
+            "scale": "one"
+          }
+        }
+      }
+    ],
+    "answers_question": true,
+    "conflict_supported": false
+  },
+  "verification": {
+    "method": "cited_claim_review_v1",
+    "outcome": "passed",
+    "reviewed_claims": 1,
+    "rejected_claims": 0,
+    "comparisons_checked": 1,
+    "reasons": []
+  },
+  "safe_result": {
+    "status": "answered",
+    "claims": [
+      {
+        "text": "Bryn is older than Arden.",
+        "citations": [
+          {
+            "evidence_id": "E1",
+            "quote": "Arden was born in 1986."
+          },
+          {
+            "evidence_id": "E2",
+            "quote": "Bryn was born in 1972."
+          }
+        ]
+      }
+    ],
+    "conflicting_claims": []
+  },
+  "usage": {
+    "input_tokens": 869,
+    "output_tokens": 85,
+    "estimated_cost_usd": 0.00103425,
+    "model": "gpt-5.4-mini-2026-03-17"
+  },
+  "passed": true,
+  "elapsed_ms": 2280,
+  "ledger_after": {
+    "calls": 784,
+    "reserved_usd": 2.49129434,
+    "estimated_actual_usd": 0.71719307,
+    "input_tokens": 7546261,
+    "output_tokens": 20199
+  }
+}

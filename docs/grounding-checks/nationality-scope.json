@@ -1,0 +1,80 @@
+{
+  "state": "complete",
+  "started_at": "2026-10-28T16:43:21.977223+00:00",
+  "ledger_before": {
+    "calls": 787,
+    "reserved_usd": 2.51284034,
+    "estimated_actual_usd": 0.71965607,
+    "input_tokens": 7548717,
+    "output_tokens": 20337
+  },
+  "scope": "synthetic development regression, not held-out evaluation",
+  "model": "gpt-5.4-mini-2026-03-17",
+  "context": {
+    "question": "Is Arden English?",
+    "status": "answered",
+    "claims": [
+      {
+        "claim_index": 0,
+        "text": "Arden is English.",
+        "citations": [
+          {
+            "evidence_id": "E1",
+            "quote": "Arden is a British author."
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "evidence_id": "E1",
+        "title": "Fictional source 1",
+        "text": "Arden is a British author."
+      }
+    ]
+  },
+  "expected_pass": false,
+  "review": {
+    "claims": [
+      {
+        "claim_index": 0,
+        "verdict": "unsupported",
+        "reason": "unsupported_relation",
+        "comparison": null
+      }
+    ],
+    "answers_question": false,
+    "conflict_supported": false
+  },
+  "verification": {
+    "method": "cited_claim_review_v1",
+    "outcome": "withheld",
+    "reviewed_claims": 1,
+    "rejected_claims": 1,
+    "comparisons_checked": 0,
+    "reasons": [
+      "missing_premise",
+      "unsupported_relation"
+    ]
+  },
+  "safe_result": {
+    "status": "insufficient_evidence",
+    "claims": [],
+    "conflicting_claims": []
+  },
+  "usage": {
+    "input_tokens": 801,
+    "output_tokens": 44,
+    "estimated_cost_usd": 0.00079875,
+    "model": "gpt-5.4-mini-2026-03-17"
+  },
+  "passed": true,
+  "elapsed_ms": 1827,
+  "ledger_after": {
+    "calls": 788,
+    "reserved_usd": 2.52000734,
+    "estimated_actual_usd": 0.72045482,
+    "input_tokens": 7549518,
+    "output_tokens": 20381
+  }
+}

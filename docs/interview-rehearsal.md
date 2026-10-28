@@ -97,6 +97,13 @@ not made the exercise change for you. Do not push an unreviewed practice edit to
 
 ## Record actual understanding
 
+For the follow-up grounding fix, read `docs/claim-grounding.md` and
+`backend/app/investigations/verification.py`. Explain why a literal quote can support the wrong
+entity, why withholding the whole draft avoids an incomplete comparison, and why a correct
+numeric calculation does not prove that the reviewer chose the right operator for the English
+claim. Trace the fourth model call and its separate usage row. Compare `reversed-age.json`
+with the unit test that supplies a false `lt` relation; they reject through different checks.
+
 Append your own dated journal entry with:
 
 - Your explanation of one request and one failure, in your own words.

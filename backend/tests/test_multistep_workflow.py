@@ -68,6 +68,22 @@ class Provider:
             "estimated_cost_usd": 0.001,
         }
 
+    async def verify(self, instructions, context, schema):
+        report = json.loads(context)
+        return {
+            "claims": [
+                {
+                    "claim_index": c["claim_index"],
+                    "verdict": "supported",
+                    "reason": "supported",
+                    "comparison": None,
+                }
+                for c in report["claims"]
+            ],
+            "answers_question": True,
+            "conflict_supported": True,
+        }, {"input_tokens": 50, "output_tokens": 20, "estimated_cost_usd": 0.0002}
+
 
 def test_second_search_is_derived_from_first_result_and_answer_cites_both_sources():
     search, provider = Search(), Provider()
@@ -80,12 +96,12 @@ def test_second_search_is_derived_from_first_result_and_answer_cites_both_source
     assert result["status"] == "answered"
     assert "North Atlantic Conference" in result["answer"]
     assert [t["round"] for t in result["search_trace"]] == [1, 2]
-    assert result["execution"]["searches"] == 2 and result["execution"]["llm_calls"] == 3
+    assert result["execution"]["searches"] == 2 and result["execution"]["llm_calls"] == 4
     assert {c["evidence_id"] for claim in result["claims"] for c in claim["citations"]} == {
         "E1",
         "E2",
     }
-    assert result["usage"]["estimated_model_cost_usd"] == pytest.approx(0.0012)
+    assert result["usage"]["estimated_model_cost_usd"] == pytest.approx(0.0014)
     assert len(provider.planning) == 2
 
 
@@ -149,3 +165,36 @@ def test_timeout_is_explicit_and_does_not_claim_missing_evidence(monkeypatch):
     with pytest.raises(HTTPException) as error:
         asyncio.run(engine.bounded_investigate("question", "a"))
     assert error.value.status_code == 504
+
+
+def test_literal_quote_does_not_allow_an_unsupported_claim_to_reach_the_user():
+    search, provider = Search(), Provider()
+    search.documents, search.index = Documents(), SimpleNamespace(profile="fixture")
+    original = provider.generate
+
+    async def unsupported(*args):
+        draft, usage = await original(*args)
+        draft["claims"][0]["text"] = "America East Conference was founded in 1801."
+        return draft, usage
+
+    async def verify(*args):
+        return {
+            "claims": [
+                {
+                    "claim_index": i,
+                    "verdict": "unsupported" if i == 0 else "supported",
+                    "reason": "unsupported_value" if i == 0 else "supported",
+                    "comparison": None,
+                }
+                for i in range(2)
+            ],
+            "answers_question": False,
+            "conflict_supported": False,
+        }, {"input_tokens": 50, "output_tokens": 20, "estimated_cost_usd": 0.0002}
+
+    provider.generate, provider.verify = unsupported, verify
+    result = asyncio.run(InvestigationService(search, provider).investigate("Question?", "a"))
+    assert result["status"] == "insufficient_evidence"
+    assert result["claims"] == []
+    assert "1801" not in result["answer"]
+    assert result["verification"]["outcome"] == "withheld"
