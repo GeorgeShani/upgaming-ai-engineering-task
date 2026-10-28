@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { api, errorMessage, validateFile } from '../api.ts';
 import type { DocumentPage, DocumentSummary, SourceTarget } from '../types.ts';
+import { Icon } from './Icon.tsx';
 
 type Props = {
   token: string;
@@ -85,8 +86,9 @@ export function Documents({ token, setToken, corpusVersion, onChanged, onOpen, r
     <section aria-labelledby="documents-title" className="workspace-section">
       <div className="section-heading">
         <div>
-          <p className="eyebrow">SOURCE LIBRARY</p>
-          <h2 id="documents-title">Documents</h2>
+          <h2 id="documents-title" tabIndex={-1}>
+            Documents
+          </h2>
         </div>
         <button
           type="button"
@@ -100,74 +102,76 @@ export function Documents({ token, setToken, corpusVersion, onChanged, onOpen, r
       <p className="muted">
         Inspect the extracted text, add a source, or manage its current revision.
       </p>
-      <details className="access-box">
-        <summary>
-          Manage access{' '}
-          <span className="muted">
-            {token ? '· Token entered' : '· Read-only until a token is entered'}
-          </span>
-        </summary>
-        <div className="access-controls">
-          <label htmlFor="admin-token">Demo admin token</label>
+      <div className="document-tools">
+        <details className="access-box">
+          <summary>
+            Manage access{' '}
+            <span className="muted">
+              {token ? '· Token entered' : '· Read-only until a token is entered'}
+            </span>
+          </summary>
+          <div className="access-controls">
+            <label htmlFor="admin-token">Demo admin token</label>
+            <div className="input-action">
+              <input
+                id="admin-token"
+                type="password"
+                autoComplete="off"
+                spellCheck={false}
+                value={token}
+                onChange={(event) => setToken(event.target.value)}
+                aria-describedby="token-help"
+              />
+              <button
+                type="button"
+                className="secondary"
+                disabled={!token || uploading}
+                onClick={() => setToken('')}
+              >
+                Clear token
+              </button>
+            </div>
+            <p id="token-help" className="muted small">
+              Kept in memory for this page only. The server validates it on every write. Reading and
+              asking questions need no token.
+            </p>
+          </div>
+        </details>
+        <form ref={uploadForm} onSubmit={upload} className="upload-form" aria-busy={uploading}>
+          <label htmlFor="upload-file">Add a document</label>
           <div className="input-action">
             <input
-              id="admin-token"
-              type="password"
-              autoComplete="off"
-              spellCheck={false}
-              value={token}
-              onChange={(event) => setToken(event.target.value)}
-              aria-describedby="token-help"
+              id="upload-file"
+              type="file"
+              accept=".pdf,.docx,.txt"
+              disabled={uploading}
+              aria-describedby="upload-help"
+              onChange={(event) => {
+                const chosen = event.target.files?.[0] ?? null;
+                setFile(chosen);
+                setUploadError(chosen ? validateFile(chosen) : '');
+              }}
             />
-            <button
-              type="button"
-              className="secondary"
-              disabled={!token || uploading}
-              onClick={() => setToken('')}
-            >
-              Clear token
+            <button type="submit" disabled={uploading || !token.trim() || !file}>
+              {uploading ? 'Uploading and indexing…' : 'Upload document'}
             </button>
           </div>
-          <p id="token-help" className="muted small">
-            Kept in memory for this page only. The server validates it on every write. Reading and
-            asking questions need no token.
+          <p id="upload-help" className="muted small">
+            PDF, DOCX, or UTF-8 TXT · up to 5 MB · exact duplicates reuse the stored source. Use
+            fictional or public documents in this shared demo.
           </p>
-        </div>
-      </details>
-      <form ref={uploadForm} onSubmit={upload} className="upload-form" aria-busy={uploading}>
-        <label htmlFor="upload-file">Add a document</label>
-        <div className="input-action">
-          <input
-            id="upload-file"
-            type="file"
-            accept=".pdf,.docx,.txt"
-            disabled={uploading}
-            aria-describedby="upload-help"
-            onChange={(event) => {
-              const chosen = event.target.files?.[0] ?? null;
-              setFile(chosen);
-              setUploadError(chosen ? validateFile(chosen) : '');
-            }}
-          />
-          <button type="submit" disabled={uploading || !token.trim() || !file}>
-            {uploading ? 'Uploading and indexing…' : 'Upload document'}
-          </button>
-        </div>
-        <p id="upload-help" className="muted small">
-          PDF, DOCX, or UTF-8 TXT · up to 5 MB · exact duplicates reuse the stored source. Use
-          fictional or public documents in this shared demo.
-        </p>
-        {!token && (
-          <p className="muted small">
-            Enter the demo admin token under Manage access to upload, replace, or delete.
-          </p>
-        )}
-        {uploadError && (
-          <p role="alert" className="error">
-            {uploadError}
-          </p>
-        )}
-      </form>
+          {!token && (
+            <p className="muted small">
+              Enter the demo admin token under Manage access to upload, replace, or delete.
+            </p>
+          )}
+          {uploadError && (
+            <p role="alert" className="error">
+              {uploadError}
+            </p>
+          )}
+        </form>
+      </div>
       {recent && (
         <div className="recent-source">
           <p className="muted small">Last upload · quick access across views</p>
@@ -182,7 +186,7 @@ export function Documents({ token, setToken, corpusVersion, onChanged, onOpen, r
       )}
       <div aria-busy={loading}>
         {loading && (
-          <p role="status" className="empty-state">
+          <p role="status" className="empty-state loading-sources">
             Loading sources…
           </p>
         )}
@@ -220,7 +224,7 @@ export function Documents({ token, setToken, corpusVersion, onChanged, onOpen, r
                     <span className={`badge ${document.index_status === 'ready' ? 'ready' : ''}`}>
                       {document.index_status === 'ready' ? 'Searchable' : 'Index pending'}
                     </span>
-                    <span aria-hidden="true">↗</span>
+                    <Icon name="arrow" />
                   </span>
                 </button>
               </li>

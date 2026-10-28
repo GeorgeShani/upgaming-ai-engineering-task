@@ -32,7 +32,7 @@ test('upload -> question -> citation -> trace -> delete through the real API', a
   await page.keyboard.press('Escape');
   await expect(page.getByRole('dialog')).not.toBeVisible();
   await expect(page.getByRole('button', { name: /Open citation E1:/ })).toBeFocused();
-  await page.getByText('Search trace', { exact: false }).click();
+  await page.locator('details.search-trace > summary').click();
   await expect(page.getByText('Round 2', { exact: true })).toBeVisible();
   await expect(page.getByText(/probability that a claim is true/)).toBeVisible();
   const accessibility = await new AxeBuilder({ page }).analyze();

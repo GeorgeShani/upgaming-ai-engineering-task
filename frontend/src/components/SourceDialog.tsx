@@ -149,7 +149,6 @@ export function SourceDialog({ target, token, onClose, onClosed, onChanged }: Pr
     >
       <div className="dialog-header">
         <div>
-          <p className="eyebrow">{target?.evidence ? 'EVIDENCE / SOURCE' : 'DOCUMENT'}</p>
           <h2 id="source-title">{current?.data.title ?? target?.title ?? 'Source'}</h2>
         </div>
         <button type="button" className="secondary" onClick={onClose} disabled={busy}>

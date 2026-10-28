@@ -43,6 +43,28 @@ test.beforeEach(async ({ page, request }) => {
   await resetFixture(page, request);
 });
 
+test('browse shortcut preserves a draft, moves focus, and never submits a question', async ({
+  page,
+}) => {
+  let paidRequests = 0;
+  page.on('request', (request) => {
+    if (request.url().endsWith('/api/investigations')) paidRequests += 1;
+  });
+  await page.getByLabel('Your question').fill('Which source reports the recovery time?');
+  await page.getByRole('button', { name: 'Browse documents', exact: true }).click();
+  await expect(page.getByRole('heading', { name: 'Documents', exact: true })).toBeFocused();
+  await page
+    .getByRole('navigation')
+    .getByRole('button', { name: 'Investigate', exact: true })
+    .click();
+  await expect(page.getByLabel('Your question')).toHaveValue(
+    'Which source reports the recovery time?',
+  );
+  await page.getByRole('button', { name: 'Use a development example' }).click();
+  await expect(page.getByLabel('Your question')).toBeFocused();
+  expect(paidRequests).toBe(0);
+});
+
 for (const status of ['conflicting_evidence', 'insufficient_evidence'] as const) {
   test(`renders ${status} as an evidence result, not an API error`, async ({ page }) => {
     await page.route('**/api/investigations', (route) => route.fulfill({ json: result(status) }));

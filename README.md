@@ -9,7 +9,10 @@ tool calls, evidence-grounded follow-ups, and a required verification round. The
 import is complete. The 96-attempt development/final A/B comparison is archived; A remains the
 development-selected default. The report records semantic citation failures and experimental
 limitations. Public deployment verification and final rehearsal remain later slices.
-No public demo URL has been verified yet.
+Public app: [Investigation Engine](https://upgaming-ai-engineering-task.onrender.com/).
+The public page and dependency readiness were checked on 2026-10-28. The cloud restart
+verification remains pending. See the [UI refinement walkthrough](docs/ui-refinement.md)
+for the updated interface, design choices and free browser checks.
 
 Start with [the plan](tasks/plan.md), [the checklist](tasks/todo.md), and
 [the engineering journal](docs/engineering-journal.md). The [AI usage report](docs/ai-usage-report.md)

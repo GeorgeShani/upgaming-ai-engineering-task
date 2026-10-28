@@ -1394,3 +1394,47 @@ persistence; [ ] explain ETags/boot IDs; [ ] reproduce the env-file difference. 
 **Resume point:** Rebuild with release metadata, verify limits, deploy Render Free Web Service,
 then check the actual public URL/restart. Public deployment is not yet verified; George is
 configuring Render access/service creation.
+
+## Session 9 — UI refinement while deployment verification is in progress
+
+**What changed:** George hosted the app and supplied
+https://upgaming-ai-engineering-task.onrender.com/. Codex opened the public interface and
+confirmed HTTP 200 liveness and dependency readiness (OpenAI/Qdrant reachable). The public
+release at that point had the earlier UI and no release/boot headers. This is not cloud
+restart proof. A local zero-paid Docker surface check stopped at dependency readiness;
+its report is failed, not counted as a pass. Its disposable container was cleaned up.
+
+**Why / UI approach:** The first interface gave setup details, form and empty state similar
+weight. The refinement retains green/neutral colors and native controls, gives the question
+clear priority, groups help in a narrower desktop column, simplifies mobile help, groups
+document access/upload controls and makes citation actions more explicit. DESIGN.md records
+the conventions. A component-library migration was considered unnecessary: it would add
+dependencies and new abstractions without changing the API workflow.
+
+**Mechanism:** Typing updates the existing controlled question state and its Unicode counter.
+Browse documents calls a callback to App, switches view and focuses the library heading.
+Both views remain mounted, preserving the draft. Choosing an example only fills/focuses;
+explicit submission still invokes the same API. Results receive focus; citation dialogs
+retain Escape, return focus, revision checks and safe source rendering.
+
+**Verification:** All 21 fixture browser tests pass, including upload → question → citation →
+trace → delete, replacement, conflicts, abstention, provider errors, stale data, token clearing,
+axe checks and layouts at 320/768/1024/1440 px. The new test checks draft preservation,
+focus and zero investigation requests from browsing/examples. One initial test failed because
+its broad Search trace text selector matched new help text; it now targets the disclosure
+control. Desktop/mobile renders were inspected; Impeccable's mechanical scan returned no
+findings. TypeScript/production build, four client unit tests and formatting pass. Fixture
+tests use in-memory providers and incur no model charges; real answer quality is not retested.
+
+**AI contribution:** Codex designed, implemented, tested and documented the UI refinement
+using Impeccable, frontend-ui-engineering and engineering-partner. React form accessibility
+documentation was fetched through Context7. George performed hosting and shared the URL;
+no independent code/understanding review is claimed.
+
+**My understanding (George):** [ ] Follow docs/ui-refinement.md; [ ] preserve a question while
+switching views; [ ] explain why an example does not submit; [ ] inspect a citation with the
+keyboard; [ ] distinguish fixture tests from live semantic accuracy.
+
+**Resume point:** Push the verified UI to main and verify the public build after Render
+redeploys. Complete public restart/persistence checks before marking deployment verification
+complete. Delivery/rehearsal remains slice 10.

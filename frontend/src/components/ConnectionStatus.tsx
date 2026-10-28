@@ -32,7 +32,9 @@ export function ConnectionStatus() {
       } catch {
         if (active) {
           setHealth(null);
-          setError('Cannot reach the API. Check the Python server.');
+          setError(
+            'Cannot reach the service. It may be waking up. Wait a moment, then check connections again.',
+          );
         }
       } finally {
         if (active) setLoading(false);

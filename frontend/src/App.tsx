@@ -3,6 +3,7 @@ import { ConnectionStatus } from './components/ConnectionStatus.tsx';
 import { Documents } from './components/Documents.tsx';
 import { InvestigationPanel } from './components/InvestigationPanel.tsx';
 import { SourceDialog } from './components/SourceDialog.tsx';
+import { Icon } from './components/Icon.tsx';
 import type { SourceTarget } from './types.ts';
 
 export function App() {
@@ -38,10 +39,14 @@ export function App() {
       </a>
       <div className="app-shell">
         <header className="app-header">
-          <div>
-            <p className="eyebrow">APPLIED AI / INVESTIGATION WORKSPACE</p>
-            <h1>Investigation Engine</h1>
-            <p className="intro">Ask a question. Follow the sources.</p>
+          <div className="brand">
+            <span className="brand-mark">
+              <Icon name="search" />
+            </span>
+            <div>
+              <h1>Investigation Engine</h1>
+              <p className="intro">Ask a question. Follow the sources.</p>
+            </div>
           </div>
           <ConnectionStatus />
         </header>
@@ -51,7 +56,7 @@ export function App() {
             aria-pressed={view === 'investigate'}
             onClick={() => setView('investigate')}
           >
-            Investigate
+            <Icon name="search" /> Investigate
           </button>
           <button
             id="documents-nav"
@@ -59,7 +64,7 @@ export function App() {
             aria-pressed={view === 'documents'}
             onClick={() => setView('documents')}
           >
-            Documents
+            <Icon name="documents" /> Documents
           </button>
         </nav>
         <main id="workspace">
@@ -69,7 +74,14 @@ export function App() {
             </p>
           )}
           <div hidden={view !== 'investigate'}>
-            <InvestigationPanel corpusVersion={corpusVersion} onOpen={openSource} />
+            <InvestigationPanel
+              corpusVersion={corpusVersion}
+              onOpen={openSource}
+              onBrowse={() => {
+                setView('documents');
+                requestAnimationFrame(() => document.getElementById('documents-title')?.focus());
+              }}
+            />
           </div>
           <div hidden={view !== 'documents'}>
             <Documents

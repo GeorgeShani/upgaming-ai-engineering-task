@@ -10,7 +10,7 @@ does not claim that George has completed his review. Estimates are focused worki
 - [x] Verify backend tests, frontend build, and actual browser behaviour.
 - [x] Commit the verified local foundation.
 - [x] Set up real OpenAI and Qdrant credentials; verify provider access.
-- [ ] Publish the first Render deployment and verify its public URL.
+- [x] Publish the first Render deployment and verify its public page and dependency readiness.
 - [ ] George: run locally, trace a health request, explain liveness vs dependency readiness.
 
 ## Session 2: Corpus and evaluation fixtures (2 hours; explicitly started by George)

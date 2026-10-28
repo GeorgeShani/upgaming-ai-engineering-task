@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { api, errorMessage } from '../api.ts';
 import type { Claim, Investigation, SourceTarget } from '../types.ts';
 import { SearchTrace } from './SearchTrace.tsx';
+import { Icon } from './Icon.tsx';
 
 const statuses = {
   answered: {
@@ -20,9 +21,13 @@ const statuses = {
   },
 };
 const example = 'What recovery time was documented for fictional incident NOVA-DEVELOPMENT-01?';
-type Props = { corpusVersion: number; onOpen: (target: SourceTarget) => void };
+type Props = {
+  corpusVersion: number;
+  onOpen: (target: SourceTarget) => void;
+  onBrowse: () => void;
+};
 
-export function InvestigationPanel({ corpusVersion, onOpen }: Props) {
+export function InvestigationPanel({ corpusVersion, onOpen, onBrowse }: Props) {
   const [question, setQuestion] = useState('');
   const [pending, setPending] = useState(false);
   const [error, setError] = useState<{ kind: 'validation' | 'request'; message: string } | null>(
@@ -112,66 +117,117 @@ export function InvestigationPanel({ corpusVersion, onOpen }: Props) {
 
   return (
     <section className="workspace-section" aria-labelledby="investigate-title">
-      <p className="eyebrow">FOLLOW THE EVIDENCE</p>
-      <h2 id="investigate-title">Ask an investigation question</h2>
-      <p className="muted">Find a fact, connect documents, or compare conflicting reports.</p>
-      <form onSubmit={investigate} aria-busy={pending}>
-        <label htmlFor="question">Your question</label>
-        <textarea
-          ref={input}
-          id="question"
-          rows={4}
-          value={question}
-          disabled={pending}
-          aria-describedby="question-help"
-          required
-          minLength={3}
-          onChange={(event) => setQuestion(event.target.value)}
-          placeholder="What happened, and which sources support it?"
-        />
-        <div className="question-actions">
-          <p id="question-help" className="muted small">
-            Up to 1,000 characters. Uses the configured model API; each submitted question may incur
-            a small charge.
+      <div className="investigation-layout">
+        <div className="question-workspace">
+          <h2 id="investigate-title">What would you like to find out?</h2>
+          <p className="muted section-intro">
+            Find a fact, connect documents, or compare conflicting reports.
           </p>
-          <button type="submit" disabled={pending}>
-            {pending ? 'Investigating…' : 'Investigate'}
-          </button>
+          <form onSubmit={investigate} aria-busy={pending}>
+            <div className="field-heading">
+              <label htmlFor="question">Your question</label>
+              <span
+                className={`character-count ${Array.from(question).length > 1000 ? 'over-limit' : ''}`}
+                aria-hidden="true"
+              >
+                {Array.from(question).length.toLocaleString()} / 1,000
+              </span>
+            </div>
+            <textarea
+              ref={input}
+              id="question"
+              rows={5}
+              value={question}
+              disabled={pending}
+              aria-describedby={
+                error?.kind === 'validation' ? 'question-help question-error' : 'question-help'
+              }
+              aria-invalid={error?.kind === 'validation' ? true : undefined}
+              required
+              minLength={3}
+              onChange={(event) => setQuestion(event.target.value)}
+              placeholder="What happened, and which sources support it?"
+            />
+            <div className="question-actions">
+              <p id="question-help" className="muted small">
+                Up to 1,000 characters. Uses the configured model API; each submitted question may
+                incur a small charge.
+              </p>
+              <button type="submit" disabled={pending}>
+                {pending ? 'Investigating…' : 'Investigate'}
+              </button>
+            </div>
+            <button
+              type="button"
+              className="text-button small"
+              disabled={pending}
+              onClick={() => {
+                setQuestion(example);
+                input.current?.focus();
+              }}
+            >
+              Use a development example
+            </button>
+            {pending && (
+              <p role="status" className="working">
+                Searching and checking sources. The bounded investigation can take up to 90 seconds.
+              </p>
+            )}
+            {error && (
+              <div id="question-error" className="error-panel" role="alert">
+                <strong>
+                  {error.kind === 'request'
+                    ? 'Investigation could not finish'
+                    : 'Check your question'}
+                </strong>
+                <p>{error.message}</p>
+                <p className="small">
+                  {error.kind === 'request'
+                    ? 'This is an API error, not an insufficient-evidence result. Nothing is resubmitted automatically.'
+                    : 'Nothing has been submitted.'}
+                </p>
+              </div>
+            )}
+          </form>
         </div>
-        <button
-          type="button"
-          className="text-button small"
-          disabled={pending}
-          onClick={() => {
-            setQuestion(example);
-            input.current?.focus();
-          }}
-        >
-          Use a development example
-        </button>
-        {pending && (
-          <p role="status" className="working">
-            Searching and checking sources. The bounded investigation can take up to 90 seconds.
-          </p>
-        )}
-        {error && (
-          <div className="error-panel" role="alert">
-            <strong>
-              {error.kind === 'request' ? 'Investigation could not finish' : 'Check your question'}
-            </strong>
-            <p>{error.message}</p>
-            <p className="small">
-              {error.kind === 'request'
-                ? 'This is an API error, not an insufficient-evidence result. Nothing is resubmitted automatically.'
-                : 'Nothing has been submitted.'}
+        <aside className="investigation-guide" aria-label="Investigation guide">
+          <h3>From question to evidence</h3>
+          <ol className="guide-steps">
+            <li>
+              <strong>Ask something specific</strong>
+              <p>Include a name, event, or service to help find relevant passages.</p>
+            </li>
+            <li>
+              <strong>Check the sources</strong>
+              <p>Open a citation to read the exact passage behind a claim.</p>
+            </li>
+            <li>
+              <strong>Follow the search</strong>
+              <p>Expand the search trace to see the queries and retrieved evidence.</p>
+            </li>
+          </ol>
+          <div className="guide-library">
+            <Icon name="documents" />
+            <h3>Start with your sources</h3>
+            <p>
+              Browse the shared collection or add a PDF, DOCX, or TXT document with admin access.
             </p>
+            <button type="button" className="text-button" onClick={onBrowse}>
+              Browse documents <Icon name="arrow" />
+            </button>
           </div>
-        )}
-      </form>
+        </aside>
+      </div>
       {!pending && !error && !result && (
         <div className="empty-state investigation-empty">
-          <h3>Start with a question</h3>
-          <p>Your answer will include source references and the searches used to find them.</p>
+          <Icon name="search" />
+          <div>
+            <h3>Your investigation starts here</h3>
+            <p>
+              Ask above to see an answer with clickable sources. If evidence is missing or
+              conflicting, the result will say so.
+            </p>
+          </div>
         </div>
       )}
       {result && answered && (
