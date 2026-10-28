@@ -39,6 +39,8 @@ produce identical chunks under both strategies; measure this overlap before inte
 - **All-search diagnostic retrieval:** document-level RRF k=60 over the top-ten document lists
   of executed queries, with stable document-ID ties. Reused queries count once. This is a
   diagnostic aggregation, not the exact context selection algorithm.
+  API failures receive zero in the reported retrieval averages; any partial searches remain
+  available in their raw receipt for diagnosis rather than being promoted to a completed run.
 - **All required sources:** report separately for the union of actual retrieved evidence,
   the final eight-chunk context, and cited sources. Bridge/comparison/conflict cases require
   multiple gold sources; a high first-hit MRR can coexist with a failed chain.
@@ -92,6 +94,10 @@ Check that reservation allowance before each attempt. Actual usage estimates use
 standard rates, without claiming cached-input discounts or account-wide spending enforcement.
 The final report should retain representative failures and offer improvements without changing
 the measured final system.
+
+Ledger deltas assume no other paid app work runs concurrently. The evaluator locks its output
+directory and submits serially; it cannot prevent a separate application process from using
+the same credentials/ledger. Keep manual paid questions and indexing idle during a batch.
 
 Primary sources: [HotpotQA official evaluator](https://github.com/hotpotqa/hotpot/blob/master/hotpot_evaluate_v1.py),
 [GPT-5.4 mini model/pricing](https://developers.openai.com/api/docs/models/gpt-5.4-mini),

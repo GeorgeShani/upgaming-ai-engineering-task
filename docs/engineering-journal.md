@@ -1203,3 +1203,41 @@ source coverage; [ ] explain why exact quotes do not prove a claim. **AI contrib
 designed/drafted the measurement and tests; George's label review remains pending.
 **Resume point:** Build the guarded resumable runner, run development A/B, freeze its selection,
 then run the final set once under each configuration without tuning against the outcomes.
+
+## Session 8 — checkpoint B: guarded runner and corpus preflight
+
+**What changed / why:** Added a local `evaluation_cli` with preflight, paid serial run,
+development-only selection and offline summaries. Atomic per-attempt receipts survive pauses;
+an OS-released SQLite file lock prevents concurrent runs in the same output directory. A
+pending interrupted attempt becomes an uncertain failure instead of an automatic paid retry.
+Code/settings/fixture/cloud hashes must match on resume. All paid calls reuse the production
+bounded investigation service; no gold answer or support label is passed to it. Public HTTP
+admission limits are untouched. A failure is saved and stops the command for inspection.
+
+**Alternatives:** A public batch endpoint would expose an expensive long request. In-memory
+progress would lose paid results on interruption. Silently retrying failed calls could duplicate
+cost and favor easy successful outputs in reported metrics. A generic evaluation framework
+would add dependencies and obscure the small scoring rules we need to explain.
+
+**Verification:** The backend suite passed 140 tests; the subsequent selection-integrity test
+also passes. New tests protect cloud source/hash/profile readiness, budget rejection before
+network, no automatic provider retry, exact question-only arguments, receipt reuse, exclusive
+locking, interrupted work, final-before-selection rejection and selection hash immutability.
+Ruff lint/format passes. The runner and scoring code were committed before model experiments.
+
+Read-only preflight matched all active cloud source IDs/content hashes/profiles to the prepared
+corpus. Expected active chunks are A=52,246 and B=52,307; physical cloud counts are 52,250 and
+52,311 because four retained inactive test chunks exist in each collection. 47,952/50,024 source
+records have identical chunk spans; 2,072 differ. This weakens causal claims about small A/B
+differences. The corpus/fixture hashes remain the frozen values from slice 2.
+
+**Budget / mechanism:** Each question may reserve at most $0.045624 at current rates under
+the existing request/output limits. The command checks that full allowance before submitting.
+The four earlier development smoke cases averaged $0.00525572; 96 attempts with 30% margin
+project $0.655913856. Worst-case aggregate reservations could exceed available headroom, so
+this is a projection and per-attempt guards still apply. No budget ceiling was increased.
+
+**My understanding (George):** [ ] Explain resume versus retry; [ ] inspect a raw receipt and
+its ledger delta; [ ] explain active versus physical chunks. **AI contribution:** Codex wrote
+and tested these tools and ran cloud preflight. Independent reference/understanding review is
+still pending. **Resume point:** Run development A/B, freeze the selection, then measure final.
