@@ -1241,3 +1241,39 @@ this is a projection and per-attempt guards still apply. No budget ceiling was i
 its ledger delta; [ ] explain active versus physical chunks. **AI contribution:** Codex wrote
 and tested these tools and ran cloud preflight. Independent reference/understanding review is
 still pending. **Resume point:** Run development A/B, freeze the selection, then measure final.
+
+## Session 8 — checkpoint C: freeze A before final testing
+
+**Observed development results:** All 16 attempts are retained. A has 8 successful responses,
+0 API failures, 6/8 supported-task checks, and 4/5 multi-source final-context coverage. B has
+7 successful responses, 1 HTTP 502, 5/8 supported-task checks, and 3/5 multi-source context
+coverage. Both have 100% mechanical citation validity among returned citations; failed outputs
+do not receive a free citation score. Development cost estimates are A=$0.04405243 and
+B=$0.04223703, including known usage on the failure.
+
+**Decision / mechanism:** The predeclared first criterion selects A (6 versus 5 supported-task
+checks). `docs/evaluation/selection.json` records the development receipt hash and selection
+time, 2026-10-28 06:57:38 UTC (10:57:38 Asia/Tbilisi). Commit `d1ce1db` preserves that choice
+and the raw development outputs before the final run. The existing A default remains selected;
+final outcomes will not choose a different winner.
+
+**Failure / limitations:** B's development conflict attempt returned HTTP 502 after both report
+sources had been retrieved. Its receipt retains partial searches and cost, but only the HTTP
+status, so it cannot distinguish every model/schema/evidence failure cause. It was not retried.
+After inspecting it, the command resumed only absent cases; prompts/code were unchanged.
+Development Buck-Tick A gave only “Japanese rock band,” missing the requested Fujioka/Gunma
+location; B included that location but neither cited the separately labelled Hayden source.
+Both documentary answers correctly expressed “not both American” without a literal “no,”
+illustrating why the lexical supported-task proxy is not a human accuracy percentage.
+
+**Reference review:** Before final calls, Codex inspected the native labelled passages and
+recorded nine wording/label caveats in `docs/evaluation-reference-caveats.md`. Labels were not
+edited. In particular, British does not alone entail English, and a numerical instrument/person
+ratio is not specified by a “multi-instrumentalist” description. Keep raw scores and review
+such abstentions/answers against actual text. George's independent label review remains pending.
+
+**My understanding (George):** [ ] Inspect the decision timestamp and first final timestamp;
+[ ] explain why 6/8 is a conservative mechanical check; [ ] inspect the failed receipt.
+**AI contribution:** Codex ran/scored development, reviewed the failure and source caveats,
+froze A and started the final run. **Resume point:** Complete one final attempt per case/config,
+reproduce offline scores, review disputed claims and write measured findings without tuning.
