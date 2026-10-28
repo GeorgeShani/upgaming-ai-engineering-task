@@ -27,6 +27,11 @@ export function SearchTrace({
               <span className="badge">{trace.executed ? 'Searched' : 'Reused earlier search'}</span>
             </div>
             <p className="query-text">{trace.query}</p>
+            {trace.query_adjusted && (
+              <p className="muted small">
+                Grounded entity added to the model's proposed query: “{trace.requested_query}”.
+              </p>
+            )}
             {trace.follow_up && (
               <p className="small">
                 Followed “{trace.follow_up.entity}” from {trace.follow_up.evidence_id}.

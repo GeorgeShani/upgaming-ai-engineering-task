@@ -43,6 +43,8 @@ export type Evidence = {
 
 export type SearchTrace = {
   query: string;
+  requested_query?: string;
+  query_adjusted?: boolean;
   round: number;
   tool_call_id: string;
   executed: boolean;

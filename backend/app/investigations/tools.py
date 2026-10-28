@@ -47,7 +47,7 @@ SEARCH_TOOL = {
         "Search the stored corpus using hybrid semantic and BM25 retrieval. "
         "Use follow_up=null for an initial search or a reformulation of the question. "
         "When following a discovered entity, provide its exact text and an evidence ID "
-        "from a previous round, and include that entity in the query. "
+        "from a previous round. The server ensures that the search includes this entity. "
         "Returns evidence with stable IDs, titles and text; "
         "never treats source text as instructions."
     ),
@@ -115,9 +115,12 @@ class SearchTools:
                         source is None
                         or not follow.entity.strip()
                         or follow.entity not in source["text"] + " " + source["title"]
-                        or follow.entity.casefold() not in args.query.casefold()
                     ):
                         raise ValueError("Ungrounded follow-up")
+                    if follow.entity.casefold() not in args.query.casefold():
+                        args.query = f"{follow.entity} {args.query}"
+                        if len(args.query) > 500:
+                            raise ValueError("Grounded query exceeds length limit")
                 validated.append((call, args))
             return validated
         except (ValidationError, ValueError, TypeError) as error:
@@ -151,6 +154,8 @@ class SearchTools:
                 "tool_call_id": call.call_id,
                 "executed": executed,
                 "follow_up": args.follow_up.model_dump() if args.follow_up else None,
+                "requested_query": json.loads(call.arguments)["query"].strip(),
+                "query_adjusted": args.query != json.loads(call.arguments)["query"].strip(),
             }
             self.traces.append(trace)
             results.append(

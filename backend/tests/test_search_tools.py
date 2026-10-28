@@ -89,7 +89,6 @@ def test_entity_follow_up_replays_actual_tool_result_and_keeps_ids_stable():
         "long",
         "fake_anchor",
         "ungrounded_entity",
-        "query_omits_entity",
         "reused_id",
         "missing_first_call",
     ],
@@ -116,7 +115,7 @@ def test_invalid_requests_are_rejected_before_any_search_in_that_round(mode):
             request = call("two", "   ")
         elif mode == "long":
             request = call("two", "x" * 501)
-        elif mode in ("fake_anchor", "ungrounded_entity", "query_omits_entity"):
+        elif mode in ("fake_anchor", "ungrounded_entity"):
             request = call(
                 "two",
                 "America East Conference history",
