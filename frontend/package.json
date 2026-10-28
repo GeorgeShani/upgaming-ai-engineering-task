@@ -10,7 +10,8 @@
     "build": "tsc --noEmit && vite build",
     "typecheck": "tsc --noEmit",
     "test:unit": "node --test tests/unit/*.test.mjs",
-    "test:browser": "playwright test"
+    "test:browser": "playwright test",
+    "format:check": "prettier --check src tests *.ts package.json"
   },
   "dependencies": {
     "react": "^19.3.1",
@@ -23,6 +24,7 @@
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
     "@vitejs/plugin-react": "^6.1.2",
+    "prettier": "^3.9.10",
     "typescript": "^7.0.2",
     "vite": "^8.3.5"
   }

@@ -7,7 +7,8 @@ test('mutations send the exact ETag and token; public reads send no authorizatio
   const calls = [];
   t.mock.method(globalThis, 'fetch', async (url, init) => {
     calls.push({ url, init });
-    return init.method === 'DELETE' ? new Response(null, { status: 204 })
+    return init.method === 'DELETE'
+      ? new Response(null, { status: 204 })
       : Response.json({ document_id: 'one' }, { headers: { ETag: '"revision-two"' } });
   });
   const file = new File(['source'], 'source.txt');
@@ -24,9 +25,15 @@ test('mutations send the exact ETag and token; public reads send no authorizatio
 });
 
 test('API errors stay errors and expose useful stale/rate-limit recovery', async (t) => {
-  t.mock.method(globalThis, 'fetch', async () => Response.json({ detail: 'Demo busy.' }, {
-    status: 429, headers: { 'Retry-After': '60' },
-  }));
+  t.mock.method(globalThis, 'fetch', async () =>
+    Response.json(
+      { detail: 'Demo busy.' },
+      {
+        status: 429,
+        headers: { 'Retry-After': '60' },
+      },
+    ),
+  );
   await assert.rejects(api.investigate('Question?', new AbortController().signal), (error) => {
     assert.ok(error instanceof ApiError);
     assert.equal(error.status, 429);
@@ -46,11 +53,15 @@ test('file validation agrees with the 5,000,000 byte server boundary', () => {
 
 test('source highlights use Python code-point offsets, including emoji before the quote', () => {
   const excerpt = sourceExcerpt('🚀 launch. Georgian ქართული evidence. Done.', {
-    start: 10, end: 36, text: 'Georgian ქართული evidence.',
+    start: 10,
+    end: 36,
+    text: 'Georgian ქართული evidence.',
   });
   assert.equal(excerpt.matches, true);
   assert.equal(excerpt.highlight, 'Georgian ქართული evidence.');
-  assert.equal(excerpt.before + excerpt.highlight + excerpt.after,
-    '🚀 launch. Georgian ქართული evidence. Done.');
+  assert.equal(
+    excerpt.before + excerpt.highlight + excerpt.after,
+    '🚀 launch. Georgian ქართული evidence. Done.',
+  );
   assert.equal(sourceExcerpt('changed text', { start: 0, end: 3, text: 'old' }).matches, false);
 });
