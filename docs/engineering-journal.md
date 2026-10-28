@@ -1172,3 +1172,34 @@ demo administration is not user accounts; source listing has no title search. Qu
 does not establish semantic support, and conflict detection still needs measured evaluation.
 Follow `docs/react-workflows.md` for your checkpoint. Slice 8 is comparative evaluation,
 followed by public deployment verification and delivery/rehearsal. None was started here.
+
+## Session 8 — checkpoint A: define the measurement before observing scores
+
+**What changed:** Added tested offline metric functions and a separate top-ten document
+ranking in search traces. The production model still receives no more than eight chunks.
+`docs/evaluation-methodology.md` freezes scoring, denominators, A/B order and development-only
+selection rules before any slice-8 comparison. Work continues directly on main.
+
+**Why / alternative:** Recall@10 cannot be calculated from an eight-chunk evidence list.
+We rank the already-fetched active candidates with the same RRF and deduplicate documents for
+diagnostics. Increasing model context to ten would alter the system being measured. Report
+initial-query ranking, multi-search diagnostic fusion and actual final-context source coverage
+separately. MRR rewards the first gold hit, while all-source coverage exposes broken bridges.
+
+**Mechanism / verification:** For required documents {one,two}, ranking [noise,one,other,two]
+has Recall@5=1 and reciprocal rank=1/2. A no-gold unanswerable case has undefined retrieval
+recall, not a free perfect score. Tests also guard ten-document diagnostics with the unchanged
+eight-chunk cap, deleted-candidate exclusion, document deduplication, RRF reuse/ties, prose
+penalties and the official yes/no F1 rule. Seven focused tests pass after the initial missing-
+implementation failure; Ruff lint/format passes. Read-only cloud checks find 50,024 active
+documents and 52,250/52,311 physical A/B points (including retained old test revisions).
+
+**Cost:** Before evaluation, estimated known ledger usage is $0.20992536; conservative
+reservations are $0.48744711 against a $4.50 local ceiling. No indexing/model calls were made
+by those cloud count checks. Model pricing was checked against official documentation.
+
+**My understanding (George):** [ ] Calculate the example; [ ] explain MRR versus complete
+source coverage; [ ] explain why exact quotes do not prove a claim. **AI contribution:** Codex
+designed/drafted the measurement and tests; George's label review remains pending.
+**Resume point:** Build the guarded resumable runner, run development A/B, freeze its selection,
+then run the final set once under each configuration without tuning against the outcomes.

@@ -41,12 +41,16 @@ class SearchService:
             ]
             for rows in (dense, sparse)
         ]
-        evidence = fuse(rankings)
+        ranked = fuse(rankings, limit=60)
+        evidence = ranked[:8]
+        document_ranking = list(dict.fromkeys(hit["payload"]["document_id"] for hit in ranked))[:10]
         return {
             "query": query,
             "strategy": strategy,
             "profile": self.index.profile,
             "embedding_usage": embedding_usage,
+            # Evaluation diagnostics only. Tool/model context still receives <=8 chunks.
+            "document_ranking": document_ranking,
             "candidate_counts": {
                 "dense": len(dense),
                 "bm25": len(sparse),
