@@ -2,6 +2,12 @@
 
 Public app: https://upgaming-ai-engineering-task.onrender.com/.
 
+**Latest verification:** application release `5911d65` includes cited-claim review and numeric
+checks. [Grounding verification](grounding-verification.json) records its real public answer;
+[final requirement evidence](final-requirements-verification.json) records the subsequent
+read-only public/source/build and full-corpus checks. The earlier restart and ledger totals
+below are dated evidence of that probe, not current account-wide billing totals.
+
 The actual cloud restart receipt is [cloud-persistence.json](deployment/cloud-persistence.json).
 It records a successful 13→21 minute replacement, stale-tag rejection, deletion, changed
 server boot ID and correct cited answers before/after the new Render instance. All owned
@@ -9,11 +15,11 @@ sources were cleaned up. The two successful question estimates total $0.00872823
 embedding usage retains conservative reservations because that route does not expose usage.
 The failed first probe and ETag reproduction are retained rather than presented as successes.
 
-The project ledger after these checks has $0.71511932 known estimated usage and $2.47683284
+At the restart-check checkpoint, the project ledger had $0.71511932 known estimated usage and $2.47683284
 conservative reservations against its unchanged $4.50 ceiling. These totals exclude unknown
 public visitor activity and are not provider invoices. The per-instance Render guard remains
 $1. The [whole-corpus audit](deployment/corpus-verification.json) records current counts;
-the [delivery verification](delivery-verification.json) records the final automated checks.
+the [delivery verification](delivery-verification.json) records that delivery checkpoint.
 
 One Docker Web Service serves FastAPI and the compiled React interface. Qdrant Cloud stores
 canonical extracted text, document manifests/revisions and both vector indexes. Node builds

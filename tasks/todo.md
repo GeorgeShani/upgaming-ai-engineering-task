@@ -78,6 +78,8 @@ does not claim that George has completed his review. Estimates are focused worki
 
 ## Contingency (2 hours)
 
+- [x] Final handoff: reread all eight PDF pages, verify mandatory build/submission coverage, refresh complete corpus/test/public evidence and documentation, and add the live URL to GitHub description/Website.
+
 - [x] Follow-up: support review, numeric comparison checks, development regressions and an honest account of remaining semantic limits (`docs/claim-grounding.md`).
 - [ ] George: inspect a rejected and an accepted draft, and explain why arithmetic cannot establish the meaning of a claim.
 

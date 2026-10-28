@@ -1679,3 +1679,58 @@ estimated actual. No source mutation or paid retry was performed. The public res
 documentation-only commit uses `[skip render]` to avoid restarting it unnecessarily. Receipt
 JSON uses LF newlines, matching `.gitattributes`; its hashes and current source fingerprints
 were checked again before this evidence commit.
+
+## Final PDF requirement and repository handoff check — 28 October 2026
+
+**What changed:** Codex reread all eight original PDF pages (the source SHA-256 still matches
+`807d37d4e30ff8977d58cacf6279b84b29fde252a836b2843f12407880fc9240`) and refreshed
+`docs/pdf-requirements-audit.md` against current implementation and concrete receipts. README,
+submission, evaluation-version notes and deployment guidance now link to current evidence.
+The GitHub description includes the live URL and its Website field points to the same demo.
+Application code, prompts, models, retrieval settings, frozen questions and raw scores were
+unchanged in this final pass.
+
+**Why / alternative:** A reviewer needs a current requirement map, rather than several old
+checkpoints that look like contradictory status reports. The earlier 40-question A/B study is
+kept as a baseline and the new support-review regressions are separate. Relabelling its scores
+as v2 measurements would be misleading. Re-running exposed final questions would not create
+a fresh held-out study. A new independent test set is future quality work; no new score is
+invented here. The PDF's optional bonuses are distinguished from mandatory build artifacts.
+
+**Verification:** Fresh `uv run pytest -q -W error` passed all **185** backend tests; **five**
+client tests, **22** browser tests, TypeScript/production build, Prettier and Ruff passed.
+The read-only complete cloud audit verified **50,024** active distinct sources and every
+**52,246 A / 52,307 B** active chunk's revision, offsets and text. Physical points remain
+**52,258 / 52,319**, including twelve inactive points each; inactive points do not inflate
+source counts. The before/after audit snapshots match. All 96 archived attempts, scores,
+summaries and archive-file fingerprints reproduce; the 40 unique final questions retain all five categories.
+
+The public service is ready at application release `5911d65`. Its application/dependency source
+matches the reviewed repository and both public JS/CSS assets exactly match the local build.
+Private paths and test-reset routes return 404; anonymous mutations return 401; invalid questions
+return 422 before provider calls; configured secret values are absent from checked public content.
+The earlier actual cloud restart/lifecycle proof is retained, rather than claiming we repeated
+a new before/after mutation experiment here. Current complete corpus persistence was verified.
+
+GitHub's public visibility, default main branch, description containing the live URL and Website
+field were read back after the metadata update. Detailed evidence is under
+`docs/final-verification/` and summarized in `docs/final-requirements-verification.json`.
+This pass made **zero paid generation calls and zero corpus mutations**. The local ledger remains
+810 rows / $2.71349773 conservatively reserved / $0.75203288 known estimated usage. It is not an
+account-wide invoice or hard cap.
+
+**Conclusion and limits:** All mandatory implementation/submission categories have evidence;
+no missing feature category was found. Semantic correctness, independent gold/source review,
+the weakness of the original chunker experiment and George's personal no-AI code defence remain
+explicit qualifications. A prototype with tests and failure analysis is not proof that every
+answer is correct, and an AI cannot certify George's interview performance.
+
+**My understanding (George):** [ ] Open the final map and inspect one receipt per category;
+[ ] explain baseline versus v2 regression evidence; [ ] perform the unaided rehearsal and
+record my own dated explanation/change/test. Existing personal checkboxes remain unchecked.
+
+**AI contribution / resume:** Codex performed the requirement mapping, automated/read-only
+checks, documentation and authorized GitHub metadata update. George requested this final
+handoff check. Next: use the repository demo link and rehearsal guide, inspect the known
+limitations, and prepare to defend or modify the implementation without AI. This final
+documentation-only commit uses `[skip render]` and preserves the verified application release.

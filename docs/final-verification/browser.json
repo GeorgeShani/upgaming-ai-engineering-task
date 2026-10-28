@@ -1,0 +1,167 @@
+{
+  "checked_at": "2026-10-28T17:02:37.294451+00:00",
+  "stats": {
+    "startTime": "2026-10-28T16:58:37.187Z",
+    "duration": 137311.794,
+    "expected": 22,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "checks": [
+    {
+      "title": "browse shortcut preserves a draft, moves focus, and never submits a question",
+      "ok": true,
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "renders conflicting_evidence as an evidence result, not an API error",
+      "ok": true,
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "renders insufficient_evidence as an evidence result, not an API error",
+      "ok": true,
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "HTTP 429 is an actionable error and is not retried automatically",
+      "ok": true,
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "HTTP 502 is an actionable error and is not retried automatically",
+      "ok": true,
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "HTTP 503 is an actionable error and is not retried automatically",
+      "ok": true,
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "a withheld draft explains the evidence review without exposing rejected claims",
+      "ok": true,
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "pending questions cannot submit a second paid request",
+      "ok": true,
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "question validation explains that no paid request was submitted",
+      "ok": true,
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "trace distinguishes a proposed query from its grounded executed query",
+      "ok": true,
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "invalid file types stay client-side and incorrect tokens are rejected by the server",
+      "ok": true,
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "cursor pagination moves forwards and backwards without loading the whole corpus",
+      "ok": true,
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "late source responses cannot replace the newly opened document",
+      "ok": true,
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "upload -> question -> citation -> trace -> delete through the real API",
+      "ok": true,
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "duplicate upload reuses a source; replacement changes its revision",
+      "ok": true,
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "stale replacement is blocked until current text and ETag are reloaded",
+      "ok": true,
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "old citations stay snapshots after the document changes or disappears",
+      "ok": true,
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "source text is escaped, token clears on reload, and the dialog is keyboard accessible",
+      "ok": true,
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "workspace and source dialog fit at 320px",
+      "ok": true,
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "workspace and source dialog fit at 768px",
+      "ok": true,
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "workspace and source dialog fit at 1024px",
+      "ok": true,
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "workspace and source dialog fit at 1440px",
+      "ok": true,
+      "results": [
+        "passed"
+      ]
+    }
+  ]
+}

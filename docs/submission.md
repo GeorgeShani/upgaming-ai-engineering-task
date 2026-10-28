@@ -4,6 +4,11 @@ Repository: https://github.com/GeorgeShani/upgaming-ai-engineering-task
 
 Live demo: https://upgaming-ai-engineering-task.onrender.com/
 
+The [current PDF requirement map](pdf-requirements-audit.md) covers all mandatory implementation
+and submission categories. [Final verification](final-requirements-verification.json) records
+the fresh tests, corpus audit, public deployment and repository metadata. This verifies the
+software/deliverables; George's no-AI code defence is still a personal assessment.
+
 The repository contains the implementation, genuine incremental commit history and technical
 reports. Review the independent rehearsal before presenting it as work you can defend.
 

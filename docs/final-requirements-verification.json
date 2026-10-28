@@ -1,0 +1,145 @@
+{
+  "checked_at": "2026-10-28T17:06:37.145466+00:00",
+  "timezone_for_user": "Asia/Tbilisi",
+  "scope": "All eight PDF pages mapped to current implementation/submission evidence; personal interview assessment remains pending",
+  "source_pdf": {
+    "path": "C:\\Users\\HP\\Downloads\\_Applied AI \u2013 AI Investigation Engine Task.docx.pdf",
+    "pages": 8,
+    "sha256": "807d37d4e30ff8977d58cacf6279b84b29fde252a836b2843f12407880fc9240"
+  },
+  "reviewed_repository_commit": "fefba22745fc9860d872f4b58aa7a94d58fd780d",
+  "application_release": "5911d65710cd71966f7d5030b52aee399de97938",
+  "verdict": "Mandatory software and submission categories covered; semantic quality and study limits disclosed; personal no-AI code defence not assessed",
+  "mandatory_coverage": {
+    "document_formats": [
+      "PDF",
+      "DOCX",
+      "TXT"
+    ],
+    "canonical_text_and_metadata": "implemented and tested",
+    "exact_deduplication_and_document_create_replace_delete": "implemented and tested",
+    "chunkers": [
+      "fixed 256 tokens / 40 overlap",
+      "sentence aware 256 / one sentence overlap"
+    ],
+    "vector_and_keyword_search": "Qdrant dense vectors and BM25 sparse vectors",
+    "custom_algorithm": "RRF k=60 with stable ranking, deduplication and document diversity",
+    "multi_document_multistep_RAG": "two retrieval rounds, at most three searches, cited claims and support review",
+    "insufficient_and_conflicting_evidence": "implemented and exercised; quality remains fallible",
+    "tool_calling": "real validated search_documents tool",
+    "automated_evaluation": "40 unique final questions plus 8 separate development questions, A/B measurements, metrics and analysis",
+    "python_backend_and_functional_UI": "FastAPI and React; tested end to end",
+    "approved_dataset": "50,000 pinned HotpotQA passages plus 24 labelled fictional sources",
+    "deployment": "Render Free + external Qdrant; public integration/source/assets checked",
+    "persistence": "prior real before/after-redeploy lifecycle receipt retained; fresh entire-corpus identity/content audit passed",
+    "secrets_and_error_handling": "server-side keys, admin-token mutations, bounded requests, known-value and public-surface checks",
+    "documentation_and_submission": "public GitHub history, live URL, README, evaluation report, AI report and journal"
+  },
+  "fresh_checks": {
+    "backend": {
+      "command": "uv run pytest -q -W error",
+      "passed": 185,
+      "warnings_as_errors": true
+    },
+    "client_unit": {
+      "command": "npm run test:unit",
+      "passed": 5
+    },
+    "browser": {
+      "command": "npm run test:browser",
+      "passed": 22,
+      "failed": 0,
+      "flaky": 0
+    },
+    "production_build_and_typecheck": "passed",
+    "prettier": "passed",
+    "ruff_lint_and_format": "passed",
+    "archive_scores_and_summaries_reproduced": true,
+    "all_corpus_and_active_chunk_identities_verified": true,
+    "deployed_app_source_matches_repository": true,
+    "served_assets_match_local_build": true
+  },
+  "corpus": {
+    "unique_active_sources": 50024,
+    "hotpot_passages": 50000,
+    "labelled_fictional_passages": 24,
+    "active_chunks": {
+      "a": 52246,
+      "b": 52307
+    },
+    "physical_points": {
+      "a": 52258,
+      "b": 52319
+    },
+    "inactive_points": {
+      "a": 12,
+      "b": 12
+    }
+  },
+  "evaluation": {
+    "final_unique_questions": 40,
+    "categories": {
+      "bridge": 12,
+      "comparison": 8,
+      "conflict": 6,
+      "simple": 8,
+      "unanswerable": 6
+    },
+    "archived_attempts": 96,
+    "retained_errors": 4,
+    "archive_workflow": "bounded_tools_v1",
+    "current_workflow": "bounded_tools_verified_v2",
+    "current_full_held_out_AB_measurement": false,
+    "current_development_checks": {
+      "synthetic_reviews": 8,
+      "pipeline": 4,
+      "public_smoke": 1
+    },
+    "note": "Prior comparison remains historical. Current regressions are not new held-out accuracy evidence."
+  },
+  "repository_about": {
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "AI Investigation Engine: multi-step hybrid RAG with cited evidence, document management and reproducible evaluation. Live demo: https://upgaming-ai-engineering-task.onrender.com/",
+    "homepageUrl": "https://upgaming-ai-engineering-task.onrender.com/",
+    "isPrivate": false,
+    "nameWithOwner": "GeorgeShani/upgaming-ai-engineering-task",
+    "url": "https://github.com/GeorgeShani/upgaming-ai-engineering-task"
+  },
+  "earlier_persistence_evidence": "docs/deployment/cloud-persistence.json",
+  "earlier_grounding_evidence": "docs/grounding-verification.json",
+  "paid_generation_calls_this_audit": 0,
+  "corpus_mutations_this_audit": 0,
+  "ledger": {
+    "calls": 810,
+    "reserved_usd": 2.71349773,
+    "estimated_actual_usd": 0.75203288,
+    "input_tokens": 7583964,
+    "output_tokens": 21670
+  },
+  "not_certified": [
+    "George independently explaining, debugging and changing code without AI",
+    "Universal answer correctness or semantic citation entailment",
+    "Independent human rating of every reference answer and generated claim",
+    "A causal chunker advantage or new held-out v2 accuracy",
+    "Provider billing and free-tier account dashboards or an account-wide hard spending cap",
+    "Every optional bonus, which the PDF labels separately"
+  ],
+  "evidence_sha256_lf": {
+    "archive.json": "fc81b83be3dfe6287e552b1fd0643ef725ba381be9d4093bcfe16bf8408a0cec",
+    "browser.json": "b2161c3fe8bcf166e07255c434eddb36e6bfaa2edacad98b1babed7fd9d2dad9",
+    "corpus.json": "882a5d15ddd93b8c80b2aec51ebda0b343c6325f7ebee735f4e0483064cb102b",
+    "public.json": "37ef14eb2cb26e93c4939ef29b0fa5c83e81ef7c319d374750d25234da05f59f",
+    "repository.json": "59c7b28083fb8d9ca9d07e58e3b7da8fc85dd5b9727803cd3461fed4b4a620be"
+  },
+  "documentation_checks": {
+    "relative_file_links_checked": 100,
+    "missing_file_links": 0,
+    "link_scope": "README, docs and tasks; code fences excluded; heading anchors not assessed",
+    "known_secret_values_absent_from_candidate_files": true,
+    "candidate_files_scanned": 301,
+    "root_env_untracked": true,
+    "runtime_fixtures_and_raw_archive_unchanged_in_this_pass": true
+  }
+}

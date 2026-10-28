@@ -1,0 +1,10 @@
+{
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "AI Investigation Engine: multi-step hybrid RAG with cited evidence, document management and reproducible evaluation. Live demo: https://upgaming-ai-engineering-task.onrender.com/",
+  "homepageUrl": "https://upgaming-ai-engineering-task.onrender.com/",
+  "isPrivate": false,
+  "nameWithOwner": "GeorgeShani/upgaming-ai-engineering-task",
+  "url": "https://github.com/GeorgeShani/upgaming-ai-engineering-task"
+}

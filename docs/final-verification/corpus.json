@@ -1,0 +1,53 @@
+{
+  "passed": true,
+  "checked_at": "2026-10-28T17:05:27.249415+00:00",
+  "scope": "Full canonical source/hash/profile identity and every eligible A/B chunk",
+  "prepared": {
+    "verified": true,
+    "dataset_revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+    "unique_source_records": 50024,
+    "hotpot_passages": 50000,
+    "synthetic_passages": 24,
+    "evaluation_cases": 48,
+    "meets_assignment_minimum": true,
+    "corpus_sha256": "7fb92aae4a89727ca1d274d23ee25ba1dfafa052808fce75086f17c7c088c5eb",
+    "corpus_bytes": 86321736,
+    "final_cases": 40,
+    "development_cases": 8,
+    "reference_review": "pending George's independent review"
+  },
+  "cloud": {
+    "active_source_count": 50024,
+    "active_manifests_sha256": "2c59ffa4f0364e61a01559ffa2bec9378b04f54355789fe5a9e56107fa260dc5",
+    "profile": "1a8846753a25",
+    "collections": {
+      "a": "investigation_chunks_a_1a8846753a25",
+      "b": "investigation_chunks_b_1a8846753a25"
+    },
+    "physical_points": {
+      "a": 52258,
+      "b": 52319
+    }
+  },
+  "strategies": {
+    "a": {
+      "expected_active": 52246,
+      "actual_active": 52246,
+      "physical_points": 52258,
+      "inactive_points": 12,
+      "active_point_ids_sha256": "e3d48773eb4b278c428cd3067511dff40ac736017977b3494ce5b48b87487930",
+      "source_revision_offsets_and_text_verified": true
+    },
+    "b": {
+      "expected_active": 52307,
+      "actual_active": 52307,
+      "physical_points": 52319,
+      "inactive_points": 12,
+      "active_point_ids_sha256": "9188e4e742b93d235529b0d0893b3352bd8ae1e886d073a61bd2be5cd6c0ed3c",
+      "source_revision_offsets_and_text_verified": true
+    }
+  },
+  "paid_calls": 0,
+  "cloud_writes": 0,
+  "canonical_revision_identity_verified": true
+}

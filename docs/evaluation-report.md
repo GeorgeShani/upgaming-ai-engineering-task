@@ -1,5 +1,11 @@
 # Comparative evaluation — 28 October 2026
 
+**Study version:** these results measure `bounded_tools_v1` with prompt
+`bounded_tools_quote_ids_v1`, before the support-review fix. The deployed
+`bounded_tools_verified_v2` has [separate development regressions](claim-grounding.md) and
+[release checks](grounding-verification.json); a new full held-out A/B evaluation of v2 has
+not been run. The raw results, labels, metrics and original selection below remain unchanged.
+
 **A remains the default selected on development data before final testing.** All 96 planned
 attempts are archived: eight development questions and forty final questions, each under A/B.
 The results show useful retrieval alongside substantive semantic failures. They do **not**
@@ -207,8 +213,10 @@ uv run --group data pytest -W error
 The first command recomputes both summaries/scores from saved results and local corpus text.
 It does not read credentials, contact providers or retry questions. Use the
 [walkthrough](comparative-evaluation.md) to calculate a ranking, trace a bridge and review
-the reversed-age example. All 141 backend tests and Ruff lint/format checks pass. Public
-deployment/restart checks and final rehearsal remain the next slices.
+the reversed-age example. At this study's original checkpoint, 141 backend tests and Ruff
+checks passed, with deployment/rehearsal scheduled next. Current software has 185 passing
+backend tests and verified deployment/persistence; see the
+[final requirement check](pdf-requirements-audit.md). Personal rehearsal remains pending.
 
 An [offline mutation check](evaluation-mutation-check.json) replaced one citation in a
 disposable archive copy. Recomputed scores rejected the modified copy; the original archive

@@ -1,0 +1,44 @@
+{
+  "liveness_http": 200,
+  "instance_id": "ebfcb7845c3343f5a0cd1ca57e3976f5",
+  "release_revision": "5911d65710cd71966f7d5030b52aee399de97938",
+  "health": {
+    "status": "ready",
+    "app": "running",
+    "dependencies": {
+      "openai": {
+        "status": "reachable",
+        "message": "Read-only access check passed."
+      },
+      "qdrant": {
+        "status": "reachable",
+        "message": "Read-only access check passed."
+      }
+    }
+  },
+  "compiled_assets": [
+    "/assets/index-C7KeC16m.js",
+    "/assets/index-BodD1BKy.css"
+  ],
+  "private_paths_hidden": true,
+  "test_reset_absent": true,
+  "anonymous_mutations_rejected": true,
+  "invalid_question_rejected": true,
+  "known_secrets_absent_from_checked_content": true,
+  "checked_at": "2026-10-28T16:59:32.583665+00:00",
+  "deployed_application_matches_repository": true,
+  "asset_checks": [
+    {
+      "path": "/assets/index-C7KeC16m.js",
+      "sha256": "d5b5b7ec8ce34492bd08bd41a4da4a80fb3f6dd213bba88e52ccd41d10acc9e7",
+      "matches_local_build": true
+    },
+    {
+      "path": "/assets/index-BodD1BKy.css",
+      "sha256": "d767b886793bb9029efb3af1d15da0fd7da31f9c3b970c9222ba2bc654b72fff",
+      "matches_local_build": true
+    }
+  ],
+  "paid_generation_calls": 0,
+  "corpus_mutations": 0
+}

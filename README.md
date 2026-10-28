@@ -8,6 +8,12 @@ reports, or return insufficient evidence.
 **[Live demo](https://upgaming-ai-engineering-task.onrender.com/)** ·
 **[GitHub repository](https://github.com/GeorgeShani/upgaming-ai-engineering-task)**
 
+The [requirement-by-requirement check](docs/pdf-requirements-audit.md) covers all eight assignment
+pages. Current checks: **185 backend tests, five client tests and 22 browser tests** pass; the
+live application and complete cloud corpus/indexes are verified. See
+[verification evidence](docs/final-requirements-verification.json) for scope and timestamps.
+The personal no-AI code defence remains an independent interview requirement.
+
 The app uses 50,024 distinct source passages: 50,000 HotpotQA passages and 24 clearly fictional
 incident sources. Both chunking configurations are indexed. Configuration A was selected on
 separate development examples before the final evaluation. Read the measured

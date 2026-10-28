@@ -1,26 +1,29 @@
-# Audit against the assignment PDF — 28 October 2026
+# Final requirements check against the assignment PDF — 28 October 2026
 
-**Follow-up:** this dated audit identified semantic support/comparison failures. The subsequent
-[grounding fix](claim-grounding.md) adds a review/rejection stage and development regressions.
-The original evaluation below remains historical; the follow-up does not claim new held-out
-accuracy or complete George's independent checks.
+This is the current requirement map after the [grounding fix](claim-grounding.md). Fresh evidence
+is recorded in [final verification](final-requirements-verification.json); the earlier audit's
+receipt remains at `pdf-requirements-checks.json`. Historical evaluation outputs are preserved.
 
 Source: `_Applied AI – AI Investigation Engine Task.docx.pdf`, all eight pages, SHA-256
 `807d37d4e30ff8977d58cacf6279b84b29fde252a836b2843f12407880fc9240`.
 The PDF is treated as the requirements source, not as authority to perform unrelated actions.
 This audit checks the PDF itself rather than treating our implementation checklist as the spec.
 
-Code reviewed: Git commit `78c7fa2`, plus the unchanged deployed application code at `a4789c4`.
-The intervening commits contain verification tooling/documentation and explicitly skip redeploy.
+Repository reviewed: `fefba22`, with application release `5911d65` live on Render. The intervening
+commit contains documentation only. Application/dependency source and compiled public JS/CSS
+were checked against the repository/build. This final pass changes documentation and repository
+metadata, not application code, prompts, fixtures or scores.
 
 ## Verdict
 
-**The mandatory implementation categories and submission artifacts are present. No missing
-mandatory feature category was found.** There are material quality qualifications, so an
-unqualified statement that every answer meets the PDF's behavioral expectations would be false:
+**All mandatory implementation and submission categories have concrete coverage; no missing
+mandatory feature category was found.** The software/submission checklist is covered. This is
+not a certification of universal answer correctness or completion of the personal interview:
 
-- Some evaluated answers contain unsupported facts, wrong entity/value bindings or reversed
-  comparisons despite mechanically valid citations. This is a demonstrated limitation.
+- The earlier evaluation contains unsupported facts, wrong entity/value bindings and reversed
+  comparisons. The deployed follow-up adds claim review, whole-draft withholding and numeric
+  checks; eight synthetic, four pipeline and one public development check passed. Review can
+  still make semantic errors; these regressions do not establish new held-out accuracy.
 - Automated answer/citation metrics are imperfect proxies. Independent gold/claim/source
   review remains pending; there is no complete independently rated semantic accuracy score.
 - Both chunkers were compared, but all required evaluation sources have identical A/B
@@ -73,18 +76,19 @@ Detailed evidence: [document walkthrough](document-management.md),
 | Use at least one LLM and a RAG architecture | Met | Real hosted Responses API calls; evidence is retrieved before structured generation |
 | Combine information from different documents | Met | Native HotpotQA bridge/comparison fixtures, executed search traces, multi-source citation metrics and reviewed examples |
 | Process complex questions in multiple steps | Met | Two bounded retrieval rounds; a grounded discovered entity can drive a second search |
-| Generate answers based on evidence | Limited quality | Source-conditioned generation, structured claims and final revision checks exist; evaluated unsupported claims show this is not fully enforced semantically |
-| Sources and citations | Met mechanism, limited support | Clickable citations, stable IDs, exact quote checks and canonical text. Literal validity does not prove entailment |
+| Generate answers based on evidence | Met mechanism, quality limited | Source-conditioned drafts, separate typed support review, whole-draft withholding, numeric relation checks and final revision validation. Reviewer interpretation is fallible |
+| Sources and citations | Met mechanism, quality limited | Clickable citations, stable IDs, exact quotes and canonical text; review checks entity/value binding and question coverage. Neither literal validity nor model review proves entailment |
 | Attempt contradiction detection | Met, limited generality | Conflicting claims/status preserve both sources. Final A conflict recall 4/6, B 6/6; A's other two attempts are retained errors, not successful detections |
 | Abstain when information is insufficient | Met, limited generality | No-evidence path and explicit insufficient-evidence output; all six absent-answer final cases abstained in both configurations. This is fixture evidence, not universal reliability |
 | Handle LLM errors and limits | Met | Context/output bounds, budget reservations, deadlines, invalid-protocol/evidence handling, 429/502/503 responses and no automatic paid retries |
 | At least one tool-calling or structured tool mechanism | Met | Real strict `search_documents` function schema and executed calls; server validates batch counts, IDs and entity anchors before searches |
-| Avoid inventing missing/contradictory facts | Limited quality | Prompt/schema/abstention safeguards and some successful examples; population, age and nationality failures demonstrate remaining violations of the behavioral ideal |
+| Avoid inventing missing/contradictory facts | Implemented safeguards, quality limited | Missing/unsupported/uncertain drafts are withheld; malformed review/provider errors remain explicit errors. Regression coverage includes the earlier population/age/nationality failure types, with no universal correctness claim |
 
 [Investigation walkthrough](multi-step-investigation.md),
 [tool validation](../backend/app/investigations/tools.py),
 [quote validation](../backend/app/investigations/models.py),
-[actual claim/citation failures](evaluation/qualitative-review.md).
+[baseline claim/citation failures](evaluation/qualitative-review.md),
+[current support/comparison checks](grounding-verification.json).
 
 ## Automated evaluation — page 4
 
@@ -102,6 +106,10 @@ Detailed evidence: [document walkthrough](document-management.md),
 | Analyze where/why errors occur and possible improvements | Met | Recorded 502s, semantic failures, reference caveats, boundary overlap, plausible causes and improvements; unknown failure subtypes are not invented |
 
 All 96 archived attempts reproduce: 16 development and 80 final, with four retained errors.
+They measure `bounded_tools_v1` / `bounded_tools_quote_ids_v1`, before the deployed support-review
+stage. The automated evaluator runs the current services, but a new 40-question A/B held-out
+measurement of v2 has not been performed. The earlier comparison and error analysis satisfy
+the implemented evaluation coverage; they are not advertised as measurements of v2.
 The PDF lists Recall@K, MRR, Answer Correctness and Citation Accuracy as examples rather than
 requiring one exact metric implementation. Our current proxies meet the quantitative-coverage
 requirement but should not be presented as definitive semantic correctness percentages.
@@ -113,7 +121,7 @@ Fresh boundary-sensitive cases and independent claim/source review would strengt
 silently replacing labels or tuning on the frozen final set would compromise it.
 
 [Methodology](evaluation-methodology.md), [results](evaluation-report.md),
-[raw archive](evaluation/manifest.json), [fresh offline verification](pdf-requirements-checks.json).
+[raw archive](evaluation/manifest.json), [fresh offline verification](final-verification/archive.json).
 
 ## Dataset — page 5
 
@@ -126,10 +134,12 @@ silently replacing labels or tuning on the frozen final set would compromise it.
 | Handle incomplete and contradictory information | Met mechanism, limited quality | Dedicated fixtures/statuses and reported detection/abstention results, with limitations above |
 | Allow reproducible evaluation/subset selection | Met | Deterministic selection, normalization/hashes, frozen fixtures, exclusion of questions/answers from indexing, cached/resumable indexing and offline scored-output verification |
 
-The fresh count check still finds **50,024 active sources**. The prior full per-point/content
-audit verified **52,246 active chunks A / 52,307 B**. Fresh physical counts remain
+The complete fresh audit verifies **50,024 active sources** and
+**52,246 active chunks A / 52,307 B**. Physical counts are
 52,258 / 52,319, including 12 retained inactive test points each. These are distinct counts.
-This audit did not repeat the entire text audit or make new paid model calls.
+This final pass repeats the full canonical-source/revision/profile and every active-chunk audit
+against the current cloud state. [Fresh corpus receipt](final-verification/corpus.json) records
+the result. It makes no model calls or corpus mutations.
 
 ## Python backend and usable interface — page 4
 
@@ -141,7 +151,7 @@ This audit did not repeat the entire text audit or make new paid model calls.
 | Ask questions and inspect generated-answer sources | Met | Explicit submission, result statuses, clickable citations, source dialog and expandable search trace |
 | Prioritize functionality/reliability over visual complexity | Met implementation | Native controls, clear state/error handling and full lifecycle tests; no claim of perfect operational reliability |
 
-[Fresh checks](pdf-requirements-checks.json) include the actual browser fixture workflow.
+[Fresh checks](final-requirements-verification.json) include the actual browser fixture workflow.
 The browser fixture uses real API routes and in-memory providers; live model/deployment
 behavior is separately supported by the earlier successful cloud receipts.
 
@@ -159,7 +169,7 @@ behavior is separately supported by the earlier successful cloud receipts.
 
 [Deployment walkthrough](deployment-verification.md),
 [restart proof](deployment/cloud-persistence.json),
-[public checks](pdf-requirements-checks.json).
+[fresh public checks](final-verification/public.json).
 
 ## Technical quality — page 7
 
@@ -167,7 +177,7 @@ behavior is separately supported by the earlier successful cloud receipts.
 | --- | --- | --- |
 | Clear modular Python and separated responsibilities | Met structure | Explicit parsing/store/service/routes/retrieval/tool/provider/evaluation modules; architecture and mechanism walkthroughs |
 | Error handling | Met | Parsing/storage/provider/protocol/citation failures, stale revisions, rate/concurrency bounds and client recovery states |
-| Automated tests | Met | Fresh 158 backend tests, five client tests, production build; browser suite includes 21 lifecycle/state/accessibility/responsive checks |
+| Automated tests | Met | Fresh 185 backend tests, five client tests, production build; 22 browser lifecycle/state/accessibility/responsive checks |
 | Working database and external API integration | Met | Real indexed corpus and model receipts, beyond mocked tests alone |
 | Safe environment configuration | Met controls | Server-only typed config, ignored credentials, no frontend provider keys, exact mutation-token validation |
 | Technical documentation | Met | README, architecture/trade-offs, walkthroughs, evaluation reports, deployment runbook, AI report and journal |
@@ -184,10 +194,10 @@ behavior is separately supported by the earlier successful cloud receipts.
 | AI usage report specifying assistance and independent changes | Met disclosure | Codex's work is identified; George's credential/setup/hosting/configuration actions are recorded; independent review is not fabricated |
 | Explain architecture/code/RAG/algorithms and diagnose/change code without AI | Pending human assessment | Rehearsal guide is prepared; it is not evidence George has performed the exercises. The interview cannot be completed by this agent |
 
-Minor documentation caveat: the historical evaluation report's closing status still refers
-to 141 tests and deployment as the next slice. That describes the earlier study stage;
-current README, delivery evidence and deployment receipts show 158 tests and completed cloud
-verification. Historical study outputs have not been rewritten to look current.
+The evaluation report identifies its historical study stage and links to current checks.
+Current documentation records 185 backend / five client / 22 browser tests, deployed support
+review and completed cloud persistence checks. Historical raw outputs are not rewritten to
+look current. Independent source review and the no-AI code defence remain George's work.
 
 ## Optional bonuses — page 7
 
