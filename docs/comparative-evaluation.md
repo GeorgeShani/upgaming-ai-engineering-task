@@ -100,6 +100,7 @@ score. A new model run is stochastic and may differ even with the same snapshot.
 uv run --group data pytest -W error
 uv run ruff check backend
 uv run ruff format --check backend
+uv run python scripts/verify_evaluation_archive.py
 ```
 
 Archive contents: root manifest/cost projection/selection; development and final run/checkpoint
@@ -120,3 +121,7 @@ public benchmark and fictional evidence, with no keys or original private upload
 
 Keep these unchecked until you do them. Public deployment and final interview rehearsal are
 the next slices; measured local performance alone does not finish those requirements.
+
+Read the measured [evaluation report](evaluation-report.md) first if you are reviewing the
+completed study. The archive checker recomputes both scored files and summaries without model
+calls and checks the selection precedes final execution. See `evaluation/verification.json`.

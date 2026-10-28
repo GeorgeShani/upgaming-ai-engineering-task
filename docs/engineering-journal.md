@@ -1277,3 +1277,73 @@ such abstentions/answers against actual text. George's independent label review 
 **AI contribution:** Codex ran/scored development, reviewed the failure and source caveats,
 froze A and started the final run. **Resume point:** Complete one final attempt per case/config,
 reproduce offline scores, review disputed claims and write measured findings without tuning.
+
+## Session 8 — checkpoint D: final results, semantic failures and reproduction
+
+**What changed / outcome:** All 96 planned attempts are complete: 16 development and 80 final.
+No case/configuration was retried. A remains the development-selected default, despite some
+stronger final retrieval results for B. `docs/evaluation-report.md` contains measured tables;
+`docs/evaluation/` contains every raw attempt, scored row, phase checkpoint, hash and selection.
+The walkthrough explains reproduction and hand calculations. Session 8's implementation boxes
+are checked; George's learning/review checkbox remains unchecked.
+
+**Observed final measurements:** Initial Document Recall@10 A=86.8%, B=89.7%; MRR@10
+A=0.892, B=0.912 across 34 labelled cases. Diagnostic all-search Recall@10 is 92.6%/94.1%.
+Both required sources reach final context in 22/26 multi-source A cases versus 23/26 B; both
+are cited in 21/26 versus 20/26. A/B supported-task proxies are 32/40 and 31/40, **not human
+semantic accuracy**. Both match expected status on 38/40. A has two final HTTP 502s (conflict
+01/06); B has one (comparison 06). Development B's conflict error makes four errors overall.
+Receipts retain partial retrieval and usage; exact failure subtypes were not captured.
+
+**Metrics versus meaning:** Returned quote/ID/canonical-offset validity is 59/59 A and 58/58 B.
+Labelled citation alignment is 57/59 and 56/58. Neither proves entailment. Reading all native
+claims/quotes found unsupported US population figures citing Germany/world population, a wrong-
+band citation, a reversed age comparison, and British→English origin inference. The wrong age
+still contains the expected name and passes the automatic proxy. Some correct negative/implicit
+positive comparisons fail literal yes/no checks. All prose EM scores are zero; full-response
+token F1 is 0.221/0.195 and last-claim F1 0.224/0.208. Explanatory wording and lack of a dedicated
+short-answer field make these imperfect lexical measures. These weaknesses are documented,
+not hidden by extracting gold-dependent substrings or claiming automatic correctness.
+
+**Qualitative evidence:** `docs/evaluation/qualitative-review.md` identifies Codex as the
+reviewer and records case-specific claims/quotes. The native comparison/bridge outputs were
+read, including automatically passing cases. Simple recovery values match the exact fictional
+cases; successful conflicts preserve both reports; missing approvers abstain. This is assisted
+review, not an independent human citation-accuracy estimate. Nine source/reference caveats were
+recorded before final calls; frozen labels remain unchanged and George's review is still pending.
+
+**Experimental limit / alternative:** Every required source has identical A/B chunk boundaries:
+12/12 development and 60/60 final distinct passages. Entire-corpus identical spans are
+47,952/50,024. Of 37 final case pairs with two successful outputs, only 21 share exact first-
+query wording. The comparison therefore cannot isolate chunking quality from distractor ranks
+and stochastic query/generation behavior. More boundary-sensitive examples, repeated trials
+and fresh held-out cases would provide a stronger study. Adding them after seeing these final
+outcomes would be a new experiment, not a repair to this reported result. No system tuning was
+performed during the final run.
+
+**Cost / latency:** Final A/B known estimates are $0.20097386/$0.20032803; development total
+is $0.08628946; all evaluation adds $0.48759135. Project ledger after evaluation records
+$0.69751671 known usage and $2.31480321 conservative reservations, under the unchanged $4.50
+ceiling. Final attempt median latency is 5.288/5.151 s and p95 6.451/6.058 s, including failures
+but excluding preflight and pauses. Caches were retained; configured rates do not claim billing
+discounts, an invoice or account-wide budget enforcement.
+
+**Verification:** All **141 backend tests** pass with warnings treated as errors; Ruff lint and
+format pass. The free archive checker reproduces both complete summaries and every scored row,
+checks 108 archived file fingerprints, unchanged corpus/fixture/code bytes, phase cloud identity,
+configuration/limits, development selection timing and continuous ledger deltas. A disposable-
+copy mutation changed a citation to nonexistent text; recomputation failed as expected. The
+original archive was untouched and these checks made no provider requests. Fixed LF endings
+were added for archived files to preserve byte fingerprints on Windows/Unix checkouts.
+An additional read-only cloud check retrieved the four deleted indexed revisions and their
+chunk IDs in both collections, confirming the physical-minus-active count difference without
+model calls; see `docs/inactive-evaluation-points.json`.
+
+**My understanding (George):** [ ] Run the free archive check; [ ] calculate one recall/MRR
+example; [ ] trace a bridge's queries/context/citations; [ ] inspect the reversed-age and
+population claims; [ ] explain why literal validity and name presence can both pass a false
+claim; [ ] inspect the selection timestamp; [ ] review the labels independently.
+**AI contribution:** Codex implemented, ran, reviewed and documented the work; no claim is made
+that George independently authored or verified it. **Resume point:** Follow
+`docs/comparative-evaluation.md` and `docs/evaluation-report.md`; slice 9 is public deployment
+and restart verification, with final delivery/rehearsal in slice 10.

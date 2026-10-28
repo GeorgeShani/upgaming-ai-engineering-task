@@ -58,9 +58,9 @@ does not claim that George has completed his review. Estimates are focused worki
 
 ## Session 8: Comparative evaluation (2 hours; depends on 7 and completed indexes)
 
-- [ ] Choose deployment config from development examples before final results.
-- [ ] Run both chunking configurations with otherwise identical settings.
-- [ ] Save raw results and required metrics, cost/latency, failure analysis, reproduction commands.
+- [x] Choose deployment config from development examples before final results.
+- [x] Run both chunking configurations with otherwise identical settings.
+- [x] Save raw results and required metrics, cost/latency, failure analysis, reproduction commands.
 - [ ] George: explain metrics and manually review disputed citations.
 
 ## Session 9: Deployment verification (1 hour; depends on 8)

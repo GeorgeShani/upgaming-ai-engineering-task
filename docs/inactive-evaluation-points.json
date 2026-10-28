@@ -1,0 +1,9 @@
+{
+  "scope": "read-only inactive indexed-revision check; no provider calls",
+  "deleted_indexed_current_revisions": 4,
+  "confirmed_retained_inactive_points": {
+    "a": 4,
+    "b": 4
+  },
+  "matches_physical_minus_expected_active": true
+}

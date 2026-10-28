@@ -1,12 +1,14 @@
 # AI Investigation Engine
 
 An evidence-based investigation engine built in small, reviewed sessions for the Applied AI
-assignment. **Current stage: Session 7, complete React workflows.** The website supports
+assignment. **Current stage: Session 8, measured comparative evaluation.** The website supports
 document upload/inspection/replacement/deletion, questions, cited evidence and search traces.
 Two chunking configurations, dense/BM25 retrieval, custom rank fusion, resumable
 local indexing, and validated cited answers are implemented. The investigation uses real model
 tool calls, evidence-grounded follow-ups, and a required verification round. The full 50,024-source
-import is complete. Comparative evaluation and deployment verification remain later slices.
+import is complete. The 96-attempt development/final A/B comparison is archived; A remains the
+development-selected default. The report records semantic citation failures and experimental
+limitations. Public deployment verification and final rehearsal remain later slices.
 No public demo URL has been verified yet.
 
 Start with [the plan](tasks/plan.md), [the checklist](tasks/todo.md), and
@@ -21,6 +23,15 @@ Continue with the [multi-step investigation walkthrough](docs/multi-step-investi
 for tool execution, quote IDs, conflicts, abstention, failure cases, and repeatable checks.
 The [React workflow walkthrough](docs/react-workflows.md) explains state, requests, stale edits,
 source snapshots, browser tests and the hands-on slice-7 checkpoint.
+Read the [comparative evaluation report](docs/evaluation-report.md) for measured A/B results,
+the [evaluation walkthrough](docs/comparative-evaluation.md) for metrics and reproduction, and
+the [raw archive](docs/evaluation/manifest.json) for frozen inputs and outputs.
+
+With the prepared corpus available locally, verify the saved study without provider calls:
+
+```powershell
+uv run python scripts/verify_evaluation_archive.py
+```
 
 ## Prepare and verify the dataset
 
