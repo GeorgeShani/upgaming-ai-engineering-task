@@ -1,0 +1,1490 @@
+{
+  "case_id": "development-comparison-01",
+  "strategy": "a",
+  "question": "Hayden is a singer-songwriter from Canada, but where does Buck-Tick hail from?",
+  "started_at": "2026-10-28T06:52:46.395422+00:00",
+  "ledger_before": {
+    "calls": 334,
+    "reserved_usd": 0.56864121,
+    "estimated_actual_usd": 0.23475921,
+    "input_tokens": 6999313,
+    "output_tokens": 3741
+  },
+  "result": {
+    "status": "answered",
+    "claims": [
+      {
+        "text": "Buck-Tick is a Japanese rock band.",
+        "citations": [
+          {
+            "evidence_id": "E1",
+            "quote": "Buck-Tick (stylized as BUCK-TICK) is a Japanese rock band, formed in Fujioka, Gunma in 1983."
+          }
+        ]
+      }
+    ],
+    "conflicting_claims": [],
+    "answer": "Buck-Tick is a Japanese rock band. [E1]",
+    "evidence": [
+      {
+        "evidence_id": "E1",
+        "chunk_id": "7445dc19-8217-5f2b-bd48-2bb667def04a",
+        "document_id": "faba2080-a4ab-5ecd-909b-d09383b8f463",
+        "revision_id": "a9cb3cf1-80fd-5ed8-a2f6-58e8a2a11b38",
+        "strategy": "a",
+        "text": "Buck-Tick (stylized as BUCK-TICK) is a Japanese rock band, formed in Fujioka, Gunma in 1983. The group has consisted of Atsushi Sakurai (lead vocals), Hisashi Imai (guitar), Hidehiko Hoshino (guitar), Yutaka Higuchi (bass) and Toll Yagami (drums) since 1985. In their three decade career, the band has released 20 studio albums, nearly all reaching the top ten on the charts, of which three in the late eighties and early nineties topped them. They are commonly credited as one of the founders of the visual kei movement.",
+        "title": "Buck-Tick",
+        "start": 0,
+        "end": 521,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 92
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 93,
+            "end": 258
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 259,
+            "end": 443
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 444,
+            "end": 521
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "validation",
+          "record_id": "5ae4a3265542995ad6573de5",
+          "url": "https://en.wikipedia.org/wiki/Buck-Tick",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.03278688524590164
+      },
+      {
+        "evidence_id": "E3",
+        "chunk_id": "77f79f88-daf1-5deb-aa76-085b86ae786b",
+        "document_id": "7f5a57ab-6c56-5c40-96e2-1298c1689b40",
+        "revision_id": "50f9a7db-053e-54e9-bcfe-a9730b91f03b",
+        "strategy": "a",
+        "text": "Ai no Wakusei (愛の惑星) is the only solo album by released by Sakurai Atsushi, vocalist for the Japanese rock band Buck-Tick. It was released on June 23, 2004 through Victor Entertainment. The album was packaged in a special long box, featuring a photo book, though it is also now out of print. Sakurai wrote all of the lyrics and sang on the album while the music was composed by a different collaborator on each track. Rather than adhere closely to Buck-Tick's style, Sakurai recruited composers whom come from various musical backgrounds, ranging from the hard industrial rock of Raymond Watts to the upbeat electronica of Xlover. <br>",
+        "title": "Ai no Wakusei",
+        "start": 0,
+        "end": 635,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 122
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 123,
+            "end": 185
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 186,
+            "end": 291
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 292,
+            "end": 417
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 418,
+            "end": 630
+          },
+          {
+            "kind": "sentence",
+            "number": 5,
+            "start": 631,
+            "end": 635
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a73f5215542993a88ae2ebd",
+          "url": "https://en.wikipedia.org/wiki/Ai_no_Wakusei",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.03225806451612903
+      },
+      {
+        "evidence_id": "E2",
+        "chunk_id": "15cf9171-6ddb-5d99-b033-4f77f898ddb3",
+        "document_id": "2ebd09af-61ed-5f1e-902f-b866697e389b",
+        "revision_id": "aa166f37-ca5c-56b6-b824-11d3907d3d31",
+        "strategy": "a",
+        "text": "Kingston Rudieska(킹스턴 루디스카 ) is a nine-piece South Korean ska band formed in 2004. Their sound is mainly influenced by first-wave Jamaican ska, as well as other Caribbean genres including reggae and calypso music. They are heavily influenced by the Skatalites and frequently perform Skatalites covers. Many of the members are jazz musicians, and their sound is heavily influenced by ska jazz, with band members frequently performing solos during performances.",
+        "title": "Kingston Rudieska",
+        "start": 0,
+        "end": 459,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 82
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 83,
+            "end": 213
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 214,
+            "end": 301
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 302,
+            "end": 459
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a7d20b055429909bec76973",
+          "url": "https://en.wikipedia.org/wiki/Kingston_Rudieska",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.016129032258064516
+      },
+      {
+        "evidence_id": "E9",
+        "chunk_id": "c1d1cbf0-8bf8-550d-8aaf-5dfecd62d348",
+        "document_id": "e3c9945b-df86-5dbb-a035-1e733a48b56d",
+        "revision_id": "3ea31307-cafa-5995-9f9d-24a20ff0e4a1",
+        "strategy": "a",
+        "text": "Japanese rock (Japanese: 日本のロック , Hepburn: Nihon no Rokku ) , sometimes abbreviated to , is rock music from Japan. Influenced by American and British rock of the 1960s, the first rock bands in Japan performed what is called Group Sounds, with lyrics almost exclusively in English. Folk rock band Happy End in the early 1970s are credited as the first to sing rock music in the Japanese language. Punk rock band the Blue Hearts and heavy metal group X Japan, led Japanese rock bands in the late 1980s and early 1990s by achieving major mainstream success. Japanese rock music has become a cult worldwide, being widely known in Asia and has survived through decades competing with its contemporary derivative local style J-pop.",
+        "title": "J-rock",
+        "start": 0,
+        "end": 725,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 114
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 115,
+            "end": 280
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 281,
+            "end": 395
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 396,
+            "end": 554
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 555,
+            "end": 725
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a8cdb8f55429941ae14df1c",
+          "url": "https://en.wikipedia.org/wiki/J-rock",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.03057889822595705
+      },
+      {
+        "evidence_id": "E4",
+        "chunk_id": "a46030ca-35b3-55d0-9041-5a69ec8979ce",
+        "document_id": "8542abd0-f77e-57ef-97de-7add87ea4b06",
+        "revision_id": "c6594fec-58e8-5b01-bd51-63908d5f40ae",
+        "strategy": "a",
+        "text": "The Stryder was a band hailing from Long Island, NY. The Band was formed by Peter Toh and Scottie Redix in 1999 after their previous project, Yearly, disbanded following the departure of bassist Eben D'amico who left to join Saves the Day. They added a vocalist and bassist, John Johansen and Nick Wendel (Respectively). They released a 7\" on Elkion Records titled \"The Hits Just Keep on Comin\" and shortly after signed a deal to Equal Vision Records and released their debut album \"Masquerade in the Key of Crime\" in the summer 2000. The band toured extensively and began writing new material in 2001. They added former Glassjaw drummer Durijah Lang, and moved Scottie Redix up to Guitar and backing vocals. In the summer of 2001 the band parted ways with vocalist John Johansen. 2002 saw the release of \"Jungle City Twitch\". Debuting a new sound, The Stryder continued to tour the country in support of the new release. In 2003/2004, Elkion Records released \"Savor The Danger\" which contained a collection of old demos and the 2 songs from the",
+        "title": "The Stryder",
+        "start": 0,
+        "end": 1045,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 52
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 53,
+            "end": 239
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 240,
+            "end": 320
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 321,
+            "end": 534
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 535,
+            "end": 602
+          },
+          {
+            "kind": "sentence",
+            "number": 5,
+            "start": 603,
+            "end": 708
+          },
+          {
+            "kind": "sentence",
+            "number": 6,
+            "start": 709,
+            "end": 780
+          },
+          {
+            "kind": "sentence",
+            "number": 7,
+            "start": 781,
+            "end": 826
+          },
+          {
+            "kind": "sentence",
+            "number": 8,
+            "start": 827,
+            "end": 921
+          },
+          {
+            "kind": "sentence",
+            "number": 9,
+            "start": 922,
+            "end": 1082
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5ac1353255429964131be192",
+          "url": "https://en.wikipedia.org/wiki/The_Stryder",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.015873015873015872
+      },
+      {
+        "evidence_id": "E10",
+        "chunk_id": "fc1e375e-0f9f-5e39-b9b7-17a9856db4c3",
+        "document_id": "adeb9bb4-fb4b-51b9-9571-e2b1fc1b958a",
+        "revision_id": "2c5a7e2b-602b-5fe3-868d-7cfcde3a5bf9",
+        "strategy": "a",
+        "text": "\"Zenzenzense\" (Japanese: 前前前世 , \"Past Past Past Life\") is a song by Japanese rock band Radwimps. It was used as one of the four theme songs to the animated film \"Your Name\", and was one of 26 songs the band composed for the film's soundtrack. It reached number-one on the \"Billboard\" Japan Hot 100. It also received a digital download song certification of Triple Platinum from the Recording Industry Association of Japan for sales of 750,000.",
+        "title": "Zenzenzense",
+        "start": 0,
+        "end": 443,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 96
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 97,
+            "end": 242
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 243,
+            "end": 298
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 299,
+            "end": 443
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5ae1076c554299422ee995d5",
+          "url": "https://en.wikipedia.org/wiki/Zenzenzense",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.026742734890354787
+      },
+      {
+        "evidence_id": "E11",
+        "chunk_id": "4501903b-c714-542b-aa9e-bf9b09a251ec",
+        "document_id": "19fa8da2-e700-51ab-a0c5-58551f3ebfbb",
+        "revision_id": "fbd922b3-4223-5c51-8757-6667fb149b53",
+        "strategy": "a",
+        "text": "R.E.M. was an American rock band that formed in Athens, Georgia, in 1980 by lead singer Michael Stipe, guitarist Peter Buck, bassist/backing vocalist Mike Mills, and drummer Bill Berry. One of the first alternative rock bands, R.E.M. was noted for Stipe's particular vocal quality and obscure lyrics, Buck's ringing, arpeggiated guitar style, and Mills' melodic basslines and backing vocals. R.E.M. released its first single—\"Radio Free Europe\"—in 1981 on the independent record label Hib-Tone. The single was followed by the \"Chronic Town\" EP in 1982, the band's first release on I.R.S. Records. In 1983, the group released its critically acclaimed debut album, \"Murmur\", and built its reputation over the next few years through subsequent releases, constant touring, and the support of college radio. Following years of underground success, R.E.M. achieved a mainstream hit in 1987 with the single \"The One I Love\". The group signed to Warner Bros. Records in 1988, and began to espouse political and environmental concerns while playing large arenas worldwide.",
+        "title": "R.E.M.",
+        "start": 0,
+        "end": 1063,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 185
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 186,
+            "end": 391
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 392,
+            "end": 494
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 495,
+            "end": 596
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 597,
+            "end": 802
+          },
+          {
+            "kind": "sentence",
+            "number": 5,
+            "start": 803,
+            "end": 917
+          },
+          {
+            "kind": "sentence",
+            "number": 6,
+            "start": 918,
+            "end": 950
+          },
+          {
+            "kind": "sentence",
+            "number": 7,
+            "start": 951,
+            "end": 1063
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5ae12d6655429920d52342ec",
+          "url": "https://en.wikipedia.org/wiki/R.E.M.",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.015873015873015872
+      },
+      {
+        "evidence_id": "E5",
+        "chunk_id": "c0531d6d-d953-543f-8004-824188ca20ff",
+        "document_id": "35096867-307e-55e0-a019-4fe371f9d4cc",
+        "revision_id": "de02259d-2b01-5e00-9e3f-77a806e8d5f5",
+        "strategy": "a",
+        "text": "Busted are an English pop rock band from Southend-on-Sea, Essex, consisting of James Bourne, Matt Willis and Charlie Simpson. Formed in 2001, the band had four UK number-one singles, released two studio albums, \"Busted\" (2002) and \"A Present for Everyone\" (2003), one compilation album and one live album before breaking up in January 2005 following Simpson's decision to pursue a career fronting post-hardcore band Fightstar. They have also won two Brit Awards and won The Record of the Year in 2004 with their single \"Thunderbirds\", amongst other awards. Busted have sold over 5 million albums worldwide.",
+        "title": "Busted (band)",
+        "start": 0,
+        "end": 606,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 125
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 126,
+            "end": 426
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 427,
+            "end": 556
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 557,
+            "end": 606
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a79d77d5542994f819ef0c9",
+          "url": "https://en.wikipedia.org/wiki/Busted_%28band%29",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.015873015873015872
+      }
+    ],
+    "search_trace": [
+      {
+        "query": "Buck-Tick origin hail from where country city band from",
+        "strategy": "a",
+        "profile": "1a8846753a25",
+        "embedding_usage": {
+          "model": "text-embedding-3-small",
+          "input_tokens": 12,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 2.4e-07
+        },
+        "document_ranking": [
+          "faba2080-a4ab-5ecd-909b-d09383b8f463",
+          "2ebd09af-61ed-5f1e-902f-b866697e389b",
+          "7f5a57ab-6c56-5c40-96e2-1298c1689b40",
+          "8542abd0-f77e-57ef-97de-7add87ea4b06",
+          "35096867-307e-55e0-a019-4fe371f9d4cc",
+          "36cc7eb5-f0c0-5fb7-8657-38538f054647",
+          "d40e44fe-59cd-546b-bdd7-c67fe456bccb",
+          "a44692b0-a541-5e6c-b996-3afa6222bdee",
+          "ee306906-0d1d-537b-8c38-84601ffcbafa",
+          "9b09477d-b4bb-594e-9920-8325eea49013"
+        ],
+        "candidate_counts": {
+          "dense": 30,
+          "bm25": 30,
+          "active_dense": 30,
+          "active_bm25": 30
+        },
+        "evidence": [
+          {
+            "evidence_id": "E1",
+            "chunk_id": "7445dc19-8217-5f2b-bd48-2bb667def04a",
+            "document_id": "faba2080-a4ab-5ecd-909b-d09383b8f463",
+            "revision_id": "a9cb3cf1-80fd-5ed8-a2f6-58e8a2a11b38",
+            "strategy": "a",
+            "text": "Buck-Tick (stylized as BUCK-TICK) is a Japanese rock band, formed in Fujioka, Gunma in 1983. The group has consisted of Atsushi Sakurai (lead vocals), Hisashi Imai (guitar), Hidehiko Hoshino (guitar), Yutaka Higuchi (bass) and Toll Yagami (drums) since 1985. In their three decade career, the band has released 20 studio albums, nearly all reaching the top ten on the charts, of which three in the late eighties and early nineties topped them. They are commonly credited as one of the founders of the visual kei movement.",
+            "title": "Buck-Tick",
+            "start": 0,
+            "end": 521,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 92
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 93,
+                "end": 258
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 259,
+                "end": 443
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 444,
+                "end": 521
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5ae4a3265542995ad6573de5",
+              "url": "https://en.wikipedia.org/wiki/Buck-Tick",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03278688524590164
+          },
+          {
+            "evidence_id": "E2",
+            "chunk_id": "15cf9171-6ddb-5d99-b033-4f77f898ddb3",
+            "document_id": "2ebd09af-61ed-5f1e-902f-b866697e389b",
+            "revision_id": "aa166f37-ca5c-56b6-b824-11d3907d3d31",
+            "strategy": "a",
+            "text": "Kingston Rudieska(킹스턴 루디스카 ) is a nine-piece South Korean ska band formed in 2004. Their sound is mainly influenced by first-wave Jamaican ska, as well as other Caribbean genres including reggae and calypso music. They are heavily influenced by the Skatalites and frequently perform Skatalites covers. Many of the members are jazz musicians, and their sound is heavily influenced by ska jazz, with band members frequently performing solos during performances.",
+            "title": "Kingston Rudieska",
+            "start": 0,
+            "end": 459,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 82
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 83,
+                "end": 213
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 214,
+                "end": 301
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 302,
+                "end": 459
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a7d20b055429909bec76973",
+              "url": "https://en.wikipedia.org/wiki/Kingston_Rudieska",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.016129032258064516
+          },
+          {
+            "evidence_id": "E3",
+            "chunk_id": "77f79f88-daf1-5deb-aa76-085b86ae786b",
+            "document_id": "7f5a57ab-6c56-5c40-96e2-1298c1689b40",
+            "revision_id": "50f9a7db-053e-54e9-bcfe-a9730b91f03b",
+            "strategy": "a",
+            "text": "Ai no Wakusei (愛の惑星) is the only solo album by released by Sakurai Atsushi, vocalist for the Japanese rock band Buck-Tick. It was released on June 23, 2004 through Victor Entertainment. The album was packaged in a special long box, featuring a photo book, though it is also now out of print. Sakurai wrote all of the lyrics and sang on the album while the music was composed by a different collaborator on each track. Rather than adhere closely to Buck-Tick's style, Sakurai recruited composers whom come from various musical backgrounds, ranging from the hard industrial rock of Raymond Watts to the upbeat electronica of Xlover. <br>",
+            "title": "Ai no Wakusei",
+            "start": 0,
+            "end": 635,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 122
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 123,
+                "end": 185
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 186,
+                "end": 291
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 292,
+                "end": 417
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 418,
+                "end": 630
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 631,
+                "end": 635
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a73f5215542993a88ae2ebd",
+              "url": "https://en.wikipedia.org/wiki/Ai_no_Wakusei",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.016129032258064516
+          },
+          {
+            "evidence_id": "E4",
+            "chunk_id": "a46030ca-35b3-55d0-9041-5a69ec8979ce",
+            "document_id": "8542abd0-f77e-57ef-97de-7add87ea4b06",
+            "revision_id": "c6594fec-58e8-5b01-bd51-63908d5f40ae",
+            "strategy": "a",
+            "text": "The Stryder was a band hailing from Long Island, NY. The Band was formed by Peter Toh and Scottie Redix in 1999 after their previous project, Yearly, disbanded following the departure of bassist Eben D'amico who left to join Saves the Day. They added a vocalist and bassist, John Johansen and Nick Wendel (Respectively). They released a 7\" on Elkion Records titled \"The Hits Just Keep on Comin\" and shortly after signed a deal to Equal Vision Records and released their debut album \"Masquerade in the Key of Crime\" in the summer 2000. The band toured extensively and began writing new material in 2001. They added former Glassjaw drummer Durijah Lang, and moved Scottie Redix up to Guitar and backing vocals. In the summer of 2001 the band parted ways with vocalist John Johansen. 2002 saw the release of \"Jungle City Twitch\". Debuting a new sound, The Stryder continued to tour the country in support of the new release. In 2003/2004, Elkion Records released \"Savor The Danger\" which contained a collection of old demos and the 2 songs from the",
+            "title": "The Stryder",
+            "start": 0,
+            "end": 1045,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 52
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 53,
+                "end": 239
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 240,
+                "end": 320
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 321,
+                "end": 534
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 535,
+                "end": 602
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 603,
+                "end": 708
+              },
+              {
+                "kind": "sentence",
+                "number": 6,
+                "start": 709,
+                "end": 780
+              },
+              {
+                "kind": "sentence",
+                "number": 7,
+                "start": 781,
+                "end": 826
+              },
+              {
+                "kind": "sentence",
+                "number": 8,
+                "start": 827,
+                "end": 921
+              },
+              {
+                "kind": "sentence",
+                "number": 9,
+                "start": 922,
+                "end": 1082
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ac1353255429964131be192",
+              "url": "https://en.wikipedia.org/wiki/The_Stryder",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015873015873015872
+          },
+          {
+            "evidence_id": "E5",
+            "chunk_id": "c0531d6d-d953-543f-8004-824188ca20ff",
+            "document_id": "35096867-307e-55e0-a019-4fe371f9d4cc",
+            "revision_id": "de02259d-2b01-5e00-9e3f-77a806e8d5f5",
+            "strategy": "a",
+            "text": "Busted are an English pop rock band from Southend-on-Sea, Essex, consisting of James Bourne, Matt Willis and Charlie Simpson. Formed in 2001, the band had four UK number-one singles, released two studio albums, \"Busted\" (2002) and \"A Present for Everyone\" (2003), one compilation album and one live album before breaking up in January 2005 following Simpson's decision to pursue a career fronting post-hardcore band Fightstar. They have also won two Brit Awards and won The Record of the Year in 2004 with their single \"Thunderbirds\", amongst other awards. Busted have sold over 5 million albums worldwide.",
+            "title": "Busted (band)",
+            "start": 0,
+            "end": 606,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 125
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 126,
+                "end": 426
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 427,
+                "end": 556
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 557,
+                "end": 606
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a79d77d5542994f819ef0c9",
+              "url": "https://en.wikipedia.org/wiki/Busted_%28band%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015873015873015872
+          },
+          {
+            "evidence_id": "E6",
+            "chunk_id": "07cb0a8d-75f6-54f7-83a5-afd97a177d47",
+            "document_id": "36cc7eb5-f0c0-5fb7-8657-38538f054647",
+            "revision_id": "e4fa3f6e-2292-5ed0-960d-84ca7a380b79",
+            "strategy": "a",
+            "text": "Bayside is an American rock band from New York City, formed in 2000, currently consisting of lead vocalist/guitarist Anthony Raneri, lead guitarist Jack O'Shea, bassist Nick Ghanbarian, and drummer Chris Guglielmo.",
+            "title": "Bayside (band)",
+            "start": 0,
+            "end": 214,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 214
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a79d77d5542994f819ef0c9",
+              "url": "https://en.wikipedia.org/wiki/Bayside_%28band%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015625
+          },
+          {
+            "evidence_id": "E7",
+            "chunk_id": "3e20906a-362a-5e1f-9d31-399e58e129f9",
+            "document_id": "d40e44fe-59cd-546b-bdd7-c67fe456bccb",
+            "revision_id": "1fac38bf-be62-5540-a1c0-25a3ad4a5498",
+            "strategy": "a",
+            "text": "Tick, Tick... Boom! (styled as tick, tick... BOOM!) is a musical written by American composer Jonathan Larson, who won a Pulitzer and three Tony Awards for his musical \"Rent\". \"Tick, Tick... Boom!\" tells the story of an aspiring composer named Jon, who lives in New York City in 1990. Jon is worried he has made the wrong career choice to be part of the performing arts. The story is autobiographical, as stated by Larson's father in the liner notes of the cast recording – Larson had been trying to establish himself in theater since the early 1980s.",
+            "title": "Tick, Tick... Boom!",
+            "start": 0,
+            "end": 551,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 19
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 20,
+                "end": 51
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 52,
+                "end": 175
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 176,
+                "end": 197
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 198,
+                "end": 284
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 285,
+                "end": 370
+              },
+              {
+                "kind": "sentence",
+                "number": 6,
+                "start": 371,
+                "end": 551
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ab91da855429934fafe6e62",
+              "url": "https://en.wikipedia.org/wiki/Tick%2C_Tick..._Boom%21",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015625
+          },
+          {
+            "evidence_id": "E8",
+            "chunk_id": "78f51a1d-3b04-5aee-b44e-46dbbfecfd6c",
+            "document_id": "a44692b0-a541-5e6c-b996-3afa6222bdee",
+            "revision_id": "1b7a2db3-508a-5e35-a221-e19296ce2087",
+            "strategy": "a",
+            "text": "Phantom Buffalo is an indie-rock band from Portland, Maine. The band was known as The Ponys until 2004, when both Portland's Ponys and Chicago-based band The Ponys were invited to perform at South by Southwest. Being the lower-profile of the two bands, the Portland group decided on a name change shortly thereafter. The current lineup consists of Jonathan Balzano-Brookes (vocals, guitar), Tim Burns (guitar, vocals), Joe Domrad (drums), Jacob Chamberlain (drums), Sean Newton (bass), and Philip Willey (guitar, accordion, keyboards). The band has released music domestically on the Time-Lag Records label and in the UK on Rough Trade Records. The band's jangly, psychedelic pop music has been compared to The Byrds and New Zealand's The Chills, as well as North American indie-pop acts like The Shins and The New Pornographers.",
+            "title": "Phantom Buffalo",
+            "start": 0,
+            "end": 829,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 59
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 60,
+                "end": 210
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 211,
+                "end": 316
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 317,
+                "end": 535
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 536,
+                "end": 644
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 645,
+                "end": 829
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a8efd3c55429918e830d179",
+              "url": "https://en.wikipedia.org/wiki/Phantom_Buffalo",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015384615384615385
+          }
+        ],
+        "round": 1,
+        "tool_call_id": "call_SnKZcj2VoG6NaLTtobS8TbM5",
+        "executed": true,
+        "follow_up": null,
+        "requested_query": "Buck-Tick origin hail from where country city band from",
+        "query_adjusted": false
+      },
+      {
+        "query": "Buck-Tick is a Japanese rock band formed in Fujioka Gunma",
+        "strategy": "a",
+        "profile": "1a8846753a25",
+        "embedding_usage": {
+          "model": "text-embedding-3-small",
+          "input_tokens": 15,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 3e-07
+        },
+        "document_ranking": [
+          "faba2080-a4ab-5ecd-909b-d09383b8f463",
+          "7f5a57ab-6c56-5c40-96e2-1298c1689b40",
+          "e3c9945b-df86-5dbb-a035-1e733a48b56d",
+          "adeb9bb4-fb4b-51b9-9571-e2b1fc1b958a",
+          "19fa8da2-e700-51ab-a0c5-58551f3ebfbb",
+          "fa16ecd3-056a-5b0b-8bde-f898b38a9337",
+          "9b09477d-b4bb-594e-9920-8325eea49013",
+          "4225bc6b-a25c-5941-95cd-756d5a5aee1e",
+          "c51e8ff4-61f6-5d0f-8e8a-a8cc90e63b3d",
+          "662a118f-fc68-59d1-a6cc-57b94461eb14"
+        ],
+        "candidate_counts": {
+          "dense": 30,
+          "bm25": 30,
+          "active_dense": 30,
+          "active_bm25": 30
+        },
+        "evidence": [
+          {
+            "evidence_id": "E1",
+            "chunk_id": "7445dc19-8217-5f2b-bd48-2bb667def04a",
+            "document_id": "faba2080-a4ab-5ecd-909b-d09383b8f463",
+            "revision_id": "a9cb3cf1-80fd-5ed8-a2f6-58e8a2a11b38",
+            "strategy": "a",
+            "text": "Buck-Tick (stylized as BUCK-TICK) is a Japanese rock band, formed in Fujioka, Gunma in 1983. The group has consisted of Atsushi Sakurai (lead vocals), Hisashi Imai (guitar), Hidehiko Hoshino (guitar), Yutaka Higuchi (bass) and Toll Yagami (drums) since 1985. In their three decade career, the band has released 20 studio albums, nearly all reaching the top ten on the charts, of which three in the late eighties and early nineties topped them. They are commonly credited as one of the founders of the visual kei movement.",
+            "title": "Buck-Tick",
+            "start": 0,
+            "end": 521,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 92
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 93,
+                "end": 258
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 259,
+                "end": 443
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 444,
+                "end": 521
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5ae4a3265542995ad6573de5",
+              "url": "https://en.wikipedia.org/wiki/Buck-Tick",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03278688524590164
+          },
+          {
+            "evidence_id": "E3",
+            "chunk_id": "77f79f88-daf1-5deb-aa76-085b86ae786b",
+            "document_id": "7f5a57ab-6c56-5c40-96e2-1298c1689b40",
+            "revision_id": "50f9a7db-053e-54e9-bcfe-a9730b91f03b",
+            "strategy": "a",
+            "text": "Ai no Wakusei (愛の惑星) is the only solo album by released by Sakurai Atsushi, vocalist for the Japanese rock band Buck-Tick. It was released on June 23, 2004 through Victor Entertainment. The album was packaged in a special long box, featuring a photo book, though it is also now out of print. Sakurai wrote all of the lyrics and sang on the album while the music was composed by a different collaborator on each track. Rather than adhere closely to Buck-Tick's style, Sakurai recruited composers whom come from various musical backgrounds, ranging from the hard industrial rock of Raymond Watts to the upbeat electronica of Xlover. <br>",
+            "title": "Ai no Wakusei",
+            "start": 0,
+            "end": 635,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 122
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 123,
+                "end": 185
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 186,
+                "end": 291
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 292,
+                "end": 417
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 418,
+                "end": 630
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 631,
+                "end": 635
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a73f5215542993a88ae2ebd",
+              "url": "https://en.wikipedia.org/wiki/Ai_no_Wakusei",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03225806451612903
+          },
+          {
+            "evidence_id": "E9",
+            "chunk_id": "c1d1cbf0-8bf8-550d-8aaf-5dfecd62d348",
+            "document_id": "e3c9945b-df86-5dbb-a035-1e733a48b56d",
+            "revision_id": "3ea31307-cafa-5995-9f9d-24a20ff0e4a1",
+            "strategy": "a",
+            "text": "Japanese rock (Japanese: 日本のロック , Hepburn: Nihon no Rokku ) , sometimes abbreviated to , is rock music from Japan. Influenced by American and British rock of the 1960s, the first rock bands in Japan performed what is called Group Sounds, with lyrics almost exclusively in English. Folk rock band Happy End in the early 1970s are credited as the first to sing rock music in the Japanese language. Punk rock band the Blue Hearts and heavy metal group X Japan, led Japanese rock bands in the late 1980s and early 1990s by achieving major mainstream success. Japanese rock music has become a cult worldwide, being widely known in Asia and has survived through decades competing with its contemporary derivative local style J-pop.",
+            "title": "J-rock",
+            "start": 0,
+            "end": 725,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 114
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 115,
+                "end": 280
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 281,
+                "end": 395
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 396,
+                "end": 554
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 555,
+                "end": 725
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a8cdb8f55429941ae14df1c",
+              "url": "https://en.wikipedia.org/wiki/J-rock",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03057889822595705
+          },
+          {
+            "evidence_id": "E10",
+            "chunk_id": "fc1e375e-0f9f-5e39-b9b7-17a9856db4c3",
+            "document_id": "adeb9bb4-fb4b-51b9-9571-e2b1fc1b958a",
+            "revision_id": "2c5a7e2b-602b-5fe3-868d-7cfcde3a5bf9",
+            "strategy": "a",
+            "text": "\"Zenzenzense\" (Japanese: 前前前世 , \"Past Past Past Life\") is a song by Japanese rock band Radwimps. It was used as one of the four theme songs to the animated film \"Your Name\", and was one of 26 songs the band composed for the film's soundtrack. It reached number-one on the \"Billboard\" Japan Hot 100. It also received a digital download song certification of Triple Platinum from the Recording Industry Association of Japan for sales of 750,000.",
+            "title": "Zenzenzense",
+            "start": 0,
+            "end": 443,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 96
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 97,
+                "end": 242
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 243,
+                "end": 298
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 299,
+                "end": 443
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ae1076c554299422ee995d5",
+              "url": "https://en.wikipedia.org/wiki/Zenzenzense",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.026742734890354787
+          },
+          {
+            "evidence_id": "E11",
+            "chunk_id": "4501903b-c714-542b-aa9e-bf9b09a251ec",
+            "document_id": "19fa8da2-e700-51ab-a0c5-58551f3ebfbb",
+            "revision_id": "fbd922b3-4223-5c51-8757-6667fb149b53",
+            "strategy": "a",
+            "text": "R.E.M. was an American rock band that formed in Athens, Georgia, in 1980 by lead singer Michael Stipe, guitarist Peter Buck, bassist/backing vocalist Mike Mills, and drummer Bill Berry. One of the first alternative rock bands, R.E.M. was noted for Stipe's particular vocal quality and obscure lyrics, Buck's ringing, arpeggiated guitar style, and Mills' melodic basslines and backing vocals. R.E.M. released its first single—\"Radio Free Europe\"—in 1981 on the independent record label Hib-Tone. The single was followed by the \"Chronic Town\" EP in 1982, the band's first release on I.R.S. Records. In 1983, the group released its critically acclaimed debut album, \"Murmur\", and built its reputation over the next few years through subsequent releases, constant touring, and the support of college radio. Following years of underground success, R.E.M. achieved a mainstream hit in 1987 with the single \"The One I Love\". The group signed to Warner Bros. Records in 1988, and began to espouse political and environmental concerns while playing large arenas worldwide.",
+            "title": "R.E.M.",
+            "start": 0,
+            "end": 1063,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 185
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 186,
+                "end": 391
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 392,
+                "end": 494
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 495,
+                "end": 596
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 597,
+                "end": 802
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 803,
+                "end": 917
+              },
+              {
+                "kind": "sentence",
+                "number": 6,
+                "start": 918,
+                "end": 950
+              },
+              {
+                "kind": "sentence",
+                "number": 7,
+                "start": 951,
+                "end": 1063
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ae12d6655429920d52342ec",
+              "url": "https://en.wikipedia.org/wiki/R.E.M.",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015873015873015872
+          },
+          {
+            "evidence_id": "E12",
+            "chunk_id": "332f1bfb-523c-5b8f-985e-cec33198796d",
+            "document_id": "fa16ecd3-056a-5b0b-8bde-f898b38a9337",
+            "revision_id": "b135e073-3462-5476-9dd8-46f413f5007e",
+            "strategy": "a",
+            "text": "American alternative rock band R.E.M. released 15 studio albums ranging from 1983 to 2011, three live albums, 14 compilation albums, one remix album, one soundtrack album, 12 video albums, seven extended plays, 63 singles, and 77 music videos. Formed in 1980 by singer Michael Stipe, guitarist Peter Buck, bassist Mike Mills, and drummer Bill Berry, the band was pivotal in the development of the alternative rock genre. Their musical style inspired several other alternative rock bands and musicians, and the band became one of the first alternative rock acts to experience breakthrough commercial success. R.E.M. has sold over 85 million copies of their studio albums worldwide, making them one of the best-selling music artists of all-time.",
+            "title": "R.E.M. discography",
+            "start": 0,
+            "end": 743,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 420
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 421,
+                "end": 607
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 608,
+                "end": 743
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ae26c32554299495565da65",
+              "url": "https://en.wikipedia.org/wiki/R.E.M._discography",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015625
+          },
+          {
+            "evidence_id": "E13",
+            "chunk_id": "5e3601e2-bea6-5298-af6f-30085f14b63e",
+            "document_id": "9b09477d-b4bb-594e-9920-8325eea49013",
+            "revision_id": "0a1422ec-ed43-53a8-9cb9-995426ade233",
+            "strategy": "a",
+            "text": "The members of Bucky Jonson are a Grammy Award winning ensemble composed of Printz Board (keyboards, trumpet, bass), George Pajon (guitars), Jr., Tim Izo (wood instruments, guitars and MPC) and Keith Harris (percussion and keyboards) with their first album, \"The Band Behind The Front,\" released in 2007 on the BBE label.",
+            "title": "Bucky Jonson",
+            "start": 0,
+            "end": 321,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 321
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5add76d05542992200553b2c",
+              "url": "https://en.wikipedia.org/wiki/Bucky_Jonson",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015625
+          },
+          {
+            "evidence_id": "E14",
+            "chunk_id": "e8f53855-6781-537f-b877-35300f8c0ca2",
+            "document_id": "4225bc6b-a25c-5941-95cd-756d5a5aee1e",
+            "revision_id": "59fef7a7-78ce-5cf7-8cef-cb1ab0a59ee2",
+            "strategy": "a",
+            "text": "Group Tamashii (グループ魂 , Gurūpu Tamashii ) is a Japanese comedy rock band. It was started by actors in a theatrical company called \"Otona Keikaku\" (Project Adult) in 1995. Its original members were Hakai (Sadao Abe), Boudou (Kankuro Kudo), and Baito Kun (Seminosuke Murasugi). When it started, the group was just a group of comedians using the guitar. The members perform in many theaters, and also at Shōten. In 1997, bass, guitar, and drum players join and became a band. In 2002 they released their debut album called \"Run Tamashi Run\" (Run魂Run ) while they were signed to an indie label, \"MIDI\". In 2005, Group Tamashi signed to Ki/oon Records. The name of the band derives from the song \"Tamashi Kogashite\" of the rock band ARB. The reason they put the \"Group\" in the band name is \"Nobody didn't say 'Group' by myself.\" In 2008 they released a long-awaited new album entitled \"Patsun Patsun",
+            "title": "Group Tamashii",
+            "start": 0,
+            "end": 894,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 73
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 74,
+                "end": 170
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 171,
+                "end": 275
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 276,
+                "end": 350
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 351,
+                "end": 408
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 409,
+                "end": 472
+              },
+              {
+                "kind": "sentence",
+                "number": 6,
+                "start": 473,
+                "end": 598
+              },
+              {
+                "kind": "sentence",
+                "number": 7,
+                "start": 599,
+                "end": 647
+              },
+              {
+                "kind": "sentence",
+                "number": 8,
+                "start": 648,
+                "end": 732
+              },
+              {
+                "kind": "sentence",
+                "number": 9,
+                "start": 733,
+                "end": 823
+              },
+              {
+                "kind": "sentence",
+                "number": 10,
+                "start": 824,
+                "end": 896
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a760de1554299109176e63c",
+              "url": "https://en.wikipedia.org/wiki/Group_Tamashii",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015384615384615385
+          }
+        ],
+        "round": 2,
+        "tool_call_id": "call_pe2QDCJkzsrkESCsL7K6IlB6",
+        "executed": true,
+        "follow_up": {
+          "evidence_id": "E1",
+          "entity": "Buck-Tick"
+        },
+        "requested_query": "Buck-Tick is a Japanese rock band formed in Fujioka Gunma",
+        "query_adjusted": false
+      }
+    ],
+    "workflow": "bounded_tools_v1",
+    "execution": {
+      "planning_rounds": 2,
+      "retrieval_rounds": 2,
+      "tool_calls": 2,
+      "searches": 2,
+      "llm_calls": 3,
+      "embedding_calls": 2,
+      "total_provider_calls": 5,
+      "stop_reason": "retrieval_limit",
+      "limits": {
+        "retrieval_rounds": 2,
+        "searches": 3,
+        "llm_calls": 3,
+        "embedding_calls": 3,
+        "total_provider_calls": 6
+      }
+    },
+    "configuration": {
+      "strategy": "a",
+      "profile": "1a8846753a25",
+      "embedding_model": "text-embedding-3-small",
+      "embedding_dimensions": 384,
+      "generation_model": "gpt-5.4-mini-2026-03-17",
+      "prompt_version": "bounded_tools_quote_ids_v1"
+    },
+    "usage": {
+      "planning": [
+        {
+          "input_tokens": 526,
+          "output_tokens": 34,
+          "estimated_cost_usd": 0.0005475,
+          "model": "gpt-5.4-mini-2026-03-17"
+        },
+        {
+          "input_tokens": 1842,
+          "output_tokens": 48,
+          "estimated_cost_usd": 0.0015975,
+          "model": "gpt-5.4-mini-2026-03-17"
+        }
+      ],
+      "generation": {
+        "input_tokens": 6013,
+        "output_tokens": 52,
+        "estimated_cost_usd": 0.00474375,
+        "model": "gpt-5.4-mini-2026-03-17"
+      },
+      "embeddings": [
+        {
+          "model": "text-embedding-3-small",
+          "input_tokens": 12,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 2.4e-07
+        },
+        {
+          "model": "text-embedding-3-small",
+          "input_tokens": 15,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 3e-07
+        }
+      ],
+      "estimated_model_cost_usd": 0.00688875,
+      "estimated_total_cost_usd": 0.00688929
+    },
+    "latency_ms": 5466
+  },
+  "error": null,
+  "elapsed_ms": 5466,
+  "ledger_after": {
+    "calls": 339,
+    "reserved_usd": 0.5902125,
+    "estimated_actual_usd": 0.24164850000000002,
+    "input_tokens": 7007721,
+    "output_tokens": 3875
+  }
+}

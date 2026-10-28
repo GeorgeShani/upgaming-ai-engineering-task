@@ -1,0 +1,1440 @@
+{
+  "case_id": "development-comparison-02",
+  "strategy": "a",
+  "question": "Are Freakonomics and In the Realm of the Hackers both American documentaries?",
+  "started_at": "2026-10-28T06:53:02.361203+00:00",
+  "ledger_before": {
+    "calls": 349,
+    "reserved_usd": 0.63145758,
+    "estimated_actual_usd": 0.25424508,
+    "input_tokens": 7022493,
+    "output_tokens": 4221
+  },
+  "result": {
+    "status": "answered",
+    "claims": [
+      {
+        "text": "Freakonomics: The Movie is an American documentary film.",
+        "citations": [
+          {
+            "evidence_id": "E2",
+            "quote": "Freakonomics: The Movie is a 2010 American documentary film based on the 2005 book \"Freakonomics: A Rogue Economist Explores the Hidden Side of Everything\" by economist Steven D. Levitt and writer Stephen J. Dubner. The film premiered at the Tribeca Film Festival in April 2010 with a theatrical release later in the year. The film received a lukewarm reception and a 65% fresh rating at Rottentomatoes."
+          }
+        ]
+      },
+      {
+        "text": "In The Realm of the Hackers is an Australian documentary.",
+        "citations": [
+          {
+            "evidence_id": "E1",
+            "quote": "In The Realm of the Hackers is a 2003 Australian documentary directed by Kevin Anderson about the prominent hacker community, centered in Melbourne, Australia in the late 1980s until early 1990."
+          }
+        ]
+      },
+      {
+        "text": "So, they are not both American documentaries.",
+        "citations": [
+          {
+            "evidence_id": "E2",
+            "quote": "Freakonomics: The Movie is a 2010 American documentary film based on the 2005 book \"Freakonomics: A Rogue Economist Explores the Hidden Side of Everything\" by economist Steven D. Levitt and writer Stephen J. Dubner. The film premiered at the Tribeca Film Festival in April 2010 with a theatrical release later in the year. The film received a lukewarm reception and a 65% fresh rating at Rottentomatoes."
+          },
+          {
+            "evidence_id": "E1",
+            "quote": "In The Realm of the Hackers is a 2003 Australian documentary directed by Kevin Anderson about the prominent hacker community, centered in Melbourne, Australia in the late 1980s until early 1990."
+          }
+        ]
+      }
+    ],
+    "conflicting_claims": [],
+    "answer": "Freakonomics: The Movie is an American documentary film. [E2] In The Realm of the Hackers is an Australian documentary. [E1] So, they are not both American documentaries. [E2] [E1]",
+    "evidence": [
+      {
+        "evidence_id": "E1",
+        "chunk_id": "2cee9eed-6c96-5958-8ede-57107d421994",
+        "document_id": "bf26a9ab-712a-5103-b55a-a98a07999139",
+        "revision_id": "7671a378-803b-53d9-8133-f5d3b7328716",
+        "strategy": "a",
+        "text": "In The Realm of the Hackers is a 2003 Australian documentary directed by Kevin Anderson about the prominent hacker community, centered in Melbourne, Australia in the late 1980s until early 1990. The storyline is centered on the Australian teenagers going by the hacker names \"Electron\" and \"Phoenix\", who were members of an elite computer hacking group called 'The Realm' and hacked into some of the most secure computer networks in the world, including those of the US Naval Research Laboratory, Lawrence Livermore National Laboratory, a government lab charged with the security of the US nuclear stockpile, and NASA. The film runs for 55 minutes and was inspired by the book \"Underground\", by Melbourne-based writer and academic Suelette Dreyfus.",
+        "title": "In the Realm of the Hackers",
+        "start": 0,
+        "end": 748,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 194
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 195,
+            "end": 618
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 619,
+            "end": 748
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "validation",
+          "record_id": "5abc0a5d5542993f40c73c64",
+          "url": "https://en.wikipedia.org/wiki/In_the_Realm_of_the_Hackers",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.03252247488101534
+      },
+      {
+        "evidence_id": "E2",
+        "chunk_id": "97fd7ec5-6748-5c4a-9923-73a5790085b7",
+        "document_id": "d741f9b5-f913-534b-8336-e80f225f4236",
+        "revision_id": "e548650e-7838-52c3-a39e-ff488832fe50",
+        "strategy": "a",
+        "text": "Freakonomics: The Movie is a 2010 American documentary film based on the 2005 book \"Freakonomics: A Rogue Economist Explores the Hidden Side of Everything\" by economist Steven D. Levitt and writer Stephen J. Dubner. The film premiered at the Tribeca Film Festival in April 2010 with a theatrical release later in the year. The film received a lukewarm reception and a 65% fresh rating at Rottentomatoes.",
+        "title": "Freakonomics (film)",
+        "start": 0,
+        "end": 403,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 215
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 216,
+            "end": 322
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 323,
+            "end": 403
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "validation",
+          "record_id": "5abc0a5d5542993f40c73c64",
+          "url": "https://en.wikipedia.org/wiki/Freakonomics_%28film%29",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.03225806451612903
+      },
+      {
+        "evidence_id": "E3",
+        "chunk_id": "c457b501-6e5a-59b7-820a-61e8a6d4fe6f",
+        "document_id": "26541631-fea8-5c8a-a7ec-73ca0e21bc71",
+        "revision_id": "49ffaf0b-2c89-53fe-bea5-3fafac01149a",
+        "strategy": "a",
+        "text": "Fisher Stevens (born Steven Fisher; November 27, 1963) is an American actor, director, producer and writer. As an actor, he is best known for his portrayals of Ben Jabituya in \"Short Circuit\" (renamed \"Ben Jahrvi\" in the sequel), Chuck Fishman on the 1990s television series \"Early Edition\" and villainous computer genius Eugene \"The Plague\" Belford in \"Hackers\". His most recent successes include the 2010 Academy Award for Best Documentary Feature for his film \"The Cove\" and the 2008 Independent Spirit Award for Best Documentary Feature for his film \"Crazy Love\". In addition, he has directed the Leonardo DiCaprio-produced documentary \"Before the Flood\", which is executive produced by Martin Scorsese, has screened at the Toronto International Film Festival, and will be screened by National Geographic.",
+        "title": "Fisher Stevens",
+        "start": 0,
+        "end": 809,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 107
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 108,
+            "end": 363
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 364,
+            "end": 567
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 568,
+            "end": 809
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5abe892f55429976d4830b5b",
+          "url": "https://en.wikipedia.org/wiki/Fisher_Stevens",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.03125
+      },
+      {
+        "evidence_id": "E4",
+        "chunk_id": "3df1f080-de20-530f-932b-aa24918074d6",
+        "document_id": "23eb430d-9aad-5904-939e-dfa2959ebd1d",
+        "revision_id": "7fc24b2e-e53e-545d-9b77-c4ee1ece1bfe",
+        "strategy": "a",
+        "text": "Heidi Ewing is a director, producer, and writer of documentary films. She and Rachel Grady founded Loki Films in 2001, and have collaborated on several documentaries together. She is best known as the co-director of \"Jesus Camp\", which was nominated for an Academy Award for best documentary in 2006. Next came\"12th & Delaware\" (HBO), which premiered at the 2010 Sundance Film Festival. The film \"casts a heart-rending light on the abortion divide\" (LA Times) and was honored with a Peabody Award. \"Detropia\", a poetic look at Ewing's home town, also won several awards, including Best Editing at Sundance 2012, Outstanding Direction and Outstanding Original Score, at the 2013 Cinema Eye Honors for Nonfiction Filmmaking and a News and Documentary Emmy for editing. \"Norman Lear: Just Another Version of You\" was the opening night selection of the 2016 Sundance Film Festival and premiered on PBS American Masters on October 25, 2016. Other films as a director include \"The Boys of Baraka\", \"Freakonomics\", and \"The Education of Mohammed Hussein\".",
+        "title": "Heidi Ewing",
+        "start": 0,
+        "end": 1048,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 69
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 70,
+            "end": 175
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 176,
+            "end": 300
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 301,
+            "end": 386
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 387,
+            "end": 497
+          },
+          {
+            "kind": "sentence",
+            "number": 5,
+            "start": 498,
+            "end": 766
+          },
+          {
+            "kind": "sentence",
+            "number": 6,
+            "start": 767,
+            "end": 935
+          },
+          {
+            "kind": "sentence",
+            "number": 7,
+            "start": 936,
+            "end": 1048
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a89eca455429946c8d6ea11",
+          "url": "https://en.wikipedia.org/wiki/Heidi_Ewing",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.015873015873015872
+      },
+      {
+        "evidence_id": "E5",
+        "chunk_id": "cf2a08aa-5dca-59d0-b619-850400ddd930",
+        "document_id": "a2b2102c-8ad4-5377-badf-cddd2da4376b",
+        "revision_id": "f814a93a-ba0c-5e34-808e-d64b12fa99fd",
+        "strategy": "a",
+        "text": "Killswitch is a documentary film about the battle for control over the Internet. The movie is a collaboration between director Ali Akbarzadeh, producer Jeffrey Horn, writer Christopher Dollar and Akorn Entertainment. It premiered at the Woodstock Film Festival in October 2014, where it won the James K. Lyons Award for Best Editing of a feature documentary and then made its international debut, playing alongside \"Citizenfour\" at the International Documentary Film Festival Amsterdam in November 2014. In 2015, it screened on Capitol Hill, as well as film festivals on four continents (Europe, Asia, Australia, and North America). The tech world has been excited by democratic presidential candidate Lawrence Lessig's role in the film. Kathy Gill of GeekWire writes that \"\"Killswitch\" is much more than a dry recitation of technical history. Director Ali Akbarzadeh, producer Jeff Horn, and writer Christopher Dollar created a human centered story. A large part of that connection comes from Lessig and his relationship with Swartz.\" Since Killswitch's recent release to a popular audience on Netflix, critics have hailed the film as one of the best documentary films to watch in 2017.",
+        "title": "Killswitch (film)",
+        "start": 0,
+        "end": 1187,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 80
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 81,
+            "end": 216
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 217,
+            "end": 503
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 504,
+            "end": 632
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 633,
+            "end": 737
+          },
+          {
+            "kind": "sentence",
+            "number": 5,
+            "start": 738,
+            "end": 843
+          },
+          {
+            "kind": "sentence",
+            "number": 6,
+            "start": 844,
+            "end": 950
+          },
+          {
+            "kind": "sentence",
+            "number": 7,
+            "start": 951,
+            "end": 1035
+          },
+          {
+            "kind": "sentence",
+            "number": 8,
+            "start": 1036,
+            "end": 1187
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a89a90755429946c8d6e98b",
+          "url": "https://en.wikipedia.org/wiki/Killswitch_%28film%29",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.015873015873015872
+      },
+      {
+        "evidence_id": "E7",
+        "chunk_id": "30080a99-c60d-56a5-940d-48c87e5af9a4",
+        "document_id": "8936d15b-9153-5b4f-ac17-61fa3069709d",
+        "revision_id": "c8d81173-0795-53c9-89ab-dac0036dcf29",
+        "strategy": "a",
+        "text": "Traceroute is a 2016 Austrian/American documentary film directed by Johannes Grenzfurthner. The autobiographical documentary and road movie deals with the history, politics and impact of nerd culture. Grenzfurthner calls his film a \"personal journey into the uncharted depths of nerd culture, a realm full of dangers, creatures and more or less precarious working conditions\", an attempt to \"chase the ghosts of nerddom's past, present and future.\" The film was co-produced by art group monochrom and Reisenbauer Film. It features music by Kasson Crooker, Hans Nieswandt, and many others.",
+        "title": "Traceroute (film)",
+        "start": 0,
+        "end": 588,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 91
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 92,
+            "end": 200
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 201,
+            "end": 448
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 449,
+            "end": 518
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 519,
+            "end": 588
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a7f55a855429969796c1a05",
+          "url": "https://en.wikipedia.org/wiki/Traceroute_%28film%29",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.015384615384615385
+      },
+      {
+        "evidence_id": "E8",
+        "chunk_id": "53fd9cab-1da3-56cb-b3e4-7a1990c5625f",
+        "document_id": "c03e7e1e-bf04-5825-a498-99ee13dd8c90",
+        "revision_id": "f6ad6e02-20f0-5209-b587-dda95529e2d7",
+        "strategy": "a",
+        "text": "The Anthropologist is a 2015 American documentary film directed by Seth Kramer, Daniel A. Miller, and Jeremy Newberger of Ironbound Films. The film follows environmental anthropologist Susie Crate and her teenage daughter Katie as they visit indigenous communities threatened by climate change. Featuring commentary from Mary Catherine Bateson, daughter of famed anthropologist Margaret Mead, the film explores how human beings adapt to catastrophic change.",
+        "title": "The Anthropologist (film)",
+        "start": 0,
+        "end": 457,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 138
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 139,
+            "end": 294
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 295,
+            "end": 457
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a7ba300554299294a54aa45",
+          "url": "https://en.wikipedia.org/wiki/The_Anthropologist_%28film%29",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.015384615384615385
+      },
+      {
+        "evidence_id": "E9",
+        "chunk_id": "b0f3cb97-445d-5a84-801f-a4ea1011830c",
+        "document_id": "6a758318-172c-5e75-b3a6-b6bc5cf1e94b",
+        "revision_id": "44ada326-992c-54b6-8bcc-5b2268b2bfd9",
+        "strategy": "a",
+        "text": "Protected is a 1975 documentary film, narrated by Don Brady and Sydney born producer Robert Hughes. The film was directed by Alessandro Cavadini. It was an exposé of the ill-treatment of Aboriginal workers by white men. The details of what life was like for Aboriginal Australians on Palm Island became more widely known when Alessandro Cavadini and Carolyn Strachan recreated the strike in 1957 by hundreds of the Island’s residents even though there was huge resistance from local authorities.",
+        "title": "Protected (film)",
+        "start": 0,
+        "end": 495,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 99
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 100,
+            "end": 145
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 146,
+            "end": 219
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 220,
+            "end": 495
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a83176455429954d2e2ec15",
+          "url": "https://en.wikipedia.org/wiki/Protected_%28film%29",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.02591362126245847
+      }
+    ],
+    "search_trace": [
+      {
+        "query": "Freakonomics documentary American In the Realm of the Hackers documentary American",
+        "strategy": "a",
+        "profile": "1a8846753a25",
+        "embedding_usage": {
+          "model": "text-embedding-3-small",
+          "input_tokens": 15,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 3e-07
+        },
+        "document_ranking": [
+          "bf26a9ab-712a-5103-b55a-a98a07999139",
+          "d741f9b5-f913-534b-8336-e80f225f4236",
+          "26541631-fea8-5c8a-a7ec-73ca0e21bc71",
+          "23eb430d-9aad-5904-939e-dfa2959ebd1d",
+          "a2b2102c-8ad4-5377-badf-cddd2da4376b",
+          "b29337c3-7048-5fdc-afcf-690bb49cb2fe",
+          "8936d15b-9153-5b4f-ac17-61fa3069709d",
+          "c03e7e1e-bf04-5825-a498-99ee13dd8c90",
+          "c799a111-b6fe-5847-b8b5-44886a64d41a",
+          "798e1a6e-1e58-5896-bbc1-ed458ca03664"
+        ],
+        "candidate_counts": {
+          "dense": 30,
+          "bm25": 30,
+          "active_dense": 30,
+          "active_bm25": 30
+        },
+        "evidence": [
+          {
+            "evidence_id": "E1",
+            "chunk_id": "2cee9eed-6c96-5958-8ede-57107d421994",
+            "document_id": "bf26a9ab-712a-5103-b55a-a98a07999139",
+            "revision_id": "7671a378-803b-53d9-8133-f5d3b7328716",
+            "strategy": "a",
+            "text": "In The Realm of the Hackers is a 2003 Australian documentary directed by Kevin Anderson about the prominent hacker community, centered in Melbourne, Australia in the late 1980s until early 1990. The storyline is centered on the Australian teenagers going by the hacker names \"Electron\" and \"Phoenix\", who were members of an elite computer hacking group called 'The Realm' and hacked into some of the most secure computer networks in the world, including those of the US Naval Research Laboratory, Lawrence Livermore National Laboratory, a government lab charged with the security of the US nuclear stockpile, and NASA. The film runs for 55 minutes and was inspired by the book \"Underground\", by Melbourne-based writer and academic Suelette Dreyfus.",
+            "title": "In the Realm of the Hackers",
+            "start": 0,
+            "end": 748,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 194
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 195,
+                "end": 618
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 619,
+                "end": 748
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5abc0a5d5542993f40c73c64",
+              "url": "https://en.wikipedia.org/wiki/In_the_Realm_of_the_Hackers",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03252247488101534
+          },
+          {
+            "evidence_id": "E2",
+            "chunk_id": "97fd7ec5-6748-5c4a-9923-73a5790085b7",
+            "document_id": "d741f9b5-f913-534b-8336-e80f225f4236",
+            "revision_id": "e548650e-7838-52c3-a39e-ff488832fe50",
+            "strategy": "a",
+            "text": "Freakonomics: The Movie is a 2010 American documentary film based on the 2005 book \"Freakonomics: A Rogue Economist Explores the Hidden Side of Everything\" by economist Steven D. Levitt and writer Stephen J. Dubner. The film premiered at the Tribeca Film Festival in April 2010 with a theatrical release later in the year. The film received a lukewarm reception and a 65% fresh rating at Rottentomatoes.",
+            "title": "Freakonomics (film)",
+            "start": 0,
+            "end": 403,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 215
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 216,
+                "end": 322
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 323,
+                "end": 403
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5abc0a5d5542993f40c73c64",
+              "url": "https://en.wikipedia.org/wiki/Freakonomics_%28film%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03252247488101534
+          },
+          {
+            "evidence_id": "E3",
+            "chunk_id": "c457b501-6e5a-59b7-820a-61e8a6d4fe6f",
+            "document_id": "26541631-fea8-5c8a-a7ec-73ca0e21bc71",
+            "revision_id": "49ffaf0b-2c89-53fe-bea5-3fafac01149a",
+            "strategy": "a",
+            "text": "Fisher Stevens (born Steven Fisher; November 27, 1963) is an American actor, director, producer and writer. As an actor, he is best known for his portrayals of Ben Jabituya in \"Short Circuit\" (renamed \"Ben Jahrvi\" in the sequel), Chuck Fishman on the 1990s television series \"Early Edition\" and villainous computer genius Eugene \"The Plague\" Belford in \"Hackers\". His most recent successes include the 2010 Academy Award for Best Documentary Feature for his film \"The Cove\" and the 2008 Independent Spirit Award for Best Documentary Feature for his film \"Crazy Love\". In addition, he has directed the Leonardo DiCaprio-produced documentary \"Before the Flood\", which is executive produced by Martin Scorsese, has screened at the Toronto International Film Festival, and will be screened by National Geographic.",
+            "title": "Fisher Stevens",
+            "start": 0,
+            "end": 809,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 107
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 108,
+                "end": 363
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 364,
+                "end": 567
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 568,
+                "end": 809
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5abe892f55429976d4830b5b",
+              "url": "https://en.wikipedia.org/wiki/Fisher_Stevens",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.030776515151515152
+          },
+          {
+            "evidence_id": "E4",
+            "chunk_id": "3df1f080-de20-530f-932b-aa24918074d6",
+            "document_id": "23eb430d-9aad-5904-939e-dfa2959ebd1d",
+            "revision_id": "7fc24b2e-e53e-545d-9b77-c4ee1ece1bfe",
+            "strategy": "a",
+            "text": "Heidi Ewing is a director, producer, and writer of documentary films. She and Rachel Grady founded Loki Films in 2001, and have collaborated on several documentaries together. She is best known as the co-director of \"Jesus Camp\", which was nominated for an Academy Award for best documentary in 2006. Next came\"12th & Delaware\" (HBO), which premiered at the 2010 Sundance Film Festival. The film \"casts a heart-rending light on the abortion divide\" (LA Times) and was honored with a Peabody Award. \"Detropia\", a poetic look at Ewing's home town, also won several awards, including Best Editing at Sundance 2012, Outstanding Direction and Outstanding Original Score, at the 2013 Cinema Eye Honors for Nonfiction Filmmaking and a News and Documentary Emmy for editing. \"Norman Lear: Just Another Version of You\" was the opening night selection of the 2016 Sundance Film Festival and premiered on PBS American Masters on October 25, 2016. Other films as a director include \"The Boys of Baraka\", \"Freakonomics\", and \"The Education of Mohammed Hussein\".",
+            "title": "Heidi Ewing",
+            "start": 0,
+            "end": 1048,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 69
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 70,
+                "end": 175
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 176,
+                "end": 300
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 301,
+                "end": 386
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 387,
+                "end": 497
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 498,
+                "end": 766
+              },
+              {
+                "kind": "sentence",
+                "number": 6,
+                "start": 767,
+                "end": 935
+              },
+              {
+                "kind": "sentence",
+                "number": 7,
+                "start": 936,
+                "end": 1048
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a89eca455429946c8d6ea11",
+              "url": "https://en.wikipedia.org/wiki/Heidi_Ewing",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015873015873015872
+          },
+          {
+            "evidence_id": "E5",
+            "chunk_id": "cf2a08aa-5dca-59d0-b619-850400ddd930",
+            "document_id": "a2b2102c-8ad4-5377-badf-cddd2da4376b",
+            "revision_id": "f814a93a-ba0c-5e34-808e-d64b12fa99fd",
+            "strategy": "a",
+            "text": "Killswitch is a documentary film about the battle for control over the Internet. The movie is a collaboration between director Ali Akbarzadeh, producer Jeffrey Horn, writer Christopher Dollar and Akorn Entertainment. It premiered at the Woodstock Film Festival in October 2014, where it won the James K. Lyons Award for Best Editing of a feature documentary and then made its international debut, playing alongside \"Citizenfour\" at the International Documentary Film Festival Amsterdam in November 2014. In 2015, it screened on Capitol Hill, as well as film festivals on four continents (Europe, Asia, Australia, and North America). The tech world has been excited by democratic presidential candidate Lawrence Lessig's role in the film. Kathy Gill of GeekWire writes that \"\"Killswitch\" is much more than a dry recitation of technical history. Director Ali Akbarzadeh, producer Jeff Horn, and writer Christopher Dollar created a human centered story. A large part of that connection comes from Lessig and his relationship with Swartz.\" Since Killswitch's recent release to a popular audience on Netflix, critics have hailed the film as one of the best documentary films to watch in 2017.",
+            "title": "Killswitch (film)",
+            "start": 0,
+            "end": 1187,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 80
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 81,
+                "end": 216
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 217,
+                "end": 503
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 504,
+                "end": 632
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 633,
+                "end": 737
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 738,
+                "end": 843
+              },
+              {
+                "kind": "sentence",
+                "number": 6,
+                "start": 844,
+                "end": 950
+              },
+              {
+                "kind": "sentence",
+                "number": 7,
+                "start": 951,
+                "end": 1035
+              },
+              {
+                "kind": "sentence",
+                "number": 8,
+                "start": 1036,
+                "end": 1187
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a89a90755429946c8d6e98b",
+              "url": "https://en.wikipedia.org/wiki/Killswitch_%28film%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015873015873015872
+          },
+          {
+            "evidence_id": "E6",
+            "chunk_id": "ed735598-8144-5ee1-9326-4a83fe02b432",
+            "document_id": "b29337c3-7048-5fdc-afcf-690bb49cb2fe",
+            "revision_id": "5782590c-95a9-59cc-8f8c-50e33d734aff",
+            "strategy": "a",
+            "text": "The American Ruling Class is a 2005 dramatic documentary film written by Lewis H. Lapham and directed by John Kirby that \"explores our country’s most taboo topic: class, power and privilege in our nominally democratic republic.\" It seeks to answer the question, \"Does America have a ruling class?\" Its producers consider it the first \"dramatic-documentary-musical.\" A rough-cut of the film was shown at the 2005 Tribeca Film Festival, the final version of the film was shown on the Sundance Channel in July 2007, and it had its theatrical premiere at the Brooklyn Academy of Music in April 2008.",
+            "title": "The American Ruling Class",
+            "start": 0,
+            "end": 595,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 228
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 229,
+                "end": 297
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 298,
+                "end": 365
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 366,
+                "end": 595
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5abe97f25542994516f453d0",
+              "url": "https://en.wikipedia.org/wiki/The_American_Ruling_Class",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015625
+          },
+          {
+            "evidence_id": "E7",
+            "chunk_id": "30080a99-c60d-56a5-940d-48c87e5af9a4",
+            "document_id": "8936d15b-9153-5b4f-ac17-61fa3069709d",
+            "revision_id": "c8d81173-0795-53c9-89ab-dac0036dcf29",
+            "strategy": "a",
+            "text": "Traceroute is a 2016 Austrian/American documentary film directed by Johannes Grenzfurthner. The autobiographical documentary and road movie deals with the history, politics and impact of nerd culture. Grenzfurthner calls his film a \"personal journey into the uncharted depths of nerd culture, a realm full of dangers, creatures and more or less precarious working conditions\", an attempt to \"chase the ghosts of nerddom's past, present and future.\" The film was co-produced by art group monochrom and Reisenbauer Film. It features music by Kasson Crooker, Hans Nieswandt, and many others.",
+            "title": "Traceroute (film)",
+            "start": 0,
+            "end": 588,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 91
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 92,
+                "end": 200
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 201,
+                "end": 448
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 449,
+                "end": 518
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 519,
+                "end": 588
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a7f55a855429969796c1a05",
+              "url": "https://en.wikipedia.org/wiki/Traceroute_%28film%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015384615384615385
+          },
+          {
+            "evidence_id": "E8",
+            "chunk_id": "53fd9cab-1da3-56cb-b3e4-7a1990c5625f",
+            "document_id": "c03e7e1e-bf04-5825-a498-99ee13dd8c90",
+            "revision_id": "f6ad6e02-20f0-5209-b587-dda95529e2d7",
+            "strategy": "a",
+            "text": "The Anthropologist is a 2015 American documentary film directed by Seth Kramer, Daniel A. Miller, and Jeremy Newberger of Ironbound Films. The film follows environmental anthropologist Susie Crate and her teenage daughter Katie as they visit indigenous communities threatened by climate change. Featuring commentary from Mary Catherine Bateson, daughter of famed anthropologist Margaret Mead, the film explores how human beings adapt to catastrophic change.",
+            "title": "The Anthropologist (film)",
+            "start": 0,
+            "end": 457,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 138
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 139,
+                "end": 294
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 295,
+                "end": 457
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a7ba300554299294a54aa45",
+              "url": "https://en.wikipedia.org/wiki/The_Anthropologist_%28film%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015384615384615385
+          }
+        ],
+        "round": 1,
+        "tool_call_id": "call_zwg5LIhMKqKvyaR2gZ3VZI46",
+        "executed": true,
+        "follow_up": null,
+        "requested_query": "Freakonomics documentary American In the Realm of the Hackers documentary American",
+        "query_adjusted": false
+      },
+      {
+        "query": "\"In the Realm of the Hackers\" Australian documentary \"Freakonomics\" American documentary",
+        "strategy": "a",
+        "profile": "1a8846753a25",
+        "embedding_usage": {
+          "model": "text-embedding-3-small",
+          "input_tokens": 18,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 3.6e-07
+        },
+        "document_ranking": [
+          "bf26a9ab-712a-5103-b55a-a98a07999139",
+          "d741f9b5-f913-534b-8336-e80f225f4236",
+          "26541631-fea8-5c8a-a7ec-73ca0e21bc71",
+          "6a758318-172c-5e75-b3a6-b6bc5cf1e94b",
+          "23eb430d-9aad-5904-939e-dfa2959ebd1d",
+          "a2b2102c-8ad4-5377-badf-cddd2da4376b",
+          "8936d15b-9153-5b4f-ac17-61fa3069709d",
+          "c03e7e1e-bf04-5825-a498-99ee13dd8c90",
+          "c799a111-b6fe-5847-b8b5-44886a64d41a",
+          "dc9217f8-a964-5ba5-ae27-c679e05e8da0"
+        ],
+        "candidate_counts": {
+          "dense": 30,
+          "bm25": 30,
+          "active_dense": 30,
+          "active_bm25": 30
+        },
+        "evidence": [
+          {
+            "evidence_id": "E1",
+            "chunk_id": "2cee9eed-6c96-5958-8ede-57107d421994",
+            "document_id": "bf26a9ab-712a-5103-b55a-a98a07999139",
+            "revision_id": "7671a378-803b-53d9-8133-f5d3b7328716",
+            "strategy": "a",
+            "text": "In The Realm of the Hackers is a 2003 Australian documentary directed by Kevin Anderson about the prominent hacker community, centered in Melbourne, Australia in the late 1980s until early 1990. The storyline is centered on the Australian teenagers going by the hacker names \"Electron\" and \"Phoenix\", who were members of an elite computer hacking group called 'The Realm' and hacked into some of the most secure computer networks in the world, including those of the US Naval Research Laboratory, Lawrence Livermore National Laboratory, a government lab charged with the security of the US nuclear stockpile, and NASA. The film runs for 55 minutes and was inspired by the book \"Underground\", by Melbourne-based writer and academic Suelette Dreyfus.",
+            "title": "In the Realm of the Hackers",
+            "start": 0,
+            "end": 748,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 194
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 195,
+                "end": 618
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 619,
+                "end": 748
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5abc0a5d5542993f40c73c64",
+              "url": "https://en.wikipedia.org/wiki/In_the_Realm_of_the_Hackers",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03278688524590164
+          },
+          {
+            "evidence_id": "E2",
+            "chunk_id": "97fd7ec5-6748-5c4a-9923-73a5790085b7",
+            "document_id": "d741f9b5-f913-534b-8336-e80f225f4236",
+            "revision_id": "e548650e-7838-52c3-a39e-ff488832fe50",
+            "strategy": "a",
+            "text": "Freakonomics: The Movie is a 2010 American documentary film based on the 2005 book \"Freakonomics: A Rogue Economist Explores the Hidden Side of Everything\" by economist Steven D. Levitt and writer Stephen J. Dubner. The film premiered at the Tribeca Film Festival in April 2010 with a theatrical release later in the year. The film received a lukewarm reception and a 65% fresh rating at Rottentomatoes.",
+            "title": "Freakonomics (film)",
+            "start": 0,
+            "end": 403,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 215
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 216,
+                "end": 322
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 323,
+                "end": 403
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5abc0a5d5542993f40c73c64",
+              "url": "https://en.wikipedia.org/wiki/Freakonomics_%28film%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03225806451612903
+          },
+          {
+            "evidence_id": "E3",
+            "chunk_id": "c457b501-6e5a-59b7-820a-61e8a6d4fe6f",
+            "document_id": "26541631-fea8-5c8a-a7ec-73ca0e21bc71",
+            "revision_id": "49ffaf0b-2c89-53fe-bea5-3fafac01149a",
+            "strategy": "a",
+            "text": "Fisher Stevens (born Steven Fisher; November 27, 1963) is an American actor, director, producer and writer. As an actor, he is best known for his portrayals of Ben Jabituya in \"Short Circuit\" (renamed \"Ben Jahrvi\" in the sequel), Chuck Fishman on the 1990s television series \"Early Edition\" and villainous computer genius Eugene \"The Plague\" Belford in \"Hackers\". His most recent successes include the 2010 Academy Award for Best Documentary Feature for his film \"The Cove\" and the 2008 Independent Spirit Award for Best Documentary Feature for his film \"Crazy Love\". In addition, he has directed the Leonardo DiCaprio-produced documentary \"Before the Flood\", which is executive produced by Martin Scorsese, has screened at the Toronto International Film Festival, and will be screened by National Geographic.",
+            "title": "Fisher Stevens",
+            "start": 0,
+            "end": 809,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 107
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 108,
+                "end": 363
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 364,
+                "end": 567
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 568,
+                "end": 809
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5abe892f55429976d4830b5b",
+              "url": "https://en.wikipedia.org/wiki/Fisher_Stevens",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03125
+          },
+          {
+            "evidence_id": "E9",
+            "chunk_id": "b0f3cb97-445d-5a84-801f-a4ea1011830c",
+            "document_id": "6a758318-172c-5e75-b3a6-b6bc5cf1e94b",
+            "revision_id": "44ada326-992c-54b6-8bcc-5b2268b2bfd9",
+            "strategy": "a",
+            "text": "Protected is a 1975 documentary film, narrated by Don Brady and Sydney born producer Robert Hughes. The film was directed by Alessandro Cavadini. It was an exposé of the ill-treatment of Aboriginal workers by white men. The details of what life was like for Aboriginal Australians on Palm Island became more widely known when Alessandro Cavadini and Carolyn Strachan recreated the strike in 1957 by hundreds of the Island’s residents even though there was huge resistance from local authorities.",
+            "title": "Protected (film)",
+            "start": 0,
+            "end": 495,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 99
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 100,
+                "end": 145
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 146,
+                "end": 219
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 220,
+                "end": 495
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a83176455429954d2e2ec15",
+              "url": "https://en.wikipedia.org/wiki/Protected_%28film%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.02591362126245847
+          },
+          {
+            "evidence_id": "E4",
+            "chunk_id": "3df1f080-de20-530f-932b-aa24918074d6",
+            "document_id": "23eb430d-9aad-5904-939e-dfa2959ebd1d",
+            "revision_id": "7fc24b2e-e53e-545d-9b77-c4ee1ece1bfe",
+            "strategy": "a",
+            "text": "Heidi Ewing is a director, producer, and writer of documentary films. She and Rachel Grady founded Loki Films in 2001, and have collaborated on several documentaries together. She is best known as the co-director of \"Jesus Camp\", which was nominated for an Academy Award for best documentary in 2006. Next came\"12th & Delaware\" (HBO), which premiered at the 2010 Sundance Film Festival. The film \"casts a heart-rending light on the abortion divide\" (LA Times) and was honored with a Peabody Award. \"Detropia\", a poetic look at Ewing's home town, also won several awards, including Best Editing at Sundance 2012, Outstanding Direction and Outstanding Original Score, at the 2013 Cinema Eye Honors for Nonfiction Filmmaking and a News and Documentary Emmy for editing. \"Norman Lear: Just Another Version of You\" was the opening night selection of the 2016 Sundance Film Festival and premiered on PBS American Masters on October 25, 2016. Other films as a director include \"The Boys of Baraka\", \"Freakonomics\", and \"The Education of Mohammed Hussein\".",
+            "title": "Heidi Ewing",
+            "start": 0,
+            "end": 1048,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 69
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 70,
+                "end": 175
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 176,
+                "end": 300
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 301,
+                "end": 386
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 387,
+                "end": 497
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 498,
+                "end": 766
+              },
+              {
+                "kind": "sentence",
+                "number": 6,
+                "start": 767,
+                "end": 935
+              },
+              {
+                "kind": "sentence",
+                "number": 7,
+                "start": 936,
+                "end": 1048
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a89eca455429946c8d6ea11",
+              "url": "https://en.wikipedia.org/wiki/Heidi_Ewing",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015873015873015872
+          },
+          {
+            "evidence_id": "E5",
+            "chunk_id": "cf2a08aa-5dca-59d0-b619-850400ddd930",
+            "document_id": "a2b2102c-8ad4-5377-badf-cddd2da4376b",
+            "revision_id": "f814a93a-ba0c-5e34-808e-d64b12fa99fd",
+            "strategy": "a",
+            "text": "Killswitch is a documentary film about the battle for control over the Internet. The movie is a collaboration between director Ali Akbarzadeh, producer Jeffrey Horn, writer Christopher Dollar and Akorn Entertainment. It premiered at the Woodstock Film Festival in October 2014, where it won the James K. Lyons Award for Best Editing of a feature documentary and then made its international debut, playing alongside \"Citizenfour\" at the International Documentary Film Festival Amsterdam in November 2014. In 2015, it screened on Capitol Hill, as well as film festivals on four continents (Europe, Asia, Australia, and North America). The tech world has been excited by democratic presidential candidate Lawrence Lessig's role in the film. Kathy Gill of GeekWire writes that \"\"Killswitch\" is much more than a dry recitation of technical history. Director Ali Akbarzadeh, producer Jeff Horn, and writer Christopher Dollar created a human centered story. A large part of that connection comes from Lessig and his relationship with Swartz.\" Since Killswitch's recent release to a popular audience on Netflix, critics have hailed the film as one of the best documentary films to watch in 2017.",
+            "title": "Killswitch (film)",
+            "start": 0,
+            "end": 1187,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 80
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 81,
+                "end": 216
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 217,
+                "end": 503
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 504,
+                "end": 632
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 633,
+                "end": 737
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 738,
+                "end": 843
+              },
+              {
+                "kind": "sentence",
+                "number": 6,
+                "start": 844,
+                "end": 950
+              },
+              {
+                "kind": "sentence",
+                "number": 7,
+                "start": 951,
+                "end": 1035
+              },
+              {
+                "kind": "sentence",
+                "number": 8,
+                "start": 1036,
+                "end": 1187
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a89a90755429946c8d6e98b",
+              "url": "https://en.wikipedia.org/wiki/Killswitch_%28film%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015873015873015872
+          },
+          {
+            "evidence_id": "E7",
+            "chunk_id": "30080a99-c60d-56a5-940d-48c87e5af9a4",
+            "document_id": "8936d15b-9153-5b4f-ac17-61fa3069709d",
+            "revision_id": "c8d81173-0795-53c9-89ab-dac0036dcf29",
+            "strategy": "a",
+            "text": "Traceroute is a 2016 Austrian/American documentary film directed by Johannes Grenzfurthner. The autobiographical documentary and road movie deals with the history, politics and impact of nerd culture. Grenzfurthner calls his film a \"personal journey into the uncharted depths of nerd culture, a realm full of dangers, creatures and more or less precarious working conditions\", an attempt to \"chase the ghosts of nerddom's past, present and future.\" The film was co-produced by art group monochrom and Reisenbauer Film. It features music by Kasson Crooker, Hans Nieswandt, and many others.",
+            "title": "Traceroute (film)",
+            "start": 0,
+            "end": 588,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 91
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 92,
+                "end": 200
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 201,
+                "end": 448
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 449,
+                "end": 518
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 519,
+                "end": 588
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a7f55a855429969796c1a05",
+              "url": "https://en.wikipedia.org/wiki/Traceroute_%28film%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015384615384615385
+          },
+          {
+            "evidence_id": "E8",
+            "chunk_id": "53fd9cab-1da3-56cb-b3e4-7a1990c5625f",
+            "document_id": "c03e7e1e-bf04-5825-a498-99ee13dd8c90",
+            "revision_id": "f6ad6e02-20f0-5209-b587-dda95529e2d7",
+            "strategy": "a",
+            "text": "The Anthropologist is a 2015 American documentary film directed by Seth Kramer, Daniel A. Miller, and Jeremy Newberger of Ironbound Films. The film follows environmental anthropologist Susie Crate and her teenage daughter Katie as they visit indigenous communities threatened by climate change. Featuring commentary from Mary Catherine Bateson, daughter of famed anthropologist Margaret Mead, the film explores how human beings adapt to catastrophic change.",
+            "title": "The Anthropologist (film)",
+            "start": 0,
+            "end": 457,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 138
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 139,
+                "end": 294
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 295,
+                "end": 457
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a7ba300554299294a54aa45",
+              "url": "https://en.wikipedia.org/wiki/The_Anthropologist_%28film%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015384615384615385
+          }
+        ],
+        "round": 2,
+        "tool_call_id": "call_C8YVAtPVZTt5IW7AbsxNUfE9",
+        "executed": true,
+        "follow_up": {
+          "evidence_id": "E1",
+          "entity": "In The Realm of the Hackers"
+        },
+        "requested_query": "\"In the Realm of the Hackers\" Australian documentary \"Freakonomics\" American documentary",
+        "query_adjusted": false
+      }
+    ],
+    "workflow": "bounded_tools_v1",
+    "execution": {
+      "planning_rounds": 2,
+      "retrieval_rounds": 2,
+      "tool_calls": 2,
+      "searches": 2,
+      "llm_calls": 3,
+      "embedding_calls": 2,
+      "total_provider_calls": 5,
+      "stop_reason": "retrieval_limit",
+      "limits": {
+        "retrieval_rounds": 2,
+        "searches": 3,
+        "llm_calls": 3,
+        "embedding_calls": 3,
+        "total_provider_calls": 6
+      }
+    },
+    "configuration": {
+      "strategy": "a",
+      "profile": "1a8846753a25",
+      "embedding_model": "text-embedding-3-small",
+      "embedding_dimensions": 384,
+      "generation_model": "gpt-5.4-mini-2026-03-17",
+      "prompt_version": "bounded_tools_quote_ids_v1"
+    },
+    "usage": {
+      "planning": [
+        {
+          "input_tokens": 524,
+          "output_tokens": 38,
+          "estimated_cost_usd": 0.000564,
+          "model": "gpt-5.4-mini-2026-03-17"
+        },
+        {
+          "input_tokens": 1978,
+          "output_tokens": 58,
+          "estimated_cost_usd": 0.0017445,
+          "model": "gpt-5.4-mini-2026-03-17"
+        }
+      ],
+      "generation": {
+        "input_tokens": 5674,
+        "output_tokens": 138,
+        "estimated_cost_usd": 0.0048765,
+        "model": "gpt-5.4-mini-2026-03-17"
+      },
+      "embeddings": [
+        {
+          "model": "text-embedding-3-small",
+          "input_tokens": 15,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 3e-07
+        },
+        {
+          "model": "text-embedding-3-small",
+          "input_tokens": 18,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 3.6e-07
+        }
+      ],
+      "estimated_model_cost_usd": 0.0071849999999999995,
+      "estimated_total_cost_usd": 0.00718566
+    },
+    "latency_ms": 5275
+  },
+  "error": null,
+  "elapsed_ms": 5275,
+  "ledger_after": {
+    "calls": 354,
+    "reserved_usd": 0.65287749,
+    "estimated_actual_usd": 0.26143074,
+    "input_tokens": 7030702,
+    "output_tokens": 4455
+  }
+}

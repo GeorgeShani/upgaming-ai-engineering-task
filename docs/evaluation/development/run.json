@@ -1,0 +1,79 @@
+{
+  "identity": "9b288d4bdc562919d1a7e1a78271d590453a5fd7c27f4c218bd391b948f0d07f",
+  "split": "development",
+  "started_at": "2026-10-28T06:52:20.412887+00:00",
+  "git_revision": "6f8c8189c3e4fc92685517ff4b5cf3b3e046eaa7",
+  "ledger_before": {
+    "calls": 315,
+    "reserved_usd": 0.48744711,
+    "estimated_actual_usd": 0.20992536,
+    "input_tokens": 6970527,
+    "output_tokens": 3003
+  },
+  "attempt_order": [
+    [
+      "development-bridge-01",
+      "a"
+    ],
+    [
+      "development-bridge-01",
+      "b"
+    ],
+    [
+      "development-bridge-02",
+      "b"
+    ],
+    [
+      "development-bridge-02",
+      "a"
+    ],
+    [
+      "development-comparison-01",
+      "a"
+    ],
+    [
+      "development-comparison-01",
+      "b"
+    ],
+    [
+      "development-comparison-02",
+      "b"
+    ],
+    [
+      "development-comparison-02",
+      "a"
+    ],
+    [
+      "development-conflict-01",
+      "a"
+    ],
+    [
+      "development-conflict-01",
+      "b"
+    ],
+    [
+      "development-simple-01",
+      "b"
+    ],
+    [
+      "development-simple-01",
+      "a"
+    ],
+    [
+      "development-simple-02",
+      "a"
+    ],
+    [
+      "development-simple-02",
+      "b"
+    ],
+    [
+      "development-unanswerable-01",
+      "b"
+    ],
+    [
+      "development-unanswerable-01",
+      "a"
+    ]
+  ]
+}

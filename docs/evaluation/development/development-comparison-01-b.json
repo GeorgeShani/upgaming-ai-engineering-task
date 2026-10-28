@@ -1,0 +1,1319 @@
+{
+  "case_id": "development-comparison-01",
+  "strategy": "b",
+  "question": "Hayden is a singer-songwriter from Canada, but where does Buck-Tick hail from?",
+  "started_at": "2026-10-28T06:52:51.872175+00:00",
+  "ledger_before": {
+    "calls": 339,
+    "reserved_usd": 0.5902125,
+    "estimated_actual_usd": 0.24164850000000002,
+    "input_tokens": 7007721,
+    "output_tokens": 3875
+  },
+  "result": {
+    "status": "answered",
+    "claims": [
+      {
+        "text": "Buck-Tick is a Japanese rock band.",
+        "citations": [
+          {
+            "evidence_id": "E1",
+            "quote": "Buck-Tick (stylized as BUCK-TICK) is a Japanese rock band, formed in Fujioka, Gunma in 1983."
+          }
+        ]
+      },
+      {
+        "text": "Buck-Tick formed in Fujioka, Gunma.",
+        "citations": [
+          {
+            "evidence_id": "E1",
+            "quote": "Buck-Tick (stylized as BUCK-TICK) is a Japanese rock band, formed in Fujioka, Gunma in 1983."
+          }
+        ]
+      }
+    ],
+    "conflicting_claims": [],
+    "answer": "Buck-Tick is a Japanese rock band. [E1] Buck-Tick formed in Fujioka, Gunma. [E1]",
+    "evidence": [
+      {
+        "evidence_id": "E1",
+        "chunk_id": "f5fca452-57dc-56da-9636-ef91d3cf1960",
+        "document_id": "faba2080-a4ab-5ecd-909b-d09383b8f463",
+        "revision_id": "a9cb3cf1-80fd-5ed8-a2f6-58e8a2a11b38",
+        "strategy": "b",
+        "text": "Buck-Tick (stylized as BUCK-TICK) is a Japanese rock band, formed in Fujioka, Gunma in 1983. The group has consisted of Atsushi Sakurai (lead vocals), Hisashi Imai (guitar), Hidehiko Hoshino (guitar), Yutaka Higuchi (bass) and Toll Yagami (drums) since 1985. In their three decade career, the band has released 20 studio albums, nearly all reaching the top ten on the charts, of which three in the late eighties and early nineties topped them. They are commonly credited as one of the founders of the visual kei movement.",
+        "title": "Buck-Tick",
+        "start": 0,
+        "end": 521,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 92
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 93,
+            "end": 258
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 259,
+            "end": 443
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 444,
+            "end": 521
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "validation",
+          "record_id": "5ae4a3265542995ad6573de5",
+          "url": "https://en.wikipedia.org/wiki/Buck-Tick",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.03278688524590164
+      },
+      {
+        "evidence_id": "E5",
+        "chunk_id": "2b83b6f4-75a8-57c0-b795-8fd984ef1b12",
+        "document_id": "7f5a57ab-6c56-5c40-96e2-1298c1689b40",
+        "revision_id": "50f9a7db-053e-54e9-bcfe-a9730b91f03b",
+        "strategy": "b",
+        "text": "Ai no Wakusei (愛の惑星) is the only solo album by released by Sakurai Atsushi, vocalist for the Japanese rock band Buck-Tick. It was released on June 23, 2004 through Victor Entertainment. The album was packaged in a special long box, featuring a photo book, though it is also now out of print. Sakurai wrote all of the lyrics and sang on the album while the music was composed by a different collaborator on each track. Rather than adhere closely to Buck-Tick's style, Sakurai recruited composers whom come from various musical backgrounds, ranging from the hard industrial rock of Raymond Watts to the upbeat electronica of Xlover. <br>",
+        "title": "Ai no Wakusei",
+        "start": 0,
+        "end": 635,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 122
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 123,
+            "end": 185
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 186,
+            "end": 291
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 292,
+            "end": 417
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 418,
+            "end": 630
+          },
+          {
+            "kind": "sentence",
+            "number": 5,
+            "start": 631,
+            "end": 635
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a73f5215542993a88ae2ebd",
+          "url": "https://en.wikipedia.org/wiki/Ai_no_Wakusei",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.03225806451612903
+      },
+      {
+        "evidence_id": "E2",
+        "chunk_id": "67f0bd8c-5ae1-559c-8fe2-33479eddd268",
+        "document_id": "505348bb-177d-50c4-a465-f541e8c7dc84",
+        "revision_id": "4c2c01d6-5f8a-5cfa-9ae0-77b3fa0a2e1a",
+        "strategy": "b",
+        "text": "Country of origin (COO), is the country of manufacture, production, or growth where an article or product comes from. There are differing rules of origin under various national laws and international treaties. Country of origin labelling is also known as \"place-based branding\", the \"made-in image\" or the \"nationality bias.\" In some regions or industries, country of origin labelling may adopt unique local terms such as terroir used to describe wine appellations based on the specific region where grapes are grown and wine manufactured.",
+        "title": "Country of origin",
+        "start": 0,
+        "end": 539,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 117
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 118,
+            "end": 209
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 210,
+            "end": 325
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 326,
+            "end": 539
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a7d21c555429909bec7697d",
+          "url": "https://en.wikipedia.org/wiki/Country_of_origin",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.027984344422700584
+      },
+      {
+        "evidence_id": "E3",
+        "chunk_id": "cbcaf0fe-1ff7-5931-8249-4ba918130674",
+        "document_id": "3582e115-34ac-5ecc-bcc9-2292cff95e46",
+        "revision_id": "522b63ec-6fc6-5437-9237-0b18c68610a1",
+        "strategy": "b",
+        "text": "Dwight Sings Buck is country music artist Dwight Yoakam's seventeenth studio album, and a tribute album to Buck Owens. The album was released on October 23, 2007 (Yoakam's fifty-first birthday) by New West Records.",
+        "title": "Dwight Sings Buck",
+        "start": 0,
+        "end": 214,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 118
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 119,
+            "end": 214
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a8be51d5542997f31a41def",
+          "url": "https://en.wikipedia.org/wiki/Dwight_Sings_Buck",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.025987006496751626
+      },
+      {
+        "evidence_id": "E9",
+        "chunk_id": "e43b047a-436c-58e8-95b2-58e067f865e1",
+        "document_id": "e3c9945b-df86-5dbb-a035-1e733a48b56d",
+        "revision_id": "3ea31307-cafa-5995-9f9d-24a20ff0e4a1",
+        "strategy": "b",
+        "text": "Japanese rock (Japanese: 日本のロック , Hepburn: Nihon no Rokku ) , sometimes abbreviated to , is rock music from Japan. Influenced by American and British rock of the 1960s, the first rock bands in Japan performed what is called Group Sounds, with lyrics almost exclusively in English. Folk rock band Happy End in the early 1970s are credited as the first to sing rock music in the Japanese language. Punk rock band the Blue Hearts and heavy metal group X Japan, led Japanese rock bands in the late 1980s and early 1990s by achieving major mainstream success. Japanese rock music has become a cult worldwide, being widely known in Asia and has survived through decades competing with its contemporary derivative local style J-pop.",
+        "title": "J-rock",
+        "start": 0,
+        "end": 725,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 114
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 115,
+            "end": 280
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 281,
+            "end": 395
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 396,
+            "end": 554
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 555,
+            "end": 725
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a8cdb8f55429941ae14df1c",
+          "url": "https://en.wikipedia.org/wiki/J-rock",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.031746031746031744
+      },
+      {
+        "evidence_id": "E4",
+        "chunk_id": "11cba207-a9dd-5754-9065-5f9eed18b657",
+        "document_id": "51a02549-030d-58bf-b544-48a3d6f1c99f",
+        "revision_id": "66f8c4ca-8800-50fa-b4cc-c175db82330e",
+        "strategy": "b",
+        "text": "Buckshaw Village (often shortened to Buckshaw) is a new residential and industrial area between the towns of Chorley and Leyland in Lancashire, which largely sits in the Buckshaw area of Euxton. It is one of the largest urban development sites in the North West of England with a population of about 4,000 although official population statistics mainly sit with Euxton.",
+        "title": "Buckshaw Village",
+        "start": 0,
+        "end": 369,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 194
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 195,
+            "end": 369
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5ae76bc65542997ec272763b",
+          "url": "https://en.wikipedia.org/wiki/Buckshaw_Village",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.016129032258064516
+      },
+      {
+        "evidence_id": "E10",
+        "chunk_id": "cf359dfa-b4f3-5a93-80c1-7324fb8425fe",
+        "document_id": "adeb9bb4-fb4b-51b9-9571-e2b1fc1b958a",
+        "revision_id": "2c5a7e2b-602b-5fe3-868d-7cfcde3a5bf9",
+        "strategy": "b",
+        "text": "\"Zenzenzense\" (Japanese: 前前前世 , \"Past Past Past Life\") is a song by Japanese rock band Radwimps. It was used as one of the four theme songs to the animated film \"Your Name\", and was one of 26 songs the band composed for the film's soundtrack. It reached number-one on the \"Billboard\" Japan Hot 100. It also received a digital download song certification of Triple Platinum from the Recording Industry Association of Japan for sales of 750,000.",
+        "title": "Zenzenzense",
+        "start": 0,
+        "end": 443,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 96
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 97,
+            "end": 242
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 243,
+            "end": 298
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 299,
+            "end": 443
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5ae1076c554299422ee995d5",
+          "url": "https://en.wikipedia.org/wiki/Zenzenzense",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.029850746268656716
+      },
+      {
+        "evidence_id": "E11",
+        "chunk_id": "18259b2f-df05-5eba-8215-a9963ccbd7ed",
+        "document_id": "42dde8cf-2ea5-5a9b-bb0f-68886bd4863f",
+        "revision_id": "0baf82d1-0138-50c7-99ef-39db1f2985de",
+        "strategy": "b",
+        "text": "Kawaihae is an island music band formed in the summer 2000 in Japan formed by Tokyo/Yokohama/Nagoya radio personality Vance K who was born and raised on the Big Island of Hawaii. Since the band formed, they have released three albums and is currently working on a 4th album slated for release in 2009. The band houses a large fanbase within Japan and Hawaii and has received the Group of the Year award at the 2004 Hawaii Music Awards.",
+        "title": "Kawaihae (band)",
+        "start": 0,
+        "end": 435,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 178
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 179,
+            "end": 301
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 302,
+            "end": 435
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5ae747da5542991e8301cc4f",
+          "url": "https://en.wikipedia.org/wiki/Kawaihae_%28band%29",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.02674825174825175
+      }
+    ],
+    "search_trace": [
+      {
+        "query": "Buck-Tick origin hail from country or place",
+        "strategy": "b",
+        "profile": "1a8846753a25",
+        "embedding_usage": {
+          "model": "text-embedding-3-small",
+          "input_tokens": 10,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 2.0000000000000002e-07
+        },
+        "document_ranking": [
+          "faba2080-a4ab-5ecd-909b-d09383b8f463",
+          "505348bb-177d-50c4-a465-f541e8c7dc84",
+          "3582e115-34ac-5ecc-bcc9-2292cff95e46",
+          "51a02549-030d-58bf-b544-48a3d6f1c99f",
+          "7f5a57ab-6c56-5c40-96e2-1298c1689b40",
+          "cfc8b2f8-b78a-5bb8-b184-09e44f0641a8",
+          "ee306906-0d1d-537b-8c38-84601ffcbafa",
+          "8f080059-df62-5613-998a-180d05f9af7e",
+          "8eb7a8a8-a10a-5a35-81bc-3cdc2e1c00b9",
+          "9312cf33-8a7a-5f42-8b28-a56352b5556a"
+        ],
+        "candidate_counts": {
+          "dense": 30,
+          "bm25": 30,
+          "active_dense": 30,
+          "active_bm25": 30
+        },
+        "evidence": [
+          {
+            "evidence_id": "E1",
+            "chunk_id": "f5fca452-57dc-56da-9636-ef91d3cf1960",
+            "document_id": "faba2080-a4ab-5ecd-909b-d09383b8f463",
+            "revision_id": "a9cb3cf1-80fd-5ed8-a2f6-58e8a2a11b38",
+            "strategy": "b",
+            "text": "Buck-Tick (stylized as BUCK-TICK) is a Japanese rock band, formed in Fujioka, Gunma in 1983. The group has consisted of Atsushi Sakurai (lead vocals), Hisashi Imai (guitar), Hidehiko Hoshino (guitar), Yutaka Higuchi (bass) and Toll Yagami (drums) since 1985. In their three decade career, the band has released 20 studio albums, nearly all reaching the top ten on the charts, of which three in the late eighties and early nineties topped them. They are commonly credited as one of the founders of the visual kei movement.",
+            "title": "Buck-Tick",
+            "start": 0,
+            "end": 521,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 92
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 93,
+                "end": 258
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 259,
+                "end": 443
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 444,
+                "end": 521
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5ae4a3265542995ad6573de5",
+              "url": "https://en.wikipedia.org/wiki/Buck-Tick",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03278688524590164
+          },
+          {
+            "evidence_id": "E2",
+            "chunk_id": "67f0bd8c-5ae1-559c-8fe2-33479eddd268",
+            "document_id": "505348bb-177d-50c4-a465-f541e8c7dc84",
+            "revision_id": "4c2c01d6-5f8a-5cfa-9ae0-77b3fa0a2e1a",
+            "strategy": "b",
+            "text": "Country of origin (COO), is the country of manufacture, production, or growth where an article or product comes from. There are differing rules of origin under various national laws and international treaties. Country of origin labelling is also known as \"place-based branding\", the \"made-in image\" or the \"nationality bias.\" In some regions or industries, country of origin labelling may adopt unique local terms such as terroir used to describe wine appellations based on the specific region where grapes are grown and wine manufactured.",
+            "title": "Country of origin",
+            "start": 0,
+            "end": 539,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 117
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 118,
+                "end": 209
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 210,
+                "end": 325
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 326,
+                "end": 539
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a7d21c555429909bec7697d",
+              "url": "https://en.wikipedia.org/wiki/Country_of_origin",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.027984344422700584
+          },
+          {
+            "evidence_id": "E3",
+            "chunk_id": "cbcaf0fe-1ff7-5931-8249-4ba918130674",
+            "document_id": "3582e115-34ac-5ecc-bcc9-2292cff95e46",
+            "revision_id": "522b63ec-6fc6-5437-9237-0b18c68610a1",
+            "strategy": "b",
+            "text": "Dwight Sings Buck is country music artist Dwight Yoakam's seventeenth studio album, and a tribute album to Buck Owens. The album was released on October 23, 2007 (Yoakam's fifty-first birthday) by New West Records.",
+            "title": "Dwight Sings Buck",
+            "start": 0,
+            "end": 214,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 118
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 119,
+                "end": 214
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a8be51d5542997f31a41def",
+              "url": "https://en.wikipedia.org/wiki/Dwight_Sings_Buck",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.025987006496751626
+          },
+          {
+            "evidence_id": "E4",
+            "chunk_id": "11cba207-a9dd-5754-9065-5f9eed18b657",
+            "document_id": "51a02549-030d-58bf-b544-48a3d6f1c99f",
+            "revision_id": "66f8c4ca-8800-50fa-b4cc-c175db82330e",
+            "strategy": "b",
+            "text": "Buckshaw Village (often shortened to Buckshaw) is a new residential and industrial area between the towns of Chorley and Leyland in Lancashire, which largely sits in the Buckshaw area of Euxton. It is one of the largest urban development sites in the North West of England with a population of about 4,000 although official population statistics mainly sit with Euxton.",
+            "title": "Buckshaw Village",
+            "start": 0,
+            "end": 369,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 194
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 195,
+                "end": 369
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ae76bc65542997ec272763b",
+              "url": "https://en.wikipedia.org/wiki/Buckshaw_Village",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.016129032258064516
+          },
+          {
+            "evidence_id": "E5",
+            "chunk_id": "2b83b6f4-75a8-57c0-b795-8fd984ef1b12",
+            "document_id": "7f5a57ab-6c56-5c40-96e2-1298c1689b40",
+            "revision_id": "50f9a7db-053e-54e9-bcfe-a9730b91f03b",
+            "strategy": "b",
+            "text": "Ai no Wakusei (愛の惑星) is the only solo album by released by Sakurai Atsushi, vocalist for the Japanese rock band Buck-Tick. It was released on June 23, 2004 through Victor Entertainment. The album was packaged in a special long box, featuring a photo book, though it is also now out of print. Sakurai wrote all of the lyrics and sang on the album while the music was composed by a different collaborator on each track. Rather than adhere closely to Buck-Tick's style, Sakurai recruited composers whom come from various musical backgrounds, ranging from the hard industrial rock of Raymond Watts to the upbeat electronica of Xlover. <br>",
+            "title": "Ai no Wakusei",
+            "start": 0,
+            "end": 635,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 122
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 123,
+                "end": 185
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 186,
+                "end": 291
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 292,
+                "end": 417
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 418,
+                "end": 630
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 631,
+                "end": 635
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a73f5215542993a88ae2ebd",
+              "url": "https://en.wikipedia.org/wiki/Ai_no_Wakusei",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.016129032258064516
+          },
+          {
+            "evidence_id": "E6",
+            "chunk_id": "0fb2431d-fc29-525c-8715-45c29fe63615",
+            "document_id": "cfc8b2f8-b78a-5bb8-b184-09e44f0641a8",
+            "revision_id": "f82a77c4-fe5f-54b6-836e-76b9ec501779",
+            "strategy": "b",
+            "text": "Bull's place of birth is shrouded in uncertainty. In an article published in 1952, Thurston Dart presumed that Bull's family originated in Somerset, where it is possible the composer was born. It was the 17th century antiquarian Anthony Wood who first proposed that he was related to the Bull family of Peglich, Somerset, but in 1959 Dart wrote that Bull was \"probably the son of a London goldsmith...\". Then, in the second edition of his \"Calendar of the Life of John Bull\", Dart proposed Hereford as a third possibility. More recent research by Susi Jeans suggests that Bull was born in the Radnorshire parish of Old Radnor within the diocese of Hereford, although no birth records have yet been discovered. Bull's appointment as organist of Hereford Cathedral in 1582 lends credence to this diocese being his place of birth: it was customary at this time for organists to return to their home cathedrals after training in London (cf: Thomas Morley).",
+            "title": "John Bull (composer)",
+            "start": 0,
+            "end": 952,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 49
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 50,
+                "end": 192
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 193,
+                "end": 403
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 404,
+                "end": 522
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 523,
+                "end": 709
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 710,
+                "end": 952
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ab708345542992aa3b8c780",
+              "url": "https://en.wikipedia.org/wiki/John_Bull_%28composer%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015873015873015872
+          },
+          {
+            "evidence_id": "E7",
+            "chunk_id": "c61bc5bb-c285-5b29-b854-2a9959ca8253",
+            "document_id": "ee306906-0d1d-537b-8c38-84601ffcbafa",
+            "revision_id": "db0fba4a-7180-5f83-81a2-c1a9ebadf8ea",
+            "strategy": "b",
+            "text": "The following is a list of athletes with dual nationality. It includes both players who can trace their origins to a foreign country and those who have attained foreign nationality during their career, as well as players who hail from semi-autonomous regions within countries.",
+            "title": "List of sportspeople with dual nationality",
+            "start": 0,
+            "end": 276,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 58
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 59,
+                "end": 276
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ade1d2755429975fa854e5f",
+              "url": "https://en.wikipedia.org/wiki/List_of_sportspeople_with_dual_nationality",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015873015873015872
+          },
+          {
+            "evidence_id": "E8",
+            "chunk_id": "2d62d22d-c967-5a83-8780-3d2e3633a3ef",
+            "document_id": "8f080059-df62-5613-998a-180d05f9af7e",
+            "revision_id": "5d999ae2-3831-5faa-9190-e6572c3e4889",
+            "strategy": "b",
+            "text": "Willis David Hoover was born in Jackson County, Missouri and raised in Lamoni, Iowa and Shenandoah, Iowa. After starting out as a coffee house folk singer as a teenager, Hoover moved to Nashville in the 1960s and became a songwriter. His songs were recorded by Tina Turner, Eddy Arnold and country music outlaws Tompall Glaser and Waylon Jennings. He won an ASCAP Award for music written for the motion picture, \"...tick...tick...tick...\" After losing or forgetting his first and middle names, Hoover became a recording artist for Monument Records, Epic Records, and Elektra Records in the late 1960s and early 1970s. His recordings for Elektra were released in 2003 by Kinky Friedman's Sphincter Records label.",
+            "title": "Hoover (singer)",
+            "start": 0,
+            "end": 711,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 105
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 106,
+                "end": 233
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 234,
+                "end": 347
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 348,
+                "end": 617
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 618,
+                "end": 711
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a75e7215542992db947370a",
+              "url": "https://en.wikipedia.org/wiki/Hoover_%28singer%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015625
+          }
+        ],
+        "round": 1,
+        "tool_call_id": "call_1Pq3TIbkJb7IJLiJfGVt0sLe",
+        "executed": true,
+        "follow_up": null,
+        "requested_query": "Buck-Tick origin hail from country or place",
+        "query_adjusted": false
+      },
+      {
+        "query": "Buck-Tick Japanese rock band formed in Fujioka Gunma Japan",
+        "strategy": "b",
+        "profile": "1a8846753a25",
+        "embedding_usage": {
+          "model": "text-embedding-3-small",
+          "input_tokens": 14,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 2.8e-07
+        },
+        "document_ranking": [
+          "faba2080-a4ab-5ecd-909b-d09383b8f463",
+          "7f5a57ab-6c56-5c40-96e2-1298c1689b40",
+          "e3c9945b-df86-5dbb-a035-1e733a48b56d",
+          "adeb9bb4-fb4b-51b9-9571-e2b1fc1b958a",
+          "42dde8cf-2ea5-5a9b-bb0f-68886bd4863f",
+          "c6edf912-1582-541e-8295-d4227f351c25",
+          "7c5e6603-b343-5b4f-8ec7-8a282d830f9e",
+          "20162e62-355c-5fff-9d24-cd6c647024cd",
+          "4225bc6b-a25c-5941-95cd-756d5a5aee1e",
+          "4c5c68de-0b8b-517e-9751-6eb642f5ac27"
+        ],
+        "candidate_counts": {
+          "dense": 30,
+          "bm25": 30,
+          "active_dense": 30,
+          "active_bm25": 30
+        },
+        "evidence": [
+          {
+            "evidence_id": "E1",
+            "chunk_id": "f5fca452-57dc-56da-9636-ef91d3cf1960",
+            "document_id": "faba2080-a4ab-5ecd-909b-d09383b8f463",
+            "revision_id": "a9cb3cf1-80fd-5ed8-a2f6-58e8a2a11b38",
+            "strategy": "b",
+            "text": "Buck-Tick (stylized as BUCK-TICK) is a Japanese rock band, formed in Fujioka, Gunma in 1983. The group has consisted of Atsushi Sakurai (lead vocals), Hisashi Imai (guitar), Hidehiko Hoshino (guitar), Yutaka Higuchi (bass) and Toll Yagami (drums) since 1985. In their three decade career, the band has released 20 studio albums, nearly all reaching the top ten on the charts, of which three in the late eighties and early nineties topped them. They are commonly credited as one of the founders of the visual kei movement.",
+            "title": "Buck-Tick",
+            "start": 0,
+            "end": 521,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 92
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 93,
+                "end": 258
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 259,
+                "end": 443
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 444,
+                "end": 521
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5ae4a3265542995ad6573de5",
+              "url": "https://en.wikipedia.org/wiki/Buck-Tick",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03278688524590164
+          },
+          {
+            "evidence_id": "E5",
+            "chunk_id": "2b83b6f4-75a8-57c0-b795-8fd984ef1b12",
+            "document_id": "7f5a57ab-6c56-5c40-96e2-1298c1689b40",
+            "revision_id": "50f9a7db-053e-54e9-bcfe-a9730b91f03b",
+            "strategy": "b",
+            "text": "Ai no Wakusei (愛の惑星) is the only solo album by released by Sakurai Atsushi, vocalist for the Japanese rock band Buck-Tick. It was released on June 23, 2004 through Victor Entertainment. The album was packaged in a special long box, featuring a photo book, though it is also now out of print. Sakurai wrote all of the lyrics and sang on the album while the music was composed by a different collaborator on each track. Rather than adhere closely to Buck-Tick's style, Sakurai recruited composers whom come from various musical backgrounds, ranging from the hard industrial rock of Raymond Watts to the upbeat electronica of Xlover. <br>",
+            "title": "Ai no Wakusei",
+            "start": 0,
+            "end": 635,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 122
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 123,
+                "end": 185
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 186,
+                "end": 291
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 292,
+                "end": 417
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 418,
+                "end": 630
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 631,
+                "end": 635
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a73f5215542993a88ae2ebd",
+              "url": "https://en.wikipedia.org/wiki/Ai_no_Wakusei",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03225806451612903
+          },
+          {
+            "evidence_id": "E9",
+            "chunk_id": "e43b047a-436c-58e8-95b2-58e067f865e1",
+            "document_id": "e3c9945b-df86-5dbb-a035-1e733a48b56d",
+            "revision_id": "3ea31307-cafa-5995-9f9d-24a20ff0e4a1",
+            "strategy": "b",
+            "text": "Japanese rock (Japanese: 日本のロック , Hepburn: Nihon no Rokku ) , sometimes abbreviated to , is rock music from Japan. Influenced by American and British rock of the 1960s, the first rock bands in Japan performed what is called Group Sounds, with lyrics almost exclusively in English. Folk rock band Happy End in the early 1970s are credited as the first to sing rock music in the Japanese language. Punk rock band the Blue Hearts and heavy metal group X Japan, led Japanese rock bands in the late 1980s and early 1990s by achieving major mainstream success. Japanese rock music has become a cult worldwide, being widely known in Asia and has survived through decades competing with its contemporary derivative local style J-pop.",
+            "title": "J-rock",
+            "start": 0,
+            "end": 725,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 114
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 115,
+                "end": 280
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 281,
+                "end": 395
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 396,
+                "end": 554
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 555,
+                "end": 725
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a8cdb8f55429941ae14df1c",
+              "url": "https://en.wikipedia.org/wiki/J-rock",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.031746031746031744
+          },
+          {
+            "evidence_id": "E10",
+            "chunk_id": "cf359dfa-b4f3-5a93-80c1-7324fb8425fe",
+            "document_id": "adeb9bb4-fb4b-51b9-9571-e2b1fc1b958a",
+            "revision_id": "2c5a7e2b-602b-5fe3-868d-7cfcde3a5bf9",
+            "strategy": "b",
+            "text": "\"Zenzenzense\" (Japanese: 前前前世 , \"Past Past Past Life\") is a song by Japanese rock band Radwimps. It was used as one of the four theme songs to the animated film \"Your Name\", and was one of 26 songs the band composed for the film's soundtrack. It reached number-one on the \"Billboard\" Japan Hot 100. It also received a digital download song certification of Triple Platinum from the Recording Industry Association of Japan for sales of 750,000.",
+            "title": "Zenzenzense",
+            "start": 0,
+            "end": 443,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 96
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 97,
+                "end": 242
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 243,
+                "end": 298
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 299,
+                "end": 443
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ae1076c554299422ee995d5",
+              "url": "https://en.wikipedia.org/wiki/Zenzenzense",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.029850746268656716
+          },
+          {
+            "evidence_id": "E11",
+            "chunk_id": "18259b2f-df05-5eba-8215-a9963ccbd7ed",
+            "document_id": "42dde8cf-2ea5-5a9b-bb0f-68886bd4863f",
+            "revision_id": "0baf82d1-0138-50c7-99ef-39db1f2985de",
+            "strategy": "b",
+            "text": "Kawaihae is an island music band formed in the summer 2000 in Japan formed by Tokyo/Yokohama/Nagoya radio personality Vance K who was born and raised on the Big Island of Hawaii. Since the band formed, they have released three albums and is currently working on a 4th album slated for release in 2009. The band houses a large fanbase within Japan and Hawaii and has received the Group of the Year award at the 2004 Hawaii Music Awards.",
+            "title": "Kawaihae (band)",
+            "start": 0,
+            "end": 435,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 178
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 179,
+                "end": 301
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 302,
+                "end": 435
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ae747da5542991e8301cc4f",
+              "url": "https://en.wikipedia.org/wiki/Kawaihae_%28band%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.02674825174825175
+          },
+          {
+            "evidence_id": "E12",
+            "chunk_id": "095a32e2-4d13-5fa9-a974-bd69bd9e28ff",
+            "document_id": "c6edf912-1582-541e-8295-d4227f351c25",
+            "revision_id": "e510e468-7113-5a1f-8dc9-caf7f3ff10c2",
+            "strategy": "b",
+            "text": "Johnny Hiromu Kitagawa (ジャニー喜多川 , Janī Kitagawa ) , is a Japanese-American businessman and talent manager. He is the founder and president of Johnny & Associates, a production agency for numerous popular boy bands in Japan. Kitagawa assembled, produced and managed more than a dozen popular bands, including Hey! Say! JUMP, SMAP, Arashi, Kanjani8, V6, NEWS and KAT-TUN. Kitagawa's influence has spread beyond music to the realms of theatre and television. Regarded as one of the most powerful figures in the Japanese entertainment industry, he has held a virtual monopoly on the creation of boy bands in Japan for more than 40 years.",
+            "title": "Johnny Kitagawa",
+            "start": 0,
+            "end": 633,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 106
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 107,
+                "end": 223
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 224,
+                "end": 312
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 313,
+                "end": 317
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 318,
+                "end": 369
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 370,
+                "end": 455
+              },
+              {
+                "kind": "sentence",
+                "number": 6,
+                "start": 456,
+                "end": 633
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ab815705542990e739ec810",
+              "url": "https://en.wikipedia.org/wiki/Johnny_Kitagawa",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.025645240835114255
+          },
+          {
+            "evidence_id": "E13",
+            "chunk_id": "54b40797-4d8b-59b3-aa12-e49da15cbd30",
+            "document_id": "7c5e6603-b343-5b4f-8ec7-8a282d830f9e",
+            "revision_id": "9afba819-864b-52ff-b602-cb38679778ca",
+            "strategy": "b",
+            "text": "Monoral is a Japanese alternative rock band signed to Sony Music Japan. The band consists of Anis Shimada on lead vocals and guitar and Ali Morizumi on bass and guitar.",
+            "title": "Monoral",
+            "start": 0,
+            "end": 168,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 71
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 72,
+                "end": 168
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a8cdb8f55429941ae14df1c",
+              "url": "https://en.wikipedia.org/wiki/Monoral",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.02552166934189406
+          },
+          {
+            "evidence_id": "E14",
+            "chunk_id": "ab7c1bb4-c8ae-58db-8ba0-ac9176dc8692",
+            "document_id": "20162e62-355c-5fff-9d24-cd6c647024cd",
+            "revision_id": "59a36b53-4584-59d8-86d6-f1acc7415d90",
+            "strategy": "b",
+            "text": "Mayuko Hagiwara (萩原麻由子 , Hagiwara Mayuko , born 16 October 1986, in Maebashi, Gunma, Japan) is a Japanese women's racing cyclist who currently rides for Wiggle High5 . After graduating from the National Institute of Fitness and Sports in Kanoya she joined the cycling team sponsored by the Japanese bicycle store Cycle Base Asahi. She won the national road race championship three years in a row between 2010 and 2012 and the time trial championship five times in a row between 2008 and 2012. She represented Japan in cycling at the 2012 Summer Olympics in the Women's road race. In November 2012, it was announced that Hagiwara had signed to ride with the British cycling team Wiggle High5 for the 2013 season. She lost her national road race and time trial crowns to Eri Yonamine in 2013, but won both titles again in 2014. In 2015, she lost the time trial title to Yonamine, but was again crowned road race champion.",
+            "title": "Mayuko Hagiwara",
+            "start": 0,
+            "end": 919,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 167
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 168,
+                "end": 330
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 331,
+                "end": 492
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 493,
+                "end": 579
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 580,
+                "end": 711
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 712,
+                "end": 825
+              },
+              {
+                "kind": "sentence",
+                "number": 6,
+                "start": 826,
+                "end": 919
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a8057235542996402f6a4e7",
+              "url": "https://en.wikipedia.org/wiki/Mayuko_Hagiwara",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015625
+          }
+        ],
+        "round": 2,
+        "tool_call_id": "call_njUCyOkfhoebUGLZYJoIIX1d",
+        "executed": true,
+        "follow_up": {
+          "evidence_id": "E1",
+          "entity": "Buck-Tick"
+        },
+        "requested_query": "Buck-Tick Japanese rock band formed in Fujioka Gunma Japan",
+        "query_adjusted": false
+      }
+    ],
+    "workflow": "bounded_tools_v1",
+    "execution": {
+      "planning_rounds": 2,
+      "retrieval_rounds": 2,
+      "tool_calls": 2,
+      "searches": 2,
+      "llm_calls": 3,
+      "embedding_calls": 2,
+      "total_provider_calls": 5,
+      "stop_reason": "retrieval_limit",
+      "limits": {
+        "retrieval_rounds": 2,
+        "searches": 3,
+        "llm_calls": 3,
+        "embedding_calls": 3,
+        "total_provider_calls": 6
+      }
+    },
+    "configuration": {
+      "strategy": "b",
+      "profile": "1a8846753a25",
+      "embedding_model": "text-embedding-3-small",
+      "embedding_dimensions": 384,
+      "generation_model": "gpt-5.4-mini-2026-03-17",
+      "prompt_version": "bounded_tools_quote_ids_v1"
+    },
+    "usage": {
+      "planning": [
+        {
+          "input_tokens": 526,
+          "output_tokens": 32,
+          "estimated_cost_usd": 0.0005385,
+          "model": "gpt-5.4-mini-2026-03-17"
+        },
+        {
+          "input_tokens": 1643,
+          "output_tokens": 46,
+          "estimated_cost_usd": 0.00143925,
+          "model": "gpt-5.4-mini-2026-03-17"
+        }
+      ],
+      "generation": {
+        "input_tokens": 4269,
+        "output_tokens": 84,
+        "estimated_cost_usd": 0.00357975,
+        "model": "gpt-5.4-mini-2026-03-17"
+      },
+      "embeddings": [
+        {
+          "model": "text-embedding-3-small",
+          "input_tokens": 10,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 2.0000000000000002e-07
+        },
+        {
+          "model": "text-embedding-3-small",
+          "input_tokens": 14,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 2.8e-07
+        }
+      ],
+      "estimated_model_cost_usd": 0.0055575,
+      "estimated_total_cost_usd": 0.00555798
+    },
+    "latency_ms": 5395
+  },
+  "error": null,
+  "elapsed_ms": 5395,
+  "ledger_after": {
+    "calls": 344,
+    "reserved_usd": 0.60991173,
+    "estimated_actual_usd": 0.24720648,
+    "input_tokens": 7014183,
+    "output_tokens": 4037
+  }
+}

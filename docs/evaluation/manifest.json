@@ -1,0 +1,119 @@
+{
+  "identity": "9b288d4bdc562919d1a7e1a78271d590453a5fd7c27f4c218bd391b948f0d07f",
+  "details": {
+    "code_and_local": {
+      "code_files": {
+        "backend/app/__init__.py": "146ee6d8718a3523cbe9be43fb44c6a0ea9a55561a6996f7f62f2aeb245809b3",
+        "backend/app/config.py": "56d9867ac3472f89671c1468b913fa7c1102889cc304abf1525fa2f7ac348b36",
+        "backend/app/dataset_cli.py": "3c56e75b05dc4c295844c57460129ea1a2487d73887e86ad0883a283e3358906",
+        "backend/app/datasets/__init__.py": "f27b5c4d1c6171b3da2ad03f3a9a220f7ffb2a14882c4f7c2528f905529d325c",
+        "backend/app/datasets/files.py": "0e436d3f42e1fd6c468ee877aa42937b938e26d92da57a56d5629b47519504f1",
+        "backend/app/datasets/fixtures.py": "0688c27a8fe1d3ee78a505daddd4253e3e09a28860d7cdaa2986eeeeb38367d8",
+        "backend/app/datasets/hotpot.py": "975287e990ade19edea6f07071caeaae18a72c3fb605003c2080224a3511d30c",
+        "backend/app/datasets/models.py": "0a608b3d91850e14e1235e3a5ae47e0c307a96a3e868cf1f24c9cf8e09d2aaf9",
+        "backend/app/datasets/preparation.py": "21a16cc10d224a41c8266ecc8c338b629f276bef1e9c994df6cd58534b5cc94e",
+        "backend/app/documents/__init__.py": "e44f9092c2fb1088b822915e7545d186f58f7e60c4266acf452744162488f453",
+        "backend/app/documents/models.py": "27055eba932edf4d77cf627a59f64ce8bd32b65745e272d73140f4c71c367af3",
+        "backend/app/documents/parsing.py": "a3ccacd8ae2d24bbba9205b2a765b51ae1eb380a009ada75c4d062d9f62b7e9b",
+        "backend/app/documents/routes.py": "920adba31a2316e1fc9df4095dec1e2e84797c665939a157ffc4e904bea5fac9",
+        "backend/app/documents/security.py": "bfcfe67942f2dabfa97e33122efc4c5fff2bdb7062e3f05c86e46024f9573556",
+        "backend/app/documents/service.py": "74043deefa28a336b18813d8202a85caf13c5cd15498495e338317daf88fb144",
+        "backend/app/documents/store.py": "a521e8571624b84629ea1bf02e3041faafd0c0d4d61f6f41f8dded91b3413db5",
+        "backend/app/evaluation/__init__.py": "4e6533607292161b6ddaed1dc17f0637171f0079d0cdbc433dff3e4a99c66cfe",
+        "backend/app/evaluation/context.py": "0daaf572c76cf1261346bc3635aa72a2f0e740b46920b51e2efb99b439644a61",
+        "backend/app/evaluation/metrics.py": "20e586e596718452ff2aadae542b16e03455cc7bc1e85b5c2bda41b125deb45e",
+        "backend/app/evaluation/reporting.py": "f2322a697114fc651bfff6d116d72f28ee3f95a7012be39fcc5c8765953119f1",
+        "backend/app/evaluation/runner.py": "bf633b0e2c720a8e266646ce1c6fa25b7629dfa4b690d0c9e5989e28d1d36b4f",
+        "backend/app/evaluation/scoring.py": "8f7207bdcc7b6879159b106605b36ba655e43a2f0be8390126ba240e54e6329f",
+        "backend/app/evaluation/state.py": "e00e3032bedac4b25a3bfe1eac797ac1ca0fcd90b25154e95f40d1c30221f4af",
+        "backend/app/evaluation_cli.py": "bade8e003694d2de641d9d721f49462f634fe8554e96ade3c6cc157134e1a04c",
+        "backend/app/health.py": "416ba0cfb79f1c4a3ac213c2e5a808cfdd4a651aab60ad2e45077e77c7df106f",
+        "backend/app/index_cli.py": "2aea0e4547f1fd81287875b3a1df4a636f5ad8780d9a1b858ba8f93459f3ce17",
+        "backend/app/investigations/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "backend/app/investigations/models.py": "1f2893a1d991e329ed1ab2b7d236c0253107a71b62c5e21d85b60c78972a7e02",
+        "backend/app/investigations/routes.py": "cd0a33f2e38883108bd37b0ae9aeceb80eeadb6dd266b35715e060903733ec7a",
+        "backend/app/investigations/service.py": "407b995feb4b56231799e515d47e84834883431325da680270c91715849b33d9",
+        "backend/app/investigations/tools.py": "ba77fabb460d47c23b1142778bb09aa120eed1c95bc69a1f6dcde83cc1cfc879",
+        "backend/app/main.py": "3ab16ae2f6c6cde4e22fcbdcd5375f08c219542f896122ea7bb478a3f20681dd",
+        "backend/app/providers.py": "2bfa977b587ea9a845283768e5bfa8f2173b12bb8030c9e778577309e23366a6",
+        "backend/app/retrieval/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "backend/app/retrieval/bulk.py": "0b963626b8c7a59ac110811f063221eba994c3b1711d13163cfbd0fa79dd7921",
+        "backend/app/retrieval/chunking.py": "a3f5649afcab67b020dacaa13e1f321799279b3a0ff34b1a9fd4d25c4f3a4f45",
+        "backend/app/retrieval/fusion.py": "9f3cedc60c916565f48738ab33fe7c4a0a7a5d24f1d449ac842bc8f4549628d4",
+        "backend/app/retrieval/index.py": "5c343b105a00fb77bbc67d934924912bfb18b8dc3c1a3a1408ba6c57e61ac31f",
+        "backend/app/retrieval/search.py": "9cdd7d8ea0e16e15ef23fa03d788bca19821e801f0ccd9c40a0d673a716485ea",
+        "backend/app/text.py": "9a0415a5a6d8dfd2253e1a56875b3edce27dd13c942caa23419ee59aca6cd65a",
+        "uv.lock": "e7db1955ee0f28a614956a96ac3288508075ada9e3e760320144c8f06ece9d9c",
+        "pyproject.toml": "5e5d02cade74bc253c6c72e86997bbee2e703a1e1e1336abfd275332e4f3efa1"
+      },
+      "local": {
+        "verification": {
+          "verified": true,
+          "dataset_revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "unique_source_records": 50024,
+          "hotpot_passages": 50000,
+          "synthetic_passages": 24,
+          "evaluation_cases": 48,
+          "meets_assignment_minimum": true,
+          "corpus_sha256": "7fb92aae4a89727ca1d274d23ee25ba1dfafa052808fce75086f17c7c088c5eb",
+          "corpus_bytes": 86321736,
+          "final_cases": 40,
+          "development_cases": 8,
+          "reference_review": "pending George's independent review"
+        },
+        "fixture_files": {
+          "source-documents.jsonl": "22be27ee79d97ed7b5644c44ba627f07b0fbcb669d37b0b09761de6496e957a9",
+          "evaluation/final.jsonl": "bd6ce03083e204c94991515d5449448685267933b9def44899aeb53bb2062dbf",
+          "evaluation/development.jsonl": "e204a912aa5ffba1e6fd2529f833ea9c6b876db96f93d045fc0ea8abaf22600d"
+        },
+        "reference_review": "pending George's independent review",
+        "expected_active_chunks": {
+          "a": 52246,
+          "b": 52307
+        },
+        "documents_with_different_chunk_spans": 2072,
+        "documents_with_identical_chunk_spans": 47952
+      },
+      "settings": {
+        "generation_model": "gpt-5.4-mini-2026-03-17",
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimensions": 384,
+        "api_budget_usd": 4.5,
+        "embedding_usd_per_million": 0.02,
+        "generation_input_usd_per_million": 0.75,
+        "generation_output_usd_per_million": 4.5,
+        "document_collection_prefix": "investigation"
+      },
+      "runtime_packages": {
+        "httpx": "0.28.1",
+        "pydantic": "2.14.1",
+        "fastapi": "0.162.0",
+        "tiktoken": "0.14.0"
+      }
+    },
+    "cloud": {
+      "active_source_count": 50024,
+      "active_manifests_sha256": "2c59ffa4f0364e61a01559ffa2bec9378b04f54355789fe5a9e56107fa260dc5",
+      "profile": "1a8846753a25",
+      "collections": {
+        "a": "investigation_chunks_a_1a8846753a25",
+        "b": "investigation_chunks_b_1a8846753a25"
+      },
+      "physical_points": {
+        "a": 52250,
+        "b": 52311
+      }
+    }
+  },
+  "git_revision": "6f8c8189c3e4fc92685517ff4b5cf3b3e046eaa7",
+  "created_at": "2026-10-28T06:50:42.407602+00:00",
+  "ledger_before": {
+    "calls": 315,
+    "reserved_usd": 0.48744711,
+    "estimated_actual_usd": 0.20992536,
+    "input_tokens": 6970527,
+    "output_tokens": 3003
+  },
+  "maximum_reservation_per_attempt_usd": 0.045624,
+  "planned_attempts": 96
+}

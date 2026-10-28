@@ -1,0 +1,1385 @@
+{
+  "case_id": "development-bridge-01",
+  "strategy": "b",
+  "question": "The Vermont Catamounts men's soccer team currently competes in a conference that was formerly known as what from 1988 to 1996?",
+  "started_at": "2026-10-28T06:52:30.659901+00:00",
+  "ledger_before": {
+    "calls": 320,
+    "reserved_usd": 0.5076266,
+    "estimated_actual_usd": 0.2160506,
+    "input_tokens": 6977578,
+    "output_tokens": 3195
+  },
+  "result": {
+    "status": "answered",
+    "claims": [
+      {
+        "text": "The Vermont Catamounts men's soccer team competes in the America East Conference.",
+        "citations": [
+          {
+            "evidence_id": "E1",
+            "quote": "The Vermont Catamounts men's soccer team represents the University of Vermont in all NCAA Division I men's college soccer competitions. The team competes in the America East Conference."
+          }
+        ]
+      },
+      {
+        "text": "The America East Conference was formerly known as the North Atlantic Conference from 1988 to 1996.",
+        "citations": [
+          {
+            "evidence_id": "E3",
+            "quote": "The America East Conference is a collegiate athletic conference affiliated with the NCAA Division I, whose members are located mainly in the Northeastern United States. The conference was known as the Eastern College Athletic Conference-North from 1979 to 1988 and the North Atlantic Conference from 1988 to 1996."
+          }
+        ]
+      }
+    ],
+    "conflicting_claims": [],
+    "answer": "The Vermont Catamounts men's soccer team competes in the America East Conference. [E1] The America East Conference was formerly known as the North Atlantic Conference from 1988 to 1996. [E3]",
+    "evidence": [
+      {
+        "evidence_id": "E3",
+        "chunk_id": "6b0691ee-8d29-56bb-bffc-cab8b0458b2e",
+        "document_id": "2e15a777-e170-53b1-b34a-e4ddd0a95606",
+        "revision_id": "e384b8dc-90e8-555d-b2e0-c733a4fb409e",
+        "strategy": "b",
+        "text": "The America East Conference is a collegiate athletic conference affiliated with the NCAA Division I, whose members are located mainly in the Northeastern United States. The conference was known as the Eastern College Athletic Conference-North from 1979 to 1988 and the North Atlantic Conference from 1988 to 1996.",
+        "title": "America East Conference",
+        "start": 0,
+        "end": 313,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 168
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 169,
+            "end": 313
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "validation",
+          "record_id": "5ab3e45655429976abd1bcd4",
+          "url": "https://en.wikipedia.org/wiki/America_East_Conference",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.030330882352941176
+      },
+      {
+        "evidence_id": "E1",
+        "chunk_id": "a8092d5a-4bb0-5958-a76f-446f96a46ec9",
+        "document_id": "c3bbe7be-f3e6-5752-ba9b-73d3043faf06",
+        "revision_id": "78505eb9-cc99-5105-bfac-0220ecca1f30",
+        "strategy": "b",
+        "text": "The Vermont Catamounts men's soccer team represents the University of Vermont in all NCAA Division I men's college soccer competitions. The team competes in the America East Conference.",
+        "title": "Vermont Catamounts men's soccer",
+        "start": 0,
+        "end": 185,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 135
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 136,
+            "end": 185
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "validation",
+          "record_id": "5ab3e45655429976abd1bcd4",
+          "url": "https://en.wikipedia.org/wiki/Vermont_Catamounts_men%27s_soccer",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.03278688524590164
+      },
+      {
+        "evidence_id": "E9",
+        "chunk_id": "d92ad0f8-d00d-5c14-8de8-f9c6525178ed",
+        "document_id": "05f48eae-c960-580f-aaa1-b04e17836b79",
+        "revision_id": "42be30fb-af51-563d-887a-2d0ac5b08021",
+        "strategy": "b",
+        "text": "The America East Conference Baseball Tournament, officially known as the America East Conference Baseball Championship, is the conference baseball championship of the NCAA Division I America East Conference. The top four finishers in the regular season of the conference's six eligible teams advance to the double-elimination tournament, which is in the midst of a five-year residency at LeLacheur Park in Lowell, Massachusetts. The winner of the tournament receives an automatic berth to the NCAA Division I Baseball Championship. Prior to 1998, the tournament was a six-team double-elimination format. After 2009, the conference also began allowing schools to host the championship on fields without lights.",
+        "title": "America East Conference Baseball Tournament",
+        "start": 0,
+        "end": 709,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 207
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 208,
+            "end": 428
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 429,
+            "end": 531
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 532,
+            "end": 603
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 604,
+            "end": 709
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5ae5c5a0554299546bf82f53",
+          "url": "https://en.wikipedia.org/wiki/America_East_Conference_Baseball_Tournament",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.031746031746031744
+      },
+      {
+        "evidence_id": "E2",
+        "chunk_id": "f1a39135-48ff-564e-95fe-6071a9ffaed0",
+        "document_id": "9d9790dc-e2d0-510e-ac6f-31e02cf61b3e",
+        "revision_id": "ee24be1b-e813-581b-9591-86d7d4bd1802",
+        "strategy": "b",
+        "text": "The 2013 Conference USA men's soccer season will be the 19th season of men's varsity soccer in the conference. The season will mark the arrival of the Charlotte 49ers from the Atlantic 10 Conference, the Florida Atlantic Owls from the Mid-American Conference, the New Mexico Lobos from the Mountain Pacific Sports Federation, and the Old Dominion Monarchs from the Colonial Athletic Association. It will also be the last C-USA season for the Tulsa Golden Hurricane, which will join the American Athletic Conference in July 2014. The 2013 Conference USA Men's Soccer Tournament will be held November 13–17 at Transamerica Field in Charlotte.",
+        "title": "2013 Conference USA men's soccer season",
+        "start": 0,
+        "end": 640,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 110
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 111,
+            "end": 395
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 396,
+            "end": 528
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 529,
+            "end": 640
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5ab843395542990e739ec8a5",
+          "url": "https://en.wikipedia.org/wiki/2013_Conference_USA_men%27s_soccer_season",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.0315136476426799
+      },
+      {
+        "evidence_id": "E10",
+        "chunk_id": "07e69ada-c3e2-506f-a2d2-daf1fc100791",
+        "document_id": "6990b2e1-7111-5044-b894-f0892cd635a3",
+        "revision_id": "2f139a43-603b-570d-a5ef-130b4f3f6d30",
+        "strategy": "b",
+        "text": "Luke Harangody (born January 2, 1988) is an American professional basketball player for ratiopharm Ulm of the German Basketball Bundesliga. He completed his college career at the University of Notre Dame in 2010. He is the only men's player in the history of the Big East Conference to average 20 points and 10 rebounds per game in conference play for his career. He was the 2008 Big East Player of the Year, and was named to the second team on the 2008 Associated Press All-America team. He is also the first Notre Dame men's player to be a three-time first-team All-Big East selection (and just 11th overall) (2008–2010), and the first men's player to lead the conference in both scoring and rebounding in consecutive seasons (2008 and 2009).",
+        "title": "Luke Harangody",
+        "start": 0,
+        "end": 744,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 139
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 140,
+            "end": 212
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 213,
+            "end": 363
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 364,
+            "end": 488
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 489,
+            "end": 744
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5add180e5542992ae4cec45c",
+          "url": "https://en.wikipedia.org/wiki/Luke_Harangody",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.016129032258064516
+      },
+      {
+        "evidence_id": "E4",
+        "chunk_id": "f0b2e628-3938-59f3-9b5b-d2ec8608a31d",
+        "document_id": "f1e9f03a-ffec-5588-a0cd-36b4350368c3",
+        "revision_id": "2ffd2a05-58e3-568d-a799-ef44f4e6e946",
+        "strategy": "b",
+        "text": "Columbus Crew Soccer Club is an American professional soccer club based in Columbus, Ohio. The Crew competes in Major League Soccer (MLS) as a member club of the league's Eastern Conference. The Crew began play in 1996 as one of the ten charter clubs of the league. The team is owned by Anthony Precourt and Precourt Sports Ventures LLC. Precourt became the second owner in the history of the club on July 30, 2013. The club's head coach is Gregg Berhalter, a former player of the United States men's national soccer team.",
+        "title": "Columbus Crew SC",
+        "start": 0,
+        "end": 522,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 90
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 91,
+            "end": 190
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 191,
+            "end": 265
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 266,
+            "end": 337
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 338,
+            "end": 415
+          },
+          {
+            "kind": "sentence",
+            "number": 5,
+            "start": 416,
+            "end": 522
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a744ef755429979e28828e3",
+          "url": "https://en.wikipedia.org/wiki/Columbus_Crew_SC",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.016129032258064516
+      },
+      {
+        "evidence_id": "E11",
+        "chunk_id": "f14b54fe-ac8a-52c5-8ce5-247a2306a2c5",
+        "document_id": "db5b977e-bd0b-5509-8df6-3021b7168906",
+        "revision_id": "0ab146b9-14b3-5edb-a226-2449e1692196",
+        "strategy": "b",
+        "text": "The American South Conference was an NCAA Division I athletic conference that existed from 1987–88 to 1990–91. The charter members were Arkansas State University, Lamar University, Louisiana Tech University, the University of New Orleans, the University of Southwestern Louisiana (now known as the University of Louisiana at Lafayette) and the University of Texas–Pan American (now merged into the University of Texas Rio Grande Valley). The University of Central Florida (UCF) became the only expansion school during the conference's final academic season before merging with the Sun Belt Conference. Losing all but three members, the Sun Belt merged with the American South conference. The combined conference retained the name of the older Sun Belt Conference. Craig Thompson, the American South's first and only commissioner, became commissioner of the merged Sun Belt. After serving as Sun Belt commissioner for eight years, he became commissioner of the newly formed Mountain West Conference in 1998.",
+        "title": "American South Conference",
+        "start": 0,
+        "end": 1006,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 110
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 111,
+            "end": 437
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 438,
+            "end": 601
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 602,
+            "end": 687
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 688,
+            "end": 763
+          },
+          {
+            "kind": "sentence",
+            "number": 5,
+            "start": 764,
+            "end": 873
+          },
+          {
+            "kind": "sentence",
+            "number": 6,
+            "start": 874,
+            "end": 1006
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5ae23bdd5542992decbdcc99",
+          "url": "https://en.wikipedia.org/wiki/American_South_Conference",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.016129032258064516
+      },
+      {
+        "evidence_id": "E5",
+        "chunk_id": "3df2f42b-e9d6-5209-8976-e0f4e645ca2e",
+        "document_id": "7321c424-5f88-5e09-a5fe-9d4ecf5f5e88",
+        "revision_id": "9b507834-a0f4-5f49-bf46-796839c0cbb9",
+        "strategy": "b",
+        "text": "The 2003 NECBL season marked the tenth season of the existence of the New England Collegiate Baseball League. The league expanded to thirteen teams with the addition of the Vermont Mountaineers of Montpelier, Vermont. The franchise was the league's first in the New England state of Vermont. This marked the fulfillment of the league's goal of having a franchise in each of the six New England states: Connecticut, Massachusetts, Rhode Island, New Hampshire, Maine, and Vermont.",
+        "title": "2003 NECBL season",
+        "start": 0,
+        "end": 478,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 109
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 110,
+            "end": 217
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 218,
+            "end": 291
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 292,
+            "end": 478
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5ae11fa755429901ffe4ada9",
+          "url": "https://en.wikipedia.org/wiki/2003_NECBL_season",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.015873015873015872
+      }
+    ],
+    "search_trace": [
+      {
+        "query": "Vermont Catamounts men's soccer current conference formerly known as from 1988 to 1996",
+        "strategy": "b",
+        "profile": "1a8846753a25",
+        "embedding_usage": {
+          "model": "text-embedding-3-small",
+          "input_tokens": 22,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 4.4e-07
+        },
+        "document_ranking": [
+          "c3bbe7be-f3e6-5752-ba9b-73d3043faf06",
+          "9d9790dc-e2d0-510e-ac6f-31e02cf61b3e",
+          "2e15a777-e170-53b1-b34a-e4ddd0a95606",
+          "f1e9f03a-ffec-5588-a0cd-36b4350368c3",
+          "7321c424-5f88-5e09-a5fe-9d4ecf5f5e88",
+          "18a6a664-9c94-5323-b27a-32d70668af93",
+          "20f3c49a-c707-5a50-846f-e3f7abc32d3a",
+          "c535702b-9b53-5ca9-a55d-42a1d3891b89",
+          "fe84550e-5873-51d1-adbc-bc62e54ba794",
+          "1b1aa099-8e9b-562b-86fc-729a148b907f"
+        ],
+        "candidate_counts": {
+          "dense": 30,
+          "bm25": 30,
+          "active_dense": 30,
+          "active_bm25": 30
+        },
+        "evidence": [
+          {
+            "evidence_id": "E1",
+            "chunk_id": "a8092d5a-4bb0-5958-a76f-446f96a46ec9",
+            "document_id": "c3bbe7be-f3e6-5752-ba9b-73d3043faf06",
+            "revision_id": "78505eb9-cc99-5105-bfac-0220ecca1f30",
+            "strategy": "b",
+            "text": "The Vermont Catamounts men's soccer team represents the University of Vermont in all NCAA Division I men's college soccer competitions. The team competes in the America East Conference.",
+            "title": "Vermont Catamounts men's soccer",
+            "start": 0,
+            "end": 185,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 135
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 136,
+                "end": 185
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5ab3e45655429976abd1bcd4",
+              "url": "https://en.wikipedia.org/wiki/Vermont_Catamounts_men%27s_soccer",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03278688524590164
+          },
+          {
+            "evidence_id": "E2",
+            "chunk_id": "f1a39135-48ff-564e-95fe-6071a9ffaed0",
+            "document_id": "9d9790dc-e2d0-510e-ac6f-31e02cf61b3e",
+            "revision_id": "ee24be1b-e813-581b-9591-86d7d4bd1802",
+            "strategy": "b",
+            "text": "The 2013 Conference USA men's soccer season will be the 19th season of men's varsity soccer in the conference. The season will mark the arrival of the Charlotte 49ers from the Atlantic 10 Conference, the Florida Atlantic Owls from the Mid-American Conference, the New Mexico Lobos from the Mountain Pacific Sports Federation, and the Old Dominion Monarchs from the Colonial Athletic Association. It will also be the last C-USA season for the Tulsa Golden Hurricane, which will join the American Athletic Conference in July 2014. The 2013 Conference USA Men's Soccer Tournament will be held November 13–17 at Transamerica Field in Charlotte.",
+            "title": "2013 Conference USA men's soccer season",
+            "start": 0,
+            "end": 640,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 110
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 111,
+                "end": 395
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 396,
+                "end": 528
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 529,
+                "end": 640
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ab843395542990e739ec8a5",
+              "url": "https://en.wikipedia.org/wiki/2013_Conference_USA_men%27s_soccer_season",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.0315136476426799
+          },
+          {
+            "evidence_id": "E3",
+            "chunk_id": "6b0691ee-8d29-56bb-bffc-cab8b0458b2e",
+            "document_id": "2e15a777-e170-53b1-b34a-e4ddd0a95606",
+            "revision_id": "e384b8dc-90e8-555d-b2e0-c733a4fb409e",
+            "strategy": "b",
+            "text": "The America East Conference is a collegiate athletic conference affiliated with the NCAA Division I, whose members are located mainly in the Northeastern United States. The conference was known as the Eastern College Athletic Conference-North from 1979 to 1988 and the North Atlantic Conference from 1988 to 1996.",
+            "title": "America East Conference",
+            "start": 0,
+            "end": 313,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 168
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 169,
+                "end": 313
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5ab3e45655429976abd1bcd4",
+              "url": "https://en.wikipedia.org/wiki/America_East_Conference",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.030330882352941176
+          },
+          {
+            "evidence_id": "E4",
+            "chunk_id": "f0b2e628-3938-59f3-9b5b-d2ec8608a31d",
+            "document_id": "f1e9f03a-ffec-5588-a0cd-36b4350368c3",
+            "revision_id": "2ffd2a05-58e3-568d-a799-ef44f4e6e946",
+            "strategy": "b",
+            "text": "Columbus Crew Soccer Club is an American professional soccer club based in Columbus, Ohio. The Crew competes in Major League Soccer (MLS) as a member club of the league's Eastern Conference. The Crew began play in 1996 as one of the ten charter clubs of the league. The team is owned by Anthony Precourt and Precourt Sports Ventures LLC. Precourt became the second owner in the history of the club on July 30, 2013. The club's head coach is Gregg Berhalter, a former player of the United States men's national soccer team.",
+            "title": "Columbus Crew SC",
+            "start": 0,
+            "end": 522,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 90
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 91,
+                "end": 190
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 191,
+                "end": 265
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 266,
+                "end": 337
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 338,
+                "end": 415
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 416,
+                "end": 522
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a744ef755429979e28828e3",
+              "url": "https://en.wikipedia.org/wiki/Columbus_Crew_SC",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.016129032258064516
+          },
+          {
+            "evidence_id": "E5",
+            "chunk_id": "3df2f42b-e9d6-5209-8976-e0f4e645ca2e",
+            "document_id": "7321c424-5f88-5e09-a5fe-9d4ecf5f5e88",
+            "revision_id": "9b507834-a0f4-5f49-bf46-796839c0cbb9",
+            "strategy": "b",
+            "text": "The 2003 NECBL season marked the tenth season of the existence of the New England Collegiate Baseball League. The league expanded to thirteen teams with the addition of the Vermont Mountaineers of Montpelier, Vermont. The franchise was the league's first in the New England state of Vermont. This marked the fulfillment of the league's goal of having a franchise in each of the six New England states: Connecticut, Massachusetts, Rhode Island, New Hampshire, Maine, and Vermont.",
+            "title": "2003 NECBL season",
+            "start": 0,
+            "end": 478,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 109
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 110,
+                "end": 217
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 218,
+                "end": 291
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 292,
+                "end": 478
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ae11fa755429901ffe4ada9",
+              "url": "https://en.wikipedia.org/wiki/2003_NECBL_season",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015873015873015872
+          },
+          {
+            "evidence_id": "E6",
+            "chunk_id": "5cfe7579-972b-5aaf-833a-3ffd360322b7",
+            "document_id": "18a6a664-9c94-5323-b27a-32d70668af93",
+            "revision_id": "ec276673-0f3b-56f3-b71b-55c125a09c25",
+            "strategy": "b",
+            "text": "Columbus Crew SC is a professional soccer team in the United States. The team is a member of the Eastern Conference of Major League Soccer, the top professional soccer league of the United States and Canada. Crew SC has had five different head coaches since joining the league in 1996. Timo Liekoski, the only Finnish head coach in MLS history, was the first head coach in 1996, but started 6-16 and was fired midseason to be replaced by Tom Fitzgerald. Fitzgerald is currently the all-time leader in regular season wins (70), playoff appearances (four) and playoff wins (nine).",
+            "title": "List of Columbus Crew head coaches",
+            "start": 0,
+            "end": 578,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 68
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 69,
+                "end": 207
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 208,
+                "end": 285
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 286,
+                "end": 453
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 454,
+                "end": 578
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a74c61c55429916b016420e",
+              "url": "https://en.wikipedia.org/wiki/List_of_Columbus_Crew_head_coaches",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015873015873015872
+          },
+          {
+            "evidence_id": "E7",
+            "chunk_id": "109051ad-ef11-51dd-918d-026e345d32b6",
+            "document_id": "20f3c49a-c707-5a50-846f-e3f7abc32d3a",
+            "revision_id": "26f636a8-1bdb-5358-ac9c-b9d6efaf5570",
+            "strategy": "b",
+            "text": "Children's Mercy Park (formerly Sporting Park and Livestrong Sporting Park) is a soccer-specific stadium in Kansas City, Kansas, United States, and is the home of Sporting Kansas City. The stadium is located near Kansas Speedway and it opened during the 2011 season of Major League Soccer on June 9, 2011 with a match against the Chicago Fire. The stadium has a seating capacity of 18,467 seats, which can expand to 25,000 for concerts. Most SKC games attract around 21,000 because of different stadium modes. The stadium is Sporting Kansas City's third home venue; then known as the Kansas City Wizards, the team played in Arrowhead Stadium from 1996 to 2007 and CommunityAmerica Ballpark from 2008 to 2010. In 2013, the stadium hosted the MLS All-Star Game, the United States men's national soccer team, and the MLS Cup, three of the most prestigious matches in the United States, and is the only stadium to host all three in the same year.",
+            "title": "Children's Mercy Park",
+            "start": 0,
+            "end": 942,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 184
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 185,
+                "end": 343
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 344,
+                "end": 436
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 437,
+                "end": 509
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 510,
+                "end": 708
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 709,
+                "end": 942
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ae43f8e5542996836b02c5d",
+              "url": "https://en.wikipedia.org/wiki/Children%27s_Mercy_Park",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015625
+          },
+          {
+            "evidence_id": "E8",
+            "chunk_id": "4883d428-9bd7-54da-afe4-9249085603d9",
+            "document_id": "c535702b-9b53-5ca9-a55d-42a1d3891b89",
+            "revision_id": "903fc249-1486-5181-8f8e-de9c0b3dae91",
+            "strategy": "b",
+            "text": "The Association of Vermont Credit Unions is a federated trade association composed of twenty state and federally chartered credit unions that is itself a member of the Credit Union National Association. Founded as the \"Vermont Credit Union League\" in 1947, the Association's responsibilities include lobbying the state legislators in Montpelier on behalf of its member credit unions, representing credit union interest to pertinent regulators, administering statewide marketing and youth financial education programs, providing education and information sharing among credit union employees and officials, and delivering certain back-office operational support programs to credit unions including a cooperative ATM/debit card program to a majority of credit unions throughout Vermont. It is headquartered in Colchester.",
+            "title": "Association of Vermont Credit Unions",
+            "start": 0,
+            "end": 819,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 202
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 203,
+                "end": 784
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 785,
+                "end": 819
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ae7eb53554299540e5a5696",
+              "url": "https://en.wikipedia.org/wiki/Association_of_Vermont_Credit_Unions",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015384615384615385
+          }
+        ],
+        "round": 1,
+        "tool_call_id": "call_s1I53ZdXXS5JYS5ptNcVTHD3",
+        "executed": true,
+        "follow_up": null,
+        "requested_query": "Vermont Catamounts men's soccer current conference formerly known as from 1988 to 1996",
+        "query_adjusted": false
+      },
+      {
+        "query": "America East Conference formerly known as 1988 to 1996",
+        "strategy": "b",
+        "profile": "1a8846753a25",
+        "embedding_usage": {
+          "model": "text-embedding-3-small",
+          "input_tokens": 13,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 2.6e-07
+        },
+        "document_ranking": [
+          "2e15a777-e170-53b1-b34a-e4ddd0a95606",
+          "05f48eae-c960-580f-aaa1-b04e17836b79",
+          "6990b2e1-7111-5044-b894-f0892cd635a3",
+          "db5b977e-bd0b-5509-8df6-3021b7168906",
+          "49fcf1aa-c4fc-59b3-9eac-238e17287658",
+          "b7882348-6ad4-5a65-9d02-65dde984ac38",
+          "656488aa-edb0-5321-b804-8ab4b5f800b5",
+          "a7608a7a-42e5-53f3-9961-29219262064f",
+          "322820ca-f837-599a-8ec5-67e4afade34d",
+          "f527016c-e228-570a-a546-ba574b0b0208"
+        ],
+        "candidate_counts": {
+          "dense": 30,
+          "bm25": 30,
+          "active_dense": 30,
+          "active_bm25": 30
+        },
+        "evidence": [
+          {
+            "evidence_id": "E3",
+            "chunk_id": "6b0691ee-8d29-56bb-bffc-cab8b0458b2e",
+            "document_id": "2e15a777-e170-53b1-b34a-e4ddd0a95606",
+            "revision_id": "e384b8dc-90e8-555d-b2e0-c733a4fb409e",
+            "strategy": "b",
+            "text": "The America East Conference is a collegiate athletic conference affiliated with the NCAA Division I, whose members are located mainly in the Northeastern United States. The conference was known as the Eastern College Athletic Conference-North from 1979 to 1988 and the North Atlantic Conference from 1988 to 1996.",
+            "title": "America East Conference",
+            "start": 0,
+            "end": 313,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 168
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 169,
+                "end": 313
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5ab3e45655429976abd1bcd4",
+              "url": "https://en.wikipedia.org/wiki/America_East_Conference",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03278688524590164
+          },
+          {
+            "evidence_id": "E9",
+            "chunk_id": "d92ad0f8-d00d-5c14-8de8-f9c6525178ed",
+            "document_id": "05f48eae-c960-580f-aaa1-b04e17836b79",
+            "revision_id": "42be30fb-af51-563d-887a-2d0ac5b08021",
+            "strategy": "b",
+            "text": "The America East Conference Baseball Tournament, officially known as the America East Conference Baseball Championship, is the conference baseball championship of the NCAA Division I America East Conference. The top four finishers in the regular season of the conference's six eligible teams advance to the double-elimination tournament, which is in the midst of a five-year residency at LeLacheur Park in Lowell, Massachusetts. The winner of the tournament receives an automatic berth to the NCAA Division I Baseball Championship. Prior to 1998, the tournament was a six-team double-elimination format. After 2009, the conference also began allowing schools to host the championship on fields without lights.",
+            "title": "America East Conference Baseball Tournament",
+            "start": 0,
+            "end": 709,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 207
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 208,
+                "end": 428
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 429,
+                "end": 531
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 532,
+                "end": 603
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 604,
+                "end": 709
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ae5c5a0554299546bf82f53",
+              "url": "https://en.wikipedia.org/wiki/America_East_Conference_Baseball_Tournament",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.031746031746031744
+          },
+          {
+            "evidence_id": "E10",
+            "chunk_id": "07e69ada-c3e2-506f-a2d2-daf1fc100791",
+            "document_id": "6990b2e1-7111-5044-b894-f0892cd635a3",
+            "revision_id": "2f139a43-603b-570d-a5ef-130b4f3f6d30",
+            "strategy": "b",
+            "text": "Luke Harangody (born January 2, 1988) is an American professional basketball player for ratiopharm Ulm of the German Basketball Bundesliga. He completed his college career at the University of Notre Dame in 2010. He is the only men's player in the history of the Big East Conference to average 20 points and 10 rebounds per game in conference play for his career. He was the 2008 Big East Player of the Year, and was named to the second team on the 2008 Associated Press All-America team. He is also the first Notre Dame men's player to be a three-time first-team All-Big East selection (and just 11th overall) (2008–2010), and the first men's player to lead the conference in both scoring and rebounding in consecutive seasons (2008 and 2009).",
+            "title": "Luke Harangody",
+            "start": 0,
+            "end": 744,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 139
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 140,
+                "end": 212
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 213,
+                "end": 363
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 364,
+                "end": 488
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 489,
+                "end": 744
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5add180e5542992ae4cec45c",
+              "url": "https://en.wikipedia.org/wiki/Luke_Harangody",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.016129032258064516
+          },
+          {
+            "evidence_id": "E11",
+            "chunk_id": "f14b54fe-ac8a-52c5-8ce5-247a2306a2c5",
+            "document_id": "db5b977e-bd0b-5509-8df6-3021b7168906",
+            "revision_id": "0ab146b9-14b3-5edb-a226-2449e1692196",
+            "strategy": "b",
+            "text": "The American South Conference was an NCAA Division I athletic conference that existed from 1987–88 to 1990–91. The charter members were Arkansas State University, Lamar University, Louisiana Tech University, the University of New Orleans, the University of Southwestern Louisiana (now known as the University of Louisiana at Lafayette) and the University of Texas–Pan American (now merged into the University of Texas Rio Grande Valley). The University of Central Florida (UCF) became the only expansion school during the conference's final academic season before merging with the Sun Belt Conference. Losing all but three members, the Sun Belt merged with the American South conference. The combined conference retained the name of the older Sun Belt Conference. Craig Thompson, the American South's first and only commissioner, became commissioner of the merged Sun Belt. After serving as Sun Belt commissioner for eight years, he became commissioner of the newly formed Mountain West Conference in 1998.",
+            "title": "American South Conference",
+            "start": 0,
+            "end": 1006,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 110
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 111,
+                "end": 437
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 438,
+                "end": 601
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 602,
+                "end": 687
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 688,
+                "end": 763
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 764,
+                "end": 873
+              },
+              {
+                "kind": "sentence",
+                "number": 6,
+                "start": 874,
+                "end": 1006
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ae23bdd5542992decbdcc99",
+              "url": "https://en.wikipedia.org/wiki/American_South_Conference",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.016129032258064516
+          },
+          {
+            "evidence_id": "E12",
+            "chunk_id": "7b3dfdc3-d300-504b-b47d-38ee67de445d",
+            "document_id": "49fcf1aa-c4fc-59b3-9eac-238e17287658",
+            "revision_id": "42d5194a-559e-506e-9f84-84284a72ff2f",
+            "strategy": "b",
+            "text": "The Providence Friars is the name of the athletic teams of Providence College. They compete in the Big East Conference (NCAA Division I) for every sport except for ice hockey, where they compete in Hockey East. The Big East Conference was founded in 1979 by former athletic director and men's basketball coach Dave Gavitt. On December 15, 2012, Providence and the other seven Catholic, non-FBS schools announced that they were departing the Big East for a new conference; on March 7, 2013, it was officially confirmed that Providence's new conference would operate under the Big East name. The women's volleyball team, which had been an associate member of the America East Conference before the Big East split, remained in that conference for one more season before joining the Big East for the 2014 season.",
+            "title": "Providence Friars",
+            "start": 0,
+            "end": 808,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 78
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 79,
+                "end": 210
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 211,
+                "end": 322
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 323,
+                "end": 589
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 590,
+                "end": 808
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5add180e5542992ae4cec45c",
+              "url": "https://en.wikipedia.org/wiki/Providence_Friars",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015625
+          },
+          {
+            "evidence_id": "E13",
+            "chunk_id": "de81a2b0-1e64-5acd-b165-01114da38dae",
+            "document_id": "b7882348-6ad4-5a65-9d02-65dde984ac38",
+            "revision_id": "ccc9f6f7-a016-5722-9553-41437f895b8a",
+            "strategy": "b",
+            "text": "The 1988 NBA Expansion Draft was the eighth expansion draft of the National Basketball Association (NBA). The draft was held on June 23, 1988, so that the newly founded Charlotte Hornets and Miami Heat could acquire players for the upcoming 1988–89 season. Charlotte and Miami had been awarded the expansion teams on April 22, 1987. In an NBA expansion draft, new NBA teams are allowed to acquire players from the previously established teams in the league. Not all players on a given team are available during an expansion draft, since each team can protect a certain number of players from being selected. In this draft, each of the twenty-three other NBA teams had protected eight players from their roster and the Hornets and the Heat selected eleven and twelve unprotected players respectively, one from each team. Prior to the draft, the league conducted a coin flip between the Hornets and the Heat to decide their draft order in this expansion draft and in the 1988 NBA draft. The Hornets won the coin flip and chose to have the higher pick in the 1988 Draft, thus allowing the Heat to receive the first selection and the right to select twelve players in this expansion draft.",
+            "title": "1988 NBA Expansion Draft",
+            "start": 0,
+            "end": 1185,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 105
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 106,
+                "end": 256
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 257,
+                "end": 332
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 333,
+                "end": 457
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 458,
+                "end": 607
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 608,
+                "end": 819
+              },
+              {
+                "kind": "sentence",
+                "number": 6,
+                "start": 820,
+                "end": 984
+              },
+              {
+                "kind": "sentence",
+                "number": 7,
+                "start": 985,
+                "end": 1185
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ae0cce455429945ae959454",
+              "url": "https://en.wikipedia.org/wiki/1988_NBA_Expansion_Draft",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015625
+          },
+          {
+            "evidence_id": "E14",
+            "chunk_id": "6172af42-038a-52c9-83a6-e7a28d6e74fd",
+            "document_id": "656488aa-edb0-5321-b804-8ab4b5f800b5",
+            "revision_id": "b45bd53a-64c9-5112-a741-5571842ebad6",
+            "strategy": "b",
+            "text": "Shari Headley (born July 15, 1964) is an American actress and former model. Headley is best known for her role as Lisa McDowell in the 1988 box-office hit romantic comedy film, \"Coming to America\". Headley also has appeared in films \"The Preacher's Wife\" (1996) and \"Johnson Family Vacation\" (2004). On television, Headley starred as Det. Mimi Reed in the ABC daytime soap opera, \"All My Children\" on regular basic from 1991 to 1994. As lead actress, she starred in the Fox short-lived drama series, \"413 Hope St.\" (1997-1998), for which she received NAACP Image Award for Outstanding Actress in a Drama Series nomination. In 2014, Headley began starring as villainous Jennifer Sallison in the Oprah Winfrey Network primetime soap opera, \"The Haves and the Have Nots\".",
+            "title": "Shari Headley",
+            "start": 0,
+            "end": 768,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 75
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 76,
+                "end": 197
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 198,
+                "end": 299
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 300,
+                "end": 433
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 434,
+                "end": 622
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 623,
+                "end": 768
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a8afa6c55429971feec45bb",
+              "url": "https://en.wikipedia.org/wiki/Shari_Headley",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015384615384615385
+          },
+          {
+            "evidence_id": "E15",
+            "chunk_id": "7d06a137-856a-5f0b-80c0-7abba01b2a2c",
+            "document_id": "a7608a7a-42e5-53f3-9961-29219262064f",
+            "revision_id": "61a28e47-4f42-5a41-a076-7c9bacdba1d1",
+            "strategy": "b",
+            "text": "The All-American Hockey League was a minor league hockey organization formed in 1972 with teams based in the Upper Midwest and Great lakes regions of the United States as the Continental Hockey League. In 1986 the league folded, and Danville, Dayton, and Troy went on to form the All-American Hockey League. In 1987, the All-American Hockey League merged with the Atlantic Coast Hockey League. After a single season in the AAHL, Carolina, Johnstown, and Virginia left the league to form the East Coast Hockey League. The AAHL only lasted one more season and folded after the 1988-1989 season.",
+            "title": "All-American Hockey League",
+            "start": 0,
+            "end": 592,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 201
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 202,
+                "end": 307
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 308,
+                "end": 393
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 394,
+                "end": 516
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 517,
+                "end": 592
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ab5ef9a554299488d4d9a59",
+              "url": "https://en.wikipedia.org/wiki/All-American_Hockey_League",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015384615384615385
+          }
+        ],
+        "round": 2,
+        "tool_call_id": "call_xzawVxJRNxOMvrnO6V61QgRb",
+        "executed": true,
+        "follow_up": {
+          "evidence_id": "E3",
+          "entity": "America East Conference"
+        },
+        "requested_query": "America East Conference formerly known as 1988 to 1996",
+        "query_adjusted": false
+      }
+    ],
+    "workflow": "bounded_tools_v1",
+    "execution": {
+      "planning_rounds": 2,
+      "retrieval_rounds": 2,
+      "tool_calls": 2,
+      "searches": 2,
+      "llm_calls": 3,
+      "embedding_calls": 2,
+      "total_provider_calls": 5,
+      "stop_reason": "retrieval_limit",
+      "limits": {
+        "retrieval_rounds": 2,
+        "searches": 3,
+        "llm_calls": 3,
+        "embedding_calls": 3,
+        "total_provider_calls": 6
+      }
+    },
+    "configuration": {
+      "strategy": "b",
+      "profile": "1a8846753a25",
+      "embedding_model": "text-embedding-3-small",
+      "embedding_dimensions": 384,
+      "generation_model": "gpt-5.4-mini-2026-03-17",
+      "prompt_version": "bounded_tools_quote_ids_v1"
+    },
+    "usage": {
+      "planning": [
+        {
+          "input_tokens": 537,
+          "output_tokens": 43,
+          "estimated_cost_usd": 0.00059625,
+          "model": "gpt-5.4-mini-2026-03-17"
+        },
+        {
+          "input_tokens": 1654,
+          "output_tokens": 47,
+          "estimated_cost_usd": 0.001452,
+          "model": "gpt-5.4-mini-2026-03-17"
+        }
+      ],
+      "generation": {
+        "input_tokens": 4623,
+        "output_tokens": 101,
+        "estimated_cost_usd": 0.00392175,
+        "model": "gpt-5.4-mini-2026-03-17"
+      },
+      "embeddings": [
+        {
+          "model": "text-embedding-3-small",
+          "input_tokens": 22,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 4.4e-07
+        },
+        {
+          "model": "text-embedding-3-small",
+          "input_tokens": 13,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 2.6e-07
+        }
+      ],
+      "estimated_model_cost_usd": 0.00597,
+      "estimated_total_cost_usd": 0.0059707
+    },
+    "latency_ms": 4941
+  },
+  "error": null,
+  "elapsed_ms": 4941,
+  "ledger_after": {
+    "calls": 325,
+    "reserved_usd": 0.5276193,
+    "estimated_actual_usd": 0.2220213,
+    "input_tokens": 6984427,
+    "output_tokens": 3386
+  }
+}

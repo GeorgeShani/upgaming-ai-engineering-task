@@ -1,0 +1,1277 @@
+{
+  "case_id": "development-bridge-02",
+  "strategy": "b",
+  "question": "Roger O. Egeberg was Assistant Secretary for Health and Scientific Affairs during the administration of a president that served during what years?",
+  "started_at": "2026-10-28T06:52:35.622221+00:00",
+  "ledger_before": {
+    "calls": 325,
+    "reserved_usd": 0.5276193,
+    "estimated_actual_usd": 0.2220213,
+    "input_tokens": 6984427,
+    "output_tokens": 3386
+  },
+  "result": {
+    "status": "answered",
+    "claims": [
+      {
+        "text": "Roger O. Egeberg served during the Nixon administration.",
+        "citations": [
+          {
+            "evidence_id": "E1",
+            "quote": "His other roles included Assistant Secretary for Health and Scientific Affairs in the Department of Health, Education, and Welfare (now the United States Department of Health and Human Services) during the Nixon administration and Dean of the University of Southern California's medical school."
+          }
+        ]
+      },
+      {
+        "text": "Richard Nixon served as President of the United States from 1969 until 1974.",
+        "citations": [
+          {
+            "evidence_id": "E10",
+            "quote": "Richard Milhous Nixon (January 9, 1913 – April 22, 1994) was the 37th President of the United States from 1969 until 1974, when he resigned from office, the only U.S. president to do so. He had previously served as the 36th Vice President of the United States from 1953 to 1961, and prior to that as a U.S. Representative and also Senator from California."
+          }
+        ]
+      }
+    ],
+    "conflicting_claims": [],
+    "answer": "Roger O. Egeberg served during the Nixon administration. [E1] Richard Nixon served as President of the United States from 1969 until 1974. [E10]",
+    "evidence": [
+      {
+        "evidence_id": "E1",
+        "chunk_id": "815eea65-d275-5b6c-ba9d-bd6b5d9ebe53",
+        "document_id": "dd3eb721-7c42-57bf-9777-03324193bc82",
+        "revision_id": "2b72a625-f5b9-5d55-b99b-8fa86abc0fb4",
+        "strategy": "b",
+        "text": "Roger Olaf Egeberg, M.D. (13 November 1902 – 13 September 1997 Washington, D.C.) was an American medical educator, administrator and advocate of public health. He was General Douglas MacArthur's personal physician during World War II in the Pacific theater. His other roles included Assistant Secretary for Health and Scientific Affairs in the Department of Health, Education, and Welfare (now the United States Department of Health and Human Services) during the Nixon administration and Dean of the University of Southern California's medical school.",
+        "title": "Roger O. Egeberg",
+        "start": 0,
+        "end": 552,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 159
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 160,
+            "end": 257
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 258,
+            "end": 552
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "validation",
+          "record_id": "5ae0d4c9554299603e418468",
+          "url": "https://en.wikipedia.org/wiki/Roger_O._Egeberg",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.03278688524590164
+      },
+      {
+        "evidence_id": "E9",
+        "chunk_id": "30152c91-d2fe-5182-b8fa-9515f3113e75",
+        "document_id": "5cd1d31f-92c8-5f09-9001-5ca86fb3d0ae",
+        "revision_id": "2db7970b-2307-5203-b839-d21a96b5aef0",
+        "strategy": "b",
+        "text": "Gerald Rudolph Ford Jr. (born Leslie Lynch King Jr.; July 14, 1913 – December 26, 2006) was an American politician who served as the 38th President of the United States from August 1974 to January 1977, following the resignation of Richard Nixon. Prior to this he served eight months as the 40th Vice President of the United States, following the resignation of Spiro Agnew. He was the first person appointed to the vice presidency under the terms of the 25th Amendment, and consequently the only person to have served as both Vice President and President of the United States without being elected to executive office. Before his appointment to the vice presidency, Ford served 25 years as U.S. Representative from Michigan's 5th congressional district, the final nine of them as the House Minority Leader.",
+        "title": "Gerald Ford",
+        "start": 0,
+        "end": 807,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 246
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 247,
+            "end": 374
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 375,
+            "end": 619
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 620,
+            "end": 807
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a7c994055429935c91b524f",
+          "url": "https://en.wikipedia.org/wiki/Gerald_Ford",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.03252247488101534
+      },
+      {
+        "evidence_id": "E2",
+        "chunk_id": "43d40546-9096-5682-9bad-dc3b7a593cda",
+        "document_id": "84288cd5-8e54-5797-adfa-93da46fba1e9",
+        "revision_id": "4713b17a-5e91-5911-9a40-a4bace903fb7",
+        "strategy": "b",
+        "text": "Nils Daulaire (born 1948) is an American physician and the former Assistant Secretary for Global Affairs at the United States Department of Health and Human Services (HHS). Daulaire has been at HHS since 2010, and became Assistant Secretary in December 2012. He also served as the U.S. Representative on the World Health Organization’s (WHO) Executive Board, a post he was nominated to by President Barack Obama.",
+        "title": "Nils Daulaire",
+        "start": 0,
+        "end": 412,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 172
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 173,
+            "end": 258
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 259,
+            "end": 412
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5adde85b5542997dc79070a2",
+          "url": "https://en.wikipedia.org/wiki/Nils_Daulaire",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.03225806451612903
+      },
+      {
+        "evidence_id": "E10",
+        "chunk_id": "4ea3118b-3757-5178-88b1-85bbb91c77df",
+        "document_id": "a32660ca-4199-5c58-9ded-759d1562ebab",
+        "revision_id": "2e57a8f9-e508-572c-b8b1-32206a83eed6",
+        "strategy": "b",
+        "text": "Richard Milhous Nixon (January 9, 1913 – April 22, 1994) was the 37th President of the United States from 1969 until 1974, when he resigned from office, the only U.S. president to do so. He had previously served as the 36th Vice President of the United States from 1953 to 1961, and prior to that as a U.S. Representative and also Senator from California.",
+        "title": "Richard Nixon",
+        "start": 0,
+        "end": 355,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 186
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 187,
+            "end": 355
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "validation",
+          "record_id": "5ae0d4c9554299603e418468",
+          "url": "https://en.wikipedia.org/wiki/Richard_Nixon",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.03131881575727918
+      },
+      {
+        "evidence_id": "E3",
+        "chunk_id": "a8da440c-ef52-53a2-ba85-b0d6412dc011",
+        "document_id": "9b1349fc-8060-5eda-8f7c-e11ec4fb50bc",
+        "revision_id": "4841f8d7-c3d4-597e-8169-ced806ae0e9f",
+        "strategy": "b",
+        "text": "Bradford P. Campbell was the Assistant Secretary for Employee Benefits Security of the United States Department of Labor (DOL), the official in charge of the Employee Benefits Security Administration (EBSA). Mr. Campbell was nominated by President George W. Bush as Assistant Secretary on May 3, 2007, and was unanimously confirmed by the United States Senate on August 3, 2007. He held the position until January 20, 2009. Prior to his confirmation as Assistant Secretary, Mr. Campbell had served as Acting Assistant Secretary since October 30, 2006 and as EBSA's Deputy Assistant Secretary for Policy since March 5, 2004.",
+        "title": "Bradford P. Campbell",
+        "start": 0,
+        "end": 623,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 207
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 208,
+            "end": 378
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 379,
+            "end": 423
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 424,
+            "end": 623
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5adde85b5542997dc79070a2",
+          "url": "https://en.wikipedia.org/wiki/Bradford_P._Campbell",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.03076923076923077
+      },
+      {
+        "evidence_id": "E11",
+        "chunk_id": "e68ea87e-4133-5aab-855b-0508109a726d",
+        "document_id": "4942405f-a0de-508a-b287-d7811081ea09",
+        "revision_id": "5c461927-3484-5fed-a90e-d798ae08c131",
+        "strategy": "b",
+        "text": "Hubert Horatio Humphrey Jr. (May 27, 1911January 13, 1978) was an American politician who served as the 38th Vice President of the United States from 1965 to 1969. Humphrey twice served in the United States Senate, representing Minnesota from 1949 to 1964 and 1971 to 1978. He was the Democratic Party's nominee in the 1968 presidential election, losing to the Republican nominee Richard Nixon.",
+        "title": "Hubert Humphrey",
+        "start": 0,
+        "end": 394,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 163
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 164,
+            "end": 273
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 274,
+            "end": 394
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5add10095542990d50227daf",
+          "url": "https://en.wikipedia.org/wiki/Hubert_Humphrey",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.02877846790890269
+      },
+      {
+        "evidence_id": "E12",
+        "chunk_id": "0fdf88ea-f08b-5ff1-98ac-e9d2abcabe96",
+        "document_id": "c24221bb-7928-57d1-b570-8feefb9ab0c5",
+        "revision_id": "af0539e3-8813-5c28-96d5-6c9dd9caaf29",
+        "strategy": "b",
+        "text": "The 1960 presidential campaign of John F. Kennedy, a United States Senator from Massachusetts, began on January 2, 1960, when Kennedy formally announced his candidacy for 35th President of the United States, replacing incumbent President of the United States Dwight D. Eisenhower. Kennedy was nominated by the Democratic Party at the Democratic National Convention of 1960, taking place between July 11 and July 15, 1960. On July 15, 1960, Kennedy named Senator Lyndon B. Johnson of Texas as his official running mate. Kennedy and Johnson won the election on November 8, 1960, defeating incumbent Vice President and Republican nominee Richard Nixon, who would later go on to be the 37th President of the United States. Kennedy and Johnson were sworn in as 35th President and 37th Vice President of the United States on January 20, 1961 respectively. Kennedy would serve as President of the United States until his death in November 1963.",
+        "title": "John F. Kennedy presidential campaign, 1960",
+        "start": 0,
+        "end": 937,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 280
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 281,
+            "end": 421
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 422,
+            "end": 518
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 519,
+            "end": 718
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 719,
+            "end": 849
+          },
+          {
+            "kind": "sentence",
+            "number": 5,
+            "start": 850,
+            "end": 937
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5ae67b5e5542996d980e7b7d",
+          "url": "https://en.wikipedia.org/wiki/John_F._Kennedy_presidential_campaign%2C_1960",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.027783137179239824
+      },
+      {
+        "evidence_id": "E4",
+        "chunk_id": "8e7cfec8-206b-5e5d-ab0a-32aa9639c109",
+        "document_id": "8f430be8-a969-5023-b286-5dcce4c3d7c5",
+        "revision_id": "3501c87e-1a05-59d3-9d8c-a3d105b243bc",
+        "strategy": "b",
+        "text": "Hershel Wayne Gober (born December 21, 1936) is a former government official and Vietnam War veteran. He served as acting United States Secretary of Veterans Affairs (VA) on two occasions during the administration of Bill Clinton: first from July 1, 1997, until January 2, 1998, between the resignation of Secretary Jesse Brown and the appointment of Togo D. West, Jr. as acting secretary, and the second time from July 25, 2000, until January 20, 2001, after the resignation of Secretary West; this time Gober served in the post until the end of the Clinton presidency.",
+        "title": "Hershel Gober",
+        "start": 0,
+        "end": 570,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 101
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 102,
+            "end": 570
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5adeb3715542995534e8c6da",
+          "url": "https://en.wikipedia.org/wiki/Hershel_Gober",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.028083267871170464
+      }
+    ],
+    "search_trace": [
+      {
+        "query": "Roger O. Egeberg Assistant Secretary for Health and Scientific Affairs president administration years",
+        "strategy": "b",
+        "profile": "1a8846753a25",
+        "embedding_usage": {
+          "model": "text-embedding-3-small",
+          "input_tokens": 16,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 3.2e-07
+        },
+        "document_ranking": [
+          "dd3eb721-7c42-57bf-9777-03324193bc82",
+          "84288cd5-8e54-5797-adfa-93da46fba1e9",
+          "9b1349fc-8060-5eda-8f7c-e11ec4fb50bc",
+          "8f430be8-a969-5023-b286-5dcce4c3d7c5",
+          "ac3aa3a7-f8af-5434-9d1d-639542185376",
+          "b1f27334-15a8-531d-8af0-dbbe805e1165",
+          "644b2ab2-fd08-5590-816f-c00bbbc2fd8a",
+          "816e22cd-9bbc-539a-b95c-565c4982d1b5",
+          "2d5e064d-f098-57b6-859c-b9611bf8cd2b",
+          "7fb16a46-d4e9-5a81-a58c-3acd6ce35a49"
+        ],
+        "candidate_counts": {
+          "dense": 30,
+          "bm25": 30,
+          "active_dense": 30,
+          "active_bm25": 30
+        },
+        "evidence": [
+          {
+            "evidence_id": "E1",
+            "chunk_id": "815eea65-d275-5b6c-ba9d-bd6b5d9ebe53",
+            "document_id": "dd3eb721-7c42-57bf-9777-03324193bc82",
+            "revision_id": "2b72a625-f5b9-5d55-b99b-8fa86abc0fb4",
+            "strategy": "b",
+            "text": "Roger Olaf Egeberg, M.D. (13 November 1902 – 13 September 1997 Washington, D.C.) was an American medical educator, administrator and advocate of public health. He was General Douglas MacArthur's personal physician during World War II in the Pacific theater. His other roles included Assistant Secretary for Health and Scientific Affairs in the Department of Health, Education, and Welfare (now the United States Department of Health and Human Services) during the Nixon administration and Dean of the University of Southern California's medical school.",
+            "title": "Roger O. Egeberg",
+            "start": 0,
+            "end": 552,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 159
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 160,
+                "end": 257
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 258,
+                "end": 552
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5ae0d4c9554299603e418468",
+              "url": "https://en.wikipedia.org/wiki/Roger_O._Egeberg",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03278688524590164
+          },
+          {
+            "evidence_id": "E2",
+            "chunk_id": "43d40546-9096-5682-9bad-dc3b7a593cda",
+            "document_id": "84288cd5-8e54-5797-adfa-93da46fba1e9",
+            "revision_id": "4713b17a-5e91-5911-9a40-a4bace903fb7",
+            "strategy": "b",
+            "text": "Nils Daulaire (born 1948) is an American physician and the former Assistant Secretary for Global Affairs at the United States Department of Health and Human Services (HHS). Daulaire has been at HHS since 2010, and became Assistant Secretary in December 2012. He also served as the U.S. Representative on the World Health Organization’s (WHO) Executive Board, a post he was nominated to by President Barack Obama.",
+            "title": "Nils Daulaire",
+            "start": 0,
+            "end": 412,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 172
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 173,
+                "end": 258
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 259,
+                "end": 412
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5adde85b5542997dc79070a2",
+              "url": "https://en.wikipedia.org/wiki/Nils_Daulaire",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03225806451612903
+          },
+          {
+            "evidence_id": "E3",
+            "chunk_id": "a8da440c-ef52-53a2-ba85-b0d6412dc011",
+            "document_id": "9b1349fc-8060-5eda-8f7c-e11ec4fb50bc",
+            "revision_id": "4841f8d7-c3d4-597e-8169-ced806ae0e9f",
+            "strategy": "b",
+            "text": "Bradford P. Campbell was the Assistant Secretary for Employee Benefits Security of the United States Department of Labor (DOL), the official in charge of the Employee Benefits Security Administration (EBSA). Mr. Campbell was nominated by President George W. Bush as Assistant Secretary on May 3, 2007, and was unanimously confirmed by the United States Senate on August 3, 2007. He held the position until January 20, 2009. Prior to his confirmation as Assistant Secretary, Mr. Campbell had served as Acting Assistant Secretary since October 30, 2006 and as EBSA's Deputy Assistant Secretary for Policy since March 5, 2004.",
+            "title": "Bradford P. Campbell",
+            "start": 0,
+            "end": 623,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 207
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 208,
+                "end": 378
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 379,
+                "end": 423
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 424,
+                "end": 623
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5adde85b5542997dc79070a2",
+              "url": "https://en.wikipedia.org/wiki/Bradford_P._Campbell",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03076923076923077
+          },
+          {
+            "evidence_id": "E4",
+            "chunk_id": "8e7cfec8-206b-5e5d-ab0a-32aa9639c109",
+            "document_id": "8f430be8-a969-5023-b286-5dcce4c3d7c5",
+            "revision_id": "3501c87e-1a05-59d3-9d8c-a3d105b243bc",
+            "strategy": "b",
+            "text": "Hershel Wayne Gober (born December 21, 1936) is a former government official and Vietnam War veteran. He served as acting United States Secretary of Veterans Affairs (VA) on two occasions during the administration of Bill Clinton: first from July 1, 1997, until January 2, 1998, between the resignation of Secretary Jesse Brown and the appointment of Togo D. West, Jr. as acting secretary, and the second time from July 25, 2000, until January 20, 2001, after the resignation of Secretary West; this time Gober served in the post until the end of the Clinton presidency.",
+            "title": "Hershel Gober",
+            "start": 0,
+            "end": 570,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 101
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 102,
+                "end": 570
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5adeb3715542995534e8c6da",
+              "url": "https://en.wikipedia.org/wiki/Hershel_Gober",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.028083267871170464
+          },
+          {
+            "evidence_id": "E5",
+            "chunk_id": "a231746a-e094-5bbc-89a1-c0503383a0c6",
+            "document_id": "ac3aa3a7-f8af-5434-9d1d-639542185376",
+            "revision_id": "c77cbd7e-968c-55e5-a3c4-f0e411126af4",
+            "strategy": "b",
+            "text": "Recognition of his scientific standing is evident from his numerous invited contributions to national and international scientific meetings and invited review publications and his receipt of substantial, competitive research funding. He had been a member of the World Health Organisation's Informal Working Groups on Echinococcosis since 1988 and is currently coordinator of the group evaluating vaccines. A major feature of Lightowler’s career has been his dedication to training highly successful postgraduate students, staff and sabbatical visitors in the discipline of parasitology. Lightowlers has been an active member of the Australian Society for Parasitology, serving as the society's President in 1995/6, Honorary Secretary, and as a council member representing Victoria. In 1998 the society awarded Lightowlers the Bancroft-Mackerras Medal in recognition of his outstanding contribution to the science of parasitology.",
+            "title": "Marshall Lightowlers",
+            "start": 1945,
+            "end": 2874,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 10,
+                "start": 1945,
+                "end": 2178
+              },
+              {
+                "kind": "sentence",
+                "number": 11,
+                "start": 2179,
+                "end": 2350
+              },
+              {
+                "kind": "sentence",
+                "number": 12,
+                "start": 2351,
+                "end": 2531
+              },
+              {
+                "kind": "sentence",
+                "number": 13,
+                "start": 2532,
+                "end": 2726
+              },
+              {
+                "kind": "sentence",
+                "number": 14,
+                "start": 2727,
+                "end": 2874
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ae614205542996de7b71b2c",
+              "url": "https://en.wikipedia.org/wiki/Marshall_Lightowlers",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.026470588235294117
+          },
+          {
+            "evidence_id": "E6",
+            "chunk_id": "154ba452-5392-5f8e-8c48-a1045fb3a6b6",
+            "document_id": "b1f27334-15a8-531d-8af0-dbbe805e1165",
+            "revision_id": "d0f47ffd-6646-5fbf-b89e-adf74fe78afa",
+            "strategy": "b",
+            "text": "Mariette DiChristina oversees \"Scientific American\", ScientificAmerican.com, \"Scientific American Mind\" and all newsstand special editions. A science journalist for more than 20 years, she first came to \"Scientific American\" in 2001 as its executive editor. She is also the past president (in 2009 and 2010) of the 2,500-member National Association of Science Writers. She has been an adjunct professor in the graduate Science, Health and Environmental Reporting program at New York University for the past few years. DiChristina is a frequent lecturer and has appeared at the 92nd Street Y in New York, Yale University and New York University among many others. In 2011, DiChristina was named a Fellow of the American Association for the Advancement of Science (AAAS) for the Section on General Interest in Science and Engineering.",
+            "title": "Mariette DiChristina",
+            "start": 0,
+            "end": 832,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 139
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 140,
+                "end": 257
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 258,
+                "end": 368
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 369,
+                "end": 517
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 518,
+                "end": 662
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 663,
+                "end": 832
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5abed87e5542990832d3a0fc",
+              "url": "https://en.wikipedia.org/wiki/Mariette_DiChristina",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.026144907723855092
+          },
+          {
+            "evidence_id": "E7",
+            "chunk_id": "fe56a2bb-f995-56e9-bd5d-5a4fce0fa297",
+            "document_id": "644b2ab2-fd08-5590-816f-c00bbbc2fd8a",
+            "revision_id": "7b2b5947-1914-53cb-82fa-578e3ac54f14",
+            "strategy": "b",
+            "text": "Michael L. Young is an American government official. He served as the acting United States Secretary of Agriculture from January 20, 2017, when Donald Trump took office as President of the United States, to April 25, 2017, when the United States Senate confirmed Sonny Perdue as the new secretary. Young has been director of the United States Department of Agriculture (USDA) Office of Budget and Policy Analysis since October 2010, and has served for 25 years in that office, and has previously served in other positions within the department. He has a bachelor of science degree in botany from Colorado State University and a master of business administration degree from George Washington University.",
+            "title": "Mike Young (agriculture official)",
+            "start": 0,
+            "end": 703,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 52
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 53,
+                "end": 297
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 298,
+                "end": 544
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 545,
+                "end": 703
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5adeb3715542995534e8c6da",
+              "url": "https://en.wikipedia.org/wiki/Mike_Young_%28agriculture_official%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.025124843945068663
+          },
+          {
+            "evidence_id": "E8",
+            "chunk_id": "76edbf0d-a2a2-5637-be52-807b5d383270",
+            "document_id": "816e22cd-9bbc-539a-b95c-565c4982d1b5",
+            "revision_id": "47250ffe-8dd9-597e-a312-d66bf9e74f9f",
+            "strategy": "b",
+            "text": "Edward C. Rochette (born February 17, 1927) has devoted nearly all of his adult life in service to the American Numismatic Association. His first exposure to the ANA was as an editor of \"The Numismatist\" in 1966. Later, he would spend most of his 20 years as executive vice president. In 1987 he was elected to the ANA Board of Governors, and would serve as its president from 1991 to 1993.",
+            "title": "Edward C. Rochette",
+            "start": 0,
+            "end": 390,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 135
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 136,
+                "end": 212
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 213,
+                "end": 284
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 285,
+                "end": 390
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ac47249554299194317399c",
+              "url": "https://en.wikipedia.org/wiki/Edward_C._Rochette",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015873015873015872
+          }
+        ],
+        "round": 1,
+        "tool_call_id": "call_p7LqU8wSOovWjqTJrs4S8GCU",
+        "executed": true,
+        "follow_up": null,
+        "requested_query": "Roger O. Egeberg Assistant Secretary for Health and Scientific Affairs president administration years",
+        "query_adjusted": false
+      },
+      {
+        "query": "Nixon administration years president served from to",
+        "strategy": "b",
+        "profile": "1a8846753a25",
+        "embedding_usage": {
+          "model": "text-embedding-3-small",
+          "input_tokens": 8,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 1.6e-07
+        },
+        "document_ranking": [
+          "5cd1d31f-92c8-5f09-9001-5ca86fb3d0ae",
+          "a32660ca-4199-5c58-9ded-759d1562ebab",
+          "4942405f-a0de-508a-b287-d7811081ea09",
+          "c24221bb-7928-57d1-b570-8feefb9ab0c5",
+          "7c4a1d44-e877-5a9c-9360-35876d13459a",
+          "7f3595a5-1845-5813-9f5b-0413a3c71102",
+          "a7b1f4a5-5c1e-587a-bf6f-433ac098fbc0",
+          "6f974ac8-3dcb-54d1-996e-5233aa9b9cfe",
+          "4ffecebe-c3b6-5792-a7c7-5a95db043c31",
+          "24e8478b-0861-5762-948a-192bebbfb2c8"
+        ],
+        "candidate_counts": {
+          "dense": 30,
+          "bm25": 30,
+          "active_dense": 30,
+          "active_bm25": 30
+        },
+        "evidence": [
+          {
+            "evidence_id": "E9",
+            "chunk_id": "30152c91-d2fe-5182-b8fa-9515f3113e75",
+            "document_id": "5cd1d31f-92c8-5f09-9001-5ca86fb3d0ae",
+            "revision_id": "2db7970b-2307-5203-b839-d21a96b5aef0",
+            "strategy": "b",
+            "text": "Gerald Rudolph Ford Jr. (born Leslie Lynch King Jr.; July 14, 1913 – December 26, 2006) was an American politician who served as the 38th President of the United States from August 1974 to January 1977, following the resignation of Richard Nixon. Prior to this he served eight months as the 40th Vice President of the United States, following the resignation of Spiro Agnew. He was the first person appointed to the vice presidency under the terms of the 25th Amendment, and consequently the only person to have served as both Vice President and President of the United States without being elected to executive office. Before his appointment to the vice presidency, Ford served 25 years as U.S. Representative from Michigan's 5th congressional district, the final nine of them as the House Minority Leader.",
+            "title": "Gerald Ford",
+            "start": 0,
+            "end": 807,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 246
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 247,
+                "end": 374
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 375,
+                "end": 619
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 620,
+                "end": 807
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a7c994055429935c91b524f",
+              "url": "https://en.wikipedia.org/wiki/Gerald_Ford",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03252247488101534
+          },
+          {
+            "evidence_id": "E10",
+            "chunk_id": "4ea3118b-3757-5178-88b1-85bbb91c77df",
+            "document_id": "a32660ca-4199-5c58-9ded-759d1562ebab",
+            "revision_id": "2e57a8f9-e508-572c-b8b1-32206a83eed6",
+            "strategy": "b",
+            "text": "Richard Milhous Nixon (January 9, 1913 – April 22, 1994) was the 37th President of the United States from 1969 until 1974, when he resigned from office, the only U.S. president to do so. He had previously served as the 36th Vice President of the United States from 1953 to 1961, and prior to that as a U.S. Representative and also Senator from California.",
+            "title": "Richard Nixon",
+            "start": 0,
+            "end": 355,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 186
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 187,
+                "end": 355
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5ae0d4c9554299603e418468",
+              "url": "https://en.wikipedia.org/wiki/Richard_Nixon",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03131881575727918
+          },
+          {
+            "evidence_id": "E11",
+            "chunk_id": "e68ea87e-4133-5aab-855b-0508109a726d",
+            "document_id": "4942405f-a0de-508a-b287-d7811081ea09",
+            "revision_id": "5c461927-3484-5fed-a90e-d798ae08c131",
+            "strategy": "b",
+            "text": "Hubert Horatio Humphrey Jr. (May 27, 1911January 13, 1978) was an American politician who served as the 38th Vice President of the United States from 1965 to 1969. Humphrey twice served in the United States Senate, representing Minnesota from 1949 to 1964 and 1971 to 1978. He was the Democratic Party's nominee in the 1968 presidential election, losing to the Republican nominee Richard Nixon.",
+            "title": "Hubert Humphrey",
+            "start": 0,
+            "end": 394,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 163
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 164,
+                "end": 273
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 274,
+                "end": 394
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5add10095542990d50227daf",
+              "url": "https://en.wikipedia.org/wiki/Hubert_Humphrey",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.02877846790890269
+          },
+          {
+            "evidence_id": "E12",
+            "chunk_id": "0fdf88ea-f08b-5ff1-98ac-e9d2abcabe96",
+            "document_id": "c24221bb-7928-57d1-b570-8feefb9ab0c5",
+            "revision_id": "af0539e3-8813-5c28-96d5-6c9dd9caaf29",
+            "strategy": "b",
+            "text": "The 1960 presidential campaign of John F. Kennedy, a United States Senator from Massachusetts, began on January 2, 1960, when Kennedy formally announced his candidacy for 35th President of the United States, replacing incumbent President of the United States Dwight D. Eisenhower. Kennedy was nominated by the Democratic Party at the Democratic National Convention of 1960, taking place between July 11 and July 15, 1960. On July 15, 1960, Kennedy named Senator Lyndon B. Johnson of Texas as his official running mate. Kennedy and Johnson won the election on November 8, 1960, defeating incumbent Vice President and Republican nominee Richard Nixon, who would later go on to be the 37th President of the United States. Kennedy and Johnson were sworn in as 35th President and 37th Vice President of the United States on January 20, 1961 respectively. Kennedy would serve as President of the United States until his death in November 1963.",
+            "title": "John F. Kennedy presidential campaign, 1960",
+            "start": 0,
+            "end": 937,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 280
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 281,
+                "end": 421
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 422,
+                "end": 518
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 519,
+                "end": 718
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 719,
+                "end": 849
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 850,
+                "end": 937
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ae67b5e5542996d980e7b7d",
+              "url": "https://en.wikipedia.org/wiki/John_F._Kennedy_presidential_campaign%2C_1960",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.027783137179239824
+          },
+          {
+            "evidence_id": "E13",
+            "chunk_id": "0e92ab48-44cb-54a9-ac6b-33643a45dfd8",
+            "document_id": "7c4a1d44-e877-5a9c-9360-35876d13459a",
+            "revision_id": "a3bc6280-4ac3-5c35-9021-139871683615",
+            "strategy": "b",
+            "text": "The presidency of Bill Clinton began on January 20, 1993 at noon Eastern Standard Time, when Bill Clinton was inaugurated as President of the United States, and ended on January 20, 2001. Clinton, a Democrat, took office after defeating Republican incumbent President George H. W. Bush and Independent businessman Ross Perot in the 1992 presidential election. Four years later, he defeated Republican Bob Dole and Ross Perot (this time running on the Reform Party ticket) to win a second term of office. During both elections, Clinton ran as a New Democrat, and many of many of his administration's policy proposals reflected his centrist, Third Way thinking. The 42nd United States president, he was the first president elected after the end of the Cold War, the first Baby Boomer to become president, and also the first Democrat since Franklin D. Roosevelt to serve two full terms.",
+            "title": "Timeline of the presidency of Bill Clinton",
+            "start": 0,
+            "end": 883,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 187
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 188,
+                "end": 359
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 360,
+                "end": 503
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 504,
+                "end": 659
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 660,
+                "end": 883
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5abcff77554299700f9d794f",
+              "url": "https://en.wikipedia.org/wiki/Timeline_of_the_presidency_of_Bill_Clinton",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.027046783625730993
+          },
+          {
+            "evidence_id": "E14",
+            "chunk_id": "8344bb14-8246-5c2a-a7ce-8d6af85bbebc",
+            "document_id": "7f3595a5-1845-5813-9f5b-0413a3c71102",
+            "revision_id": "b36d3e66-45d0-566d-9f96-7db0affca7e0",
+            "strategy": "b",
+            "text": "The presidency of Bill Clinton began at noon EST on January 20, 1993, when Bill Clinton was inaugurated as President of the United States, and ended on January 20, 2001. Clinton, a Democrat, took office as the 42nd United States president following a decisive victory over Republican incumbent president George H. W. Bush and Independent businessman Ross Perot in the 1992 presidential election. Four years later, in the 1996 election, he defeated Perot and Republican Bob Dole to win re-election. During both elections, Clinton ran as a New Democrat, and many of his administration's policy proposals reflected his centrist, Third Way thinking. He was the first president elected after the end of the Cold War, the first Baby Boomer to become president, and also the first Democrat since Franklin D. Roosevelt to serve two full terms. He was succeeded by Republican George W. Bush, who won the 2000 presidential election.",
+            "title": "Presidency of Bill Clinton",
+            "start": 0,
+            "end": 922,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 169
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 170,
+                "end": 395
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 396,
+                "end": 497
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 498,
+                "end": 645
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 646,
+                "end": 835
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 836,
+                "end": 922
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5abcff77554299700f9d794f",
+              "url": "https://en.wikipedia.org/wiki/Presidency_of_Bill_Clinton",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.025978407557354925
+          },
+          {
+            "evidence_id": "E15",
+            "chunk_id": "6de05d21-89c4-537a-918d-c8f41181665c",
+            "document_id": "a7b1f4a5-5c1e-587a-bf6f-433ac098fbc0",
+            "revision_id": "6520c4f4-60ed-5754-9ffb-aad38ff7afd9",
+            "strategy": "b",
+            "text": "Michael Charles Nelson (born June 11, 1949) is an American political scientist, noted for his work on the Presidency, Southern Politics, and elections. Currently, he is the Fulmer Professor of Political Science at Rhodes College, a Senior Fellow at the University of Virginia’s Miller Center, and a Fellow at Southern Methodist University’s Center for Presidential History. Nelson is an award winning writer and editor, winning prestigious awards such as the American Political Science Association (APSA) Richard E. Neustadt Award for the Outstanding book on the Presidency and Executive Politics published during the previous year for his book \"Resilient America: Electing Nixon in 1968, Channeling Dissent, and Dividing Government\" (University Press of Kansas), and the V.O. Key Award for Outstanding Book on Southern Politics for \"How the South Joined the Gambling Nation: The Politics of State Policy Innovation\" (2009).",
+            "title": "Michael Nelson (political scientist)",
+            "start": 0,
+            "end": 924,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 151
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 152,
+                "end": 373
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 374,
+                "end": 924
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a823d4b55429903bc27ba4f",
+              "url": "https://en.wikipedia.org/wiki/Michael_Nelson_%28political_scientist%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.024725274725274724
+          },
+          {
+            "evidence_id": "E16",
+            "chunk_id": "73921cd7-7ec6-528f-80cc-389acf72ad87",
+            "document_id": "6f974ac8-3dcb-54d1-996e-5233aa9b9cfe",
+            "revision_id": "5046f1c7-8e0e-5ca0-ac07-b44965c69387",
+            "strategy": "b",
+            "text": "Everette Howard Hunt Jr. (October 9, 1918 – January 23, 2007), better known as E. Howard Hunt, was an American intelligence officer and writer. From 1949 to 1970, Hunt served as an officer in the Central Intelligence Agency (CIA). Along with G. Gordon Liddy and others, Hunt was one of the Nixon administration \"plumbers\", a secret team of operatives charged with fixing \"leaks\" – real or perceived causes of confidential administration information being leaked to outside parties. Hunt and Liddy plotted the Watergate burglaries and other undercover operations for the Nixon administration. In the ensuing Watergate scandal, Hunt was convicted of burglary, conspiracy, and wiretapping, eventually serving 33 months in prison.",
+            "title": "E. Howard Hunt",
+            "start": 0,
+            "end": 726,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 143
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 144,
+                "end": 230
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 231,
+                "end": 481
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 482,
+                "end": 591
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 592,
+                "end": 726
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5adf888d5542995ec70e902d",
+              "url": "https://en.wikipedia.org/wiki/E._Howard_Hunt",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.016129032258064516
+          }
+        ],
+        "round": 2,
+        "tool_call_id": "call_co1EQCI7tyLqhzndhwypnNMW",
+        "executed": true,
+        "follow_up": {
+          "evidence_id": "E1",
+          "entity": "Nixon administration"
+        },
+        "requested_query": "Nixon administration years president served from to",
+        "query_adjusted": false
+      }
+    ],
+    "workflow": "bounded_tools_v1",
+    "execution": {
+      "planning_rounds": 2,
+      "retrieval_rounds": 2,
+      "tool_calls": 2,
+      "searches": 2,
+      "llm_calls": 3,
+      "embedding_calls": 2,
+      "total_provider_calls": 5,
+      "stop_reason": "retrieval_limit",
+      "limits": {
+        "retrieval_rounds": 2,
+        "searches": 3,
+        "llm_calls": 3,
+        "embedding_calls": 3,
+        "total_provider_calls": 6
+      }
+    },
+    "configuration": {
+      "strategy": "b",
+      "profile": "1a8846753a25",
+      "embedding_model": "text-embedding-3-small",
+      "embedding_dimensions": 384,
+      "generation_model": "gpt-5.4-mini-2026-03-17",
+      "prompt_version": "bounded_tools_quote_ids_v1"
+    },
+    "usage": {
+      "planning": [
+        {
+          "input_tokens": 534,
+          "output_tokens": 39,
+          "estimated_cost_usd": 0.000576,
+          "model": "gpt-5.4-mini-2026-03-17"
+        },
+        {
+          "input_tokens": 1787,
+          "output_tokens": 42,
+          "estimated_cost_usd": 0.00152925,
+          "model": "gpt-5.4-mini-2026-03-17"
+        }
+      ],
+      "generation": {
+        "input_tokens": 5163,
+        "output_tokens": 100,
+        "estimated_cost_usd": 0.00432225,
+        "model": "gpt-5.4-mini-2026-03-17"
+      },
+      "embeddings": [
+        {
+          "model": "text-embedding-3-small",
+          "input_tokens": 16,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 3.2e-07
+        },
+        {
+          "model": "text-embedding-3-small",
+          "input_tokens": 8,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 1.6e-07
+        }
+      ],
+      "estimated_model_cost_usd": 0.006427499999999999,
+      "estimated_total_cost_usd": 0.006427979999999999
+    },
+    "latency_ms": 5800
+  },
+  "error": null,
+  "elapsed_ms": 5800,
+  "ledger_after": {
+    "calls": 330,
+    "reserved_usd": 0.54818478,
+    "estimated_actual_usd": 0.22844928,
+    "input_tokens": 6991935,
+    "output_tokens": 3567
+  }
+}
