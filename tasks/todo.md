@@ -72,8 +72,8 @@ does not claim that George has completed his review. Estimates are focused worki
 
 ## Session 10: Delivery and rehearsal (2 hours; depends on 9)
 
-- [ ] Final README, architecture/trade-offs, demo URL, evaluation report, AI usage, journal and submission/rehearsal guides.
-- [ ] Meaningful GitHub history and reproduction instructions, with final checks and frozen evaluation scores reproduced.
+- [x] Final README, architecture/trade-offs, demo URL, evaluation report, AI usage, journal and submission/rehearsal guides.
+- [x] Meaningful GitHub history and reproduction instructions, with final checks and frozen evaluation scores reproduced.
 - [ ] George: explain pipeline, calculate fusion, diagnose retrieval, change a setting/test without AI.
 
 ## Contingency (2 hours)

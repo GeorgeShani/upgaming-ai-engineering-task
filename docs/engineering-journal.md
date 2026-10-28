@@ -1538,3 +1538,34 @@ readiness failure remain documented, not converted into passing evidence.
 [ ] trace the revision header through a proxy; [ ] explain active vs physical point counts and
 the ledger reset limitation. These remain independent learning work.
 
+## Session 10 — delivery package and independent rehearsal prepared
+
+**What changed / why:** README now leads with the public demo and repository, then architecture,
+setup, real reproduction commands, API contracts, explicit alternatives/drawbacks and known
+limits. `docs/submission.md` maps requirements to evidence; `docs/interview-rehearsal.md` gives
+an unaided pipeline explanation, trace, hand calculation, diagnosis and small retrieval/test
+exercise. The AI report records George's actual hosting/configuration actions and distinguishes
+them from Codex's implementation/testing. The accepted plan and frozen evaluation remain intact.
+
+**Verification:** All 158 backend tests pass with warnings treated as errors, all five client
+unit tests and 21 browser tests pass, TypeScript/production build and formatting/Ruff pass.
+Browser coverage includes the full lifecycle, stale citations, errors, keyboard focus, axe and
+four widths. The frozen archive's 96 attempts, every score/summary and original fingerprints
+reproduce offline; deployment-only main/routes byte differences are explicitly reported.
+Production dependency checks report zero known vulnerabilities in 28 Python dependencies and
+zero npm production vulnerabilities. Known credential values are absent from tracked files
+and Git patch history; root .env is untracked. Evidence and scope are in
+`docs/delivery-verification.json`. These checks do not certify production security or semantic
+answer correctness, and no final evaluation question was rerun.
+
+**AI contribution:** Codex performed the cloud probes, diagnosis/fix, audit, documentation and
+automated checks using engineering-partner, shipping-and-launch and debugging guidance. This
+is assistance to disclose. George's no-AI code defence, own-word explanation and practice edit
+cannot be completed by Codex and remain unchecked. No fictitious commits, dates, authorship
+or independent understanding were added.
+
+**Resume point / George's next step:** Open `docs/interview-rehearsal.md`, close AI tools, explain
+the pipeline, calculate RRF, diagnose one recorded failure, and make/test the suggested small
+retrieval change locally. Record your own dated journal entry before checking personal review
+items. Software/deployment/delivery checks for slices 9/10 are complete; independent rehearsal
+and source/semantic review are the remaining human work.

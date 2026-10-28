@@ -1,95 +1,82 @@
 # AI Investigation Engine
 
-An evidence-based investigation engine built in small, reviewed sessions for the Applied AI
-assignment. **Current stage: Session 9, deployment verification and UI refinement.** The website supports
-document upload/inspection/replacement/deletion, questions, cited evidence and search traces.
-Two chunking configurations, dense/BM25 retrieval, custom rank fusion, resumable
-local indexing, and validated cited answers are implemented. The investigation uses real model
-tool calls, evidence-grounded follow-ups, and a required verification round. The full 50,024-source
-import is complete. The 96-attempt development/final A/B comparison is archived; A remains the
-development-selected default. The report records semantic citation failures and experimental
-limitations. Cloud restart verification and final rehearsal remain outstanding.
-Public app: [Investigation Engine](https://upgaming-ai-engineering-task.onrender.com/).
-The public page and dependency readiness were checked on 2026-10-28. The cloud restart
-verification remains pending. See the [UI refinement walkthrough](docs/ui-refinement.md)
-for the updated interface, design choices and free browser checks.
+An evidence-based investigation engine for the Applied AI assignment. Upload PDF, DOCX or TXT
+sources, ask questions across a shared collection, and inspect cited passages and search traces.
+The bounded investigation can follow an entity into another document, preserve conflicting
+reports, or return insufficient evidence.
 
-Start with [the plan](tasks/plan.md), [the checklist](tasks/todo.md), and
-[the engineering journal](docs/engineering-journal.md). The [AI usage report](docs/ai-usage-report.md)
-records actual assistance and independent work.
+**[Live demo](https://upgaming-ai-engineering-task.onrender.com/)** ·
+**[GitHub repository](https://github.com/GeorgeShani/upgaming-ai-engineering-task)**
 
-See the [document management walkthrough](docs/document-management.md) for PDF/DOCX/TXT examples,
-admin authorization, ETag-based replacement/deletion, persistence, and verification commands.
-The [retrieval and first-answer walkthrough](docs/retrieval-and-first-answer.md) explains
-indexing, fusion, the actual model context, provider costs, and hands-on verification.
-Continue with the [multi-step investigation walkthrough](docs/multi-step-investigation.md)
-for tool execution, quote IDs, conflicts, abstention, failure cases, and repeatable checks.
-The [React workflow walkthrough](docs/react-workflows.md) explains state, requests, stale edits,
-source snapshots, browser tests and the hands-on slice-7 checkpoint.
-Read the [comparative evaluation report](docs/evaluation-report.md) for measured A/B results,
-the [evaluation walkthrough](docs/comparative-evaluation.md) for metrics and reproduction, and
-the [raw archive](docs/evaluation/manifest.json) for frozen inputs and outputs.
+The app uses 50,024 distinct source passages: 50,000 HotpotQA passages and 24 clearly fictional
+incident sources. Both chunking configurations are indexed. Configuration A was selected on
+separate development examples before the final evaluation. Read the measured
+[evaluation report](docs/evaluation-report.md), including semantic citation failures and study
+limitations. This is an assisted build; independent learning/rehearsal remains George's work.
 
-With the prepared corpus available locally, verify the saved study without provider calls:
+## Architecture
 
-```powershell
-uv run python scripts/verify_evaluation_archive.py
+```text
+Browser: React + TypeScript
+  /api requests
+FastAPI: one Python web process, also serving compiled React
+  ├─ PDF/DOCX/TXT → normalize/hash → canonical revision → chunks → embeddings
+  │                                                    ↓
+  └─ question → model search tool → dense + BM25 → custom RRF → cited claims
+                                                       ↕
+                                      Qdrant Cloud: sources, revisions, A/B indexes
 ```
 
-## Prepare and verify the dataset
+Canonical source text is separate from chunks. Replacement prepares all new chunks before
+activating its revision. Retrieval checks current manifests, so deleted and inactive revisions
+are excluded even if their physical vectors remain. Mutations use a server-validated admin
+token and an exact revision precondition; stale edits receive HTTP 412.
 
-The committed fixtures contain 40 final questions, 8 development questions, and their 72 supporting
-source records. The large corpus is generated locally under ignored `data/`, not stored in Git.
-Read the [fixture review sheet](docs/evaluation-fixtures.md) before accepting reference answers.
+Search retrieves top-30 dense and top-30 BM25 candidates, combines ranks with custom reciprocal
+rank fusion (`sum(1 / (60 + rank))`), and limits evidence to eight chunks/two per document.
+A uses 256-token windows/40-token overlap. B uses sentence groups up to 256 tokens, one sentence
+overlap, and splits oversized sentences. Rankings are relevance scores, not truth probabilities.
 
-From the repository root:
+The real `search_documents` model tool has validated arguments, at most two retrieval rounds,
+three searches and three language-model calls. Follow-up entities must come from earlier
+retrieved evidence. Responses contain `answered`, `insufficient_evidence` or
+`conflicting_evidence`, claims/citations and a public search trace. Quote/ID validation proves
+citation integrity; it does not prove semantic entailment. Provider errors remain API errors.
 
-```powershell
-uv sync --frozen --group data
-uv run --group data python -m backend.app.dataset_cli prepare
-uv run --group data python -m backend.app.dataset_cli verify
-```
+Default hosted models are `text-embedding-3-small` with 384 dimensions and
+`gpt-5.4-mini-2026-03-17`. All model/rate settings are server-side and configurable.
 
-Preparation streams a pinned HotpotQA revision, includes required evaluation support, deduplicates
-normalized source text, and selects 50,000 distinct HotpotQA passages. It appends 24 explicitly
-fictional source records. It creates `data/prepared/corpus.jsonl` and `manifest.json`, and refuses
-to overwrite an existing output. If these files already exist, run `verify`; to reproduce separately:
+| Choice | Why here | Alternative and trade-off |
+| --- | --- | --- |
+| React/TypeScript + Vite | Builds on familiar web skills with explicit API integration | Gradio is faster to assemble but offers less control over document/evidence workflows |
+| Explicit FastAPI modules | Keeps parsing, storage, retrieval and investigation traceable | A large agent framework adds abstractions to learn and debug |
+| Qdrant Cloud | Dense/BM25 search and canonical payloads survive ephemeral hosting | PostgreSQL/pgvector is viable but adds schema/search setup; Qdrant lacks relational transactions, so staged activation and one writer matter |
+| Hosted 384-dimension embeddings | Fits the small server without loading a model | Local embeddings remove per-call charges but need more memory and operational work |
+| Custom RRF | Combines different ranking scales with a small testable algorithm | Raw-score addition needs calibration; reranking may improve precision but adds cost/latency |
+| Bounded tool workflow | Supports follow-ups with predictable call/context limits | An unrestricted agent can explore more but makes failures, latency and cost less predictable |
+| One origin/process | Simplifies deployment, credentials and browser requests | Separate services scale independently but add deployment/CORS/distributed-lock work |
 
-```powershell
-uv run --group data python -m backend.app.dataset_cli prepare --output data/reproduced
-uv run --group data python -m backend.app.dataset_cli verify --output data/reproduced
-```
+## Run locally
 
-The corpus hashes should match for the same inputs and settings. An explicitly smaller `--count`
-is permitted for experiments, but its manifest truthfully reports whether it reaches 50,000
-HotpotQA passages. Counts below the required support set are rejected. Preparation makes no
-embedding or generation calls and does not write to Qdrant. This is not the later indexing job;
-failed preparation restarts deterministically, while interrupted output is not published.
-
-The [verification report](docs/dataset-preparation-report.json) records the actual count and byte
-hash of this run. It is not a retrieval-quality report. See [fixture conventions](fixtures/README.md)
-for schema, provenance, licensing, leakage prevention, and deliberate benchmark limitations.
-
-```powershell
-uv run --group data pytest -W error
-```
-
-The offline tests use tiny synthetic training inputs plus committed fixtures; they do not download
-the full dataset, contact model providers, or spend API credit. The optional `data` group contains
-Datasets/PyArrow/Pandas tooling and is not installed by the production Docker build.
-
-## Run locally (PowerShell)
-
-Prerequisites: Node.js 24 and `uv`. `uv sync` installs the pinned Python 3.12 interpreter if needed.
-Run these commands from the repository root:
+Prerequisites: Git, Node.js 24 and uv. Python is pinned to 3.12; dependencies are locked in
+`uv.lock` and `frontend/package-lock.json`. From a checkout:
 
 ```powershell
 uv sync --frozen
-Copy-Item .env.example .env
+if (-not (Test-Path .env)) { Copy-Item .env.example .env }
+```
+
+Edit the ignored root `.env`: `OPENAI_API_KEY`, `QDRANT_URL`, `QDRANT_API_KEY`, and
+`DEMO_ADMIN_TOKEN`. Keep keys out of frontend code, Git and screenshots. With no provider
+configuration the UI can start, but readiness reports setup is needed.
+
+Start the API from the root:
+
+```powershell
 uv run uvicorn app.main:app --app-dir backend --reload --host 127.0.0.1 --port 8000
 ```
 
-In a second terminal:
+In another terminal:
 
 ```powershell
 cd frontend
@@ -97,115 +84,142 @@ npm ci
 npm run dev
 ```
 
-Open http://127.0.0.1:5173. API docs: http://127.0.0.1:8000/docs.
-An unconfigured setup is expected to show "Needs setup". It does not require paid API calls.
-Only copy the template once: do not overwrite an existing `.env` containing your credentials.
+Open http://127.0.0.1:5173. For a production-build preview, keep Python running and use
+`npm run preview` instead. It automatically type-checks/builds, then serves port 4173.
+Both Vite modes proxy `/api` to port 8000. Restart preview after source changes; use dev for
+hot reload. To check the single-origin production arrangement, run `npm run build`, then
+start Python and open http://127.0.0.1:8000. Interactive API contracts: `/docs`.
 
-### Preview the built website
+Reading and asking questions need no admin token. Enter it in Documents → Manage access for
+writes; it stays only in page memory. This is a public, shared demo: use public/fictional
+sources. Extracted source text is public; original binaries are not retained.
 
-Keep the Python server running on port 8000. In the frontend terminal:
+## Reproduce data and indexes
+
+For a fresh corpus directory:
 
 ```powershell
-npm run preview
+uv sync --frozen --group data
+uv run --group data python -m backend.app.dataset_cli prepare
+uv run --group data python -m backend.app.dataset_cli verify
 ```
 
-Open http://127.0.0.1:4173. The `prepreview` script type-checks and builds automatically before
-starting Vite's preview server. This avoids previewing an old build. Preview forwards `/api`
-to the Python server, just like development. The port is strict: if 4173 is occupied, stop the
-existing preview rather than accidentally opening another instance on a different port.
+Preparation pins HotpotQA revision `1908d6afbbead072334abe2965f91bd2709910ab`, selects distinct
+normalized passages deterministically and appends labelled fictional sources. The manifest
+records hashes, counts and provenance. It refuses to overwrite an existing output; if data is
+already prepared, run verify. The large corpus, cache and ledger live in ignored `data/`.
+Evaluation questions/reference answers/support labels never enter the index.
 
-Preview serves built files and does not hot-reload source changes. Restart `npm run preview`
-after editing frontend code, or use `npm run dev` for hot reload. Preview does not start Python
-and is for local verification; production serves the compiled files directly through FastAPI.
-The full [Session 1 walkthrough](docs/engineering-journal.md#session-1-hands-on-walkthrough)
-explains the request path and verification exercises.
-
-## Configure providers
-
-Edit the root `.env` locally; never paste API keys into frontend code, Git, or the journal.
-
-- `OPENAI_API_KEY`: an OpenAI API project key. ChatGPT access does not configure an API key here.
-- `QDRANT_URL`: the HTTPS URL of your Qdrant Cloud Free cluster.
-- `QDRANT_API_KEY`: the cluster's API key.
-- Models and embedding dimensions have the accepted plan's defaults in `.env.example`.
-- `DEMO_ADMIN_TOKEN`: server-side token for POST/PUT/DELETE document requests. It is entered in
-  the website's Documents → Manage access section or Swagger's Authorize dialog; it is held
-  only in browser memory and is not embedded in frontend code.
-- `DOCUMENT_COLLECTION_PREFIX`: optional namespace for uploaded manifests/revisions.
-
-Restart Python after changing configuration and click **Check connections**. The backend reads
-model metadata for both OpenAI models and lists Qdrant collections. It does not generate answers
-or embeddings. Passing checks does not prove sufficient credit, write access, or indexing.
-The public report exposes status, never keys, provider bodies, or cluster URLs.
-
-## Verify the foundation
+On a fresh Qdrant cluster/namespace, estimate before the paid import:
 
 ```powershell
-uv run pytest
-uv run ruff check backend
-uv run ruff format --check backend
-cd frontend
+uv run python -m backend.app.index_cli estimate --report artifacts/index-estimate.json
+uv run python -m backend.app.index_cli run --limit 1000 --report artifacts/index-pilot.json
+```
+
+Measure throughput/cost, then run without `--limit` only when the estimate fits the budget.
+Stop the web writer during bulk indexing. Resume the same command/cache after interruption;
+it skips ready records and preserves edits/tombstones. Do not reimport the shared demo to
+undo its user changes. The [indexing walkthrough](docs/retrieval-and-first-answer.md) explains
+profile changes, capacity, pilot results and full-import commands.
+
+## Verification and evaluation
+
+Free automated checks from the root:
+
+```powershell
+uv run pytest -q -W error
+uv run ruff check backend scripts/deployment_checks.py scripts/verify_cloud_persistence.py scripts/verify_deployment_corpus.py
+uv run ruff format --check backend scripts/deployment_checks.py scripts/verify_cloud_persistence.py scripts/verify_deployment_corpus.py
+```
+
+From `frontend/`:
+
+```powershell
+npm ci
+npm run test:unit
+npm run test:browser
 npm run build
+npm run format:check
 ```
 
-The backend tests use mocked provider transports, make no paid calls, and check successful,
-unconfigured, rejected, and timed-out connections, secret redaction, and static/API routing.
-Actual provider access remains a separate check.
+Browser tests start their own API/UI on ports 8001/4174 with in-memory providers. They cover
+upload → question → citation → trace → delete, revisions, errors, safe rendering, keyboard
+focus, axe and four responsive widths. They make no paid model calls.
 
-To exercise the production arrangement, build the frontend, then start Python from the root:
+With the prepared corpus available, reproduce all saved evaluation scores offline:
 
 ```powershell
-uv run uvicorn app.main:app --app-dir backend --host 127.0.0.1 --port 8000
+uv run python scripts/verify_evaluation_archive.py --report artifacts/evaluation-reproduction.json
 ```
 
-Open http://127.0.0.1:8000. The built frontend must exist before starting the server.
+The frozen study has 16 development and 80 final attempts, retaining four failed attempts.
+The checker recomputes every score and summary and validates the archived fingerprints.
+Current deployment/header code differs from the experiment's original bytes; that is reported
+without rewriting historical results. Retrieval/prompts/model settings remain as evaluated.
+For a new paid experiment use a new output directory and the
+[evaluation reproduction guide](docs/comparative-evaluation.md). Do not rerun frozen final
+cases to tune this result. Metrics, raw outputs and reviewed failures:
 
-## API in this slice
+- [Methodology](docs/evaluation-methodology.md) and [measured results](docs/evaluation-report.md).
+- [Raw archive manifest](docs/evaluation/manifest.json), [selection](docs/evaluation/selection.json),
+  and [qualitative review](docs/evaluation/qualitative-review.md).
+- [Reference caveats](docs/evaluation-reference-caveats.md): AI review is identified; George's
+  independent gold/citation review remains pending.
 
-| Endpoint | Meaning |
+## Public API
+
+| Endpoint | Purpose |
 | --- | --- |
-| `GET /api/live` | 200 while Python is running; no dependency calls |
-| `GET /api/health` | 200 when all configured provider access checks pass; otherwise 503 plus a structured report |
-| `/api/documents` | Upload/list/inspect/replace/delete; mutations require the demo admin token |
-| `POST /api/investigations` | Bounded tool-driven hybrid searches and cited claims, or an explicit status/error |
-| `/docs` | Interactive FastAPI API documentation |
+| `GET /api/live` | Python liveness; no provider work |
+| `GET /api/health` | Read-only dependency readiness; 200 or structured 503 |
+| `POST /api/documents` | Small PDF/DOCX/TXT upload, exact deduplication and indexing |
+| `GET /api/documents` | Cursor-paginated source list |
+| `GET /api/documents/{id}` | Canonical source and metadata |
+| `PUT /api/documents/{id}` | Prepare and activate a replacement revision |
+| `DELETE /api/documents/{id}` | Tombstone and exclude from retrieval |
+| `POST /api/investigations` | Bounded question, evidence, status, search trace and usage |
 
-The document endpoints are now implemented; their contracts are in `/docs` and the document
-management walkthrough. Original binary files and historical revisions have no public download API.
+Mutations require `Authorization: Bearer <demo token>`. PUT/DELETE additionally require
+`If-Match` containing the exact quoted `X-Document-ETag` returned on create/read/replace.
+That application revision header survives proxies weakening the standard representation ETag.
+Uploads are capped at 5,000,000 bytes. Investigations are limited to six/minute and one active
+request per process, with bounded context/output and a 90-second application deadline.
 
-## Deploy on Render Free
+## Deployment, resources and cost
 
-1. Push the verified branch to the GitHub repository.
-2. In Render create a Blueprint from the repository, selecting that branch. `render.yaml` specifies
-   a **Free** Docker web service; do not select a paid instance or database.
-3. Supply the three provider secrets in Render's environment settings. They remain server-side.
-4. Render builds React in a Node stage and copies only its output into the Python runtime. Python
-   serves that output and the API on Render's `PORT`.
-5. Open the assigned public URL and check `/api/live`, `/api/health`, and the workspace workflows.
-6. Record the real URL and results here and in the journal only after verification.
+Use **Render Web Service → Docker → Free → main**. `render.yaml` pins the service, liveness
+path `/api/live`, configuration A and a $1 per-instance guard. Supply all four secrets in Render
+without surrounding quotes. Docker builds React in a Node stage and runs only Python plus the
+compiled assets. No separate frontend service, Redis or worker is needed. The local image can
+be built with `docker build -t investigation-engine:slice9 .`.
 
-The host health check uses liveness so a provider outage does not cause a deployment restart loop.
-No paid infrastructure is required. Render Free has limited memory, sleeps after idle periods,
-and discards local files on restart. Persistent documents and indexes therefore live in
-Qdrant. Local SQLite is only an embedding cache/spending ledger; it can disappear on restart,
-so its spending ceiling is not an account-wide budget. The free database also has inactivity
-restrictions. The $5 API target is separate from infrastructure hosting.
+Render Free sleeps after inactivity and discards local files. Qdrant preserves canonical
+sources/revisions/indexes; local SQLite embedding cache and spending counters may disappear.
+Therefore the application budget is not a durable account-wide hard cap. The local project
+ledger retains development/index/evaluation reservations; cloud verification records its paid
+questions there too. Rates are configured estimates, not invoices. Unknown failures retain
+reservations; uploads' unreported embedding costs retain small conservative reservations.
+The API target is $5 total and is separate from free hosting. See the latest cost receipt in
+[deployment verification](docs/deployment-verification.md).
 
-Docker is optional for local development. To check the actual image locally:
+Follow the [cloud restart walkthrough](docs/deployment-verification.md) for the two-phase
+owned-source probe, exact corpus audit, limits, evidence and rollback. Original binary downloads,
+OCR, distributed locks/rate limits, production backup recovery, streaming and multiple model
+comparisons are outside this version. Near-duplicates are not detected. Conflict detection and
+semantic citation support remain substantive limitations documented in the evaluation report.
 
-```powershell
-docker build -t investigation-engine .
-docker run --rm -p 8000:8000 --env-file .env investigation-engine
-```
+## Delivery and understanding
 
-## Technical choices
+[Submission checklist](docs/submission.md) · [Interview rehearsal](docs/interview-rehearsal.md) ·
+[AI usage report](docs/ai-usage-report.md) · [Engineering journal](docs/engineering-journal.md) ·
+[Accepted plan](tasks/plan.md) · [Progress and independent-review checklist](tasks/todo.md).
 
-FastAPI supplies typed API contracts and Python processing; React uses familiar frontend tools.
-Serving both from one production origin avoids a separate deployment and CORS configuration.
-One HTTP client is shared through FastAPI's lifespan and closed at shutdown. Liveness is separate
-from external access checks. See the journal for concrete request traces, alternatives, limits,
-and your own learning checkpoint.
+Hands-on walkthroughs: [documents](docs/document-management.md),
+[retrieval](docs/retrieval-and-first-answer.md), [investigation](docs/multi-step-investigation.md),
+[React](docs/react-workflows.md), [UI refinement](docs/ui-refinement.md),
+[metrics](docs/comparative-evaluation.md).
 
-Official references: [FastAPI lifespan](https://fastapi.tiangolo.com/advanced/events/),
-[Vite](https://vite.dev/guide/), [Render free limits](https://render.com/docs/free), and
-[Qdrant free clusters](https://qdrant.tech/documentation/cloud/create-cluster/).
+Source data retains its recorded provenance/licences; fictional fixtures are explicitly labelled.
+No repository-wide licence grant is implied. The assignment permits AI assistance and requires
+its disclosure; the interview's practical part must be completed without AI.

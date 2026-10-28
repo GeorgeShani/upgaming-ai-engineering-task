@@ -1,0 +1,57 @@
+{
+  "scope": "offline archive reproduction; no provider requests",
+  "identity": "9b288d4bdc562919d1a7e1a78271d590453a5fd7c27f4c218bd391b948f0d07f",
+  "splits": {
+    "development": {
+      "attempts": 16,
+      "summary_reproduced": true,
+      "scores_reproduced": true,
+      "errors": 1
+    },
+    "final": {
+      "attempts": 80,
+      "summary_reproduced": true,
+      "scores_reproduced": true,
+      "errors": 3
+    }
+  },
+  "selected_strategy": "a",
+  "selection_before_final": true,
+  "first_final_attempt_at": "2026-10-28T06:59:55.265363+00:00",
+  "selection_at": "2026-10-28T06:57:38.785624+00:00",
+  "ledger_continuous_between_attempts": true,
+  "ledger_before": {
+    "calls": 315,
+    "reserved_usd": 0.48744711,
+    "estimated_actual_usd": 0.20992536,
+    "input_tokens": 6970527,
+    "output_tokens": 3003
+  },
+  "ledger_after": {
+    "calls": 762,
+    "reserved_usd": 2.31480321,
+    "estimated_actual_usd": 0.69751671,
+    "input_tokens": 7525494,
+    "output_tokens": 19232
+  },
+  "code_bytes_match": false,
+  "different_code_bytes": [
+    "backend/app/documents/routes.py",
+    "backend/app/main.py"
+  ],
+  "code_hash_note": "Raw byte hashes can differ with checkout line endings; score equality is checked independently.",
+  "archive_hashes_checked": true,
+  "required_source_chunk_comparison": {
+    "development": {
+      "required_distinct_sources": 12,
+      "identical_spans": 12
+    },
+    "final": {
+      "required_distinct_sources": 60,
+      "identical_spans": 60
+    }
+  },
+  "paired_successful_final_cases": 37,
+  "paired_successes_with_identical_initial_queries": 21,
+  "george_independent_review": "pending"
+}

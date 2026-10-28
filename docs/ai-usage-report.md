@@ -1,6 +1,8 @@
 # AI usage report
 
-This is a living report, not a claim that the assignment is complete.
+This report records actual assistance and independent work. Rows are chronological snapshots;
+later rows update earlier implementation status. Independent learning items remain pending
+until George records his own review and rehearsal.
 
 | Session | AI assistance | Independently verified or changed by George |
 | --- | --- | --- |
@@ -15,6 +17,8 @@ This is a living report, not a claim that the assignment is complete.
 | React workflows | Codex implemented and formatted the document/question/source UI, API boundary, accessible dialogs, stale-state/error handling, browser/unit tests, an opt-in paid smoke and walkthrough; diagnosed a live follow-up-query failure, local nested-npm startup failure and dialog focus timing bug; verified the live upload → answer → citation → trace → delete path | George authorized slice 7 and continuation on main; independent code tracing, browser checks and understanding exercises remain pending. Final evaluation and public deployment verification remain outstanding |
 | Comparative evaluation | Codex implemented tested metrics, diagnostic rankings, corpus/code guards, serial resumable paid attempts, frozen development selection, offline reproduction and mutation checks; executed all 96 attempts without retrying failed questions; retained four errors, reviewed native and fictional claim/citation outputs, and documented semantic failures and benchmark caveats | George authorized slice 8 on main; independent reference review, disputed-citation review, metric calculations and understanding checkpoints remain pending. AI review is explicitly labelled and is not presented as human accuracy or George's work |
 | UI refinement | Codex used Impeccable and frontend engineering guidance to refine the existing visual system, question/library navigation, responsive layouts and accessible validation; ran fixture browser/unit checks and inspected desktop/mobile renders | George hosted the app and supplied its public URL; independent review of the new interface remains pending |
+| Cloud persistence and hosted bug fix | Codex reproduced the weak-ETag HTTP 412 bug, added a dedicated revision header and regression tests, deployed the fix, ran real before/after-redeploy investigations against disposable owned documents, verified persisted text/revision/deletion and cleaned up; implemented the read-only complete corpus/index audit and preserved costs/failures | George confirmed the Render instance is Free with a $1 per-instance budget; independent restart/code walkthrough remains pending |
+| Delivery and rehearsal | Codex consolidated README/setup/architecture/trade-offs, prepared the submission map and independent rehearsal exercises, reproduced the frozen evaluation scores offline, checked builds/tests/dependencies and recorded evidence | George's independent claim/source review, explanation, debugging exercise and retrieval-setting change without AI remain pending; no claim is made that Codex can complete these on his behalf |
 
 Later entries must name actual independent work, rather than assume that reading generated code
 is equivalent to having written or understood it. Infrastructure and evaluation results remain

@@ -1,0 +1,81 @@
+{
+  "checked_at": "2026-10-28T12:30:11.231569+00:00",
+  "scope": "Slices 9/10: automated deployment/delivery checks; independent rehearsal remains pending",
+  "backend": {
+    "command": "uv run pytest -q -W error",
+    "passed": 158
+  },
+  "frontend": {
+    "client_unit_tests_passed": 5,
+    "browser_tests_passed": 21,
+    "widths_px": [
+      320,
+      768,
+      1024,
+      1440
+    ],
+    "axe_checks": "passed in browser suite",
+    "typescript_and_production_build": "passed",
+    "prettier": "passed"
+  },
+  "python_lint_and_format": "passed for backend and deployment scripts",
+  "dependency_audit": {
+    "python_runtime_dependencies": 28,
+    "python_known_vulnerabilities": 0,
+    "npm_production_known_vulnerabilities": 0,
+    "commands": [
+      "uv export --frozen --no-dev --no-hashes --no-emit-project --output-file artifacts/runtime-requirements.txt",
+      "uvx pip-audit -r artifacts/runtime-requirements.txt --disable-pip --no-deps --progress-spinner off -f json -o artifacts/python-runtime-audit.json",
+      "npm audit --omit=dev --audit-level=high"
+    ]
+  },
+  "evaluation": {
+    "development_attempts": 16,
+    "final_attempts": 80,
+    "all_scores_and_summaries_reproduced": true,
+    "archive_hashes_checked": true,
+    "current_backend_bytes_match_experiment": false,
+    "deployment_only_different_code_bytes": [
+      "backend/app/documents/routes.py",
+      "backend/app/main.py"
+    ],
+    "new_final_questions_submitted": 0
+  },
+  "cloud_restart": {
+    "passed": true,
+    "method": "Git-triggered redeploy to a fresh Render process",
+    "live_application_release": "a4789c447eed137f96f23659947b2f994d434ea4",
+    "free_instance_and_1_usd_guard": "confirmed by George in this chat",
+    "all_probe_sources_cleaned": true
+  },
+  "ledger": {
+    "calls": 782,
+    "reserved_usd": 2.47683284,
+    "estimated_actual_usd": 0.71511932,
+    "input_tokens": 7544522,
+    "output_tokens": 20028
+  },
+  "budget_ceiling_usd": 4.5,
+  "cost_limitations": [
+    "Configured estimates are not invoices.",
+    "Upload embedding usage retains conservative reservations.",
+    "Public visitor usage is not included in the local ledger.",
+    "Render SQLite counters can reset after a restart."
+  ],
+  "evidence_canonical_json_sha256": {
+    "docs/deployment/cloud-persistence.json": "59799199512d71e8f8c246603415c6ac31e6b6018ce1b7cbcefaf9e672347775",
+    "docs/deployment/corpus-verification.json": "01459604e6aad2e361af3c9804d23d9dea120a4c5ad2180cbf6d07c68853fb97",
+    "docs/deployment/upload-limit.json": "33e290aecc5e3db8761ec46057070032cf3704896261c6c0fd555591c84445b2",
+    "docs/deployment/python-runtime-audit.json": "a20ca9e363907eedd6995a4c6c199e6832d447a09a1de5c741acf339271ef85a",
+    "docs/deployment/archive-reproduction.json": "f3b242b230b086f448cf06c77bf9a4c2f11e1176d87ccd1952f389443d2f4c38"
+  },
+  "george_independent_rehearsal": "pending",
+  "repository_checks": {
+    "known_credential_values_absent": true,
+    "files_scanned": 275,
+    "known_credential_values_absent_from_existing_patch_history": true,
+    "root_env_untracked": true,
+    "relative_markdown_file_links": "passed",
+    "limitations": "Known configured credential values only; not a general secret detector. Link existence is checked, not Markdown heading anchors."
+  }
+}
