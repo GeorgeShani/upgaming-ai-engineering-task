@@ -1347,3 +1347,50 @@ claim; [ ] inspect the selection timestamp; [ ] review the labels independently.
 that George independently authored or verified it. **Resume point:** Follow
 `docs/comparative-evaluation.md` and `docs/evaluation-report.md`; slice 9 is public deployment
 and restart verification, with final delivery/rehearsal in slice 10.
+
+## Session 9 — checkpoint A: production image and fresh-container persistence
+
+**What changed / why:** Built the multi-stage production image: Node compiles React, then
+Python serves the API/assets from one origin. New HTTP probes and a disposable-container
+command mutate only uniquely labelled sources they created, reject duplicate ownership, use
+exact ETags, and clean up independently of the container. Remote origins require HTTPS with
+no URL credentials, and authenticated requests never follow redirects.
+
+**Failure and fix:** Docker `--env-file .env` preserves surrounding quotes, unlike Python
+dotenv parsing. The first startup rejected a quoted Qdrant URL before provider work. The
+launcher now parses Settings, creates an unquoted temporary runtime env file under ignored
+artifacts, passes it to Docker and removes it. Root credentials are unchanged and not printed.
+
+**Mechanism / observed verification:** With 512 MiB memory and 0.1 CPU quota, the production
+image uploaded two fictional sources, replaced recovery 13→21 minutes, rejected a stale ETag
+with 412, deleted one source, and answered 21 minutes citing the new revision. The container
+was removed and a new one started without host data mounts. Its SQLite calls/cache counts
+were zero, while Qdrant preserved source text/revision/ETag and the deletion's 404. A second
+real answer cited the same updated revision. Both probe sources were deleted; original corpus
+sources were untouched. Post-call measured memory was 108.9 MiB / 512 MiB, not a historical peak.
+
+**Cost / alternatives:** Paid checks added estimated known usage $0.00887438. Before deletion,
+container call rows were imported idempotently into the host ledger: now $0.70639109 known
+usage/$2.35083284 reservations. A host ledger mount would avoid imports but invalidate the
+ephemeral-filesystem test. The small importer deliberately depends on the ledger schema and
+has duplicate/atomic-budget tests. No spending ceiling was raised.
+
+**Deployment metadata:** An opaque per-process boot header distinguishes restart from browser
+reload. A release header accepts only a commit SHA from Render's automatic RENDER_GIT_COMMIT
+or Docker's build revision; arbitrary values are not echoed. Pure ASGI header wrapping adds
+no document-body buffering or RAG changes. The Blueprint pins main/A/Free and a smaller $1
+fresh-instance budget. That counter can still reset on Render spindown; it is not an account-
+wide hard cap. Historical evaluation outputs stay frozen; deployment-only code changes can
+legitimately differ from their original source-byte fingerprints.
+
+**Verification / AI contribution:** All 151 backend tests pass with warnings treated as errors.
+Tests cover origin/redirect safety, duplicate ownership, usage import, budget rejection, stable
+boot IDs, changed IDs after recreation and release-value redaction. Codex drafted and ran the
+work. Production build and the initial live persistence proof passed; rebuilt-image header and
+zero-paid-call limit probes are next. Raw local evidence is saved under docs/deployment.
+
+**My understanding (George):** [ ] Trace the two image stages; [ ] explain Qdrant versus SQLite
+persistence; [ ] explain ETags/boot IDs; [ ] reproduce the env-file difference. Still pending.
+**Resume point:** Rebuild with release metadata, verify limits, deploy Render Free Web Service,
+then check the actual public URL/restart. Public deployment is not yet verified; George is
+configuring Render access/service creation.

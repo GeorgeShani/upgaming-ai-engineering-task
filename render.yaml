@@ -3,6 +3,7 @@ services:
     name: upgaming-investigation-engine
     runtime: docker
     plan: free
+    branch: main
     healthCheckPath: /api/live
     envVars:
       - key: OPENAI_API_KEY
@@ -13,3 +14,7 @@ services:
         sync: false
       - key: DEMO_ADMIN_TOKEN
         sync: false
+      - key: RETRIEVAL_STRATEGY
+        value: a
+      - key: API_BUDGET_USD
+        value: "1.0"

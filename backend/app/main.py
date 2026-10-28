@@ -8,6 +8,7 @@ from fastapi.responses import FileResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 
 from app.config import Settings
+from app.deployment import DeploymentIdentity
 from app.documents.routes import router as document_router
 from app.documents.security import DocumentMutationBoundary
 from app.documents.service import DocumentService
@@ -58,6 +59,7 @@ def create_app(
 
     app = FastAPI(title="AI Investigation Engine", version="0.1.0", lifespan=lifespan)
     app.add_middleware(DocumentMutationBoundary, settings=lambda: app.state.settings)
+    app.add_middleware(DeploymentIdentity)
     app.include_router(document_router)
     app.include_router(investigation_router)
 

@@ -6,6 +6,9 @@ COPY frontend/ ./
 RUN npm run build
 
 FROM python:3.12-slim
+ARG APP_REVISION=unknown
+ENV APP_REVISION=$APP_REVISION
+LABEL org.opencontainers.image.revision=$APP_REVISION
 COPY --from=ghcr.io/astral-sh/uv:0.11.26 /uv /uvx /bin/
 WORKDIR /app
 ENV PYTHONUNBUFFERED=1
