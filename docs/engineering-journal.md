@@ -1483,3 +1483,12 @@ API_BUDGET_USD is 1.0; this is user-confirmed account configuration, not a publi
 George's review is pending. Explain why a browser reload is not a server restart, why a weak
 ETag cannot satisfy an exact revision precondition, and why source storage must outlive a
 web process. Resume with cleanup of the failed probe, then a fresh complete restart run.
+
+**Before restart checkpoint:** Fix commit `76b4073` is live and preserves the dedicated revision
+header even while the proxy's standard ETag remains weak. Both sources from the failed probe
+were verified and deleted. A new probe completed upload, 13→21 minute replacement, stale-tag
+412, deletion/404 and a real answered investigation citing the new revision. Its successful
+question cost estimate is $0.00436898. Checkpoint/ownership and conservative spending are saved
+locally. The next tooling/documentation commit triggers the fresh Render process; after-restart
+verification is not yet claimed at this checkpoint. All 158 backend tests pass with warnings
+treated as errors; five client tests, 21 browser checks, production build and formatting pass.
