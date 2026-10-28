@@ -1,0 +1,93 @@
+{
+  "scope": "one live browser smoke, not final evaluation",
+  "source_case": "UI-c156fa3e-4787-49b2-a0f1-f542f03b0e19",
+  "created_document_id": "bd272eaf-a26b-4fce-ad7d-ea1ac20c4aa7",
+  "upload_http": 201,
+  "answer_status": "answered",
+  "answer": "The documented recovery time for fictional browser smoke case UI-c156fa3e-4787-49b2-a0f1-f542f03b0e19 was 17 minutes. [E1]",
+  "source_citation_checked": true,
+  "trace_opened": true,
+  "deleted": true,
+  "deleted_source_http": 404,
+  "browser_runtime_errors": [],
+  "configuration": {
+    "strategy": "a",
+    "profile": "1a8846753a25",
+    "embedding_model": "text-embedding-3-small",
+    "embedding_dimensions": 384,
+    "generation_model": "gpt-5.4-mini-2026-03-17",
+    "prompt_version": "bounded_tools_quote_ids_v1"
+  },
+  "execution": {
+    "planning_rounds": 2,
+    "retrieval_rounds": 2,
+    "tool_calls": 2,
+    "searches": 2,
+    "llm_calls": 3,
+    "embedding_calls": 2,
+    "total_provider_calls": 5,
+    "stop_reason": "retrieval_limit",
+    "limits": {
+      "retrieval_rounds": 2,
+      "searches": 3,
+      "llm_calls": 3,
+      "embedding_calls": 3,
+      "total_provider_calls": 6
+    }
+  },
+  "usage": {
+    "planning": [
+      {
+        "input_tokens": 544,
+        "output_tokens": 54,
+        "estimated_cost_usd": 0.000651,
+        "model": "gpt-5.4-mini-2026-03-17"
+      },
+      {
+        "input_tokens": 1287,
+        "output_tokens": 62,
+        "estimated_cost_usd": 0.00124425,
+        "model": "gpt-5.4-mini-2026-03-17"
+      }
+    ],
+    "generation": {
+      "input_tokens": 2954,
+      "output_tokens": 82,
+      "estimated_cost_usd": 0.0025845,
+      "model": "gpt-5.4-mini-2026-03-17"
+    },
+    "embeddings": [
+      {
+        "model": "text-embedding-3-small",
+        "input_tokens": 31,
+        "api_calls": 1,
+        "cache_hits": 0,
+        "estimated_cost_usd": 6.2e-07
+      },
+      {
+        "model": "text-embedding-3-small",
+        "input_tokens": 31,
+        "api_calls": 1,
+        "cache_hits": 0,
+        "estimated_cost_usd": 6.2e-07
+      }
+    ],
+    "estimated_model_cost_usd": 0.004479749999999999,
+    "estimated_total_cost_usd": 0.004480989999999999
+  },
+  "latency_ms": 6494,
+  "usage_before": {
+    "calls": 309,
+    "reserved_usd": 0.46937097,
+    "estimated_actual_usd": 0.20544297,
+    "input_tokens": 6965610,
+    "output_tokens": 2805
+  },
+  "usage_after": {
+    "calls": 315,
+    "reserved_usd": 0.48744711,
+    "estimated_actual_usd": 0.20992536,
+    "input_tokens": 6970527,
+    "output_tokens": 3003
+  }
+}

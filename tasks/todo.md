@@ -51,9 +51,9 @@ does not claim that George has completed his review. Estimates are focused worki
 
 ## Session 7: Complete React workflows (2 hours; depends on 6)
 
-- [ ] Upload/list/inspect/replace/delete UI, question form, status, citations, search trace.
-- [ ] Loading/error/empty states and safe document rendering.
-- [ ] Browser smoke test: upload -> ask -> open citation -> delete.
+- [x] Upload/list/inspect/replace/delete UI, question form, status, citations, search trace.
+- [x] Loading/error/empty states and safe document rendering.
+- [x] Browser smoke test: upload -> ask -> open citation -> delete.
 - [ ] George: run the entire workflow and distinguish errors from evidence limitations.
 
 ## Session 8: Comparative evaluation (2 hours; depends on 7 and completed indexes)

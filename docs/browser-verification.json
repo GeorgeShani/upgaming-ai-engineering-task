@@ -1,0 +1,149 @@
+{
+  "scope": "slice 7 compiled React preview with real FastAPI routes and isolated fake external providers; selected response-state tests stub API JSON",
+  "started_at": "2026-10-28T03:46:06.645Z",
+  "browser": "Playwright Chromium, channel chromium, headless",
+  "servers": {
+    "preview": 4174,
+    "fixture_api": 8001,
+    "reuse_existing": false
+  },
+  "statistics": {
+    "startTime": "2026-10-28T03:46:06.645Z",
+    "duration": 52331.836,
+    "expected": 20,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "cases": [
+    {
+      "name": "renders conflicting_evidence as an evidence result, not an API error",
+      "status": "expected",
+      "duration_ms": 2267
+    },
+    {
+      "name": "renders insufficient_evidence as an evidence result, not an API error",
+      "status": "expected",
+      "duration_ms": 920
+    },
+    {
+      "name": "HTTP 429 is an actionable error and is not retried automatically",
+      "status": "expected",
+      "duration_ms": 1067
+    },
+    {
+      "name": "HTTP 502 is an actionable error and is not retried automatically",
+      "status": "expected",
+      "duration_ms": 956
+    },
+    {
+      "name": "HTTP 503 is an actionable error and is not retried automatically",
+      "status": "expected",
+      "duration_ms": 976
+    },
+    {
+      "name": "pending questions cannot submit a second paid request",
+      "status": "expected",
+      "duration_ms": 980
+    },
+    {
+      "name": "question validation explains that no paid request was submitted",
+      "status": "expected",
+      "duration_ms": 891
+    },
+    {
+      "name": "trace distinguishes a proposed query from its grounded executed query",
+      "status": "expected",
+      "duration_ms": 1151
+    },
+    {
+      "name": "invalid file types stay client-side and incorrect tokens are rejected by the server",
+      "status": "expected",
+      "duration_ms": 1832
+    },
+    {
+      "name": "cursor pagination moves forwards and backwards without loading the whole corpus",
+      "status": "expected",
+      "duration_ms": 2599
+    },
+    {
+      "name": "late source responses cannot replace the newly opened document",
+      "status": "expected",
+      "duration_ms": 1347
+    },
+    {
+      "name": "upload -> question -> citation -> trace -> delete through the real API",
+      "status": "expected",
+      "duration_ms": 4777
+    },
+    {
+      "name": "duplicate upload reuses a source; replacement changes its revision",
+      "status": "expected",
+      "duration_ms": 1846
+    },
+    {
+      "name": "stale replacement is blocked until current text and ETag are reloaded",
+      "status": "expected",
+      "duration_ms": 1810
+    },
+    {
+      "name": "old citations stay snapshots after the document changes or disappears",
+      "status": "expected",
+      "duration_ms": 1941
+    },
+    {
+      "name": "source text is escaped, token clears on reload, and the dialog is keyboard accessible",
+      "status": "expected",
+      "duration_ms": 2665
+    },
+    {
+      "name": "workspace and source dialog fit at 320px",
+      "status": "expected",
+      "duration_ms": 2866
+    },
+    {
+      "name": "workspace and source dialog fit at 768px",
+      "status": "expected",
+      "duration_ms": 2486
+    },
+    {
+      "name": "workspace and source dialog fit at 1024px",
+      "status": "expected",
+      "duration_ms": 2478
+    },
+    {
+      "name": "workspace and source dialog fit at 1440px",
+      "status": "expected",
+      "duration_ms": 2748
+    }
+  ],
+  "additional_checks": {
+    "frontend_unit_tests_passed": 4,
+    "backend_tests_passed": 121,
+    "frontend_typecheck_and_build": "passed during browser server startup",
+    "frontend_prettier": "passed",
+    "ruff_lint_and_format": "passed",
+    "unicode_utf16_mutation_detected": true
+  },
+  "accessibility": {
+    "tool": "axe-core via Playwright",
+    "violations_in_checked_states": 0,
+    "widths_px": [
+      320,
+      768,
+      1024,
+      1440
+    ],
+    "limitation": "sampled answered/source-dialog states; not a full manual screen-reader or WCAG conformance audit"
+  },
+  "live_preview_read_only": {
+    "scope": "read-only real preview load; no investigation submitted",
+    "verified_at": "2026-10-28T03:47:17.671Z",
+    "browser_messages": [],
+    "title": "AI Investigation Engine"
+  },
+  "limits": [
+    "No real model-quality or frozen final evaluation claims.",
+    "No public deployment verification in this slice."
+  ]
+}

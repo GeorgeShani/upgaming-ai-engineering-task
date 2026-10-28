@@ -1,7 +1,8 @@
 # Slice 6: follow evidence through a bounded investigation
 
-The API now runs real model-requested searches. Work stays on `main`. This slice adds no React
-screens; use `/docs` until slice 7. The full corpus import has completed: a read-only exact
+The API runs real model-requested searches. Work stays on `main`. The
+[slice-7 React workflows](react-workflows.md) now expose these searches and citations through
+the website; `/docs` remains available. The full corpus import has completed: a read-only exact
 Qdrant count confirmed 50,024 active documents. Its report is `docs/index-full.json`.
 
 ## 1. Trace the boundaries before running it
@@ -198,7 +199,7 @@ account billing and can reset if Render discards its temporary disk.
   when the guard is deliberately removed. The journal records this actual mutation experiment.
 
 Your explanation and remaining questions belong in the journal; the understanding checkboxes
-remain yours to complete. Slice 7 adds the React document/question/evidence workflows.
+remain yours to complete. Continue with the React workflow walkthrough for the UI checkpoint.
 
 Primary documentation used:
 [OpenAI function calling](https://developers.openai.com/api/docs/guides/function-calling) and

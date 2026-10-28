@@ -1,12 +1,12 @@
 # AI Investigation Engine
 
 An evidence-based investigation engine built in small, reviewed sessions for the Applied AI
-assignment. **Current stage: Session 6, bounded multi-step investigation.** The React
-interface still shows the connection page; `/docs` provides interactive document management
-and questions. Two chunking configurations, dense/BM25 retrieval, custom rank fusion, resumable
+assignment. **Current stage: Session 7, complete React workflows.** The website supports
+document upload/inspection/replacement/deletion, questions, cited evidence and search traces.
+Two chunking configurations, dense/BM25 retrieval, custom rank fusion, resumable
 local indexing, and validated cited answers are implemented. The investigation uses real model
 tool calls, evidence-grounded follow-ups, and a required verification round. The full 50,024-source
-import is complete. React workflows and comparative evaluation remain later slices.
+import is complete. Comparative evaluation and deployment verification remain later slices.
 No public demo URL has been verified yet.
 
 Start with [the plan](tasks/plan.md), [the checklist](tasks/todo.md), and
@@ -19,6 +19,8 @@ The [retrieval and first-answer walkthrough](docs/retrieval-and-first-answer.md)
 indexing, fusion, the actual model context, provider costs, and hands-on verification.
 Continue with the [multi-step investigation walkthrough](docs/multi-step-investigation.md)
 for tool execution, quote IDs, conflicts, abstention, failure cases, and repeatable checks.
+The [React workflow walkthrough](docs/react-workflows.md) explains state, requests, stale edits,
+source snapshots, browser tests and the hands-on slice-7 checkpoint.
 
 ## Prepare and verify the dataset
 
@@ -93,7 +95,7 @@ Keep the Python server running on port 8000. In the frontend terminal:
 npm run preview
 ```
 
-Open http://127.0.0.1:4173. The `prepreview` script runs `npm run build` automatically before
+Open http://127.0.0.1:4173. The `prepreview` script type-checks and builds automatically before
 starting Vite's preview server. This avoids previewing an old build. Preview forwards `/api`
 to the Python server, just like development. The port is strict: if 4173 is occupied, stop the
 existing preview rather than accidentally opening another instance on a different port.
@@ -113,7 +115,8 @@ Edit the root `.env` locally; never paste API keys into frontend code, Git, or t
 - `QDRANT_API_KEY`: the cluster's API key.
 - Models and embedding dimensions have the accepted plan's defaults in `.env.example`.
 - `DEMO_ADMIN_TOKEN`: server-side token for POST/PUT/DELETE document requests. It is entered in
-  Swagger's Authorize dialog for manual testing; it is not embedded in frontend code.
+  the website's Documents → Manage access section or Swagger's Authorize dialog; it is held
+  only in browser memory and is not embedded in frontend code.
 - `DOCUMENT_COLLECTION_PREFIX`: optional namespace for uploaded manifests/revisions.
 
 Restart Python after changing configuration and click **Check connections**. The backend reads
@@ -153,7 +156,6 @@ Open http://127.0.0.1:8000. The built frontend must exist before starting the se
 | `POST /api/investigations` | Bounded tool-driven hybrid searches and cited claims, or an explicit status/error |
 | `/docs` | Interactive FastAPI API documentation |
 
-Other planned API endpoints return 404 until their implementation sessions.
 The document endpoints are now implemented; their contracts are in `/docs` and the document
 management walkthrough. Original binary files and historical revisions have no public download API.
 
@@ -165,7 +167,7 @@ management walkthrough. Original binary files and historical revisions have no p
 3. Supply the three provider secrets in Render's environment settings. They remain server-side.
 4. Render builds React in a Node stage and copies only its output into the Python runtime. Python
    serves that output and the API on Render's `PORT`.
-5. Open the assigned public URL and check `/api/live`, `/api/health`, and the connection page.
+5. Open the assigned public URL and check `/api/live`, `/api/health`, and the workspace workflows.
 6. Record the real URL and results here and in the journal only after verification.
 
 The host health check uses liveness so a provider outage does not cause a deployment restart loop.

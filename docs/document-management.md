@@ -1,7 +1,8 @@
 # Slice 3: document ingestion and management
 
 The document API is implemented. Use FastAPI's interactive interface at
-http://127.0.0.1:8000/docs to verify it. The React document screen is scheduled for slice 7.
+http://127.0.0.1:8000/docs to verify it. The [slice-7 React walkthrough](react-workflows.md)
+now covers these operations through the website as well.
 Slice 4 now imports the 50,024-record local corpus into persistent hybrid indexes; see
 [the indexing walkthrough](retrieval-and-first-answer.md) for progress and resume commands.
 

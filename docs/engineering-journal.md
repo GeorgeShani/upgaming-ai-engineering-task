@@ -1096,3 +1096,79 @@ server state; [ ] compare a citation snapshot to a changed current revision. Not
 verified yet. **AI contribution:** Codex drafted components, styles, helpers and tests and ran them.
 **Resume point:** Exercise stale writes, errors, pagination, safe text, keyboard/mobile access,
 then run one bounded live-provider browser smoke and document the final walkthrough.
+
+## Session 7 — checkpoint B: integration failures and completed verification
+
+**What changed:** Completed stale-write reloads, source snapshot warnings, last-upload access,
+loading/empty/error states, safe text rendering, keyboard focus restoration, mobile layouts,
+question validation, observable query adjustments, test tooling and the walkthrough in
+`docs/react-workflows.md`. Session 7's implementation boxes are checked; George's are not.
+
+**Why and alternatives:** An HTTP failure must not look like an insufficient-evidence answer.
+Client validation now explicitly says nothing was submitted; provider/rate-limit errors describe
+the failure and never automatically repeat a paid request. A native dialog supplies focus
+containment and Escape behavior without a modal library. A new deletion-focus test exposed a
+race: requestAnimationFrame could focus the background while the modal trap was still active.
+Restoring focus on the native close event fixes the mechanism, with Documents as the fallback
+when the source's opener disappears. Timed delays would only hide this timing dependency.
+
+**Live failure and fix:** Initial paid browser attempts displayed HTTP 502 correctly, but did
+not complete the investigation. A diagnostic with a uniquely labelled fictional source isolated
+the cause: the model supplied an entity found literally in E1 while its query used the case ID
+and recovery-time wording without that exact entity. The old cross-field guard rejected it.
+The server now prepends a source-verified entity when necessary; entities still require a valid
+prior evidence ID and literal source match. The adjusted query must remain <=500 characters,
+and the whole batch is validated before any search. The trace records proposed and executed
+queries. Two tests protect successful grounding and rejection of an oversized adjusted query.
+Rejecting every omitted entity was brittle; accepting unverified entities would lose the
+evidence constraint. This fix preserves grounding and call limits without another model retry.
+
+**Concrete mechanism:** A unique UI case source documents recovery after 17 minutes. Upload
+returns its document/revision; the question retrieves it, makes a verified follow-up search,
+and returns an answered claim citing that actual source. Opening the citation verifies a
+canonical highlight. Deleting only that newly created source returns 204; GET then returns 404.
+The existing 50,024-source corpus was not replaced or re-embedded. Diagnostic/smoke sources
+were cleaned up through normal deletion; tombstones/history remain by design.
+
+**Verification:** The successful real-provider browser run returned 17 minutes in **6,494 ms**.
+Its investigation estimate was **$0.00448099**; upload plus question added **$0.00448239** to
+known ledger usage. The saved ledger after the run shows **$0.20992536** estimated known usage
+and **$0.48744711** conservative reservations, including earlier failed/diagnostic work.
+Reservations for uncertain calls are retained. These are application estimates, not an invoice
+or account-wide cap. See `docs/browser-live-verification.json`; final fixtures were untouched.
+
+The final isolated suite passes **20 browser tests**, **4 frontend unit tests** and the backend
+suite passes **121 tests**. Typecheck/build, Prettier, Ruff lint/format and diff checks pass.
+Browser coverage includes upload/question/citation/trace/delete, duplicate/replacement,
+412 reload/review, changed/deleted citation snapshots, token clearing/server rejection,
+escaped markup, pagination, late-response races, conflict/absence statuses, request limits,
+validation and 429/502/503 without automatic retries. Real routes use shared in-memory HTTP
+provider fakes; selected UI state tests stub API JSON. The test-only reset is never registered
+on the production app, and fixture markers are verified before reset. These tests do not
+establish real model quality. The paid smoke is separate and opt-in.
+
+Axe found zero violations in the sampled answered/dialog states and at widths 320/768/1024/1440;
+screenshots were inspected. This is not a full manual accessibility certification. Replacing
+code-point slicing with UTF-16 splitting made the Unicode highlight unit test fail; restoring
+the implementation passed. A final real-preview read-only load has no browser warnings/errors.
+The favicon 404 found in that check was fixed with an empty inline favicon.
+
+**Tooling failure:** Nested npm commands resolved an unrelated incomplete npm installation in
+`C:\Users\HP\node_modules`, missing `@npmcli/redact`. Preview now calls local tsc/Vite directly;
+Playwright likewise starts local compiler/Vite binaries rather than recursively invoking npm.
+The outer normal npm commands work; no home/global installation was changed. Test startup
+failed before this fix and passed afterward. Formatting was committed separately from behavior
+so the functional changes remain reviewable; browser fixtures are also type-checked.
+
+**My understanding (George):** [ ] Run the new walkthrough; [ ] trace FormData/ETag and server
+authorization; [ ] inspect old evidence versus a new revision; [ ] distinguish validation,
+provider failure and insufficient evidence; [ ] explain the follow-up query adjustment.
+These remain unverified by George. **AI contribution:** Codex drafted, diagnosed, tested and
+documented the implementation, including the real-provider check. No independent authorship
+or understanding is inferred from passing automated tests.
+
+**Limits and resume point:** The typed client is not a full runtime schema validator; shared
+demo administration is not user accounts; source listing has no title search. Quote identity
+does not establish semantic support, and conflict detection still needs measured evaluation.
+Follow `docs/react-workflows.md` for your checkpoint. Slice 8 is comparative evaluation,
+followed by public deployment verification and delivery/rehearsal. None was started here.
