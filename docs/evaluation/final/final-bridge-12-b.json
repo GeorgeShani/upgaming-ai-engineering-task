@@ -1,0 +1,1571 @@
+{
+  "case_id": "final-bridge-12",
+  "strategy": "b",
+  "question": "Brown State Fishing Lake is in a country that has a population of how many inhabitants ?",
+  "started_at": "2026-10-28T07:01:53.128312+00:00",
+  "ledger_before": {
+    "calls": 495,
+    "reserved_usd": 1.2334366,
+    "estimated_actual_usd": 0.42187135,
+    "input_tokens": 7213846,
+    "output_tokens": 9705
+  },
+  "result": {
+    "status": "answered",
+    "claims": [
+      {
+        "text": "Brown State Fishing Lake is in the United States.",
+        "citations": [
+          {
+            "evidence_id": "E1",
+            "quote": "Brown State Fishing Lake (sometimes also known as Brown State Fishing Lake And Wildlife Area) is a protected area in Brown County, Kansas in the United States."
+          }
+        ]
+      },
+      {
+        "text": "The United States has a population of 331 million inhabitants.",
+        "citations": [
+          {
+            "evidence_id": "E11",
+            "quote": "The world population was estimated to have reached 7.5 billion in April 2017 ."
+          }
+        ]
+      }
+    ],
+    "conflicting_claims": [],
+    "answer": "Brown State Fishing Lake is in the United States. [E1] The United States has a population of 331 million inhabitants. [E11]",
+    "evidence": [
+      {
+        "evidence_id": "E1",
+        "chunk_id": "acec3577-d10f-5dd5-8004-95c286573e5f",
+        "document_id": "d4b9a729-1221-53f3-90c9-028884706035",
+        "revision_id": "852d1917-ddb8-5f32-b6a3-f6ac2edd3160",
+        "strategy": "b",
+        "text": "Brown State Fishing Lake (sometimes also known as Brown State Fishing Lake And Wildlife Area) is a protected area in Brown County, Kansas in the United States. The lake is 62 acres (0.25 km2) in area and up to 13 feet (4 m) deep. The area was formerly known as Brown County State Park, and is 8 miles (13 km) east of Hiawatha, Kansas.",
+        "title": "Brown State Fishing Lake",
+        "start": 0,
+        "end": 334,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 159
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 160,
+            "end": 229
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 230,
+            "end": 334
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "validation",
+          "record_id": "5a75e05c55429976ec32bc5f",
+          "url": "https://en.wikipedia.org/wiki/Brown_State_Fishing_Lake",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.03278688524590164
+      },
+      {
+        "evidence_id": "E9",
+        "chunk_id": "873bbab0-a341-5a63-8a46-39ca1982fcc2",
+        "document_id": "1bde392c-2d31-516e-9479-200616c77e21",
+        "revision_id": "cd544986-adcb-5bac-a5a3-8efda4cc9124",
+        "strategy": "b",
+        "text": "With a population of over 123 million in 2017, Mexico ranks as the 10th most populated country in the world. It is the most populous Spanish-speaking country and the third-most populous in the Americas after United States and Brazil. Throughout most of the twentieth century Mexico's population was characterized by rapid growth. Although this tendency has been reversed and average annual population growth over the last five years was less than 1%, the demographic transition is still in progress, and Mexico still has a large cohort of youths. The most populous city in the country is the capital, Mexico City, with a population of 8.9 million (2016), and its metropolitan area is also the most populated with 20.1 million (2010). Approximately 50% of the population lives in one of the 55 large metropolitan areas in the country. In total, about 78.84% of the population of the country lives in urban areas, meaning that only 21.16% live in rural areas.",
+        "title": "Demographics of Mexico",
+        "start": 0,
+        "end": 957,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 108
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 109,
+            "end": 233
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 234,
+            "end": 329
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 330,
+            "end": 546
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 547,
+            "end": 733
+          },
+          {
+            "kind": "sentence",
+            "number": 5,
+            "start": 734,
+            "end": 833
+          },
+          {
+            "kind": "sentence",
+            "number": 6,
+            "start": 834,
+            "end": 957
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5ae80b50554299540e5a5701",
+          "url": "https://en.wikipedia.org/wiki/Demographics_of_Mexico",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.029571646010002173
+      },
+      {
+        "evidence_id": "E10",
+        "chunk_id": "853c3382-e831-57d2-8bfd-0291eebdded5",
+        "document_id": "1059f443-96cc-5354-8430-04931db6ae3d",
+        "revision_id": "7e7bcf04-a88a-5778-87c4-dbd2c91baef4",
+        "strategy": "b",
+        "text": "Germany ( ; German: \"Deutschland\" , ] ), officially the Federal Republic of Germany (German: \"Bundesrepublik Deutschland\" , ), is a federal parliamentary republic in central-western Europe. It includes 16 constituent states, covers an area of 357,021 km2 , and has a largely temperate seasonal climate. With about 82 million inhabitants, Germany is the most populous member state of the European Union. After the United States, it is the second most popular immigration destination in the world. Germany's capital and largest metropolis is Berlin, while its largest conurbation is the Ruhr, with its main centres of Dortmund and Essen. The country's other major cities are Hamburg, Munich, Cologne, Frankfurt, Stuttgart, Düsseldorf, Leipzig, Bremen, Dresden, Hannover and Nuremberg.",
+        "title": "Germany",
+        "start": 0,
+        "end": 782,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 189
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 190,
+            "end": 302
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 303,
+            "end": 402
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 403,
+            "end": 495
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 496,
+            "end": 635
+          },
+          {
+            "kind": "sentence",
+            "number": 5,
+            "start": 636,
+            "end": 782
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5adea1a45542992fa25da7e3",
+          "url": "https://en.wikipedia.org/wiki/Germany",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.028629032258064516
+      },
+      {
+        "evidence_id": "E2",
+        "chunk_id": "eea2d63c-c092-5596-b9e7-5b90176e0706",
+        "document_id": "6e9621d9-47d0-5252-93b2-2d3137770cc5",
+        "revision_id": "e3ba554e-da88-5a74-920b-a7c88093c279",
+        "strategy": "b",
+        "text": "Pickerel Lake is a 955-acre spring-fed lake located in Day County, South Dakota, United States. Pickerel Lake is part of the Glacial Lakes Region that encompasses much of Northeast South Dakota and stretches along the Coteau des Prairies hills. The area was formed thousands of years ago by glacial activity. Many of the depressions left behind were filled by melting glaciers. This area is also referred to as the Prairie Pothole Region. Pickerel Lake is one of the deepest natural lakes in South Dakota. The name originated from an American Indian name meaning \"where you spear long fish.\" Excursion boats were common until the early 1900s. A fish hatchery was built in 1929 and abandoned in 1979, when a new facility was built at Blue Dog Lake.",
+        "title": "Pickerel Lake (South Dakota)",
+        "start": 0,
+        "end": 747,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 95
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 96,
+            "end": 244
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 245,
+            "end": 308
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 309,
+            "end": 377
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 378,
+            "end": 438
+          },
+          {
+            "kind": "sentence",
+            "number": 5,
+            "start": 439,
+            "end": 505
+          },
+          {
+            "kind": "sentence",
+            "number": 6,
+            "start": 506,
+            "end": 591
+          },
+          {
+            "kind": "sentence",
+            "number": 7,
+            "start": 592,
+            "end": 642
+          },
+          {
+            "kind": "sentence",
+            "number": 8,
+            "start": 643,
+            "end": 747
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a72cec755429901807daf45",
+          "url": "https://en.wikipedia.org/wiki/Pickerel_Lake_%28South_Dakota%29",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.02862400327131466
+      },
+      {
+        "evidence_id": "E11",
+        "chunk_id": "0d7a32f6-e103-5ea9-ab6a-f7dae525dc84",
+        "document_id": "d44b0155-6d87-500d-b892-28316716a7cf",
+        "revision_id": "7210e31b-6460-5617-9800-1d93596e0bbf",
+        "strategy": "b",
+        "text": "In demographics, the world population is the total number of humans currently living. The world population was estimated to have reached 7.5 billion in April 2017 . The United Nations estimates it will further increase to 11.2 billion by the year 2100.",
+        "title": "World population",
+        "start": 0,
+        "end": 252,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 85
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 86,
+            "end": 164
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 165,
+            "end": 252
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a88f68f55429946c8d6e8e3",
+          "url": "https://en.wikipedia.org/wiki/World_population",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.01639344262295082
+      },
+      {
+        "evidence_id": "E3",
+        "chunk_id": "a1cd2c0d-48bd-5433-aa9a-acd43d3f1136",
+        "document_id": "e29ce70f-acd0-5668-aca4-11da719fe2ad",
+        "revision_id": "5b593d33-8b09-5bb5-b676-13b7889a4977",
+        "strategy": "b",
+        "text": "At 310 acre , Lake Sebago is the largest lake in Harriman State Park in the U.S. state of New York. The name is Algonquian for \"big water\". Operated by the Palisades Interstate Park Commission, Lake Sebago is surrounded by picnic lawns and play fields, and is popular with anglers fishing for landlocked salmon, lake trout, bass, perch and sunfish. The lake has a swimming beach, hand boat launch (electric motors only) and cabin camping. Lake Sebago lies near Sloatsburg. It is located just south of Lake Kanawauke and is accessible by auto from Seven Lakes Drive.",
+        "title": "Lake Sebago",
+        "start": 0,
+        "end": 565,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 99
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 100,
+            "end": 139
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 140,
+            "end": 348
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 349,
+            "end": 438
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 439,
+            "end": 472
+          },
+          {
+            "kind": "sentence",
+            "number": 5,
+            "start": 473,
+            "end": 565
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5ae384e45542992f92d82300",
+          "url": "https://en.wikipedia.org/wiki/Lake_Sebago",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.027692895339954164
+      },
+      {
+        "evidence_id": "E4",
+        "chunk_id": "39e6782c-7ffc-5e5b-b232-b83c9932079f",
+        "document_id": "8665bae0-16e9-5562-bc2f-15c95ca11c37",
+        "revision_id": "9b3fc1c9-1619-5d9c-9539-25375439de30",
+        "strategy": "b",
+        "text": "Massachusetts ( or ), officially the Commonwealth of Massachusetts, is the most populous state in the New England region of the northeastern United States. It is bordered by the Atlantic Ocean to the east, the states of Connecticut and Rhode Island to the south, New Hampshire and Vermont to the north, and New York to the west. The state is named for the Massachusett tribe, which once inhabited the area. The capital of Massachusetts and the most populous city in New England is Boston. Over 80% of Massachusetts's population lives in the Greater Boston metropolitan area, a region influential upon American history, academia, and industry. Originally dependent on agriculture, fishing and trade, Massachusetts was transformed into a manufacturing center during the Industrial Revolution. During the 20th century, Massachusetts's economy shifted from manufacturing to services. Modern Massachusetts is a global leader in biotechnology, engineering, higher education, finance, and maritime trade.",
+        "title": "Massachusetts",
+        "start": 0,
+        "end": 997,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 155
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 156,
+            "end": 328
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 329,
+            "end": 406
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 407,
+            "end": 488
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 489,
+            "end": 642
+          },
+          {
+            "kind": "sentence",
+            "number": 5,
+            "start": 643,
+            "end": 790
+          },
+          {
+            "kind": "sentence",
+            "number": 6,
+            "start": 791,
+            "end": 879
+          },
+          {
+            "kind": "sentence",
+            "number": 7,
+            "start": 880,
+            "end": 997
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5ae618975542996de7b71b58",
+          "url": "https://en.wikipedia.org/wiki/Massachusetts",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.016129032258064516
+      },
+      {
+        "evidence_id": "E12",
+        "chunk_id": "b3a4c355-1f6a-5354-bbd6-0b2b210a2b6f",
+        "document_id": "92a8cc4f-bf32-5348-927c-c938b8382c90",
+        "revision_id": "74fe2de0-b03e-54d8-bb4d-fc7e169a4255",
+        "strategy": "b",
+        "text": "The United Kingdom of Great Britain and Northern Ireland, commonly known as the United Kingdom (UK) and colloquially Great Britain (GB) or simply Britain, is a sovereign country in western Europe. Lying off the north-western coast of the European mainland, the United Kingdom includes the island of Great Britain, the north-eastern part of the island of Ireland and many smaller islands. Northern Ireland is the only part of the United Kingdom that shares a land border with another sovereign statethe Republic of Ireland. Apart from this land border, the United Kingdom is surrounded by the Atlantic Ocean, with the North Sea to its east, the English Channel to its south and the Celtic Sea to its south-south-west, giving it the 12th-longest coastline in the world. The Irish Sea lies between Great Britain and Ireland. With an area of 242500 km2 , the United Kingdom is the 78th-largest sovereign state in the world and the 11th-largest in Europe. It is also the 21st-most populous country, with an estimated 65.1 million inhabitants. Together, this makes it the fourth-most densely populated country in the European Union (EU).",
+        "title": "United Kingdom",
+        "start": 0,
+        "end": 1131,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 196
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 197,
+            "end": 387
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 388,
+            "end": 522
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 523,
+            "end": 767
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 768,
+            "end": 821
+          },
+          {
+            "kind": "sentence",
+            "number": 5,
+            "start": 822,
+            "end": 950
+          },
+          {
+            "kind": "sentence",
+            "number": 6,
+            "start": 951,
+            "end": 1037
+          },
+          {
+            "kind": "sentence",
+            "number": 7,
+            "start": 1038,
+            "end": 1131
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a8270e155429940e5e1a8af",
+          "url": "https://en.wikipedia.org/wiki/United_Kingdom",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.01639344262295082
+      }
+    ],
+    "search_trace": [
+      {
+        "query": "Brown State Fishing Lake country population inhabitants",
+        "strategy": "b",
+        "profile": "1a8846753a25",
+        "embedding_usage": {
+          "model": "text-embedding-3-small",
+          "input_tokens": 7,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 1.4e-07
+        },
+        "document_ranking": [
+          "d4b9a729-1221-53f3-90c9-028884706035",
+          "6e9621d9-47d0-5252-93b2-2d3137770cc5",
+          "e29ce70f-acd0-5668-aca4-11da719fe2ad",
+          "8665bae0-16e9-5562-bc2f-15c95ca11c37",
+          "0d367bcb-dcf4-5f10-80cf-d39f2ee0587b",
+          "2d1c2bd6-79c5-5648-bdc4-f6bfff0bd0e7",
+          "df8c5780-f74e-529f-8a55-b0d0e77a467f",
+          "1db06d64-b5c6-502d-8b5d-ea4b52b055a4",
+          "43f4dcc1-7571-5d74-9b5f-749f835fb3c4",
+          "905780cd-db82-53c0-a02c-64c65bb7b24f"
+        ],
+        "candidate_counts": {
+          "dense": 30,
+          "bm25": 30,
+          "active_dense": 30,
+          "active_bm25": 30
+        },
+        "evidence": [
+          {
+            "evidence_id": "E1",
+            "chunk_id": "acec3577-d10f-5dd5-8004-95c286573e5f",
+            "document_id": "d4b9a729-1221-53f3-90c9-028884706035",
+            "revision_id": "852d1917-ddb8-5f32-b6a3-f6ac2edd3160",
+            "strategy": "b",
+            "text": "Brown State Fishing Lake (sometimes also known as Brown State Fishing Lake And Wildlife Area) is a protected area in Brown County, Kansas in the United States. The lake is 62 acres (0.25 km2) in area and up to 13 feet (4 m) deep. The area was formerly known as Brown County State Park, and is 8 miles (13 km) east of Hiawatha, Kansas.",
+            "title": "Brown State Fishing Lake",
+            "start": 0,
+            "end": 334,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 159
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 160,
+                "end": 229
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 230,
+                "end": 334
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5a75e05c55429976ec32bc5f",
+              "url": "https://en.wikipedia.org/wiki/Brown_State_Fishing_Lake",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03278688524590164
+          },
+          {
+            "evidence_id": "E2",
+            "chunk_id": "eea2d63c-c092-5596-b9e7-5b90176e0706",
+            "document_id": "6e9621d9-47d0-5252-93b2-2d3137770cc5",
+            "revision_id": "e3ba554e-da88-5a74-920b-a7c88093c279",
+            "strategy": "b",
+            "text": "Pickerel Lake is a 955-acre spring-fed lake located in Day County, South Dakota, United States. Pickerel Lake is part of the Glacial Lakes Region that encompasses much of Northeast South Dakota and stretches along the Coteau des Prairies hills. The area was formed thousands of years ago by glacial activity. Many of the depressions left behind were filled by melting glaciers. This area is also referred to as the Prairie Pothole Region. Pickerel Lake is one of the deepest natural lakes in South Dakota. The name originated from an American Indian name meaning \"where you spear long fish.\" Excursion boats were common until the early 1900s. A fish hatchery was built in 1929 and abandoned in 1979, when a new facility was built at Blue Dog Lake.",
+            "title": "Pickerel Lake (South Dakota)",
+            "start": 0,
+            "end": 747,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 95
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 96,
+                "end": 244
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 245,
+                "end": 308
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 309,
+                "end": 377
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 378,
+                "end": 438
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 439,
+                "end": 505
+              },
+              {
+                "kind": "sentence",
+                "number": 6,
+                "start": 506,
+                "end": 591
+              },
+              {
+                "kind": "sentence",
+                "number": 7,
+                "start": 592,
+                "end": 642
+              },
+              {
+                "kind": "sentence",
+                "number": 8,
+                "start": 643,
+                "end": 747
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a72cec755429901807daf45",
+              "url": "https://en.wikipedia.org/wiki/Pickerel_Lake_%28South_Dakota%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.02862400327131466
+          },
+          {
+            "evidence_id": "E3",
+            "chunk_id": "a1cd2c0d-48bd-5433-aa9a-acd43d3f1136",
+            "document_id": "e29ce70f-acd0-5668-aca4-11da719fe2ad",
+            "revision_id": "5b593d33-8b09-5bb5-b676-13b7889a4977",
+            "strategy": "b",
+            "text": "At 310 acre , Lake Sebago is the largest lake in Harriman State Park in the U.S. state of New York. The name is Algonquian for \"big water\". Operated by the Palisades Interstate Park Commission, Lake Sebago is surrounded by picnic lawns and play fields, and is popular with anglers fishing for landlocked salmon, lake trout, bass, perch and sunfish. The lake has a swimming beach, hand boat launch (electric motors only) and cabin camping. Lake Sebago lies near Sloatsburg. It is located just south of Lake Kanawauke and is accessible by auto from Seven Lakes Drive.",
+            "title": "Lake Sebago",
+            "start": 0,
+            "end": 565,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 99
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 100,
+                "end": 139
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 140,
+                "end": 348
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 349,
+                "end": 438
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 439,
+                "end": 472
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 473,
+                "end": 565
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ae384e45542992f92d82300",
+              "url": "https://en.wikipedia.org/wiki/Lake_Sebago",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.027692895339954164
+          },
+          {
+            "evidence_id": "E4",
+            "chunk_id": "39e6782c-7ffc-5e5b-b232-b83c9932079f",
+            "document_id": "8665bae0-16e9-5562-bc2f-15c95ca11c37",
+            "revision_id": "9b3fc1c9-1619-5d9c-9539-25375439de30",
+            "strategy": "b",
+            "text": "Massachusetts ( or ), officially the Commonwealth of Massachusetts, is the most populous state in the New England region of the northeastern United States. It is bordered by the Atlantic Ocean to the east, the states of Connecticut and Rhode Island to the south, New Hampshire and Vermont to the north, and New York to the west. The state is named for the Massachusett tribe, which once inhabited the area. The capital of Massachusetts and the most populous city in New England is Boston. Over 80% of Massachusetts's population lives in the Greater Boston metropolitan area, a region influential upon American history, academia, and industry. Originally dependent on agriculture, fishing and trade, Massachusetts was transformed into a manufacturing center during the Industrial Revolution. During the 20th century, Massachusetts's economy shifted from manufacturing to services. Modern Massachusetts is a global leader in biotechnology, engineering, higher education, finance, and maritime trade.",
+            "title": "Massachusetts",
+            "start": 0,
+            "end": 997,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 155
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 156,
+                "end": 328
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 329,
+                "end": 406
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 407,
+                "end": 488
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 489,
+                "end": 642
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 643,
+                "end": 790
+              },
+              {
+                "kind": "sentence",
+                "number": 6,
+                "start": 791,
+                "end": 879
+              },
+              {
+                "kind": "sentence",
+                "number": 7,
+                "start": 880,
+                "end": 997
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ae618975542996de7b71b58",
+              "url": "https://en.wikipedia.org/wiki/Massachusetts",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.016129032258064516
+          },
+          {
+            "evidence_id": "E5",
+            "chunk_id": "4d20ddbf-61ad-5991-aebd-2c03d6ad3d9b",
+            "document_id": "0d367bcb-dcf4-5f10-80cf-d39f2ee0587b",
+            "revision_id": "ba5f146f-7ce7-516b-86d1-5a92c9162d94",
+            "strategy": "b",
+            "text": "Deam Lake State Recreation Area is an Indiana State Recreation Area in Clark County, Indiana in the United States. The park is 1300 acre and sits at an elevation of 535 ft . Deam Lake State Recreation area is open for year-round recreation, however the campground closes each year from the Sunday before Thanksgiving to March 1 of the following year. Much of the recreation is centered on Deam Lake. It is named for Charles C. Deam, the first state forester of Indiana.",
+            "title": "Deam Lake State Recreation Area",
+            "start": 0,
+            "end": 469,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 114
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 115,
+                "end": 173
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 174,
+                "end": 350
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 351,
+                "end": 399
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 400,
+                "end": 469
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a865a9f554299211dda2b07",
+              "url": "https://en.wikipedia.org/wiki/Deam_Lake_State_Recreation_Area",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.016129032258064516
+          },
+          {
+            "evidence_id": "E6",
+            "chunk_id": "2b849935-7c3d-5bfc-b234-1877b5ff03b4",
+            "document_id": "2d1c2bd6-79c5-5648-bdc4-f6bfff0bd0e7",
+            "revision_id": "c1bbf8d1-f279-5ce3-bdbe-8300f3e4786a",
+            "strategy": "b",
+            "text": "Alaska is a state of the United States situated in the northwest extremity of the North American continent. According to the 2010 United States Census, Alaska is the 4th least populous state with 710,231 inhabitants but is the largest by land area spanning 570640.95 sqmi . s of 2014 , Alaska has 148 incorporated cities: four unified home rule municipalities, which are considered both boroughs and cities, ten home rule cities, nineteen first class cities and 115 second class cities. As reflected in the 2010 Census, Alaska's incorporated cities cover only % of the territory's land mass but are home to % of its population. The majority of the incorporated land mass consists of the four unified municipalities, each over 1700 sqmi in size. Only two other cities have an incorporated area exceeding 100 sqmi : Unalaska, which includes the fishing port of Dutch Harbor, and Valdez, which includes the terminus of the Trans-Alaska Pipeline System.",
+            "title": "List of cities in Alaska",
+            "start": 0,
+            "end": 949,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 107
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 108,
+                "end": 273
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 274,
+                "end": 486
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 487,
+                "end": 627
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 628,
+                "end": 744
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 745,
+                "end": 949
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a87483e5542994846c1cd49",
+              "url": "https://en.wikipedia.org/wiki/List_of_cities_in_Alaska",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015873015873015872
+          },
+          {
+            "evidence_id": "E7",
+            "chunk_id": "4092744f-49d8-558c-890c-03ceb6744627",
+            "document_id": "df8c5780-f74e-529f-8a55-b0d0e77a467f",
+            "revision_id": "eb0df352-d04a-5c44-a47b-d47f28ba87fc",
+            "strategy": "b",
+            "text": "Readfield (/ˈɹid fild/) is a town in Kennebec County, Maine, United States. The population was 2,598 at the 2010 census. Readfield is home to the Kents Hill School, a preparatory school, Maranacook Community Schools, public schools for the district, a few summer camps, and the annual Readfield Heritage Days. A popular recreation spot in central Maine, the town contains nine lakes and ponds, including Maranacook Lake, and is part of the Winthrop Lakes Region. The town of Readfield was previously named Pond Town. Readfield is included in the Augusta, Maine micropolitan New England City and Town Area.",
+            "title": "Readfield, Maine",
+            "start": 0,
+            "end": 605,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 75
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 76,
+                "end": 120
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 121,
+                "end": 309
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 310,
+                "end": 462
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 463,
+                "end": 516
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 517,
+                "end": 605
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ac3d7f6554299204fd21e9c",
+              "url": "https://en.wikipedia.org/wiki/Readfield%2C_Maine",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015873015873015872
+          },
+          {
+            "evidence_id": "E8",
+            "chunk_id": "104fecc1-69f4-5a11-ba59-ede47d1f852b",
+            "document_id": "1db06d64-b5c6-502d-8b5d-ea4b52b055a4",
+            "revision_id": "97ba49d5-2488-5c6c-8bed-26a3171198ba",
+            "strategy": "b",
+            "text": "Crystal Lake is a census-designated place (CDP) in Polk County, Florida, United States. The population was 5,341 at the 2000 census, an increase from 5,300 in 1990. The 2010 Census reported a population of 5,514. It is part of the Lakeland–Winter Haven Metropolitan Statistical Area.",
+            "title": "Crystal Lake, Polk County, Florida",
+            "start": 0,
+            "end": 283,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 87
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 88,
+                "end": 164
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 165,
+                "end": 212
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 213,
+                "end": 283
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a8507305542994c784ddada",
+              "url": "https://en.wikipedia.org/wiki/Crystal_Lake%2C_Polk_County%2C_Florida",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015625
+          }
+        ],
+        "round": 1,
+        "tool_call_id": "call_fLL5knWLORsckgzvFao03hRm",
+        "executed": true,
+        "follow_up": null,
+        "requested_query": "Brown State Fishing Lake country population inhabitants",
+        "query_adjusted": false
+      },
+      {
+        "query": "United States population inhabitants country",
+        "strategy": "b",
+        "profile": "1a8846753a25",
+        "embedding_usage": {
+          "model": "text-embedding-3-small",
+          "input_tokens": 5,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 1.0000000000000001e-07
+        },
+        "document_ranking": [
+          "1bde392c-2d31-516e-9479-200616c77e21",
+          "1059f443-96cc-5354-8430-04931db6ae3d",
+          "d44b0155-6d87-500d-b892-28316716a7cf",
+          "92a8cc4f-bf32-5348-927c-c938b8382c90",
+          "71247dd2-df62-5aaf-85d9-3af2b27ac355",
+          "8c00406a-857d-510f-b078-2a817bbf4532",
+          "13a2c544-63fc-5473-8998-fcd16b8dc3fd",
+          "3dd66978-879c-5341-99b5-c7c218e2bef0",
+          "d28f36af-c55f-5f3f-90c1-584dbfe42fb4",
+          "96c10bdf-c001-5bb6-a7e8-328b58bee729"
+        ],
+        "candidate_counts": {
+          "dense": 30,
+          "bm25": 30,
+          "active_dense": 30,
+          "active_bm25": 30
+        },
+        "evidence": [
+          {
+            "evidence_id": "E9",
+            "chunk_id": "873bbab0-a341-5a63-8a46-39ca1982fcc2",
+            "document_id": "1bde392c-2d31-516e-9479-200616c77e21",
+            "revision_id": "cd544986-adcb-5bac-a5a3-8efda4cc9124",
+            "strategy": "b",
+            "text": "With a population of over 123 million in 2017, Mexico ranks as the 10th most populated country in the world. It is the most populous Spanish-speaking country and the third-most populous in the Americas after United States and Brazil. Throughout most of the twentieth century Mexico's population was characterized by rapid growth. Although this tendency has been reversed and average annual population growth over the last five years was less than 1%, the demographic transition is still in progress, and Mexico still has a large cohort of youths. The most populous city in the country is the capital, Mexico City, with a population of 8.9 million (2016), and its metropolitan area is also the most populated with 20.1 million (2010). Approximately 50% of the population lives in one of the 55 large metropolitan areas in the country. In total, about 78.84% of the population of the country lives in urban areas, meaning that only 21.16% live in rural areas.",
+            "title": "Demographics of Mexico",
+            "start": 0,
+            "end": 957,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 108
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 109,
+                "end": 233
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 234,
+                "end": 329
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 330,
+                "end": 546
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 547,
+                "end": 733
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 734,
+                "end": 833
+              },
+              {
+                "kind": "sentence",
+                "number": 6,
+                "start": 834,
+                "end": 957
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ae80b50554299540e5a5701",
+              "url": "https://en.wikipedia.org/wiki/Demographics_of_Mexico",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.029571646010002173
+          },
+          {
+            "evidence_id": "E10",
+            "chunk_id": "853c3382-e831-57d2-8bfd-0291eebdded5",
+            "document_id": "1059f443-96cc-5354-8430-04931db6ae3d",
+            "revision_id": "7e7bcf04-a88a-5778-87c4-dbd2c91baef4",
+            "strategy": "b",
+            "text": "Germany ( ; German: \"Deutschland\" , ] ), officially the Federal Republic of Germany (German: \"Bundesrepublik Deutschland\" , ), is a federal parliamentary republic in central-western Europe. It includes 16 constituent states, covers an area of 357,021 km2 , and has a largely temperate seasonal climate. With about 82 million inhabitants, Germany is the most populous member state of the European Union. After the United States, it is the second most popular immigration destination in the world. Germany's capital and largest metropolis is Berlin, while its largest conurbation is the Ruhr, with its main centres of Dortmund and Essen. The country's other major cities are Hamburg, Munich, Cologne, Frankfurt, Stuttgart, Düsseldorf, Leipzig, Bremen, Dresden, Hannover and Nuremberg.",
+            "title": "Germany",
+            "start": 0,
+            "end": 782,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 189
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 190,
+                "end": 302
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 303,
+                "end": 402
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 403,
+                "end": 495
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 496,
+                "end": 635
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 636,
+                "end": 782
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5adea1a45542992fa25da7e3",
+              "url": "https://en.wikipedia.org/wiki/Germany",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.028629032258064516
+          },
+          {
+            "evidence_id": "E11",
+            "chunk_id": "0d7a32f6-e103-5ea9-ab6a-f7dae525dc84",
+            "document_id": "d44b0155-6d87-500d-b892-28316716a7cf",
+            "revision_id": "7210e31b-6460-5617-9800-1d93596e0bbf",
+            "strategy": "b",
+            "text": "In demographics, the world population is the total number of humans currently living. The world population was estimated to have reached 7.5 billion in April 2017 . The United Nations estimates it will further increase to 11.2 billion by the year 2100.",
+            "title": "World population",
+            "start": 0,
+            "end": 252,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 85
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 86,
+                "end": 164
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 165,
+                "end": 252
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a88f68f55429946c8d6e8e3",
+              "url": "https://en.wikipedia.org/wiki/World_population",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.01639344262295082
+          },
+          {
+            "evidence_id": "E12",
+            "chunk_id": "b3a4c355-1f6a-5354-bbd6-0b2b210a2b6f",
+            "document_id": "92a8cc4f-bf32-5348-927c-c938b8382c90",
+            "revision_id": "74fe2de0-b03e-54d8-bb4d-fc7e169a4255",
+            "strategy": "b",
+            "text": "The United Kingdom of Great Britain and Northern Ireland, commonly known as the United Kingdom (UK) and colloquially Great Britain (GB) or simply Britain, is a sovereign country in western Europe. Lying off the north-western coast of the European mainland, the United Kingdom includes the island of Great Britain, the north-eastern part of the island of Ireland and many smaller islands. Northern Ireland is the only part of the United Kingdom that shares a land border with another sovereign statethe Republic of Ireland. Apart from this land border, the United Kingdom is surrounded by the Atlantic Ocean, with the North Sea to its east, the English Channel to its south and the Celtic Sea to its south-south-west, giving it the 12th-longest coastline in the world. The Irish Sea lies between Great Britain and Ireland. With an area of 242500 km2 , the United Kingdom is the 78th-largest sovereign state in the world and the 11th-largest in Europe. It is also the 21st-most populous country, with an estimated 65.1 million inhabitants. Together, this makes it the fourth-most densely populated country in the European Union (EU).",
+            "title": "United Kingdom",
+            "start": 0,
+            "end": 1131,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 196
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 197,
+                "end": 387
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 388,
+                "end": 522
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 523,
+                "end": 767
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 768,
+                "end": 821
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 822,
+                "end": 950
+              },
+              {
+                "kind": "sentence",
+                "number": 6,
+                "start": 951,
+                "end": 1037
+              },
+              {
+                "kind": "sentence",
+                "number": 7,
+                "start": 1038,
+                "end": 1131
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a8270e155429940e5e1a8af",
+              "url": "https://en.wikipedia.org/wiki/United_Kingdom",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.01639344262295082
+          },
+          {
+            "evidence_id": "E13",
+            "chunk_id": "f7d99aa2-499c-5376-ad61-dff561bfa5c3",
+            "document_id": "71247dd2-df62-5aaf-85d9-3af2b27ac355",
+            "revision_id": "b3c3bc98-ae07-5542-a2d7-30ea6fb8da98",
+            "strategy": "b",
+            "text": "According to the 2011 census, the total population of the United Kingdom was around 63,182,000. <ref name=\"2http://www.ons.gov.uk/ons/dcp171778_292378.pdf |title=2011 Census: Population Estimates for the United Kingdom |publisher=Office for National Statistics |date=27 March 2011 |accessdate=18 December 2012 }}</ref> It is the 22nd-largest in the world. Its overall population density is 259 people per square kilometre (671 people per sq mi), with England having a significantly higher population density than Wales, Scotland and Northern Ireland. Almost one-third of the population lives in England's southeast, which is predominantly urban and suburban, with about 8 million in the capital city of London, the population density of which is just over 5,200 per square kilometre (13,468 per sq mi).",
+            "title": "Demography of the United Kingdom",
+            "start": 0,
+            "end": 802,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 95
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 96,
+                "end": 355
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 356,
+                "end": 550
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 551,
+                "end": 802
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ac3983a554299657fa290f5",
+              "url": "https://en.wikipedia.org/wiki/Demography_of_the_United_Kingdom",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.016129032258064516
+          },
+          {
+            "evidence_id": "E14",
+            "chunk_id": "e86cdffd-a035-57f3-acef-4ffebce6ffb6",
+            "document_id": "8c00406a-857d-510f-b078-2a817bbf4532",
+            "revision_id": "aefcf8f4-982a-520c-9f44-156e015b7d17",
+            "strategy": "b",
+            "text": "Tourist attractions in West Bengal refers to the tourist attractions in the Indian state of West Bengal. West Bengal is a state in the eastern region of India and is the nation's fourth-most populous. It is also the seventh-most populous sub-national entity in the world, with over 91 million inhabitants. It is bordered by the countries of Nepal, Bhutan, and Bangladesh, and the Indian states of Orissa, Jharkhand, Bihar, Sikkim, and Assam. The state capital is Kolkata (formerly \"Calcutta\"). West Bengal encompasses two broad natural regions: the Gangetic Plain in the south and the sub-Himalayan and Himalayan area in the north.with these there are two major natural regions i.e.,Western plateau and great sundarban delta.",
+            "title": "Tourist attractions in West Bengal",
+            "start": 0,
+            "end": 725,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 104
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 105,
+                "end": 200
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 201,
+                "end": 305
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 306,
+                "end": 441
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 442,
+                "end": 493
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 494,
+                "end": 725
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a8ab6105542996c9b8d5f5d",
+              "url": "https://en.wikipedia.org/wiki/Tourist_attractions_in_West_Bengal",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015873015873015872
+          },
+          {
+            "evidence_id": "E15",
+            "chunk_id": "128468a4-3936-5879-9546-dd196e144821",
+            "document_id": "13a2c544-63fc-5473-8998-fcd16b8dc3fd",
+            "revision_id": "2f1e64f5-78fa-561d-b525-4b0be3be2bf0",
+            "strategy": "b",
+            "text": "Arizona is a state located in the Western United States. There are 91 incorporated cities and towns in the U.S. state of Arizona as of 2010. Incorporated places in Arizona are those that have been granted home rule, possessing a local government in the form of a city or town council. The 2010 census put 5,021,810 of the state's 6,392,017 residents within these cities and towns, accounting for 78.56% of the population. Most of the population is concentrated within the Phoenix metropolitan area, with an 2010 census population of 4,192,887 (65.60% of the state population).",
+            "title": "List of cities and towns in Arizona",
+            "start": 0,
+            "end": 576,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 56
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 57,
+                "end": 140
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 141,
+                "end": 284
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 285,
+                "end": 421
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 422,
+                "end": 576
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ae255db5542992decbdccc1",
+              "url": "https://en.wikipedia.org/wiki/List_of_cities_and_towns_in_Arizona",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015625
+          },
+          {
+            "evidence_id": "E16",
+            "chunk_id": "6e123931-6b90-5f3f-8944-e36590b66c1e",
+            "document_id": "3dd66978-879c-5341-99b5-c7c218e2bef0",
+            "revision_id": "81957165-a9da-5a38-ab5c-6cd87494a3d5",
+            "strategy": "b",
+            "text": "Carlos Barbosa is a city in the wine country in Rio Grande do Sul state, Brazil. It is situated at 29o17'51\" South and 51o30'13\" West, at an altitude of 676 meters. Its population was estimated in 2004 to be 22 664 inhabitants. It has an area of 208,16 km sq. The city is linked by railroad line to Bento Gonçalves and the Maria Fumaça tourist train runs between both cities.",
+            "title": "Carlos Barbosa",
+            "start": 0,
+            "end": 375,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 80
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 81,
+                "end": 164
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 165,
+                "end": 227
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 228,
+                "end": 259
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 260,
+                "end": 375
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a8077185542992bc0c4a726",
+              "url": "https://en.wikipedia.org/wiki/Carlos_Barbosa",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015625
+          }
+        ],
+        "round": 2,
+        "tool_call_id": "call_r3GtQbYB3ksI4NYqRANONXdm",
+        "executed": true,
+        "follow_up": {
+          "evidence_id": "E1",
+          "entity": "United States"
+        },
+        "requested_query": "United States population inhabitants country",
+        "query_adjusted": false
+      }
+    ],
+    "workflow": "bounded_tools_v1",
+    "execution": {
+      "planning_rounds": 2,
+      "retrieval_rounds": 2,
+      "tool_calls": 2,
+      "searches": 2,
+      "llm_calls": 3,
+      "embedding_calls": 2,
+      "total_provider_calls": 5,
+      "stop_reason": "retrieval_limit",
+      "limits": {
+        "retrieval_rounds": 2,
+        "searches": 3,
+        "llm_calls": 3,
+        "embedding_calls": 3,
+        "total_provider_calls": 6
+      }
+    },
+    "configuration": {
+      "strategy": "b",
+      "profile": "1a8846753a25",
+      "embedding_model": "text-embedding-3-small",
+      "embedding_dimensions": 384,
+      "generation_model": "gpt-5.4-mini-2026-03-17",
+      "prompt_version": "bounded_tools_quote_ids_v1"
+    },
+    "usage": {
+      "planning": [
+        {
+          "input_tokens": 525,
+          "output_tokens": 29,
+          "estimated_cost_usd": 0.00052425,
+          "model": "gpt-5.4-mini-2026-03-17"
+        },
+        {
+          "input_tokens": 1791,
+          "output_tokens": 37,
+          "estimated_cost_usd": 0.00150975,
+          "model": "gpt-5.4-mini-2026-03-17"
+        }
+      ],
+      "generation": {
+        "input_tokens": 5861,
+        "output_tokens": 92,
+        "estimated_cost_usd": 0.00480975,
+        "model": "gpt-5.4-mini-2026-03-17"
+      },
+      "embeddings": [
+        {
+          "model": "text-embedding-3-small",
+          "input_tokens": 7,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 1.4e-07
+        },
+        {
+          "model": "text-embedding-3-small",
+          "input_tokens": 5,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 1.0000000000000001e-07
+        }
+      ],
+      "estimated_model_cost_usd": 0.00684375,
+      "estimated_total_cost_usd": 0.00684399
+    },
+    "latency_ms": 5821
+  },
+  "error": null,
+  "elapsed_ms": 5821,
+  "ledger_after": {
+    "calls": 500,
+    "reserved_usd": 1.25467234,
+    "estimated_actual_usd": 0.42871534,
+    "input_tokens": 7222035,
+    "output_tokens": 9863
+  }
+}

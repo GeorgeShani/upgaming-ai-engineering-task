@@ -1,0 +1,1289 @@
+{
+  "case_id": "final-bridge-08",
+  "strategy": "a",
+  "question": "What is the name of the fight song of the university whose main campus is in Lawrence, Kansas and whose branch campuses are in the Kansas City metropolitan area?",
+  "started_at": "2026-10-28T07:01:14.922344+00:00",
+  "ledger_before": {
+    "calls": 461,
+    "reserved_usd": 1.09700669,
+    "estimated_actual_usd": 0.38381594,
+    "input_tokens": 7169989,
+    "output_tokens": 8524
+  },
+  "result": {
+    "status": "answered",
+    "claims": [
+      {
+        "text": "The university is the University of Kansas, with its main campus in Lawrence and branch campuses in the Kansas City metropolitan area.",
+        "citations": [
+          {
+            "evidence_id": "E1",
+            "quote": "The University of Kansas, often referred to as KU or Kansas, is a public research university in the U.S. state of Kansas. The main campus in Lawrence, one of the largest college towns in Kansas, is on Mount Oread, the highest elevation in Lawrence. Two branch campuses are in the Kansas City metropolitan area: the Edwards Campus in Overland Park, and the university's medical school and hospital in Kansas City. There are also educational and research sites in Parsons, Topeka, Garden City, Hays, and Leavenworth, and branches of the medical school in Wichita and Salina. The university is one of the 62 members of the Association of American Universities."
+          }
+        ]
+      },
+      {
+        "text": "The fight song is called \"Kansas Song (We’re From Kansas).\"",
+        "citations": [
+          {
+            "evidence_id": "E3",
+            "quote": "Kansas Song (We’re From Kansas) is a fight song of the University of Kansas."
+          }
+        ]
+      }
+    ],
+    "conflicting_claims": [],
+    "answer": "The university is the University of Kansas, with its main campus in Lawrence and branch campuses in the Kansas City metropolitan area. [E1] The fight song is called \"Kansas Song (We’re From Kansas).\" [E3]",
+    "evidence": [
+      {
+        "evidence_id": "E3",
+        "chunk_id": "6dda40b2-c3d6-5bc7-9de5-1ac210b0fa98",
+        "document_id": "6e8adb7c-791b-52f7-b77e-bef489d2a0ca",
+        "revision_id": "43252264-c43e-5b40-952a-edd734f22925",
+        "strategy": "a",
+        "text": "Kansas Song (We’re From Kansas) is a fight song of the University of Kansas.",
+        "title": "Kansas Song",
+        "start": 0,
+        "end": 76,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 76
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "validation",
+          "record_id": "5a7166395542994082a3e814",
+          "url": "https://en.wikipedia.org/wiki/Kansas_Song",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.03009207275993712
+      },
+      {
+        "evidence_id": "E1",
+        "chunk_id": "2e1a9a82-4e69-5cd1-81ce-262c0829fb5f",
+        "document_id": "a1e4ebd0-ffa6-50c0-89f8-a20261f3cdcb",
+        "revision_id": "445b42d2-d375-5622-b394-6da0000a0a94",
+        "strategy": "a",
+        "text": "The University of Kansas, often referred to as KU or Kansas, is a public research university in the U.S. state of Kansas. The main campus in Lawrence, one of the largest college towns in Kansas, is on Mount Oread, the highest elevation in Lawrence. Two branch campuses are in the Kansas City metropolitan area: the Edwards Campus in Overland Park, and the university's medical school and hospital in Kansas City. There are also educational and research sites in Parsons, Topeka, Garden City, Hays, and Leavenworth, and branches of the medical school in Wichita and Salina. The university is one of the 62 members of the Association of American Universities.",
+        "title": "University of Kansas",
+        "start": 0,
+        "end": 657,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 121
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 122,
+            "end": 248
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 249,
+            "end": 412
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 413,
+            "end": 572
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 573,
+            "end": 657
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "validation",
+          "record_id": "5a7166395542994082a3e814",
+          "url": "https://en.wikipedia.org/wiki/University_of_Kansas",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.030117753623188408
+      },
+      {
+        "evidence_id": "E6",
+        "chunk_id": "f0817e2e-f117-534c-9f0c-9f3b987d2427",
+        "document_id": "537b18e5-1e23-5125-b71a-7420d77921e5",
+        "revision_id": "06d9e80f-3703-509e-8fb2-67d29b56787e",
+        "strategy": "a",
+        "text": "The history of the University of Kansas can be traced back to 1855, when efforts were begun to establish a \"University of the Territory of Kansas.\" Nine years later in 1864, together with the help of Amos Adams Lawrence, former Kansas Governor Charles L. Robinson, and several other prominent figures, the Kansas Legislature chartered the University of Kansas in Lawrence, Kansas. The university was initially funded by a $15,000 endowment on a 40 acre allotment of land from Charles Robinson and his wife Sara. The university commenced preparatory-level classes in 1866 and college-level classes in 1869.",
+        "title": "History of the University of Kansas",
+        "start": 0,
+        "end": 605,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 147
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 148,
+            "end": 380
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 381,
+            "end": 511
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 512,
+            "end": 605
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a8d057555429941ae14df67",
+          "url": "https://en.wikipedia.org/wiki/History_of_the_University_of_Kansas",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.02690100430416069
+      },
+      {
+        "evidence_id": "E2",
+        "chunk_id": "228600b7-d929-585a-8a59-caf7c3954811",
+        "document_id": "45b49a44-4ce7-5960-addc-4686ff963060",
+        "revision_id": "761a4c12-532a-5317-8f77-fdd2bba48889",
+        "strategy": "a",
+        "text": "The University of Missouri–Kansas City School of Law is a public law school located on the main campus of the University of Missouri-Kansas City in Kansas City, Missouri, near the Country Club Plaza. It was founded in 1895 as the Kansas City School of Law, a private, independent law school located in Downtown Kansas City, and was purchased by the University of Missouri-Kansas City in 1938. The law school moved to UMKC's main campus soon after, where it is accredited by the American Bar Association and is a member of the Association of American Law Schools. According to UMKC School of Law's official 2014 ABA-required disclosures, 64% of the Class of 2014 obtained full-time, long-term, JD-required employment within ten months after graduation.",
+        "title": "University of Missouri–Kansas City School of Law",
+        "start": 0,
+        "end": 751,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 199
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 200,
+            "end": 392
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 393,
+            "end": 562
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 563,
+            "end": 751
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a8392f15542992ef85e2310",
+          "url": "https://en.wikipedia.org/wiki/University_of_Missouri%E2%80%93Kansas_City_School_of_Law",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.0315136476426799
+      },
+      {
+        "evidence_id": "E9",
+        "chunk_id": "f8bf230f-9305-5312-be9f-76c2029ead28",
+        "document_id": "2a8ffaed-3c1f-5a8c-9819-2f504b761b1c",
+        "revision_id": "11065b96-55eb-58b8-a413-d1f3e2ddc642",
+        "strategy": "a",
+        "text": "The 2010 Kansas Jayhawks football team (variously \"Kansas\", \"KU\", or the \"Jayhawks\") represented the University of Kansas in the 2010 NCAA Division I FBS football season which was the school's 121st season. The Jayhawks played their home games on Kivisto Field at Memorial Stadium in Lawrence, Kansas.",
+        "title": "2010 Kansas Jayhawks football team",
+        "start": 0,
+        "end": 301,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 206
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 207,
+            "end": 301
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5abc145b554299658360041f",
+          "url": "https://en.wikipedia.org/wiki/2010_Kansas_Jayhawks_football_team",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.027051561365286855
+      },
+      {
+        "evidence_id": "E4",
+        "chunk_id": "f3eff266-8396-5517-afd7-8e1281899f6e",
+        "document_id": "c7de966c-c73f-570a-8132-413fd8866131",
+        "revision_id": "fe3d355e-17e3-580d-a328-cb3702afa8eb",
+        "strategy": "a",
+        "text": "The 2011–12 Kansas Jayhawks men's basketball team represented the University of Kansas in the 2011–12 NCAA Division I men's basketball season, which was the Jayhawks' 114th basketball season. As in every season since 1955–56, the team played its home games at Allen Fieldhouse on its campus in Lawrence, Kansas, US. After defeating rival Missouri on February 25, the Jayhawks clinched their 8th straight outright Big 12 championship. After defeating North Carolina, the Jayhawks advanced to their 14th Final Four in school history, where they defeated Ohio State 64-62 in the national semifinals. On April 2, Kansas faced Kentucky for the national title, losing to the favored Wildcats. Kansas had played both of its Final Four opponents during the regular season, losing to Kentucky on November 15 and defeating Ohio State on December 10. They finished the season with a 32–7 overall record, and 16–2 in Big 12 play.",
+        "title": "2011–12 Kansas Jayhawks men's basketball team",
+        "start": 0,
+        "end": 917,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 191
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 192,
+            "end": 315
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 316,
+            "end": 433
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 434,
+            "end": 596
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 597,
+            "end": 686
+          },
+          {
+            "kind": "sentence",
+            "number": 5,
+            "start": 687,
+            "end": 839
+          },
+          {
+            "kind": "sentence",
+            "number": 6,
+            "start": 840,
+            "end": 917
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a77cb3255429949eeb29f65",
+          "url": "https://en.wikipedia.org/wiki/2011%E2%80%9312_Kansas_Jayhawks_men%27s_basketball_team",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.027402402402402402
+      },
+      {
+        "evidence_id": "E10",
+        "chunk_id": "da18d2b4-0242-5458-b9e1-3e0b997133f9",
+        "document_id": "931634cd-f26b-5023-af2f-3dd798227254",
+        "revision_id": "18b07f6a-006c-5d35-9789-7fab7e46d717",
+        "strategy": "a",
+        "text": "The 1894 Kansas Jayhawks football team represented the University of Kansas in the Western Interstate University Football Association (WIUFA) during the 1894 college football season. In their first season under head coach Hector Cowan, the Jayhawks compiled a 2–3–1 record (1–2 against conference opponents), finished third in the conference, and were outscored by all opponents by a combined total of 82 to 78. The Jayhawks played their home games at McCook Field in Lawrence, Kansas. O. K. Williamson was the team captain.",
+        "title": "1894 Kansas Jayhawks football team",
+        "start": 0,
+        "end": 524,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 182
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 183,
+            "end": 411
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 412,
+            "end": 485
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 486,
+            "end": 524
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5ab7efb45542991d322237cb",
+          "url": "https://en.wikipedia.org/wiki/1894_Kansas_Jayhawks_football_team",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.026333907056798625
+      },
+      {
+        "evidence_id": "E5",
+        "chunk_id": "ff505a05-4be4-57eb-b2ba-612efcf3fe83",
+        "document_id": "eba146c1-bfe9-5923-b2f2-acf68ea3d2bc",
+        "revision_id": "567d78c8-012f-58a0-8448-09d6911903d9",
+        "strategy": "a",
+        "text": "Mount Oread is a hill in Lawrence, Kansas upon which the University of Kansas is located. It sits on the water divide between the Kansas and Wakarusa rivers. It was named after the Oread Institute in Worcester, Massachusetts. The hill was originally called Hogback Ridge by many Lawrence residents until the Oread name was adopted in 1866.",
+        "title": "Mount Oread",
+        "start": 0,
+        "end": 339,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 89
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 90,
+            "end": 157
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 158,
+            "end": 225
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 226,
+            "end": 339
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a7246425542990c210a4097",
+          "url": "https://en.wikipedia.org/wiki/Mount_Oread",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.025320462098433298
+      }
+    ],
+    "search_trace": [
+      {
+        "query": "university main campus Lawrence Kansas branch campuses Kansas City metropolitan area fight song name",
+        "strategy": "a",
+        "profile": "1a8846753a25",
+        "embedding_usage": {
+          "model": "text-embedding-3-small",
+          "input_tokens": 15,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 3e-07
+        },
+        "document_ranking": [
+          "a1e4ebd0-ffa6-50c0-89f8-a20261f3cdcb",
+          "45b49a44-4ce7-5960-addc-4686ff963060",
+          "6e8adb7c-791b-52f7-b77e-bef489d2a0ca",
+          "c7de966c-c73f-570a-8132-413fd8866131",
+          "eba146c1-bfe9-5923-b2f2-acf68ea3d2bc",
+          "537b18e5-1e23-5125-b71a-7420d77921e5",
+          "adb0061c-0d69-5afc-95d7-40ed5314fd01",
+          "839eda11-4976-536d-a605-1172ae758917",
+          "aa202862-bdf8-5069-8a12-60928cc29fdd",
+          "8f94d6e5-9a88-5f36-80ff-df036618b21c"
+        ],
+        "candidate_counts": {
+          "dense": 30,
+          "bm25": 30,
+          "active_dense": 30,
+          "active_bm25": 30
+        },
+        "evidence": [
+          {
+            "evidence_id": "E1",
+            "chunk_id": "2e1a9a82-4e69-5cd1-81ce-262c0829fb5f",
+            "document_id": "a1e4ebd0-ffa6-50c0-89f8-a20261f3cdcb",
+            "revision_id": "445b42d2-d375-5622-b394-6da0000a0a94",
+            "strategy": "a",
+            "text": "The University of Kansas, often referred to as KU or Kansas, is a public research university in the U.S. state of Kansas. The main campus in Lawrence, one of the largest college towns in Kansas, is on Mount Oread, the highest elevation in Lawrence. Two branch campuses are in the Kansas City metropolitan area: the Edwards Campus in Overland Park, and the university's medical school and hospital in Kansas City. There are also educational and research sites in Parsons, Topeka, Garden City, Hays, and Leavenworth, and branches of the medical school in Wichita and Salina. The university is one of the 62 members of the Association of American Universities.",
+            "title": "University of Kansas",
+            "start": 0,
+            "end": 657,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 121
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 122,
+                "end": 248
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 249,
+                "end": 412
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 413,
+                "end": 572
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 573,
+                "end": 657
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5a7166395542994082a3e814",
+              "url": "https://en.wikipedia.org/wiki/University_of_Kansas",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03252247488101534
+          },
+          {
+            "evidence_id": "E2",
+            "chunk_id": "228600b7-d929-585a-8a59-caf7c3954811",
+            "document_id": "45b49a44-4ce7-5960-addc-4686ff963060",
+            "revision_id": "761a4c12-532a-5317-8f77-fdd2bba48889",
+            "strategy": "a",
+            "text": "The University of Missouri–Kansas City School of Law is a public law school located on the main campus of the University of Missouri-Kansas City in Kansas City, Missouri, near the Country Club Plaza. It was founded in 1895 as the Kansas City School of Law, a private, independent law school located in Downtown Kansas City, and was purchased by the University of Missouri-Kansas City in 1938. The law school moved to UMKC's main campus soon after, where it is accredited by the American Bar Association and is a member of the Association of American Law Schools. According to UMKC School of Law's official 2014 ABA-required disclosures, 64% of the Class of 2014 obtained full-time, long-term, JD-required employment within ten months after graduation.",
+            "title": "University of Missouri–Kansas City School of Law",
+            "start": 0,
+            "end": 751,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 199
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 200,
+                "end": 392
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 393,
+                "end": 562
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 563,
+                "end": 751
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a8392f15542992ef85e2310",
+              "url": "https://en.wikipedia.org/wiki/University_of_Missouri%E2%80%93Kansas_City_School_of_Law",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.0315136476426799
+          },
+          {
+            "evidence_id": "E3",
+            "chunk_id": "6dda40b2-c3d6-5bc7-9de5-1ac210b0fa98",
+            "document_id": "6e8adb7c-791b-52f7-b77e-bef489d2a0ca",
+            "revision_id": "43252264-c43e-5b40-952a-edd734f22925",
+            "strategy": "a",
+            "text": "Kansas Song (We’re From Kansas) is a fight song of the University of Kansas.",
+            "title": "Kansas Song",
+            "start": 0,
+            "end": 76,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 76
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5a7166395542994082a3e814",
+              "url": "https://en.wikipedia.org/wiki/Kansas_Song",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03009207275993712
+          },
+          {
+            "evidence_id": "E4",
+            "chunk_id": "f3eff266-8396-5517-afd7-8e1281899f6e",
+            "document_id": "c7de966c-c73f-570a-8132-413fd8866131",
+            "revision_id": "fe3d355e-17e3-580d-a328-cb3702afa8eb",
+            "strategy": "a",
+            "text": "The 2011–12 Kansas Jayhawks men's basketball team represented the University of Kansas in the 2011–12 NCAA Division I men's basketball season, which was the Jayhawks' 114th basketball season. As in every season since 1955–56, the team played its home games at Allen Fieldhouse on its campus in Lawrence, Kansas, US. After defeating rival Missouri on February 25, the Jayhawks clinched their 8th straight outright Big 12 championship. After defeating North Carolina, the Jayhawks advanced to their 14th Final Four in school history, where they defeated Ohio State 64-62 in the national semifinals. On April 2, Kansas faced Kentucky for the national title, losing to the favored Wildcats. Kansas had played both of its Final Four opponents during the regular season, losing to Kentucky on November 15 and defeating Ohio State on December 10. They finished the season with a 32–7 overall record, and 16–2 in Big 12 play.",
+            "title": "2011–12 Kansas Jayhawks men's basketball team",
+            "start": 0,
+            "end": 917,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 191
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 192,
+                "end": 315
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 316,
+                "end": 433
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 434,
+                "end": 596
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 597,
+                "end": 686
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 687,
+                "end": 839
+              },
+              {
+                "kind": "sentence",
+                "number": 6,
+                "start": 840,
+                "end": 917
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a77cb3255429949eeb29f65",
+              "url": "https://en.wikipedia.org/wiki/2011%E2%80%9312_Kansas_Jayhawks_men%27s_basketball_team",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.027402402402402402
+          },
+          {
+            "evidence_id": "E5",
+            "chunk_id": "ff505a05-4be4-57eb-b2ba-612efcf3fe83",
+            "document_id": "eba146c1-bfe9-5923-b2f2-acf68ea3d2bc",
+            "revision_id": "567d78c8-012f-58a0-8448-09d6911903d9",
+            "strategy": "a",
+            "text": "Mount Oread is a hill in Lawrence, Kansas upon which the University of Kansas is located. It sits on the water divide between the Kansas and Wakarusa rivers. It was named after the Oread Institute in Worcester, Massachusetts. The hill was originally called Hogback Ridge by many Lawrence residents until the Oread name was adopted in 1866.",
+            "title": "Mount Oread",
+            "start": 0,
+            "end": 339,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 89
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 90,
+                "end": 157
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 158,
+                "end": 225
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 226,
+                "end": 339
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a7246425542990c210a4097",
+              "url": "https://en.wikipedia.org/wiki/Mount_Oread",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.025320462098433298
+          },
+          {
+            "evidence_id": "E6",
+            "chunk_id": "f0817e2e-f117-534c-9f0c-9f3b987d2427",
+            "document_id": "537b18e5-1e23-5125-b71a-7420d77921e5",
+            "revision_id": "06d9e80f-3703-509e-8fb2-67d29b56787e",
+            "strategy": "a",
+            "text": "The history of the University of Kansas can be traced back to 1855, when efforts were begun to establish a \"University of the Territory of Kansas.\" Nine years later in 1864, together with the help of Amos Adams Lawrence, former Kansas Governor Charles L. Robinson, and several other prominent figures, the Kansas Legislature chartered the University of Kansas in Lawrence, Kansas. The university was initially funded by a $15,000 endowment on a 40 acre allotment of land from Charles Robinson and his wife Sara. The university commenced preparatory-level classes in 1866 and college-level classes in 1869.",
+            "title": "History of the University of Kansas",
+            "start": 0,
+            "end": 605,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 147
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 148,
+                "end": 380
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 381,
+                "end": 511
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 512,
+                "end": 605
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a8d057555429941ae14df67",
+              "url": "https://en.wikipedia.org/wiki/History_of_the_University_of_Kansas",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.023255813953488372
+          },
+          {
+            "evidence_id": "E7",
+            "chunk_id": "65f70f47-6f71-523e-9b15-8adc555d83e3",
+            "document_id": "adb0061c-0d69-5afc-95d7-40ed5314fd01",
+            "revision_id": "5e454cc5-124b-5ce5-a89a-98ceaf93fa5c",
+            "strategy": "a",
+            "text": "Kansas City is the largest city in Missouri, United States, and the sixth largest city in the Midwest. According to the U.S. Census Bureau, the city had an estimated population of 481,420 in 2016, making it the 37th largest city by population in the United States. It is the anchor city of the Kansas City metropolitan area, which straddles the Kansas–Missouri border. Kansas City was founded in the 1830s as a Missouri River port at its confluence with the Kansas River coming in from the west. On June 1, 1850 the town of Kansas was incorporated; shortly after came the establishment of the Kansas Territory. Confusion between the two ensued and the name Kansas City was assigned to distinguish them soon thereafter.",
+            "title": "Kansas City, Missouri",
+            "start": 0,
+            "end": 718,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 102
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 103,
+                "end": 264
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 265,
+                "end": 368
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 369,
+                "end": 495
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 496,
+                "end": 610
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 611,
+                "end": 718
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a79e8255542990198eaeff1",
+              "url": "https://en.wikipedia.org/wiki/Kansas_City%2C_Missouri",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015873015873015872
+          },
+          {
+            "evidence_id": "E8",
+            "chunk_id": "c65b72be-5544-5588-a6cd-4feca13df155",
+            "document_id": "839eda11-4976-536d-a605-1172ae758917",
+            "revision_id": "c9a74c98-47b8-5343-abbd-78a41b87addd",
+            "strategy": "a",
+            "text": "The Kansas State Wildcats men's basketball team represents Kansas State University in college basketball competition. The program is classified in the NCAA Division I, and is a member of the Big 12 Conference. The current head coach is Bruce Weber.",
+            "title": "Kansas State Wildcats men's basketball",
+            "start": 0,
+            "end": 248,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 117
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 118,
+                "end": 209
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 210,
+                "end": 248
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5adde3295542992200553b8c",
+              "url": "https://en.wikipedia.org/wiki/Kansas_State_Wildcats_men%27s_basketball",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015873015873015872
+          }
+        ],
+        "round": 1,
+        "tool_call_id": "call_lrBbRjDR0UuWGjgoWUidMjsx",
+        "executed": true,
+        "follow_up": null,
+        "requested_query": "university main campus Lawrence Kansas branch campuses Kansas City metropolitan area fight song name",
+        "query_adjusted": false
+      },
+      {
+        "query": "\"Kansas Song\" fight song University of Kansas name",
+        "strategy": "a",
+        "profile": "1a8846753a25",
+        "embedding_usage": {
+          "model": "text-embedding-3-small",
+          "input_tokens": 10,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 2.0000000000000002e-07
+        },
+        "document_ranking": [
+          "6e8adb7c-791b-52f7-b77e-bef489d2a0ca",
+          "a1e4ebd0-ffa6-50c0-89f8-a20261f3cdcb",
+          "2a8ffaed-3c1f-5a8c-9819-2f504b761b1c",
+          "537b18e5-1e23-5125-b71a-7420d77921e5",
+          "931634cd-f26b-5023-af2f-3dd798227254",
+          "0ffcffa0-920e-55ed-9fbc-f821042d3b77",
+          "9539b905-92f1-505c-bc95-eed48cea3fe5",
+          "b0586fc9-b8cd-5711-a2eb-e12658a17474",
+          "6f145f89-9862-5973-9189-aeaafec225cb",
+          "6f6e626d-58d0-5f7d-86b6-4653a34b5ce6"
+        ],
+        "candidate_counts": {
+          "dense": 30,
+          "bm25": 30,
+          "active_dense": 30,
+          "active_bm25": 30
+        },
+        "evidence": [
+          {
+            "evidence_id": "E3",
+            "chunk_id": "6dda40b2-c3d6-5bc7-9de5-1ac210b0fa98",
+            "document_id": "6e8adb7c-791b-52f7-b77e-bef489d2a0ca",
+            "revision_id": "43252264-c43e-5b40-952a-edd734f22925",
+            "strategy": "a",
+            "text": "Kansas Song (We’re From Kansas) is a fight song of the University of Kansas.",
+            "title": "Kansas Song",
+            "start": 0,
+            "end": 76,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 76
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5a7166395542994082a3e814",
+              "url": "https://en.wikipedia.org/wiki/Kansas_Song",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03278688524590164
+          },
+          {
+            "evidence_id": "E1",
+            "chunk_id": "2e1a9a82-4e69-5cd1-81ce-262c0829fb5f",
+            "document_id": "a1e4ebd0-ffa6-50c0-89f8-a20261f3cdcb",
+            "revision_id": "445b42d2-d375-5622-b394-6da0000a0a94",
+            "strategy": "a",
+            "text": "The University of Kansas, often referred to as KU or Kansas, is a public research university in the U.S. state of Kansas. The main campus in Lawrence, one of the largest college towns in Kansas, is on Mount Oread, the highest elevation in Lawrence. Two branch campuses are in the Kansas City metropolitan area: the Edwards Campus in Overland Park, and the university's medical school and hospital in Kansas City. There are also educational and research sites in Parsons, Topeka, Garden City, Hays, and Leavenworth, and branches of the medical school in Wichita and Salina. The university is one of the 62 members of the Association of American Universities.",
+            "title": "University of Kansas",
+            "start": 0,
+            "end": 657,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 121
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 122,
+                "end": 248
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 249,
+                "end": 412
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 413,
+                "end": 572
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 573,
+                "end": 657
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5a7166395542994082a3e814",
+              "url": "https://en.wikipedia.org/wiki/University_of_Kansas",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.030117753623188408
+          },
+          {
+            "evidence_id": "E9",
+            "chunk_id": "f8bf230f-9305-5312-be9f-76c2029ead28",
+            "document_id": "2a8ffaed-3c1f-5a8c-9819-2f504b761b1c",
+            "revision_id": "11065b96-55eb-58b8-a413-d1f3e2ddc642",
+            "strategy": "a",
+            "text": "The 2010 Kansas Jayhawks football team (variously \"Kansas\", \"KU\", or the \"Jayhawks\") represented the University of Kansas in the 2010 NCAA Division I FBS football season which was the school's 121st season. The Jayhawks played their home games on Kivisto Field at Memorial Stadium in Lawrence, Kansas.",
+            "title": "2010 Kansas Jayhawks football team",
+            "start": 0,
+            "end": 301,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 206
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 207,
+                "end": 301
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5abc145b554299658360041f",
+              "url": "https://en.wikipedia.org/wiki/2010_Kansas_Jayhawks_football_team",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.027051561365286855
+          },
+          {
+            "evidence_id": "E6",
+            "chunk_id": "f0817e2e-f117-534c-9f0c-9f3b987d2427",
+            "document_id": "537b18e5-1e23-5125-b71a-7420d77921e5",
+            "revision_id": "06d9e80f-3703-509e-8fb2-67d29b56787e",
+            "strategy": "a",
+            "text": "The history of the University of Kansas can be traced back to 1855, when efforts were begun to establish a \"University of the Territory of Kansas.\" Nine years later in 1864, together with the help of Amos Adams Lawrence, former Kansas Governor Charles L. Robinson, and several other prominent figures, the Kansas Legislature chartered the University of Kansas in Lawrence, Kansas. The university was initially funded by a $15,000 endowment on a 40 acre allotment of land from Charles Robinson and his wife Sara. The university commenced preparatory-level classes in 1866 and college-level classes in 1869.",
+            "title": "History of the University of Kansas",
+            "start": 0,
+            "end": 605,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 147
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 148,
+                "end": 380
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 381,
+                "end": 511
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 512,
+                "end": 605
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a8d057555429941ae14df67",
+              "url": "https://en.wikipedia.org/wiki/History_of_the_University_of_Kansas",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.02690100430416069
+          },
+          {
+            "evidence_id": "E10",
+            "chunk_id": "da18d2b4-0242-5458-b9e1-3e0b997133f9",
+            "document_id": "931634cd-f26b-5023-af2f-3dd798227254",
+            "revision_id": "18b07f6a-006c-5d35-9789-7fab7e46d717",
+            "strategy": "a",
+            "text": "The 1894 Kansas Jayhawks football team represented the University of Kansas in the Western Interstate University Football Association (WIUFA) during the 1894 college football season. In their first season under head coach Hector Cowan, the Jayhawks compiled a 2–3–1 record (1–2 against conference opponents), finished third in the conference, and were outscored by all opponents by a combined total of 82 to 78. The Jayhawks played their home games at McCook Field in Lawrence, Kansas. O. K. Williamson was the team captain.",
+            "title": "1894 Kansas Jayhawks football team",
+            "start": 0,
+            "end": 524,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 182
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 183,
+                "end": 411
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 412,
+                "end": 485
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 486,
+                "end": 524
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ab7efb45542991d322237cb",
+              "url": "https://en.wikipedia.org/wiki/1894_Kansas_Jayhawks_football_team",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.026333907056798625
+          },
+          {
+            "evidence_id": "E11",
+            "chunk_id": "a4a2c7c1-2940-5c06-a275-4e7c9c619a7d",
+            "document_id": "0ffcffa0-920e-55ed-9fbc-f821042d3b77",
+            "revision_id": "7c0de542-f1db-592b-9004-9db8fdd622a4",
+            "strategy": "a",
+            "text": "The 1895 Kansas Jayhawks football team represented the University of Kansas in the Western Interstate University Football Association (WIUFA) during the 1895 college football season. In their second season under head coach Hector Cowan, the Jayhawks compiled a 6–1 record (2–1 against WIUFA opponents), tied for the WIUFA championship, shut out five of seven opponents, and outscored all opponents by a combined total of 192 to 14. The team's only loss came against Missouri in the final game of the season. The Jayhawks played their home games at McCook Field in Lawrence, Kansas. W. H. Piatt was the team captain.",
+            "title": "1895 Kansas Jayhawks football team",
+            "start": 0,
+            "end": 615,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 182
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 183,
+                "end": 431
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 432,
+                "end": 507
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 508,
+                "end": 581
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 582,
+                "end": 615
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5abc145b554299658360041f",
+              "url": "https://en.wikipedia.org/wiki/1895_Kansas_Jayhawks_football_team",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.02565359477124183
+          },
+          {
+            "evidence_id": "E12",
+            "chunk_id": "d7de6d4e-9041-5a71-86fe-72ce28ad0c96",
+            "document_id": "9539b905-92f1-505c-bc95-eed48cea3fe5",
+            "revision_id": "5c357a15-26b9-57b6-abc2-9b58e468ee14",
+            "strategy": "a",
+            "text": "The 1892 Kansas Jayhawks football team represented the University of Kansas in the Western Interstate University Football Association (WIUFA) during the 1892 college football season. In their first season under head coach A. W. Shepard, the Jayhawks compiled a 7–1 record (3–0 against conference opponents), won the conference championship, and outscored opponents by a combined total of 144 to 36. The Jayhawks played their home games at McCook Field in Lawrence, Kansas. John Kenzie was the team captain.",
+            "title": "1892 Kansas Jayhawks football team",
+            "start": 0,
+            "end": 506,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 182
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 183,
+                "end": 398
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 399,
+                "end": 472
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 473,
+                "end": 506
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ab7efb45542991d322237cb",
+              "url": "https://en.wikipedia.org/wiki/1892_Kansas_Jayhawks_football_team",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.025158227848101268
+          },
+          {
+            "evidence_id": "E13",
+            "chunk_id": "04064787-f3bc-54dd-8a4e-46980c067def",
+            "document_id": "b0586fc9-b8cd-5711-a2eb-e12658a17474",
+            "revision_id": "c71c354f-3fa1-53b7-a0a3-0a2280de8df2",
+            "strategy": "a",
+            "text": "The 1897 Kansas Jayhawks football team represented the University of Kansas in the Western Interstate University Football Association during the 1897 college football season. In their first season under head coach Wylie G. Woodruff, the Jayhawks compiled an 8–2 record (2–1 against conference opponents), finished second in the conference, shut out seven of ten opponents, and outscored all opponents by a combined total of 253 to 16. The Jayhawks played their home games at McCook Field in Lawrence, Kansas. A. R. Kennedy was the team captain.",
+            "title": "1897 Kansas Jayhawks football team",
+            "start": 0,
+            "end": 544,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 174
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 175,
+                "end": 434
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 435,
+                "end": 508
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 509,
+                "end": 544
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ab7efb45542991d322237cb",
+              "url": "https://en.wikipedia.org/wiki/1897_Kansas_Jayhawks_football_team",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.024725274725274724
+          }
+        ],
+        "round": 2,
+        "tool_call_id": "call_Psaw5qncvvuUGcScKoxGS5Nt",
+        "executed": true,
+        "follow_up": {
+          "evidence_id": "E3",
+          "entity": "University of Kansas"
+        },
+        "requested_query": "\"Kansas Song\" fight song University of Kansas name",
+        "query_adjusted": false
+      }
+    ],
+    "workflow": "bounded_tools_v1",
+    "execution": {
+      "planning_rounds": 2,
+      "retrieval_rounds": 2,
+      "tool_calls": 2,
+      "searches": 2,
+      "llm_calls": 3,
+      "embedding_calls": 2,
+      "total_provider_calls": 5,
+      "stop_reason": "retrieval_limit",
+      "limits": {
+        "retrieval_rounds": 2,
+        "searches": 3,
+        "llm_calls": 3,
+        "embedding_calls": 3,
+        "total_provider_calls": 6
+      }
+    },
+    "configuration": {
+      "strategy": "a",
+      "profile": "1a8846753a25",
+      "embedding_model": "text-embedding-3-small",
+      "embedding_dimensions": 384,
+      "generation_model": "gpt-5.4-mini-2026-03-17",
+      "prompt_version": "bounded_tools_quote_ids_v1"
+    },
+    "usage": {
+      "planning": [
+        {
+          "input_tokens": 539,
+          "output_tokens": 38,
+          "estimated_cost_usd": 0.00057525,
+          "model": "gpt-5.4-mini-2026-03-17"
+        },
+        {
+          "input_tokens": 1656,
+          "output_tokens": 43,
+          "estimated_cost_usd": 0.0014355,
+          "model": "gpt-5.4-mini-2026-03-17"
+        }
+      ],
+      "generation": {
+        "input_tokens": 4473,
+        "output_tokens": 110,
+        "estimated_cost_usd": 0.00384975,
+        "model": "gpt-5.4-mini-2026-03-17"
+      },
+      "embeddings": [
+        {
+          "model": "text-embedding-3-small",
+          "input_tokens": 15,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 3e-07
+        },
+        {
+          "model": "text-embedding-3-small",
+          "input_tokens": 10,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 2.0000000000000002e-07
+        }
+      ],
+      "estimated_model_cost_usd": 0.005860499999999999,
+      "estimated_total_cost_usd": 0.005860999999999999
+    },
+    "latency_ms": 5273
+  },
+  "error": null,
+  "elapsed_ms": 5273,
+  "ledger_after": {
+    "calls": 466,
+    "reserved_usd": 1.11683344,
+    "estimated_actual_usd": 0.38967694,
+    "input_tokens": 7176682,
+    "output_tokens": 8715
+  }
+}

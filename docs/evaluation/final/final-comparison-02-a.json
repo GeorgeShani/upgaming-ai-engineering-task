@@ -1,0 +1,1148 @@
+{
+  "case_id": "final-comparison-02",
+  "strategy": "a",
+  "question": "Are the Laleli Mosque and Esma Sultan Mansion located in the same neighborhood?",
+  "started_at": "2026-10-28T07:02:20.310460+00:00",
+  "ledger_before": {
+    "calls": 517,
+    "reserved_usd": 1.33553287,
+    "estimated_actual_usd": 0.45223537,
+    "input_tokens": 7249545,
+    "output_tokens": 10511
+  },
+  "result": {
+    "status": "answered",
+    "claims": [
+      {
+        "text": "No. The Laleli Mosque is located in Laleli, Fatih, Istanbul.",
+        "citations": [
+          {
+            "evidence_id": "E2",
+            "quote": "The Laleli Mosque (Turkish: \"Laleli Camii, or Tulip Mosque\" ) is an 18th-century Ottoman imperial mosque located in Laleli, Fatih, Istanbul, Turkey."
+          }
+        ]
+      },
+      {
+        "text": "The Esma Sultan Mansion is located in Ortaköy neighborhood of Istanbul.",
+        "citations": [
+          {
+            "evidence_id": "E1",
+            "quote": "The Esma Sultan Mansion (Turkish: \"Esma Sultan Yalısı\" ), a historical yalı (English: waterside mansion ) located at Bosphorus in Ortaköy neighborhood of Istanbul, Turkey and named after its original owner Esma Sultan, is used today as a cultural center after being redeveloped."
+          }
+        ]
+      }
+    ],
+    "conflicting_claims": [],
+    "answer": "No. The Laleli Mosque is located in Laleli, Fatih, Istanbul. [E2] The Esma Sultan Mansion is located in Ortaköy neighborhood of Istanbul. [E1]",
+    "evidence": [
+      {
+        "evidence_id": "E2",
+        "chunk_id": "bb29db37-eef7-5ddd-b84b-3149cc8fcf8d",
+        "document_id": "ac5bbcbf-8282-592f-bf78-913d4bedd4ca",
+        "revision_id": "064a6266-95d3-5718-8d3d-a740979aab4d",
+        "strategy": "a",
+        "text": "The Laleli Mosque (Turkish: \"Laleli Camii, or Tulip Mosque\" ) is an 18th-century Ottoman imperial mosque located in Laleli, Fatih, Istanbul, Turkey.",
+        "title": "Laleli Mosque",
+        "start": 0,
+        "end": 148,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 148
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "validation",
+          "record_id": "5adbf0a255429947ff17385a",
+          "url": "https://en.wikipedia.org/wiki/Laleli_Mosque",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.03278688524590164
+      },
+      {
+        "evidence_id": "E1",
+        "chunk_id": "1da8ecef-8edf-50a7-97f5-e53597dc710a",
+        "document_id": "f7a39ca9-e08b-5b25-b51a-72424e833d39",
+        "revision_id": "35527cf5-bdb5-55f3-b301-232d1e6ae1d7",
+        "strategy": "a",
+        "text": "The Esma Sultan Mansion (Turkish: \"Esma Sultan Yalısı\" ), a historical yalı (English: waterside mansion ) located at Bosphorus in Ortaköy neighborhood of Istanbul, Turkey and named after its original owner Esma Sultan, is used today as a cultural center after being redeveloped.",
+        "title": "Esma Sultan Mansion",
+        "start": 0,
+        "end": 278,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 278
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "validation",
+          "record_id": "5adbf0a255429947ff17385a",
+          "url": "https://en.wikipedia.org/wiki/Esma_Sultan_Mansion",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.02878726010616578
+      },
+      {
+        "evidence_id": "E9",
+        "chunk_id": "731bff74-f370-5824-b382-084eba573219",
+        "document_id": "5c2e466f-5cd2-5c28-8003-0f6ca04d5771",
+        "revision_id": "cd281003-ced7-5ea8-a1c4-16a8ca0f1090",
+        "strategy": "a",
+        "text": "The Ali Demi neighborhood () is a neighborhood located in Tirana, Albania. It is named after Ali Demi, a World War II hero. The street with the same name is its main artery. The adjacent \"Mihal Grameno\" neighborhood is sometimes referred as part of the broader Ali Demi neighborhood.",
+        "title": "Ali Demi (neighborhood)",
+        "start": 0,
+        "end": 283,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 74
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 75,
+            "end": 123
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 124,
+            "end": 173
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 174,
+            "end": 283
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5aba6b2d55429901930fa7a9",
+          "url": "https://en.wikipedia.org/wiki/Ali_Demi_%28neighborhood%29",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.029116045245077504
+      },
+      {
+        "evidence_id": "E3",
+        "chunk_id": "d094e903-d39a-5656-acdb-7e5896b9a2be",
+        "document_id": "c7796c05-470e-5b69-9067-7c230110ee06",
+        "revision_id": "274eda8a-4b52-524b-8249-259cf93e47fe",
+        "strategy": "a",
+        "text": "The Pertevniyal Valide Sultan Mosque, also known as the Aksaray Valide Mosque (Turkish: \"Pertevniyal Valide Sultan Camii, Aksaray Valide Sultan Camii\" ), is an Ottoman imperial mosque in Istanbul, Turkey. It is located at the intersection of Ordu Street and Atatürk Boulevard in the Aksaray neighborhood. It is located next to Pertevniyal High School (Turkish: \"Pertevniyal Lisesi\") which was also built by the order of Sultana Pertevniyal in 1872.",
+        "title": "Pertevniyal Valide Sultan Mosque",
+        "start": 0,
+        "end": 448,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 204
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 205,
+            "end": 304
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 305,
+            "end": 448
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5ab3f8c0554299753aec5a0e",
+          "url": "https://en.wikipedia.org/wiki/Pertevniyal_Valide_Sultan_Mosque",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.03200204813108039
+      },
+      {
+        "evidence_id": "E10",
+        "chunk_id": "7252d6e7-3aa4-533e-9509-6b7e45d145e3",
+        "document_id": "9b4cd097-6c7f-561e-8bc6-9838fb13bcd2",
+        "revision_id": "67e94996-3620-535b-ae2d-8a197045552e",
+        "strategy": "a",
+        "text": "Beyazıt Square (Turkish: \"Beyazıt Meydanı\" ) is a square in the district of Fatih, situated in the European part of Istanbul, Turkey. It is officially named \"Freedom Square\" (\"Hürriyet Meydanı\" ), but is known as Beyazıt Square after the Bayezid II Mosque on one side of it. The Square is the former site of the Forum of Theodosius built by Constantine the Great. On one side of the square is the main entrance of Istanbul University; the Beyazıt Tower is on the university's campus and can be seen from the square. The current form of the square was designed by Turgut Cansever.",
+        "title": "Beyazıt Square",
+        "start": 0,
+        "end": 579,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 133
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 134,
+            "end": 274
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 275,
+            "end": 363
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 364,
+            "end": 515
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 516,
+            "end": 579
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5adf18305542995ec70e8f6d",
+          "url": "https://en.wikipedia.org/wiki/Beyaz%C4%B1t_Square",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.028577260665441927
+      },
+      {
+        "evidence_id": "E4",
+        "chunk_id": "81cf5e46-ff4f-533e-9212-1616dfa34cc6",
+        "document_id": "2c3b0fb0-950b-5a40-8254-3e7e9403ac96",
+        "revision_id": "e531527d-1dd8-5ceb-9021-b16094904973",
+        "strategy": "a",
+        "text": "The Sultan Ahmed Mosque or Sultan Ahmet Mosque (Turkish: \"Sultan Ahmet Camii\" ) is a historic mosque located in Istanbul, Turkey. A popular tourist site, the Sultan Ahmed Mosque continues to function as a mosque today; men still kneel in prayer on the mosque's lush red carpet after the call to prayer. The Blue Mosque, as it is popularly known, was constructed between 1609 and 1616 during the rule of Ahmed I. Its Külliye contains Ahmed's tomb, a madrasah and a hospice. Hand-painted blue tiles adorn the mosque’s interior walls, and at night the mosque is bathed in blue as lights frame the mosque’s five main domes, six minarets and eight secondary domes. It sits next to the Hagia Sophia, another popular tourist site.",
+        "title": "Sultan Ahmed Mosque",
+        "start": 0,
+        "end": 723,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 129
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 130,
+            "end": 302
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 303,
+            "end": 411
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 412,
+            "end": 472
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 473,
+            "end": 659
+          },
+          {
+            "kind": "sentence",
+            "number": 5,
+            "start": 660,
+            "end": 723
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5ac14ee95542991316484aea",
+          "url": "https://en.wikipedia.org/wiki/Sultan_Ahmed_Mosque",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.031009615384615385
+      },
+      {
+        "evidence_id": "E5",
+        "chunk_id": "5ebe2140-1091-5b3c-b90c-f47e07c346b9",
+        "document_id": "e20ba8f7-0bc2-5d81-80a7-878a320c33df",
+        "revision_id": "d1efd892-7fad-54af-a7a5-d554d8a672f9",
+        "strategy": "a",
+        "text": "The Yeni Cami (pronounced \"Yeni jami\"), meaning New Mosque; originally named the Valide Sultan Mosque (Turkish: \"Valide Sultan Camii\" ) and later New Valide Sultan Mosque (Turkish: \"Yeni Valide Sultan Camii\" ) after its partial reconstruction and completion between 1660 and 1665; is an Ottoman imperial mosque located in the Eminönü quarter of Istanbul, Turkey. It is situated on the Golden Horn, at the southern end of the Galata Bridge, and is one of the famous architectural landmarks of Istanbul.",
+        "title": "New Mosque (Istanbul)",
+        "start": 0,
+        "end": 501,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 362
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 363,
+            "end": 501
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5ab3f8c0554299753aec5a0e",
+          "url": "https://en.wikipedia.org/wiki/New_Mosque_%28Istanbul%29",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.029709507042253523
+      },
+      {
+        "evidence_id": "E11",
+        "chunk_id": "dfca2efb-f4d7-54de-bdb1-5c1b89f5933f",
+        "document_id": "1c3cbd07-6a5e-5b8c-a708-80b647680cf4",
+        "revision_id": "75c31245-dc45-5cc1-b96b-3eccab7ce5d3",
+        "strategy": "a",
+        "text": "The Theodosius Cistern (Greek: Κινστέρνα Θεοδοσίου , Turkish: Şerefiye Sarnıcı ) is one of many ancient cisterns of Constantinople that lie beneath the city of Istanbul, Turkey. The modern entrance is in Piyer Loti Caddesi, Fatih.",
+        "title": "Theodosius Cistern",
+        "start": 0,
+        "end": 230,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 177
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 178,
+            "end": 230
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5adef3db5542993a75d263b7",
+          "url": "https://en.wikipedia.org/wiki/Theodosius_Cistern",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.027529761904761904
+      }
+    ],
+    "search_trace": [
+      {
+        "query": "Laleli Mosque neighborhood Esma Sultan Mansion neighborhood Istanbul",
+        "strategy": "a",
+        "profile": "1a8846753a25",
+        "embedding_usage": {
+          "model": "text-embedding-3-small",
+          "input_tokens": 0,
+          "api_calls": 0,
+          "cache_hits": 1,
+          "estimated_cost_usd": 0.0
+        },
+        "document_ranking": [
+          "f7a39ca9-e08b-5b25-b51a-72424e833d39",
+          "ac5bbcbf-8282-592f-bf78-913d4bedd4ca",
+          "c7796c05-470e-5b69-9067-7c230110ee06",
+          "2c3b0fb0-950b-5a40-8254-3e7e9403ac96",
+          "e20ba8f7-0bc2-5d81-80a7-878a320c33df",
+          "75292302-9ac3-5d0d-9b06-025ea838c985",
+          "b924f48e-3db8-5685-91b2-45ff8ca08f94",
+          "0bb20416-5e77-5ffe-9fe8-f2033c384518",
+          "2bb48276-6494-5cb3-bd4f-a283011e68e9",
+          "4c91610f-371a-5384-a592-1507efce325e"
+        ],
+        "candidate_counts": {
+          "dense": 30,
+          "bm25": 30,
+          "active_dense": 30,
+          "active_bm25": 30
+        },
+        "evidence": [
+          {
+            "evidence_id": "E1",
+            "chunk_id": "1da8ecef-8edf-50a7-97f5-e53597dc710a",
+            "document_id": "f7a39ca9-e08b-5b25-b51a-72424e833d39",
+            "revision_id": "35527cf5-bdb5-55f3-b301-232d1e6ae1d7",
+            "strategy": "a",
+            "text": "The Esma Sultan Mansion (Turkish: \"Esma Sultan Yalısı\" ), a historical yalı (English: waterside mansion ) located at Bosphorus in Ortaköy neighborhood of Istanbul, Turkey and named after its original owner Esma Sultan, is used today as a cultural center after being redeveloped.",
+            "title": "Esma Sultan Mansion",
+            "start": 0,
+            "end": 278,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 278
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5adbf0a255429947ff17385a",
+              "url": "https://en.wikipedia.org/wiki/Esma_Sultan_Mansion",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03278688524590164
+          },
+          {
+            "evidence_id": "E2",
+            "chunk_id": "bb29db37-eef7-5ddd-b84b-3149cc8fcf8d",
+            "document_id": "ac5bbcbf-8282-592f-bf78-913d4bedd4ca",
+            "revision_id": "064a6266-95d3-5718-8d3d-a740979aab4d",
+            "strategy": "a",
+            "text": "The Laleli Mosque (Turkish: \"Laleli Camii, or Tulip Mosque\" ) is an 18th-century Ottoman imperial mosque located in Laleli, Fatih, Istanbul, Turkey.",
+            "title": "Laleli Mosque",
+            "start": 0,
+            "end": 148,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 148
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5adbf0a255429947ff17385a",
+              "url": "https://en.wikipedia.org/wiki/Laleli_Mosque",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03200204813108039
+          },
+          {
+            "evidence_id": "E3",
+            "chunk_id": "d094e903-d39a-5656-acdb-7e5896b9a2be",
+            "document_id": "c7796c05-470e-5b69-9067-7c230110ee06",
+            "revision_id": "274eda8a-4b52-524b-8249-259cf93e47fe",
+            "strategy": "a",
+            "text": "The Pertevniyal Valide Sultan Mosque, also known as the Aksaray Valide Mosque (Turkish: \"Pertevniyal Valide Sultan Camii, Aksaray Valide Sultan Camii\" ), is an Ottoman imperial mosque in Istanbul, Turkey. It is located at the intersection of Ordu Street and Atatürk Boulevard in the Aksaray neighborhood. It is located next to Pertevniyal High School (Turkish: \"Pertevniyal Lisesi\") which was also built by the order of Sultana Pertevniyal in 1872.",
+            "title": "Pertevniyal Valide Sultan Mosque",
+            "start": 0,
+            "end": 448,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 204
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 205,
+                "end": 304
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 305,
+                "end": 448
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ab3f8c0554299753aec5a0e",
+              "url": "https://en.wikipedia.org/wiki/Pertevniyal_Valide_Sultan_Mosque",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03200204813108039
+          },
+          {
+            "evidence_id": "E4",
+            "chunk_id": "81cf5e46-ff4f-533e-9212-1616dfa34cc6",
+            "document_id": "2c3b0fb0-950b-5a40-8254-3e7e9403ac96",
+            "revision_id": "e531527d-1dd8-5ceb-9021-b16094904973",
+            "strategy": "a",
+            "text": "The Sultan Ahmed Mosque or Sultan Ahmet Mosque (Turkish: \"Sultan Ahmet Camii\" ) is a historic mosque located in Istanbul, Turkey. A popular tourist site, the Sultan Ahmed Mosque continues to function as a mosque today; men still kneel in prayer on the mosque's lush red carpet after the call to prayer. The Blue Mosque, as it is popularly known, was constructed between 1609 and 1616 during the rule of Ahmed I. Its Külliye contains Ahmed's tomb, a madrasah and a hospice. Hand-painted blue tiles adorn the mosque’s interior walls, and at night the mosque is bathed in blue as lights frame the mosque’s five main domes, six minarets and eight secondary domes. It sits next to the Hagia Sophia, another popular tourist site.",
+            "title": "Sultan Ahmed Mosque",
+            "start": 0,
+            "end": 723,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 129
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 130,
+                "end": 302
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 303,
+                "end": 411
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 412,
+                "end": 472
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 473,
+                "end": 659
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 660,
+                "end": 723
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ac14ee95542991316484aea",
+              "url": "https://en.wikipedia.org/wiki/Sultan_Ahmed_Mosque",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.031009615384615385
+          },
+          {
+            "evidence_id": "E5",
+            "chunk_id": "5ebe2140-1091-5b3c-b90c-f47e07c346b9",
+            "document_id": "e20ba8f7-0bc2-5d81-80a7-878a320c33df",
+            "revision_id": "d1efd892-7fad-54af-a7a5-d554d8a672f9",
+            "strategy": "a",
+            "text": "The Yeni Cami (pronounced \"Yeni jami\"), meaning New Mosque; originally named the Valide Sultan Mosque (Turkish: \"Valide Sultan Camii\" ) and later New Valide Sultan Mosque (Turkish: \"Yeni Valide Sultan Camii\" ) after its partial reconstruction and completion between 1660 and 1665; is an Ottoman imperial mosque located in the Eminönü quarter of Istanbul, Turkey. It is situated on the Golden Horn, at the southern end of the Galata Bridge, and is one of the famous architectural landmarks of Istanbul.",
+            "title": "New Mosque (Istanbul)",
+            "start": 0,
+            "end": 501,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 362
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 363,
+                "end": 501
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ab3f8c0554299753aec5a0e",
+              "url": "https://en.wikipedia.org/wiki/New_Mosque_%28Istanbul%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.029709507042253523
+          },
+          {
+            "evidence_id": "E6",
+            "chunk_id": "68fcfba9-c4e9-5122-89d1-c3593900f54f",
+            "document_id": "75292302-9ac3-5d0d-9b06-025ea838c985",
+            "revision_id": "371b009c-f440-570a-8658-decf2fbe0368",
+            "strategy": "a",
+            "text": "Pertev Mehmet Paşa Mosque, also known as \"Yeni Cuma Cami\" meaning \"New Friday Mosque\" in Turkish, is a 16th-century Ottoman mosque in the town of Izmit, Turkey. The architect was Mimar Sinan. It was built for Pertev Mehmed Paşa, an Ottoman vizier during the reigns of sultan Suleyman I and Selim II. The construction was finished in 1579. The mosque is part of a larger complex (Külliye) which originally included a madrasa, hammam, caravanserai, fountain and a lower education school. The mosque itself is a single domed structure and the dome has 24 windows. The minaret was damaged during the 1999 İzmit earthquake.",
+            "title": "Pertev Pasha Mosque",
+            "start": 0,
+            "end": 618,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 160
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 161,
+                "end": 191
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 192,
+                "end": 299
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 300,
+                "end": 338
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 339,
+                "end": 485
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 486,
+                "end": 560
+              },
+              {
+                "kind": "sentence",
+                "number": 6,
+                "start": 561,
+                "end": 618
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a81cc0355429926c1cdad7c",
+              "url": "https://en.wikipedia.org/wiki/Pertev_Pasha_Mosque",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.028258706467661692
+          },
+          {
+            "evidence_id": "E7",
+            "chunk_id": "e5c3a7f7-364c-5e31-85a6-b282a6c0639f",
+            "document_id": "b924f48e-3db8-5685-91b2-45ff8ca08f94",
+            "revision_id": "34d0b125-46fa-5354-88f2-aaf13084651d",
+            "strategy": "a",
+            "text": "The Yeni Valide Mosque (Turkish: \"Yeni Valide Camii\" ) is an 18th-century Ottoman mosque in the Üsküdar district of Istanbul, Turkey.",
+            "title": "Yeni Valide Mosque",
+            "start": 0,
+            "end": 133,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 133
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ab3f8c0554299753aec5a0e",
+              "url": "https://en.wikipedia.org/wiki/Yeni_Valide_Mosque",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.02786377708978328
+          },
+          {
+            "evidence_id": "E8",
+            "chunk_id": "7467a851-df8d-5f87-9174-36994f3dd239",
+            "document_id": "0bb20416-5e77-5ffe-9fe8-f2033c384518",
+            "revision_id": "b73395d7-8308-52b5-bf5c-bf0c124510fd",
+            "strategy": "a",
+            "text": "The Atik Valide Mosque (Turkish: \"Atik Valide Camii, Eski Valide Camii\" ) is an Ottoman mosque located on the hill above a large and densely populated district of Üsküdar, in Istanbul, Turkey.",
+            "title": "Atik Valide Mosque",
+            "start": 0,
+            "end": 192,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 192
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ab3f8c0554299753aec5a0e",
+              "url": "https://en.wikipedia.org/wiki/Atik_Valide_Mosque",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.027479766610201392
+          }
+        ],
+        "round": 1,
+        "tool_call_id": "call_b0ltDUAfsfYjtjHBHxGOm0vo",
+        "executed": true,
+        "follow_up": null,
+        "requested_query": "Laleli Mosque neighborhood Esma Sultan Mansion neighborhood Istanbul",
+        "query_adjusted": false
+      },
+      {
+        "query": "Laleli Fatih neighborhood and Ortaköy neighborhood same neighborhood?",
+        "strategy": "a",
+        "profile": "1a8846753a25",
+        "embedding_usage": {
+          "model": "text-embedding-3-small",
+          "input_tokens": 15,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 3e-07
+        },
+        "document_ranking": [
+          "ac5bbcbf-8282-592f-bf78-913d4bedd4ca",
+          "5c2e466f-5cd2-5c28-8003-0f6ca04d5771",
+          "f7a39ca9-e08b-5b25-b51a-72424e833d39",
+          "9b4cd097-6c7f-561e-8bc6-9838fb13bcd2",
+          "1c3cbd07-6a5e-5b8c-a708-80b647680cf4",
+          "fc6a1b17-e5f4-5043-bf69-e4b9f1a27115",
+          "394086f0-7410-5b8a-abe5-54bc752eaaeb",
+          "2392225f-f875-57c3-84c1-e8bfad253fea",
+          "36d9aced-8a89-5dcb-a264-a8164640c86d",
+          "3963f77e-a115-5515-a397-29654c18fd13"
+        ],
+        "candidate_counts": {
+          "dense": 30,
+          "bm25": 30,
+          "active_dense": 30,
+          "active_bm25": 30
+        },
+        "evidence": [
+          {
+            "evidence_id": "E2",
+            "chunk_id": "bb29db37-eef7-5ddd-b84b-3149cc8fcf8d",
+            "document_id": "ac5bbcbf-8282-592f-bf78-913d4bedd4ca",
+            "revision_id": "064a6266-95d3-5718-8d3d-a740979aab4d",
+            "strategy": "a",
+            "text": "The Laleli Mosque (Turkish: \"Laleli Camii, or Tulip Mosque\" ) is an 18th-century Ottoman imperial mosque located in Laleli, Fatih, Istanbul, Turkey.",
+            "title": "Laleli Mosque",
+            "start": 0,
+            "end": 148,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 148
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5adbf0a255429947ff17385a",
+              "url": "https://en.wikipedia.org/wiki/Laleli_Mosque",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03278688524590164
+          },
+          {
+            "evidence_id": "E9",
+            "chunk_id": "731bff74-f370-5824-b382-084eba573219",
+            "document_id": "5c2e466f-5cd2-5c28-8003-0f6ca04d5771",
+            "revision_id": "cd281003-ced7-5ea8-a1c4-16a8ca0f1090",
+            "strategy": "a",
+            "text": "The Ali Demi neighborhood () is a neighborhood located in Tirana, Albania. It is named after Ali Demi, a World War II hero. The street with the same name is its main artery. The adjacent \"Mihal Grameno\" neighborhood is sometimes referred as part of the broader Ali Demi neighborhood.",
+            "title": "Ali Demi (neighborhood)",
+            "start": 0,
+            "end": 283,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 74
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 75,
+                "end": 123
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 124,
+                "end": 173
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 174,
+                "end": 283
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5aba6b2d55429901930fa7a9",
+              "url": "https://en.wikipedia.org/wiki/Ali_Demi_%28neighborhood%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.029116045245077504
+          },
+          {
+            "evidence_id": "E1",
+            "chunk_id": "1da8ecef-8edf-50a7-97f5-e53597dc710a",
+            "document_id": "f7a39ca9-e08b-5b25-b51a-72424e833d39",
+            "revision_id": "35527cf5-bdb5-55f3-b301-232d1e6ae1d7",
+            "strategy": "a",
+            "text": "The Esma Sultan Mansion (Turkish: \"Esma Sultan Yalısı\" ), a historical yalı (English: waterside mansion ) located at Bosphorus in Ortaköy neighborhood of Istanbul, Turkey and named after its original owner Esma Sultan, is used today as a cultural center after being redeveloped.",
+            "title": "Esma Sultan Mansion",
+            "start": 0,
+            "end": 278,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 278
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5adbf0a255429947ff17385a",
+              "url": "https://en.wikipedia.org/wiki/Esma_Sultan_Mansion",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.02878726010616578
+          },
+          {
+            "evidence_id": "E10",
+            "chunk_id": "7252d6e7-3aa4-533e-9509-6b7e45d145e3",
+            "document_id": "9b4cd097-6c7f-561e-8bc6-9838fb13bcd2",
+            "revision_id": "67e94996-3620-535b-ae2d-8a197045552e",
+            "strategy": "a",
+            "text": "Beyazıt Square (Turkish: \"Beyazıt Meydanı\" ) is a square in the district of Fatih, situated in the European part of Istanbul, Turkey. It is officially named \"Freedom Square\" (\"Hürriyet Meydanı\" ), but is known as Beyazıt Square after the Bayezid II Mosque on one side of it. The Square is the former site of the Forum of Theodosius built by Constantine the Great. On one side of the square is the main entrance of Istanbul University; the Beyazıt Tower is on the university's campus and can be seen from the square. The current form of the square was designed by Turgut Cansever.",
+            "title": "Beyazıt Square",
+            "start": 0,
+            "end": 579,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 133
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 134,
+                "end": 274
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 275,
+                "end": 363
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 364,
+                "end": 515
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 516,
+                "end": 579
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5adf18305542995ec70e8f6d",
+              "url": "https://en.wikipedia.org/wiki/Beyaz%C4%B1t_Square",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.028577260665441927
+          },
+          {
+            "evidence_id": "E11",
+            "chunk_id": "dfca2efb-f4d7-54de-bdb1-5c1b89f5933f",
+            "document_id": "1c3cbd07-6a5e-5b8c-a708-80b647680cf4",
+            "revision_id": "75c31245-dc45-5cc1-b96b-3eccab7ce5d3",
+            "strategy": "a",
+            "text": "The Theodosius Cistern (Greek: Κινστέρνα Θεοδοσίου , Turkish: Şerefiye Sarnıcı ) is one of many ancient cisterns of Constantinople that lie beneath the city of Istanbul, Turkey. The modern entrance is in Piyer Loti Caddesi, Fatih.",
+            "title": "Theodosius Cistern",
+            "start": 0,
+            "end": 230,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 177
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 178,
+                "end": 230
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5adef3db5542993a75d263b7",
+              "url": "https://en.wikipedia.org/wiki/Theodosius_Cistern",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.027529761904761904
+          },
+          {
+            "evidence_id": "E12",
+            "chunk_id": "540e642e-48a2-5058-92b1-2c521fda1d42",
+            "document_id": "fc6a1b17-e5f4-5043-bf69-e4b9f1a27115",
+            "revision_id": "d85ee2ac-5765-518a-8997-4140878dff9f",
+            "strategy": "a",
+            "text": "The Museum of Turkish Calligraphy Art (Turkish: \"\" ) is a museum located in Beyazıt Square in Fatih district of Istanbul, Turkey. Constructed between 1506–08, the building formerly served as the medrese of Bayezid II Complex which was built within the order of Sultan Bayezid II, son of Mehmed the Conqueror. Its collection consists of 3121 pieces mainly reflecting Islamic calligraphic art.",
+            "title": "Museum of Turkish Calligraphy Art",
+            "start": 0,
+            "end": 391,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 129
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 130,
+                "end": 308
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 309,
+                "end": 391
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5adf18305542995ec70e8f6d",
+              "url": "https://en.wikipedia.org/wiki/Museum_of_Turkish_Calligraphy_Art",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.02690100430416069
+          },
+          {
+            "evidence_id": "E13",
+            "chunk_id": "9969bd60-23c7-588b-b010-7c28171dcd58",
+            "document_id": "394086f0-7410-5b8a-abe5-54bc752eaaeb",
+            "revision_id": "35e0c612-1570-55c5-a124-aa2bea2624f2",
+            "strategy": "a",
+            "text": "Vezneciler is a station on the M2 line of the Istanbul Metro. The station is located under Şehzadebaşı Street and 16 Mart Şehitleri Street in the historical Fatih district of Istanbul. Opened on 16 March 2014, Vezneciler is the most recently opened station on the M2 line. At 30m below ground level, it is the deepest station of the Istanbul Metro. During the inauguration the station was dedicated to Ottoman police officers who were killed during a conflict with British forces during the Occupation of Constantinople in 1920. Istanbul University's main campus, Beyazıt Square and the Şehzade Mosque are a few landmarks in the vicinity of the station. On 7 June 2016, a bomb reportedly targeting a police bus struck around this station.",
+            "title": "Vezneciler (Istanbul Metro)",
+            "start": 0,
+            "end": 738,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 61
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 62,
+                "end": 184
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 185,
+                "end": 272
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 273,
+                "end": 348
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 349,
+                "end": 528
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 529,
+                "end": 653
+              },
+              {
+                "kind": "sentence",
+                "number": 6,
+                "start": 654,
+                "end": 738
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5adf18305542995ec70e8f6d",
+              "url": "https://en.wikipedia.org/wiki/Vezneciler_%28Istanbul_Metro%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.025383141762452106
+          },
+          {
+            "evidence_id": "E14",
+            "chunk_id": "5e37939d-9d5e-5d6c-995a-466dac2faad0",
+            "document_id": "2392225f-f875-57c3-84c1-e8bfad253fea",
+            "revision_id": "d20e3e8a-8341-5e43-9ad7-fa9ba7dbcf37",
+            "strategy": "a",
+            "text": "Fethi Paşa Korusu (\"Fethi Pasha Grove\") is a large park in Istanbul, Turkey, on the hillside coming right down to the Bosphorus shore in the area called Paşalimanı. It is located between Kuzguncuk and Sultantepe neighborhoods in district Üsküdar on the",
+            "title": "Fethi Paşa Korusu",
+            "start": 0,
+            "end": 252,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 164
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 165,
+                "end": 252
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a81cc0355429926c1cdad7c",
+              "url": "https://en.wikipedia.org/wiki/Fethi_Pa%C5%9Fa_Korusu",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015873015873015872
+          }
+        ],
+        "round": 2,
+        "tool_call_id": "call_wHw6Jwf7ARIkOzK3TNyYTHyA",
+        "executed": true,
+        "follow_up": null,
+        "requested_query": "Laleli Fatih neighborhood and Ortaköy neighborhood same neighborhood?",
+        "query_adjusted": false
+      }
+    ],
+    "workflow": "bounded_tools_v1",
+    "execution": {
+      "planning_rounds": 2,
+      "retrieval_rounds": 2,
+      "tool_calls": 2,
+      "searches": 2,
+      "llm_calls": 3,
+      "embedding_calls": 1,
+      "total_provider_calls": 4,
+      "stop_reason": "retrieval_limit",
+      "limits": {
+        "retrieval_rounds": 2,
+        "searches": 3,
+        "llm_calls": 3,
+        "embedding_calls": 3,
+        "total_provider_calls": 6
+      }
+    },
+    "configuration": {
+      "strategy": "a",
+      "profile": "1a8846753a25",
+      "embedding_model": "text-embedding-3-small",
+      "embedding_dimensions": 384,
+      "generation_model": "gpt-5.4-mini-2026-03-17",
+      "prompt_version": "bounded_tools_quote_ids_v1"
+    },
+    "usage": {
+      "planning": [
+        {
+          "input_tokens": 524,
+          "output_tokens": 34,
+          "estimated_cost_usd": 0.000546,
+          "model": "gpt-5.4-mini-2026-03-17"
+        },
+        {
+          "input_tokens": 1465,
+          "output_tokens": 37,
+          "estimated_cost_usd": 0.00126525,
+          "model": "gpt-5.4-mini-2026-03-17"
+        }
+      ],
+      "generation": {
+        "input_tokens": 3737,
+        "output_tokens": 97,
+        "estimated_cost_usd": 0.00323925,
+        "model": "gpt-5.4-mini-2026-03-17"
+      },
+      "embeddings": [
+        {
+          "model": "text-embedding-3-small",
+          "input_tokens": 0,
+          "api_calls": 0,
+          "cache_hits": 1,
+          "estimated_cost_usd": 0.0
+        },
+        {
+          "model": "text-embedding-3-small",
+          "input_tokens": 15,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 3e-07
+        }
+      ],
+      "estimated_model_cost_usd": 0.0050505,
+      "estimated_total_cost_usd": 0.0050508
+    },
+    "latency_ms": 5189
+  },
+  "error": null,
+  "elapsed_ms": 5189,
+  "ledger_after": {
+    "calls": 521,
+    "reserved_usd": 1.35464692,
+    "estimated_actual_usd": 0.45728617,
+    "input_tokens": 7255286,
+    "output_tokens": 10679
+  }
+}

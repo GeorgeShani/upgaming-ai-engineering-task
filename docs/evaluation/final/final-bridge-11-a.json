@@ -1,0 +1,1169 @@
+{
+  "case_id": "final-bridge-11",
+  "strategy": "a",
+  "question": "The football manager who recruited David Beckham managed Manchester United during what timeframe?",
+  "started_at": "2026-10-28T07:01:42.920814+00:00",
+  "ledger_before": {
+    "calls": 486,
+    "reserved_usd": 1.19562755,
+    "estimated_actual_usd": 0.41180405,
+    "input_tokens": 7202412,
+    "output_tokens": 9367
+  },
+  "result": {
+    "status": "answered",
+    "claims": [
+      {
+        "text": "The football manager who recruited David Beckham was Alex Ferguson.",
+        "citations": [
+          {
+            "evidence_id": "E1",
+            "quote": "Instead, he had drafted in young players like Nicky Butt, David Beckham, Paul Scholes and the Neville brothers, Gary and Phil."
+          }
+        ]
+      },
+      {
+        "text": "Alex Ferguson managed Manchester United from 1986 to 2013.",
+        "citations": [
+          {
+            "evidence_id": "E2",
+            "quote": "Sir Alexander Chapman Ferguson, CBE (born 31 December 1941) is a Scottish former football manager and player who managed Manchester United from 1986 to 2013."
+          }
+        ]
+      }
+    ],
+    "conflicting_claims": [],
+    "answer": "The football manager who recruited David Beckham was Alex Ferguson. [E1] Alex Ferguson managed Manchester United from 1986 to 2013. [E2]",
+    "evidence": [
+      {
+        "evidence_id": "E2",
+        "chunk_id": "67a0a353-ec60-5953-8a84-6f146a046885",
+        "document_id": "fb336186-8d75-5821-9323-e862bfef508a",
+        "revision_id": "25db438b-e0a0-58a1-9052-98b47b91c68d",
+        "strategy": "a",
+        "text": "Sir Alexander Chapman Ferguson, CBE (born 31 December 1941) is a Scottish former football manager and player who managed Manchester United from 1986 to 2013. He is regarded by many players, managers and analysts to be one of the greatest and most successful managers of all time.",
+        "title": "Alex Ferguson",
+        "start": 0,
+        "end": 279,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 157
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 158,
+            "end": 279
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "validation",
+          "record_id": "5ab6d09255429954757d337d",
+          "url": "https://en.wikipedia.org/wiki/Alex_Ferguson",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.03177805800756621
+      },
+      {
+        "evidence_id": "E1",
+        "chunk_id": "608561b9-afc1-5b36-9f2b-4b33bfe44525",
+        "document_id": "25716a25-cc78-508a-84b3-4279e5ebba68",
+        "revision_id": "0b9fa741-bc48-5730-853b-1b33407d9f33",
+        "strategy": "a",
+        "text": "The 1995–96 season was Manchester United's fourth season in the Premier League, and their 21st consecutive season in the top division of English football. United finished the season by becoming the first English team to win the Double (league title and FA Cup) twice. Their triumph was made all the more remarkable by the fact that Alex Ferguson had sold experienced players Paul Ince, Mark Hughes and Andrei Kanchelskis before the start of the season, and not made any major signings. Instead, he had drafted in young players like Nicky Butt, David Beckham, Paul Scholes and the Neville brothers, Gary and Phil.",
+        "title": "1995–96 Manchester United F.C. season",
+        "start": 0,
+        "end": 612,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 154
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 155,
+            "end": 267
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 268,
+            "end": 485
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 486,
+            "end": 612
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "validation",
+          "record_id": "5ab6d09255429954757d337d",
+          "url": "https://en.wikipedia.org/wiki/1995%E2%80%9396_Manchester_United_F.C._season",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.0315136476426799
+      },
+      {
+        "evidence_id": "E3",
+        "chunk_id": "36b3b8d4-0a24-593e-bd16-64b35e2ba411",
+        "document_id": "d692dbec-682a-5187-ac75-fee89d755441",
+        "revision_id": "360a3adf-ff7f-5a7b-b7d3-65352aebb06d",
+        "strategy": "a",
+        "text": "Fergie's Fledglings were a group of football players recruited by Manchester United under the management of Sir Alex Ferguson (often nicknamed \"Fergie\") and trained by assistant coaches Brian Kidd and Eric Harrison, before eventually progressing to the first team during the 1990s.",
+        "title": "Fergie's Fledglings",
+        "start": 0,
+        "end": 281,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 281
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a7f74835542992e7d278d05",
+          "url": "https://en.wikipedia.org/wiki/Fergie%27s_Fledglings",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.03200204813108039
+      },
+      {
+        "evidence_id": "E5",
+        "chunk_id": "938186b8-5a53-5c3a-853f-637d344491e4",
+        "document_id": "232dc798-cfd0-598e-b308-64b0a4ef80fe",
+        "revision_id": "0311d825-27c1-5188-b15d-02a578805ee8",
+        "strategy": "a",
+        "text": "Sir Matt Busby Way is a road in Old Trafford, Greater Manchester, England. It is the location of Manchester United's Old Trafford football ground. Formerly known as Warwick Road North, it was renamed in honour of the legendary Manchester United manager, Sir Matt Busby, in 1993. Busby died less than a year later on 20 January 1994, aged 84. A bronze statue of Sir Matt Busby, erected in 1996, stands on the exterior of the East Stand of the Old Trafford stadium, overlooking Sir Matt Busby Way.",
+        "title": "Sir Matt Busby Way",
+        "start": 0,
+        "end": 495,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 74
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 75,
+            "end": 146
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 147,
+            "end": 278
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 279,
+            "end": 341
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 342,
+            "end": 495
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a7feaee5542994857a7684b",
+          "url": "https://en.wikipedia.org/wiki/Sir_Matt_Busby_Way",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.029437229437229435
+      },
+      {
+        "evidence_id": "E7",
+        "chunk_id": "71820547-a87f-5d71-9570-0f175ab2c520",
+        "document_id": "2e258de2-27a0-582e-a991-2c60fd47d0b9",
+        "revision_id": "855430d1-113f-5f96-8f95-b54b294b0f3b",
+        "strategy": "a",
+        "text": "Michael Carrick (born 28 July 1981) is an English professional footballer who plays for Manchester United, whom he also captains, and the England national team. Carrick primarily plays as a central midfielder, but he has been used as an emergency centre-back under Alex Ferguson, David Moyes and Louis van Gaal. Distinctive features of his play include his inventive distribution of the ball along with his passing and crossing abilities. He is one of the most decorated English footballers of all time.",
+        "title": "Michael Carrick",
+        "start": 0,
+        "end": 503,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 160
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 161,
+            "end": 311
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 312,
+            "end": 438
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 439,
+            "end": 503
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5ab5b3ff5542997d4ad1f1b3",
+          "url": "https://en.wikipedia.org/wiki/Michael_Carrick",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.030776515151515152
+      },
+      {
+        "evidence_id": "E4",
+        "chunk_id": "314ea66f-e26c-567d-b911-ab1c3196dbac",
+        "document_id": "7b45f384-8532-57e3-84d4-a99db375adc3",
+        "revision_id": "7407cc02-16c4-5191-bbe7-dbe8b96cc7b9",
+        "strategy": "a",
+        "text": "United is a British television film directed by James Strong and written by Chris Chibnall. It is based on the true story of Manchester United's \"Busby Babes\" and the aftermath of the 1958 Munich air disaster, with the film's events taking place between August 1956 and May 1958. In particular, the film focuses on the experiences of assistant manager Jimmy Murphy, played by David Tennant, and Bobby Charlton, played by Jack O'Connell.",
+        "title": "United (2011 film)",
+        "start": 0,
+        "end": 436,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 91
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 92,
+            "end": 279
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 280,
+            "end": 436
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a7e43c95542991319bc9458",
+          "url": "https://en.wikipedia.org/wiki/United_%282011_film%29",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.030309988518943745
+      },
+      {
+        "evidence_id": "E6",
+        "chunk_id": "a914229e-5487-54e7-b121-eecb7ff2d1d6",
+        "document_id": "56d795be-3215-5742-b39a-b91c6db6fe0a",
+        "revision_id": "7da9fe97-3c78-5bf7-bf83-8765dd23a5f0",
+        "strategy": "a",
+        "text": "David \"Dave\" Mangnall (21 September 1905 – 10 April 1962) was an English football player and manager. As a player, he scored 144 goals from 221 appearances in the Football League playing for Leeds United, Huddersfield Town, Birmingham, West Ham United, Millwall and Queens Park Rangers. He was manager of Queens Park Rangers for eight years.",
+        "title": "Dave Mangnall",
+        "start": 0,
+        "end": 341,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 101
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 102,
+            "end": 286
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 287,
+            "end": 341
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5ab475635542991779162c9f",
+          "url": "https://en.wikipedia.org/wiki/Dave_Mangnall",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.027222222222222224
+      },
+      {
+        "evidence_id": "E9",
+        "chunk_id": "d7c2798a-0372-5abb-b608-f77ffe7ed295",
+        "document_id": "7c33bd80-c63a-5fca-ab69-765fa44c8bc0",
+        "revision_id": "4eeaf029-a120-5a27-9093-ddc480787444",
+        "strategy": "a",
+        "text": "Joe Armstrong (1894–1975) succeeded Louis Rocca as chief scout of Manchester United after World War II. At United, Armstrong worked very closely alongside reserve team manager and follow scout, Jimmy Murphy, and the youth players that made their debut from the early 1950s onwards are a tribute to their scouting skills.",
+        "title": "Joe Armstrong (football scout)",
+        "start": 0,
+        "end": 320,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 103
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 104,
+            "end": 320
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a7e43c95542991319bc9458",
+          "url": "https://en.wikipedia.org/wiki/Joe_Armstrong_%28football_scout%29",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.027884615384615386
+      }
+    ],
+    "search_trace": [
+      {
+        "query": "football manager recruited David Beckham managed Manchester United timeframe",
+        "strategy": "a",
+        "profile": "1a8846753a25",
+        "embedding_usage": {
+          "model": "text-embedding-3-small",
+          "input_tokens": 9,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 1.8e-07
+        },
+        "document_ranking": [
+          "25716a25-cc78-508a-84b3-4279e5ebba68",
+          "fb336186-8d75-5821-9323-e862bfef508a",
+          "d692dbec-682a-5187-ac75-fee89d755441",
+          "7b45f384-8532-57e3-84d4-a99db375adc3",
+          "232dc798-cfd0-598e-b308-64b0a4ef80fe",
+          "56d795be-3215-5742-b39a-b91c6db6fe0a",
+          "2e258de2-27a0-582e-a991-2c60fd47d0b9",
+          "1c8096bf-c09d-532d-98ef-0b31fc85c353",
+          "c437a97d-2b61-5f4a-a4aa-080832097514",
+          "22cc8ed7-c4a3-5c50-847f-c53851f5826c"
+        ],
+        "candidate_counts": {
+          "dense": 30,
+          "bm25": 30,
+          "active_dense": 30,
+          "active_bm25": 30
+        },
+        "evidence": [
+          {
+            "evidence_id": "E1",
+            "chunk_id": "608561b9-afc1-5b36-9f2b-4b33bfe44525",
+            "document_id": "25716a25-cc78-508a-84b3-4279e5ebba68",
+            "revision_id": "0b9fa741-bc48-5730-853b-1b33407d9f33",
+            "strategy": "a",
+            "text": "The 1995–96 season was Manchester United's fourth season in the Premier League, and their 21st consecutive season in the top division of English football. United finished the season by becoming the first English team to win the Double (league title and FA Cup) twice. Their triumph was made all the more remarkable by the fact that Alex Ferguson had sold experienced players Paul Ince, Mark Hughes and Andrei Kanchelskis before the start of the season, and not made any major signings. Instead, he had drafted in young players like Nicky Butt, David Beckham, Paul Scholes and the Neville brothers, Gary and Phil.",
+            "title": "1995–96 Manchester United F.C. season",
+            "start": 0,
+            "end": 612,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 154
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 155,
+                "end": 267
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 268,
+                "end": 485
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 486,
+                "end": 612
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5ab6d09255429954757d337d",
+              "url": "https://en.wikipedia.org/wiki/1995%E2%80%9396_Manchester_United_F.C._season",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03200204813108039
+          },
+          {
+            "evidence_id": "E2",
+            "chunk_id": "67a0a353-ec60-5953-8a84-6f146a046885",
+            "document_id": "fb336186-8d75-5821-9323-e862bfef508a",
+            "revision_id": "25db438b-e0a0-58a1-9052-98b47b91c68d",
+            "strategy": "a",
+            "text": "Sir Alexander Chapman Ferguson, CBE (born 31 December 1941) is a Scottish former football manager and player who managed Manchester United from 1986 to 2013. He is regarded by many players, managers and analysts to be one of the greatest and most successful managers of all time.",
+            "title": "Alex Ferguson",
+            "start": 0,
+            "end": 279,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 157
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 158,
+                "end": 279
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5ab6d09255429954757d337d",
+              "url": "https://en.wikipedia.org/wiki/Alex_Ferguson",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03177805800756621
+          },
+          {
+            "evidence_id": "E3",
+            "chunk_id": "36b3b8d4-0a24-593e-bd16-64b35e2ba411",
+            "document_id": "d692dbec-682a-5187-ac75-fee89d755441",
+            "revision_id": "360a3adf-ff7f-5a7b-b7d3-65352aebb06d",
+            "strategy": "a",
+            "text": "Fergie's Fledglings were a group of football players recruited by Manchester United under the management of Sir Alex Ferguson (often nicknamed \"Fergie\") and trained by assistant coaches Brian Kidd and Eric Harrison, before eventually progressing to the first team during the 1990s.",
+            "title": "Fergie's Fledglings",
+            "start": 0,
+            "end": 281,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 281
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a7f74835542992e7d278d05",
+              "url": "https://en.wikipedia.org/wiki/Fergie%27s_Fledglings",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03149801587301587
+          },
+          {
+            "evidence_id": "E4",
+            "chunk_id": "314ea66f-e26c-567d-b911-ab1c3196dbac",
+            "document_id": "7b45f384-8532-57e3-84d4-a99db375adc3",
+            "revision_id": "7407cc02-16c4-5191-bbe7-dbe8b96cc7b9",
+            "strategy": "a",
+            "text": "United is a British television film directed by James Strong and written by Chris Chibnall. It is based on the true story of Manchester United's \"Busby Babes\" and the aftermath of the 1958 Munich air disaster, with the film's events taking place between August 1956 and May 1958. In particular, the film focuses on the experiences of assistant manager Jimmy Murphy, played by David Tennant, and Bobby Charlton, played by Jack O'Connell.",
+            "title": "United (2011 film)",
+            "start": 0,
+            "end": 436,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 91
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 92,
+                "end": 279
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 280,
+                "end": 436
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a7e43c95542991319bc9458",
+              "url": "https://en.wikipedia.org/wiki/United_%282011_film%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.030309988518943745
+          },
+          {
+            "evidence_id": "E5",
+            "chunk_id": "938186b8-5a53-5c3a-853f-637d344491e4",
+            "document_id": "232dc798-cfd0-598e-b308-64b0a4ef80fe",
+            "revision_id": "0311d825-27c1-5188-b15d-02a578805ee8",
+            "strategy": "a",
+            "text": "Sir Matt Busby Way is a road in Old Trafford, Greater Manchester, England. It is the location of Manchester United's Old Trafford football ground. Formerly known as Warwick Road North, it was renamed in honour of the legendary Manchester United manager, Sir Matt Busby, in 1993. Busby died less than a year later on 20 January 1994, aged 84. A bronze statue of Sir Matt Busby, erected in 1996, stands on the exterior of the East Stand of the Old Trafford stadium, overlooking Sir Matt Busby Way.",
+            "title": "Sir Matt Busby Way",
+            "start": 0,
+            "end": 495,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 74
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 75,
+                "end": 146
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 147,
+                "end": 278
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 279,
+                "end": 341
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 342,
+                "end": 495
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a7feaee5542994857a7684b",
+              "url": "https://en.wikipedia.org/wiki/Sir_Matt_Busby_Way",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.028484848484848488
+          },
+          {
+            "evidence_id": "E6",
+            "chunk_id": "a914229e-5487-54e7-b121-eecb7ff2d1d6",
+            "document_id": "56d795be-3215-5742-b39a-b91c6db6fe0a",
+            "revision_id": "7da9fe97-3c78-5bf7-bf83-8765dd23a5f0",
+            "strategy": "a",
+            "text": "David \"Dave\" Mangnall (21 September 1905 – 10 April 1962) was an English football player and manager. As a player, he scored 144 goals from 221 appearances in the Football League playing for Leeds United, Huddersfield Town, Birmingham, West Ham United, Millwall and Queens Park Rangers. He was manager of Queens Park Rangers for eight years.",
+            "title": "Dave Mangnall",
+            "start": 0,
+            "end": 341,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 101
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 102,
+                "end": 286
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 287,
+                "end": 341
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ab475635542991779162c9f",
+              "url": "https://en.wikipedia.org/wiki/Dave_Mangnall",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.027222222222222224
+          },
+          {
+            "evidence_id": "E7",
+            "chunk_id": "71820547-a87f-5d71-9570-0f175ab2c520",
+            "document_id": "2e258de2-27a0-582e-a991-2c60fd47d0b9",
+            "revision_id": "855430d1-113f-5f96-8f95-b54b294b0f3b",
+            "strategy": "a",
+            "text": "Michael Carrick (born 28 July 1981) is an English professional footballer who plays for Manchester United, whom he also captains, and the England national team. Carrick primarily plays as a central midfielder, but he has been used as an emergency centre-back under Alex Ferguson, David Moyes and Louis van Gaal. Distinctive features of his play include his inventive distribution of the ball along with his passing and crossing abilities. He is one of the most decorated English footballers of all time.",
+            "title": "Michael Carrick",
+            "start": 0,
+            "end": 503,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 160
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 161,
+                "end": 311
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 312,
+                "end": 438
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 439,
+                "end": 503
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ab5b3ff5542997d4ad1f1b3",
+              "url": "https://en.wikipedia.org/wiki/Michael_Carrick",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.026356857985087564
+          },
+          {
+            "evidence_id": "E8",
+            "chunk_id": "101c0599-5109-51b3-a1f2-ef6b3bf27f65",
+            "document_id": "1c8096bf-c09d-532d-98ef-0b31fc85c353",
+            "revision_id": "2fda5ce0-f9b9-52be-b25c-f6f02c1c6f4c",
+            "strategy": "a",
+            "text": "The 1979–80 season was Manchester United's 78th season in the Football League, and their fifth consecutive season in the top division of English football. They finished the season second in the league, just two points behind champions Liverpool, and qualified for the 1980–81 UEFA Cup. It was the first season at the club for new midfielder Ray Wilkins, signed in the 1979 close season for a club record fee of £750,000. However, United had gained a reputation for playing generally dull football under Sexton, and by the end of his third season as manager they had still yet to win a major trophy, as Liverpool ruled supreme in the English league.",
+            "title": "1979–80 Manchester United F.C. season",
+            "start": 0,
+            "end": 648,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 154
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 155,
+                "end": 285
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 286,
+                "end": 420
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 421,
+                "end": 648
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ab475635542991779162c9f",
+              "url": "https://en.wikipedia.org/wiki/1979%E2%80%9380_Manchester_United_F.C._season",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.02564935064935065
+          }
+        ],
+        "round": 1,
+        "tool_call_id": "call_dpXaINZrkm3Me45t4q7c5M6m",
+        "executed": true,
+        "follow_up": null,
+        "requested_query": "football manager recruited David Beckham managed Manchester United timeframe",
+        "query_adjusted": false
+      },
+      {
+        "query": "Sir Alexander Chapman Ferguson Alex Ferguson managed Manchester United from 1986 to 2013",
+        "strategy": "a",
+        "profile": "1a8846753a25",
+        "embedding_usage": {
+          "model": "text-embedding-3-small",
+          "input_tokens": 17,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 3.4000000000000003e-07
+        },
+        "document_ranking": [
+          "fb336186-8d75-5821-9323-e862bfef508a",
+          "d692dbec-682a-5187-ac75-fee89d755441",
+          "25716a25-cc78-508a-84b3-4279e5ebba68",
+          "2e258de2-27a0-582e-a991-2c60fd47d0b9",
+          "232dc798-cfd0-598e-b308-64b0a4ef80fe",
+          "7c33bd80-c63a-5fca-ab69-765fa44c8bc0",
+          "31997b9d-093f-569d-829f-9d83d1d2f25b",
+          "9884af30-747e-53a9-afa9-0b8b862abdb8",
+          "bfabda3e-2973-5690-bfde-d832cd9446f2",
+          "da3c7588-6c08-5153-827e-9983bde7f2c3"
+        ],
+        "candidate_counts": {
+          "dense": 30,
+          "bm25": 30,
+          "active_dense": 30,
+          "active_bm25": 30
+        },
+        "evidence": [
+          {
+            "evidence_id": "E2",
+            "chunk_id": "67a0a353-ec60-5953-8a84-6f146a046885",
+            "document_id": "fb336186-8d75-5821-9323-e862bfef508a",
+            "revision_id": "25db438b-e0a0-58a1-9052-98b47b91c68d",
+            "strategy": "a",
+            "text": "Sir Alexander Chapman Ferguson, CBE (born 31 December 1941) is a Scottish former football manager and player who managed Manchester United from 1986 to 2013. He is regarded by many players, managers and analysts to be one of the greatest and most successful managers of all time.",
+            "title": "Alex Ferguson",
+            "start": 0,
+            "end": 279,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 157
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 158,
+                "end": 279
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5ab6d09255429954757d337d",
+              "url": "https://en.wikipedia.org/wiki/Alex_Ferguson",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03278688524590164
+          },
+          {
+            "evidence_id": "E3",
+            "chunk_id": "36b3b8d4-0a24-593e-bd16-64b35e2ba411",
+            "document_id": "d692dbec-682a-5187-ac75-fee89d755441",
+            "revision_id": "360a3adf-ff7f-5a7b-b7d3-65352aebb06d",
+            "strategy": "a",
+            "text": "Fergie's Fledglings were a group of football players recruited by Manchester United under the management of Sir Alex Ferguson (often nicknamed \"Fergie\") and trained by assistant coaches Brian Kidd and Eric Harrison, before eventually progressing to the first team during the 1990s.",
+            "title": "Fergie's Fledglings",
+            "start": 0,
+            "end": 281,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 281
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a7f74835542992e7d278d05",
+              "url": "https://en.wikipedia.org/wiki/Fergie%27s_Fledglings",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03200204813108039
+          },
+          {
+            "evidence_id": "E1",
+            "chunk_id": "608561b9-afc1-5b36-9f2b-4b33bfe44525",
+            "document_id": "25716a25-cc78-508a-84b3-4279e5ebba68",
+            "revision_id": "0b9fa741-bc48-5730-853b-1b33407d9f33",
+            "strategy": "a",
+            "text": "The 1995–96 season was Manchester United's fourth season in the Premier League, and their 21st consecutive season in the top division of English football. United finished the season by becoming the first English team to win the Double (league title and FA Cup) twice. Their triumph was made all the more remarkable by the fact that Alex Ferguson had sold experienced players Paul Ince, Mark Hughes and Andrei Kanchelskis before the start of the season, and not made any major signings. Instead, he had drafted in young players like Nicky Butt, David Beckham, Paul Scholes and the Neville brothers, Gary and Phil.",
+            "title": "1995–96 Manchester United F.C. season",
+            "start": 0,
+            "end": 612,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 154
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 155,
+                "end": 267
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 268,
+                "end": 485
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 486,
+                "end": 612
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5ab6d09255429954757d337d",
+              "url": "https://en.wikipedia.org/wiki/1995%E2%80%9396_Manchester_United_F.C._season",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.0315136476426799
+          },
+          {
+            "evidence_id": "E7",
+            "chunk_id": "71820547-a87f-5d71-9570-0f175ab2c520",
+            "document_id": "2e258de2-27a0-582e-a991-2c60fd47d0b9",
+            "revision_id": "855430d1-113f-5f96-8f95-b54b294b0f3b",
+            "strategy": "a",
+            "text": "Michael Carrick (born 28 July 1981) is an English professional footballer who plays for Manchester United, whom he also captains, and the England national team. Carrick primarily plays as a central midfielder, but he has been used as an emergency centre-back under Alex Ferguson, David Moyes and Louis van Gaal. Distinctive features of his play include his inventive distribution of the ball along with his passing and crossing abilities. He is one of the most decorated English footballers of all time.",
+            "title": "Michael Carrick",
+            "start": 0,
+            "end": 503,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 160
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 161,
+                "end": 311
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 312,
+                "end": 438
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 439,
+                "end": 503
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ab5b3ff5542997d4ad1f1b3",
+              "url": "https://en.wikipedia.org/wiki/Michael_Carrick",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.030776515151515152
+          },
+          {
+            "evidence_id": "E5",
+            "chunk_id": "938186b8-5a53-5c3a-853f-637d344491e4",
+            "document_id": "232dc798-cfd0-598e-b308-64b0a4ef80fe",
+            "revision_id": "0311d825-27c1-5188-b15d-02a578805ee8",
+            "strategy": "a",
+            "text": "Sir Matt Busby Way is a road in Old Trafford, Greater Manchester, England. It is the location of Manchester United's Old Trafford football ground. Formerly known as Warwick Road North, it was renamed in honour of the legendary Manchester United manager, Sir Matt Busby, in 1993. Busby died less than a year later on 20 January 1994, aged 84. A bronze statue of Sir Matt Busby, erected in 1996, stands on the exterior of the East Stand of the Old Trafford stadium, overlooking Sir Matt Busby Way.",
+            "title": "Sir Matt Busby Way",
+            "start": 0,
+            "end": 495,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 74
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 75,
+                "end": 146
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 147,
+                "end": 278
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 279,
+                "end": 341
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 342,
+                "end": 495
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a7feaee5542994857a7684b",
+              "url": "https://en.wikipedia.org/wiki/Sir_Matt_Busby_Way",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.029437229437229435
+          },
+          {
+            "evidence_id": "E9",
+            "chunk_id": "d7c2798a-0372-5abb-b608-f77ffe7ed295",
+            "document_id": "7c33bd80-c63a-5fca-ab69-765fa44c8bc0",
+            "revision_id": "4eeaf029-a120-5a27-9093-ddc480787444",
+            "strategy": "a",
+            "text": "Joe Armstrong (1894–1975) succeeded Louis Rocca as chief scout of Manchester United after World War II. At United, Armstrong worked very closely alongside reserve team manager and follow scout, Jimmy Murphy, and the youth players that made their debut from the early 1950s onwards are a tribute to their scouting skills.",
+            "title": "Joe Armstrong (football scout)",
+            "start": 0,
+            "end": 320,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 103
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 104,
+                "end": 320
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a7e43c95542991319bc9458",
+              "url": "https://en.wikipedia.org/wiki/Joe_Armstrong_%28football_scout%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.027884615384615386
+          },
+          {
+            "evidence_id": "E10",
+            "chunk_id": "a71b7df9-664b-5a3b-997a-ed5892566c2a",
+            "document_id": "31997b9d-093f-569d-829f-9d83d1d2f25b",
+            "revision_id": "81bb2919-71f2-514e-9429-06de718c6033",
+            "strategy": "a",
+            "text": "Carlos Manuel Brito Leal Queiroz, (] ; born 1 March 1953), is a Portuguese football coach who is the current manager of the Iran national team. He has also been the manager of the Portuguese national team and Spanish club Real Madrid, and was Alex Ferguson's assistant manager at English club Manchester United. He has qualified three national teams to the World Cup, those being South Africa in 2002, Portugal in 2010, and Iran in 2014 and 2018.",
+            "title": "Carlos Queiroz",
+            "start": 0,
+            "end": 446,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 143
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 144,
+                "end": 311
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 312,
+                "end": 446
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5abda7165542992ac4f382e5",
+              "url": "https://en.wikipedia.org/wiki/Carlos_Queiroz",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015873015873015872
+          },
+          {
+            "evidence_id": "E11",
+            "chunk_id": "cc9797ba-07ae-5df8-871b-0d91a2de2ea1",
+            "document_id": "9884af30-747e-53a9-afa9-0b8b862abdb8",
+            "revision_id": "2f4fc259-dca2-5de3-9e04-331d748fc3a9",
+            "strategy": "a",
+            "text": "Hugh \"Hughie\" Ferguson (2 March 1895 – 8 January 1930) was a Scottish footballer. One of only seven men in the history of the English and Scottish Football Leagues to have scored 350 League goals, he began his career at Motherwell and established himself as a consistent scorer, finishing as the top goalscorer in the Scottish Football League on three occasions between 1918 and 1921. His 284 league goals remains a record at the club.",
+            "title": "Hughie Ferguson",
+            "start": 0,
+            "end": 435,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 81
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 82,
+                "end": 384
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 385,
+                "end": 435
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ae625335542995703ce8b28",
+              "url": "https://en.wikipedia.org/wiki/Hughie_Ferguson",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015625
+          }
+        ],
+        "round": 2,
+        "tool_call_id": "call_9PJat09uCxw5O2hmha8Yi0y8",
+        "executed": true,
+        "follow_up": {
+          "evidence_id": "E2",
+          "entity": "Sir Alexander Chapman Ferguson"
+        },
+        "requested_query": "Alex Ferguson managed Manchester United from 1986 to 2013",
+        "query_adjusted": true
+      }
+    ],
+    "workflow": "bounded_tools_v1",
+    "execution": {
+      "planning_rounds": 2,
+      "retrieval_rounds": 2,
+      "tool_calls": 2,
+      "searches": 2,
+      "llm_calls": 3,
+      "embedding_calls": 2,
+      "total_provider_calls": 5,
+      "stop_reason": "retrieval_limit",
+      "limits": {
+        "retrieval_rounds": 2,
+        "searches": 3,
+        "llm_calls": 3,
+        "embedding_calls": 3,
+        "total_provider_calls": 6
+      }
+    },
+    "configuration": {
+      "strategy": "a",
+      "profile": "1a8846753a25",
+      "embedding_model": "text-embedding-3-small",
+      "embedding_dimensions": 384,
+      "generation_model": "gpt-5.4-mini-2026-03-17",
+      "prompt_version": "bounded_tools_quote_ids_v1"
+    },
+    "usage": {
+      "planning": [
+        {
+          "input_tokens": 522,
+          "output_tokens": 32,
+          "estimated_cost_usd": 0.0005355,
+          "model": "gpt-5.4-mini-2026-03-17"
+        },
+        {
+          "input_tokens": 1498,
+          "output_tokens": 48,
+          "estimated_cost_usd": 0.0013395,
+          "model": "gpt-5.4-mini-2026-03-17"
+        }
+      ],
+      "generation": {
+        "input_tokens": 3584,
+        "output_tokens": 89,
+        "estimated_cost_usd": 0.0030885,
+        "model": "gpt-5.4-mini-2026-03-17"
+      },
+      "embeddings": [
+        {
+          "model": "text-embedding-3-small",
+          "input_tokens": 9,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 1.8e-07
+        },
+        {
+          "model": "text-embedding-3-small",
+          "input_tokens": 17,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 3.4000000000000003e-07
+        }
+      ],
+      "estimated_model_cost_usd": 0.0049635,
+      "estimated_total_cost_usd": 0.00496402
+    },
+    "latency_ms": 5466
+  },
+  "error": null,
+  "elapsed_ms": 5466,
+  "ledger_after": {
+    "calls": 491,
+    "reserved_usd": 1.21444557,
+    "estimated_actual_usd": 0.41676807,
+    "input_tokens": 7208042,
+    "output_tokens": 9536
+  }
+}

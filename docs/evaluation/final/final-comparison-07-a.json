@@ -1,0 +1,1162 @@
+{
+  "case_id": "final-comparison-07",
+  "strategy": "a",
+  "question": "Which performance act has a higher instrument to person ratio, Badly Drawn Boy or Wolf Alice? ",
+  "started_at": "2026-10-28T07:05:38.262649+00:00",
+  "ledger_before": {
+    "calls": 560,
+    "reserved_usd": 1.5111033,
+    "estimated_actual_usd": 0.50137755,
+    "input_tokens": 7305935,
+    "output_tokens": 12063
+  },
+  "result": {
+    "status": "answered",
+    "claims": [
+      {
+        "text": "Badly Drawn Boy has a higher instrument-to-person ratio than Wolf Alice.",
+        "citations": [
+          {
+            "evidence_id": "E2",
+            "quote": "Damon Michael Gough (born 2 October 1969, in Dunstable, Bedfordshire), known by the stage name Badly Drawn Boy, is an English indie singer-songwriter and multi-instrumentalist."
+          },
+          {
+            "evidence_id": "E1",
+            "quote": "Wolf Alice are a four-piece alternative rock band from North London, formed initially as a two-person band in 2010. Its members since 2012 are Ellie Rowsell (vocals, guitar), Joff Oddie (guitars, vocals), Theo Ellis (bass), and Joel Amey (drums, vocals)."
+          },
+          {
+            "evidence_id": "E1",
+            "quote": "Its members since 2012 are Ellie Rowsell (vocals, guitar), Joff Oddie (guitars, vocals), Theo Ellis (bass), and Joel Amey (drums, vocals)."
+          }
+        ]
+      }
+    ],
+    "conflicting_claims": [],
+    "answer": "Badly Drawn Boy has a higher instrument-to-person ratio than Wolf Alice. [E2] [E1]",
+    "evidence": [
+      {
+        "evidence_id": "E1",
+        "chunk_id": "72ce3e15-b4d1-5a09-8b41-2b84597a5449",
+        "document_id": "1b84714c-4434-577b-b5ff-f7ccfe5441cd",
+        "revision_id": "f7cf8edc-c24a-5b80-a7cd-0a74406d1081",
+        "strategy": "a",
+        "text": "Wolf Alice are a four-piece alternative rock band from North London, formed initially as a two-person band in 2010. Its members since 2012 are Ellie Rowsell (vocals, guitar), Joff Oddie (guitars, vocals), Theo Ellis (bass), and Joel Amey (drums, vocals).",
+        "title": "Wolf Alice",
+        "start": 0,
+        "end": 254,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 115
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 116,
+            "end": 254
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "validation",
+          "record_id": "5ae2070a5542994d89d5b313",
+          "url": "https://en.wikipedia.org/wiki/Wolf_Alice",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.03252247488101534
+      },
+      {
+        "evidence_id": "E2",
+        "chunk_id": "b0df1601-247e-5e9d-b6d7-819e8921f010",
+        "document_id": "2b449073-64de-5ec5-bcde-d3d36acf8639",
+        "revision_id": "ee5118d1-ec4a-5b23-83f7-905c090a2931",
+        "strategy": "a",
+        "text": "Damon Michael Gough (born 2 October 1969, in Dunstable, Bedfordshire), known by the stage name Badly Drawn Boy, is an English indie singer-songwriter and multi-instrumentalist.",
+        "title": "Badly Drawn Boy",
+        "start": 0,
+        "end": 176,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 176
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "validation",
+          "record_id": "5ae2070a5542994d89d5b313",
+          "url": "https://en.wikipedia.org/wiki/Badly_Drawn_Boy",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.032018442622950824
+      },
+      {
+        "evidence_id": "E5",
+        "chunk_id": "5f812736-70b6-569f-adc7-6e3740874dea",
+        "document_id": "046b9df2-bda7-5abb-bd82-c95b2dc2e08c",
+        "revision_id": "59dc6c17-1ff9-52a2-87cd-4b70d9f99f9e",
+        "strategy": "a",
+        "text": "Arctic Monkeys are an English rock band formed in 2002 in High Green, a suburb of Sheffield. The band consists of Alex Turner (lead vocals, rhythm/lead guitar), Matt Helders (drums, vocals), Jamie Cook (lead/rhythm guitar) and Nick O'Malley (bass, backing vocals). Former band member Andy Nicholson (bass guitar, backing vocals) left the band in 2006 shortly after their debut album was released.",
+        "title": "Arctic Monkeys",
+        "start": 0,
+        "end": 396,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 92
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 93,
+            "end": 264
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 265,
+            "end": 396
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5ae744685542997b22f6a664",
+          "url": "https://en.wikipedia.org/wiki/Arctic_Monkeys",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.015873015873015872
+      },
+      {
+        "evidence_id": "E9",
+        "chunk_id": "5007bcf3-b591-58a5-9b19-b21580015e8f",
+        "document_id": "d6336ae8-b791-586c-a697-6ea0373491d6",
+        "revision_id": "b7634135-9103-5bd0-89fa-7454b238c04c",
+        "strategy": "a",
+        "text": "Jonathan Richard Guy Greenwood (born 5 November 1971) is an English musician and the lead guitarist and keyboardist of the alternative rock band Radiohead. A multi-instrumentalist, Greenwood also plays instruments including the bass guitar, piano, viola, and drums, and is a prominent player of the ondes Martenot, an early electronic instrument. He works with electronic techniques such as programming, sampling and looping, and writes music software used by Radiohead. He described his role in the band as an arranger, helping to transform singer Thom Yorke's demos into full songs. He has been named one of the greatest guitarists of all time by publications including the \"NME,\" \"Rolling Stone\" and \"Spin\".",
+        "title": "Jonny Greenwood",
+        "start": 0,
+        "end": 710,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 155
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 156,
+            "end": 346
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 347,
+            "end": 470
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 471,
+            "end": 584
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 585,
+            "end": 710
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5ab7f030554299366779405a",
+          "url": "https://en.wikipedia.org/wiki/Jonny_Greenwood",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.029857397504456328
+      },
+      {
+        "evidence_id": "E3",
+        "chunk_id": "cb2b0f39-d5a4-5f93-ac66-95d1cc3c535a",
+        "document_id": "0c0a685b-40de-5f86-b580-bb8a139d5e09",
+        "revision_id": "3508ff44-3a38-554c-b659-a9096398adf8",
+        "strategy": "a",
+        "text": "Dark Before Dawn is the fifth album by American rock band Breaking Benjamin, released on June 23, 2015 by Hollywood Records. It is the group's first studio album following the band's hiatus lasting from early 2010 to late 2014, and the first album to feature an entirely different lineup alongside founder and frontman Benjamin Burnley. Produced and composed by Burnley, the album took shape towards the end of the hiatus and was mostly written before the new lineup \"even played a single note together.\" The recording process took place afterwards at both a personal studio of Burnley's and at the same studio \"Phobia\" (2006) was recorded, with all of the band members performing their respective instruments, including background vocals performed by guitarist Keith Wallen and bassist Aaron Bruch, making the record their first to feature vocals other than Burnley's.",
+        "title": "Dark Before Dawn",
+        "start": 0,
+        "end": 869,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 124
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 125,
+            "end": 336
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 337,
+            "end": 504
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 505,
+            "end": 869
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a7a3c465542996a35c17150",
+          "url": "https://en.wikipedia.org/wiki/Dark_Before_Dawn",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.01639344262295082
+      },
+      {
+        "evidence_id": "E4",
+        "chunk_id": "31d78c5e-6d59-5037-b6da-cc5a7ad3f0aa",
+        "document_id": "d0269a72-7310-5a85-8353-8721117c6906",
+        "revision_id": "1f0a1514-06d2-5ab5-9e43-c61c239428f7",
+        "strategy": "a",
+        "text": " NME, Melody Maker and Sounds; but the 18-month delay in releasing their album didn't help. The line-up expanded to a six-piece with the addition of Owen Howell (previously drummer with Belfast band Stage B) on percussion, but then drummer Michael Morris returned to live in Belfast, and soon after saxophonist Gordy Blair left to join Australian band Dave Graney and the Rattlesnakes. Big Self's final gig was as a four-piece at the Irish concert Self Aid, where they shared the stage with U2 and Van Morrison, Elvis Costello, and the Pogues.",
+        "title": "Big Self",
+        "start": 1041,
+        "end": 1584,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 7,
+            "start": 929,
+            "end": 1132
+          },
+          {
+            "kind": "sentence",
+            "number": 8,
+            "start": 1133,
+            "end": 1426
+          },
+          {
+            "kind": "sentence",
+            "number": 9,
+            "start": 1427,
+            "end": 1584
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5ae4345f5542995dadf242ec",
+          "url": "https://en.wikipedia.org/wiki/Big_Self",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.016129032258064516
+      },
+      {
+        "evidence_id": "E10",
+        "chunk_id": "f58f7bd9-17e1-5272-9138-b7c12cc64990",
+        "document_id": "844c611a-70c6-596b-ad00-0aeec2a3ef82",
+        "revision_id": "7602a901-9383-5338-87fc-290b66593e6b",
+        "strategy": "a",
+        "text": "Nick Cave and the Bad Seeds are an Australian rock band formed in Melbourne in 1983 by vocalist Nick Cave, multi-instrumentalist Mick Harvey and guitarist Blixa Bargeld. The band has featured international personnel throughout its career and presently consists of Cave, violinist and multi-instrumentalist Warren Ellis, bassist Martyn P. Casey and keyboardist Conway Savage (all four from Australia), guitarist George Vjestica (United Kingdom), keyboard/percussionist Toby Dammit (United States) and drummers Thomas Wydler (Switzerland) and Jim Sclavunos (United States). The band has released fifteen studio albums and completed numerous international tours, and has been considered \"one of the most original and celebrated bands of the post-punk and alternative rock eras in the '80s and onward\".",
+        "title": "Nick Cave and the Bad Seeds",
+        "start": 0,
+        "end": 798,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 169
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 170,
+            "end": 571
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 572,
+            "end": 798
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a8c4f45554299653c1aa036",
+          "url": "https://en.wikipedia.org/wiki/Nick_Cave_and_the_Bad_Seeds",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.027820121951219513
+      },
+      {
+        "evidence_id": "E11",
+        "chunk_id": "04880cb7-5d1e-539a-9798-eb65742dd98c",
+        "document_id": "09b36e07-56a9-56e9-af34-62d8d19c0eb2",
+        "revision_id": "af2aebb7-2483-50a6-ac57-4c293d18bfda",
+        "strategy": "a",
+        "text": "Steve Wickham is an Irish musician. Originally from Marino, Dublin, but calling Sligo home, Wickham played violin on the classic U2 song \"Sunday Bloody Sunday\", as well as recordings by Elvis Costello, the Hothouse Flowers, Sinéad O'Connor, and World Party. He is a long-standing member of The Waterboys. Wickham plays both rock and roll and traditional Irish music, and has developed a rock music technique for violin he calls the \"fuzz fiddle\".",
+        "title": "Steve Wickham",
+        "start": 0,
+        "end": 446,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 35
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 36,
+            "end": 257
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 258,
+            "end": 304
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 305,
+            "end": 446
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a8ced36554299441c6b9f81",
+          "url": "https://en.wikipedia.org/wiki/Steve_Wickham",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.016129032258064516
+      }
+    ],
+    "search_trace": [
+      {
+        "query": "Badly Drawn Boy Wolf Alice instruments persons ratio performance act lineup instruments members",
+        "strategy": "a",
+        "profile": "1a8846753a25",
+        "embedding_usage": {
+          "model": "text-embedding-3-small",
+          "input_tokens": 15,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 3e-07
+        },
+        "document_ranking": [
+          "1b84714c-4434-577b-b5ff-f7ccfe5441cd",
+          "2b449073-64de-5ec5-bcde-d3d36acf8639",
+          "0c0a685b-40de-5f86-b580-bb8a139d5e09",
+          "d0269a72-7310-5a85-8353-8721117c6906",
+          "046b9df2-bda7-5abb-bd82-c95b2dc2e08c",
+          "95006c9a-7611-5f6f-a6f3-b3a3608b8842",
+          "388f6e01-e81d-5885-acf0-0a2c8eac1550",
+          "993f4ba2-b510-5761-a064-de9c5fe66261",
+          "8299ab56-8de7-5104-a5bf-e9271b207ece",
+          "fa52582d-39e3-5349-b7a4-27be0d1cd61f"
+        ],
+        "candidate_counts": {
+          "dense": 30,
+          "bm25": 30,
+          "active_dense": 30,
+          "active_bm25": 30
+        },
+        "evidence": [
+          {
+            "evidence_id": "E1",
+            "chunk_id": "72ce3e15-b4d1-5a09-8b41-2b84597a5449",
+            "document_id": "1b84714c-4434-577b-b5ff-f7ccfe5441cd",
+            "revision_id": "f7cf8edc-c24a-5b80-a7cd-0a74406d1081",
+            "strategy": "a",
+            "text": "Wolf Alice are a four-piece alternative rock band from North London, formed initially as a two-person band in 2010. Its members since 2012 are Ellie Rowsell (vocals, guitar), Joff Oddie (guitars, vocals), Theo Ellis (bass), and Joel Amey (drums, vocals).",
+            "title": "Wolf Alice",
+            "start": 0,
+            "end": 254,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 115
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 116,
+                "end": 254
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5ae2070a5542994d89d5b313",
+              "url": "https://en.wikipedia.org/wiki/Wolf_Alice",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03252247488101534
+          },
+          {
+            "evidence_id": "E2",
+            "chunk_id": "b0df1601-247e-5e9d-b6d7-819e8921f010",
+            "document_id": "2b449073-64de-5ec5-bcde-d3d36acf8639",
+            "revision_id": "ee5118d1-ec4a-5b23-83f7-905c090a2931",
+            "strategy": "a",
+            "text": "Damon Michael Gough (born 2 October 1969, in Dunstable, Bedfordshire), known by the stage name Badly Drawn Boy, is an English indie singer-songwriter and multi-instrumentalist.",
+            "title": "Badly Drawn Boy",
+            "start": 0,
+            "end": 176,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 176
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5ae2070a5542994d89d5b313",
+              "url": "https://en.wikipedia.org/wiki/Badly_Drawn_Boy",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.030303030303030304
+          },
+          {
+            "evidence_id": "E3",
+            "chunk_id": "cb2b0f39-d5a4-5f93-ac66-95d1cc3c535a",
+            "document_id": "0c0a685b-40de-5f86-b580-bb8a139d5e09",
+            "revision_id": "3508ff44-3a38-554c-b659-a9096398adf8",
+            "strategy": "a",
+            "text": "Dark Before Dawn is the fifth album by American rock band Breaking Benjamin, released on June 23, 2015 by Hollywood Records. It is the group's first studio album following the band's hiatus lasting from early 2010 to late 2014, and the first album to feature an entirely different lineup alongside founder and frontman Benjamin Burnley. Produced and composed by Burnley, the album took shape towards the end of the hiatus and was mostly written before the new lineup \"even played a single note together.\" The recording process took place afterwards at both a personal studio of Burnley's and at the same studio \"Phobia\" (2006) was recorded, with all of the band members performing their respective instruments, including background vocals performed by guitarist Keith Wallen and bassist Aaron Bruch, making the record their first to feature vocals other than Burnley's.",
+            "title": "Dark Before Dawn",
+            "start": 0,
+            "end": 869,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 124
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 125,
+                "end": 336
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 337,
+                "end": 504
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 505,
+                "end": 869
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a7a3c465542996a35c17150",
+              "url": "https://en.wikipedia.org/wiki/Dark_Before_Dawn",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.01639344262295082
+          },
+          {
+            "evidence_id": "E4",
+            "chunk_id": "31d78c5e-6d59-5037-b6da-cc5a7ad3f0aa",
+            "document_id": "d0269a72-7310-5a85-8353-8721117c6906",
+            "revision_id": "1f0a1514-06d2-5ab5-9e43-c61c239428f7",
+            "strategy": "a",
+            "text": " NME, Melody Maker and Sounds; but the 18-month delay in releasing their album didn't help. The line-up expanded to a six-piece with the addition of Owen Howell (previously drummer with Belfast band Stage B) on percussion, but then drummer Michael Morris returned to live in Belfast, and soon after saxophonist Gordy Blair left to join Australian band Dave Graney and the Rattlesnakes. Big Self's final gig was as a four-piece at the Irish concert Self Aid, where they shared the stage with U2 and Van Morrison, Elvis Costello, and the Pogues.",
+            "title": "Big Self",
+            "start": 1041,
+            "end": 1584,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 7,
+                "start": 929,
+                "end": 1132
+              },
+              {
+                "kind": "sentence",
+                "number": 8,
+                "start": 1133,
+                "end": 1426
+              },
+              {
+                "kind": "sentence",
+                "number": 9,
+                "start": 1427,
+                "end": 1584
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ae4345f5542995dadf242ec",
+              "url": "https://en.wikipedia.org/wiki/Big_Self",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.016129032258064516
+          },
+          {
+            "evidence_id": "E5",
+            "chunk_id": "5f812736-70b6-569f-adc7-6e3740874dea",
+            "document_id": "046b9df2-bda7-5abb-bd82-c95b2dc2e08c",
+            "revision_id": "59dc6c17-1ff9-52a2-87cd-4b70d9f99f9e",
+            "strategy": "a",
+            "text": "Arctic Monkeys are an English rock band formed in 2002 in High Green, a suburb of Sheffield. The band consists of Alex Turner (lead vocals, rhythm/lead guitar), Matt Helders (drums, vocals), Jamie Cook (lead/rhythm guitar) and Nick O'Malley (bass, backing vocals). Former band member Andy Nicholson (bass guitar, backing vocals) left the band in 2006 shortly after their debut album was released.",
+            "title": "Arctic Monkeys",
+            "start": 0,
+            "end": 396,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 92
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 93,
+                "end": 264
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 265,
+                "end": 396
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ae744685542997b22f6a664",
+              "url": "https://en.wikipedia.org/wiki/Arctic_Monkeys",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015873015873015872
+          },
+          {
+            "evidence_id": "E6",
+            "chunk_id": "8fc0e683-7735-58bc-95f9-0f4ee1ec7198",
+            "document_id": "95006c9a-7611-5f6f-a6f3-b3a3608b8842",
+            "revision_id": "185a950a-93b5-5027-8537-6bd35b0b4893",
+            "strategy": "a",
+            "text": "Bad Religion is an American punk rock band that formed in Los Angeles, California, in 1980. They make extensive use of three-part vocal harmonies (which they refer to in their album liner notes as the \"oozin' aahs\") and guitar solos, and are known for their lyrics, which cover topics such as criticism of religion, political commentary and society in general. The band's lineup has changed several times over its lifespan, with lead vocalist Greg Graffin being the only consistent member; the current lineup, however, features three of the band's four original members (Graffin, Brett Gurewitz and Jay Bentley). To date, Bad Religion has released sixteen studio albums, two live albums, three compilation albums, three EPs (one of which is composed of covers of Christmas songs) and two DVDs (which were both recorded live). They are considered to be one of the best-selling punk rock acts of all time, having sold over five million albums worldwide.",
+            "title": "Bad Religion",
+            "start": 0,
+            "end": 951,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 91
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 92,
+                "end": 360
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 361,
+                "end": 612
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 613,
+                "end": 825
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 826,
+                "end": 951
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a74883755429979e288297c",
+              "url": "https://en.wikipedia.org/wiki/Bad_Religion",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015873015873015872
+          },
+          {
+            "evidence_id": "E7",
+            "chunk_id": "6ae1231f-27ef-5dd4-8837-ec400179b9ae",
+            "document_id": "388f6e01-e81d-5885-acf0-0a2c8eac1550",
+            "revision_id": "7475354d-e707-51d9-b98f-c5bee0268615",
+            "strategy": "a",
+            "text": "The Last Shadow Puppets are an English supergroup consisting of Alex Turner (Arctic Monkeys), Miles Kane (The Rascals, solo artist), James Ford (Simian, Simian Mobile Disco, music producer), and Zach Dawes (Mini Mansions). They are joined live by Loren Humphrey (Guards, music producer, session musician) and Tyler Parkford (Mini Mansions). The band released their debut album \"The Age of the Understatement\" in 2008. Following a lengthy hiatus, they returned, releasing second album \"Everything You've Come to Expect\" in 2016.",
+            "title": "The Last Shadow Puppets",
+            "start": 0,
+            "end": 527,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 222
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 223,
+                "end": 340
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 341,
+                "end": 417
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 418,
+                "end": 527
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a8dd88355429917b4a5bccf",
+              "url": "https://en.wikipedia.org/wiki/The_Last_Shadow_Puppets",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015625
+          },
+          {
+            "evidence_id": "E8",
+            "chunk_id": "fa0582dc-a989-585a-8225-530f2b7b6a1b",
+            "document_id": "993f4ba2-b510-5761-a064-de9c5fe66261",
+            "revision_id": "bf7c9d04-3cb7-59a4-a48a-e0b0e214491e",
+            "strategy": "a",
+            "text": "The Big Bad Wolf is an animated short released on 13 April 1934 by United Artists, produced by Walt Disney and directed by Burt Gillett as part of the Silly Symphony series. Acting partly as a sequel to the wildly successful adaptation of \"The Three Little Pigs\" of the previous year (maintaining the previous film's title characters as well as its villain), this film also acts as an adaptation of the fairy-tale \"Little Red Riding Hood\", with the Big Bad Wolf from 1933's \"Three Little Pigs\" acting as the adversary to Little Red Riding Hood and her grandmother.",
+            "title": "The Big Bad Wolf (film)",
+            "start": 0,
+            "end": 564,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 173
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 174,
+                "end": 564
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ae374545542994393b9e6c7",
+              "url": "https://en.wikipedia.org/wiki/The_Big_Bad_Wolf_%28film%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015625
+          }
+        ],
+        "round": 1,
+        "tool_call_id": "call_xlz1WHn1Dw1JUTgzupFbdYck",
+        "executed": true,
+        "follow_up": null,
+        "requested_query": "Badly Drawn Boy Wolf Alice instruments persons ratio performance act lineup instruments members",
+        "query_adjusted": false
+      },
+      {
+        "query": "Wolf Alice instrument count members and Badly Drawn Boy multi-instrumentalist ratio compare",
+        "strategy": "a",
+        "profile": "1a8846753a25",
+        "embedding_usage": {
+          "model": "text-embedding-3-small",
+          "input_tokens": 17,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 3.4000000000000003e-07
+        },
+        "document_ranking": [
+          "2b449073-64de-5ec5-bcde-d3d36acf8639",
+          "d6336ae8-b791-586c-a697-6ea0373491d6",
+          "1b84714c-4434-577b-b5ff-f7ccfe5441cd",
+          "844c611a-70c6-596b-ad00-0aeec2a3ef82",
+          "09b36e07-56a9-56e9-af34-62d8d19c0eb2",
+          "350c3576-f11e-54f4-a541-a07d0eabb276",
+          "7a2bbad2-9280-5b0d-ad10-73dcdf03ceb8",
+          "046b9df2-bda7-5abb-bd82-c95b2dc2e08c",
+          "e8ce8421-fcc9-526b-9e02-788438543f6c",
+          "37a53874-a461-590c-a204-2fa2e03410d3"
+        ],
+        "candidate_counts": {
+          "dense": 30,
+          "bm25": 30,
+          "active_dense": 30,
+          "active_bm25": 30
+        },
+        "evidence": [
+          {
+            "evidence_id": "E2",
+            "chunk_id": "b0df1601-247e-5e9d-b6d7-819e8921f010",
+            "document_id": "2b449073-64de-5ec5-bcde-d3d36acf8639",
+            "revision_id": "ee5118d1-ec4a-5b23-83f7-905c090a2931",
+            "strategy": "a",
+            "text": "Damon Michael Gough (born 2 October 1969, in Dunstable, Bedfordshire), known by the stage name Badly Drawn Boy, is an English indie singer-songwriter and multi-instrumentalist.",
+            "title": "Badly Drawn Boy",
+            "start": 0,
+            "end": 176,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 176
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5ae2070a5542994d89d5b313",
+              "url": "https://en.wikipedia.org/wiki/Badly_Drawn_Boy",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.032018442622950824
+          },
+          {
+            "evidence_id": "E9",
+            "chunk_id": "5007bcf3-b591-58a5-9b19-b21580015e8f",
+            "document_id": "d6336ae8-b791-586c-a697-6ea0373491d6",
+            "revision_id": "b7634135-9103-5bd0-89fa-7454b238c04c",
+            "strategy": "a",
+            "text": "Jonathan Richard Guy Greenwood (born 5 November 1971) is an English musician and the lead guitarist and keyboardist of the alternative rock band Radiohead. A multi-instrumentalist, Greenwood also plays instruments including the bass guitar, piano, viola, and drums, and is a prominent player of the ondes Martenot, an early electronic instrument. He works with electronic techniques such as programming, sampling and looping, and writes music software used by Radiohead. He described his role in the band as an arranger, helping to transform singer Thom Yorke's demos into full songs. He has been named one of the greatest guitarists of all time by publications including the \"NME,\" \"Rolling Stone\" and \"Spin\".",
+            "title": "Jonny Greenwood",
+            "start": 0,
+            "end": 710,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 155
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 156,
+                "end": 346
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 347,
+                "end": 470
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 471,
+                "end": 584
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 585,
+                "end": 710
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ab7f030554299366779405a",
+              "url": "https://en.wikipedia.org/wiki/Jonny_Greenwood",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.029857397504456328
+          },
+          {
+            "evidence_id": "E1",
+            "chunk_id": "72ce3e15-b4d1-5a09-8b41-2b84597a5449",
+            "document_id": "1b84714c-4434-577b-b5ff-f7ccfe5441cd",
+            "revision_id": "f7cf8edc-c24a-5b80-a7cd-0a74406d1081",
+            "strategy": "a",
+            "text": "Wolf Alice are a four-piece alternative rock band from North London, formed initially as a two-person band in 2010. Its members since 2012 are Ellie Rowsell (vocals, guitar), Joff Oddie (guitars, vocals), Theo Ellis (bass), and Joel Amey (drums, vocals).",
+            "title": "Wolf Alice",
+            "start": 0,
+            "end": 254,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 115
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 116,
+                "end": 254
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5ae2070a5542994d89d5b313",
+              "url": "https://en.wikipedia.org/wiki/Wolf_Alice",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.02938045560996381
+          },
+          {
+            "evidence_id": "E10",
+            "chunk_id": "f58f7bd9-17e1-5272-9138-b7c12cc64990",
+            "document_id": "844c611a-70c6-596b-ad00-0aeec2a3ef82",
+            "revision_id": "7602a901-9383-5338-87fc-290b66593e6b",
+            "strategy": "a",
+            "text": "Nick Cave and the Bad Seeds are an Australian rock band formed in Melbourne in 1983 by vocalist Nick Cave, multi-instrumentalist Mick Harvey and guitarist Blixa Bargeld. The band has featured international personnel throughout its career and presently consists of Cave, violinist and multi-instrumentalist Warren Ellis, bassist Martyn P. Casey and keyboardist Conway Savage (all four from Australia), guitarist George Vjestica (United Kingdom), keyboard/percussionist Toby Dammit (United States) and drummers Thomas Wydler (Switzerland) and Jim Sclavunos (United States). The band has released fifteen studio albums and completed numerous international tours, and has been considered \"one of the most original and celebrated bands of the post-punk and alternative rock eras in the '80s and onward\".",
+            "title": "Nick Cave and the Bad Seeds",
+            "start": 0,
+            "end": 798,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 169
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 170,
+                "end": 571
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 572,
+                "end": 798
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a8c4f45554299653c1aa036",
+              "url": "https://en.wikipedia.org/wiki/Nick_Cave_and_the_Bad_Seeds",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.027820121951219513
+          },
+          {
+            "evidence_id": "E11",
+            "chunk_id": "04880cb7-5d1e-539a-9798-eb65742dd98c",
+            "document_id": "09b36e07-56a9-56e9-af34-62d8d19c0eb2",
+            "revision_id": "af2aebb7-2483-50a6-ac57-4c293d18bfda",
+            "strategy": "a",
+            "text": "Steve Wickham is an Irish musician. Originally from Marino, Dublin, but calling Sligo home, Wickham played violin on the classic U2 song \"Sunday Bloody Sunday\", as well as recordings by Elvis Costello, the Hothouse Flowers, Sinéad O'Connor, and World Party. He is a long-standing member of The Waterboys. Wickham plays both rock and roll and traditional Irish music, and has developed a rock music technique for violin he calls the \"fuzz fiddle\".",
+            "title": "Steve Wickham",
+            "start": 0,
+            "end": 446,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 35
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 36,
+                "end": 257
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 258,
+                "end": 304
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 305,
+                "end": 446
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a8ced36554299441c6b9f81",
+              "url": "https://en.wikipedia.org/wiki/Steve_Wickham",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.016129032258064516
+          },
+          {
+            "evidence_id": "E12",
+            "chunk_id": "adacdcc6-0c37-5d79-894d-9ae47a3ec825",
+            "document_id": "350c3576-f11e-54f4-a541-a07d0eabb276",
+            "revision_id": "cd5b2b70-6cb2-57f9-b789-b44d9166270f",
+            "strategy": "a",
+            "text": "Christopher Funk is an American musician and multi-instrumentalist best known as a member of the Portland, Oregon, indie rock band The Decemberists. He plays guitar, pedal steel, piano, violin, dobro, hurdy-gurdy, mandolin, saxophone, the theremin and many other instruments. According to Colin Meloy, as stated at the Pilgrimage Festival in Franklin, TN on September 27, 2015, Funk was originally given the middle name \"Ryman\" but a clerical error on his birth certificate resulted in his middle name being recorded as \"Lyman.\"",
+            "title": "Chris Funk",
+            "start": 0,
+            "end": 528,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 148
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 149,
+                "end": 275
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 276,
+                "end": 528
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ab1e4405542993be8fa9871",
+              "url": "https://en.wikipedia.org/wiki/Chris_Funk",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.016129032258064516
+          },
+          {
+            "evidence_id": "E13",
+            "chunk_id": "3da28dd6-404a-52a0-871e-b676e0de80c7",
+            "document_id": "7a2bbad2-9280-5b0d-ad10-73dcdf03ceb8",
+            "revision_id": "881c3bd6-b13e-5058-bfd3-be2457cd6582",
+            "strategy": "a",
+            "text": "Damon Albarn, OBE ( ; born 23 March 1968) is an English singer, songwriter, and multi-instrumentalist. He is the lead singer of the British rock band Blur and co-founder, vocalist, instrumentalist, and principal songwriter of the virtual band Gorillaz. Albarn is also part of two supergroups, one usually known as The Good, the Bad & the Queen, although it is stated that they are officially unnamed, and another named Rocket Juice & the Moon.",
+            "title": "Damon Albarn",
+            "start": 0,
+            "end": 443,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 102
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 103,
+                "end": 252
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 253,
+                "end": 443
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ab29a02554299194fa93433",
+              "url": "https://en.wikipedia.org/wiki/Damon_Albarn",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015873015873015872
+          },
+          {
+            "evidence_id": "E5",
+            "chunk_id": "5f812736-70b6-569f-adc7-6e3740874dea",
+            "document_id": "046b9df2-bda7-5abb-bd82-c95b2dc2e08c",
+            "revision_id": "59dc6c17-1ff9-52a2-87cd-4b70d9f99f9e",
+            "strategy": "a",
+            "text": "Arctic Monkeys are an English rock band formed in 2002 in High Green, a suburb of Sheffield. The band consists of Alex Turner (lead vocals, rhythm/lead guitar), Matt Helders (drums, vocals), Jamie Cook (lead/rhythm guitar) and Nick O'Malley (bass, backing vocals). Former band member Andy Nicholson (bass guitar, backing vocals) left the band in 2006 shortly after their debut album was released.",
+            "title": "Arctic Monkeys",
+            "start": 0,
+            "end": 396,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 92
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 93,
+                "end": 264
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 265,
+                "end": 396
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ae744685542997b22f6a664",
+              "url": "https://en.wikipedia.org/wiki/Arctic_Monkeys",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015873015873015872
+          }
+        ],
+        "round": 2,
+        "tool_call_id": "call_LS3Y6chJAXmh0tqkdkQwN1Bv",
+        "executed": true,
+        "follow_up": {
+          "evidence_id": "E1",
+          "entity": "Wolf Alice"
+        },
+        "requested_query": "Wolf Alice instrument count members and Badly Drawn Boy multi-instrumentalist ratio compare",
+        "query_adjusted": false
+      }
+    ],
+    "workflow": "bounded_tools_v1",
+    "execution": {
+      "planning_rounds": 2,
+      "retrieval_rounds": 2,
+      "tool_calls": 2,
+      "searches": 2,
+      "llm_calls": 3,
+      "embedding_calls": 2,
+      "total_provider_calls": 5,
+      "stop_reason": "retrieval_limit",
+      "limits": {
+        "retrieval_rounds": 2,
+        "searches": 3,
+        "llm_calls": 3,
+        "embedding_calls": 3,
+        "total_provider_calls": 6
+      }
+    },
+    "configuration": {
+      "strategy": "a",
+      "profile": "1a8846753a25",
+      "embedding_model": "text-embedding-3-small",
+      "embedding_dimensions": 384,
+      "generation_model": "gpt-5.4-mini-2026-03-17",
+      "prompt_version": "bounded_tools_quote_ids_v1"
+    },
+    "usage": {
+      "planning": [
+        {
+          "input_tokens": 528,
+          "output_tokens": 38,
+          "estimated_cost_usd": 0.000567,
+          "model": "gpt-5.4-mini-2026-03-17"
+        },
+        {
+          "input_tokens": 1652,
+          "output_tokens": 50,
+          "estimated_cost_usd": 0.001464,
+          "model": "gpt-5.4-mini-2026-03-17"
+        }
+      ],
+      "generation": {
+        "input_tokens": 4210,
+        "output_tokens": 85,
+        "estimated_cost_usd": 0.00354,
+        "model": "gpt-5.4-mini-2026-03-17"
+      },
+      "embeddings": [
+        {
+          "model": "text-embedding-3-small",
+          "input_tokens": 15,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 3e-07
+        },
+        {
+          "model": "text-embedding-3-small",
+          "input_tokens": 17,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 3.4000000000000003e-07
+        }
+      ],
+      "estimated_model_cost_usd": 0.0055709999999999996,
+      "estimated_total_cost_usd": 0.005571639999999999
+    },
+    "latency_ms": 5353
+  },
+  "error": null,
+  "elapsed_ms": 5353,
+  "ledger_after": {
+    "calls": 565,
+    "reserved_usd": 1.53074494,
+    "estimated_actual_usd": 0.50694919,
+    "input_tokens": 7312357,
+    "output_tokens": 12236
+  }
+}

@@ -1,0 +1,1204 @@
+{
+  "case_id": "final-comparison-07",
+  "strategy": "b",
+  "question": "Which performance act has a higher instrument to person ratio, Badly Drawn Boy or Wolf Alice? ",
+  "started_at": "2026-10-28T07:05:43.624098+00:00",
+  "ledger_before": {
+    "calls": 565,
+    "reserved_usd": 1.53074494,
+    "estimated_actual_usd": 0.50694919,
+    "input_tokens": 7312357,
+    "output_tokens": 12236
+  },
+  "result": {
+    "status": "insufficient_evidence",
+    "claims": [],
+    "conflicting_claims": [],
+    "answer": "The retrieved sources do not provide enough evidence to answer this question.",
+    "evidence": [
+      {
+        "evidence_id": "E2",
+        "chunk_id": "d71d7d5d-5c8f-5774-9ced-131af458fb3a",
+        "document_id": "2b449073-64de-5ec5-bcde-d3d36acf8639",
+        "revision_id": "ee5118d1-ec4a-5b23-83f7-905c090a2931",
+        "strategy": "b",
+        "text": "Damon Michael Gough (born 2 October 1969, in Dunstable, Bedfordshire), known by the stage name Badly Drawn Boy, is an English indie singer-songwriter and multi-instrumentalist.",
+        "title": "Badly Drawn Boy",
+        "start": 0,
+        "end": 176,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 176
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "validation",
+          "record_id": "5ae2070a5542994d89d5b313",
+          "url": "https://en.wikipedia.org/wiki/Badly_Drawn_Boy",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.03225806451612903
+      },
+      {
+        "evidence_id": "E1",
+        "chunk_id": "de1441b8-f6c6-5042-9021-186df3dbd185",
+        "document_id": "1b84714c-4434-577b-b5ff-f7ccfe5441cd",
+        "revision_id": "f7cf8edc-c24a-5b80-a7cd-0a74406d1081",
+        "strategy": "b",
+        "text": "Wolf Alice are a four-piece alternative rock band from North London, formed initially as a two-person band in 2010. Its members since 2012 are Ellie Rowsell (vocals, guitar), Joff Oddie (guitars, vocals), Theo Ellis (bass), and Joel Amey (drums, vocals).",
+        "title": "Wolf Alice",
+        "start": 0,
+        "end": 254,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 115
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 116,
+            "end": 254
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "validation",
+          "record_id": "5ae2070a5542994d89d5b313",
+          "url": "https://en.wikipedia.org/wiki/Wolf_Alice",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.032266458495966696
+      },
+      {
+        "evidence_id": "E9",
+        "chunk_id": "4e05afd9-297d-5123-a0fc-aae4a88d0c5c",
+        "document_id": "21648bcf-557f-5cd1-ae53-94c2cafb54e9",
+        "revision_id": "106f3719-cd90-5852-8a9c-eb6897d84c98",
+        "strategy": "b",
+        "text": "Imajin is an American R&B boy band that is known for their hit \"Shorty (You Keep Playing With My Mind)\" featuring Keith Murray. The group also made a version of this song with (rapper) Mr. Cheeks of the rap group The Lost Boyz. This single peaked at number 25 on the \"Billboard\" Hot 100, number 20 on Billboard's Hot R&B/Hip-Hop Songs chart and number 22 in the UK Singles Chart in 1998. The band was originally put together by record producer Bert Price and inspired by past boy bands such as Jackson 5, New Edition, Hi-Five, Immature, and Mint Condition. Original credited band members included Jamal Hampton (who was later replaced by Tony Royster, Jr.), Talib Kareem, Olamide Faison, and John Fitch. Faison is the younger brother of Donald Faison of the television series \"Scrubs\". Imajin credited themselves to being a true boy band and are different because each member played an instrument. Jamal Hampton and Tony Royster played the drums, Talib Kareem the keyboard, and Olamide Faison played the guitar while John Fitch played the bass guitar.",
+        "title": "Imajin",
+        "start": 0,
+        "end": 1051,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 127
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 128,
+            "end": 227
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 228,
+            "end": 387
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 388,
+            "end": 556
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 557,
+            "end": 703
+          },
+          {
+            "kind": "sentence",
+            "number": 5,
+            "start": 704,
+            "end": 785
+          },
+          {
+            "kind": "sentence",
+            "number": 6,
+            "start": 786,
+            "end": 897
+          },
+          {
+            "kind": "sentence",
+            "number": 7,
+            "start": 898,
+            "end": 1051
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5ab815705542990e739ec810",
+          "url": "https://en.wikipedia.org/wiki/Imajin",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.016129032258064516
+      },
+      {
+        "evidence_id": "E3",
+        "chunk_id": "1834ffed-ca2b-5478-b2f7-cb348ea59be8",
+        "document_id": "993f4ba2-b510-5761-a064-de9c5fe66261",
+        "revision_id": "bf7c9d04-3cb7-59a4-a48a-e0b0e214491e",
+        "strategy": "b",
+        "text": "The Big Bad Wolf is an animated short released on 13 April 1934 by United Artists, produced by Walt Disney and directed by Burt Gillett as part of the Silly Symphony series. Acting partly as a sequel to the wildly successful adaptation of \"The Three Little Pigs\" of the previous year (maintaining the previous film's title characters as well as its villain), this film also acts as an adaptation of the fairy-tale \"Little Red Riding Hood\", with the Big Bad Wolf from 1933's \"Three Little Pigs\" acting as the adversary to Little Red Riding Hood and her grandmother.",
+        "title": "The Big Bad Wolf (film)",
+        "start": 0,
+        "end": 564,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 173
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 174,
+            "end": 564
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5ae374545542994393b9e6c7",
+          "url": "https://en.wikipedia.org/wiki/The_Big_Bad_Wolf_%28film%29",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.01639344262295082
+      },
+      {
+        "evidence_id": "E10",
+        "chunk_id": "9b9922f1-dbab-565e-863f-632d62b2d91f",
+        "document_id": "d6336ae8-b791-586c-a697-6ea0373491d6",
+        "revision_id": "b7634135-9103-5bd0-89fa-7454b238c04c",
+        "strategy": "b",
+        "text": "Jonathan Richard Guy Greenwood (born 5 November 1971) is an English musician and the lead guitarist and keyboardist of the alternative rock band Radiohead. A multi-instrumentalist, Greenwood also plays instruments including the bass guitar, piano, viola, and drums, and is a prominent player of the ondes Martenot, an early electronic instrument. He works with electronic techniques such as programming, sampling and looping, and writes music software used by Radiohead. He described his role in the band as an arranger, helping to transform singer Thom Yorke's demos into full songs. He has been named one of the greatest guitarists of all time by publications including the \"NME,\" \"Rolling Stone\" and \"Spin\".",
+        "title": "Jonny Greenwood",
+        "start": 0,
+        "end": 710,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 155
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 156,
+            "end": 346
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 347,
+            "end": 470
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 471,
+            "end": 584
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 585,
+            "end": 710
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5ab7f030554299366779405a",
+          "url": "https://en.wikipedia.org/wiki/Jonny_Greenwood",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.016129032258064516
+      },
+      {
+        "evidence_id": "E11",
+        "chunk_id": "35dc6e9b-c895-5a33-b808-c297b6ba3892",
+        "document_id": "7eba4a1e-b3ea-566d-9b36-4c3ed921ee3e",
+        "revision_id": "6ba08d43-4a3d-504d-b4c4-11c4a1381c68",
+        "strategy": "b",
+        "text": "The 2nd Arkansas Mounted Rifles (1861–1865) was a Confederate Army infantry regiment that served during the American Civil War. Raised in 1861, the regiment consisted of nine companies, which were drawn from various counties in Arkansas. Throughout the course of the war, the 2nd Arkansas Mounted Rifles fought in a number of battles, including those at Wilson's Creek and Pea Ridge, and participated in a number of campaigns such as Tullahoma, Atlanta and the Carolinas. The regiment's final battle came at Bentonville in March 1865 after which its remaining personnel were consolidated into the 1st Arkansas Consolidated Mounted Rifles.",
+        "title": "2nd Arkansas Mounted Rifles",
+        "start": 0,
+        "end": 638,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 127
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 128,
+            "end": 237
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 238,
+            "end": 471
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 472,
+            "end": 638
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5ac02a865542992a796decb7",
+          "url": "https://en.wikipedia.org/wiki/2nd_Arkansas_Mounted_Rifles",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.015873015873015872
+      },
+      {
+        "evidence_id": "E4",
+        "chunk_id": "ca6d1cf6-b575-5623-8e54-e21bac66e510",
+        "document_id": "fa52582d-39e3-5349-b7a4-27be0d1cd61f",
+        "revision_id": "ccf9fe09-a39c-5270-80a2-4eaddb713769",
+        "strategy": "b",
+        "text": "Sleep Room are an English alternative rock band from Reading, Berkshire who have attracted attention from Berkshire's music community Josaka and the BBC who have noted them for their original sound, epic soundscapes and emotive style.",
+        "title": "Sleep Room",
+        "start": 0,
+        "end": 234,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 234
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a78dbae55429970f5fffdb3",
+          "url": "https://en.wikipedia.org/wiki/Sleep_Room",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.015873015873015872
+      },
+      {
+        "evidence_id": "E5",
+        "chunk_id": "260cc497-1c32-5643-b18c-9483bfaf095a",
+        "document_id": "06452c27-cfc2-5a45-91e2-376235749ccc",
+        "revision_id": "10c41de5-58c4-5fd2-9906-0a9a5e2193e9",
+        "strategy": "b",
+        "text": "Those included bands/artists as Coldplay, Blonde Redhead, Ash, Ian Brown, Keane, Modest Mouse, and Placebo. Furthermore, Roger O'Donnell from The Cure has appeared as a guest keyboardist on their album \"Lof Mér Að Falla Að Þínu Eyra\".",
+        "title": "Maus (band)",
+        "start": 964,
+        "end": 1198,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 9,
+            "start": 964,
+            "end": 1071
+          },
+          {
+            "kind": "sentence",
+            "number": 10,
+            "start": 1072,
+            "end": 1198
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5abbafb755429931dba144ab",
+          "url": "https://en.wikipedia.org/wiki/Maus_%28band%29",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.015625
+      }
+    ],
+    "search_trace": [
+      {
+        "query": "Badly Drawn Boy Wolf Alice instrument to person ratio performance act instruments personnel",
+        "strategy": "b",
+        "profile": "1a8846753a25",
+        "embedding_usage": {
+          "model": "text-embedding-3-small",
+          "input_tokens": 15,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 3e-07
+        },
+        "document_ranking": [
+          "1b84714c-4434-577b-b5ff-f7ccfe5441cd",
+          "2b449073-64de-5ec5-bcde-d3d36acf8639",
+          "993f4ba2-b510-5761-a064-de9c5fe66261",
+          "fa52582d-39e3-5349-b7a4-27be0d1cd61f",
+          "06452c27-cfc2-5a45-91e2-376235749ccc",
+          "42be47c1-b772-5bf6-8a39-17782ed91d56",
+          "9980d964-17a7-5bf3-ac14-5baa5968f64c",
+          "09b36e07-56a9-56e9-af34-62d8d19c0eb2",
+          "037d1514-027d-51cf-b8ca-49c16f3c541d",
+          "37c7b6bb-5d0c-5cee-87ed-afdd5e03da20"
+        ],
+        "candidate_counts": {
+          "dense": 30,
+          "bm25": 30,
+          "active_dense": 30,
+          "active_bm25": 30
+        },
+        "evidence": [
+          {
+            "evidence_id": "E1",
+            "chunk_id": "de1441b8-f6c6-5042-9021-186df3dbd185",
+            "document_id": "1b84714c-4434-577b-b5ff-f7ccfe5441cd",
+            "revision_id": "f7cf8edc-c24a-5b80-a7cd-0a74406d1081",
+            "strategy": "b",
+            "text": "Wolf Alice are a four-piece alternative rock band from North London, formed initially as a two-person band in 2010. Its members since 2012 are Ellie Rowsell (vocals, guitar), Joff Oddie (guitars, vocals), Theo Ellis (bass), and Joel Amey (drums, vocals).",
+            "title": "Wolf Alice",
+            "start": 0,
+            "end": 254,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 115
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 116,
+                "end": 254
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5ae2070a5542994d89d5b313",
+              "url": "https://en.wikipedia.org/wiki/Wolf_Alice",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.032266458495966696
+          },
+          {
+            "evidence_id": "E2",
+            "chunk_id": "d71d7d5d-5c8f-5774-9ced-131af458fb3a",
+            "document_id": "2b449073-64de-5ec5-bcde-d3d36acf8639",
+            "revision_id": "ee5118d1-ec4a-5b23-83f7-905c090a2931",
+            "strategy": "b",
+            "text": "Damon Michael Gough (born 2 October 1969, in Dunstable, Bedfordshire), known by the stage name Badly Drawn Boy, is an English indie singer-songwriter and multi-instrumentalist.",
+            "title": "Badly Drawn Boy",
+            "start": 0,
+            "end": 176,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 176
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5ae2070a5542994d89d5b313",
+              "url": "https://en.wikipedia.org/wiki/Badly_Drawn_Boy",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03225806451612903
+          },
+          {
+            "evidence_id": "E3",
+            "chunk_id": "1834ffed-ca2b-5478-b2f7-cb348ea59be8",
+            "document_id": "993f4ba2-b510-5761-a064-de9c5fe66261",
+            "revision_id": "bf7c9d04-3cb7-59a4-a48a-e0b0e214491e",
+            "strategy": "b",
+            "text": "The Big Bad Wolf is an animated short released on 13 April 1934 by United Artists, produced by Walt Disney and directed by Burt Gillett as part of the Silly Symphony series. Acting partly as a sequel to the wildly successful adaptation of \"The Three Little Pigs\" of the previous year (maintaining the previous film's title characters as well as its villain), this film also acts as an adaptation of the fairy-tale \"Little Red Riding Hood\", with the Big Bad Wolf from 1933's \"Three Little Pigs\" acting as the adversary to Little Red Riding Hood and her grandmother.",
+            "title": "The Big Bad Wolf (film)",
+            "start": 0,
+            "end": 564,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 173
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 174,
+                "end": 564
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ae374545542994393b9e6c7",
+              "url": "https://en.wikipedia.org/wiki/The_Big_Bad_Wolf_%28film%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.01639344262295082
+          },
+          {
+            "evidence_id": "E4",
+            "chunk_id": "ca6d1cf6-b575-5623-8e54-e21bac66e510",
+            "document_id": "fa52582d-39e3-5349-b7a4-27be0d1cd61f",
+            "revision_id": "ccf9fe09-a39c-5270-80a2-4eaddb713769",
+            "strategy": "b",
+            "text": "Sleep Room are an English alternative rock band from Reading, Berkshire who have attracted attention from Berkshire's music community Josaka and the BBC who have noted them for their original sound, epic soundscapes and emotive style.",
+            "title": "Sleep Room",
+            "start": 0,
+            "end": 234,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 234
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a78dbae55429970f5fffdb3",
+              "url": "https://en.wikipedia.org/wiki/Sleep_Room",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015873015873015872
+          },
+          {
+            "evidence_id": "E5",
+            "chunk_id": "260cc497-1c32-5643-b18c-9483bfaf095a",
+            "document_id": "06452c27-cfc2-5a45-91e2-376235749ccc",
+            "revision_id": "10c41de5-58c4-5fd2-9906-0a9a5e2193e9",
+            "strategy": "b",
+            "text": "Those included bands/artists as Coldplay, Blonde Redhead, Ash, Ian Brown, Keane, Modest Mouse, and Placebo. Furthermore, Roger O'Donnell from The Cure has appeared as a guest keyboardist on their album \"Lof Mér Að Falla Að Þínu Eyra\".",
+            "title": "Maus (band)",
+            "start": 964,
+            "end": 1198,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 9,
+                "start": 964,
+                "end": 1071
+              },
+              {
+                "kind": "sentence",
+                "number": 10,
+                "start": 1072,
+                "end": 1198
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5abbafb755429931dba144ab",
+              "url": "https://en.wikipedia.org/wiki/Maus_%28band%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015625
+          },
+          {
+            "evidence_id": "E6",
+            "chunk_id": "74b86ff3-6e11-5765-8e9a-7283a69690e7",
+            "document_id": "42be47c1-b772-5bf6-8a39-17782ed91d56",
+            "revision_id": "6ae779a8-b4db-5c99-9384-ec0274d83b93",
+            "strategy": "b",
+            "text": "Musical composition can refer to an original piece of music, either a song or an instrumental music piece, the structure of a musical piece, or the process of creating or writing a new song or piece of music. People who create new compositions are called composers in classical music. In popular music and traditional music, the creators of new songs are usually called songwriters; with songs, the person who writes new words for a song is the lyricist. \"Composition\" is the act or practice of creating a song or other piece of music. In many cultures, including Western classical music, the act of composing typically includes the creation of music notation, such as a sheet music \"score\", which is then performed by the composer or by other instrumental musicians or singers. In popular music and traditional music, songwriting may involve the creation of a basic outline of the song, called the lead sheet, which sets out the melody, lyrics and chord progression.",
+            "title": "Musical composition",
+            "start": 0,
+            "end": 967,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 208
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 209,
+                "end": 284
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 285,
+                "end": 454
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 455,
+                "end": 535
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 536,
+                "end": 778
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 779,
+                "end": 967
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a8a59d75542995153361377",
+              "url": "https://en.wikipedia.org/wiki/Musical_composition",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015625
+          },
+          {
+            "evidence_id": "E7",
+            "chunk_id": "3c7532e8-69c6-575c-bf9f-d88802f31ffb",
+            "document_id": "9980d964-17a7-5bf3-ac14-5baa5968f64c",
+            "revision_id": "901bf58d-c050-5349-b9ee-0101f2a03767",
+            "strategy": "b",
+            "text": "The enzyme phenylalanine racemase (EC 5.1.1.11 , \"phenylalanine racemase\", \"phenylalanine racemase (adenosine triphosphate-hydrolysing)\", \"gramicidin S synthetase I\") is the enzyme that acts on amino acids and derivatives. It activates both the L & D stereo isomers of phenylalanine to form L-phenylalanyl adenylate and D-phenylalanyl adenylate, which are bound to the enzyme. These bound compounds are then transferred to the thiol group of the enzyme followed by conversion of its configuration, the D-isomer being the more favorable configuration of the two, with a 7 to 3 ratio between the two isomers. The racemisation reaction of phenylalanine is coupled with the highly favorable hydrolysis of adenosine triphosphate (ATP) to adenosine monophosphate (AMP) and pyrophosphate (PP), thermodynamically allowing it to proceed. This reaction is then drawn forward by further hydrolyzing PP to inorganic phosphate (P), via Le Chatelier's principle.",
+            "title": "Phenylalanine racemase (ATP-hydrolysing)",
+            "start": 0,
+            "end": 948,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 222
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 223,
+                "end": 376
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 377,
+                "end": 606
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 607,
+                "end": 828
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 829,
+                "end": 948
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a7545eb5542993748c89808",
+              "url": "https://en.wikipedia.org/wiki/Phenylalanine_racemase_%28ATP-hydrolysing%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015384615384615385
+          },
+          {
+            "evidence_id": "E8",
+            "chunk_id": "4e7d9a9a-42ec-5b17-87c7-6b5c6fe113e3",
+            "document_id": "09b36e07-56a9-56e9-af34-62d8d19c0eb2",
+            "revision_id": "af2aebb7-2483-50a6-ac57-4c293d18bfda",
+            "strategy": "b",
+            "text": "Steve Wickham is an Irish musician. Originally from Marino, Dublin, but calling Sligo home, Wickham played violin on the classic U2 song \"Sunday Bloody Sunday\", as well as recordings by Elvis Costello, the Hothouse Flowers, Sinéad O'Connor, and World Party. He is a long-standing member of The Waterboys. Wickham plays both rock and roll and traditional Irish music, and has developed a rock music technique for violin he calls the \"fuzz fiddle\".",
+            "title": "Steve Wickham",
+            "start": 0,
+            "end": 446,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 35
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 36,
+                "end": 257
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 258,
+                "end": 304
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 305,
+                "end": 446
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a8ced36554299441c6b9f81",
+              "url": "https://en.wikipedia.org/wiki/Steve_Wickham",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015384615384615385
+          }
+        ],
+        "round": 1,
+        "tool_call_id": "call_lIgOzp07gpwuLRVOgXEkykNp",
+        "executed": true,
+        "follow_up": null,
+        "requested_query": "Badly Drawn Boy Wolf Alice instrument to person ratio performance act instruments personnel",
+        "query_adjusted": false
+      },
+      {
+        "query": "Badly Drawn Boy instruments personnel ratio number of instruments members",
+        "strategy": "b",
+        "profile": "1a8846753a25",
+        "embedding_usage": {
+          "model": "text-embedding-3-small",
+          "input_tokens": 12,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 2.4e-07
+        },
+        "document_ranking": [
+          "2b449073-64de-5ec5-bcde-d3d36acf8639",
+          "21648bcf-557f-5cd1-ae53-94c2cafb54e9",
+          "d6336ae8-b791-586c-a697-6ea0373491d6",
+          "7eba4a1e-b3ea-566d-9b36-4c3ed921ee3e",
+          "77ccf1c5-1967-500a-84e3-5614d9370173",
+          "6669785a-66eb-5295-8c87-39411098c1ad",
+          "b4627b96-e7c9-5c1b-802a-bdb72af11897",
+          "a602afca-b7e1-5cfe-b92d-9c9b283bcf2f",
+          "cabcb029-b0f5-59c5-b1cc-acbf3a026fbd",
+          "06452c27-cfc2-5a45-91e2-376235749ccc"
+        ],
+        "candidate_counts": {
+          "dense": 30,
+          "bm25": 30,
+          "active_dense": 30,
+          "active_bm25": 30
+        },
+        "evidence": [
+          {
+            "evidence_id": "E2",
+            "chunk_id": "d71d7d5d-5c8f-5774-9ced-131af458fb3a",
+            "document_id": "2b449073-64de-5ec5-bcde-d3d36acf8639",
+            "revision_id": "ee5118d1-ec4a-5b23-83f7-905c090a2931",
+            "strategy": "b",
+            "text": "Damon Michael Gough (born 2 October 1969, in Dunstable, Bedfordshire), known by the stage name Badly Drawn Boy, is an English indie singer-songwriter and multi-instrumentalist.",
+            "title": "Badly Drawn Boy",
+            "start": 0,
+            "end": 176,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 176
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5ae2070a5542994d89d5b313",
+              "url": "https://en.wikipedia.org/wiki/Badly_Drawn_Boy",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03278688524590164
+          },
+          {
+            "evidence_id": "E9",
+            "chunk_id": "4e05afd9-297d-5123-a0fc-aae4a88d0c5c",
+            "document_id": "21648bcf-557f-5cd1-ae53-94c2cafb54e9",
+            "revision_id": "106f3719-cd90-5852-8a9c-eb6897d84c98",
+            "strategy": "b",
+            "text": "Imajin is an American R&B boy band that is known for their hit \"Shorty (You Keep Playing With My Mind)\" featuring Keith Murray. The group also made a version of this song with (rapper) Mr. Cheeks of the rap group The Lost Boyz. This single peaked at number 25 on the \"Billboard\" Hot 100, number 20 on Billboard's Hot R&B/Hip-Hop Songs chart and number 22 in the UK Singles Chart in 1998. The band was originally put together by record producer Bert Price and inspired by past boy bands such as Jackson 5, New Edition, Hi-Five, Immature, and Mint Condition. Original credited band members included Jamal Hampton (who was later replaced by Tony Royster, Jr.), Talib Kareem, Olamide Faison, and John Fitch. Faison is the younger brother of Donald Faison of the television series \"Scrubs\". Imajin credited themselves to being a true boy band and are different because each member played an instrument. Jamal Hampton and Tony Royster played the drums, Talib Kareem the keyboard, and Olamide Faison played the guitar while John Fitch played the bass guitar.",
+            "title": "Imajin",
+            "start": 0,
+            "end": 1051,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 127
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 128,
+                "end": 227
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 228,
+                "end": 387
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 388,
+                "end": 556
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 557,
+                "end": 703
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 704,
+                "end": 785
+              },
+              {
+                "kind": "sentence",
+                "number": 6,
+                "start": 786,
+                "end": 897
+              },
+              {
+                "kind": "sentence",
+                "number": 7,
+                "start": 898,
+                "end": 1051
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ab815705542990e739ec810",
+              "url": "https://en.wikipedia.org/wiki/Imajin",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.016129032258064516
+          },
+          {
+            "evidence_id": "E10",
+            "chunk_id": "9b9922f1-dbab-565e-863f-632d62b2d91f",
+            "document_id": "d6336ae8-b791-586c-a697-6ea0373491d6",
+            "revision_id": "b7634135-9103-5bd0-89fa-7454b238c04c",
+            "strategy": "b",
+            "text": "Jonathan Richard Guy Greenwood (born 5 November 1971) is an English musician and the lead guitarist and keyboardist of the alternative rock band Radiohead. A multi-instrumentalist, Greenwood also plays instruments including the bass guitar, piano, viola, and drums, and is a prominent player of the ondes Martenot, an early electronic instrument. He works with electronic techniques such as programming, sampling and looping, and writes music software used by Radiohead. He described his role in the band as an arranger, helping to transform singer Thom Yorke's demos into full songs. He has been named one of the greatest guitarists of all time by publications including the \"NME,\" \"Rolling Stone\" and \"Spin\".",
+            "title": "Jonny Greenwood",
+            "start": 0,
+            "end": 710,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 155
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 156,
+                "end": 346
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 347,
+                "end": 470
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 471,
+                "end": 584
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 585,
+                "end": 710
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ab7f030554299366779405a",
+              "url": "https://en.wikipedia.org/wiki/Jonny_Greenwood",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.016129032258064516
+          },
+          {
+            "evidence_id": "E11",
+            "chunk_id": "35dc6e9b-c895-5a33-b808-c297b6ba3892",
+            "document_id": "7eba4a1e-b3ea-566d-9b36-4c3ed921ee3e",
+            "revision_id": "6ba08d43-4a3d-504d-b4c4-11c4a1381c68",
+            "strategy": "b",
+            "text": "The 2nd Arkansas Mounted Rifles (1861–1865) was a Confederate Army infantry regiment that served during the American Civil War. Raised in 1861, the regiment consisted of nine companies, which were drawn from various counties in Arkansas. Throughout the course of the war, the 2nd Arkansas Mounted Rifles fought in a number of battles, including those at Wilson's Creek and Pea Ridge, and participated in a number of campaigns such as Tullahoma, Atlanta and the Carolinas. The regiment's final battle came at Bentonville in March 1865 after which its remaining personnel were consolidated into the 1st Arkansas Consolidated Mounted Rifles.",
+            "title": "2nd Arkansas Mounted Rifles",
+            "start": 0,
+            "end": 638,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 127
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 128,
+                "end": 237
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 238,
+                "end": 471
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 472,
+                "end": 638
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ac02a865542992a796decb7",
+              "url": "https://en.wikipedia.org/wiki/2nd_Arkansas_Mounted_Rifles",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015873015873015872
+          },
+          {
+            "evidence_id": "E12",
+            "chunk_id": "9b969d59-ffd2-5158-941d-1e1201e851f0",
+            "document_id": "77ccf1c5-1967-500a-84e3-5614d9370173",
+            "revision_id": "d614a4ad-3089-598c-9622-8e2a1634ce67",
+            "strategy": "b",
+            "text": "Stephen Paul David Morris (born 28 October 1957) is an English multi-instrumentalist, composer and record producer who is best known for his work with the rock band New Order and, previously, Joy Division. He also wrote and performed in The Other Two, a band consisting of Morris and his wife, Gillian Gilbert. Morris also participated in the New Order spin-off band Bad Lieutenant. He is known for his precise drumming that seamlessly weaves with New Order's and Joy Division's drum machine sounds. \" Stylus Magazine\" ranked Morris No. 5 on their list of \"50 Greatest Rock Drummers of All Time\".",
+            "title": "Stephen Morris (musician)",
+            "start": 0,
+            "end": 596,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 205
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 206,
+                "end": 310
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 311,
+                "end": 382
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 383,
+                "end": 501
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 502,
+                "end": 596
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ac07f595542996f0d89cbfc",
+              "url": "https://en.wikipedia.org/wiki/Stephen_Morris_%28musician%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015873015873015872
+          },
+          {
+            "evidence_id": "E13",
+            "chunk_id": "8f47ab20-7b3c-5ce3-8b6e-eef3430e0f18",
+            "document_id": "6669785a-66eb-5295-8c87-39411098c1ad",
+            "revision_id": "60c42577-183f-535b-ba5a-ff1f911c3997",
+            "strategy": "b",
+            "text": "A Spectrum of Finite Scale is a tour-only album by the band Man or Astro-man? . A departure from the band's familiar space-surf instrumentals, \"A Spectrum of Finite Scale\" is a compilation of experiments produced by members of the Man or Astro-Man? team. Tracks were contributed by pairs of band members, individual members and even Man or Astro-man? personnel like soundman The Brannock Device and Q-Beam contributed tracks.",
+            "title": "A Spectrum of Finite Scale",
+            "start": 0,
+            "end": 425,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 77
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 78,
+                "end": 79
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 80,
+                "end": 248
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 249,
+                "end": 254
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 255,
+                "end": 350
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 351,
+                "end": 425
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ab735af5542992aa3b8c7d8",
+              "url": "https://en.wikipedia.org/wiki/A_Spectrum_of_Finite_Scale",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015625
+          },
+          {
+            "evidence_id": "E14",
+            "chunk_id": "a4588d1f-e421-5d65-b1db-17ed5f64cb7e",
+            "document_id": "b4627b96-e7c9-5c1b-802a-bdb72af11897",
+            "revision_id": "83a69acf-0a98-53bf-9ba8-35f04c5408f2",
+            "strategy": "b",
+            "text": "Jason Torbert is an American musician currently in the solo project, Goddamn Electric Bill on the record label 99X/10 (founded by keyboardist Roger O'Donnell of The Cure (and previously, The Psychedelic Furs, Thompson Twins and Berlin)). Torbert has also performed bass in several other bands, including Cigar (with Jon Sortland (The Shins, Broken Bells) and Rami Krayem) and Sing The Body Electric (with Damon DeLapaz and Adam Lewis (Fenix TX)).",
+            "title": "Jason Torbert",
+            "start": 0,
+            "end": 446,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 237
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 238,
+                "end": 446
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ac2460955429951e9e68518",
+              "url": "https://en.wikipedia.org/wiki/Jason_Torbert",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015625
+          },
+          {
+            "evidence_id": "E15",
+            "chunk_id": "62f49e00-d702-5f54-94bd-d1c24c8fcc73",
+            "document_id": "a602afca-b7e1-5cfe-b92d-9c9b283bcf2f",
+            "revision_id": "f0eaae91-2dfa-53f6-bcdc-3a6c35d2805c",
+            "strategy": "b",
+            "text": "R. Crumb and his Cheap Suit Serenaders Number 2 is the second 331⁄3 rpm album by the retro string band R. Crumb & His Cheap Suit Serenaders and its subtitle was \"Persian Rug, Crying My Blues Away, Moana March and Other Favorites\". The album was later retitled Chasin' Rainbows in re-release on CD (Shanachie 6002, 1993 - ASIN: B000000DSO) from Shanachie Records. The band's personnel includes Robert Crumb on lead vocal and banjo, Allan Dodge on mandolin, violin, ukulele and vocals, Robert Armstrong on guitars, accordion, banjo, musical saw and vocals, Terry Zwigoff, who later produced the documentary \"Crumb\", on cello. Originally released on Blue Goose Records in 1976, this record became a collectible not only for the whimsical string band renditions of and reminiscent of the early 20th century music, but for the cover art drawn by the band's frontman and well-known comics artist Robert Crumb.",
+            "title": "R. Crumb and his Cheap Suit Serenaders No. 2",
+            "start": 0,
+            "end": 903,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 230
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 231,
+                "end": 362
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 363,
+                "end": 623
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 624,
+                "end": 903
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a7f5f025542992097ad2f45",
+              "url": "https://en.wikipedia.org/wiki/R._Crumb_and_his_Cheap_Suit_Serenaders_No._2",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015384615384615385
+          }
+        ],
+        "round": 2,
+        "tool_call_id": "call_iZsDCCLvq0r8KYrE4OEJTNmQ",
+        "executed": true,
+        "follow_up": {
+          "evidence_id": "E2",
+          "entity": "Badly Drawn Boy"
+        },
+        "requested_query": "Badly Drawn Boy instruments personnel ratio number of instruments members",
+        "query_adjusted": false
+      }
+    ],
+    "workflow": "bounded_tools_v1",
+    "execution": {
+      "planning_rounds": 2,
+      "retrieval_rounds": 2,
+      "tool_calls": 2,
+      "searches": 2,
+      "llm_calls": 3,
+      "embedding_calls": 2,
+      "total_provider_calls": 5,
+      "stop_reason": "retrieval_limit",
+      "limits": {
+        "retrieval_rounds": 2,
+        "searches": 3,
+        "llm_calls": 3,
+        "embedding_calls": 3,
+        "total_provider_calls": 6
+      }
+    },
+    "configuration": {
+      "strategy": "b",
+      "profile": "1a8846753a25",
+      "embedding_model": "text-embedding-3-small",
+      "embedding_dimensions": 384,
+      "generation_model": "gpt-5.4-mini-2026-03-17",
+      "prompt_version": "bounded_tools_quote_ids_v1"
+    },
+    "usage": {
+      "planning": [
+        {
+          "input_tokens": 528,
+          "output_tokens": 38,
+          "estimated_cost_usd": 0.000567,
+          "model": "gpt-5.4-mini-2026-03-17"
+        },
+        {
+          "input_tokens": 1596,
+          "output_tokens": 48,
+          "estimated_cost_usd": 0.001413,
+          "model": "gpt-5.4-mini-2026-03-17"
+        }
+      ],
+      "generation": {
+        "input_tokens": 4087,
+        "output_tokens": 31,
+        "estimated_cost_usd": 0.00320475,
+        "model": "gpt-5.4-mini-2026-03-17"
+      },
+      "embeddings": [
+        {
+          "model": "text-embedding-3-small",
+          "input_tokens": 15,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 3e-07
+        },
+        {
+          "model": "text-embedding-3-small",
+          "input_tokens": 12,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 2.4e-07
+        }
+      ],
+      "estimated_model_cost_usd": 0.00518475,
+      "estimated_total_cost_usd": 0.00518529
+    },
+    "latency_ms": 4860
+  },
+  "error": null,
+  "elapsed_ms": 4860,
+  "ledger_after": {
+    "calls": 570,
+    "reserved_usd": 1.55021098,
+    "estimated_actual_usd": 0.5121344800000001,
+    "input_tokens": 7318595,
+    "output_tokens": 12353
+  }
+}

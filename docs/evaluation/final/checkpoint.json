@@ -1,0 +1,25 @@
+{
+  "identity": "9b288d4bdc562919d1a7e1a78271d590453a5fd7c27f4c218bd391b948f0d07f",
+  "recorded_at": "2026-10-28T07:14:20.328688+00:00",
+  "corpus_consistent": true,
+  "cloud": {
+    "active_source_count": 50024,
+    "active_manifests_sha256": "2c59ffa4f0364e61a01559ffa2bec9378b04f54355789fe5a9e56107fa260dc5",
+    "profile": "1a8846753a25",
+    "collections": {
+      "a": "investigation_chunks_a_1a8846753a25",
+      "b": "investigation_chunks_b_1a8846753a25"
+    },
+    "physical_points": {
+      "a": 52250,
+      "b": 52311
+    }
+  },
+  "ledger_after": {
+    "calls": 762,
+    "reserved_usd": 2.31480321,
+    "estimated_actual_usd": 0.69751671,
+    "input_tokens": 7525494,
+    "output_tokens": 19232
+  }
+}

@@ -1,0 +1,1368 @@
+{
+  "case_id": "final-bridge-10",
+  "strategy": "a",
+  "question": "What year did Guns N Roses perform a promo for a movie starring Arnold Schwarzenegger as a former New York Police detective?",
+  "started_at": "2026-10-28T07:01:37.156005+00:00",
+  "ledger_before": {
+    "calls": 481,
+    "reserved_usd": 1.17487212,
+    "estimated_actual_usd": 0.40542837,
+    "input_tokens": 7194880,
+    "output_tokens": 9200
+  },
+  "result": {
+    "status": "answered",
+    "claims": [
+      {
+        "text": "Guns N' Roses performed a promo for the film in 1999.",
+        "citations": [
+          {
+            "evidence_id": "E3",
+            "quote": "The song was sent out to radio stations in November 1999 as a promo for the soundtrack and the band."
+          },
+          {
+            "evidence_id": "E1",
+            "quote": "End of Days is a 1999 American fantasy action horror thriller film directed by Peter Hyams and starring Arnold Schwarzenegger, Gabriel Byrne, Robin Tunney, Kevin Pollak, Rod Steiger, CCH Pounder, and Udo Kier. The film follows former New York Police Department detective Jericho Cane (Schwarzenegger) after he saves a banker (Byrne) from an assassin, finds himself embroiled in a religious conflict, and must protect an innocent young woman (Tunney) who is chosen by evil forces to conceive the Antichrist with Satan."
+          }
+        ]
+      }
+    ],
+    "conflicting_claims": [],
+    "answer": "Guns N' Roses performed a promo for the film in 1999. [E3] [E1]",
+    "evidence": [
+      {
+        "evidence_id": "E3",
+        "chunk_id": "53f5de00-82f3-5d93-a6ea-839af669b326",
+        "document_id": "77158163-24e0-5bde-9844-2ddb60365409",
+        "revision_id": "65dac317-1bc5-5e77-9d9b-14e6e0b4488d",
+        "strategy": "a",
+        "text": "\"Oh My God\" is a song by Guns N' Roses released in 1999 on the soundtrack to the film \"End of Days\". The song was sent out to radio stations in November 1999 as a promo for the soundtrack and the band. Despite being the band's first recorded release in almost five years, it was never issued as a stand-alone single for public retail.",
+        "title": "Oh My God (Guns N' Roses song)",
+        "start": 0,
+        "end": 334,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 100
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 101,
+            "end": 201
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 202,
+            "end": 334
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "validation",
+          "record_id": "5ab3b0bf5542992ade7c6e39",
+          "url": "https://en.wikipedia.org/wiki/Oh_My_God_%28Guns_N%27_Roses_song%29",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.029030910609857977
+      },
+      {
+        "evidence_id": "E2",
+        "chunk_id": "a27bde8f-205f-570d-beda-48db9d9d5973",
+        "document_id": "db9362ff-d5d4-5804-9cd8-b3eb9634b6ac",
+        "revision_id": "25000614-7e2f-5718-bd9c-f4989644ea5d",
+        "strategy": "a",
+        "text": "Guns N' Roses is an American hard rock band originally formed in 1985 by members of Hollywood Rose and L.A. Guns. After signing with Geffen Records in 1986, the band released its debut album \"Appetite for Destruction\" in 1987. All songs on the album were credited as written by the full band, composed of vocalist Axl Rose, guitarists Slash and Izzy Stradlin, bassist Duff McKagan and drummer Steven Adler, while \"It's So Easy\" was co-written by West Arkeen and \"Anything Goes\" was co-written by Chris Weber, formerly of Hollywood Rose. The following year saw the release of the band's second album \"G N' R Lies\", made up of all four tracks from 1986's \"Live ?! *@ Like a Suicide\" EP and four acoustic-based tracks.",
+        "title": "List of songs recorded by Guns N' Roses",
+        "start": 0,
+        "end": 715,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 113
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 114,
+            "end": 226
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 227,
+            "end": 536
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 537,
+            "end": 661
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 662,
+            "end": 715
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5abdaa8f55429965af743dae",
+          "url": "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Guns_N%27_Roses",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.03057889822595705
+      },
+      {
+        "evidence_id": "E6",
+        "chunk_id": "1b0ceb77-a5d7-5812-bc35-ce28ef590680",
+        "document_id": "79346a1c-e031-5093-90e3-6ade85f0f7ef",
+        "revision_id": "0a780bcf-da91-503f-b03b-cfdabc42f103",
+        "strategy": "a",
+        "text": "Guns N' Roses, often abbreviated as GNR, is an American hard rock band from Los Angeles and formed in 1985. The lineup, when first signed to Geffen Records in 1986, consisted of vocalist Axl Rose, lead guitarist Slash, rhythm guitarist Izzy Stradlin, bassist Duff McKagan, and drummer Steven Adler. Guns N' Roses have released six studio albums, accumulating sales of more than 100 million records worldwide, including 45 million records in the United States, making them one of the world's best-selling artists of all time.",
+        "title": "Guns N' Roses",
+        "start": 0,
+        "end": 524,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 107
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 108,
+            "end": 298
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 299,
+            "end": 524
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a8b83e25542997f31a41d5a",
+          "url": "https://en.wikipedia.org/wiki/Guns_N%27_Roses",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.02854251012145749
+      },
+      {
+        "evidence_id": "E1",
+        "chunk_id": "f6ed29f1-4b7f-5615-9819-4473c11bacef",
+        "document_id": "6476de34-2532-5dca-aa31-da334a21111c",
+        "revision_id": "ea20ed2c-945a-532a-bff9-0117c64c8761",
+        "strategy": "a",
+        "text": "End of Days is a 1999 American fantasy action horror thriller film directed by Peter Hyams and starring Arnold Schwarzenegger, Gabriel Byrne, Robin Tunney, Kevin Pollak, Rod Steiger, CCH Pounder, and Udo Kier. The film follows former New York Police Department detective Jericho Cane (Schwarzenegger) after he saves a banker (Byrne) from an assassin, finds himself embroiled in a religious conflict, and must protect an innocent young woman (Tunney) who is chosen by evil forces to conceive the Antichrist with Satan.",
+        "title": "End of Days (film)",
+        "start": 0,
+        "end": 517,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 209
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 210,
+            "end": 517
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "validation",
+          "record_id": "5ab3b0bf5542992ade7c6e39",
+          "url": "https://en.wikipedia.org/wiki/End_of_Days_%28film%29",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.03177805800756621
+      },
+      {
+        "evidence_id": "E9",
+        "chunk_id": "197762ea-e75f-5be9-86ec-ef12d1763587",
+        "document_id": "e0e22ff3-d994-504c-b927-16557a18ff67",
+        "revision_id": "fc401c64-850f-561e-bfa4-5c8efc7695b8",
+        "strategy": "a",
+        "text": "Live Era '87–'93 is a double live album by the American hard rock band Guns N' Roses. It was released on November 23, 1999. The record was the first official Guns N' Roses release since \"\"The Spaghetti Incident?\" \" released on the same day in 1993. Guitarist Slash notes that the album is \"not pretty and there are a lot of mistakes, but this is Guns N' Roses, not the fucking Mahavishnu Orchestra. It's as honest as it gets.\"",
+        "title": "Live Era '87–'93",
+        "start": 0,
+        "end": 426,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 85
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 86,
+            "end": 123
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 124,
+            "end": 212
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 213,
+            "end": 248
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 249,
+            "end": 398
+          },
+          {
+            "kind": "sentence",
+            "number": 5,
+            "start": 399,
+            "end": 426
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a8b83e25542997f31a41d5a",
+          "url": "https://en.wikipedia.org/wiki/Live_Era_%2787%E2%80%93%2793",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.031754032258064516
+      },
+      {
+        "evidence_id": "E10",
+        "chunk_id": "33294afe-c575-5a24-85e6-d6e8b6fa792a",
+        "document_id": "7eb4fcae-0536-569e-87cb-105b43f5683a",
+        "revision_id": "22551aa1-d582-54af-bdf6-acebc2567268",
+        "strategy": "a",
+        "text": "\"November Rain\" is a power ballad by the American hard rock band Guns N' Roses. Written by the band's lead singer Axl Rose, the song was released as a single in 1992 from their third studio album, \"Use Your Illusion I\" (1991). It features a sweeping orchestral backing and is one of Guns N' Roses' longest songs.",
+        "title": "November Rain",
+        "start": 0,
+        "end": 312,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 79
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 80,
+            "end": 226
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 227,
+            "end": 312
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5ab2ba3d5542992953946867",
+          "url": "https://en.wikipedia.org/wiki/November_Rain",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.0315136476426799
+      },
+      {
+        "evidence_id": "E4",
+        "chunk_id": "3be58874-2841-5d70-85ec-7941954651b9",
+        "document_id": "79bb4194-248a-5464-9b7d-ba296d1a7fc1",
+        "revision_id": "ec41b3d9-f0ef-53df-bf41-2cf2626b2f48",
+        "strategy": "a",
+        "text": "Steven Adler (born Michael Coletti; January 22, 1965) is an American musician. He is best known as the former drummer and co-songwriter of the hard rock band Guns N' Roses, with whom he achieved worldwide success in the late 1980s. Adler was fired from Guns N' Roses over his heroin addiction in 1990, following which he reformed his old band Road Crew and briefly joined BulletBoys, which both proved unsuccessful. During the 2000s, Adler was the drummer of the band Adler's Appetite, and from 2012, he had held the same position in the band Adler. In early 2017, Steven Adler declared that he has no intention to continue with the band, and that the band has now dissolved, and the reason is his lack of interest in performing during poorly attended concerts. He appeared on the second and fifth seasons of the reality TV show \"Celebrity Rehab with Dr. Drew\", as well as on the first season of its spin-off \"Sober House\". He was inducted into the Rock and Roll Hall of Fame in 2012 as a member of Guns N' Roses.",
+        "title": "Steven Adler",
+        "start": 0,
+        "end": 1013,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 78
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 79,
+            "end": 231
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 232,
+            "end": 415
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 416,
+            "end": 549
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 550,
+            "end": 761
+          },
+          {
+            "kind": "sentence",
+            "number": 5,
+            "start": 762,
+            "end": 923
+          },
+          {
+            "kind": "sentence",
+            "number": 6,
+            "start": 924,
+            "end": 1013
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a8b83e25542997f31a41d5a",
+          "url": "https://en.wikipedia.org/wiki/Steven_Adler",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.02819138376017471
+      },
+      {
+        "evidence_id": "E11",
+        "chunk_id": "52311c27-7b5b-590d-811a-5bfdec8b28c5",
+        "document_id": "0d1fd221-48fe-5b4c-be4c-49b026ba7145",
+        "revision_id": "e744a710-3ee8-53f7-8b0e-f6f2c12870d2",
+        "strategy": "a",
+        "text": "\"One in a Million\" is a song by American rock band Guns N' Roses. It is the eighth track on the album \"G N' R Lies\" and was released in 1988. The lyrics describe Guns N' Roses singer Axl Rose's experience of getting hustled in the Greyhound bus station upon first arriving in Los Angeles. The song is notable not only for its controversy, but also for being one of the first Guns N' Roses songs that Axl Rose wrote solo. According to interviews, Rose wrote \"One in a Million\" on guitar (with which he was not proficient at the time), using only the bottom two strings. This differs from other Rose-written Guns N' Roses songs, which Rose composed on piano or keyboards. This is the first Guns N' Roses song to feature piano, played by Rose on the outro.",
+        "title": "One in a Million (Guns N' Roses song)",
+        "start": 0,
+        "end": 753,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 65
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 66,
+            "end": 141
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 142,
+            "end": 288
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 289,
+            "end": 420
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 421,
+            "end": 568
+          },
+          {
+            "kind": "sentence",
+            "number": 5,
+            "start": 569,
+            "end": 669
+          },
+          {
+            "kind": "sentence",
+            "number": 6,
+            "start": 670,
+            "end": 753
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5abdaa8f55429965af743dae",
+          "url": "https://en.wikipedia.org/wiki/One_in_a_Million_%28Guns_N%27_Roses_song%29",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.029571646010002173
+      }
+    ],
+    "search_trace": [
+      {
+        "query": "Guns N Roses promo movie starring Arnold Schwarzenegger former New York Police detective year",
+        "strategy": "a",
+        "profile": "1a8846753a25",
+        "embedding_usage": {
+          "model": "text-embedding-3-small",
+          "input_tokens": 18,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 3.6e-07
+        },
+        "document_ranking": [
+          "6476de34-2532-5dca-aa31-da334a21111c",
+          "db9362ff-d5d4-5804-9cd8-b3eb9634b6ac",
+          "77158163-24e0-5bde-9844-2ddb60365409",
+          "79bb4194-248a-5464-9b7d-ba296d1a7fc1",
+          "f616413b-4dd8-5c9b-9a81-f60851fc89cb",
+          "79346a1c-e031-5093-90e3-6ade85f0f7ef",
+          "435b6d10-71b3-5a77-84cd-d00e9e4c831f",
+          "65b8b001-b3e9-52a2-a691-dd38604215c6",
+          "3580816d-65ea-53b8-8fd2-4f422b9b99ce",
+          "e0e22ff3-d994-504c-b927-16557a18ff67"
+        ],
+        "candidate_counts": {
+          "dense": 30,
+          "bm25": 30,
+          "active_dense": 30,
+          "active_bm25": 30
+        },
+        "evidence": [
+          {
+            "evidence_id": "E1",
+            "chunk_id": "f6ed29f1-4b7f-5615-9819-4473c11bacef",
+            "document_id": "6476de34-2532-5dca-aa31-da334a21111c",
+            "revision_id": "ea20ed2c-945a-532a-bff9-0117c64c8761",
+            "strategy": "a",
+            "text": "End of Days is a 1999 American fantasy action horror thriller film directed by Peter Hyams and starring Arnold Schwarzenegger, Gabriel Byrne, Robin Tunney, Kevin Pollak, Rod Steiger, CCH Pounder, and Udo Kier. The film follows former New York Police Department detective Jericho Cane (Schwarzenegger) after he saves a banker (Byrne) from an assassin, finds himself embroiled in a religious conflict, and must protect an innocent young woman (Tunney) who is chosen by evil forces to conceive the Antichrist with Satan.",
+            "title": "End of Days (film)",
+            "start": 0,
+            "end": 517,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 209
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 210,
+                "end": 517
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5ab3b0bf5542992ade7c6e39",
+              "url": "https://en.wikipedia.org/wiki/End_of_Days_%28film%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03177805800756621
+          },
+          {
+            "evidence_id": "E2",
+            "chunk_id": "a27bde8f-205f-570d-beda-48db9d9d5973",
+            "document_id": "db9362ff-d5d4-5804-9cd8-b3eb9634b6ac",
+            "revision_id": "25000614-7e2f-5718-bd9c-f4989644ea5d",
+            "strategy": "a",
+            "text": "Guns N' Roses is an American hard rock band originally formed in 1985 by members of Hollywood Rose and L.A. Guns. After signing with Geffen Records in 1986, the band released its debut album \"Appetite for Destruction\" in 1987. All songs on the album were credited as written by the full band, composed of vocalist Axl Rose, guitarists Slash and Izzy Stradlin, bassist Duff McKagan and drummer Steven Adler, while \"It's So Easy\" was co-written by West Arkeen and \"Anything Goes\" was co-written by Chris Weber, formerly of Hollywood Rose. The following year saw the release of the band's second album \"G N' R Lies\", made up of all four tracks from 1986's \"Live ?! *@ Like a Suicide\" EP and four acoustic-based tracks.",
+            "title": "List of songs recorded by Guns N' Roses",
+            "start": 0,
+            "end": 715,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 113
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 114,
+                "end": 226
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 227,
+                "end": 536
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 537,
+                "end": 661
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 662,
+                "end": 715
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5abdaa8f55429965af743dae",
+              "url": "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Guns_N%27_Roses",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.0315136476426799
+          },
+          {
+            "evidence_id": "E3",
+            "chunk_id": "53f5de00-82f3-5d93-a6ea-839af669b326",
+            "document_id": "77158163-24e0-5bde-9844-2ddb60365409",
+            "revision_id": "65dac317-1bc5-5e77-9d9b-14e6e0b4488d",
+            "strategy": "a",
+            "text": "\"Oh My God\" is a song by Guns N' Roses released in 1999 on the soundtrack to the film \"End of Days\". The song was sent out to radio stations in November 1999 as a promo for the soundtrack and the band. Despite being the band's first recorded release in almost five years, it was never issued as a stand-alone single for public retail.",
+            "title": "Oh My God (Guns N' Roses song)",
+            "start": 0,
+            "end": 334,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 100
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 101,
+                "end": 201
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 202,
+                "end": 334
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5ab3b0bf5542992ade7c6e39",
+              "url": "https://en.wikipedia.org/wiki/Oh_My_God_%28Guns_N%27_Roses_song%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.029030910609857977
+          },
+          {
+            "evidence_id": "E4",
+            "chunk_id": "3be58874-2841-5d70-85ec-7941954651b9",
+            "document_id": "79bb4194-248a-5464-9b7d-ba296d1a7fc1",
+            "revision_id": "ec41b3d9-f0ef-53df-bf41-2cf2626b2f48",
+            "strategy": "a",
+            "text": "Steven Adler (born Michael Coletti; January 22, 1965) is an American musician. He is best known as the former drummer and co-songwriter of the hard rock band Guns N' Roses, with whom he achieved worldwide success in the late 1980s. Adler was fired from Guns N' Roses over his heroin addiction in 1990, following which he reformed his old band Road Crew and briefly joined BulletBoys, which both proved unsuccessful. During the 2000s, Adler was the drummer of the band Adler's Appetite, and from 2012, he had held the same position in the band Adler. In early 2017, Steven Adler declared that he has no intention to continue with the band, and that the band has now dissolved, and the reason is his lack of interest in performing during poorly attended concerts. He appeared on the second and fifth seasons of the reality TV show \"Celebrity Rehab with Dr. Drew\", as well as on the first season of its spin-off \"Sober House\". He was inducted into the Rock and Roll Hall of Fame in 2012 as a member of Guns N' Roses.",
+            "title": "Steven Adler",
+            "start": 0,
+            "end": 1013,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 78
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 79,
+                "end": 231
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 232,
+                "end": 415
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 416,
+                "end": 549
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 550,
+                "end": 761
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 762,
+                "end": 923
+              },
+              {
+                "kind": "sentence",
+                "number": 6,
+                "start": 924,
+                "end": 1013
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a8b83e25542997f31a41d5a",
+              "url": "https://en.wikipedia.org/wiki/Steven_Adler",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.02819138376017471
+          },
+          {
+            "evidence_id": "E5",
+            "chunk_id": "b095607d-30bb-5536-9e3b-43a2c98d2580",
+            "document_id": "f616413b-4dd8-5c9b-9a81-f60851fc89cb",
+            "revision_id": "d0b4034e-625c-58fa-a684-48b6b84d066d",
+            "strategy": "a",
+            "text": "\"The Spaghetti Incident?\" is the fifth studio album by the American hard rock band Guns N' Roses. The album is composed of covers of older punk rock and hard rock songs. \" \"The Spaghetti Incident?\"\" is the only studio album to feature rhythm guitarist Gilby Clarke, who replaced original Guns N' Roses member Izzy Stradlin during the band's \"Use Your Illusion\" tour in 1991, as well as the last album to feature guitarist Slash, bassist Duff McKagan and drummer Matt Sorum. It is also the only Guns N' Roses album not to be accompanied by a supporting tour.",
+            "title": "&quot;The Spaghetti Incident?&quot;",
+            "start": 0,
+            "end": 557,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 25
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 26,
+                "end": 97
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 98,
+                "end": 171
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 172,
+                "end": 198
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 199,
+                "end": 473
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 474,
+                "end": 557
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a8b83e25542997f31a41d5a",
+              "url": "https://en.wikipedia.org/wiki/%26quot%3BThe_Spaghetti_Incident%3F%26quot%3B",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.027650648360030512
+          },
+          {
+            "evidence_id": "E6",
+            "chunk_id": "1b0ceb77-a5d7-5812-bc35-ce28ef590680",
+            "document_id": "79346a1c-e031-5093-90e3-6ade85f0f7ef",
+            "revision_id": "0a780bcf-da91-503f-b03b-cfdabc42f103",
+            "strategy": "a",
+            "text": "Guns N' Roses, often abbreviated as GNR, is an American hard rock band from Los Angeles and formed in 1985. The lineup, when first signed to Geffen Records in 1986, consisted of vocalist Axl Rose, lead guitarist Slash, rhythm guitarist Izzy Stradlin, bassist Duff McKagan, and drummer Steven Adler. Guns N' Roses have released six studio albums, accumulating sales of more than 100 million records worldwide, including 45 million records in the United States, making them one of the world's best-selling artists of all time.",
+            "title": "Guns N' Roses",
+            "start": 0,
+            "end": 524,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 107
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 108,
+                "end": 298
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 299,
+                "end": 524
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a8b83e25542997f31a41d5a",
+              "url": "https://en.wikipedia.org/wiki/Guns_N%27_Roses",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.027119252873563218
+          },
+          {
+            "evidence_id": "E7",
+            "chunk_id": "a3108a76-c928-545f-9c1a-3e2022331d11",
+            "document_id": "435b6d10-71b3-5a77-84cd-d00e9e4c831f",
+            "revision_id": "91aa6bc8-0d4f-5f34-a878-4677f98d7cba",
+            "strategy": "a",
+            "text": "One Good Cop is a 1991 American crime drama film written and directed by Heywood Gould and starring Michael Keaton, Rene Russo, Anthony LaPaglia and Benjamin Bratt. Keaton portrays New York City Police Department Detective Artie Lewis, who, with his wife Rita (Russo), adopts his late partner's (LaPaglia) children and loves them as their own. He also targets one of the criminals responsible for his partner's death. He initially seeks justice for his adoptive children, but ultimately chooses retaliation by robbing his quarry to support his new family, endangering them and his career.",
+            "title": "One Good Cop",
+            "start": 0,
+            "end": 588,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 164
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 165,
+                "end": 343
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 344,
+                "end": 417
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 418,
+                "end": 588
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a75a52b5542992d0ec05fcf",
+              "url": "https://en.wikipedia.org/wiki/One_Good_Cop",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.026984126984126985
+          },
+          {
+            "evidence_id": "E8",
+            "chunk_id": "96086281-ca90-5846-bc8b-34e8949c2ad1",
+            "document_id": "65b8b001-b3e9-52a2-a691-dd38604215c6",
+            "revision_id": "d7758367-0b4c-56ca-a401-870c5872834d",
+            "strategy": "a",
+            "text": "Hollywood Rose was an American hard rock group formed in 1983 and is best known as the precursor group for what would eventually become Guns N' Roses. The group was founded by Axl Rose, Izzy Stradlin and Chris Weber while they were aided during live shows by Rick Mars, Johnny Kreis, Steve Darrow and Andre Troxx. Rose, Stradlin and Weber, along with Kreis, recorded a five-song demo in 1984. However, after a number of lineup changes, which includes Weber and Kreis being replaced by Slash and Steven Adler (both then of Road Crew) respectively as well the departure of Stradlin, the group disbanded the same year.",
+            "title": "Hollywood Rose",
+            "start": 0,
+            "end": 615,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 150
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 151,
+                "end": 313
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 314,
+                "end": 392
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 393,
+                "end": 615
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5abdaa8f55429965af743dae",
+              "url": "https://en.wikipedia.org/wiki/Hollywood_Rose",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.025989268947015427
+          }
+        ],
+        "round": 1,
+        "tool_call_id": "call_QNpg3IPl3wHNqcQ2EtecQ8V1",
+        "executed": true,
+        "follow_up": null,
+        "requested_query": "Guns N Roses promo movie starring Arnold Schwarzenegger former New York Police detective year",
+        "query_adjusted": false
+      },
+      {
+        "query": "Guns N' Roses End of Days promo year November 1999 radio stations",
+        "strategy": "a",
+        "profile": "1a8846753a25",
+        "embedding_usage": {
+          "model": "text-embedding-3-small",
+          "input_tokens": 16,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 3.2e-07
+        },
+        "document_ranking": [
+          "77158163-24e0-5bde-9844-2ddb60365409",
+          "e0e22ff3-d994-504c-b927-16557a18ff67",
+          "7eb4fcae-0536-569e-87cb-105b43f5683a",
+          "db9362ff-d5d4-5804-9cd8-b3eb9634b6ac",
+          "0d1fd221-48fe-5b4c-be4c-49b026ba7145",
+          "0a14a4e0-3523-5c46-be7d-718e7eef79b5",
+          "711fbc9d-4b83-566d-98f3-ae12b1b080e7",
+          "79346a1c-e031-5093-90e3-6ade85f0f7ef",
+          "65b8b001-b3e9-52a2-a691-dd38604215c6",
+          "341756bc-6df2-5a05-b3d3-718340f40700"
+        ],
+        "candidate_counts": {
+          "dense": 30,
+          "bm25": 30,
+          "active_dense": 30,
+          "active_bm25": 30
+        },
+        "evidence": [
+          {
+            "evidence_id": "E3",
+            "chunk_id": "53f5de00-82f3-5d93-a6ea-839af669b326",
+            "document_id": "77158163-24e0-5bde-9844-2ddb60365409",
+            "revision_id": "65dac317-1bc5-5e77-9d9b-14e6e0b4488d",
+            "strategy": "a",
+            "text": "\"Oh My God\" is a song by Guns N' Roses released in 1999 on the soundtrack to the film \"End of Days\". The song was sent out to radio stations in November 1999 as a promo for the soundtrack and the band. Despite being the band's first recorded release in almost five years, it was never issued as a stand-alone single for public retail.",
+            "title": "Oh My God (Guns N' Roses song)",
+            "start": 0,
+            "end": 334,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 100
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 101,
+                "end": 201
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 202,
+                "end": 334
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5ab3b0bf5542992ade7c6e39",
+              "url": "https://en.wikipedia.org/wiki/Oh_My_God_%28Guns_N%27_Roses_song%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03278688524590164
+          },
+          {
+            "evidence_id": "E9",
+            "chunk_id": "197762ea-e75f-5be9-86ec-ef12d1763587",
+            "document_id": "e0e22ff3-d994-504c-b927-16557a18ff67",
+            "revision_id": "fc401c64-850f-561e-bfa4-5c8efc7695b8",
+            "strategy": "a",
+            "text": "Live Era '87–'93 is a double live album by the American hard rock band Guns N' Roses. It was released on November 23, 1999. The record was the first official Guns N' Roses release since \"\"The Spaghetti Incident?\" \" released on the same day in 1993. Guitarist Slash notes that the album is \"not pretty and there are a lot of mistakes, but this is Guns N' Roses, not the fucking Mahavishnu Orchestra. It's as honest as it gets.\"",
+            "title": "Live Era '87–'93",
+            "start": 0,
+            "end": 426,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 85
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 86,
+                "end": 123
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 124,
+                "end": 212
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 213,
+                "end": 248
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 249,
+                "end": 398
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 399,
+                "end": 426
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a8b83e25542997f31a41d5a",
+              "url": "https://en.wikipedia.org/wiki/Live_Era_%2787%E2%80%93%2793",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.031754032258064516
+          },
+          {
+            "evidence_id": "E10",
+            "chunk_id": "33294afe-c575-5a24-85e6-d6e8b6fa792a",
+            "document_id": "7eb4fcae-0536-569e-87cb-105b43f5683a",
+            "revision_id": "22551aa1-d582-54af-bdf6-acebc2567268",
+            "strategy": "a",
+            "text": "\"November Rain\" is a power ballad by the American hard rock band Guns N' Roses. Written by the band's lead singer Axl Rose, the song was released as a single in 1992 from their third studio album, \"Use Your Illusion I\" (1991). It features a sweeping orchestral backing and is one of Guns N' Roses' longest songs.",
+            "title": "November Rain",
+            "start": 0,
+            "end": 312,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 79
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 80,
+                "end": 226
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 227,
+                "end": 312
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ab2ba3d5542992953946867",
+              "url": "https://en.wikipedia.org/wiki/November_Rain",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.0315136476426799
+          },
+          {
+            "evidence_id": "E2",
+            "chunk_id": "a27bde8f-205f-570d-beda-48db9d9d5973",
+            "document_id": "db9362ff-d5d4-5804-9cd8-b3eb9634b6ac",
+            "revision_id": "25000614-7e2f-5718-bd9c-f4989644ea5d",
+            "strategy": "a",
+            "text": "Guns N' Roses is an American hard rock band originally formed in 1985 by members of Hollywood Rose and L.A. Guns. After signing with Geffen Records in 1986, the band released its debut album \"Appetite for Destruction\" in 1987. All songs on the album were credited as written by the full band, composed of vocalist Axl Rose, guitarists Slash and Izzy Stradlin, bassist Duff McKagan and drummer Steven Adler, while \"It's So Easy\" was co-written by West Arkeen and \"Anything Goes\" was co-written by Chris Weber, formerly of Hollywood Rose. The following year saw the release of the band's second album \"G N' R Lies\", made up of all four tracks from 1986's \"Live ?! *@ Like a Suicide\" EP and four acoustic-based tracks.",
+            "title": "List of songs recorded by Guns N' Roses",
+            "start": 0,
+            "end": 715,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 113
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 114,
+                "end": 226
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 227,
+                "end": 536
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 537,
+                "end": 661
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 662,
+                "end": 715
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5abdaa8f55429965af743dae",
+              "url": "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Guns_N%27_Roses",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03057889822595705
+          },
+          {
+            "evidence_id": "E11",
+            "chunk_id": "52311c27-7b5b-590d-811a-5bfdec8b28c5",
+            "document_id": "0d1fd221-48fe-5b4c-be4c-49b026ba7145",
+            "revision_id": "e744a710-3ee8-53f7-8b0e-f6f2c12870d2",
+            "strategy": "a",
+            "text": "\"One in a Million\" is a song by American rock band Guns N' Roses. It is the eighth track on the album \"G N' R Lies\" and was released in 1988. The lyrics describe Guns N' Roses singer Axl Rose's experience of getting hustled in the Greyhound bus station upon first arriving in Los Angeles. The song is notable not only for its controversy, but also for being one of the first Guns N' Roses songs that Axl Rose wrote solo. According to interviews, Rose wrote \"One in a Million\" on guitar (with which he was not proficient at the time), using only the bottom two strings. This differs from other Rose-written Guns N' Roses songs, which Rose composed on piano or keyboards. This is the first Guns N' Roses song to feature piano, played by Rose on the outro.",
+            "title": "One in a Million (Guns N' Roses song)",
+            "start": 0,
+            "end": 753,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 65
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 66,
+                "end": 141
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 142,
+                "end": 288
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 289,
+                "end": 420
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 421,
+                "end": 568
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 569,
+                "end": 669
+              },
+              {
+                "kind": "sentence",
+                "number": 6,
+                "start": 670,
+                "end": 753
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5abdaa8f55429965af743dae",
+              "url": "https://en.wikipedia.org/wiki/One_in_a_Million_%28Guns_N%27_Roses_song%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.029571646010002173
+          },
+          {
+            "evidence_id": "E12",
+            "chunk_id": "5fce3623-ce70-5e9d-8db7-4338884e280c",
+            "document_id": "0a14a4e0-3523-5c46-be7d-718e7eef79b5",
+            "revision_id": "112e83fe-e175-5ef5-96c5-9fb420af3457",
+            "strategy": "a",
+            "text": "Use Your Illusion II is the fourth studio album by the American hard rock band Guns N' Roses. The album was released on September 17, 1991, the same day as its counterpart album \"Use Your Illusion I\". Both of the albums were released in conjunction with the Use Your Illusion Tour. Bolstered by the lead single \"You Could Be Mine,\" \"Use Your Illusion II\" was the slightly more popular of the two albums, selling 770,000 copies its first week and debuting at No. 1 on the U.S. charts, ahead of \"Use Your Illusion I\"'s first week sales of 685,000. As of 2010, \"Use Your Illusion II\" has sold 5,587,000 units in the U.S., according to Nielsen SoundScan. Both albums have since been certified 7× Platinum by the RIAA. It was also No. 1 on the UK Albums Chart for a single week. It is the last Guns N' Roses album to feature rhythm guitarist Izzy Stradlin. It also included the last Guns N' Roses song to feature drummer Steven Adler, who played on \"Civil War.\"",
+            "title": "Use Your Illusion II",
+            "start": 0,
+            "end": 956,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 93
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 94,
+                "end": 200
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 201,
+                "end": 281
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 282,
+                "end": 545
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 546,
+                "end": 650
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 651,
+                "end": 713
+              },
+              {
+                "kind": "sentence",
+                "number": 6,
+                "start": 714,
+                "end": 773
+              },
+              {
+                "kind": "sentence",
+                "number": 7,
+                "start": 774,
+                "end": 851
+              },
+              {
+                "kind": "sentence",
+                "number": 8,
+                "start": 852,
+                "end": 956
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ab3ff85554299753aec5a1a",
+              "url": "https://en.wikipedia.org/wiki/Use_Your_Illusion_II",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.029418126757516764
+          },
+          {
+            "evidence_id": "E13",
+            "chunk_id": "91a6aaa1-b69f-5b39-812d-064ccc6f00e6",
+            "document_id": "711fbc9d-4b83-566d-98f3-ae12b1b080e7",
+            "revision_id": "73e6a163-38f9-5cb3-9aa0-a6f139ad2e7d",
+            "strategy": "a",
+            "text": "\"On the Radio\" is the first single from Regina Spektor's fourth album, \"Begin to Hope\". The chorus contains references to the song \"November Rain\" by Guns N' Roses.",
+            "title": "On the Radio (Regina Spektor song)",
+            "start": 0,
+            "end": 164,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 87
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 88,
+                "end": 164
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ab2ba3d5542992953946867",
+              "url": "https://en.wikipedia.org/wiki/On_the_Radio_%28Regina_Spektor_song%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.029138513513513514
+          },
+          {
+            "evidence_id": "E6",
+            "chunk_id": "1b0ceb77-a5d7-5812-bc35-ce28ef590680",
+            "document_id": "79346a1c-e031-5093-90e3-6ade85f0f7ef",
+            "revision_id": "0a780bcf-da91-503f-b03b-cfdabc42f103",
+            "strategy": "a",
+            "text": "Guns N' Roses, often abbreviated as GNR, is an American hard rock band from Los Angeles and formed in 1985. The lineup, when first signed to Geffen Records in 1986, consisted of vocalist Axl Rose, lead guitarist Slash, rhythm guitarist Izzy Stradlin, bassist Duff McKagan, and drummer Steven Adler. Guns N' Roses have released six studio albums, accumulating sales of more than 100 million records worldwide, including 45 million records in the United States, making them one of the world's best-selling artists of all time.",
+            "title": "Guns N' Roses",
+            "start": 0,
+            "end": 524,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 107
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 108,
+                "end": 298
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 299,
+                "end": 524
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a8b83e25542997f31a41d5a",
+              "url": "https://en.wikipedia.org/wiki/Guns_N%27_Roses",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.02854251012145749
+          }
+        ],
+        "round": 2,
+        "tool_call_id": "call_nY8xljXovWCtNyIdIYc4LyVu",
+        "executed": true,
+        "follow_up": {
+          "evidence_id": "E3",
+          "entity": "End of Days"
+        },
+        "requested_query": "Guns N' Roses End of Days promo year November 1999 radio stations",
+        "query_adjusted": false
+      }
+    ],
+    "workflow": "bounded_tools_v1",
+    "execution": {
+      "planning_rounds": 2,
+      "retrieval_rounds": 2,
+      "tool_calls": 2,
+      "searches": 2,
+      "llm_calls": 3,
+      "embedding_calls": 2,
+      "total_provider_calls": 5,
+      "stop_reason": "retrieval_limit",
+      "limits": {
+        "retrieval_rounds": 2,
+        "searches": 3,
+        "llm_calls": 3,
+        "embedding_calls": 3,
+        "total_provider_calls": 6
+      }
+    },
+    "configuration": {
+      "strategy": "a",
+      "profile": "1a8846753a25",
+      "embedding_model": "text-embedding-3-small",
+      "embedding_dimensions": 384,
+      "generation_model": "gpt-5.4-mini-2026-03-17",
+      "prompt_version": "bounded_tools_quote_ids_v1"
+    },
+    "usage": {
+      "planning": [
+        {
+          "input_tokens": 532,
+          "output_tokens": 39,
+          "estimated_cost_usd": 0.0005745,
+          "model": "gpt-5.4-mini-2026-03-17"
+        },
+        {
+          "input_tokens": 1842,
+          "output_tokens": 50,
+          "estimated_cost_usd": 0.0016065,
+          "model": "gpt-5.4-mini-2026-03-17"
+        }
+      ],
+      "generation": {
+        "input_tokens": 5124,
+        "output_tokens": 78,
+        "estimated_cost_usd": 0.004194,
+        "model": "gpt-5.4-mini-2026-03-17"
+      },
+      "embeddings": [
+        {
+          "model": "text-embedding-3-small",
+          "input_tokens": 18,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 3.6e-07
+        },
+        {
+          "model": "text-embedding-3-small",
+          "input_tokens": 16,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 3.2e-07
+        }
+      ],
+      "estimated_model_cost_usd": 0.0063750000000000005,
+      "estimated_total_cost_usd": 0.006375680000000001
+    },
+    "latency_ms": 5742
+  },
+  "error": null,
+  "elapsed_ms": 5742,
+  "ledger_after": {
+    "calls": 486,
+    "reserved_usd": 1.19562755,
+    "estimated_actual_usd": 0.41180405,
+    "input_tokens": 7202412,
+    "output_tokens": 9367
+  }
+}

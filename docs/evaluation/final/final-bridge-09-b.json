@@ -1,0 +1,1152 @@
+{
+  "case_id": "final-bridge-09",
+  "strategy": "b",
+  "question": "What screenwriter with credits for \"Evolution\" co-wrote a film starring Nicolas Cage and Téa Leoni?",
+  "started_at": "2026-10-28T07:01:25.652872+00:00",
+  "ledger_before": {
+    "calls": 471,
+    "reserved_usd": 1.13570564,
+    "estimated_actual_usd": 0.39459989,
+    "input_tokens": 7182266,
+    "output_tokens": 8884
+  },
+  "result": {
+    "status": "answered",
+    "claims": [
+      {
+        "text": "David Weissman co-wrote The Family Man, which stars Nicolas Cage and Téa Leoni.",
+        "citations": [
+          {
+            "evidence_id": "E3",
+            "quote": "The Family Man is a 2000 American romantic comedy-drama film directed by Brett Ratner, written by David Diamond and David Weissman, and starring Nicolas Cage and Téa Leoni."
+          },
+          {
+            "evidence_id": "E2",
+            "quote": "David Weissman is a screenwriter and director. His film credits include \"The Family Man\" (2000), \"Evolution\" (2001), and \"\"When in Rome\"\" (2010)."
+          }
+        ]
+      }
+    ],
+    "conflicting_claims": [],
+    "answer": "David Weissman co-wrote The Family Man, which stars Nicolas Cage and Téa Leoni. [E3] [E2]",
+    "evidence": [
+      {
+        "evidence_id": "E3",
+        "chunk_id": "1652c8e8-01df-591b-a42f-6be3dd4fcf4d",
+        "document_id": "4880d96e-79b5-51d6-9621-df2342f93796",
+        "revision_id": "fb7e7c30-1bfc-5c20-8d26-a2d461e1692f",
+        "strategy": "b",
+        "text": "The Family Man is a 2000 American romantic comedy-drama film directed by Brett Ratner, written by David Diamond and David Weissman, and starring Nicolas Cage and Téa Leoni. Cage's production company, Saturn Films, helped produce the film. The film centers on a man who sees what could have been had he made a different decision 13 years prior.",
+        "title": "The Family Man",
+        "start": 0,
+        "end": 343,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 172
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 173,
+            "end": 238
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 239,
+            "end": 343
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "validation",
+          "record_id": "5a877e5d5542993e715abf7d",
+          "url": "https://en.wikipedia.org/wiki/The_Family_Man",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.029051670471052088
+      },
+      {
+        "evidence_id": "E2",
+        "chunk_id": "146fa797-3166-578d-9f2c-396e68df0c64",
+        "document_id": "4d1c64fb-0924-5f82-92f6-0a32f44e0b9e",
+        "revision_id": "8c16d971-030b-5187-b9d0-16e0bc68471b",
+        "strategy": "b",
+        "text": "David Weissman is a screenwriter and director. His film credits include \"The Family Man\" (2000), \"Evolution\" (2001), and \"\"When in Rome\"\" (2010).",
+        "title": "David Weissman",
+        "start": 0,
+        "end": 145,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 46
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 47,
+            "end": 145
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "validation",
+          "record_id": "5a877e5d5542993e715abf7d",
+          "url": "https://en.wikipedia.org/wiki/David_Weissman",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.03252247488101534
+      },
+      {
+        "evidence_id": "E1",
+        "chunk_id": "0bf4c27d-62e6-5c77-8320-6c9a02b93691",
+        "document_id": "d8188818-3ddb-55fe-a052-ef1489ca4528",
+        "revision_id": "b5178d36-c3ac-581e-ae6d-21f79e44c433",
+        "strategy": "b",
+        "text": "Joe is a 2013 independent drama film directed and co-produced by David Gordon Green, co-produced by Lisa Muskat, Derrick Tseng and Christopher Woodrow and written by Gary Hawkins, adaptation from Larry Brown's 1991 novel of the same name. It stars Nicolas Cage and Tye Sheridan, revolving around a tormented man who hires a 15-year-old boy and protects him from his abusive father.",
+        "title": "Joe (2013 film)",
+        "start": 0,
+        "end": 381,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 238
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 239,
+            "end": 381
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5ae0abf655429945ae95940d",
+          "url": "https://en.wikipedia.org/wiki/Joe_%282013_film%29",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.03149801587301587
+      },
+      {
+        "evidence_id": "E4",
+        "chunk_id": "8a8d0365-91cc-5730-a468-7968643de797",
+        "document_id": "af7416da-3fa8-5dcc-8d4b-3705d1cf958a",
+        "revision_id": "2b73e6bb-f464-5c79-93b1-3dd6c2ecb370",
+        "strategy": "b",
+        "text": "Next is a 2007 American science fiction action thriller film directed by Lee Tamahori and starring Nicolas Cage, Julianne Moore, Jessica Biel, Thomas Kretschmann, Tory Kittles, and Peter Falk. The film's original script was loosely based on the science fiction short story \"The Golden Man\" by Philip K. Dick. The film tells the story of Cris Johnson, a small-time magician based in Las Vegas, who has limited clairvoyance; his ability allows him to see into the very immediate future. His gift makes him a target not only of a highly motivated and heavily armed group of terrorists, but also wanted by the FBI to help them fight them.",
+        "title": "Next (2007 film)",
+        "start": 0,
+        "end": 634,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 192
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 193,
+            "end": 308
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 309,
+            "end": 484
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 485,
+            "end": 634
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a85b86d5542994c784ddb63",
+          "url": "https://en.wikipedia.org/wiki/Next_%282007_film%29",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.027108970929195647
+      },
+      {
+        "evidence_id": "E8",
+        "chunk_id": "b48cb136-9d8d-5c39-b28d-aa5d6a2548ef",
+        "document_id": "f398a1cc-fc4a-5520-9e67-628bc2a78829",
+        "revision_id": "43834e03-e845-5c26-adab-f18c1efe3ab8",
+        "strategy": "b",
+        "text": "Jane Anderson (born c. 1954 in California) is an American actress-turned-award-winning playwright, screenwriter and director. She has written and directed one feature film, \"The Prize Winner of Defiance, Ohio\" (2005) and wrote the script for the Nicolas Cage film \"It Could Happen to You\" (1994). She won an Emmy Award for writing the screenplay for the miniseries \"Olive Kitteridge\" (2014).",
+        "title": "Jane Anderson",
+        "start": 0,
+        "end": 391,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 125
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 126,
+            "end": 296
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 297,
+            "end": 391
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a9046ce5542990a984935ef",
+          "url": "https://en.wikipedia.org/wiki/Jane_Anderson",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.029910714285714284
+      },
+      {
+        "evidence_id": "E7",
+        "chunk_id": "8ea584b4-4793-5ee2-b30b-4dcc89eae2f0",
+        "document_id": "bb319437-9a68-50c3-8b9e-65389ef2efb3",
+        "revision_id": "1fac4983-c5c8-5d6b-94c5-2360c7c4eb55",
+        "strategy": "b",
+        "text": "Evolution is a 2001 American science-fiction monster comedy film directed by Ivan Reitman and starring David Duchovny, Orlando Jones, Seann William Scott, Julianne Moore, and Ted Levine. It was released by DreamWorks in the United States and by Columbia Pictures internationally. The plot of the film follows college professor Ira Kane (David Duchovny) and geologist Harry Block (Orlando Jones), who investigate a meteor crash in Arizona. They discover that the meteor is harboring extraterrestrial life, which is evolving very quickly into large, diverse and outlandish creatures.",
+        "title": "Evolution (2001 film)",
+        "start": 0,
+        "end": 581,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 186
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 187,
+            "end": 279
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 280,
+            "end": 438
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 439,
+            "end": 581
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5adecace5542995ec70e8f16",
+          "url": "https://en.wikipedia.org/wiki/Evolution_%282001_film%29",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.016129032258064516
+      },
+      {
+        "evidence_id": "E5",
+        "chunk_id": "d994d65b-c47b-5390-b545-c4a735988408",
+        "document_id": "8515bb7b-8411-5ecf-92d1-e694bc040ad7",
+        "revision_id": "c91820e4-d316-5dee-9fe2-50c8f5b18046",
+        "strategy": "b",
+        "text": "Pay the Ghost is a 2015 American supernatural horror film directed by Uli Edel and written by Dan Kay. The film stars Nicolas Cage, Sarah Wayne Callies, Veronica Ferres, Lauren Beatty, Jack Fulton, and Elizabeth Jeanne le Roux. The film was released on September 25, 2015, by RLJ Entertainment.",
+        "title": "Pay the Ghost",
+        "start": 0,
+        "end": 294,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 102
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 103,
+            "end": 227
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 228,
+            "end": 294
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5adeba465542992fa25da82e",
+          "url": "https://en.wikipedia.org/wiki/Pay_the_Ghost",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.02604430914933198
+      },
+      {
+        "evidence_id": "E6",
+        "chunk_id": "67803e22-c954-5c35-8ade-d119ad129916",
+        "document_id": "89bb3a2a-bd04-5944-8e6f-7d2e860d00c2",
+        "revision_id": "ab8aa5fc-0671-5386-aab6-dfaf6b2a272a",
+        "strategy": "b",
+        "text": "Face/Off is a 1997 American science fiction action film directed by John Woo, written by Mike Werb and Michael Colleary, and starring John Travolta and Nicolas Cage. Travolta plays an FBI agent and Cage plays a terrorist, sworn enemies who assume each other's physical appearance.",
+        "title": "Face/Off",
+        "start": 0,
+        "end": 280,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 165
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 166,
+            "end": 280
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a72bfaa5542992359bc3197",
+          "url": "https://en.wikipedia.org/wiki/Face%2FOff",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.025987006496751626
+      }
+    ],
+    "search_trace": [
+      {
+        "query": "screenwriter credits Evolution co-wrote film starring Nicolas Cage and Téa Leoni",
+        "strategy": "b",
+        "profile": "1a8846753a25",
+        "embedding_usage": {
+          "model": "text-embedding-3-small",
+          "input_tokens": 17,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 3.4000000000000003e-07
+        },
+        "document_ranking": [
+          "d8188818-3ddb-55fe-a052-ef1489ca4528",
+          "4d1c64fb-0924-5f82-92f6-0a32f44e0b9e",
+          "4880d96e-79b5-51d6-9621-df2342f93796",
+          "af7416da-3fa8-5dcc-8d4b-3705d1cf958a",
+          "8515bb7b-8411-5ecf-92d1-e694bc040ad7",
+          "89bb3a2a-bd04-5944-8e6f-7d2e860d00c2",
+          "bb319437-9a68-50c3-8b9e-65389ef2efb3",
+          "f398a1cc-fc4a-5520-9e67-628bc2a78829",
+          "ba8796cc-d15f-56d1-9b72-d11d2803b03a",
+          "e1df6c8c-985d-50e9-8c75-e8cda69a0740"
+        ],
+        "candidate_counts": {
+          "dense": 30,
+          "bm25": 30,
+          "active_dense": 30,
+          "active_bm25": 30
+        },
+        "evidence": [
+          {
+            "evidence_id": "E1",
+            "chunk_id": "0bf4c27d-62e6-5c77-8320-6c9a02b93691",
+            "document_id": "d8188818-3ddb-55fe-a052-ef1489ca4528",
+            "revision_id": "b5178d36-c3ac-581e-ae6d-21f79e44c433",
+            "strategy": "b",
+            "text": "Joe is a 2013 independent drama film directed and co-produced by David Gordon Green, co-produced by Lisa Muskat, Derrick Tseng and Christopher Woodrow and written by Gary Hawkins, adaptation from Larry Brown's 1991 novel of the same name. It stars Nicolas Cage and Tye Sheridan, revolving around a tormented man who hires a 15-year-old boy and protects him from his abusive father.",
+            "title": "Joe (2013 film)",
+            "start": 0,
+            "end": 381,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 238
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 239,
+                "end": 381
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ae0abf655429945ae95940d",
+              "url": "https://en.wikipedia.org/wiki/Joe_%282013_film%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.030776515151515152
+          },
+          {
+            "evidence_id": "E2",
+            "chunk_id": "146fa797-3166-578d-9f2c-396e68df0c64",
+            "document_id": "4d1c64fb-0924-5f82-92f6-0a32f44e0b9e",
+            "revision_id": "8c16d971-030b-5187-b9d0-16e0bc68471b",
+            "strategy": "b",
+            "text": "David Weissman is a screenwriter and director. His film credits include \"The Family Man\" (2000), \"Evolution\" (2001), and \"\"When in Rome\"\" (2010).",
+            "title": "David Weissman",
+            "start": 0,
+            "end": 145,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 46
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 47,
+                "end": 145
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5a877e5d5542993e715abf7d",
+              "url": "https://en.wikipedia.org/wiki/David_Weissman",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.030158730158730156
+          },
+          {
+            "evidence_id": "E3",
+            "chunk_id": "1652c8e8-01df-591b-a42f-6be3dd4fcf4d",
+            "document_id": "4880d96e-79b5-51d6-9621-df2342f93796",
+            "revision_id": "fb7e7c30-1bfc-5c20-8d26-a2d461e1692f",
+            "strategy": "b",
+            "text": "The Family Man is a 2000 American romantic comedy-drama film directed by Brett Ratner, written by David Diamond and David Weissman, and starring Nicolas Cage and Téa Leoni. Cage's production company, Saturn Films, helped produce the film. The film centers on a man who sees what could have been had he made a different decision 13 years prior.",
+            "title": "The Family Man",
+            "start": 0,
+            "end": 343,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 172
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 173,
+                "end": 238
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 239,
+                "end": 343
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5a877e5d5542993e715abf7d",
+              "url": "https://en.wikipedia.org/wiki/The_Family_Man",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.029051670471052088
+          },
+          {
+            "evidence_id": "E4",
+            "chunk_id": "8a8d0365-91cc-5730-a468-7968643de797",
+            "document_id": "af7416da-3fa8-5dcc-8d4b-3705d1cf958a",
+            "revision_id": "2b73e6bb-f464-5c79-93b1-3dd6c2ecb370",
+            "strategy": "b",
+            "text": "Next is a 2007 American science fiction action thriller film directed by Lee Tamahori and starring Nicolas Cage, Julianne Moore, Jessica Biel, Thomas Kretschmann, Tory Kittles, and Peter Falk. The film's original script was loosely based on the science fiction short story \"The Golden Man\" by Philip K. Dick. The film tells the story of Cris Johnson, a small-time magician based in Las Vegas, who has limited clairvoyance; his ability allows him to see into the very immediate future. His gift makes him a target not only of a highly motivated and heavily armed group of terrorists, but also wanted by the FBI to help them fight them.",
+            "title": "Next (2007 film)",
+            "start": 0,
+            "end": 634,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 192
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 193,
+                "end": 308
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 309,
+                "end": 484
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 485,
+                "end": 634
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a85b86d5542994c784ddb63",
+              "url": "https://en.wikipedia.org/wiki/Next_%282007_film%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.02803379416282642
+          },
+          {
+            "evidence_id": "E5",
+            "chunk_id": "d994d65b-c47b-5390-b545-c4a735988408",
+            "document_id": "8515bb7b-8411-5ecf-92d1-e694bc040ad7",
+            "revision_id": "c91820e4-d316-5dee-9fe2-50c8f5b18046",
+            "strategy": "b",
+            "text": "Pay the Ghost is a 2015 American supernatural horror film directed by Uli Edel and written by Dan Kay. The film stars Nicolas Cage, Sarah Wayne Callies, Veronica Ferres, Lauren Beatty, Jack Fulton, and Elizabeth Jeanne le Roux. The film was released on September 25, 2015, by RLJ Entertainment.",
+            "title": "Pay the Ghost",
+            "start": 0,
+            "end": 294,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 102
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 103,
+                "end": 227
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 228,
+                "end": 294
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5adeba465542992fa25da82e",
+              "url": "https://en.wikipedia.org/wiki/Pay_the_Ghost",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.02604430914933198
+          },
+          {
+            "evidence_id": "E6",
+            "chunk_id": "67803e22-c954-5c35-8ade-d119ad129916",
+            "document_id": "89bb3a2a-bd04-5944-8e6f-7d2e860d00c2",
+            "revision_id": "ab8aa5fc-0671-5386-aab6-dfaf6b2a272a",
+            "strategy": "b",
+            "text": "Face/Off is a 1997 American science fiction action film directed by John Woo, written by Mike Werb and Michael Colleary, and starring John Travolta and Nicolas Cage. Travolta plays an FBI agent and Cage plays a terrorist, sworn enemies who assume each other's physical appearance.",
+            "title": "Face/Off",
+            "start": 0,
+            "end": 280,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 165
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 166,
+                "end": 280
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a72bfaa5542992359bc3197",
+              "url": "https://en.wikipedia.org/wiki/Face%2FOff",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.025987006496751626
+          },
+          {
+            "evidence_id": "E7",
+            "chunk_id": "8ea584b4-4793-5ee2-b30b-4dcc89eae2f0",
+            "document_id": "bb319437-9a68-50c3-8b9e-65389ef2efb3",
+            "revision_id": "1fac4983-c5c8-5d6b-94c5-2360c7c4eb55",
+            "strategy": "b",
+            "text": "Evolution is a 2001 American science-fiction monster comedy film directed by Ivan Reitman and starring David Duchovny, Orlando Jones, Seann William Scott, Julianne Moore, and Ted Levine. It was released by DreamWorks in the United States and by Columbia Pictures internationally. The plot of the film follows college professor Ira Kane (David Duchovny) and geologist Harry Block (Orlando Jones), who investigate a meteor crash in Arizona. They discover that the meteor is harboring extraterrestrial life, which is evolving very quickly into large, diverse and outlandish creatures.",
+            "title": "Evolution (2001 film)",
+            "start": 0,
+            "end": 581,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 186
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 187,
+                "end": 279
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 280,
+                "end": 438
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 439,
+                "end": 581
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5adecace5542995ec70e8f16",
+              "url": "https://en.wikipedia.org/wiki/Evolution_%282001_film%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.01639344262295082
+          },
+          {
+            "evidence_id": "E8",
+            "chunk_id": "b48cb136-9d8d-5c39-b28d-aa5d6a2548ef",
+            "document_id": "f398a1cc-fc4a-5520-9e67-628bc2a78829",
+            "revision_id": "43834e03-e845-5c26-adab-f18c1efe3ab8",
+            "strategy": "b",
+            "text": "Jane Anderson (born c. 1954 in California) is an American actress-turned-award-winning playwright, screenwriter and director. She has written and directed one feature film, \"The Prize Winner of Defiance, Ohio\" (2005) and wrote the script for the Nicolas Cage film \"It Could Happen to You\" (1994). She won an Emmy Award for writing the screenplay for the miniseries \"Olive Kitteridge\" (2014).",
+            "title": "Jane Anderson",
+            "start": 0,
+            "end": 391,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 125
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 126,
+                "end": 296
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 297,
+                "end": 391
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a9046ce5542990a984935ef",
+              "url": "https://en.wikipedia.org/wiki/Jane_Anderson",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.016129032258064516
+          }
+        ],
+        "round": 1,
+        "tool_call_id": "call_M3BUKZR7CIwSoS6u3J6WZNET",
+        "executed": true,
+        "follow_up": null,
+        "requested_query": "screenwriter credits Evolution co-wrote film starring Nicolas Cage and Téa Leoni",
+        "query_adjusted": false
+      },
+      {
+        "query": "David Weissman \"Evolution\" co-writer screenwriter Nicolas Cage Téa Leoni",
+        "strategy": "b",
+        "profile": "1a8846753a25",
+        "embedding_usage": {
+          "model": "text-embedding-3-small",
+          "input_tokens": 19,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 3.8e-07
+        },
+        "document_ranking": [
+          "4d1c64fb-0924-5f82-92f6-0a32f44e0b9e",
+          "d8188818-3ddb-55fe-a052-ef1489ca4528",
+          "4880d96e-79b5-51d6-9621-df2342f93796",
+          "f398a1cc-fc4a-5520-9e67-628bc2a78829",
+          "af7416da-3fa8-5dcc-8d4b-3705d1cf958a",
+          "bb319437-9a68-50c3-8b9e-65389ef2efb3",
+          "d6d645b0-17c9-5ed4-97d8-349f64309ce4",
+          "2a631db7-c98b-5fa8-8c35-33b3a4e3393d",
+          "1a1cdef7-30ba-5fcc-9179-4f6be501d484",
+          "e1df6c8c-985d-50e9-8c75-e8cda69a0740"
+        ],
+        "candidate_counts": {
+          "dense": 30,
+          "bm25": 30,
+          "active_dense": 30,
+          "active_bm25": 30
+        },
+        "evidence": [
+          {
+            "evidence_id": "E2",
+            "chunk_id": "146fa797-3166-578d-9f2c-396e68df0c64",
+            "document_id": "4d1c64fb-0924-5f82-92f6-0a32f44e0b9e",
+            "revision_id": "8c16d971-030b-5187-b9d0-16e0bc68471b",
+            "strategy": "b",
+            "text": "David Weissman is a screenwriter and director. His film credits include \"The Family Man\" (2000), \"Evolution\" (2001), and \"\"When in Rome\"\" (2010).",
+            "title": "David Weissman",
+            "start": 0,
+            "end": 145,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 46
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 47,
+                "end": 145
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5a877e5d5542993e715abf7d",
+              "url": "https://en.wikipedia.org/wiki/David_Weissman",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03252247488101534
+          },
+          {
+            "evidence_id": "E1",
+            "chunk_id": "0bf4c27d-62e6-5c77-8320-6c9a02b93691",
+            "document_id": "d8188818-3ddb-55fe-a052-ef1489ca4528",
+            "revision_id": "b5178d36-c3ac-581e-ae6d-21f79e44c433",
+            "strategy": "b",
+            "text": "Joe is a 2013 independent drama film directed and co-produced by David Gordon Green, co-produced by Lisa Muskat, Derrick Tseng and Christopher Woodrow and written by Gary Hawkins, adaptation from Larry Brown's 1991 novel of the same name. It stars Nicolas Cage and Tye Sheridan, revolving around a tormented man who hires a 15-year-old boy and protects him from his abusive father.",
+            "title": "Joe (2013 film)",
+            "start": 0,
+            "end": 381,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 238
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 239,
+                "end": 381
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ae0abf655429945ae95940d",
+              "url": "https://en.wikipedia.org/wiki/Joe_%282013_film%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03149801587301587
+          },
+          {
+            "evidence_id": "E3",
+            "chunk_id": "1652c8e8-01df-591b-a42f-6be3dd4fcf4d",
+            "document_id": "4880d96e-79b5-51d6-9621-df2342f93796",
+            "revision_id": "fb7e7c30-1bfc-5c20-8d26-a2d461e1692f",
+            "strategy": "b",
+            "text": "The Family Man is a 2000 American romantic comedy-drama film directed by Brett Ratner, written by David Diamond and David Weissman, and starring Nicolas Cage and Téa Leoni. Cage's production company, Saturn Films, helped produce the film. The film centers on a man who sees what could have been had he made a different decision 13 years prior.",
+            "title": "The Family Man",
+            "start": 0,
+            "end": 343,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 172
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 173,
+                "end": 238
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 239,
+                "end": 343
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5a877e5d5542993e715abf7d",
+              "url": "https://en.wikipedia.org/wiki/The_Family_Man",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.031099324975891997
+          },
+          {
+            "evidence_id": "E8",
+            "chunk_id": "b48cb136-9d8d-5c39-b28d-aa5d6a2548ef",
+            "document_id": "f398a1cc-fc4a-5520-9e67-628bc2a78829",
+            "revision_id": "43834e03-e845-5c26-adab-f18c1efe3ab8",
+            "strategy": "b",
+            "text": "Jane Anderson (born c. 1954 in California) is an American actress-turned-award-winning playwright, screenwriter and director. She has written and directed one feature film, \"The Prize Winner of Defiance, Ohio\" (2005) and wrote the script for the Nicolas Cage film \"It Could Happen to You\" (1994). She won an Emmy Award for writing the screenplay for the miniseries \"Olive Kitteridge\" (2014).",
+            "title": "Jane Anderson",
+            "start": 0,
+            "end": 391,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 125
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 126,
+                "end": 296
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 297,
+                "end": 391
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a9046ce5542990a984935ef",
+              "url": "https://en.wikipedia.org/wiki/Jane_Anderson",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.029910714285714284
+          },
+          {
+            "evidence_id": "E4",
+            "chunk_id": "8a8d0365-91cc-5730-a468-7968643de797",
+            "document_id": "af7416da-3fa8-5dcc-8d4b-3705d1cf958a",
+            "revision_id": "2b73e6bb-f464-5c79-93b1-3dd6c2ecb370",
+            "strategy": "b",
+            "text": "Next is a 2007 American science fiction action thriller film directed by Lee Tamahori and starring Nicolas Cage, Julianne Moore, Jessica Biel, Thomas Kretschmann, Tory Kittles, and Peter Falk. The film's original script was loosely based on the science fiction short story \"The Golden Man\" by Philip K. Dick. The film tells the story of Cris Johnson, a small-time magician based in Las Vegas, who has limited clairvoyance; his ability allows him to see into the very immediate future. His gift makes him a target not only of a highly motivated and heavily armed group of terrorists, but also wanted by the FBI to help them fight them.",
+            "title": "Next (2007 film)",
+            "start": 0,
+            "end": 634,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 192
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 193,
+                "end": 308
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 309,
+                "end": 484
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 485,
+                "end": 634
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a85b86d5542994c784ddb63",
+              "url": "https://en.wikipedia.org/wiki/Next_%282007_film%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.027108970929195647
+          },
+          {
+            "evidence_id": "E7",
+            "chunk_id": "8ea584b4-4793-5ee2-b30b-4dcc89eae2f0",
+            "document_id": "bb319437-9a68-50c3-8b9e-65389ef2efb3",
+            "revision_id": "1fac4983-c5c8-5d6b-94c5-2360c7c4eb55",
+            "strategy": "b",
+            "text": "Evolution is a 2001 American science-fiction monster comedy film directed by Ivan Reitman and starring David Duchovny, Orlando Jones, Seann William Scott, Julianne Moore, and Ted Levine. It was released by DreamWorks in the United States and by Columbia Pictures internationally. The plot of the film follows college professor Ira Kane (David Duchovny) and geologist Harry Block (Orlando Jones), who investigate a meteor crash in Arizona. They discover that the meteor is harboring extraterrestrial life, which is evolving very quickly into large, diverse and outlandish creatures.",
+            "title": "Evolution (2001 film)",
+            "start": 0,
+            "end": 581,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 186
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 187,
+                "end": 279
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 280,
+                "end": 438
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 439,
+                "end": 581
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5adecace5542995ec70e8f16",
+              "url": "https://en.wikipedia.org/wiki/Evolution_%282001_film%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.016129032258064516
+          },
+          {
+            "evidence_id": "E9",
+            "chunk_id": "695a7e1e-96c6-550f-b2dd-c52b39a5517e",
+            "document_id": "d6d645b0-17c9-5ed4-97d8-349f64309ce4",
+            "revision_id": "71a3de0b-d2b8-5d8d-802b-9636a232a203",
+            "strategy": "b",
+            "text": "When in Rome is a 2010 American romantic comedy film directed by Mark Steven Johnson, co-written by Johnson, David Diamond and David Weissman. It stars Kristen Bell and Josh Duhamel. It was released by Touchstone Pictures in the United States on January 29, 2010.",
+            "title": "When in Rome (2010 film)",
+            "start": 0,
+            "end": 263,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 142
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 143,
+                "end": 182
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 183,
+                "end": 263
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a74f8b05542993748c89769",
+              "url": "https://en.wikipedia.org/wiki/When_in_Rome_%282010_film%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015384615384615385
+          },
+          {
+            "evidence_id": "E10",
+            "chunk_id": "9e5c103c-4bb0-5262-a4b4-35d194a073d8",
+            "document_id": "2a631db7-c98b-5fa8-8c35-33b3a4e3393d",
+            "revision_id": "1d949ca6-4eb0-542b-a01a-789c48e294cb",
+            "strategy": "b",
+            "text": "The House of Yes is a 1997 American black comedy film starring Parker Posey, Josh Hamilton, Geneviève Bujold, Freddie Prinze Jr. and Tori Spelling. The movie is based on the play of the same name, which was written by Wendy MacLeod. It was produced by Robert Berger and was released by Miramax Films on October 10, 1997, in the United States. It received a Sundance Award and favorable reviews. Tori Spelling became one of the nominees for a 1997 Razzie Award for Worst New Star.",
+            "title": "The House of Yes",
+            "start": 0,
+            "end": 479,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 147
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 148,
+                "end": 232
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 233,
+                "end": 342
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 343,
+                "end": 394
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 395,
+                "end": 479
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ae15e965542997b2ef7d1ac",
+              "url": "https://en.wikipedia.org/wiki/The_House_of_Yes",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015384615384615385
+          }
+        ],
+        "round": 2,
+        "tool_call_id": "call_gjEmqLheaozbdxXIvzfMlyyc",
+        "executed": true,
+        "follow_up": {
+          "evidence_id": "E3",
+          "entity": "David Weissman"
+        },
+        "requested_query": "\"Evolution\" co-writer screenwriter Nicolas Cage Téa Leoni",
+        "query_adjusted": true
+      }
+    ],
+    "workflow": "bounded_tools_v1",
+    "execution": {
+      "planning_rounds": 2,
+      "retrieval_rounds": 2,
+      "tool_calls": 2,
+      "searches": 2,
+      "llm_calls": 3,
+      "embedding_calls": 2,
+      "total_provider_calls": 5,
+      "stop_reason": "retrieval_limit",
+      "limits": {
+        "retrieval_rounds": 2,
+        "searches": 3,
+        "llm_calls": 3,
+        "embedding_calls": 3,
+        "total_provider_calls": 6
+      }
+    },
+    "configuration": {
+      "strategy": "b",
+      "profile": "1a8846753a25",
+      "embedding_model": "text-embedding-3-small",
+      "embedding_dimensions": 384,
+      "generation_model": "gpt-5.4-mini-2026-03-17",
+      "prompt_version": "bounded_tools_quote_ids_v1"
+    },
+    "usage": {
+      "planning": [
+        {
+          "input_tokens": 531,
+          "output_tokens": 38,
+          "estimated_cost_usd": 0.00056925,
+          "model": "gpt-5.4-mini-2026-03-17"
+        },
+        {
+          "input_tokens": 1396,
+          "output_tokens": 47,
+          "estimated_cost_usd": 0.0012585,
+          "model": "gpt-5.4-mini-2026-03-17"
+        }
+      ],
+      "generation": {
+        "input_tokens": 3588,
+        "output_tokens": 82,
+        "estimated_cost_usd": 0.00306,
+        "model": "gpt-5.4-mini-2026-03-17"
+      },
+      "embeddings": [
+        {
+          "model": "text-embedding-3-small",
+          "input_tokens": 17,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 3.4000000000000003e-07
+        },
+        {
+          "model": "text-embedding-3-small",
+          "input_tokens": 19,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 3.8e-07
+        }
+      ],
+      "estimated_model_cost_usd": 0.00488775,
+      "estimated_total_cost_usd": 0.00488847
+    },
+    "latency_ms": 5411
+  },
+  "error": null,
+  "elapsed_ms": 5412,
+  "ledger_after": {
+    "calls": 476,
+    "reserved_usd": 1.15454186,
+    "estimated_actual_usd": 0.39948836,
+    "input_tokens": 7187817,
+    "output_tokens": 9051
+  }
+}

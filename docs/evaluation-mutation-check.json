@@ -1,0 +1,8 @@
+{
+  "scope": "offline mutation check on a disposable archive copy",
+  "mutation": "replace one citation quote with text absent from the source",
+  "detected": true,
+  "observed_failure": "final summary does not reproduce",
+  "original_archive_modified": false,
+  "provider_requests": 0
+}

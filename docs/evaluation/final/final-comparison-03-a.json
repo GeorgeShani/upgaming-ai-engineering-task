@@ -1,0 +1,1211 @@
+{
+  "case_id": "final-comparison-03",
+  "strategy": "a",
+  "question": "Are Local H and For Against both from the United States?",
+  "started_at": "2026-10-28T07:02:25.514205+00:00",
+  "ledger_before": {
+    "calls": 521,
+    "reserved_usd": 1.35464692,
+    "estimated_actual_usd": 0.45728617,
+    "input_tokens": 7255286,
+    "output_tokens": 10679
+  },
+  "result": {
+    "status": "answered",
+    "claims": [
+      {
+        "text": "Yes. Local H is an American rock band.",
+        "citations": [
+          {
+            "evidence_id": "E1",
+            "quote": "Local H is an American rock band originally formed by guitarist and vocalist Scott Lucas, bassist Matt Garcia, drummer Joe Daniels, and lead guitarist John Sparkman in Zion, Illinois in 1987."
+          }
+        ]
+      },
+      {
+        "text": "Yes. For Against is a United States band.",
+        "citations": [
+          {
+            "evidence_id": "E5",
+            "quote": "For Against is a United States post-punk/dream pop band from Lincoln, Nebraska."
+          }
+        ]
+      }
+    ],
+    "conflicting_claims": [],
+    "answer": "Yes. Local H is an American rock band. [E1] Yes. For Against is a United States band. [E5]",
+    "evidence": [
+      {
+        "evidence_id": "E5",
+        "chunk_id": "1ea2c100-10d1-5453-b339-b047113c17bc",
+        "document_id": "56620235-87e3-5f68-8f82-079afa4be0fd",
+        "revision_id": "191d5225-5296-5da7-a633-d3b1772fe8e6",
+        "strategy": "a",
+        "text": "For Against is a United States post-punk/dream pop band from Lincoln, Nebraska. Despite numerous lineup shuffles and some periods of dormancy, the band has produced material steadily from its 1984 inception to the present.",
+        "title": "For Against",
+        "start": 0,
+        "end": 222,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 79
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 80,
+            "end": 222
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "validation",
+          "record_id": "5a8db19d5542994ba4e3dd00",
+          "url": "https://en.wikipedia.org/wiki/For_Against",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.016129032258064516
+      },
+      {
+        "evidence_id": "E9",
+        "chunk_id": "d0c5dcce-e1e4-5b5d-ae36-a41698838936",
+        "document_id": "3c0d4165-4380-54f5-90e7-22b30c0ea3db",
+        "revision_id": "bd81d18f-7916-57ee-8e5c-20ad0518dbbd",
+        "strategy": "a",
+        "text": "The University of Nebraska–Lincoln, often referred to as Nebraska, UNL or NU, is a public research university in the city of Lincoln, in the state of Nebraska in the Midwestern United States. It is the state's oldest university, and the largest in the University of Nebraska system.",
+        "title": "University of Nebraska–Lincoln",
+        "start": 0,
+        "end": 282,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 191
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 192,
+            "end": 282
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a80a85d554299485f598681",
+          "url": "https://en.wikipedia.org/wiki/University_of_Nebraska%E2%80%93Lincoln",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.03252247488101534
+      },
+      {
+        "evidence_id": "E1",
+        "chunk_id": "b5a2d301-e2e0-5631-9d52-a4a209f1f0d4",
+        "document_id": "44bb9dd4-6a62-5d1a-ae9a-c8ae11eb9ab7",
+        "revision_id": "8b2db68a-2048-5fa1-84e2-0a3e11551f5d",
+        "strategy": "a",
+        "text": "Local H is an American rock band originally formed by guitarist and vocalist Scott Lucas, bassist Matt Garcia, drummer Joe Daniels, and lead guitarist John Sparkman in Zion, Illinois in 1987. The members all met in high school in 1987 and founded Local H three years later.",
+        "title": "Local H",
+        "start": 0,
+        "end": 273,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 191
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 192,
+            "end": 273
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "validation",
+          "record_id": "5a8db19d5542994ba4e3dd00",
+          "url": "https://en.wikipedia.org/wiki/Local_H",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.031746031746031744
+      },
+      {
+        "evidence_id": "E2",
+        "chunk_id": "0a82a43b-3161-5616-b9bc-e81f272e59f8",
+        "document_id": "505348bb-177d-50c4-a465-f541e8c7dc84",
+        "revision_id": "4c2c01d6-5f8a-5cfa-9ae0-77b3fa0a2e1a",
+        "strategy": "a",
+        "text": "Country of origin (COO), is the country of manufacture, production, or growth where an article or product comes from. There are differing rules of origin under various national laws and international treaties. Country of origin labelling is also known as \"place-based branding\", the \"made-in image\" or the \"nationality bias.\" In some regions or industries, country of origin labelling may adopt unique local terms such as terroir used to describe wine appellations based on the specific region where grapes are grown and wine manufactured.",
+        "title": "Country of origin",
+        "start": 0,
+        "end": 539,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 117
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 118,
+            "end": 209
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 210,
+            "end": 325
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 326,
+            "end": 539
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a7d21c555429909bec7697d",
+          "url": "https://en.wikipedia.org/wiki/Country_of_origin",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.028404512489927477
+      },
+      {
+        "evidence_id": "E10",
+        "chunk_id": "698d6152-3dc1-5928-be41-3bfafd9aca61",
+        "document_id": "31a54907-bfc1-5e11-b25f-5fbceb518964",
+        "revision_id": "546f5305-fb7a-5721-a990-686140ce7eba",
+        "strategy": "a",
+        "text": "Nebraska is a state that lies in both the Great Plains and the Midwestern United States. The state is bordered by South Dakota to the north, Iowa to the east and Missouri to the southeast, both across the Missouri River, Kansas to the south, Colorado to the southwest and Wyoming to the west. It is the only triply landlocked U.S. state. Nebraska's area is just over 77,220 sq mi (200,000 km) with almost 1.9 million people. Its state capital is Lincoln, and its largest city is Omaha, which is on the Missouri River.",
+        "title": "Nebraska",
+        "start": 0,
+        "end": 517,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 88
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 89,
+            "end": 292
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 293,
+            "end": 337
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 338,
+            "end": 424
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 425,
+            "end": 517
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5ae384e45542992f92d82300",
+          "url": "https://en.wikipedia.org/wiki/Nebraska",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.030330882352941176
+      },
+      {
+        "evidence_id": "E3",
+        "chunk_id": "19d9bad0-3469-573f-ba70-f109e43dd775",
+        "document_id": "78e5663a-6e32-58fa-a805-0f29be090eae",
+        "revision_id": "6de9689c-b802-520a-91ba-c28c0ec4e07c",
+        "strategy": "a",
+        "text": "A homeland ( \"country of origin\" and native land) is the concept of the place (cultural geography) with which an ethnic group holds a long history and a deep cultural association – the country in which a particular national identity began. As a common noun, homeland, it simply connotes the country of one's origin. When used as a proper noun, the Homeland, as well as its equivalents in other languages, often have ethnic nationalist connotations. A homeland may also be referred to as a \"fatherland\", a \"motherland\", or a \"mother country\", depending on the culture and language of the nationality in question.",
+        "title": "Homeland",
+        "start": 0,
+        "end": 611,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 239
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 240,
+            "end": 315
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 316,
+            "end": 448
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 449,
+            "end": 611
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a7d21c555429909bec7697d",
+          "url": "https://en.wikipedia.org/wiki/Homeland",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.01639344262295082
+      },
+      {
+        "evidence_id": "E11",
+        "chunk_id": "335ca2ab-754b-5b02-9aa2-29394c8f875a",
+        "document_id": "721b4d9d-68a7-5115-b771-c71491a3b45b",
+        "revision_id": "6400ddf7-e60b-5e40-ab84-6fd02d0dbf45",
+        "strategy": "a",
+        "text": "The Lincoln Highway was one of the earliest transcontinental highways for automobiles across the United States of America. Conceived in 1912 by Indiana entrepreneur Carl G. Fisher, and formally dedicated October 31, 1913, the Lincoln Highway ran coast-to-coast from Times Square in New York City west to Lincoln Park in San Francisco, originally through 13 states: New York, New Jersey, Pennsylvania, Ohio, Indiana, Illinois, Iowa, Nebraska, Colorado, Wyoming, Utah, Nevada, and California. In 1915, the \"Colorado Loop\" was removed, and in 1928, a realignment relocated the Lincoln Highway through the northern tip of West Virginia. Thus, there are a total of 14 states, 128 counties, and more than 700 cities, towns and villages through which the highway passed at some time in its history.",
+        "title": "Lincoln Highway",
+        "start": 0,
+        "end": 791,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 122
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 123,
+            "end": 490
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 491,
+            "end": 632
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 633,
+            "end": 791
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a7281c45542997f827839ef",
+          "url": "https://en.wikipedia.org/wiki/Lincoln_Highway",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.028850145288501453
+      },
+      {
+        "evidence_id": "E12",
+        "chunk_id": "4c3ba121-05e8-5525-b947-cf19328ed62e",
+        "document_id": "88b9190c-6c7b-5293-b818-26ef0b0a3256",
+        "revision_id": "d243c39b-5fd7-50e7-82f0-96aba6106ad9",
+        "strategy": "a",
+        "text": "The 1994 Nebraska Cornhuskers football team represented the University of Nebraska–Lincoln in the 1994 NCAA Division I-A football season. The team was coached by Tom Osborne and played their home games in Memorial Stadium in Lincoln, Nebraska. The Cornhuskers offense scored 459 points while the defense allowed 162 points.",
+        "title": "1994 Nebraska Cornhuskers football team",
+        "start": 0,
+        "end": 323,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 137
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 138,
+            "end": 243
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 244,
+            "end": 323
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a80a85d554299485f598681",
+          "url": "https://en.wikipedia.org/wiki/1994_Nebraska_Cornhuskers_football_team",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.027417840375586856
+      }
+    ],
+    "search_trace": [
+      {
+        "query": "Local H For Against United States origin country",
+        "strategy": "a",
+        "profile": "1a8846753a25",
+        "embedding_usage": {
+          "model": "text-embedding-3-small",
+          "input_tokens": 8,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 1.6e-07
+        },
+        "document_ranking": [
+          "44bb9dd4-6a62-5d1a-ae9a-c8ae11eb9ab7",
+          "505348bb-177d-50c4-a465-f541e8c7dc84",
+          "78e5663a-6e32-58fa-a805-0f29be090eae",
+          "716e1f47-0356-5691-b2be-bc80ba16e5e1",
+          "56620235-87e3-5f68-8f82-079afa4be0fd",
+          "eb48691d-bcee-577a-8334-8b2fa29c0638",
+          "2de8426b-b84d-572a-8a38-34764ef59345",
+          "6a12e925-199a-5014-be14-f48baa09ab0e",
+          "7e0bfa2b-2c6d-56df-9a36-b8569cc1ea6f",
+          "b68c5537-a14e-55fc-b57c-9af312781507"
+        ],
+        "candidate_counts": {
+          "dense": 30,
+          "bm25": 30,
+          "active_dense": 30,
+          "active_bm25": 30
+        },
+        "evidence": [
+          {
+            "evidence_id": "E1",
+            "chunk_id": "b5a2d301-e2e0-5631-9d52-a4a209f1f0d4",
+            "document_id": "44bb9dd4-6a62-5d1a-ae9a-c8ae11eb9ab7",
+            "revision_id": "8b2db68a-2048-5fa1-84e2-0a3e11551f5d",
+            "strategy": "a",
+            "text": "Local H is an American rock band originally formed by guitarist and vocalist Scott Lucas, bassist Matt Garcia, drummer Joe Daniels, and lead guitarist John Sparkman in Zion, Illinois in 1987. The members all met in high school in 1987 and founded Local H three years later.",
+            "title": "Local H",
+            "start": 0,
+            "end": 273,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 191
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 192,
+                "end": 273
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5a8db19d5542994ba4e3dd00",
+              "url": "https://en.wikipedia.org/wiki/Local_H",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.031746031746031744
+          },
+          {
+            "evidence_id": "E2",
+            "chunk_id": "0a82a43b-3161-5616-b9bc-e81f272e59f8",
+            "document_id": "505348bb-177d-50c4-a465-f541e8c7dc84",
+            "revision_id": "4c2c01d6-5f8a-5cfa-9ae0-77b3fa0a2e1a",
+            "strategy": "a",
+            "text": "Country of origin (COO), is the country of manufacture, production, or growth where an article or product comes from. There are differing rules of origin under various national laws and international treaties. Country of origin labelling is also known as \"place-based branding\", the \"made-in image\" or the \"nationality bias.\" In some regions or industries, country of origin labelling may adopt unique local terms such as terroir used to describe wine appellations based on the specific region where grapes are grown and wine manufactured.",
+            "title": "Country of origin",
+            "start": 0,
+            "end": 539,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 117
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 118,
+                "end": 209
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 210,
+                "end": 325
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 326,
+                "end": 539
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a7d21c555429909bec7697d",
+              "url": "https://en.wikipedia.org/wiki/Country_of_origin",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.028404512489927477
+          },
+          {
+            "evidence_id": "E3",
+            "chunk_id": "19d9bad0-3469-573f-ba70-f109e43dd775",
+            "document_id": "78e5663a-6e32-58fa-a805-0f29be090eae",
+            "revision_id": "6de9689c-b802-520a-91ba-c28c0ec4e07c",
+            "strategy": "a",
+            "text": "A homeland ( \"country of origin\" and native land) is the concept of the place (cultural geography) with which an ethnic group holds a long history and a deep cultural association – the country in which a particular national identity began. As a common noun, homeland, it simply connotes the country of one's origin. When used as a proper noun, the Homeland, as well as its equivalents in other languages, often have ethnic nationalist connotations. A homeland may also be referred to as a \"fatherland\", a \"motherland\", or a \"mother country\", depending on the culture and language of the nationality in question.",
+            "title": "Homeland",
+            "start": 0,
+            "end": 611,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 239
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 240,
+                "end": 315
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 316,
+                "end": 448
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 449,
+                "end": 611
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a7d21c555429909bec7697d",
+              "url": "https://en.wikipedia.org/wiki/Homeland",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.01639344262295082
+          },
+          {
+            "evidence_id": "E4",
+            "chunk_id": "94a374c4-f704-533d-bcaf-ba8be166fe26",
+            "document_id": "716e1f47-0356-5691-b2be-bc80ba16e5e1",
+            "revision_id": "5380b853-ed5c-5f32-8b54-a325c9aa35eb",
+            "strategy": "a",
+            "text": "The polka is originally a Czech dance and genre of dance music familiar throughout Europe and the Americas. It originated in the middle of the 19th century in Bohemia, now part of the Czech Republic. Polka remains a popular folk music genre in many European countries, and is performed by folk artists in the Czech Republic, Germany, Austria, Poland, Croatia, Slovenia, Switzerland, and to a lesser extent in Latvia, Lithuania, the Netherlands, Hungary, Italy, Ukraine, Romania, Belarus, Russia, and Slovakia. Local varieties of this dance are also found in the Nordic countries, the United Kingdom, Ireland, Latin America and the United States.",
+            "title": "Polka",
+            "start": 0,
+            "end": 645,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 107
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 108,
+                "end": 199
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 200,
+                "end": 509
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 510,
+                "end": 645
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ab207e255429970612095b1",
+              "url": "https://en.wikipedia.org/wiki/Polka",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.01639344262295082
+          },
+          {
+            "evidence_id": "E5",
+            "chunk_id": "1ea2c100-10d1-5453-b339-b047113c17bc",
+            "document_id": "56620235-87e3-5f68-8f82-079afa4be0fd",
+            "revision_id": "191d5225-5296-5da7-a633-d3b1772fe8e6",
+            "strategy": "a",
+            "text": "For Against is a United States post-punk/dream pop band from Lincoln, Nebraska. Despite numerous lineup shuffles and some periods of dormancy, the band has produced material steadily from its 1984 inception to the present.",
+            "title": "For Against",
+            "start": 0,
+            "end": 222,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 79
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 80,
+                "end": 222
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5a8db19d5542994ba4e3dd00",
+              "url": "https://en.wikipedia.org/wiki/For_Against",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.016129032258064516
+          },
+          {
+            "evidence_id": "E6",
+            "chunk_id": "f7683231-0485-56dc-92b0-a02c11cc8ac6",
+            "document_id": "eb48691d-bcee-577a-8334-8b2fa29c0638",
+            "revision_id": "9e6eab51-47fc-5efa-8041-1a26ae3e1574",
+            "strategy": "a",
+            "text": "Amherst ( ) is a town in Hampshire County, Massachusetts, United States, in the Connecticut River valley. As of the 2010 census, the population was 37,819, making it the largest municipality in Hampshire County (although the county seat is Northampton). The town is home to Amherst College, Hampshire College, and the University of Massachusetts Amherst, three of the Five Colleges. The name of the town is pronounced without the \"h\" (\"AM-erst\"), giving rise to the local saying, \"only the 'h' is silent\", in reference both to the pronunciation and to the town's politically active populace.",
+            "title": "Amherst, Massachusetts",
+            "start": 0,
+            "end": 591,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 105
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 106,
+                "end": 253
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 254,
+                "end": 382
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 383,
+                "end": 591
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ae261fb554299495565da53",
+              "url": "https://en.wikipedia.org/wiki/Amherst%2C_Massachusetts",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.016129032258064516
+          },
+          {
+            "evidence_id": "E7",
+            "chunk_id": "e60388bc-ade2-519d-ab72-6da52a28f49b",
+            "document_id": "2de8426b-b84d-572a-8a38-34764ef59345",
+            "revision_id": "ee6c360d-03c3-543a-9848-6665a701e1c1",
+            "strategy": "a",
+            "text": "The Ogallala Aquifer is a shallow water table aquifer surrounded by sand, silt, clay and gravel located beneath the Great Plains in the United States. One of the world's largest aquifers, it underlies an area of approximately 174000 sqmi in portions of eight states (South Dakota, Nebraska, Wyoming, Colorado, Kansas, Oklahoma, New Mexico, and Texas). It was named in 1898 by geologist N. H. Darton from its type locality near the town of Ogallala, Nebraska. The aquifer is part of the High Plains Aquifer System, and rests on the Ogallala Formation, which is the principal geologic unit underlying 80% of the High Plains.",
+            "title": "Ogallala Aquifer",
+            "start": 0,
+            "end": 622,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 150
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 151,
+                "end": 351
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 352,
+                "end": 458
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 459,
+                "end": 622
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ab2cb52554299545a2cfa84",
+              "url": "https://en.wikipedia.org/wiki/Ogallala_Aquifer",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015625
+          },
+          {
+            "evidence_id": "E8",
+            "chunk_id": "fca26da1-ef64-5a6c-bce9-7c9edb439cce",
+            "document_id": "6a12e925-199a-5014-be14-f48baa09ab0e",
+            "revision_id": "672a5339-e902-5e7b-b351-25621e021c61",
+            "strategy": "a",
+            "text": "HSBC Bank USA, National Association, an American subsidiary of UK-based HSBC, is a bank with its operational head office in New York City and its nominal head office in McLean, Virginia (as designated on its charter). HSBC Bank USA, N.A. is a national bank chartered under the National Bank Act, and thus is regulated by the Office of the Comptroller of the Currency (OCC), a part of the U.S. Department of the Treasury. The company has 230 branch locations.",
+            "title": "HSBC Bank USA",
+            "start": 0,
+            "end": 458,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 217
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 218,
+                "end": 420
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 421,
+                "end": 458
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ae2a04b5542992decbdcd60",
+              "url": "https://en.wikipedia.org/wiki/HSBC_Bank_USA",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015625
+          }
+        ],
+        "round": 1,
+        "tool_call_id": "call_ba91e54011444c11b6ebe2db2e85d0b0",
+        "executed": true,
+        "follow_up": null,
+        "requested_query": "Local H For Against United States origin country",
+        "query_adjusted": false
+      },
+      {
+        "query": "For Against United States from Lincoln Nebraska",
+        "strategy": "a",
+        "profile": "1a8846753a25",
+        "embedding_usage": {
+          "model": "text-embedding-3-small",
+          "input_tokens": 7,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 1.4e-07
+        },
+        "document_ranking": [
+          "3c0d4165-4380-54f5-90e7-22b30c0ea3db",
+          "31a54907-bfc1-5e11-b25f-5fbceb518964",
+          "721b4d9d-68a7-5115-b771-c71491a3b45b",
+          "88b9190c-6c7b-5293-b818-26ef0b0a3256",
+          "5ae0bb60-570b-5d28-b597-94a4369c720f",
+          "297072ce-dff9-541b-806d-16fd20d56ca4",
+          "680eb889-dcdb-5719-9246-c64200c964bf",
+          "d84f9dad-9c97-53ab-a578-cb262c629018",
+          "a6e327d9-fedd-5fe0-ba5c-7b08f31c8ff6",
+          "5fa04fc6-d2d8-5b40-a9d0-20624f7fb802"
+        ],
+        "candidate_counts": {
+          "dense": 30,
+          "bm25": 30,
+          "active_dense": 30,
+          "active_bm25": 30
+        },
+        "evidence": [
+          {
+            "evidence_id": "E9",
+            "chunk_id": "d0c5dcce-e1e4-5b5d-ae36-a41698838936",
+            "document_id": "3c0d4165-4380-54f5-90e7-22b30c0ea3db",
+            "revision_id": "bd81d18f-7916-57ee-8e5c-20ad0518dbbd",
+            "strategy": "a",
+            "text": "The University of Nebraska–Lincoln, often referred to as Nebraska, UNL or NU, is a public research university in the city of Lincoln, in the state of Nebraska in the Midwestern United States. It is the state's oldest university, and the largest in the University of Nebraska system.",
+            "title": "University of Nebraska–Lincoln",
+            "start": 0,
+            "end": 282,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 191
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 192,
+                "end": 282
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a80a85d554299485f598681",
+              "url": "https://en.wikipedia.org/wiki/University_of_Nebraska%E2%80%93Lincoln",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03252247488101534
+          },
+          {
+            "evidence_id": "E10",
+            "chunk_id": "698d6152-3dc1-5928-be41-3bfafd9aca61",
+            "document_id": "31a54907-bfc1-5e11-b25f-5fbceb518964",
+            "revision_id": "546f5305-fb7a-5721-a990-686140ce7eba",
+            "strategy": "a",
+            "text": "Nebraska is a state that lies in both the Great Plains and the Midwestern United States. The state is bordered by South Dakota to the north, Iowa to the east and Missouri to the southeast, both across the Missouri River, Kansas to the south, Colorado to the southwest and Wyoming to the west. It is the only triply landlocked U.S. state. Nebraska's area is just over 77,220 sq mi (200,000 km) with almost 1.9 million people. Its state capital is Lincoln, and its largest city is Omaha, which is on the Missouri River.",
+            "title": "Nebraska",
+            "start": 0,
+            "end": 517,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 88
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 89,
+                "end": 292
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 293,
+                "end": 337
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 338,
+                "end": 424
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 425,
+                "end": 517
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ae384e45542992f92d82300",
+              "url": "https://en.wikipedia.org/wiki/Nebraska",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.030330882352941176
+          },
+          {
+            "evidence_id": "E11",
+            "chunk_id": "335ca2ab-754b-5b02-9aa2-29394c8f875a",
+            "document_id": "721b4d9d-68a7-5115-b771-c71491a3b45b",
+            "revision_id": "6400ddf7-e60b-5e40-ab84-6fd02d0dbf45",
+            "strategy": "a",
+            "text": "The Lincoln Highway was one of the earliest transcontinental highways for automobiles across the United States of America. Conceived in 1912 by Indiana entrepreneur Carl G. Fisher, and formally dedicated October 31, 1913, the Lincoln Highway ran coast-to-coast from Times Square in New York City west to Lincoln Park in San Francisco, originally through 13 states: New York, New Jersey, Pennsylvania, Ohio, Indiana, Illinois, Iowa, Nebraska, Colorado, Wyoming, Utah, Nevada, and California. In 1915, the \"Colorado Loop\" was removed, and in 1928, a realignment relocated the Lincoln Highway through the northern tip of West Virginia. Thus, there are a total of 14 states, 128 counties, and more than 700 cities, towns and villages through which the highway passed at some time in its history.",
+            "title": "Lincoln Highway",
+            "start": 0,
+            "end": 791,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 122
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 123,
+                "end": 490
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 491,
+                "end": 632
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 633,
+                "end": 791
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a7281c45542997f827839ef",
+              "url": "https://en.wikipedia.org/wiki/Lincoln_Highway",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.028850145288501453
+          },
+          {
+            "evidence_id": "E12",
+            "chunk_id": "4c3ba121-05e8-5525-b947-cf19328ed62e",
+            "document_id": "88b9190c-6c7b-5293-b818-26ef0b0a3256",
+            "revision_id": "d243c39b-5fd7-50e7-82f0-96aba6106ad9",
+            "strategy": "a",
+            "text": "The 1994 Nebraska Cornhuskers football team represented the University of Nebraska–Lincoln in the 1994 NCAA Division I-A football season. The team was coached by Tom Osborne and played their home games in Memorial Stadium in Lincoln, Nebraska. The Cornhuskers offense scored 459 points while the defense allowed 162 points.",
+            "title": "1994 Nebraska Cornhuskers football team",
+            "start": 0,
+            "end": 323,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 137
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 138,
+                "end": 243
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 244,
+                "end": 323
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a80a85d554299485f598681",
+              "url": "https://en.wikipedia.org/wiki/1994_Nebraska_Cornhuskers_football_team",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.027417840375586856
+          },
+          {
+            "evidence_id": "E13",
+            "chunk_id": "92c381a7-bdba-55f0-b58f-ef906245b97d",
+            "document_id": "5ae0bb60-570b-5d28-b597-94a4369c720f",
+            "revision_id": "4477220f-4413-5940-a48f-8da78ac9ece4",
+            "strategy": "a",
+            "text": "The 1993 Nebraska Cornhuskers football team represented the University of Nebraska–Lincoln in the 1993 NCAA Division I-A football season. The team was coached by Tom Osborne and played their home games in Memorial Stadium in Lincoln, Nebraska.",
+            "title": "1993 Nebraska Cornhuskers football team",
+            "start": 0,
+            "end": 243,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 137
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 138,
+                "end": 243
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a7a8e375542995eb53be866",
+              "url": "https://en.wikipedia.org/wiki/1993_Nebraska_Cornhuskers_football_team",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.02668564312399929
+          },
+          {
+            "evidence_id": "E14",
+            "chunk_id": "2f7d4f16-e4e1-50f8-a7ad-2dcdf3647ea2",
+            "document_id": "297072ce-dff9-541b-806d-16fd20d56ca4",
+            "revision_id": "72f31624-cfd7-5634-aaae-628fe489ae2a",
+            "strategy": "a",
+            "text": "The Nebraska District is one of the 35 districts of the Lutheran Church–Missouri Synod (LCMS), and comprises the state of Nebraska with the exception of its Panhandle, which is in the Wyoming District; the district also includes one in Kansas. In addition, one congregation near the state's western border is in the Rocky Mountain District, and another in Lincoln is in the non-geographic English District. The Nebraska District includes approximately 249 congregations and missions, subdivided into 22 circuits, as well as 37 preschools, 39 elementary schools, 4 high schools and 1 summer camp. Baptized membership in district congregations is approximately 108,000; with the total population of the district's area (Nebraska, excepting its 11 western counties) standing at 1,674,000 as of 2005, the district's membership represents 6.5% of the local population – the highest of any of the LCMS' 33 geographical districts.",
+            "title": "Nebraska District (LCMS)",
+            "start": 0,
+            "end": 923,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 243
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 244,
+                "end": 406
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 407,
+                "end": 595
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 596,
+                "end": 923
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ab1c5cb554299722f9b4c61",
+              "url": "https://en.wikipedia.org/wiki/Nebraska_District_%28LCMS%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.0260840108401084
+          },
+          {
+            "evidence_id": "E15",
+            "chunk_id": "565f6a61-828b-5a5e-b8bd-13239b6c8cba",
+            "document_id": "680eb889-dcdb-5719-9246-c64200c964bf",
+            "revision_id": "d5fcdf3e-fe86-5a0b-a20f-a482dc9adf44",
+            "strategy": "a",
+            "text": "Kentucky was a border state of key importance in the American Civil War. President Abraham Lincoln recognized the importance of the Commonwealth when, in a September 1861 letter to Orville Browning, he wrote:",
+            "title": "Kentucky in the American Civil War",
+            "start": 0,
+            "end": 208,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 72
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 73,
+                "end": 208
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a7cfd9e55429907fabef094",
+              "url": "https://en.wikipedia.org/wiki/Kentucky_in_the_American_Civil_War",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.01639344262295082
+          },
+          {
+            "evidence_id": "E16",
+            "chunk_id": "ebaa4706-96c3-5c2f-a3c7-ae9c286da8ca",
+            "document_id": "d84f9dad-9c97-53ab-a578-cb262c629018",
+            "revision_id": "504c7b54-4f3a-50a9-9ced-d48326451432",
+            "strategy": "a",
+            "text": "KOLN, virtual and VHF digital channel 10, is the CBS-affiliated television station licensed to Lincoln, Nebraska, United States. Owned by Gray Television, KOLN serves a large swath of southeast and central Nebraska through a large network of translator stations. The station also operates a full-power semi-satellite, KGIN (virtual and VHF digital channel 11) in Grand Island, which serves the central portion of the market; KOLN and KGIN's on-air branding of 10/11 represents these two full-powered signals. Combined, the two stations serve one of the largest coverage areas in the United States, stretching across 42 counties in southern and central Nebraska—almost two-thirds of the state's land mass—and an additional four counties in Kansas. The station's studios are located on North 40th Street in Lincoln, with a central Nebraska bureau located on North Locust Street in Grand Island. KOLN's transmitter is southeast of Goehner, while KGIN's transmitter is near Heartwell.",
+            "title": "KOLN",
+            "start": 0,
+            "end": 980,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 128
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 129,
+                "end": 262
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 263,
+                "end": 508
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 509,
+                "end": 746
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 747,
+                "end": 892
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 893,
+                "end": 980
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a7e7e525542997cc2c47554",
+              "url": "https://en.wikipedia.org/wiki/KOLN",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.016129032258064516
+          }
+        ],
+        "round": 2,
+        "tool_call_id": "call_dfkm6IMTcyxThgNjUYHNag5b",
+        "executed": true,
+        "follow_up": {
+          "evidence_id": "E5",
+          "entity": "For Against"
+        },
+        "requested_query": "For Against United States from Lincoln Nebraska",
+        "query_adjusted": false
+      }
+    ],
+    "workflow": "bounded_tools_v1",
+    "execution": {
+      "planning_rounds": 2,
+      "retrieval_rounds": 2,
+      "tool_calls": 2,
+      "searches": 2,
+      "llm_calls": 3,
+      "embedding_calls": 2,
+      "total_provider_calls": 5,
+      "stop_reason": "retrieval_limit",
+      "limits": {
+        "retrieval_rounds": 2,
+        "searches": 3,
+        "llm_calls": 3,
+        "embedding_calls": 3,
+        "total_provider_calls": 6
+      }
+    },
+    "configuration": {
+      "strategy": "a",
+      "profile": "1a8846753a25",
+      "embedding_model": "text-embedding-3-small",
+      "embedding_dimensions": 384,
+      "generation_model": "gpt-5.4-mini-2026-03-17",
+      "prompt_version": "bounded_tools_quote_ids_v1"
+    },
+    "usage": {
+      "planning": [
+        {
+          "input_tokens": 520,
+          "output_tokens": 31,
+          "estimated_cost_usd": 0.0005295,
+          "model": "gpt-5.4-mini-2026-03-17"
+        },
+        {
+          "input_tokens": 1528,
+          "output_tokens": 40,
+          "estimated_cost_usd": 0.001326,
+          "model": "gpt-5.4-mini-2026-03-17"
+        }
+      ],
+      "generation": {
+        "input_tokens": 3855,
+        "output_tokens": 84,
+        "estimated_cost_usd": 0.00326925,
+        "model": "gpt-5.4-mini-2026-03-17"
+      },
+      "embeddings": [
+        {
+          "model": "text-embedding-3-small",
+          "input_tokens": 8,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 1.6e-07
+        },
+        {
+          "model": "text-embedding-3-small",
+          "input_tokens": 7,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 1.4e-07
+        }
+      ],
+      "estimated_model_cost_usd": 0.00512475,
+      "estimated_total_cost_usd": 0.00512505
+    },
+    "latency_ms": 6435
+  },
+  "error": null,
+  "elapsed_ms": 6435,
+  "ledger_after": {
+    "calls": 526,
+    "reserved_usd": 1.37381572,
+    "estimated_actual_usd": 0.46241122,
+    "input_tokens": 7261204,
+    "output_tokens": 10834
+  }
+}

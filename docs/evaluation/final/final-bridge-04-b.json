@@ -1,0 +1,1230 @@
+{
+  "case_id": "final-bridge-04",
+  "strategy": "b",
+  "question": "2014 S/S is the debut album of a South Korean boy group that was formed by who?",
+  "started_at": "2026-10-28T07:00:27.976260+00:00",
+  "ledger_before": {
+    "calls": 417,
+    "reserved_usd": 0.91850095,
+    "estimated_actual_usd": 0.3328162,
+    "input_tokens": 7110387,
+    "output_tokens": 7090
+  },
+  "result": {
+    "status": "answered",
+    "claims": [
+      {
+        "text": "WINNER, the South Korean boy group whose debut album is \"2014 S/S,\" was formed by YG Entertainment.",
+        "citations": [
+          {
+            "evidence_id": "E1",
+            "quote": "Winner (Hangul: 위너), often stylized as WINNER, is a South Korean boy group formed in 2013 by YG Entertainment and debuted in 2014. It currently consists of four members, Jinwoo, Seunghoon, Mino and Seungyoon. Originally a five-piece group with Taehyun, who later departed from the group in November 2016."
+          },
+          {
+            "evidence_id": "E2",
+            "quote": "2014 S/S is the debut album of South Korean group WINNER."
+          }
+        ]
+      }
+    ],
+    "conflicting_claims": [],
+    "answer": "WINNER, the South Korean boy group whose debut album is \"2014 S/S,\" was formed by YG Entertainment. [E1] [E2]",
+    "evidence": [
+      {
+        "evidence_id": "E2",
+        "chunk_id": "7d7603bb-dc0d-53fa-8d6f-65d523021122",
+        "document_id": "bb84f2bf-1830-5368-b37f-04d6a608ccd6",
+        "revision_id": "80bc1bb1-5296-5b10-89fd-c1f602232152",
+        "strategy": "b",
+        "text": "2014 S/S is the debut album of South Korean group WINNER. It was released on August 12, 2014 by the group's record label, YG Entertainment. The members were credited for writing the lyrics and composing the majority of the album's songs.",
+        "title": "2014 S/S",
+        "start": 0,
+        "end": 237,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 57
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 58,
+            "end": 139
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 140,
+            "end": 237
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "validation",
+          "record_id": "5abd94525542992ac4f382d2",
+          "url": "https://en.wikipedia.org/wiki/2014_S%2FS",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.031099324975891997
+      },
+      {
+        "evidence_id": "E1",
+        "chunk_id": "6be19917-6b0e-5be1-927b-1fe26df0af00",
+        "document_id": "b11e8d38-543e-53cb-a40a-16c41fb7ebce",
+        "revision_id": "5518baab-6799-5f7a-b44c-89d87de1b662",
+        "strategy": "b",
+        "text": "Winner (Hangul: 위너), often stylized as WINNER, is a South Korean boy group formed in 2013 by YG Entertainment and debuted in 2014. It currently consists of four members, Jinwoo, Seunghoon, Mino and Seungyoon. Originally a five-piece group with Taehyun, who later departed from the group in November 2016.",
+        "title": "Winner (band)",
+        "start": 0,
+        "end": 304,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 130
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 131,
+            "end": 208
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 209,
+            "end": 304
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "validation",
+          "record_id": "5abd94525542992ac4f382d2",
+          "url": "https://en.wikipedia.org/wiki/Winner_%28band%29",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.03225806451612903
+      },
+      {
+        "evidence_id": "E3",
+        "chunk_id": "7f81c083-28f2-5c49-bc73-d1fa00c21c11",
+        "document_id": "6b927e01-64c5-589d-9355-b629c05de471",
+        "revision_id": "ca8da224-0d81-52f5-944b-d3ba381cf6de",
+        "strategy": "b",
+        "text": "\"Bad Girl\" is the debut single South Korean boy group Beast, coming from their debut mini-album \"Beast is the B2ST\" which was released in South Korea on October 14, 2009.",
+        "title": "Bad Girl (Beast song)",
+        "start": 0,
+        "end": 170,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 170
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a77bd4d5542995d83181290",
+          "url": "https://en.wikipedia.org/wiki/Bad_Girl_%28Beast_song%29",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.031009615384615385
+      },
+      {
+        "evidence_id": "E9",
+        "chunk_id": "db857e60-37cc-547f-b911-364d447feb15",
+        "document_id": "25819f45-21ef-5e79-971d-edb2db1eef20",
+        "revision_id": "7f4c3d8f-a6a6-5160-a385-0f51e724b6fe",
+        "strategy": "b",
+        "text": "This is a comprehensive list of the awards received by 2NE1, a girl group formed by YG Entertainment in South Korea. Their first extended play, \"2NE1\" (2009), was received well and spawned the hits \"Fire\" and \"I Don't Care\", one of the biggest singles of 2009. It earned 2NE1 many awards and nominations. After initial success in 2009, the group released their first full-length album in 2010, \"To Anyone\". \" Clap Your Hands\", \"Go Away\", and \"Can't Nobody\" were used as promotional singles. In 2011, they came back with the second EP, \"2NE1\" (2011), which earned 2NE1 many awards and nominations, including Album of the Year, and Song of the Year for the lead single \"I Am the Best\". They released four singles in 2012 to 2013, including the hits \"I Love You\" and \"Missing You\", and released their first full-album in Japan. They released their second full Korean album \"Crush\" in 2014 with the lead single \"Come Back Home\", and entered the Billboard 200 chart.",
+        "title": "List of awards and nominations received by 2NE1",
+        "start": 0,
+        "end": 961,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 116
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 117,
+            "end": 260
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 261,
+            "end": 304
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 305,
+            "end": 408
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 409,
+            "end": 490
+          },
+          {
+            "kind": "sentence",
+            "number": 5,
+            "start": 491,
+            "end": 683
+          },
+          {
+            "kind": "sentence",
+            "number": 6,
+            "start": 684,
+            "end": 824
+          },
+          {
+            "kind": "sentence",
+            "number": 7,
+            "start": 825,
+            "end": 961
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a7b216e554299042af8f6f8",
+          "url": "https://en.wikipedia.org/wiki/List_of_awards_and_nominations_received_by_2NE1",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.02728937728937729
+      },
+      {
+        "evidence_id": "E4",
+        "chunk_id": "0095c95f-3456-5966-af7d-99698918a65c",
+        "document_id": "90f92725-2385-5173-a210-66e663d13869",
+        "revision_id": "da321770-46da-51f1-ac23-fa0157013a52",
+        "strategy": "b",
+        "text": "The following is a list of South Korean idol musical bands. This includes a list of boy bands and girl groups, organized by year of debut.",
+        "title": "List of South Korean idol groups",
+        "start": 0,
+        "end": 138,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 59
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 60,
+            "end": 138
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a73f5215542993a88ae2ebd",
+          "url": "https://en.wikipedia.org/wiki/List_of_South_Korean_idol_groups",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.028474711270410194
+      },
+      {
+        "evidence_id": "E10",
+        "chunk_id": "3cf54c37-8e3c-5508-af47-dac2590a7b71",
+        "document_id": "ccf38a67-fab6-5d95-aa83-dfac7da74c02",
+        "revision_id": "fd8c7e43-8283-57d6-a510-ecef79525e48",
+        "strategy": "b",
+        "text": "JJ Project (Korean: 제이제이 프로젝트 ) is a South Korean pop duo, consisting of JB and Jinyoung. They were formed by JYP Entertainment and released their first single \"Bounce\" in May 2012. They debuted as a part of Got7 in January 2014.",
+        "title": "JJ Project",
+        "start": 0,
+        "end": 229,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 89
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 90,
+            "end": 181
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 182,
+            "end": 229
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a87b6255542994775f607f3",
+          "url": "https://en.wikipedia.org/wiki/JJ_Project",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.0260840108401084
+      },
+      {
+        "evidence_id": "E11",
+        "chunk_id": "25c0ca43-69b1-57d7-9fcf-fa9ec2cdbf37",
+        "document_id": "f85d7edd-a90d-51fd-9080-4459a2ab08d9",
+        "revision_id": "95191b5b-55cd-5a13-9c2a-4132aa0ac9d5",
+        "strategy": "b",
+        "text": "YG Entertainment Inc. (Korean: YG 엔터테인먼트) is a South Korean entertainment company established in 1996 by Yang Hyun-suk. The company operates as a record label, talent agency, music production company, event management and concert production company, and music publishing house. In addition, the company operates a number of subsidiary ventures under a separate public traded company - YG PLUS, which includes a clothing line, a golf management agency, and a cosmetics brand. It is currently one of the largest entertainment companies in South Korea.",
+        "title": "YG Entertainment",
+        "start": 0,
+        "end": 549,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 119
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 120,
+            "end": 277
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 278,
+            "end": 474
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 475,
+            "end": 549
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5ae363265542992f92d822b5",
+          "url": "https://en.wikipedia.org/wiki/YG_Entertainment",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.025603864734299518
+      },
+      {
+        "evidence_id": "E5",
+        "chunk_id": "d00a1db9-1354-58fc-95d2-7c53941fed2f",
+        "document_id": "760b3b2a-94d7-53de-a92b-214bca3ff8ea",
+        "revision_id": "fcac8d62-5aa1-54ab-afc2-80941a7698ef",
+        "strategy": "b",
+        "text": "Cross Gene (Korean: 크로스진; stylized as CROSS GENE) is a five-member boy group based in South Korea. Signed under Amuse Korea, the group consists of South Korean members: Shin, Sangmin, Yongseok and Seyoung and Japanese member Takuya. They released their debut mini-album \"Timeless: Begins\" in 2012, which peaked at #8 on the Gaon weekly album chart.",
+        "title": "Cross Gene",
+        "start": 0,
+        "end": 348,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 98
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 99,
+            "end": 232
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 233,
+            "end": 348
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a77bd4d5542995d83181290",
+          "url": "https://en.wikipedia.org/wiki/Cross_Gene",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.02844551282051282
+      }
+    ],
+    "search_trace": [
+      {
+        "query": "\"2014 S/S\" debut album South Korean boy group formed by who",
+        "strategy": "b",
+        "profile": "1a8846753a25",
+        "embedding_usage": {
+          "model": "text-embedding-3-small",
+          "input_tokens": 15,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 3e-07
+        },
+        "document_ranking": [
+          "b11e8d38-543e-53cb-a40a-16c41fb7ebce",
+          "bb84f2bf-1830-5368-b37f-04d6a608ccd6",
+          "6b927e01-64c5-589d-9355-b629c05de471",
+          "90f92725-2385-5173-a210-66e663d13869",
+          "760b3b2a-94d7-53de-a92b-214bca3ff8ea",
+          "8149ec1d-6edf-53f0-b885-52fc3cc077b8",
+          "1679a666-82f2-51b4-86ca-4d4bdd2de026",
+          "6f60ff94-5e1b-5eac-ae56-a72d6459838d",
+          "6e2d0548-5274-55f7-9855-efc421c698a1",
+          "df2e30a5-fcd9-5d9c-bdb3-022e95a84a42"
+        ],
+        "candidate_counts": {
+          "dense": 30,
+          "bm25": 30,
+          "active_dense": 30,
+          "active_bm25": 30
+        },
+        "evidence": [
+          {
+            "evidence_id": "E1",
+            "chunk_id": "6be19917-6b0e-5be1-927b-1fe26df0af00",
+            "document_id": "b11e8d38-543e-53cb-a40a-16c41fb7ebce",
+            "revision_id": "5518baab-6799-5f7a-b44c-89d87de1b662",
+            "strategy": "b",
+            "text": "Winner (Hangul: 위너), often stylized as WINNER, is a South Korean boy group formed in 2013 by YG Entertainment and debuted in 2014. It currently consists of four members, Jinwoo, Seunghoon, Mino and Seungyoon. Originally a five-piece group with Taehyun, who later departed from the group in November 2016.",
+            "title": "Winner (band)",
+            "start": 0,
+            "end": 304,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 130
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 131,
+                "end": 208
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 209,
+                "end": 304
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5abd94525542992ac4f382d2",
+              "url": "https://en.wikipedia.org/wiki/Winner_%28band%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03200204813108039
+          },
+          {
+            "evidence_id": "E2",
+            "chunk_id": "7d7603bb-dc0d-53fa-8d6f-65d523021122",
+            "document_id": "bb84f2bf-1830-5368-b37f-04d6a608ccd6",
+            "revision_id": "80bc1bb1-5296-5b10-89fd-c1f602232152",
+            "strategy": "b",
+            "text": "2014 S/S is the debut album of South Korean group WINNER. It was released on August 12, 2014 by the group's record label, YG Entertainment. The members were credited for writing the lyrics and composing the majority of the album's songs.",
+            "title": "2014 S/S",
+            "start": 0,
+            "end": 237,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 57
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 58,
+                "end": 139
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 140,
+                "end": 237
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5abd94525542992ac4f382d2",
+              "url": "https://en.wikipedia.org/wiki/2014_S%2FS",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.031099324975891997
+          },
+          {
+            "evidence_id": "E3",
+            "chunk_id": "7f81c083-28f2-5c49-bc73-d1fa00c21c11",
+            "document_id": "6b927e01-64c5-589d-9355-b629c05de471",
+            "revision_id": "ca8da224-0d81-52f5-944b-d3ba381cf6de",
+            "strategy": "b",
+            "text": "\"Bad Girl\" is the debut single South Korean boy group Beast, coming from their debut mini-album \"Beast is the B2ST\" which was released in South Korea on October 14, 2009.",
+            "title": "Bad Girl (Beast song)",
+            "start": 0,
+            "end": 170,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 170
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a77bd4d5542995d83181290",
+              "url": "https://en.wikipedia.org/wiki/Bad_Girl_%28Beast_song%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.031009615384615385
+          },
+          {
+            "evidence_id": "E4",
+            "chunk_id": "0095c95f-3456-5966-af7d-99698918a65c",
+            "document_id": "90f92725-2385-5173-a210-66e663d13869",
+            "revision_id": "da321770-46da-51f1-ac23-fa0157013a52",
+            "strategy": "b",
+            "text": "The following is a list of South Korean idol musical bands. This includes a list of boy bands and girl groups, organized by year of debut.",
+            "title": "List of South Korean idol groups",
+            "start": 0,
+            "end": 138,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 59
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 60,
+                "end": 138
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a73f5215542993a88ae2ebd",
+              "url": "https://en.wikipedia.org/wiki/List_of_South_Korean_idol_groups",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.028474711270410194
+          },
+          {
+            "evidence_id": "E5",
+            "chunk_id": "d00a1db9-1354-58fc-95d2-7c53941fed2f",
+            "document_id": "760b3b2a-94d7-53de-a92b-214bca3ff8ea",
+            "revision_id": "fcac8d62-5aa1-54ab-afc2-80941a7698ef",
+            "strategy": "b",
+            "text": "Cross Gene (Korean: 크로스진; stylized as CROSS GENE) is a five-member boy group based in South Korea. Signed under Amuse Korea, the group consists of South Korean members: Shin, Sangmin, Yongseok and Seyoung and Japanese member Takuya. They released their debut mini-album \"Timeless: Begins\" in 2012, which peaked at #8 on the Gaon weekly album chart.",
+            "title": "Cross Gene",
+            "start": 0,
+            "end": 348,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 98
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 99,
+                "end": 232
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 233,
+                "end": 348
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a77bd4d5542995d83181290",
+              "url": "https://en.wikipedia.org/wiki/Cross_Gene",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.02844551282051282
+          },
+          {
+            "evidence_id": "E6",
+            "chunk_id": "15d33047-5ebb-5836-a494-012e728b368d",
+            "document_id": "8149ec1d-6edf-53f0-b885-52fc3cc077b8",
+            "revision_id": "483a57ff-4b6f-58ac-836b-0376ff967ae2",
+            "strategy": "b",
+            "text": "Dong Young-bae (; born 18 May 1988), better known by his stage name Taeyang (meaning \"sun\" in Korean) and SOL (when performing in Japan), is a South Korean singer, songwriter and dancer. After appearing in Jinusean's music video \"A-yo,\" Taeyang began training under YG Entertainment at the age of 12. Six years later, he made his debut in 2006 as a member of the South Korean boy band Big Bang. While the quintet's debut was met with lukewarm receptions, their follow-ups cemented their popularity, becoming one of the best-selling digital group of all-time in Asia and one of the best-selling boy bands in the world.",
+            "title": "Taeyang",
+            "start": 0,
+            "end": 617,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 186
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 187,
+                "end": 300
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 301,
+                "end": 394
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 395,
+                "end": 617
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a8235d25542995ce29dccda",
+              "url": "https://en.wikipedia.org/wiki/Taeyang",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.027417840375586856
+          },
+          {
+            "evidence_id": "E7",
+            "chunk_id": "04643dfe-f65a-5efd-ae24-0ae0a9db3225",
+            "document_id": "1679a666-82f2-51b4-86ca-4d4bdd2de026",
+            "revision_id": "1434e06c-950a-5fd7-9b78-48c66474879e",
+            "strategy": "b",
+            "text": "Love Style is the debut mini-album by South Korean boy band Boyfriend. The mini-album was released digitally on June 13, 2012. Followed by the release of the physical album on June 14, 2012.",
+            "title": "Love Style",
+            "start": 0,
+            "end": 190,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 70
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 71,
+                "end": 126
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 127,
+                "end": 190
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a77bd4d5542995d83181290",
+              "url": "https://en.wikipedia.org/wiki/Love_Style",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.02728937728937729
+          },
+          {
+            "evidence_id": "E8",
+            "chunk_id": "9ee0cff9-6246-50b3-b192-b84156ee2964",
+            "document_id": "6f60ff94-5e1b-5eac-ae56-a72d6459838d",
+            "revision_id": "86205e10-141d-56b1-96d0-98bea1bc2a16",
+            "strategy": "b",
+            "text": "Cho Kyuhyun (better known by his mononym Kyuhyun) is a South Korean singer. His discography consists of one studio album, three extended plays, seven singles, three promotional singles, and seventeen soundtrack songs. He debuted as a member of South Korean boy band Super Junior in 2006 and subsequently became a part of its subgroup Super Junior-K.R.Y. in 2006 and Super Junior-M in 2008 as well as S.M. Entertainment's group SM the Ballad in 2010.",
+            "title": "Cho Kyu-hyun discography",
+            "start": 0,
+            "end": 449,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 75
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 76,
+                "end": 217
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 218,
+                "end": 449
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ab501405542991779162d4a",
+              "url": "https://en.wikipedia.org/wiki/Cho_Kyu-hyun_discography",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.026838432635534086
+          }
+        ],
+        "round": 1,
+        "tool_call_id": "call_w1YSAljo1pOckqC5F5hMJybE",
+        "executed": true,
+        "follow_up": null,
+        "requested_query": "\"2014 S/S\" debut album South Korean boy group formed by who",
+        "query_adjusted": false
+      },
+      {
+        "query": "YG Entertainment formed WINNER debut album 2014 S/S",
+        "strategy": "b",
+        "profile": "1a8846753a25",
+        "embedding_usage": {
+          "model": "text-embedding-3-small",
+          "input_tokens": 12,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 2.4e-07
+        },
+        "document_ranking": [
+          "bb84f2bf-1830-5368-b37f-04d6a608ccd6",
+          "b11e8d38-543e-53cb-a40a-16c41fb7ebce",
+          "25819f45-21ef-5e79-971d-edb2db1eef20",
+          "ccf38a67-fab6-5d95-aa83-dfac7da74c02",
+          "f85d7edd-a90d-51fd-9080-4459a2ab08d9",
+          "08aa091a-010a-5d53-90ef-db8aca92916f",
+          "f70519f2-04f3-56d6-86d8-a15f563e0add",
+          "52a11f35-075d-59f8-b3f2-1235822cba1d",
+          "5f40ef45-b3a8-5716-a3ee-1ed819501603",
+          "d267e9b8-beb6-5c7d-b74f-4993bc68595f"
+        ],
+        "candidate_counts": {
+          "dense": 30,
+          "bm25": 30,
+          "active_dense": 30,
+          "active_bm25": 30
+        },
+        "evidence": [
+          {
+            "evidence_id": "E2",
+            "chunk_id": "7d7603bb-dc0d-53fa-8d6f-65d523021122",
+            "document_id": "bb84f2bf-1830-5368-b37f-04d6a608ccd6",
+            "revision_id": "80bc1bb1-5296-5b10-89fd-c1f602232152",
+            "strategy": "b",
+            "text": "2014 S/S is the debut album of South Korean group WINNER. It was released on August 12, 2014 by the group's record label, YG Entertainment. The members were credited for writing the lyrics and composing the majority of the album's songs.",
+            "title": "2014 S/S",
+            "start": 0,
+            "end": 237,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 57
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 58,
+                "end": 139
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 140,
+                "end": 237
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5abd94525542992ac4f382d2",
+              "url": "https://en.wikipedia.org/wiki/2014_S%2FS",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03278688524590164
+          },
+          {
+            "evidence_id": "E1",
+            "chunk_id": "6be19917-6b0e-5be1-927b-1fe26df0af00",
+            "document_id": "b11e8d38-543e-53cb-a40a-16c41fb7ebce",
+            "revision_id": "5518baab-6799-5f7a-b44c-89d87de1b662",
+            "strategy": "b",
+            "text": "Winner (Hangul: 위너), often stylized as WINNER, is a South Korean boy group formed in 2013 by YG Entertainment and debuted in 2014. It currently consists of four members, Jinwoo, Seunghoon, Mino and Seungyoon. Originally a five-piece group with Taehyun, who later departed from the group in November 2016.",
+            "title": "Winner (band)",
+            "start": 0,
+            "end": 304,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 130
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 131,
+                "end": 208
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 209,
+                "end": 304
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5abd94525542992ac4f382d2",
+              "url": "https://en.wikipedia.org/wiki/Winner_%28band%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03225806451612903
+          },
+          {
+            "evidence_id": "E9",
+            "chunk_id": "db857e60-37cc-547f-b911-364d447feb15",
+            "document_id": "25819f45-21ef-5e79-971d-edb2db1eef20",
+            "revision_id": "7f4c3d8f-a6a6-5160-a385-0f51e724b6fe",
+            "strategy": "b",
+            "text": "This is a comprehensive list of the awards received by 2NE1, a girl group formed by YG Entertainment in South Korea. Their first extended play, \"2NE1\" (2009), was received well and spawned the hits \"Fire\" and \"I Don't Care\", one of the biggest singles of 2009. It earned 2NE1 many awards and nominations. After initial success in 2009, the group released their first full-length album in 2010, \"To Anyone\". \" Clap Your Hands\", \"Go Away\", and \"Can't Nobody\" were used as promotional singles. In 2011, they came back with the second EP, \"2NE1\" (2011), which earned 2NE1 many awards and nominations, including Album of the Year, and Song of the Year for the lead single \"I Am the Best\". They released four singles in 2012 to 2013, including the hits \"I Love You\" and \"Missing You\", and released their first full-album in Japan. They released their second full Korean album \"Crush\" in 2014 with the lead single \"Come Back Home\", and entered the Billboard 200 chart.",
+            "title": "List of awards and nominations received by 2NE1",
+            "start": 0,
+            "end": 961,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 116
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 117,
+                "end": 260
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 261,
+                "end": 304
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 305,
+                "end": 408
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 409,
+                "end": 490
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 491,
+                "end": 683
+              },
+              {
+                "kind": "sentence",
+                "number": 6,
+                "start": 684,
+                "end": 824
+              },
+              {
+                "kind": "sentence",
+                "number": 7,
+                "start": 825,
+                "end": 961
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a7b216e554299042af8f6f8",
+              "url": "https://en.wikipedia.org/wiki/List_of_awards_and_nominations_received_by_2NE1",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.02728937728937729
+          },
+          {
+            "evidence_id": "E10",
+            "chunk_id": "3cf54c37-8e3c-5508-af47-dac2590a7b71",
+            "document_id": "ccf38a67-fab6-5d95-aa83-dfac7da74c02",
+            "revision_id": "fd8c7e43-8283-57d6-a510-ecef79525e48",
+            "strategy": "b",
+            "text": "JJ Project (Korean: 제이제이 프로젝트 ) is a South Korean pop duo, consisting of JB and Jinyoung. They were formed by JYP Entertainment and released their first single \"Bounce\" in May 2012. They debuted as a part of Got7 in January 2014.",
+            "title": "JJ Project",
+            "start": 0,
+            "end": 229,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 89
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 90,
+                "end": 181
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 182,
+                "end": 229
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a87b6255542994775f607f3",
+              "url": "https://en.wikipedia.org/wiki/JJ_Project",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.0260840108401084
+          },
+          {
+            "evidence_id": "E11",
+            "chunk_id": "25c0ca43-69b1-57d7-9fcf-fa9ec2cdbf37",
+            "document_id": "f85d7edd-a90d-51fd-9080-4459a2ab08d9",
+            "revision_id": "95191b5b-55cd-5a13-9c2a-4132aa0ac9d5",
+            "strategy": "b",
+            "text": "YG Entertainment Inc. (Korean: YG 엔터테인먼트) is a South Korean entertainment company established in 1996 by Yang Hyun-suk. The company operates as a record label, talent agency, music production company, event management and concert production company, and music publishing house. In addition, the company operates a number of subsidiary ventures under a separate public traded company - YG PLUS, which includes a clothing line, a golf management agency, and a cosmetics brand. It is currently one of the largest entertainment companies in South Korea.",
+            "title": "YG Entertainment",
+            "start": 0,
+            "end": 549,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 119
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 120,
+                "end": 277
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 278,
+                "end": 474
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 475,
+                "end": 549
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ae363265542992f92d822b5",
+              "url": "https://en.wikipedia.org/wiki/YG_Entertainment",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.025603864734299518
+          },
+          {
+            "evidence_id": "E12",
+            "chunk_id": "17900b38-b821-531b-a29e-7acbf34f6eea",
+            "document_id": "08aa091a-010a-5d53-90ef-db8aca92916f",
+            "revision_id": "55ecc3c2-60c7-58c5-a4b1-07384c943d72",
+            "strategy": "b",
+            "text": "Black Pink is a South Korean girl group formed by YG Entertainment. The group consists of four members: Jisoo, Jennie, Rosé and Lisa. They officially debuted on August 8, 2016 with the single album \"Square One\", which included their first number-one hit in the Gaon Digital Chart, \"Whistle\", and \"Boombayah\", which topped the Billboard World Digital Songs chart. Their first five singles have sold 113,000 digital downloads in the United States as of August, 2017. Additionally, they are the highest charting female K-pop act in Billboard' s Social 50.",
+            "title": "Black Pink",
+            "start": 0,
+            "end": 552,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 67
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 68,
+                "end": 133
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 134,
+                "end": 362
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 363,
+                "end": 464
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 465,
+                "end": 552
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a7abc4955429927d897befd",
+              "url": "https://en.wikipedia.org/wiki/Black_Pink",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015873015873015872
+          },
+          {
+            "evidence_id": "E13",
+            "chunk_id": "bc962500-c893-5bb0-97df-f6ff61432c21",
+            "document_id": "f70519f2-04f3-56d6-86d8-a15f563e0add",
+            "revision_id": "849c16f5-2e78-560d-aca2-88c33ab28965",
+            "strategy": "b",
+            "text": "Thank U is the debut Japanese studio album by the South Korean rock band CNBLUE. The album was released on March 20, 2010 in Japan and the majority of the songs were sung in English with the exception of \"voice\" and \"a.ri.ga.tou.\" Several of the songs on this album were later released in Korean in the band's debut Korean album, \"First Step\". This album is the first of the two indie albums CNBlue released before signing with Warner Music Japan for their major Japanese debut on October 19, 2011. The album sold over 10,237 copies.",
+            "title": "Thank U (album)",
+            "start": 0,
+            "end": 533,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 80
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 81,
+                "end": 230
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 231,
+                "end": 343
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 344,
+                "end": 498
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 499,
+                "end": 533
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5adff35955429925eb1afb7a",
+              "url": "https://en.wikipedia.org/wiki/Thank_U_%28album%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015873015873015872
+          },
+          {
+            "evidence_id": "E14",
+            "chunk_id": "21bb3cce-b740-55bc-9013-2053c083b69f",
+            "document_id": "52a11f35-075d-59f8-b3f2-1235822cba1d",
+            "revision_id": "505d3a8e-3026-589a-a31a-666320782866",
+            "strategy": "b",
+            "text": "PsyFive is the fifth album by South Korean singer Psy. The album was released on October 20, 2010. The album contains 12 songs. The album was also released worldwide through iTunes. It is Psy's debut album for YG Entertainment.",
+            "title": "PsyFive",
+            "start": 0,
+            "end": 227,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 54
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 55,
+                "end": 98
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 99,
+                "end": 127
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 128,
+                "end": 181
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 182,
+                "end": 227
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ae363265542992f92d822b5",
+              "url": "https://en.wikipedia.org/wiki/PsyFive",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015625
+          }
+        ],
+        "round": 2,
+        "tool_call_id": "call_5NTVmVTy3M6wn9XHiMxkjf5T",
+        "executed": true,
+        "follow_up": {
+          "evidence_id": "E2",
+          "entity": "WINNER"
+        },
+        "requested_query": "YG Entertainment formed WINNER debut album 2014 S/S",
+        "query_adjusted": false
+      }
+    ],
+    "workflow": "bounded_tools_v1",
+    "execution": {
+      "planning_rounds": 2,
+      "retrieval_rounds": 2,
+      "tool_calls": 2,
+      "searches": 2,
+      "llm_calls": 3,
+      "embedding_calls": 2,
+      "total_provider_calls": 5,
+      "stop_reason": "retrieval_limit",
+      "limits": {
+        "retrieval_rounds": 2,
+        "searches": 3,
+        "llm_calls": 3,
+        "embedding_calls": 3,
+        "total_provider_calls": 6
+      }
+    },
+    "configuration": {
+      "strategy": "b",
+      "profile": "1a8846753a25",
+      "embedding_model": "text-embedding-3-small",
+      "embedding_dimensions": 384,
+      "generation_model": "gpt-5.4-mini-2026-03-17",
+      "prompt_version": "bounded_tools_quote_ids_v1"
+    },
+    "usage": {
+      "planning": [
+        {
+          "input_tokens": 528,
+          "output_tokens": 38,
+          "estimated_cost_usd": 0.000567,
+          "model": "gpt-5.4-mini-2026-03-17"
+        },
+        {
+          "input_tokens": 1319,
+          "output_tokens": 45,
+          "estimated_cost_usd": 0.00119175,
+          "model": "gpt-5.4-mini-2026-03-17"
+        }
+      ],
+      "generation": {
+        "input_tokens": 3722,
+        "output_tokens": 81,
+        "estimated_cost_usd": 0.003156,
+        "model": "gpt-5.4-mini-2026-03-17"
+      },
+      "embeddings": [
+        {
+          "model": "text-embedding-3-small",
+          "input_tokens": 15,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 3e-07
+        },
+        {
+          "model": "text-embedding-3-small",
+          "input_tokens": 12,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 2.4e-07
+        }
+      ],
+      "estimated_model_cost_usd": 0.00491475,
+      "estimated_total_cost_usd": 0.00491529
+    },
+    "latency_ms": 6018
+  },
+  "error": null,
+  "elapsed_ms": 6018,
+  "ledger_after": {
+    "calls": 422,
+    "reserved_usd": 0.93742999,
+    "estimated_actual_usd": 0.33773149,
+    "input_tokens": 7115983,
+    "output_tokens": 7254
+  }
+}

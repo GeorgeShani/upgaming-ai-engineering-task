@@ -1,0 +1,191 @@
+{
+  "identity": "9b288d4bdc562919d1a7e1a78271d590453a5fd7c27f4c218bd391b948f0d07f",
+  "split": "final",
+  "expected_attempts": 80,
+  "recorded_attempts": 80,
+  "strategies": {
+    "a": {
+      "attempts": 40,
+      "successes": 38,
+      "errors": 2,
+      "status_accuracy": 0.95,
+      "supported_task_checks": 32,
+      "supported_task_rate": 0.8,
+      "retrieval_labelled_cases": 34,
+      "retrieval_initial": {
+        "recall_at_5": 0.8529411764705882,
+        "recall_at_10": 0.8676470588235294,
+        "mrr_at_10": 0.892156862745098
+      },
+      "retrieval_aggregate": {
+        "recall_at_5": 0.8382352941176471,
+        "recall_at_10": 0.9264705882352942,
+        "mrr_at_10": 0.8823529411764706
+      },
+      "multi_source_cases": 26,
+      "all_sources_retrieved": 0.8846153846153846,
+      "all_sources_in_context": 0.8461538461538461,
+      "all_sources_cited": 0.8076923076923077,
+      "short_reference_cases": 28,
+      "answer_full": {
+        "exact_match": 0.0,
+        "token_f1": 0.2209445158930003
+      },
+      "answer_last_claim": {
+        "exact_match": 0.0,
+        "token_f1": 0.22379549022406167
+      },
+      "all_expected_facts": 0.7941176470588235,
+      "citation_counts": {
+        "total": 59,
+        "valid": 59,
+        "label_aligned": 57
+      },
+      "citation_validity": 1.0,
+      "labelled_citation_precision": 0.9661016949152542,
+      "status_confusion": [
+        {
+          "expected": "answered",
+          "predicted": "answered",
+          "count": 28
+        },
+        {
+          "expected": "conflicting_evidence",
+          "predicted": "conflicting_evidence",
+          "count": 4
+        },
+        {
+          "expected": "conflicting_evidence",
+          "predicted": "error",
+          "count": 2
+        },
+        {
+          "expected": "insufficient_evidence",
+          "predicted": "insufficient_evidence",
+          "count": 6
+        }
+      ],
+      "detection": {
+        "insufficient_evidence": {
+          "true_positive": 6,
+          "expected": 6,
+          "predicted": 6,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "conflicting_evidence": {
+          "true_positive": 4,
+          "expected": 6,
+          "predicted": 4,
+          "precision": 1.0,
+          "recall": 0.6666666666666666
+        }
+      },
+      "latency": {
+        "measured_attempts": 40,
+        "median_ms": 5287.5,
+        "p95_ms": 6450.749999999999
+      },
+      "known_estimated_cost_usd": 0.20097386,
+      "reserved_cost_usd": 0.75862061,
+      "input_tokens": 228413,
+      "output_tokens": 6745,
+      "provider_calls": 188,
+      "embedding_cache_hits": 12
+    },
+    "b": {
+      "attempts": 40,
+      "successes": 39,
+      "errors": 1,
+      "status_accuracy": 0.95,
+      "supported_task_checks": 31,
+      "supported_task_rate": 0.775,
+      "retrieval_labelled_cases": 34,
+      "retrieval_initial": {
+        "recall_at_5": 0.8676470588235294,
+        "recall_at_10": 0.8970588235294118,
+        "mrr_at_10": 0.9117647058823529
+      },
+      "retrieval_aggregate": {
+        "recall_at_5": 0.8823529411764706,
+        "recall_at_10": 0.9411764705882353,
+        "mrr_at_10": 0.9117647058823529
+      },
+      "multi_source_cases": 26,
+      "all_sources_retrieved": 0.9230769230769231,
+      "all_sources_in_context": 0.8846153846153846,
+      "all_sources_cited": 0.7692307692307693,
+      "short_reference_cases": 28,
+      "answer_full": {
+        "exact_match": 0.0,
+        "token_f1": 0.19472296164842748
+      },
+      "answer_last_claim": {
+        "exact_match": 0.0,
+        "token_f1": 0.20823219439290866
+      },
+      "all_expected_facts": 0.7647058823529411,
+      "citation_counts": {
+        "total": 58,
+        "valid": 58,
+        "label_aligned": 56
+      },
+      "citation_validity": 1.0,
+      "labelled_citation_precision": 0.9655172413793104,
+      "status_confusion": [
+        {
+          "expected": "answered",
+          "predicted": "answered",
+          "count": 26
+        },
+        {
+          "expected": "answered",
+          "predicted": "error",
+          "count": 1
+        },
+        {
+          "expected": "answered",
+          "predicted": "insufficient_evidence",
+          "count": 1
+        },
+        {
+          "expected": "conflicting_evidence",
+          "predicted": "conflicting_evidence",
+          "count": 6
+        },
+        {
+          "expected": "insufficient_evidence",
+          "predicted": "insufficient_evidence",
+          "count": 6
+        }
+      ],
+      "detection": {
+        "insufficient_evidence": {
+          "true_positive": 6,
+          "expected": 6,
+          "predicted": 7,
+          "precision": 0.8571428571428571,
+          "recall": 1.0
+        },
+        "conflicting_evidence": {
+          "true_positive": 6,
+          "expected": 6,
+          "predicted": 6,
+          "precision": 1.0,
+          "recall": 1.0
+        }
+      },
+      "latency": {
+        "measured_attempts": 40,
+        "median_ms": 5151.0,
+        "p95_ms": 6057.65
+      },
+      "known_estimated_cost_usd": 0.20032803,
+      "reserved_cost_usd": 0.75852603,
+      "input_tokens": 227992,
+      "output_tokens": 6671,
+      "provider_calls": 185,
+      "embedding_cache_hits": 16
+    }
+  }
+}

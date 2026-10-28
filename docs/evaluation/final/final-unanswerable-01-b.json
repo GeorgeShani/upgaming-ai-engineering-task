@@ -1,0 +1,1135 @@
+{
+  "case_id": "final-unanswerable-01",
+  "strategy": "b",
+  "question": "Who approved the rollback for fictional incident NOVA-FINAL-01?",
+  "started_at": "2026-10-28T07:13:06.681970+00:00",
+  "ledger_before": {
+    "calls": 711,
+    "reserved_usd": 2.11598629,
+    "estimated_actual_usd": 0.65328904,
+    "input_tokens": 7472825,
+    "output_tokens": 18150
+  },
+  "result": {
+    "status": "insufficient_evidence",
+    "claims": [],
+    "conflicting_claims": [],
+    "answer": "The retrieved sources do not provide enough evidence to answer this question.",
+    "evidence": [
+      {
+        "evidence_id": "E1",
+        "chunk_id": "6daef213-790e-5c4f-8cf7-2fab041611af",
+        "document_id": "b77e38e6-5b66-5930-9b2b-dfd5d100598e",
+        "revision_id": "a76148cd-aa3c-5ff3-8e90-585e2bf16c50",
+        "strategy": "b",
+        "text": "This document is a fictional test fixture; it describes no real organization. For fictional case NOVA-CONFLICT-FINAL-01, the retry limit of payment-router at 12:00 UTC on 2026-03-12 was 5 attempts. This report provides no resolution or precedence over other reports.",
+        "title": "Fictional investigation: NOVA-CONFLICT-FINAL-01-report-2",
+        "start": 0,
+        "end": 266,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 77
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 78,
+            "end": 197
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 198,
+            "end": 266
+          }
+        ],
+        "metadata": {
+          "kind": "synthetic",
+          "revision": "fictional-incidents-v1",
+          "split": "fixture",
+          "record_id": "NOVA-CONFLICT-FINAL-01-report-2",
+          "url": "fixture://fictional-incidents-v1/NOVA-CONFLICT-FINAL-01-report-2",
+          "license": "CC0-1.0"
+        },
+        "fusion_score": 0.031754032258064516
+      },
+      {
+        "evidence_id": "E3",
+        "chunk_id": "40be8d51-e68b-56d9-92d0-6b667ed2d3fa",
+        "document_id": "e1cda322-5e78-5a01-9f42-260106b0154a",
+        "revision_id": "6913584a-6e42-5d72-bb60-2c3d0ed99605",
+        "strategy": "b",
+        "text": "This document is a fictional test fixture; it describes no real organization. For fictional incident NOVA-FINAL-01, the documented recovery time was 11 minutes. Incident NOVA-FINAL-01 affected the fictional payment-router service on 2026-03-12.",
+        "title": "Fictional investigation: NOVA-FINAL-01",
+        "start": 0,
+        "end": 244,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 77
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 78,
+            "end": 160
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 161,
+            "end": 244
+          }
+        ],
+        "metadata": {
+          "kind": "synthetic",
+          "revision": "fictional-incidents-v1",
+          "split": "fixture",
+          "record_id": "NOVA-FINAL-01",
+          "url": "fixture://fictional-incidents-v1/NOVA-FINAL-01",
+          "license": "CC0-1.0"
+        },
+        "fusion_score": 0.03278688524590164
+      },
+      {
+        "evidence_id": "E2",
+        "chunk_id": "f4305c2e-a920-5737-896b-137c3e02b22b",
+        "document_id": "11ccc494-a6b4-54d3-9672-477e073d11e6",
+        "revision_id": "35e200d4-a3d3-56cd-98fd-74b6cc69dc53",
+        "strategy": "b",
+        "text": "This document is a fictional test fixture; it describes no real organization. For fictional case NOVA-CONFLICT-FINAL-01, the retry limit of payment-router at 12:00 UTC on 2026-03-12 was 3 attempts. This report provides no resolution or precedence over other reports.",
+        "title": "Fictional investigation: NOVA-CONFLICT-FINAL-01-report-1",
+        "start": 0,
+        "end": 266,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 77
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 78,
+            "end": 197
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 198,
+            "end": 266
+          }
+        ],
+        "metadata": {
+          "kind": "synthetic",
+          "revision": "fictional-incidents-v1",
+          "split": "fixture",
+          "record_id": "NOVA-CONFLICT-FINAL-01-report-1",
+          "url": "fixture://fictional-incidents-v1/NOVA-CONFLICT-FINAL-01-report-1",
+          "license": "CC0-1.0"
+        },
+        "fusion_score": 0.03125763125763126
+      },
+      {
+        "evidence_id": "E5",
+        "chunk_id": "09126e3f-bb3c-584e-ba31-a6848bbfaf51",
+        "document_id": "768e3a11-92fd-56fd-84fa-9355d82a0718",
+        "revision_id": "6954ff02-3517-507a-8b25-6bc2c9766f66",
+        "strategy": "b",
+        "text": "This document is a fictional test fixture; it describes no real organization. For fictional incident NOVA-FINAL-08, the documented recovery time was 18 minutes. Incident NOVA-FINAL-08 affected the fictional payment-router service on 2026-03-12.",
+        "title": "Fictional investigation: NOVA-FINAL-08",
+        "start": 0,
+        "end": 244,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 77
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 78,
+            "end": 160
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 161,
+            "end": 244
+          }
+        ],
+        "metadata": {
+          "kind": "synthetic",
+          "revision": "fictional-incidents-v1",
+          "split": "fixture",
+          "record_id": "NOVA-FINAL-08",
+          "url": "fixture://fictional-incidents-v1/NOVA-FINAL-08",
+          "license": "CC0-1.0"
+        },
+        "fusion_score": 0.030834914611005692
+      },
+      {
+        "evidence_id": "E4",
+        "chunk_id": "4532cbb0-55b7-5ade-93b6-7b1c9d2d0c90",
+        "document_id": "febd5a29-0f9c-5de6-87d1-176fbdc60b31",
+        "revision_id": "af467edb-f799-5023-a864-87f5f69581e9",
+        "strategy": "b",
+        "text": "This document is a fictional test fixture; it describes no real organization. For fictional case NOVA-CONFLICT-FINAL-03, the retry limit of payment-router at 12:00 UTC on 2026-03-12 was 5 attempts. This report provides no resolution or precedence over other reports.",
+        "title": "Fictional investigation: NOVA-CONFLICT-FINAL-03-report-1",
+        "start": 0,
+        "end": 266,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 77
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 78,
+            "end": 197
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 198,
+            "end": 266
+          }
+        ],
+        "metadata": {
+          "kind": "synthetic",
+          "revision": "fictional-incidents-v1",
+          "split": "fixture",
+          "record_id": "NOVA-CONFLICT-FINAL-03-report-1",
+          "url": "fixture://fictional-incidents-v1/NOVA-CONFLICT-FINAL-03-report-1",
+          "license": "CC0-1.0"
+        },
+        "fusion_score": 0.029051670471052088
+      },
+      {
+        "evidence_id": "E9",
+        "chunk_id": "5cf6fe49-f0b3-5c6d-a014-2c8ccce8aa27",
+        "document_id": "4bef0dc0-3635-50ec-8723-53e51a8c3f1e",
+        "revision_id": "7f6ce0af-7dce-534b-bc1d-596342537f8a",
+        "strategy": "b",
+        "text": "This document is a fictional test fixture; it describes no real organization. For fictional incident NOVA-FINAL-07, the documented recovery time was 17 minutes. Incident NOVA-FINAL-07 affected the fictional payment-router service on 2026-03-12.",
+        "title": "Fictional investigation: NOVA-FINAL-07",
+        "start": 0,
+        "end": 244,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 77
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 78,
+            "end": 160
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 161,
+            "end": 244
+          }
+        ],
+        "metadata": {
+          "kind": "synthetic",
+          "revision": "fictional-incidents-v1",
+          "split": "fixture",
+          "record_id": "NOVA-FINAL-07",
+          "url": "fixture://fictional-incidents-v1/NOVA-FINAL-07",
+          "license": "CC0-1.0"
+        },
+        "fusion_score": 0.029957522915269395
+      },
+      {
+        "evidence_id": "E10",
+        "chunk_id": "01abb0e8-8c2d-53a6-884a-d34c344bf46a",
+        "document_id": "a6d6d7b7-b44e-589e-a154-cf6743aad84b",
+        "revision_id": "80e6acc2-f78e-5699-8f94-ba40d0edb7de",
+        "strategy": "b",
+        "text": "This document is a fictional test fixture; it describes no real organization. For fictional incident NOVA-FINAL-02, the documented recovery time was 12 minutes. Incident NOVA-FINAL-02 affected the fictional payment-router service on 2026-03-12.",
+        "title": "Fictional investigation: NOVA-FINAL-02",
+        "start": 0,
+        "end": 244,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 77
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 78,
+            "end": 160
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 161,
+            "end": 244
+          }
+        ],
+        "metadata": {
+          "kind": "synthetic",
+          "revision": "fictional-incidents-v1",
+          "split": "fixture",
+          "record_id": "NOVA-FINAL-02",
+          "url": "fixture://fictional-incidents-v1/NOVA-FINAL-02",
+          "license": "CC0-1.0"
+        },
+        "fusion_score": 0.029211087420042643
+      },
+      {
+        "evidence_id": "E6",
+        "chunk_id": "2e3f8be7-71ef-5796-9a2b-c064af8d5ba0",
+        "document_id": "b10fb184-401b-596f-9228-01306557c668",
+        "revision_id": "e66733a0-205b-5812-ba5c-673c9e5f8961",
+        "strategy": "b",
+        "text": "This document is a fictional test fixture; it describes no real organization. For fictional case NOVA-CONFLICT-FINAL-05, the retry limit of payment-router at 12:00 UTC on 2026-03-12 was 7 attempts. This report provides no resolution or precedence over other reports.",
+        "title": "Fictional investigation: NOVA-CONFLICT-FINAL-05-report-1",
+        "start": 0,
+        "end": 266,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 77
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 78,
+            "end": 197
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 198,
+            "end": 266
+          }
+        ],
+        "metadata": {
+          "kind": "synthetic",
+          "revision": "fictional-incidents-v1",
+          "split": "fixture",
+          "record_id": "NOVA-CONFLICT-FINAL-05-report-1",
+          "url": "fixture://fictional-incidents-v1/NOVA-CONFLICT-FINAL-05-report-1",
+          "license": "CC0-1.0"
+        },
+        "fusion_score": 0.027972027972027972
+      }
+    ],
+    "search_trace": [
+      {
+        "query": "NOVA-FINAL-01 rollback approved by who",
+        "strategy": "b",
+        "profile": "1a8846753a25",
+        "embedding_usage": {
+          "model": "text-embedding-3-small",
+          "input_tokens": 0,
+          "api_calls": 0,
+          "cache_hits": 1,
+          "estimated_cost_usd": 0.0
+        },
+        "document_ranking": [
+          "b77e38e6-5b66-5930-9b2b-dfd5d100598e",
+          "11ccc494-a6b4-54d3-9672-477e073d11e6",
+          "e1cda322-5e78-5a01-9f42-260106b0154a",
+          "febd5a29-0f9c-5de6-87d1-176fbdc60b31",
+          "768e3a11-92fd-56fd-84fa-9355d82a0718",
+          "b10fb184-401b-596f-9228-01306557c668",
+          "0afa0c08-4f25-560e-be08-7af09cb4c157",
+          "ec1b5fd7-2b87-5ab4-bcaa-b28c5b5ff414",
+          "f551791a-713a-5cef-8201-27a0f58c2620",
+          "3f1c93d9-1f49-5eda-84e7-8035cd747e19"
+        ],
+        "candidate_counts": {
+          "dense": 30,
+          "bm25": 30,
+          "active_dense": 27,
+          "active_bm25": 30
+        },
+        "evidence": [
+          {
+            "evidence_id": "E1",
+            "chunk_id": "6daef213-790e-5c4f-8cf7-2fab041611af",
+            "document_id": "b77e38e6-5b66-5930-9b2b-dfd5d100598e",
+            "revision_id": "a76148cd-aa3c-5ff3-8e90-585e2bf16c50",
+            "strategy": "b",
+            "text": "This document is a fictional test fixture; it describes no real organization. For fictional case NOVA-CONFLICT-FINAL-01, the retry limit of payment-router at 12:00 UTC on 2026-03-12 was 5 attempts. This report provides no resolution or precedence over other reports.",
+            "title": "Fictional investigation: NOVA-CONFLICT-FINAL-01-report-2",
+            "start": 0,
+            "end": 266,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 77
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 78,
+                "end": 197
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 198,
+                "end": 266
+              }
+            ],
+            "metadata": {
+              "kind": "synthetic",
+              "revision": "fictional-incidents-v1",
+              "split": "fixture",
+              "record_id": "NOVA-CONFLICT-FINAL-01-report-2",
+              "url": "fixture://fictional-incidents-v1/NOVA-CONFLICT-FINAL-01-report-2",
+              "license": "CC0-1.0"
+            },
+            "fusion_score": 0.03200204813108039
+          },
+          {
+            "evidence_id": "E2",
+            "chunk_id": "f4305c2e-a920-5737-896b-137c3e02b22b",
+            "document_id": "11ccc494-a6b4-54d3-9672-477e073d11e6",
+            "revision_id": "35e200d4-a3d3-56cd-98fd-74b6cc69dc53",
+            "strategy": "b",
+            "text": "This document is a fictional test fixture; it describes no real organization. For fictional case NOVA-CONFLICT-FINAL-01, the retry limit of payment-router at 12:00 UTC on 2026-03-12 was 3 attempts. This report provides no resolution or precedence over other reports.",
+            "title": "Fictional investigation: NOVA-CONFLICT-FINAL-01-report-1",
+            "start": 0,
+            "end": 266,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 77
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 78,
+                "end": 197
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 198,
+                "end": 266
+              }
+            ],
+            "metadata": {
+              "kind": "synthetic",
+              "revision": "fictional-incidents-v1",
+              "split": "fixture",
+              "record_id": "NOVA-CONFLICT-FINAL-01-report-1",
+              "url": "fixture://fictional-incidents-v1/NOVA-CONFLICT-FINAL-01-report-1",
+              "license": "CC0-1.0"
+            },
+            "fusion_score": 0.03200204813108039
+          },
+          {
+            "evidence_id": "E3",
+            "chunk_id": "40be8d51-e68b-56d9-92d0-6b667ed2d3fa",
+            "document_id": "e1cda322-5e78-5a01-9f42-260106b0154a",
+            "revision_id": "6913584a-6e42-5d72-bb60-2c3d0ed99605",
+            "strategy": "b",
+            "text": "This document is a fictional test fixture; it describes no real organization. For fictional incident NOVA-FINAL-01, the documented recovery time was 11 minutes. Incident NOVA-FINAL-01 affected the fictional payment-router service on 2026-03-12.",
+            "title": "Fictional investigation: NOVA-FINAL-01",
+            "start": 0,
+            "end": 244,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 77
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 78,
+                "end": 160
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 161,
+                "end": 244
+              }
+            ],
+            "metadata": {
+              "kind": "synthetic",
+              "revision": "fictional-incidents-v1",
+              "split": "fixture",
+              "record_id": "NOVA-FINAL-01",
+              "url": "fixture://fictional-incidents-v1/NOVA-FINAL-01",
+              "license": "CC0-1.0"
+            },
+            "fusion_score": 0.03009207275993712
+          },
+          {
+            "evidence_id": "E4",
+            "chunk_id": "4532cbb0-55b7-5ade-93b6-7b1c9d2d0c90",
+            "document_id": "febd5a29-0f9c-5de6-87d1-176fbdc60b31",
+            "revision_id": "af467edb-f799-5023-a864-87f5f69581e9",
+            "strategy": "b",
+            "text": "This document is a fictional test fixture; it describes no real organization. For fictional case NOVA-CONFLICT-FINAL-03, the retry limit of payment-router at 12:00 UTC on 2026-03-12 was 5 attempts. This report provides no resolution or precedence over other reports.",
+            "title": "Fictional investigation: NOVA-CONFLICT-FINAL-03-report-1",
+            "start": 0,
+            "end": 266,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 77
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 78,
+                "end": 197
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 198,
+                "end": 266
+              }
+            ],
+            "metadata": {
+              "kind": "synthetic",
+              "revision": "fictional-incidents-v1",
+              "split": "fixture",
+              "record_id": "NOVA-CONFLICT-FINAL-03-report-1",
+              "url": "fixture://fictional-incidents-v1/NOVA-CONFLICT-FINAL-03-report-1",
+              "license": "CC0-1.0"
+            },
+            "fusion_score": 0.029051670471052088
+          },
+          {
+            "evidence_id": "E5",
+            "chunk_id": "09126e3f-bb3c-584e-ba31-a6848bbfaf51",
+            "document_id": "768e3a11-92fd-56fd-84fa-9355d82a0718",
+            "revision_id": "6954ff02-3517-507a-8b25-6bc2c9766f66",
+            "strategy": "b",
+            "text": "This document is a fictional test fixture; it describes no real organization. For fictional incident NOVA-FINAL-08, the documented recovery time was 18 minutes. Incident NOVA-FINAL-08 affected the fictional payment-router service on 2026-03-12.",
+            "title": "Fictional investigation: NOVA-FINAL-08",
+            "start": 0,
+            "end": 244,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 77
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 78,
+                "end": 160
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 161,
+                "end": 244
+              }
+            ],
+            "metadata": {
+              "kind": "synthetic",
+              "revision": "fictional-incidents-v1",
+              "split": "fixture",
+              "record_id": "NOVA-FINAL-08",
+              "url": "fixture://fictional-incidents-v1/NOVA-FINAL-08",
+              "license": "CC0-1.0"
+            },
+            "fusion_score": 0.02821939586645469
+          },
+          {
+            "evidence_id": "E6",
+            "chunk_id": "2e3f8be7-71ef-5796-9a2b-c064af8d5ba0",
+            "document_id": "b10fb184-401b-596f-9228-01306557c668",
+            "revision_id": "e66733a0-205b-5812-ba5c-673c9e5f8961",
+            "strategy": "b",
+            "text": "This document is a fictional test fixture; it describes no real organization. For fictional case NOVA-CONFLICT-FINAL-05, the retry limit of payment-router at 12:00 UTC on 2026-03-12 was 7 attempts. This report provides no resolution or precedence over other reports.",
+            "title": "Fictional investigation: NOVA-CONFLICT-FINAL-05-report-1",
+            "start": 0,
+            "end": 266,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 77
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 78,
+                "end": 197
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 198,
+                "end": 266
+              }
+            ],
+            "metadata": {
+              "kind": "synthetic",
+              "revision": "fictional-incidents-v1",
+              "split": "fixture",
+              "record_id": "NOVA-CONFLICT-FINAL-05-report-1",
+              "url": "fixture://fictional-incidents-v1/NOVA-CONFLICT-FINAL-05-report-1",
+              "license": "CC0-1.0"
+            },
+            "fusion_score": 0.027972027972027972
+          },
+          {
+            "evidence_id": "E7",
+            "chunk_id": "4c6167f3-7b4e-5e6b-86a5-972cfd65237f",
+            "document_id": "0afa0c08-4f25-560e-be08-7af09cb4c157",
+            "revision_id": "42bc4d1f-7fd6-5aae-a3d4-07f66a46c735",
+            "strategy": "b",
+            "text": "This document is a fictional test fixture; it describes no real organization. For fictional case NOVA-CONFLICT-FINAL-03, the retry limit of payment-router at 12:00 UTC on 2026-03-12 was 7 attempts. This report provides no resolution or precedence over other reports.",
+            "title": "Fictional investigation: NOVA-CONFLICT-FINAL-03-report-2",
+            "start": 0,
+            "end": 266,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 77
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 78,
+                "end": 197
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 198,
+                "end": 266
+              }
+            ],
+            "metadata": {
+              "kind": "synthetic",
+              "revision": "fictional-incidents-v1",
+              "split": "fixture",
+              "record_id": "NOVA-CONFLICT-FINAL-03-report-2",
+              "url": "fixture://fictional-incidents-v1/NOVA-CONFLICT-FINAL-03-report-2",
+              "license": "CC0-1.0"
+            },
+            "fusion_score": 0.027884615384615386
+          },
+          {
+            "evidence_id": "E8",
+            "chunk_id": "1440d9dd-44bd-5282-9a87-060bc46321f8",
+            "document_id": "ec1b5fd7-2b87-5ab4-bcaa-b28c5b5ff414",
+            "revision_id": "c427a79e-d041-530a-ac02-aa0b228868eb",
+            "strategy": "b",
+            "text": "This document is a fictional test fixture; it describes no real organization. For fictional case NOVA-CONFLICT-DEVELOPMENT-01, the retry limit of payment-router at 12:00 UTC on 2026-03-12 was 3 attempts. This report provides no resolution or precedence over other reports.",
+            "title": "Fictional investigation: NOVA-CONFLICT-DEVELOPMENT-01-report-1",
+            "start": 0,
+            "end": 272,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 77
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 78,
+                "end": 203
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 204,
+                "end": 272
+              }
+            ],
+            "metadata": {
+              "kind": "synthetic",
+              "revision": "fictional-incidents-v1",
+              "split": "fixture",
+              "record_id": "NOVA-CONFLICT-DEVELOPMENT-01-report-1",
+              "url": "fixture://fictional-incidents-v1/NOVA-CONFLICT-DEVELOPMENT-01-report-1",
+              "license": "CC0-1.0"
+            },
+            "fusion_score": 0.027809742999616416
+          }
+        ],
+        "round": 1,
+        "tool_call_id": "call_ZV8JeYq8iV6rI6kHB4NC1oA2",
+        "executed": true,
+        "follow_up": null,
+        "requested_query": "NOVA-FINAL-01 rollback approved by who",
+        "query_adjusted": false
+      },
+      {
+        "query": "NOVA-FINAL-01 approved rollback approved by",
+        "strategy": "b",
+        "profile": "1a8846753a25",
+        "embedding_usage": {
+          "model": "text-embedding-3-small",
+          "input_tokens": 10,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 2.0000000000000002e-07
+        },
+        "document_ranking": [
+          "e1cda322-5e78-5a01-9f42-260106b0154a",
+          "b77e38e6-5b66-5930-9b2b-dfd5d100598e",
+          "11ccc494-a6b4-54d3-9672-477e073d11e6",
+          "768e3a11-92fd-56fd-84fa-9355d82a0718",
+          "4bef0dc0-3635-50ec-8723-53e51a8c3f1e",
+          "a6d6d7b7-b44e-589e-a154-cf6743aad84b",
+          "598294c1-0880-5144-aca2-197ff033a358",
+          "4889e67e-2a12-55ee-a061-863a4f252f3a",
+          "b786e9fa-204e-5656-9738-104613760424",
+          "3c63e1d5-56f8-5a4b-a92b-ffab6b72b30a"
+        ],
+        "candidate_counts": {
+          "dense": 30,
+          "bm25": 30,
+          "active_dense": 29,
+          "active_bm25": 30
+        },
+        "evidence": [
+          {
+            "evidence_id": "E3",
+            "chunk_id": "40be8d51-e68b-56d9-92d0-6b667ed2d3fa",
+            "document_id": "e1cda322-5e78-5a01-9f42-260106b0154a",
+            "revision_id": "6913584a-6e42-5d72-bb60-2c3d0ed99605",
+            "strategy": "b",
+            "text": "This document is a fictional test fixture; it describes no real organization. For fictional incident NOVA-FINAL-01, the documented recovery time was 11 minutes. Incident NOVA-FINAL-01 affected the fictional payment-router service on 2026-03-12.",
+            "title": "Fictional investigation: NOVA-FINAL-01",
+            "start": 0,
+            "end": 244,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 77
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 78,
+                "end": 160
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 161,
+                "end": 244
+              }
+            ],
+            "metadata": {
+              "kind": "synthetic",
+              "revision": "fictional-incidents-v1",
+              "split": "fixture",
+              "record_id": "NOVA-FINAL-01",
+              "url": "fixture://fictional-incidents-v1/NOVA-FINAL-01",
+              "license": "CC0-1.0"
+            },
+            "fusion_score": 0.03278688524590164
+          },
+          {
+            "evidence_id": "E1",
+            "chunk_id": "6daef213-790e-5c4f-8cf7-2fab041611af",
+            "document_id": "b77e38e6-5b66-5930-9b2b-dfd5d100598e",
+            "revision_id": "a76148cd-aa3c-5ff3-8e90-585e2bf16c50",
+            "strategy": "b",
+            "text": "This document is a fictional test fixture; it describes no real organization. For fictional case NOVA-CONFLICT-FINAL-01, the retry limit of payment-router at 12:00 UTC on 2026-03-12 was 5 attempts. This report provides no resolution or precedence over other reports.",
+            "title": "Fictional investigation: NOVA-CONFLICT-FINAL-01-report-2",
+            "start": 0,
+            "end": 266,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 77
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 78,
+                "end": 197
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 198,
+                "end": 266
+              }
+            ],
+            "metadata": {
+              "kind": "synthetic",
+              "revision": "fictional-incidents-v1",
+              "split": "fixture",
+              "record_id": "NOVA-CONFLICT-FINAL-01-report-2",
+              "url": "fixture://fictional-incidents-v1/NOVA-CONFLICT-FINAL-01-report-2",
+              "license": "CC0-1.0"
+            },
+            "fusion_score": 0.031754032258064516
+          },
+          {
+            "evidence_id": "E2",
+            "chunk_id": "f4305c2e-a920-5737-896b-137c3e02b22b",
+            "document_id": "11ccc494-a6b4-54d3-9672-477e073d11e6",
+            "revision_id": "35e200d4-a3d3-56cd-98fd-74b6cc69dc53",
+            "strategy": "b",
+            "text": "This document is a fictional test fixture; it describes no real organization. For fictional case NOVA-CONFLICT-FINAL-01, the retry limit of payment-router at 12:00 UTC on 2026-03-12 was 3 attempts. This report provides no resolution or precedence over other reports.",
+            "title": "Fictional investigation: NOVA-CONFLICT-FINAL-01-report-1",
+            "start": 0,
+            "end": 266,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 77
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 78,
+                "end": 197
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 198,
+                "end": 266
+              }
+            ],
+            "metadata": {
+              "kind": "synthetic",
+              "revision": "fictional-incidents-v1",
+              "split": "fixture",
+              "record_id": "NOVA-CONFLICT-FINAL-01-report-1",
+              "url": "fixture://fictional-incidents-v1/NOVA-CONFLICT-FINAL-01-report-1",
+              "license": "CC0-1.0"
+            },
+            "fusion_score": 0.03125763125763126
+          },
+          {
+            "evidence_id": "E5",
+            "chunk_id": "09126e3f-bb3c-584e-ba31-a6848bbfaf51",
+            "document_id": "768e3a11-92fd-56fd-84fa-9355d82a0718",
+            "revision_id": "6954ff02-3517-507a-8b25-6bc2c9766f66",
+            "strategy": "b",
+            "text": "This document is a fictional test fixture; it describes no real organization. For fictional incident NOVA-FINAL-08, the documented recovery time was 18 minutes. Incident NOVA-FINAL-08 affected the fictional payment-router service on 2026-03-12.",
+            "title": "Fictional investigation: NOVA-FINAL-08",
+            "start": 0,
+            "end": 244,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 77
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 78,
+                "end": 160
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 161,
+                "end": 244
+              }
+            ],
+            "metadata": {
+              "kind": "synthetic",
+              "revision": "fictional-incidents-v1",
+              "split": "fixture",
+              "record_id": "NOVA-FINAL-08",
+              "url": "fixture://fictional-incidents-v1/NOVA-FINAL-08",
+              "license": "CC0-1.0"
+            },
+            "fusion_score": 0.030834914611005692
+          },
+          {
+            "evidence_id": "E9",
+            "chunk_id": "5cf6fe49-f0b3-5c6d-a014-2c8ccce8aa27",
+            "document_id": "4bef0dc0-3635-50ec-8723-53e51a8c3f1e",
+            "revision_id": "7f6ce0af-7dce-534b-bc1d-596342537f8a",
+            "strategy": "b",
+            "text": "This document is a fictional test fixture; it describes no real organization. For fictional incident NOVA-FINAL-07, the documented recovery time was 17 minutes. Incident NOVA-FINAL-07 affected the fictional payment-router service on 2026-03-12.",
+            "title": "Fictional investigation: NOVA-FINAL-07",
+            "start": 0,
+            "end": 244,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 77
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 78,
+                "end": 160
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 161,
+                "end": 244
+              }
+            ],
+            "metadata": {
+              "kind": "synthetic",
+              "revision": "fictional-incidents-v1",
+              "split": "fixture",
+              "record_id": "NOVA-FINAL-07",
+              "url": "fixture://fictional-incidents-v1/NOVA-FINAL-07",
+              "license": "CC0-1.0"
+            },
+            "fusion_score": 0.029957522915269395
+          },
+          {
+            "evidence_id": "E10",
+            "chunk_id": "01abb0e8-8c2d-53a6-884a-d34c344bf46a",
+            "document_id": "a6d6d7b7-b44e-589e-a154-cf6743aad84b",
+            "revision_id": "80e6acc2-f78e-5699-8f94-ba40d0edb7de",
+            "strategy": "b",
+            "text": "This document is a fictional test fixture; it describes no real organization. For fictional incident NOVA-FINAL-02, the documented recovery time was 12 minutes. Incident NOVA-FINAL-02 affected the fictional payment-router service on 2026-03-12.",
+            "title": "Fictional investigation: NOVA-FINAL-02",
+            "start": 0,
+            "end": 244,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 77
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 78,
+                "end": 160
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 161,
+                "end": 244
+              }
+            ],
+            "metadata": {
+              "kind": "synthetic",
+              "revision": "fictional-incidents-v1",
+              "split": "fixture",
+              "record_id": "NOVA-FINAL-02",
+              "url": "fixture://fictional-incidents-v1/NOVA-FINAL-02",
+              "license": "CC0-1.0"
+            },
+            "fusion_score": 0.029211087420042643
+          },
+          {
+            "evidence_id": "E11",
+            "chunk_id": "31b57451-3682-50b9-b445-fe45f8231c71",
+            "document_id": "598294c1-0880-5144-aca2-197ff033a358",
+            "revision_id": "6af87cfa-2dc8-59bf-9004-afcdbce184ac",
+            "strategy": "b",
+            "text": "This document is a fictional test fixture; it describes no real organization. For fictional incident NOVA-FINAL-06, the documented recovery time was 16 minutes. Incident NOVA-FINAL-06 affected the fictional payment-router service on 2026-03-12.",
+            "title": "Fictional investigation: NOVA-FINAL-06",
+            "start": 0,
+            "end": 244,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 77
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 78,
+                "end": 160
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 161,
+                "end": 244
+              }
+            ],
+            "metadata": {
+              "kind": "synthetic",
+              "revision": "fictional-incidents-v1",
+              "split": "fixture",
+              "record_id": "NOVA-FINAL-06",
+              "url": "fixture://fictional-incidents-v1/NOVA-FINAL-06",
+              "license": "CC0-1.0"
+            },
+            "fusion_score": 0.02919863597612958
+          },
+          {
+            "evidence_id": "E12",
+            "chunk_id": "ba7dae2f-fa0e-5856-b4b0-cfd51b3d55e2",
+            "document_id": "4889e67e-2a12-55ee-a061-863a4f252f3a",
+            "revision_id": "76020b2a-2622-5f38-a2d5-e36f7970e02c",
+            "strategy": "b",
+            "text": "This document is a fictional test fixture; it describes no real organization. For fictional incident NOVA-FINAL-04, the documented recovery time was 14 minutes. Incident NOVA-FINAL-04 affected the fictional payment-router service on 2026-03-12.",
+            "title": "Fictional investigation: NOVA-FINAL-04",
+            "start": 0,
+            "end": 244,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 77
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 78,
+                "end": 160
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 161,
+                "end": 244
+              }
+            ],
+            "metadata": {
+              "kind": "synthetic",
+              "revision": "fictional-incidents-v1",
+              "split": "fixture",
+              "record_id": "NOVA-FINAL-04",
+              "url": "fixture://fictional-incidents-v1/NOVA-FINAL-04",
+              "license": "CC0-1.0"
+            },
+            "fusion_score": 0.028814262023217248
+          }
+        ],
+        "round": 2,
+        "tool_call_id": "call_qwh1QwykgubZ1fx2n0SAXt9o",
+        "executed": true,
+        "follow_up": null,
+        "requested_query": "NOVA-FINAL-01 approved rollback approved by",
+        "query_adjusted": false
+      }
+    ],
+    "workflow": "bounded_tools_v1",
+    "execution": {
+      "planning_rounds": 2,
+      "retrieval_rounds": 2,
+      "tool_calls": 2,
+      "searches": 2,
+      "llm_calls": 3,
+      "embedding_calls": 1,
+      "total_provider_calls": 4,
+      "stop_reason": "retrieval_limit",
+      "limits": {
+        "retrieval_rounds": 2,
+        "searches": 3,
+        "llm_calls": 3,
+        "embedding_calls": 3,
+        "total_provider_calls": 6
+      }
+    },
+    "configuration": {
+      "strategy": "b",
+      "profile": "1a8846753a25",
+      "embedding_model": "text-embedding-3-small",
+      "embedding_dimensions": 384,
+      "generation_model": "gpt-5.4-mini-2026-03-17",
+      "prompt_version": "bounded_tools_quote_ids_v1"
+    },
+    "usage": {
+      "planning": [
+        {
+          "input_tokens": 522,
+          "output_tokens": 33,
+          "estimated_cost_usd": 0.00054,
+          "model": "gpt-5.4-mini-2026-03-17"
+        },
+        {
+          "input_tokens": 1267,
+          "output_tokens": 33,
+          "estimated_cost_usd": 0.00109875,
+          "model": "gpt-5.4-mini-2026-03-17"
+        }
+      ],
+      "generation": {
+        "input_tokens": 2994,
+        "output_tokens": 25,
+        "estimated_cost_usd": 0.002358,
+        "model": "gpt-5.4-mini-2026-03-17"
+      },
+      "embeddings": [
+        {
+          "model": "text-embedding-3-small",
+          "input_tokens": 0,
+          "api_calls": 0,
+          "cache_hits": 1,
+          "estimated_cost_usd": 0.0
+        },
+        {
+          "model": "text-embedding-3-small",
+          "input_tokens": 10,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 2.0000000000000002e-07
+        }
+      ],
+      "estimated_model_cost_usd": 0.00399675,
+      "estimated_total_cost_usd": 0.00399695
+    },
+    "latency_ms": 5702
+  },
+  "error": null,
+  "elapsed_ms": 5702,
+  "ledger_after": {
+    "calls": 715,
+    "reserved_usd": 2.13408099,
+    "estimated_actual_usd": 0.65728599,
+    "input_tokens": 7477618,
+    "output_tokens": 18241
+  }
+}

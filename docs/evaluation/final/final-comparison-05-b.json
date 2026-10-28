@@ -1,0 +1,1133 @@
+{
+  "case_id": "final-comparison-05",
+  "strategy": "b",
+  "question": "Are Giuseppe Verdi and Ambroise Thomas both Opera composers ?",
+  "started_at": "2026-10-28T07:02:52.385951+00:00",
+  "ledger_before": {
+    "calls": 546,
+    "reserved_usd": 1.45498347,
+    "estimated_actual_usd": 0.48684447000000003,
+    "input_tokens": 7289643,
+    "output_tokens": 11540
+  },
+  "result": {
+    "status": "answered",
+    "claims": [
+      {
+        "text": "Giuseppe Verdi was an Italian opera composer.",
+        "citations": [
+          {
+            "evidence_id": "E1",
+            "quote": "Giuseppe Fortunino Francesco Verdi (] ; 9 or 10 October 1813 – 27 January 1901) was an Italian opera composer."
+          }
+        ]
+      },
+      {
+        "text": "Ambroise Thomas was a French composer, best known for his operas.",
+        "citations": [
+          {
+            "evidence_id": "E2",
+            "quote": "Charles Louis Ambroise Thomas (5 August 1811 – 12 February 1896) was a French composer, best known for his operas \"Mignon\" (1866) and \"Hamlet\" (1868, after Shakespeare) and as Director of the Conservatoire de Paris from 1871 till his death."
+          }
+        ]
+      }
+    ],
+    "conflicting_claims": [],
+    "answer": "Giuseppe Verdi was an Italian opera composer. [E1] Ambroise Thomas was a French composer, best known for his operas. [E2]",
+    "evidence": [
+      {
+        "evidence_id": "E2",
+        "chunk_id": "862de34e-a68c-50e2-9535-8ef376de029d",
+        "document_id": "e33e9958-d8aa-5d5b-9790-3d326e362d6e",
+        "revision_id": "6107a052-4942-59e3-a588-587835cb2cd1",
+        "strategy": "b",
+        "text": "Charles Louis Ambroise Thomas (5 August 1811 – 12 February 1896) was a French composer, best known for his operas \"Mignon\" (1866) and \"Hamlet\" (1868, after Shakespeare) and as Director of the Conservatoire de Paris from 1871 till his death.",
+        "title": "Ambroise Thomas",
+        "start": 0,
+        "end": 240,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 240
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "validation",
+          "record_id": "5ab29c24554299449642c932",
+          "url": "https://en.wikipedia.org/wiki/Ambroise_Thomas",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.03225806451612903
+      },
+      {
+        "evidence_id": "E1",
+        "chunk_id": "95722501-6cfc-5dba-ad52-01d874555f5e",
+        "document_id": "b9a38711-3957-575f-9b94-aa03bdd5498c",
+        "revision_id": "4d0fdf45-bbdb-5a66-a158-7ae90732d431",
+        "strategy": "b",
+        "text": "Giuseppe Fortunino Francesco Verdi (] ; 9 or 10 October 1813 – 27 January 1901) was an Italian opera composer.",
+        "title": "Giuseppe Verdi",
+        "start": 0,
+        "end": 110,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 110
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "validation",
+          "record_id": "5ab29c24554299449642c932",
+          "url": "https://en.wikipedia.org/wiki/Giuseppe_Verdi",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.03278688524590164
+      },
+      {
+        "evidence_id": "E9",
+        "chunk_id": "59a3e9c3-c29a-5471-b4cb-c4cdbd394141",
+        "document_id": "f4435e2c-1b96-5066-a4b7-53f6e210423a",
+        "revision_id": "3cf8125d-95b7-5778-97e7-e1d117d7318d",
+        "strategy": "b",
+        "text": "Giacomo Meyerbeer (born Jacob Liebmann Beer; 5 September 1791 – 2 May 1864) was a German opera composer of Jewish birth who has been described as perhaps the most successful stage composer of the nineteenth century. With his 1831 opera \"Robert le diable\" and its successors, he gave the genre of grand opera 'decisive character'. Meyerbeer's grand opera style was achieved by his merging of German orchestra style with Italian vocal tradition. These were employed in the context of sensational and melodramatic libretti created by Eugène Scribe and were enhanced by the up-to-date theatre technology of the Paris Opéra. They set a standard which helped to maintain Paris as the opera capital of the nineteenth century.",
+        "title": "Giacomo Meyerbeer",
+        "start": 0,
+        "end": 718,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 215
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 216,
+            "end": 329
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 330,
+            "end": 443
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 444,
+            "end": 619
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 620,
+            "end": 718
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a74c87855429974ef308c61",
+          "url": "https://en.wikipedia.org/wiki/Giacomo_Meyerbeer",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.030621785881252923
+      },
+      {
+        "evidence_id": "E10",
+        "chunk_id": "09b5941e-c144-52ac-8891-174b1af71e6d",
+        "document_id": "8e6e017b-b401-5bd7-9523-467d258f484c",
+        "revision_id": "a5f3b997-30fd-5cd6-b43c-9cf081fbf876",
+        "strategy": "b",
+        "text": "Emma Nevada (née Wixom) (7 February 1859 – 20 June 1940) was an American operatic soprano particularly known for her performances in operas by Bellini and Donizetti and the French composers Ambroise Thomas, Charles Gounod, and Léo Delibes. Considered one of the finest coloratura sopranos of the late 19th and early 20th centuries, her most famous roles were Amina in \"La sonnambula\", and the title roles in \"Lakmé\", \"Mignon\", \"Mireille\", and \"Lucia di Lammermoor.",
+        "title": "Emma Nevada",
+        "start": 0,
+        "end": 464,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 239
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 240,
+            "end": 464
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5ab53214554299637185c4fe",
+          "url": "https://en.wikipedia.org/wiki/Emma_Nevada",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.016129032258064516
+      },
+      {
+        "evidence_id": "E3",
+        "chunk_id": "58c9da80-0a05-5a68-accf-6872397be52f",
+        "document_id": "954523e4-5f45-5f4e-a84c-b037657a24da",
+        "revision_id": "bd5688ab-6b2e-5be6-a2b2-07210fe5f45e",
+        "strategy": "b",
+        "text": "Il trovatore (] ; Italian for \"The Troubadour\") is an opera in four acts by Giuseppe Verdi to an Italian libretto largely written by Salvadore Cammarano, based on the play \"El trovador\" (1836) by Antonio García Gutiérrez. It was Gutiérrez's most successful play, one which Verdi scholar Julian Budden describes as \"a high flown, sprawling melodrama flamboyantly defiant of the Aristotelian unities, packed with all manner of fantastic and bizarre incident.\"",
+        "title": "Il trovatore",
+        "start": 0,
+        "end": 457,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 221
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 222,
+            "end": 457
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5ae557bd55429960a22e02c1",
+          "url": "https://en.wikipedia.org/wiki/Il_trovatore",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.031024531024531024
+      },
+      {
+        "evidence_id": "E4",
+        "chunk_id": "2695c06e-be00-5ba5-a2c0-cb7550e1e678",
+        "document_id": "19df4029-5c4a-551b-8e8e-207d5b488aba",
+        "revision_id": "49eb3d66-8178-5607-9d8b-f8f514f83346",
+        "strategy": "b",
+        "text": "This is a partial discography of Giuseppe Verdi's opera \"Il trovatore\" (\"The Troubadour\") and \"Le trouvère\" (the revised version in French translation). At least 83 recordings exist of the opera as a whole, made between 1912 and 2011, although not all of them are absolutely complete. Of these, 45 are live audio recordings, 22 are studio audio recordings, and 16 are videos or movies. \"Il trovatore\" was first performed at the Teatro Apollo, Rome on 19 January 1853. \"Le trouvère\" was first presented on 12 January 1857.",
+        "title": "Il trovatore discography",
+        "start": 0,
+        "end": 521,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 152
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 153,
+            "end": 284
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 285,
+            "end": 385
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 386,
+            "end": 467
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 468,
+            "end": 521
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5ae557bd55429960a22e02c1",
+          "url": "https://en.wikipedia.org/wiki/Il_trovatore_discography",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.029910714285714284
+      },
+      {
+        "evidence_id": "E11",
+        "chunk_id": "6f0d3593-3e38-5856-b042-e5436d42e6aa",
+        "document_id": "f7d6dc0d-bbf5-513a-9c24-9c882ea2bcb1",
+        "revision_id": "68b76f18-908f-5e92-ad64-9e80946ff51f",
+        "strategy": "b",
+        "text": "Luigi Cherubini (] ; 8 or 14 September 1760 – 15 March 1842) was an Italian composer who spent most of his working life in France. His most significant compositions are operas and sacred music. Beethoven regarded Cherubini as the greatest of his contemporaries.",
+        "title": "Luigi Cherubini",
+        "start": 0,
+        "end": 261,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 130
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 131,
+            "end": 193
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 194,
+            "end": 261
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a73d39a5542992d56e7e3ad",
+          "url": "https://en.wikipedia.org/wiki/Luigi_Cherubini",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.015873015873015872
+      },
+      {
+        "evidence_id": "E12",
+        "chunk_id": "6fb8f0f5-f15e-5637-8be5-02de68a9f8c1",
+        "document_id": "74632438-ba25-5de3-b649-71fb5e7404cd",
+        "revision_id": "90cc44c2-f0bc-5dde-a9e6-b242de929f4c",
+        "strategy": "b",
+        "text": "Nell Gwynne is a three-act comic opera composed by Robert Planquette, with a libretto by H. B. Farnie. The libretto is based on the play \"Rochester\" by William Thomas Moncrieff. The piece was a rare instance of an opera by a French composer being produced first in London. Farnie had written an earlier libretto on the same subject, with the same name, for composer Alfred Cellier, which was produced at the Prince's Theatre in Manchester in 1876.",
+        "title": "Nell Gwynne (operetta)",
+        "start": 0,
+        "end": 447,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 102
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 103,
+            "end": 177
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 178,
+            "end": 272
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 273,
+            "end": 447
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a7f5f025542992097ad2f45",
+          "url": "https://en.wikipedia.org/wiki/Nell_Gwynne_%28operetta%29",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.015873015873015872
+      }
+    ],
+    "search_trace": [
+      {
+        "query": "Giuseppe Verdi Ambroise Thomas opera composer",
+        "strategy": "b",
+        "profile": "1a8846753a25",
+        "embedding_usage": {
+          "model": "text-embedding-3-small",
+          "input_tokens": 0,
+          "api_calls": 0,
+          "cache_hits": 1,
+          "estimated_cost_usd": 0.0
+        },
+        "document_ranking": [
+          "b9a38711-3957-575f-9b94-aa03bdd5498c",
+          "e33e9958-d8aa-5d5b-9790-3d326e362d6e",
+          "954523e4-5f45-5f4e-a84c-b037657a24da",
+          "19df4029-5c4a-551b-8e8e-207d5b488aba",
+          "a0891779-d58d-531a-bb07-ef741bf5c2ce",
+          "be3ca790-29a8-5763-b873-e12a5add6a3f",
+          "ee68f708-67f2-5588-a056-fc54f261a969",
+          "1082d142-fc3c-5cab-bb2d-473c2f821d5c",
+          "c2beb2f4-9ead-557a-bf8a-993cb5739341",
+          "7d2eba2e-fe91-5751-906c-8d8bd80f988c"
+        ],
+        "candidate_counts": {
+          "dense": 30,
+          "bm25": 30,
+          "active_dense": 30,
+          "active_bm25": 30
+        },
+        "evidence": [
+          {
+            "evidence_id": "E1",
+            "chunk_id": "95722501-6cfc-5dba-ad52-01d874555f5e",
+            "document_id": "b9a38711-3957-575f-9b94-aa03bdd5498c",
+            "revision_id": "4d0fdf45-bbdb-5a66-a158-7ae90732d431",
+            "strategy": "b",
+            "text": "Giuseppe Fortunino Francesco Verdi (] ; 9 or 10 October 1813 – 27 January 1901) was an Italian opera composer.",
+            "title": "Giuseppe Verdi",
+            "start": 0,
+            "end": 110,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 110
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5ab29c24554299449642c932",
+              "url": "https://en.wikipedia.org/wiki/Giuseppe_Verdi",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03278688524590164
+          },
+          {
+            "evidence_id": "E2",
+            "chunk_id": "862de34e-a68c-50e2-9535-8ef376de029d",
+            "document_id": "e33e9958-d8aa-5d5b-9790-3d326e362d6e",
+            "revision_id": "6107a052-4942-59e3-a588-587835cb2cd1",
+            "strategy": "b",
+            "text": "Charles Louis Ambroise Thomas (5 August 1811 – 12 February 1896) was a French composer, best known for his operas \"Mignon\" (1866) and \"Hamlet\" (1868, after Shakespeare) and as Director of the Conservatoire de Paris from 1871 till his death.",
+            "title": "Ambroise Thomas",
+            "start": 0,
+            "end": 240,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 240
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5ab29c24554299449642c932",
+              "url": "https://en.wikipedia.org/wiki/Ambroise_Thomas",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03225806451612903
+          },
+          {
+            "evidence_id": "E3",
+            "chunk_id": "58c9da80-0a05-5a68-accf-6872397be52f",
+            "document_id": "954523e4-5f45-5f4e-a84c-b037657a24da",
+            "revision_id": "bd5688ab-6b2e-5be6-a2b2-07210fe5f45e",
+            "strategy": "b",
+            "text": "Il trovatore (] ; Italian for \"The Troubadour\") is an opera in four acts by Giuseppe Verdi to an Italian libretto largely written by Salvadore Cammarano, based on the play \"El trovador\" (1836) by Antonio García Gutiérrez. It was Gutiérrez's most successful play, one which Verdi scholar Julian Budden describes as \"a high flown, sprawling melodrama flamboyantly defiant of the Aristotelian unities, packed with all manner of fantastic and bizarre incident.\"",
+            "title": "Il trovatore",
+            "start": 0,
+            "end": 457,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 221
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 222,
+                "end": 457
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ae557bd55429960a22e02c1",
+              "url": "https://en.wikipedia.org/wiki/Il_trovatore",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.031024531024531024
+          },
+          {
+            "evidence_id": "E4",
+            "chunk_id": "2695c06e-be00-5ba5-a2c0-cb7550e1e678",
+            "document_id": "19df4029-5c4a-551b-8e8e-207d5b488aba",
+            "revision_id": "49eb3d66-8178-5607-9d8b-f8f514f83346",
+            "strategy": "b",
+            "text": "This is a partial discography of Giuseppe Verdi's opera \"Il trovatore\" (\"The Troubadour\") and \"Le trouvère\" (the revised version in French translation). At least 83 recordings exist of the opera as a whole, made between 1912 and 2011, although not all of them are absolutely complete. Of these, 45 are live audio recordings, 22 are studio audio recordings, and 16 are videos or movies. \"Il trovatore\" was first performed at the Teatro Apollo, Rome on 19 January 1853. \"Le trouvère\" was first presented on 12 January 1857.",
+            "title": "Il trovatore discography",
+            "start": 0,
+            "end": 521,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 152
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 153,
+                "end": 284
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 285,
+                "end": 385
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 386,
+                "end": 467
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 468,
+                "end": 521
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ae557bd55429960a22e02c1",
+              "url": "https://en.wikipedia.org/wiki/Il_trovatore_discography",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.029910714285714284
+          },
+          {
+            "evidence_id": "E5",
+            "chunk_id": "f144d842-bf33-562e-8e96-bb901439f59a",
+            "document_id": "a0891779-d58d-531a-bb07-ef741bf5c2ce",
+            "revision_id": "4d38b3e9-06bc-5654-b5a9-9b02f76ce8cd",
+            "strategy": "b",
+            "text": "Macbeth (] ) is an opera in four acts by Giuseppe Verdi, with an Italian libretto by Francesco Maria Piave and additions by Andrea Maffei, based on William Shakespeare's play of the same name.",
+            "title": "Macbeth (opera)",
+            "start": 0,
+            "end": 192,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 192
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ab970155542996be20204ee",
+              "url": "https://en.wikipedia.org/wiki/Macbeth_%28opera%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.029631255487269532
+          },
+          {
+            "evidence_id": "E6",
+            "chunk_id": "528e8c2f-49a1-57bf-8c0c-c5fc9d1a9656",
+            "document_id": "be3ca790-29a8-5763-b873-e12a5add6a3f",
+            "revision_id": "a4b752d6-a8a4-5c64-a1ac-e1d0e134a506",
+            "strategy": "b",
+            "text": "Rigoletto (] ) is an opera in three acts by Giuseppe Verdi. The Italian libretto was written by Francesco Maria Piave based on the play \"Le roi s'amuse\" by Victor Hugo. Despite serious initial problems with the Austrian censors who had control over northern Italian theatres at the time, the opera had a triumphant premiere at La Fenice in Venice on 11 March 1851.",
+            "title": "Rigoletto",
+            "start": 0,
+            "end": 364,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 59
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 60,
+                "end": 168
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 169,
+                "end": 364
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ab31120554299753aec5930",
+              "url": "https://en.wikipedia.org/wiki/Rigoletto",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.028991596638655463
+          },
+          {
+            "evidence_id": "E7",
+            "chunk_id": "9fc42c68-7655-58c6-aa8e-bfddbfb3418e",
+            "document_id": "ee68f708-67f2-5588-a056-fc54f261a969",
+            "revision_id": "6cd99290-8b6e-51f9-8fde-aaaf83ece7e1",
+            "strategy": "b",
+            "text": "Giuseppe Maria Orlandini (4 April 167624 October 1760) was an Italian baroque composer particularly known for his more than 40 operas and intermezzos. Highly regarded by music historians of his day like Francesco Saverio Quadrio, Jean-Benjamin de La Borde and Charles Burney, Orlandini, along with Vivaldi, is considered one of the major creators of the new style of opera that dominated the second decade of the 18th century.",
+            "title": "Giuseppe Maria Orlandini",
+            "start": 0,
+            "end": 426,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 150
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 151,
+                "end": 426
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a7b291655429927d897bf4b",
+              "url": "https://en.wikipedia.org/wiki/Giuseppe_Maria_Orlandini",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.027056277056277056
+          },
+          {
+            "evidence_id": "E8",
+            "chunk_id": "e3a7fc82-d6a5-5a6b-97d4-606c666f9aaf",
+            "document_id": "1082d142-fc3c-5cab-bb2d-473c2f821d5c",
+            "revision_id": "00c29003-4f81-595e-acde-34a0b0f2b06a",
+            "strategy": "b",
+            "text": "Agostino Rovere (1804, Monza - 1865, New York City) was an Italian operatic bass. After studying singing in Milan, he made his professional opera debut in 1826 at the opera house in Pavia. In 1828 he portrayed Clemente in the world premiere of Vincenzo Bellini's \"Bianca e Fernando\" at the Teatro Carlo Felice in Genoa. In 1839 he sang the role of Pedrigo in the world premiere of Gaetano Donizetti's \"Gianni di Parigi\" at La Scala. He returned to that opera house the following year to create the role of La Rocca in the world premiere of Giuseppe Verdi's \"Un giorno di regno\". In 1842 he portrayed the role of Marquis de Boisfleury in the world premiere of Donizetti's \"Linda di Chamounix\" at the Kärntnertortheater in Vienna.",
+            "title": "Agostino Rovere",
+            "start": 0,
+            "end": 728,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 81
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 82,
+                "end": 188
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 189,
+                "end": 319
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 320,
+                "end": 432
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 433,
+                "end": 578
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 579,
+                "end": 728
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ac4f4f355429924173fb514",
+              "url": "https://en.wikipedia.org/wiki/Agostino_Rovere",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.025353016688061617
+          }
+        ],
+        "round": 1,
+        "tool_call_id": "call_wzQGTmaFCCr4AW3ejOkYRdnO",
+        "executed": true,
+        "follow_up": null,
+        "requested_query": "Giuseppe Verdi Ambroise Thomas opera composer",
+        "query_adjusted": false
+      },
+      {
+        "query": "Ambroise Thomas opera composer",
+        "strategy": "b",
+        "profile": "1a8846753a25",
+        "embedding_usage": {
+          "model": "text-embedding-3-small",
+          "input_tokens": 6,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 1.2e-07
+        },
+        "document_ranking": [
+          "e33e9958-d8aa-5d5b-9790-3d326e362d6e",
+          "f4435e2c-1b96-5066-a4b7-53f6e210423a",
+          "8e6e017b-b401-5bd7-9523-467d258f484c",
+          "f7d6dc0d-bbf5-513a-9c24-9c882ea2bcb1",
+          "74632438-ba25-5de3-b649-71fb5e7404cd",
+          "0cb38597-112c-5494-a01b-34ed87dd77e5",
+          "2de14027-b4e6-5079-81af-3de8b1ed3f2a",
+          "c2beb2f4-9ead-557a-bf8a-993cb5739341",
+          "e61f21f5-1239-5516-a08a-880e66adaac3",
+          "925028b3-7c9b-5b11-a28b-c36feb626859"
+        ],
+        "candidate_counts": {
+          "dense": 30,
+          "bm25": 30,
+          "active_dense": 30,
+          "active_bm25": 30
+        },
+        "evidence": [
+          {
+            "evidence_id": "E2",
+            "chunk_id": "862de34e-a68c-50e2-9535-8ef376de029d",
+            "document_id": "e33e9958-d8aa-5d5b-9790-3d326e362d6e",
+            "revision_id": "6107a052-4942-59e3-a588-587835cb2cd1",
+            "strategy": "b",
+            "text": "Charles Louis Ambroise Thomas (5 August 1811 – 12 February 1896) was a French composer, best known for his operas \"Mignon\" (1866) and \"Hamlet\" (1868, after Shakespeare) and as Director of the Conservatoire de Paris from 1871 till his death.",
+            "title": "Ambroise Thomas",
+            "start": 0,
+            "end": 240,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 240
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5ab29c24554299449642c932",
+              "url": "https://en.wikipedia.org/wiki/Ambroise_Thomas",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03278688524590164
+          },
+          {
+            "evidence_id": "E9",
+            "chunk_id": "59a3e9c3-c29a-5471-b4cb-c4cdbd394141",
+            "document_id": "f4435e2c-1b96-5066-a4b7-53f6e210423a",
+            "revision_id": "3cf8125d-95b7-5778-97e7-e1d117d7318d",
+            "strategy": "b",
+            "text": "Giacomo Meyerbeer (born Jacob Liebmann Beer; 5 September 1791 – 2 May 1864) was a German opera composer of Jewish birth who has been described as perhaps the most successful stage composer of the nineteenth century. With his 1831 opera \"Robert le diable\" and its successors, he gave the genre of grand opera 'decisive character'. Meyerbeer's grand opera style was achieved by his merging of German orchestra style with Italian vocal tradition. These were employed in the context of sensational and melodramatic libretti created by Eugène Scribe and were enhanced by the up-to-date theatre technology of the Paris Opéra. They set a standard which helped to maintain Paris as the opera capital of the nineteenth century.",
+            "title": "Giacomo Meyerbeer",
+            "start": 0,
+            "end": 718,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 215
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 216,
+                "end": 329
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 330,
+                "end": 443
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 444,
+                "end": 619
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 620,
+                "end": 718
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a74c87855429974ef308c61",
+              "url": "https://en.wikipedia.org/wiki/Giacomo_Meyerbeer",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.030621785881252923
+          },
+          {
+            "evidence_id": "E10",
+            "chunk_id": "09b5941e-c144-52ac-8891-174b1af71e6d",
+            "document_id": "8e6e017b-b401-5bd7-9523-467d258f484c",
+            "revision_id": "a5f3b997-30fd-5cd6-b43c-9cf081fbf876",
+            "strategy": "b",
+            "text": "Emma Nevada (née Wixom) (7 February 1859 – 20 June 1940) was an American operatic soprano particularly known for her performances in operas by Bellini and Donizetti and the French composers Ambroise Thomas, Charles Gounod, and Léo Delibes. Considered one of the finest coloratura sopranos of the late 19th and early 20th centuries, her most famous roles were Amina in \"La sonnambula\", and the title roles in \"Lakmé\", \"Mignon\", \"Mireille\", and \"Lucia di Lammermoor.",
+            "title": "Emma Nevada",
+            "start": 0,
+            "end": 464,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 239
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 240,
+                "end": 464
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ab53214554299637185c4fe",
+              "url": "https://en.wikipedia.org/wiki/Emma_Nevada",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.016129032258064516
+          },
+          {
+            "evidence_id": "E11",
+            "chunk_id": "6f0d3593-3e38-5856-b042-e5436d42e6aa",
+            "document_id": "f7d6dc0d-bbf5-513a-9c24-9c882ea2bcb1",
+            "revision_id": "68b76f18-908f-5e92-ad64-9e80946ff51f",
+            "strategy": "b",
+            "text": "Luigi Cherubini (] ; 8 or 14 September 1760 – 15 March 1842) was an Italian composer who spent most of his working life in France. His most significant compositions are operas and sacred music. Beethoven regarded Cherubini as the greatest of his contemporaries.",
+            "title": "Luigi Cherubini",
+            "start": 0,
+            "end": 261,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 130
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 131,
+                "end": 193
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 194,
+                "end": 261
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a73d39a5542992d56e7e3ad",
+              "url": "https://en.wikipedia.org/wiki/Luigi_Cherubini",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015873015873015872
+          },
+          {
+            "evidence_id": "E12",
+            "chunk_id": "6fb8f0f5-f15e-5637-8be5-02de68a9f8c1",
+            "document_id": "74632438-ba25-5de3-b649-71fb5e7404cd",
+            "revision_id": "90cc44c2-f0bc-5dde-a9e6-b242de929f4c",
+            "strategy": "b",
+            "text": "Nell Gwynne is a three-act comic opera composed by Robert Planquette, with a libretto by H. B. Farnie. The libretto is based on the play \"Rochester\" by William Thomas Moncrieff. The piece was a rare instance of an opera by a French composer being produced first in London. Farnie had written an earlier libretto on the same subject, with the same name, for composer Alfred Cellier, which was produced at the Prince's Theatre in Manchester in 1876.",
+            "title": "Nell Gwynne (operetta)",
+            "start": 0,
+            "end": 447,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 102
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 103,
+                "end": 177
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 178,
+                "end": 272
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 273,
+                "end": 447
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a7f5f025542992097ad2f45",
+              "url": "https://en.wikipedia.org/wiki/Nell_Gwynne_%28operetta%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015873015873015872
+          },
+          {
+            "evidence_id": "E13",
+            "chunk_id": "32f6d016-6767-5e71-8acb-00e4746f9514",
+            "document_id": "0cb38597-112c-5494-a01b-34ed87dd77e5",
+            "revision_id": "0e7d3aa3-e2dc-5815-b564-89ad4a4953c9",
+            "strategy": "b",
+            "text": "This is a list of operas by Argentine composers. Argentina's first native born opera composer was Francisco Hargreaves (1849-1900) who composed \"La gatta bianca\" (1875) and \"Los estudiantes de Bologna\" (1897), followed by Zenón Rolón (1856-1902) who composed several operas as well as operettas and zarzuelas. The works of many of the composers from this generation were first performed outside Argentina. Native Argentine opera was to develop much more with the massive European (mainly Italian) immigration in the late 19th century and even more with the opening of the Teatro Colón in 1908 where most of the 20th century operas listed here had their world premieres. Some of the first operas to treat Argentine subjects or national themes were Arturo Berutti's \"Pampa\" (1897) based on the life of Juan Moreira and \"Yupanki\" (1899) based on the life of Inca warrior Manqu Inka Yupanki.",
+            "title": "List of Argentine operas",
+            "start": 0,
+            "end": 887,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 48
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 49,
+                "end": 309
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 310,
+                "end": 405
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 406,
+                "end": 669
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 670,
+                "end": 887
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a73162e5542992359bc3230",
+              "url": "https://en.wikipedia.org/wiki/List_of_Argentine_operas",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015625
+          },
+          {
+            "evidence_id": "E14",
+            "chunk_id": "59a76711-8bef-5097-aff3-32fccb4973bf",
+            "document_id": "2de14027-b4e6-5079-81af-3de8b1ed3f2a",
+            "revision_id": "e7341d88-ad40-5484-886c-ca006474f232",
+            "strategy": "b",
+            "text": "Antonio Braga (22 January 1929 – 26 May 2009 in Naples) was an Italian classical composer. Born in Naples, he wrote ballets, concerto, ouvertures, symphonies and three operas.",
+            "title": "Antonio Braga",
+            "start": 0,
+            "end": 175,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 90
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 91,
+                "end": 175
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ae154bb55429901ffe4ae67",
+              "url": "https://en.wikipedia.org/wiki/Antonio_Braga",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015625
+          },
+          {
+            "evidence_id": "E15",
+            "chunk_id": "032f4416-2e15-5d3a-a9d6-b266415b5432",
+            "document_id": "c2beb2f4-9ead-557a-bf8a-993cb5739341",
+            "revision_id": "b09a5803-1ff4-5b67-aea0-5a789013acd0",
+            "strategy": "b",
+            "text": "Giuseppe Mosca (1772 in Naples – 1839 in Messina) was an Italian opera composer, the older brother of Luigi Mosca, also an opera composer. He is mainly remembered as the composer who said that Rossini copied in La pietra del paragone the \"crescendo\" from his opera \"I pretendenti delusi\".",
+            "title": "Giuseppe Mosca",
+            "start": 0,
+            "end": 288,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 138
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 139,
+                "end": 288
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5abe41485542993f32c2a0d2",
+              "url": "https://en.wikipedia.org/wiki/Giuseppe_Mosca",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015384615384615385
+          }
+        ],
+        "round": 2,
+        "tool_call_id": "call_miYCwMOoN2ksKspnfzZWJlff",
+        "executed": true,
+        "follow_up": {
+          "evidence_id": "E2",
+          "entity": "Ambroise Thomas"
+        },
+        "requested_query": "Ambroise Thomas opera composer",
+        "query_adjusted": false
+      }
+    ],
+    "workflow": "bounded_tools_v1",
+    "execution": {
+      "planning_rounds": 2,
+      "retrieval_rounds": 2,
+      "tool_calls": 2,
+      "searches": 2,
+      "llm_calls": 3,
+      "embedding_calls": 1,
+      "total_provider_calls": 4,
+      "stop_reason": "retrieval_limit",
+      "limits": {
+        "retrieval_rounds": 2,
+        "searches": 3,
+        "llm_calls": 3,
+        "embedding_calls": 3,
+        "total_provider_calls": 6
+      }
+    },
+    "configuration": {
+      "strategy": "b",
+      "profile": "1a8846753a25",
+      "embedding_model": "text-embedding-3-small",
+      "embedding_dimensions": 384,
+      "generation_model": "gpt-5.4-mini-2026-03-17",
+      "prompt_version": "bounded_tools_quote_ids_v1"
+    },
+    "usage": {
+      "planning": [
+        {
+          "input_tokens": 521,
+          "output_tokens": 33,
+          "estimated_cost_usd": 0.00053925,
+          "model": "gpt-5.4-mini-2026-03-17"
+        },
+        {
+          "input_tokens": 1472,
+          "output_tokens": 40,
+          "estimated_cost_usd": 0.001284,
+          "model": "gpt-5.4-mini-2026-03-17"
+        }
+      ],
+      "generation": {
+        "input_tokens": 3783,
+        "output_tokens": 90,
+        "estimated_cost_usd": 0.00324225,
+        "model": "gpt-5.4-mini-2026-03-17"
+      },
+      "embeddings": [
+        {
+          "model": "text-embedding-3-small",
+          "input_tokens": 0,
+          "api_calls": 0,
+          "cache_hits": 1,
+          "estimated_cost_usd": 0.0
+        },
+        {
+          "model": "text-embedding-3-small",
+          "input_tokens": 6,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 1.2e-07
+        }
+      ],
+      "estimated_model_cost_usd": 0.0050655,
+      "estimated_total_cost_usd": 0.00506562
+    },
+    "latency_ms": 4590
+  },
+  "error": null,
+  "elapsed_ms": 4590,
+  "ledger_after": {
+    "calls": 550,
+    "reserved_usd": 1.47413934,
+    "estimated_actual_usd": 0.49191009,
+    "input_tokens": 7295425,
+    "output_tokens": 11703
+  }
+}

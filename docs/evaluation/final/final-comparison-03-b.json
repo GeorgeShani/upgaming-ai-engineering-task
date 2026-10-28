@@ -1,0 +1,1226 @@
+{
+  "case_id": "final-comparison-03",
+  "strategy": "b",
+  "question": "Are Local H and For Against both from the United States?",
+  "started_at": "2026-10-28T07:02:31.968994+00:00",
+  "ledger_before": {
+    "calls": 526,
+    "reserved_usd": 1.37381572,
+    "estimated_actual_usd": 0.46241122,
+    "input_tokens": 7261204,
+    "output_tokens": 10834
+  },
+  "result": {
+    "status": "answered",
+    "claims": [
+      {
+        "text": "Local H is from the United States.",
+        "citations": [
+          {
+            "evidence_id": "E10",
+            "quote": "For Against is a United States post-punk/dream pop band from Lincoln, Nebraska."
+          }
+        ]
+      },
+      {
+        "text": "For Against is from the United States.",
+        "citations": [
+          {
+            "evidence_id": "E10",
+            "quote": "For Against is a United States post-punk/dream pop band from Lincoln, Nebraska."
+          }
+        ]
+      }
+    ],
+    "conflicting_claims": [],
+    "answer": "Local H is from the United States. [E10] For Against is from the United States. [E10]",
+    "evidence": [
+      {
+        "evidence_id": "E9",
+        "chunk_id": "40bd6665-c6aa-5484-8dad-c8cc766062c7",
+        "document_id": "d01ea14f-ed1d-5c3b-8209-93a97feec0c7",
+        "revision_id": "1d8942e1-0968-549a-9784-8df4a188789e",
+        "strategy": "b",
+        "text": "The Strangers is an American country band best known as the back-up band for singer-songwriter Merle Haggard. Formed in 1965 in Bakersfield, California, United States, the band continued to tour with original co-founding member Norman Hamlet, as well as Haggard's children Dana and Ben.",
+        "title": "The Strangers (American band)",
+        "start": 0,
+        "end": 286,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 109
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 110,
+            "end": 286
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a7e21d655429934daa2fbd7",
+          "url": "https://en.wikipedia.org/wiki/The_Strangers_%28American_band%29",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.01639344262295082
+      },
+      {
+        "evidence_id": "E1",
+        "chunk_id": "67f0bd8c-5ae1-559c-8fe2-33479eddd268",
+        "document_id": "505348bb-177d-50c4-a465-f541e8c7dc84",
+        "revision_id": "4c2c01d6-5f8a-5cfa-9ae0-77b3fa0a2e1a",
+        "strategy": "b",
+        "text": "Country of origin (COO), is the country of manufacture, production, or growth where an article or product comes from. There are differing rules of origin under various national laws and international treaties. Country of origin labelling is also known as \"place-based branding\", the \"made-in image\" or the \"nationality bias.\" In some regions or industries, country of origin labelling may adopt unique local terms such as terroir used to describe wine appellations based on the specific region where grapes are grown and wine manufactured.",
+        "title": "Country of origin",
+        "start": 0,
+        "end": 539,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 117
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 118,
+            "end": 209
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 210,
+            "end": 325
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 326,
+            "end": 539
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a7d21c555429909bec7697d",
+          "url": "https://en.wikipedia.org/wiki/Country_of_origin",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.02964254577157803
+      },
+      {
+        "evidence_id": "E2",
+        "chunk_id": "02b97fa6-7a29-51f6-8304-274f7b5105e6",
+        "document_id": "716e1f47-0356-5691-b2be-bc80ba16e5e1",
+        "revision_id": "5380b853-ed5c-5f32-8b54-a325c9aa35eb",
+        "strategy": "b",
+        "text": "The polka is originally a Czech dance and genre of dance music familiar throughout Europe and the Americas. It originated in the middle of the 19th century in Bohemia, now part of the Czech Republic. Polka remains a popular folk music genre in many European countries, and is performed by folk artists in the Czech Republic, Germany, Austria, Poland, Croatia, Slovenia, Switzerland, and to a lesser extent in Latvia, Lithuania, the Netherlands, Hungary, Italy, Ukraine, Romania, Belarus, Russia, and Slovakia. Local varieties of this dance are also found in the Nordic countries, the United Kingdom, Ireland, Latin America and the United States.",
+        "title": "Polka",
+        "start": 0,
+        "end": 645,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 107
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 108,
+            "end": 199
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 200,
+            "end": 509
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 510,
+            "end": 645
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5ab207e255429970612095b1",
+          "url": "https://en.wikipedia.org/wiki/Polka",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.01639344262295082
+      },
+      {
+        "evidence_id": "E10",
+        "chunk_id": "a9d14038-daf9-59c2-b680-a49ede55cfd3",
+        "document_id": "56620235-87e3-5f68-8f82-079afa4be0fd",
+        "revision_id": "191d5225-5296-5da7-a633-d3b1772fe8e6",
+        "strategy": "b",
+        "text": "For Against is a United States post-punk/dream pop band from Lincoln, Nebraska. Despite numerous lineup shuffles and some periods of dormancy, the band has produced material steadily from its 1984 inception to the present.",
+        "title": "For Against",
+        "start": 0,
+        "end": 222,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 79
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 80,
+            "end": 222
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "validation",
+          "record_id": "5a8db19d5542994ba4e3dd00",
+          "url": "https://en.wikipedia.org/wiki/For_Against",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.01639344262295082
+      },
+      {
+        "evidence_id": "E11",
+        "chunk_id": "4c2ea39f-c9e1-5d1d-8c95-8cf1f342561f",
+        "document_id": "f2d537d1-af3e-5316-83e0-09759e9cf372",
+        "revision_id": "30631f5e-0b92-54f0-be28-16e246732953",
+        "strategy": "b",
+        "text": "\"Heart of Glass\" is a song by the American new wave band Blondie, written by singer Debbie Harry and guitarist Chris Stein. Featured on the band's third studio album, \"Parallel Lines\" (1978), it was released as the album's third single in January 1979 and reached number one on the charts in several countries, including the United States and the United Kingdom.",
+        "title": "Heart of Glass (song)",
+        "start": 0,
+        "end": 362,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 123
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 124,
+            "end": 362
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5ab9a6c7554299131ca423b8",
+          "url": "https://en.wikipedia.org/wiki/Heart_of_Glass_%28song%29",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.016129032258064516
+      },
+      {
+        "evidence_id": "E3",
+        "chunk_id": "96ede694-0bcf-5aec-8d57-ba8d7b2637b7",
+        "document_id": "78e5663a-6e32-58fa-a805-0f29be090eae",
+        "revision_id": "6de9689c-b802-520a-91ba-c28c0ec4e07c",
+        "strategy": "b",
+        "text": "A homeland ( \"country of origin\" and native land) is the concept of the place (cultural geography) with which an ethnic group holds a long history and a deep cultural association – the country in which a particular national identity began. As a common noun, homeland, it simply connotes the country of one's origin. When used as a proper noun, the Homeland, as well as its equivalents in other languages, often have ethnic nationalist connotations. A homeland may also be referred to as a \"fatherland\", a \"motherland\", or a \"mother country\", depending on the culture and language of the nationality in question.",
+        "title": "Homeland",
+        "start": 0,
+        "end": 611,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 239
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 240,
+            "end": 315
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 316,
+            "end": 448
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 449,
+            "end": 611
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a7d21c555429909bec7697d",
+          "url": "https://en.wikipedia.org/wiki/Homeland",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.01639344262295082
+      },
+      {
+        "evidence_id": "E4",
+        "chunk_id": "8622f531-6b47-58bb-807a-3e2440894cad",
+        "document_id": "eb48691d-bcee-577a-8334-8b2fa29c0638",
+        "revision_id": "9e6eab51-47fc-5efa-8041-1a26ae3e1574",
+        "strategy": "b",
+        "text": "Amherst ( ) is a town in Hampshire County, Massachusetts, United States, in the Connecticut River valley. As of the 2010 census, the population was 37,819, making it the largest municipality in Hampshire County (although the county seat is Northampton). The town is home to Amherst College, Hampshire College, and the University of Massachusetts Amherst, three of the Five Colleges. The name of the town is pronounced without the \"h\" (\"AM-erst\"), giving rise to the local saying, \"only the 'h' is silent\", in reference both to the pronunciation and to the town's politically active populace.",
+        "title": "Amherst, Massachusetts",
+        "start": 0,
+        "end": 591,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 105
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 106,
+            "end": 253
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 254,
+            "end": 382
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 383,
+            "end": 591
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5ae261fb554299495565da53",
+          "url": "https://en.wikipedia.org/wiki/Amherst%2C_Massachusetts",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.016129032258064516
+      },
+      {
+        "evidence_id": "E12",
+        "chunk_id": "e121e8bf-c74d-5bd9-85f3-60933fcbe7d1",
+        "document_id": "fbe39cde-64fe-5d9c-b23f-33c9f531d6b7",
+        "revision_id": "897b8f39-516c-5236-89d5-8d9e0b975737",
+        "strategy": "b",
+        "text": "American Authors is an American rock band based in New York City currently signed to Island Records. It currently consists of lead vocalist and guitarist Zac Barnett, lead guitarist and banjoist James Adam Shelley, bassist Dave Rublin, and drummer Matt Sanchez. They are best known for their hit singles \"Believer\" and \"Best Day of My Life\" from their debut album \"Oh, What a Life\", as well as their Top 20 hit, \"Go Big or Go Home\", from their second album, \"What We Live For\".",
+        "title": "American Authors",
+        "start": 0,
+        "end": 477,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 100
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 101,
+            "end": 261
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 262,
+            "end": 477
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a713a5e5542994082a3e6aa",
+          "url": "https://en.wikipedia.org/wiki/American_Authors",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.016129032258064516
+      }
+    ],
+    "search_trace": [
+      {
+        "query": "Local H country origin United States; For Against country origin United States",
+        "strategy": "b",
+        "profile": "1a8846753a25",
+        "embedding_usage": {
+          "model": "text-embedding-3-small",
+          "input_tokens": 13,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 2.6e-07
+        },
+        "document_ranking": [
+          "505348bb-177d-50c4-a465-f541e8c7dc84",
+          "716e1f47-0356-5691-b2be-bc80ba16e5e1",
+          "78e5663a-6e32-58fa-a805-0f29be090eae",
+          "eb48691d-bcee-577a-8334-8b2fa29c0638",
+          "5f540f47-b6f1-53e8-ad79-29df8da8df03",
+          "44bb9dd4-6a62-5d1a-ae9a-c8ae11eb9ab7",
+          "7e0bfa2b-2c6d-56df-9a36-b8569cc1ea6f",
+          "9c891ffb-7be5-5ed8-8e65-a7740e67bb58",
+          "0c6e77dc-f09b-51e4-8bfc-88f0cb7ade3e",
+          "2de8426b-b84d-572a-8a38-34764ef59345"
+        ],
+        "candidate_counts": {
+          "dense": 30,
+          "bm25": 30,
+          "active_dense": 30,
+          "active_bm25": 30
+        },
+        "evidence": [
+          {
+            "evidence_id": "E1",
+            "chunk_id": "67f0bd8c-5ae1-559c-8fe2-33479eddd268",
+            "document_id": "505348bb-177d-50c4-a465-f541e8c7dc84",
+            "revision_id": "4c2c01d6-5f8a-5cfa-9ae0-77b3fa0a2e1a",
+            "strategy": "b",
+            "text": "Country of origin (COO), is the country of manufacture, production, or growth where an article or product comes from. There are differing rules of origin under various national laws and international treaties. Country of origin labelling is also known as \"place-based branding\", the \"made-in image\" or the \"nationality bias.\" In some regions or industries, country of origin labelling may adopt unique local terms such as terroir used to describe wine appellations based on the specific region where grapes are grown and wine manufactured.",
+            "title": "Country of origin",
+            "start": 0,
+            "end": 539,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 117
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 118,
+                "end": 209
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 210,
+                "end": 325
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 326,
+                "end": 539
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a7d21c555429909bec7697d",
+              "url": "https://en.wikipedia.org/wiki/Country_of_origin",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.02964254577157803
+          },
+          {
+            "evidence_id": "E2",
+            "chunk_id": "02b97fa6-7a29-51f6-8304-274f7b5105e6",
+            "document_id": "716e1f47-0356-5691-b2be-bc80ba16e5e1",
+            "revision_id": "5380b853-ed5c-5f32-8b54-a325c9aa35eb",
+            "strategy": "b",
+            "text": "The polka is originally a Czech dance and genre of dance music familiar throughout Europe and the Americas. It originated in the middle of the 19th century in Bohemia, now part of the Czech Republic. Polka remains a popular folk music genre in many European countries, and is performed by folk artists in the Czech Republic, Germany, Austria, Poland, Croatia, Slovenia, Switzerland, and to a lesser extent in Latvia, Lithuania, the Netherlands, Hungary, Italy, Ukraine, Romania, Belarus, Russia, and Slovakia. Local varieties of this dance are also found in the Nordic countries, the United Kingdom, Ireland, Latin America and the United States.",
+            "title": "Polka",
+            "start": 0,
+            "end": 645,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 107
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 108,
+                "end": 199
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 200,
+                "end": 509
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 510,
+                "end": 645
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ab207e255429970612095b1",
+              "url": "https://en.wikipedia.org/wiki/Polka",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.01639344262295082
+          },
+          {
+            "evidence_id": "E3",
+            "chunk_id": "96ede694-0bcf-5aec-8d57-ba8d7b2637b7",
+            "document_id": "78e5663a-6e32-58fa-a805-0f29be090eae",
+            "revision_id": "6de9689c-b802-520a-91ba-c28c0ec4e07c",
+            "strategy": "b",
+            "text": "A homeland ( \"country of origin\" and native land) is the concept of the place (cultural geography) with which an ethnic group holds a long history and a deep cultural association – the country in which a particular national identity began. As a common noun, homeland, it simply connotes the country of one's origin. When used as a proper noun, the Homeland, as well as its equivalents in other languages, often have ethnic nationalist connotations. A homeland may also be referred to as a \"fatherland\", a \"motherland\", or a \"mother country\", depending on the culture and language of the nationality in question.",
+            "title": "Homeland",
+            "start": 0,
+            "end": 611,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 239
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 240,
+                "end": 315
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 316,
+                "end": 448
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 449,
+                "end": 611
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a7d21c555429909bec7697d",
+              "url": "https://en.wikipedia.org/wiki/Homeland",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.01639344262295082
+          },
+          {
+            "evidence_id": "E4",
+            "chunk_id": "8622f531-6b47-58bb-807a-3e2440894cad",
+            "document_id": "eb48691d-bcee-577a-8334-8b2fa29c0638",
+            "revision_id": "9e6eab51-47fc-5efa-8041-1a26ae3e1574",
+            "strategy": "b",
+            "text": "Amherst ( ) is a town in Hampshire County, Massachusetts, United States, in the Connecticut River valley. As of the 2010 census, the population was 37,819, making it the largest municipality in Hampshire County (although the county seat is Northampton). The town is home to Amherst College, Hampshire College, and the University of Massachusetts Amherst, three of the Five Colleges. The name of the town is pronounced without the \"h\" (\"AM-erst\"), giving rise to the local saying, \"only the 'h' is silent\", in reference both to the pronunciation and to the town's politically active populace.",
+            "title": "Amherst, Massachusetts",
+            "start": 0,
+            "end": 591,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 105
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 106,
+                "end": 253
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 254,
+                "end": 382
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 383,
+                "end": 591
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ae261fb554299495565da53",
+              "url": "https://en.wikipedia.org/wiki/Amherst%2C_Massachusetts",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.016129032258064516
+          },
+          {
+            "evidence_id": "E5",
+            "chunk_id": "73636401-1804-5297-b21a-d85e28dc0dfe",
+            "document_id": "5f540f47-b6f1-53e8-ad79-29df8da8df03",
+            "revision_id": "242a895e-bee7-59ca-b8ee-718bbbd9070f",
+            "strategy": "b",
+            "text": "Rules of origin are used to determine the country of origin of a product for purposes of international trade. There are two common types of rules of origin depending upon application, the preferential and non-preferential rules of origin (19 CFR 102). The exact rules vary from country to country, from agreement to agreement.",
+            "title": "Rules of origin",
+            "start": 0,
+            "end": 326,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 109
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 110,
+                "end": 251
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 252,
+                "end": 326
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ac3e08b5542991943173887",
+              "url": "https://en.wikipedia.org/wiki/Rules_of_origin",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015873015873015872
+          },
+          {
+            "evidence_id": "E6",
+            "chunk_id": "e1912903-b888-5d3d-90a7-68d06e767772",
+            "document_id": "44bb9dd4-6a62-5d1a-ae9a-c8ae11eb9ab7",
+            "revision_id": "8b2db68a-2048-5fa1-84e2-0a3e11551f5d",
+            "strategy": "b",
+            "text": "Local H is an American rock band originally formed by guitarist and vocalist Scott Lucas, bassist Matt Garcia, drummer Joe Daniels, and lead guitarist John Sparkman in Zion, Illinois in 1987. The members all met in high school in 1987 and founded Local H three years later.",
+            "title": "Local H",
+            "start": 0,
+            "end": 273,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 191
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 192,
+                "end": 273
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5a8db19d5542994ba4e3dd00",
+              "url": "https://en.wikipedia.org/wiki/Local_H",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015873015873015872
+          },
+          {
+            "evidence_id": "E7",
+            "chunk_id": "9e9b43f2-f1aa-5ef5-a092-c5fb5785332a",
+            "document_id": "7e0bfa2b-2c6d-56df-9a36-b8569cc1ea6f",
+            "revision_id": "d2b6276e-8748-5cc2-b6ce-e55654ffede1",
+            "strategy": "b",
+            "text": "Erwin Mill was a textile mill in Durham, North Carolina that operated between the years of 1893 and 1986. After seeing the success of other cotton mills in the Northeast and locally in Durham, entrepreneur Benjamin N. Duke incorporated the mill in 1892 and recruited William H. Erwin to manage the enterprise. The mill’s success in the late 19th and early 20th centuries was the result of Erwin’s and his successors’ exceptional management tactics, even when the factory hit obstacles such as the Great Depression and the unionization of its workers. The mill grew quickly in the late 19th century and early 20th century, became one of North Carolina’s largest cotton mills. It originally produced muslin pouches for tobacco, but the mill would later expand its production to other fabrics, becoming one of the largest producers of denim in the world during the early 1900s. Workers at the mill enjoyed some of the best working conditions and highest wages in textile factories throughout the southern United States. Mill employees would later sign union-friendly labor agreements that were radical to the southern textile industry in the early to mid 20th century.",
+            "title": "Erwin Mill",
+            "start": 0,
+            "end": 1165,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 105
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 106,
+                "end": 309
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 310,
+                "end": 550
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 551,
+                "end": 674
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 675,
+                "end": 874
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 875,
+                "end": 1016
+              },
+              {
+                "kind": "sentence",
+                "number": 6,
+                "start": 1017,
+                "end": 1165
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a822d605542995ce29dcccb",
+              "url": "https://en.wikipedia.org/wiki/Erwin_Mill",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015625
+          },
+          {
+            "evidence_id": "E8",
+            "chunk_id": "cd75ad7e-5f3b-51f2-8cd8-e3fd2f9f4fb6",
+            "document_id": "9c891ffb-7be5-5ed8-8e65-a7740e67bb58",
+            "revision_id": "7deb19d2-928d-5a6a-a416-060686cbe8a0",
+            "strategy": "b",
+            "text": "The towns and cities of the Hudson Valley were created by the U.S. state of New York as municipalities, in order to perform the services of local government. In 1683, prior to the creation of modern towns, the Province of New York was divided into twelve counties for administrative purposes by the Colonial Governor of New York. In the Hudson Valley, these divisions included Dutchess, Orange, and Ulster counties. Dutchess and Orange remained unorganized until 1713, with Dutchess administered from Ulster; Orange would be administered from New York County. Future counties would be formed and towns exchanged over time, with Rockland County split from Orange in 1799, at which time the southern towns of Ulster were transferred to Orange as compensation for the loss; and Putnam County from Dutchess in 1812, these county's towns can trace their origins to towns and precincts that were formed in their parent counties. Another change that occurred was the transfer of Dutchess County's northern section, the Livingston Manor, to Columbia County. Greene County was formed in 1800 by the combination of the southernmost towns of Albany County with the northernmost towns of Ulster.",
+            "title": "Timeline of town creation in the Hudson Valley",
+            "start": 0,
+            "end": 1183,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 157
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 158,
+                "end": 329
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 330,
+                "end": 415
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 416,
+                "end": 559
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 560,
+                "end": 922
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 923,
+                "end": 1049
+              },
+              {
+                "kind": "sentence",
+                "number": 6,
+                "start": 1050,
+                "end": 1183
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ae78ec5554299540e5a5605",
+              "url": "https://en.wikipedia.org/wiki/Timeline_of_town_creation_in_the_Hudson_Valley",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015625
+          }
+        ],
+        "round": 1,
+        "tool_call_id": "call_SKV3SWLNJCc8p0lX3FiK6kqm",
+        "executed": true,
+        "follow_up": null,
+        "requested_query": "Local H country origin United States; For Against country origin United States",
+        "query_adjusted": false
+      },
+      {
+        "query": "For Against American band country of origin United States",
+        "strategy": "b",
+        "profile": "1a8846753a25",
+        "embedding_usage": {
+          "model": "text-embedding-3-small",
+          "input_tokens": 9,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 1.8e-07
+        },
+        "document_ranking": [
+          "d01ea14f-ed1d-5c3b-8209-93a97feec0c7",
+          "56620235-87e3-5f68-8f82-079afa4be0fd",
+          "f2d537d1-af3e-5316-83e0-09759e9cf372",
+          "fbe39cde-64fe-5d9c-b23f-33c9f531d6b7",
+          "197bb3d7-7201-5132-99a0-1fbda3c11a71",
+          "adcea7f6-3d41-5927-b101-dfb6a0eaf415",
+          "8e255aad-a2d2-577e-b60f-baa2755052ad",
+          "28bf56e3-c0b9-5a6f-99f2-fe81eb51042c",
+          "2b1924a5-b8fb-5136-a8c3-8c195fa093db",
+          "8c078b26-1d8f-5af6-94e1-a282fe6b967a"
+        ],
+        "candidate_counts": {
+          "dense": 30,
+          "bm25": 30,
+          "active_dense": 30,
+          "active_bm25": 30
+        },
+        "evidence": [
+          {
+            "evidence_id": "E9",
+            "chunk_id": "40bd6665-c6aa-5484-8dad-c8cc766062c7",
+            "document_id": "d01ea14f-ed1d-5c3b-8209-93a97feec0c7",
+            "revision_id": "1d8942e1-0968-549a-9784-8df4a188789e",
+            "strategy": "b",
+            "text": "The Strangers is an American country band best known as the back-up band for singer-songwriter Merle Haggard. Formed in 1965 in Bakersfield, California, United States, the band continued to tour with original co-founding member Norman Hamlet, as well as Haggard's children Dana and Ben.",
+            "title": "The Strangers (American band)",
+            "start": 0,
+            "end": 286,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 109
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 110,
+                "end": 286
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a7e21d655429934daa2fbd7",
+              "url": "https://en.wikipedia.org/wiki/The_Strangers_%28American_band%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.01639344262295082
+          },
+          {
+            "evidence_id": "E10",
+            "chunk_id": "a9d14038-daf9-59c2-b680-a49ede55cfd3",
+            "document_id": "56620235-87e3-5f68-8f82-079afa4be0fd",
+            "revision_id": "191d5225-5296-5da7-a633-d3b1772fe8e6",
+            "strategy": "b",
+            "text": "For Against is a United States post-punk/dream pop band from Lincoln, Nebraska. Despite numerous lineup shuffles and some periods of dormancy, the band has produced material steadily from its 1984 inception to the present.",
+            "title": "For Against",
+            "start": 0,
+            "end": 222,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 79
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 80,
+                "end": 222
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5a8db19d5542994ba4e3dd00",
+              "url": "https://en.wikipedia.org/wiki/For_Against",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.01639344262295082
+          },
+          {
+            "evidence_id": "E11",
+            "chunk_id": "4c2ea39f-c9e1-5d1d-8c95-8cf1f342561f",
+            "document_id": "f2d537d1-af3e-5316-83e0-09759e9cf372",
+            "revision_id": "30631f5e-0b92-54f0-be28-16e246732953",
+            "strategy": "b",
+            "text": "\"Heart of Glass\" is a song by the American new wave band Blondie, written by singer Debbie Harry and guitarist Chris Stein. Featured on the band's third studio album, \"Parallel Lines\" (1978), it was released as the album's third single in January 1979 and reached number one on the charts in several countries, including the United States and the United Kingdom.",
+            "title": "Heart of Glass (song)",
+            "start": 0,
+            "end": 362,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 123
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 124,
+                "end": 362
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ab9a6c7554299131ca423b8",
+              "url": "https://en.wikipedia.org/wiki/Heart_of_Glass_%28song%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.016129032258064516
+          },
+          {
+            "evidence_id": "E12",
+            "chunk_id": "e121e8bf-c74d-5bd9-85f3-60933fcbe7d1",
+            "document_id": "fbe39cde-64fe-5d9c-b23f-33c9f531d6b7",
+            "revision_id": "897b8f39-516c-5236-89d5-8d9e0b975737",
+            "strategy": "b",
+            "text": "American Authors is an American rock band based in New York City currently signed to Island Records. It currently consists of lead vocalist and guitarist Zac Barnett, lead guitarist and banjoist James Adam Shelley, bassist Dave Rublin, and drummer Matt Sanchez. They are best known for their hit singles \"Believer\" and \"Best Day of My Life\" from their debut album \"Oh, What a Life\", as well as their Top 20 hit, \"Go Big or Go Home\", from their second album, \"What We Live For\".",
+            "title": "American Authors",
+            "start": 0,
+            "end": 477,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 100
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 101,
+                "end": 261
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 262,
+                "end": 477
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a713a5e5542994082a3e6aa",
+              "url": "https://en.wikipedia.org/wiki/American_Authors",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.016129032258064516
+          },
+          {
+            "evidence_id": "E13",
+            "chunk_id": "33ad9aee-056f-5b11-879a-775c6bd9346b",
+            "document_id": "197bb3d7-7201-5132-99a0-1fbda3c11a71",
+            "revision_id": "9f465623-a478-5682-be09-125d91201e25",
+            "strategy": "b",
+            "text": "\"Like There Ain't No Yesterday\" is a song recorded by American country music band Blackhawk. It was released in November 1995 as the second single from their album \"Strong Enough\". It peaked at number 3 on the United States \"Billboard\" Hot Country Singles & Tracks, while it was their second number-one hit in Canada. The song was written by Walt Aldridge and Mark Narmore.",
+            "title": "Like There Ain't No Yesterday",
+            "start": 0,
+            "end": 373,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 92
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 93,
+                "end": 180
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 181,
+                "end": 317
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 318,
+                "end": 373
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ac19c9355429963665198ba",
+              "url": "https://en.wikipedia.org/wiki/Like_There_Ain%27t_No_Yesterday",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015873015873015872
+          },
+          {
+            "evidence_id": "E14",
+            "chunk_id": "6dee612c-2f6d-53ee-a8ed-05c6817a9cf9",
+            "document_id": "adcea7f6-3d41-5927-b101-dfb6a0eaf415",
+            "revision_id": "56e0443b-c66a-5bdc-bf44-bac521d6a6d1",
+            "strategy": "b",
+            "text": "Anti-Flag are an American pop punk band from Pittsburgh, Pennsylvania, United States. The band is well known for politically charged lyrics and activism, focusing on anti-war activism, anti-imperialism, class struggle, human rights, and various sociopolitical sentiments. The line-up includes singer/guitarist Justin Sane and drummer Pat Thetic, who founded the band; later members are guitarist Chris Head, and singer/bassist Chris Barker (#2) who replaced Jamie \"Cock\" Towns, who had replaced original bassist Andy Flag in 1997 following his departure one year prior. Anti-Flag is known also for their advocacy of progressive political action groups such as Greenpeace and Amnesty International. Most recently, the band has declared solidarity with the global Occupy Together movement.",
+            "title": "Anti-Flag",
+            "start": 0,
+            "end": 787,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 85
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 86,
+                "end": 271
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 272,
+                "end": 569
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 570,
+                "end": 697
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 698,
+                "end": 787
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ae497145542995dadf24362",
+              "url": "https://en.wikipedia.org/wiki/Anti-Flag",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015873015873015872
+          },
+          {
+            "evidence_id": "E15",
+            "chunk_id": "6699050e-50d9-5835-997a-7c64cf2ca218",
+            "document_id": "8e255aad-a2d2-577e-b60f-baa2755052ad",
+            "revision_id": "abd6ca42-732d-5502-8ed9-30fccb44dd43",
+            "strategy": "b",
+            "text": "\"Americana\" is a single by American country music artist Moe Bandy. It was released in January 1988 as the first single from his album \"No Regrets\". The song peaked at number 8 on the \"Billboard\" Hot Country Singles chart, and to date is his last top 10 single.",
+            "title": "Americana (song)",
+            "start": 0,
+            "end": 261,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 67
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 68,
+                "end": 148
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 149,
+                "end": 261
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ae13c3855429901ffe4ae18",
+              "url": "https://en.wikipedia.org/wiki/Americana_%28song%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015625
+          },
+          {
+            "evidence_id": "E16",
+            "chunk_id": "f939e0a5-7ca9-5c4e-abca-321dfdde63be",
+            "document_id": "28bf56e3-c0b9-5a6f-99f2-fe81eb51042c",
+            "revision_id": "2a6a45e7-f8ae-5c00-8b5c-346535f82a68",
+            "strategy": "b",
+            "text": "\"Big Guitar\" is a song written by Henry Gross and Henry Paul, and recorded by American country music band Blackhawk. It was released in June 1996 as the fourth single from their album \"Strong Enough\". It peaked at number 17 on the United States \"Billboard\" Hot Country Singles & Tracks chart while it was a top ten in Canada, peaking at number 8 there.",
+            "title": "Big Guitar",
+            "start": 0,
+            "end": 352,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 116
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 117,
+                "end": 200
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 201,
+                "end": 352
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ab92cc5554299753720f76f",
+              "url": "https://en.wikipedia.org/wiki/Big_Guitar",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015625
+          }
+        ],
+        "round": 2,
+        "tool_call_id": "call_1htQYNkX4uuiPLUaHnIyprlH",
+        "executed": true,
+        "follow_up": null,
+        "requested_query": "For Against American band country of origin United States",
+        "query_adjusted": false
+      }
+    ],
+    "workflow": "bounded_tools_v1",
+    "execution": {
+      "planning_rounds": 2,
+      "retrieval_rounds": 2,
+      "tool_calls": 2,
+      "searches": 2,
+      "llm_calls": 3,
+      "embedding_calls": 2,
+      "total_provider_calls": 5,
+      "stop_reason": "retrieval_limit",
+      "limits": {
+        "retrieval_rounds": 2,
+        "searches": 3,
+        "llm_calls": 3,
+        "embedding_calls": 3,
+        "total_provider_calls": 6
+      }
+    },
+    "configuration": {
+      "strategy": "b",
+      "profile": "1a8846753a25",
+      "embedding_model": "text-embedding-3-small",
+      "embedding_dimensions": 384,
+      "generation_model": "gpt-5.4-mini-2026-03-17",
+      "prompt_version": "bounded_tools_quote_ids_v1"
+    },
+    "usage": {
+      "planning": [
+        {
+          "input_tokens": 520,
+          "output_tokens": 36,
+          "estimated_cost_usd": 0.000552,
+          "model": "gpt-5.4-mini-2026-03-17"
+        },
+        {
+          "input_tokens": 1784,
+          "output_tokens": 31,
+          "estimated_cost_usd": 0.0014775,
+          "model": "gpt-5.4-mini-2026-03-17"
+        }
+      ],
+      "generation": {
+        "input_tokens": 3873,
+        "output_tokens": 80,
+        "estimated_cost_usd": 0.00326475,
+        "model": "gpt-5.4-mini-2026-03-17"
+      },
+      "embeddings": [
+        {
+          "model": "text-embedding-3-small",
+          "input_tokens": 13,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 2.6e-07
+        },
+        {
+          "model": "text-embedding-3-small",
+          "input_tokens": 9,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 1.8e-07
+        }
+      ],
+      "estimated_model_cost_usd": 0.00529425,
+      "estimated_total_cost_usd": 0.00529469
+    },
+    "latency_ms": 5094
+  },
+  "error": null,
+  "elapsed_ms": 5094,
+  "ledger_after": {
+    "calls": 531,
+    "reserved_usd": 1.39328991,
+    "estimated_actual_usd": 0.46770591,
+    "input_tokens": 7267403,
+    "output_tokens": 10981
+  }
+}

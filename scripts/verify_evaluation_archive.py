@@ -13,6 +13,7 @@ from app.evaluation.context import digest
 from app.evaluation.reporting import select_strategy, summarize
 from app.evaluation.state import save
 from app.evaluation_cli import records_for
+from app.retrieval.chunking import chunk_spans
 
 
 def read(path):
@@ -20,7 +21,7 @@ def read(path):
 
 
 def verify(archive, prepared):
-    cases, _, fixture_manifest = load_fixtures(Path("fixtures"))
+    cases, fixture_documents, fixture_manifest = load_fixtures(Path("fixtures"))
     manifest, selection = read(archive / "manifest.json"), read(archive / "selection.json")
     assert manifest["identity"] == digest(manifest["details"]), "Manifest identity mismatch"
     local = manifest["details"]["code_and_local"]["local"]
@@ -90,6 +91,22 @@ def verify(archive, prepared):
     if hashes.exists():
         for name, expected in read(hashes).items():
             assert sha256_file(archive / name) == expected, f"Archive file changed: {name}"
+    chunk_comparison = {}
+    for split in ("development", "final"):
+        required = {e.document_id for case in cases if case.split == split for e in case.evidence}
+        identical = 0
+        for key in required:
+            doc = fixture_documents[key]
+            spans = [(segment.start, segment.end) for segment in doc.segments]
+            identical += chunk_spans(doc.text, "a", spans) == chunk_spans(doc.text, "b", spans)
+        chunk_comparison[split] = {
+            "required_distinct_sources": len(required),
+            "identical_spans": identical,
+        }
+    pairs = {}
+    for row in records["final"]:
+        pairs.setdefault(row["case_id"], {})[row["strategy"]] = row.get("result")
+    successful_pairs = [pair for pair in pairs.values() if pair["a"] and pair["b"]]
     return {
         "scope": "offline archive reproduction; no provider requests",
         "identity": manifest["identity"],
@@ -108,6 +125,12 @@ def verify(archive, prepared):
             "score equality is checked independently."
         ),
         "archive_hashes_checked": hashes.exists(),
+        "required_source_chunk_comparison": chunk_comparison,
+        "paired_successful_final_cases": len(successful_pairs),
+        "paired_successes_with_identical_initial_queries": sum(
+            pair["a"]["search_trace"][0]["query"] == pair["b"]["search_trace"][0]["query"]
+            for pair in successful_pairs
+        ),
         "george_independent_review": "pending",
     }
 

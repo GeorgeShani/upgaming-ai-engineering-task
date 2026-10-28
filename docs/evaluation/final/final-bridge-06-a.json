@@ -1,0 +1,1442 @@
+{
+  "case_id": "final-bridge-06",
+  "strategy": "a",
+  "question": "The arena where the Lewiston Maineiacs played their home games can seat how many people?",
+  "started_at": "2026-10-28T07:00:55.175798+00:00",
+  "ledger_before": {
+    "calls": 442,
+    "reserved_usd": 1.01632964,
+    "estimated_actual_usd": 0.36030164,
+    "input_tokens": 7142167,
+    "output_tokens": 7921
+  },
+  "result": {
+    "status": "answered",
+    "claims": [
+      {
+        "text": "The Androscoggin Bank Colisée can seat 3,677 people.",
+        "citations": [
+          {
+            "evidence_id": "E2",
+            "quote": "The Androscoggin Bank Colisée (formerly Central Maine Civic Center and Lewiston Colisee) is a 4,000 capacity (3,677 seated) multi-purpose arena, in Lewiston, Maine, that opened in 1958. In 1965 it was the location of the World Heavyweight Title fight during which one of the most famous sports photographs of the century was taken of Muhammed Ali standing over Sonny Liston."
+          }
+        ]
+      }
+    ],
+    "conflicting_claims": [],
+    "answer": "The Androscoggin Bank Colisée can seat 3,677 people. [E2]",
+    "evidence": [
+      {
+        "evidence_id": "E2",
+        "chunk_id": "9076716a-00d2-5744-a3f1-30b0685593a7",
+        "document_id": "59035b4e-3864-5b2b-a1fb-88cfd55c5a05",
+        "revision_id": "b44638c8-5cba-5a5b-b130-80a8c7b6e18a",
+        "strategy": "a",
+        "text": "The Androscoggin Bank Colisée (formerly Central Maine Civic Center and Lewiston Colisee) is a 4,000 capacity (3,677 seated) multi-purpose arena, in Lewiston, Maine, that opened in 1958. In 1965 it was the location of the World Heavyweight Title fight during which one of the most famous sports photographs of the century was taken of Muhammed Ali standing over Sonny Liston.",
+        "title": "Androscoggin Bank Colisée",
+        "start": 0,
+        "end": 374,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 185
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 186,
+            "end": 374
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "validation",
+          "record_id": "5a87ab905542996e4f3088c1",
+          "url": "https://en.wikipedia.org/wiki/Androscoggin_Bank_Colis%C3%A9e",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.03252247488101534
+      },
+      {
+        "evidence_id": "E1",
+        "chunk_id": "25f32494-550f-5681-98cc-e9b78cca9397",
+        "document_id": "9ed3dad6-f4fd-5098-9e09-008a5be5a0c0",
+        "revision_id": "23d86605-099e-5559-b085-0b2ff70ba4f0",
+        "strategy": "a",
+        "text": "The Lewiston Maineiacs were a junior ice hockey team of the Quebec Major Junior Hockey League based in Lewiston, Maine. The team played its home games at the Androscoggin Bank Colisée. They were the second QMJHL team in the United States, and the only one to play a full season. They won the President's Cup in 2007.",
+        "title": "Lewiston Maineiacs",
+        "start": 0,
+        "end": 316,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 119
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 120,
+            "end": 184
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 185,
+            "end": 278
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 279,
+            "end": 316
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "validation",
+          "record_id": "5a87ab905542996e4f3088c1",
+          "url": "https://en.wikipedia.org/wiki/Lewiston_Maineiacs",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.0277569392348087
+      },
+      {
+        "evidence_id": "E5",
+        "chunk_id": "dcfe4989-b952-5126-a4fb-eb8b01c5e89e",
+        "document_id": "9cd59ad0-e5eb-5599-a576-185cabe0bff6",
+        "revision_id": "93303760-b0d3-5c83-ba1e-8039585eb6cd",
+        "strategy": "a",
+        "text": "The Videotron Centre (French: \"Centre Vidéotron\") is an indoor arena in Quebec City, Quebec, Canada. The 18,259-seat arena replaced Colisée Pepsi as Quebec City's primary venue for indoor events. The new arena is primarily used for ice hockey, serving as the home area of the Quebec Remparts of the QMJHL and has been prospected as a venue for a new or re-located National Hockey League team in Quebec City, and as part of a Winter Olympic Games bid. The building opened on September 8, 2015. It is now the seventh-largest indoor arena in Canada.",
+        "title": "Videotron Centre",
+        "start": 0,
+        "end": 546,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 100
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 101,
+            "end": 195
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 196,
+            "end": 450
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 451,
+            "end": 492
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 493,
+            "end": 546
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a7d52655542990b8f50397b",
+          "url": "https://en.wikipedia.org/wiki/Videotron_Centre",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.03036576949620428
+      },
+      {
+        "evidence_id": "E3",
+        "chunk_id": "43077266-a560-585e-99d7-546d82277417",
+        "document_id": "407b6627-4e3d-5175-a84a-f8b9f754d54c",
+        "revision_id": "7580144a-9c70-51eb-b8b4-8316fb502888",
+        "strategy": "a",
+        "text": "The Cedar Rapids Ice Arena is a 3,850-seat multipurpose arena in Cedar Rapids, Iowa, located adjacent to Veterans Memorial Stadium. The arena opened on January 8, 2000, and is owned by the city of Cedar Rapids. It is home to the Cedar Rapids RoughRiders of the United States Hockey League as well as several local youth hockey teams. The University of Iowa Hawkeyes club hockey team plays some of their home games at the facility. The arena contains separate sheets of ice for ice hockey games and for public and figure ice skating.",
+        "title": "Cedar Rapids Ice Arena",
+        "start": 0,
+        "end": 532,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 131
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 132,
+            "end": 210
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 211,
+            "end": 333
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 334,
+            "end": 430
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 431,
+            "end": 532
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a7d52655542990b8f50397b",
+          "url": "https://en.wikipedia.org/wiki/Cedar_Rapids_Ice_Arena",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.02946912242686891
+      },
+      {
+        "evidence_id": "E9",
+        "chunk_id": "e895dfa8-6337-5f0c-9414-fd30036a5ba4",
+        "document_id": "891044fc-4298-53d8-92e5-8c097d6d8b58",
+        "revision_id": "c2cc2a3a-0ab9-5eb1-aad5-2b510762c7d4",
+        "strategy": "a",
+        "text": "The following is a list of Rugby union stadiums in England. The stadiums are organised by capacity, which is the maximum number of spectators the stadium can normally accommodate. Capacities are standard total capacity, including seats and any standing areas, and excluding any temporary seating. All stadiums with a capacity of 3,000 or more are included and host Premiership, RFU Championship and National League 1 games for the 2016-17 season. Some of the stadiums below host other sports and events in addition to Rugby Union. Stadiums which have only hosted Rugby Union games for one-off occasions, such as the King Power Stadium and Wembley Stadium, have been omitted from the list.",
+        "title": "List of English Rugby Union stadiums by capacity",
+        "start": 0,
+        "end": 688,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 59
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 60,
+            "end": 179
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 180,
+            "end": 296
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 297,
+            "end": 446
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 447,
+            "end": 530
+          },
+          {
+            "kind": "sentence",
+            "number": 5,
+            "start": 531,
+            "end": 688
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a838a515542996488c2e453",
+          "url": "https://en.wikipedia.org/wiki/List_of_English_Rugby_Union_stadiums_by_capacity",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.029513888888888888
+      },
+      {
+        "evidence_id": "E4",
+        "chunk_id": "f8b6d209-c5b7-50cd-9b29-dc11c249dbdd",
+        "document_id": "4acbe904-62c2-542e-8b74-d1c803fc889b",
+        "revision_id": "d4b3ffdf-69c0-56fd-a5c6-9e003fd488a0",
+        "strategy": "a",
+        "text": "Žalgirio Arena is a multi-purpose indoor arena in the New Town of Kaunas, Lithuania. The arena is located on an island of the Nemunas River. It is the largest indoor arena in the Baltics. The arena's maximum possible seating capacity for basketball games is 15,552, and 20,000 spectators for concerts (when the stage is in the middle, and 17,000 when stage is in the side of the arena). The Žalgiris Arena replaced the Kaunas Sports Hall as a major venue in the city.",
+        "title": "Žalgiris Arena",
+        "start": 0,
+        "end": 467,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 84
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 85,
+            "end": 140
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 141,
+            "end": 187
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 188,
+            "end": 386
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 387,
+            "end": 467
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a8037815542996402f6a482",
+          "url": "https://en.wikipedia.org/wiki/%C5%BDalgiris_Arena",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.02871794871794872
+      },
+      {
+        "evidence_id": "E10",
+        "chunk_id": "9731cad3-c04d-5ff2-a5ff-c42506e818dc",
+        "document_id": "3ee539ae-4c77-52be-b9a7-0f260f471f59",
+        "revision_id": "8b32d594-0e4c-50ac-8810-686a336ac19a",
+        "strategy": "a",
+        "text": "Stanford Stadium is an outdoor athletic stadium in Stanford, California, on the campus of Stanford University. It is the home of the Stanford Cardinal college football team as well as the site of the university's commencement exercises. It originally opened in 1921 as a football and track stadium, an earthen horseshoe with wooden bleacher seating and flooring upon a steel frame. Its original seating capacity was 60,000, which grew to 89,000 by 1927 as a nearly enclosed bowl. Immediately following the 2005 season, the stadium was demolished and rebuilt as a dual-deck concrete structure, without a track. Today, it seats 50,424.",
+        "title": "Stanford Stadium",
+        "start": 0,
+        "end": 633,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 110
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 111,
+            "end": 236
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 237,
+            "end": 381
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 382,
+            "end": 479
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 480,
+            "end": 609
+          },
+          {
+            "kind": "sentence",
+            "number": 5,
+            "start": 610,
+            "end": 633
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5ab27447554299449642c8ac",
+          "url": "https://en.wikipedia.org/wiki/Stanford_Stadium",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.02694394213381555
+      },
+      {
+        "evidence_id": "E6",
+        "chunk_id": "e4b8ca69-c7bd-5809-ae07-530b5ebd7957",
+        "document_id": "bb14e2ec-7076-5ca5-9f4a-9342b26d6021",
+        "revision_id": "9dcea839-feb8-5750-a3cb-06e5471d06d0",
+        "strategy": "a",
+        "text": "The Gersten Pavilion is a 3900-seat multi-purpose arena in Los Angeles, California. It is the home of the Loyola Marymount University Lions. It was built in 1981. It was also the part-time practice home for the Los Angeles Lakers. It was the site for the weightlifting competition for the 1984 Summer Olympics. On March 4, 1990, LMU star Hank Gathers died during a West Coast Conference men's basketball tournament game from cardiomyopathy. The tourney was promptly suspended and LMU was awarded the NCAA bid based on their regular season title. The facility also hosted the WCC tournament in 1997. The arena is known among LMU alumni as \"Hank's House\" in honor of Gathers.",
+        "title": "Gersten Pavilion",
+        "start": 0,
+        "end": 673,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 83
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 84,
+            "end": 140
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 141,
+            "end": 162
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 163,
+            "end": 230
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 231,
+            "end": 310
+          },
+          {
+            "kind": "sentence",
+            "number": 5,
+            "start": 311,
+            "end": 440
+          },
+          {
+            "kind": "sentence",
+            "number": 6,
+            "start": 441,
+            "end": 545
+          },
+          {
+            "kind": "sentence",
+            "number": 7,
+            "start": 546,
+            "end": 598
+          },
+          {
+            "kind": "sentence",
+            "number": 8,
+            "start": 599,
+            "end": 673
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5abaefb355429939ce03dd6c",
+          "url": "https://en.wikipedia.org/wiki/Gersten_Pavilion",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.023839931885908897
+      }
+    ],
+    "search_trace": [
+      {
+        "query": "Lewiston Maineiacs home arena seating capacity",
+        "strategy": "a",
+        "profile": "1a8846753a25",
+        "embedding_usage": {
+          "model": "text-embedding-3-small",
+          "input_tokens": 0,
+          "api_calls": 0,
+          "cache_hits": 1,
+          "estimated_cost_usd": 0.0
+        },
+        "document_ranking": [
+          "9ed3dad6-f4fd-5098-9e09-008a5be5a0c0",
+          "59035b4e-3864-5b2b-a1fb-88cfd55c5a05",
+          "407b6627-4e3d-5175-a84a-f8b9f754d54c",
+          "4acbe904-62c2-542e-8b74-d1c803fc889b",
+          "9cd59ad0-e5eb-5599-a576-185cabe0bff6",
+          "bb14e2ec-7076-5ca5-9f4a-9342b26d6021",
+          "47dac91b-340e-5ac9-9433-2800704f6222",
+          "5be449c5-4fdb-5714-bfa9-19ea361d697f",
+          "f2ba7198-36c4-5460-8cdb-738bd0f5fdc9",
+          "1414c410-33fa-5ad5-b2be-794fa98576bd"
+        ],
+        "candidate_counts": {
+          "dense": 30,
+          "bm25": 30,
+          "active_dense": 30,
+          "active_bm25": 30
+        },
+        "evidence": [
+          {
+            "evidence_id": "E1",
+            "chunk_id": "25f32494-550f-5681-98cc-e9b78cca9397",
+            "document_id": "9ed3dad6-f4fd-5098-9e09-008a5be5a0c0",
+            "revision_id": "23d86605-099e-5559-b085-0b2ff70ba4f0",
+            "strategy": "a",
+            "text": "The Lewiston Maineiacs were a junior ice hockey team of the Quebec Major Junior Hockey League based in Lewiston, Maine. The team played its home games at the Androscoggin Bank Colisée. They were the second QMJHL team in the United States, and the only one to play a full season. They won the President's Cup in 2007.",
+            "title": "Lewiston Maineiacs",
+            "start": 0,
+            "end": 316,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 119
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 120,
+                "end": 184
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 185,
+                "end": 278
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 279,
+                "end": 316
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5a87ab905542996e4f3088c1",
+              "url": "https://en.wikipedia.org/wiki/Lewiston_Maineiacs",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03252247488101534
+          },
+          {
+            "evidence_id": "E2",
+            "chunk_id": "9076716a-00d2-5744-a3f1-30b0685593a7",
+            "document_id": "59035b4e-3864-5b2b-a1fb-88cfd55c5a05",
+            "revision_id": "b44638c8-5cba-5a5b-b130-80a8c7b6e18a",
+            "strategy": "a",
+            "text": "The Androscoggin Bank Colisée (formerly Central Maine Civic Center and Lewiston Colisee) is a 4,000 capacity (3,677 seated) multi-purpose arena, in Lewiston, Maine, that opened in 1958. In 1965 it was the location of the World Heavyweight Title fight during which one of the most famous sports photographs of the century was taken of Muhammed Ali standing over Sonny Liston.",
+            "title": "Androscoggin Bank Colisée",
+            "start": 0,
+            "end": 374,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 185
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 186,
+                "end": 374
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5a87ab905542996e4f3088c1",
+              "url": "https://en.wikipedia.org/wiki/Androscoggin_Bank_Colis%C3%A9e",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03252247488101534
+          },
+          {
+            "evidence_id": "E3",
+            "chunk_id": "43077266-a560-585e-99d7-546d82277417",
+            "document_id": "407b6627-4e3d-5175-a84a-f8b9f754d54c",
+            "revision_id": "7580144a-9c70-51eb-b8b4-8316fb502888",
+            "strategy": "a",
+            "text": "The Cedar Rapids Ice Arena is a 3,850-seat multipurpose arena in Cedar Rapids, Iowa, located adjacent to Veterans Memorial Stadium. The arena opened on January 8, 2000, and is owned by the city of Cedar Rapids. It is home to the Cedar Rapids RoughRiders of the United States Hockey League as well as several local youth hockey teams. The University of Iowa Hawkeyes club hockey team plays some of their home games at the facility. The arena contains separate sheets of ice for ice hockey games and for public and figure ice skating.",
+            "title": "Cedar Rapids Ice Arena",
+            "start": 0,
+            "end": 532,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 131
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 132,
+                "end": 210
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 211,
+                "end": 333
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 334,
+                "end": 430
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 431,
+                "end": 532
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a7d52655542990b8f50397b",
+              "url": "https://en.wikipedia.org/wiki/Cedar_Rapids_Ice_Arena",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.02946912242686891
+          },
+          {
+            "evidence_id": "E4",
+            "chunk_id": "f8b6d209-c5b7-50cd-9b29-dc11c249dbdd",
+            "document_id": "4acbe904-62c2-542e-8b74-d1c803fc889b",
+            "revision_id": "d4b3ffdf-69c0-56fd-a5c6-9e003fd488a0",
+            "strategy": "a",
+            "text": "Žalgirio Arena is a multi-purpose indoor arena in the New Town of Kaunas, Lithuania. The arena is located on an island of the Nemunas River. It is the largest indoor arena in the Baltics. The arena's maximum possible seating capacity for basketball games is 15,552, and 20,000 spectators for concerts (when the stage is in the middle, and 17,000 when stage is in the side of the arena). The Žalgiris Arena replaced the Kaunas Sports Hall as a major venue in the city.",
+            "title": "Žalgiris Arena",
+            "start": 0,
+            "end": 467,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 84
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 85,
+                "end": 140
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 141,
+                "end": 187
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 188,
+                "end": 386
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 387,
+                "end": 467
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a8037815542996402f6a482",
+              "url": "https://en.wikipedia.org/wiki/%C5%BDalgiris_Arena",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.02871794871794872
+          },
+          {
+            "evidence_id": "E5",
+            "chunk_id": "dcfe4989-b952-5126-a4fb-eb8b01c5e89e",
+            "document_id": "9cd59ad0-e5eb-5599-a576-185cabe0bff6",
+            "revision_id": "93303760-b0d3-5c83-ba1e-8039585eb6cd",
+            "strategy": "a",
+            "text": "The Videotron Centre (French: \"Centre Vidéotron\") is an indoor arena in Quebec City, Quebec, Canada. The 18,259-seat arena replaced Colisée Pepsi as Quebec City's primary venue for indoor events. The new arena is primarily used for ice hockey, serving as the home area of the Quebec Remparts of the QMJHL and has been prospected as a venue for a new or re-located National Hockey League team in Quebec City, and as part of a Winter Olympic Games bid. The building opened on September 8, 2015. It is now the seventh-largest indoor arena in Canada.",
+            "title": "Videotron Centre",
+            "start": 0,
+            "end": 546,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 100
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 101,
+                "end": 195
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 196,
+                "end": 450
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 451,
+                "end": 492
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 493,
+                "end": 546
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a7d52655542990b8f50397b",
+              "url": "https://en.wikipedia.org/wiki/Videotron_Centre",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.028438886647841874
+          },
+          {
+            "evidence_id": "E6",
+            "chunk_id": "e4b8ca69-c7bd-5809-ae07-530b5ebd7957",
+            "document_id": "bb14e2ec-7076-5ca5-9f4a-9342b26d6021",
+            "revision_id": "9dcea839-feb8-5750-a3cb-06e5471d06d0",
+            "strategy": "a",
+            "text": "The Gersten Pavilion is a 3900-seat multi-purpose arena in Los Angeles, California. It is the home of the Loyola Marymount University Lions. It was built in 1981. It was also the part-time practice home for the Los Angeles Lakers. It was the site for the weightlifting competition for the 1984 Summer Olympics. On March 4, 1990, LMU star Hank Gathers died during a West Coast Conference men's basketball tournament game from cardiomyopathy. The tourney was promptly suspended and LMU was awarded the NCAA bid based on their regular season title. The facility also hosted the WCC tournament in 1997. The arena is known among LMU alumni as \"Hank's House\" in honor of Gathers.",
+            "title": "Gersten Pavilion",
+            "start": 0,
+            "end": 673,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 83
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 84,
+                "end": 140
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 141,
+                "end": 162
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 163,
+                "end": 230
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 231,
+                "end": 310
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 311,
+                "end": 440
+              },
+              {
+                "kind": "sentence",
+                "number": 6,
+                "start": 441,
+                "end": 545
+              },
+              {
+                "kind": "sentence",
+                "number": 7,
+                "start": 546,
+                "end": 598
+              },
+              {
+                "kind": "sentence",
+                "number": 8,
+                "start": 599,
+                "end": 673
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5abaefb355429939ce03dd6c",
+              "url": "https://en.wikipedia.org/wiki/Gersten_Pavilion",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.023839931885908897
+          },
+          {
+            "evidence_id": "E7",
+            "chunk_id": "68b94ad5-675c-52ca-9936-7b63a344ec13",
+            "document_id": "47dac91b-340e-5ac9-9433-2800704f6222",
+            "revision_id": "d63a991e-bca3-5d56-8afb-f3d5a56fd0af",
+            "strategy": "a",
+            "text": "Morse Field at Harold Alfond Sports Stadium is a 10,000-seat multi-purpose stadium in Orono, Maine. The stadium opened as Alumni Field in 1947 and underwent extensive renovations from 1996 to 1998. It is home to the University of Maine Black Bears football team. The wood and steel grandstands, built in the 1940s, were condemned and demolished in 1996, replaced with the current east grandstand, along with a temporary structure on the west side, adjacent to Alfond Arena. The current west grandstand, lights, press and luxury levels, as well as concessions and restroom amenities were completed prior to the 1998 season. The stadium was rededicated to Harold Alfond, a longtime Maine booster, at Maine's first home night game on September 12, 1998, a 52-28 win over New Hampshire in the Battle for the Brice-Cowell Musket. The field is named for Phillip and Susan Morse, who donated the lights, original Astroturf and scoreboard. In the summer of 2008, new FieldTurf was installed to replace the old AstroTurf. In 2014, a 20'x32' high-definition video-board replaced the matrix",
+            "title": "Alfond Stadium (University of Maine)",
+            "start": 0,
+            "end": 1079,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 99
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 100,
+                "end": 197
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 198,
+                "end": 262
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 263,
+                "end": 473
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 474,
+                "end": 622
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 623,
+                "end": 824
+              },
+              {
+                "kind": "sentence",
+                "number": 6,
+                "start": 825,
+                "end": 931
+              },
+              {
+                "kind": "sentence",
+                "number": 7,
+                "start": 932,
+                "end": 1012
+              },
+              {
+                "kind": "sentence",
+                "number": 8,
+                "start": 1013,
+                "end": 1168
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a888a8a5542997e5c09a603",
+              "url": "https://en.wikipedia.org/wiki/Alfond_Stadium_%28University_of_Maine%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015873015873015872
+          },
+          {
+            "evidence_id": "E8",
+            "chunk_id": "d8382db7-9edd-58e7-9560-6aefd49430c0",
+            "document_id": "5be449c5-4fdb-5714-bfa9-19ea361d697f",
+            "revision_id": "90a705c7-491c-5822-87fe-866047620057",
+            "strategy": "a",
+            "text": "Galatasaray S.K., for sponsorship reasons Galatasaray Odeabank, is a professional basketball team based in the city of Istanbul in Turkey. It is a part of the Galatasaray Sports Club. The team competes in the Turkish Basketball Super League and EuroCup. Galatasaray plays its home matches in Abdi İpekçi Arena, which has a seating capacity for 12,270 spectators. The team has been crowned Turkish national champions five times so far.",
+            "title": "Galatasaray S.K. (men's basketball)",
+            "start": 0,
+            "end": 434,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 138
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 139,
+                "end": 183
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 184,
+                "end": 253
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 254,
+                "end": 362
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 363,
+                "end": 434
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a7147955542994082a3e754",
+              "url": "https://en.wikipedia.org/wiki/Galatasaray_S.K._%28men%27s_basketball%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015873015873015872
+          }
+        ],
+        "round": 1,
+        "tool_call_id": "call_9B1sSveDX5hfH9HnetuOHucG",
+        "executed": true,
+        "follow_up": null,
+        "requested_query": "Lewiston Maineiacs home arena seating capacity",
+        "query_adjusted": false
+      },
+      {
+        "query": "Androscoggin Bank Colisée seated capacity",
+        "strategy": "a",
+        "profile": "1a8846753a25",
+        "embedding_usage": {
+          "model": "text-embedding-3-small",
+          "input_tokens": 11,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 2.2e-07
+        },
+        "document_ranking": [
+          "59035b4e-3864-5b2b-a1fb-88cfd55c5a05",
+          "9cd59ad0-e5eb-5599-a576-185cabe0bff6",
+          "891044fc-4298-53d8-92e5-8c097d6d8b58",
+          "9ed3dad6-f4fd-5098-9e09-008a5be5a0c0",
+          "3ee539ae-4c77-52be-b9a7-0f260f471f59",
+          "e4de1878-cdbd-563b-8ef6-103ee5259beb",
+          "105b9da2-32fc-5421-99fd-f73668a7d383",
+          "c7462033-fbd4-5ef3-87ee-19b79f7c3f22",
+          "a2565b49-11b9-5e63-aab9-ebb9193d45ee",
+          "47dac91b-340e-5ac9-9433-2800704f6222"
+        ],
+        "candidate_counts": {
+          "dense": 30,
+          "bm25": 30,
+          "active_dense": 30,
+          "active_bm25": 30
+        },
+        "evidence": [
+          {
+            "evidence_id": "E2",
+            "chunk_id": "9076716a-00d2-5744-a3f1-30b0685593a7",
+            "document_id": "59035b4e-3864-5b2b-a1fb-88cfd55c5a05",
+            "revision_id": "b44638c8-5cba-5a5b-b130-80a8c7b6e18a",
+            "strategy": "a",
+            "text": "The Androscoggin Bank Colisée (formerly Central Maine Civic Center and Lewiston Colisee) is a 4,000 capacity (3,677 seated) multi-purpose arena, in Lewiston, Maine, that opened in 1958. In 1965 it was the location of the World Heavyweight Title fight during which one of the most famous sports photographs of the century was taken of Muhammed Ali standing over Sonny Liston.",
+            "title": "Androscoggin Bank Colisée",
+            "start": 0,
+            "end": 374,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 185
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 186,
+                "end": 374
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5a87ab905542996e4f3088c1",
+              "url": "https://en.wikipedia.org/wiki/Androscoggin_Bank_Colis%C3%A9e",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03278688524590164
+          },
+          {
+            "evidence_id": "E5",
+            "chunk_id": "dcfe4989-b952-5126-a4fb-eb8b01c5e89e",
+            "document_id": "9cd59ad0-e5eb-5599-a576-185cabe0bff6",
+            "revision_id": "93303760-b0d3-5c83-ba1e-8039585eb6cd",
+            "strategy": "a",
+            "text": "The Videotron Centre (French: \"Centre Vidéotron\") is an indoor arena in Quebec City, Quebec, Canada. The 18,259-seat arena replaced Colisée Pepsi as Quebec City's primary venue for indoor events. The new arena is primarily used for ice hockey, serving as the home area of the Quebec Remparts of the QMJHL and has been prospected as a venue for a new or re-located National Hockey League team in Quebec City, and as part of a Winter Olympic Games bid. The building opened on September 8, 2015. It is now the seventh-largest indoor arena in Canada.",
+            "title": "Videotron Centre",
+            "start": 0,
+            "end": 546,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 100
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 101,
+                "end": 195
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 196,
+                "end": 450
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 451,
+                "end": 492
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 493,
+                "end": 546
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a7d52655542990b8f50397b",
+              "url": "https://en.wikipedia.org/wiki/Videotron_Centre",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03036576949620428
+          },
+          {
+            "evidence_id": "E9",
+            "chunk_id": "e895dfa8-6337-5f0c-9414-fd30036a5ba4",
+            "document_id": "891044fc-4298-53d8-92e5-8c097d6d8b58",
+            "revision_id": "c2cc2a3a-0ab9-5eb1-aad5-2b510762c7d4",
+            "strategy": "a",
+            "text": "The following is a list of Rugby union stadiums in England. The stadiums are organised by capacity, which is the maximum number of spectators the stadium can normally accommodate. Capacities are standard total capacity, including seats and any standing areas, and excluding any temporary seating. All stadiums with a capacity of 3,000 or more are included and host Premiership, RFU Championship and National League 1 games for the 2016-17 season. Some of the stadiums below host other sports and events in addition to Rugby Union. Stadiums which have only hosted Rugby Union games for one-off occasions, such as the King Power Stadium and Wembley Stadium, have been omitted from the list.",
+            "title": "List of English Rugby Union stadiums by capacity",
+            "start": 0,
+            "end": 688,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 59
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 60,
+                "end": 179
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 180,
+                "end": 296
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 297,
+                "end": 446
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 447,
+                "end": 530
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 531,
+                "end": 688
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a838a515542996488c2e453",
+              "url": "https://en.wikipedia.org/wiki/List_of_English_Rugby_Union_stadiums_by_capacity",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.029513888888888888
+          },
+          {
+            "evidence_id": "E1",
+            "chunk_id": "25f32494-550f-5681-98cc-e9b78cca9397",
+            "document_id": "9ed3dad6-f4fd-5098-9e09-008a5be5a0c0",
+            "revision_id": "23d86605-099e-5559-b085-0b2ff70ba4f0",
+            "strategy": "a",
+            "text": "The Lewiston Maineiacs were a junior ice hockey team of the Quebec Major Junior Hockey League based in Lewiston, Maine. The team played its home games at the Androscoggin Bank Colisée. They were the second QMJHL team in the United States, and the only one to play a full season. They won the President's Cup in 2007.",
+            "title": "Lewiston Maineiacs",
+            "start": 0,
+            "end": 316,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 119
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 120,
+                "end": 184
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 185,
+                "end": 278
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 279,
+                "end": 316
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5a87ab905542996e4f3088c1",
+              "url": "https://en.wikipedia.org/wiki/Lewiston_Maineiacs",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.0277569392348087
+          },
+          {
+            "evidence_id": "E10",
+            "chunk_id": "9731cad3-c04d-5ff2-a5ff-c42506e818dc",
+            "document_id": "3ee539ae-4c77-52be-b9a7-0f260f471f59",
+            "revision_id": "8b32d594-0e4c-50ac-8810-686a336ac19a",
+            "strategy": "a",
+            "text": "Stanford Stadium is an outdoor athletic stadium in Stanford, California, on the campus of Stanford University. It is the home of the Stanford Cardinal college football team as well as the site of the university's commencement exercises. It originally opened in 1921 as a football and track stadium, an earthen horseshoe with wooden bleacher seating and flooring upon a steel frame. Its original seating capacity was 60,000, which grew to 89,000 by 1927 as a nearly enclosed bowl. Immediately following the 2005 season, the stadium was demolished and rebuilt as a dual-deck concrete structure, without a track. Today, it seats 50,424.",
+            "title": "Stanford Stadium",
+            "start": 0,
+            "end": 633,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 110
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 111,
+                "end": 236
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 237,
+                "end": 381
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 382,
+                "end": 479
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 480,
+                "end": 609
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 610,
+                "end": 633
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ab27447554299449642c8ac",
+              "url": "https://en.wikipedia.org/wiki/Stanford_Stadium",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.02694394213381555
+          },
+          {
+            "evidence_id": "E11",
+            "chunk_id": "ffc1ba71-71c4-5a20-b724-86d4df4c3534",
+            "document_id": "e4de1878-cdbd-563b-8ef6-103ee5259beb",
+            "revision_id": "edd0186b-e3e7-50bb-92e0-60e8ab4bcf9b",
+            "strategy": "a",
+            "text": "TCF Bank Stadium is an outdoor stadium located on the campus of the University of Minnesota in Minneapolis, Minnesota, United States. Opened in 2009, it is the home field of the Minnesota Golden Gophers of the Big Ten Conference, and the temporary home of Minnesota United FC of Major League Soccer. The stadium also served as the temporary home of the Minnesota Vikings of the National Football League (NFL) for the 2014 and 2015 seasons during the construction of U.S. Bank Stadium. The 50,805-seat \"horseshoe\" style stadium cost $303.3 million to build and is designed to support future expansion to seat up to 80,000.",
+            "title": "TCF Bank Stadium",
+            "start": 0,
+            "end": 621,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 133
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 134,
+                "end": 299
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 300,
+                "end": 484
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 485,
+                "end": 621
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ac242c05542996366519956",
+              "url": "https://en.wikipedia.org/wiki/TCF_Bank_Stadium",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.025657894736842105
+          },
+          {
+            "evidence_id": "E12",
+            "chunk_id": "37d5a901-2bb1-5d8b-9c38-408cc02f66cd",
+            "document_id": "105b9da2-32fc-5421-99fd-f73668a7d383",
+            "revision_id": "d72a4d88-7127-58b5-b946-febf7204af52",
+            "strategy": "a",
+            "text": "The Palais Theatre is a concert venue and theatre located in the Melbourne inner suburb of St Kilda. With a capacity of 2,896 people, it is the largest seated theatre in Australia.",
+            "title": "Palais Theatre",
+            "start": 0,
+            "end": 180,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 100
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 101,
+                "end": 180
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ac38655554299741d48a27c",
+              "url": "https://en.wikipedia.org/wiki/Palais_Theatre",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.025448143405889884
+          },
+          {
+            "evidence_id": "E13",
+            "chunk_id": "ad4ba56b-ccb8-5f71-9a76-670ceb6ec723",
+            "document_id": "c7462033-fbd4-5ef3-87ee-19b79f7c3f22",
+            "revision_id": "169117aa-cb68-5d1d-8911-a3f52ba3e743",
+            "strategy": "a",
+            "text": "Stevens Stadium is a 7,000-seat soccer stadium at Santa Clara University in Santa Clara, California. The stadium is the current home of the Santa Clara Broncos soccer teams and was the former home of the now defunct Santa Clara football team as well as the Santa Clara baseball team. The baseball team moved to their new home at Stephen Schott Stadium in 2005. The stadium is the former home of the San Jose Earthquakes of Major League Soccer. The stadium's capacity was increased in the winter of 2007 from a capacity of 6,800 to 10,300. The stadium was named Buck Shaw Stadium before a renovation in 2015.",
+            "title": "Stevens Stadium",
+            "start": 0,
+            "end": 607,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 100
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 101,
+                "end": 283
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 284,
+                "end": 360
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 361,
+                "end": 443
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 444,
+                "end": 538
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 539,
+                "end": 607
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a9001a755429916514e7404",
+              "url": "https://en.wikipedia.org/wiki/Stevens_Stadium",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.025
+          }
+        ],
+        "round": 2,
+        "tool_call_id": "call_tzC56hQcQF8MYGvCQrZwz2je",
+        "executed": true,
+        "follow_up": {
+          "evidence_id": "E2",
+          "entity": "Androscoggin Bank Colisée"
+        },
+        "requested_query": "Androscoggin Bank Colisée seated capacity",
+        "query_adjusted": false
+      }
+    ],
+    "workflow": "bounded_tools_v1",
+    "execution": {
+      "planning_rounds": 2,
+      "retrieval_rounds": 2,
+      "tool_calls": 2,
+      "searches": 2,
+      "llm_calls": 3,
+      "embedding_calls": 1,
+      "total_provider_calls": 4,
+      "stop_reason": "retrieval_limit",
+      "limits": {
+        "retrieval_rounds": 2,
+        "searches": 3,
+        "llm_calls": 3,
+        "embedding_calls": 3,
+        "total_provider_calls": 6
+      }
+    },
+    "configuration": {
+      "strategy": "a",
+      "profile": "1a8846753a25",
+      "embedding_model": "text-embedding-3-small",
+      "embedding_dimensions": 384,
+      "generation_model": "gpt-5.4-mini-2026-03-17",
+      "prompt_version": "bounded_tools_quote_ids_v1"
+    },
+    "usage": {
+      "planning": [
+        {
+          "input_tokens": 527,
+          "output_tokens": 32,
+          "estimated_cost_usd": 0.00053925,
+          "model": "gpt-5.4-mini-2026-03-17"
+        },
+        {
+          "input_tokens": 1734,
+          "output_tokens": 46,
+          "estimated_cost_usd": 0.0015075,
+          "model": "gpt-5.4-mini-2026-03-17"
+        }
+      ],
+      "generation": {
+        "input_tokens": 4819,
+        "output_tokens": 59,
+        "estimated_cost_usd": 0.00387975,
+        "model": "gpt-5.4-mini-2026-03-17"
+      },
+      "embeddings": [
+        {
+          "model": "text-embedding-3-small",
+          "input_tokens": 0,
+          "api_calls": 0,
+          "cache_hits": 1,
+          "estimated_cost_usd": 0.0
+        },
+        {
+          "model": "text-embedding-3-small",
+          "input_tokens": 11,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 2.2e-07
+        }
+      ],
+      "estimated_model_cost_usd": 0.0059264999999999995,
+      "estimated_total_cost_usd": 0.00592672
+    },
+    "latency_ms": 4444
+  },
+  "error": null,
+  "elapsed_ms": 4445,
+  "ledger_after": {
+    "calls": 446,
+    "reserved_usd": 1.03657161,
+    "estimated_actual_usd": 0.36622836000000003,
+    "input_tokens": 7149258,
+    "output_tokens": 8058
+  }
+}

@@ -1,0 +1,1211 @@
+{
+  "case_id": "final-comparison-01",
+  "strategy": "b",
+  "question": "Were Scott Derrickson and Ed Wood of the same nationality?",
+  "started_at": "2026-10-28T07:02:09.344583+00:00",
+  "ledger_before": {
+    "calls": 509,
+    "reserved_usd": 1.29598937,
+    "estimated_actual_usd": 0.44127362,
+    "input_tokens": 7236789,
+    "output_tokens": 10197
+  },
+  "result": {
+    "status": "answered",
+    "claims": [
+      {
+        "text": "Yes. Scott Derrickson is American.",
+        "citations": [
+          {
+            "evidence_id": "E1",
+            "quote": "Scott Derrickson (born July 16, 1966) is an American director, screenwriter and producer."
+          }
+        ]
+      },
+      {
+        "text": "Ed Wood was American.",
+        "citations": [
+          {
+            "evidence_id": "E11",
+            "quote": "Edward Davis Wood Jr. (October 10, 1924 – December 10, 1978) was an American filmmaker, actor, writer, producer, and director."
+          }
+        ]
+      }
+    ],
+    "conflicting_claims": [],
+    "answer": "Yes. Scott Derrickson is American. [E1] Ed Wood was American. [E11]",
+    "evidence": [
+      {
+        "evidence_id": "E2",
+        "chunk_id": "7623ea13-bae6-5f82-8715-6b8b72355454",
+        "document_id": "e83cdec8-c290-511a-93e3-62f0b93af1f3",
+        "revision_id": "f11f30eb-fca1-576a-a3d1-74afc5783148",
+        "strategy": "b",
+        "text": "The Sinister Urge is a 1960 crime drama film that was written and directed by Ed Wood. The film was featured in episode 613 of the cult television show \"Mystery Science Theater 3000\".",
+        "title": "The Sinister Urge (film)",
+        "start": 0,
+        "end": 183,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 86
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 87,
+            "end": 183
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a724d4e5542990c210a40db",
+          "url": "https://en.wikipedia.org/wiki/The_Sinister_Urge_%28film%29",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.02900988017658188
+      },
+      {
+        "evidence_id": "E3",
+        "chunk_id": "df12911c-9eac-5f18-8abb-c754bce4c77b",
+        "document_id": "0dabad12-d231-5ba8-92c8-0ac1d4185d52",
+        "revision_id": "4563484d-8f3d-551c-be31-d5f9240d97b1",
+        "strategy": "b",
+        "text": "Timothy Walter Burton ( ; born August 25, 1958) is an American film director, producer, artist, writer, and animator. He is known for his dark, gothic, eccentric, and quirky fantasy films such as \"Beetlejuice\" (1988), \"Edward Scissorhands\" (1990), the animated musical \"The Nightmare Before Christmas\" (1993), the biographical film \"Ed Wood\" (1994), the horror fantasy \"Sleepy Hollow\" (1999), and later efforts such as \"Corpse Bride\" (2005), \"\" (2007), \"Dark Shadows\" (2012), and \"Frankenweenie\" (2012). He is also known for blockbusters such as the adventure comedy \"Pee-wee's Big Adventure\" (1985), the superhero films \"Batman\" (1989) and its first sequel \"Batman Returns\" (1992), the sci-fi film \"Planet of the Apes\" (2001), the fantasy drama \"Big Fish\" (2003), the musical adventure film \"Charlie and the Chocolate Factory\" (2005), and the fantasy film \"Alice in Wonderland\" (2010), which garnered a worldwide gross of over $1 billion.",
+        "title": "Tim Burton",
+        "start": 0,
+        "end": 939,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 117
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 118,
+            "end": 503
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 504,
+            "end": 939
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5ab9664a55429970cfb8eab8",
+          "url": "https://en.wikipedia.org/wiki/Tim_Burton",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.029910714285714284
+      },
+      {
+        "evidence_id": "E4",
+        "chunk_id": "a1adae35-5431-5085-94e0-75cdc8e071f5",
+        "document_id": "17dc7aa0-dd2c-599e-9b41-fffb99341278",
+        "revision_id": "9106caa5-803d-5494-9272-49e5e7e18ebd",
+        "strategy": "b",
+        "text": "Final Curtain was a television pilot written and directed by Ed Wood in 1957. It starred Duke Moore as an actor wandering an empty theater after dark, where he is haunted by creepy sounds and eerie sights. The film is narrated by Dudley Manlove. Both Moore and Manlove also appear in Wood's cult film \"Plan 9 from Outer Space\". Wood had hoped to use the film as the pilot for a television series he intended to produce called \"Portraits of Terror.\"",
+        "title": "Final Curtain (film)",
+        "start": 0,
+        "end": 448,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 77
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 78,
+            "end": 205
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 206,
+            "end": 245
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 246,
+            "end": 327
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 328,
+            "end": 448
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a908c1155429933b8a2054e",
+          "url": "https://en.wikipedia.org/wiki/Final_Curtain_%28film%29",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.01639344262295082
+      },
+      {
+        "evidence_id": "E6",
+        "chunk_id": "0a5cb6cf-ff39-535d-9efb-bffcf4d8db39",
+        "document_id": "e2039bba-ba3a-575f-900a-b4f735c5beb6",
+        "revision_id": "a255d133-9937-582e-8338-f588cdf22262",
+        "strategy": "b",
+        "text": "James Howard Woods (born April 18, 1947) is an American actor and producer. He is known primarily for playing villainous roles, and has appeared in a variety of films, including \"The Way We Were\" (1973), \"The Onion Field\" (1979), \"Videodrome\" (1983), \"Once Upon a Time in America\" (1984), \"Best Seller\" (1987), \"Chaplin\" (1992), \"Casino\" (1995), \"Nixon\" (1995), \"Vampires\" (1998), \"Straw Dogs\" (2011) and \"White House Down\" (2013). On television, he is known for portraying the titular protagonist of \"Shark\" (2006–2008), and for playing himself on eight episodes of the animated series \"Family Guy\", as well as on one episode of \"The Simpsons\".",
+        "title": "James Woods",
+        "start": 0,
+        "end": 645,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 75
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 76,
+            "end": 431
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 432,
+            "end": 645
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a87828f5542996e4f308816",
+          "url": "https://en.wikipedia.org/wiki/James_Woods",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.016129032258064516
+      },
+      {
+        "evidence_id": "E1",
+        "chunk_id": "fde7d1c7-4e58-5173-a908-cb901bb43d90",
+        "document_id": "16425200-adfa-590e-818a-040f96dc5632",
+        "revision_id": "d6301fea-1106-5ad2-a2f0-71139589dc57",
+        "strategy": "b",
+        "text": "Scott Derrickson (born July 16, 1966) is an American director, screenwriter and producer. He lives in Los Angeles, California. He is best known for directing horror films such as \"Sinister\", \"The Exorcism of Emily Rose\", and \"Deliver Us From Evil\", as well as the 2016 Marvel Cinematic Universe installment, \"Doctor Strange.\"",
+        "title": "Scott Derrickson",
+        "start": 0,
+        "end": 325,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 89
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 90,
+            "end": 126
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 127,
+            "end": 325
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "validation",
+          "record_id": "5a8b57f25542995d1e6f1371",
+          "url": "https://en.wikipedia.org/wiki/Scott_Derrickson",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.03252247488101534
+      },
+      {
+        "evidence_id": "E9",
+        "chunk_id": "b6611d62-0776-542f-90fa-0d054ad1ed4a",
+        "document_id": "a61dc965-d54b-5848-a68e-71f30fa3c330",
+        "revision_id": "1b40e124-2dd7-5ccc-a78a-53e97542e94b",
+        "strategy": "b",
+        "text": "Jim Wood (born c. 1936) is a former American football player. He played college football at the end position at Oklahoma State University from 1956 to 1958. He was selected by the American Football Coaches Association as a first-team end on its 1958 College Football All-America Team, and as a third-team player by the Associated Press. At the end of the 1958 season, an experiment was conducted in which data from 145 football coaches was input into a Univac computer to determine who was the best college football player in the country. The computer ranked Wood as the nation's second best player behind George Deiderich of Vanderbilt. Wood capped his collegiate career by leading Oklahoma State to a 15-6 victory over Florida State in the 1958 Bluegrass Bowl.",
+        "title": "Jim Wood (American football)",
+        "start": 0,
+        "end": 762,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 61
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 62,
+            "end": 156
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 157,
+            "end": 336
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 337,
+            "end": 538
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 539,
+            "end": 637
+          },
+          {
+            "kind": "sentence",
+            "number": 5,
+            "start": 638,
+            "end": 762
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5ac2ac6c55429921a00ab02a",
+          "url": "https://en.wikipedia.org/wiki/Jim_Wood_%28American_football%29",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.028850145288501453
+      },
+      {
+        "evidence_id": "E10",
+        "chunk_id": "c73d26a0-072d-544e-a2cc-530e642e4e94",
+        "document_id": "235a4fe1-f274-504e-8c88-623a6f99995b",
+        "revision_id": "0ba550df-0e89-5826-8d84-f15388758d1b",
+        "strategy": "b",
+        "text": "Frankenweenie is a 2012 American 3D stop-motion-animated fantasy horror comedy film directed by Tim Burton and produced by Walt Disney Pictures. It is a remake of Burton's 1984 short film of the same name and is a parody of and a homage to the 1931 film \"Frankenstein\" based on Mary Shelley's book of the same name. The voice cast includes four actors who worked with Burton on previous films: Winona Ryder (\"Beetlejuice\" and \"Edward Scissorhands\"); Catherine O'Hara (\"Beetlejuice\" and \"The Nightmare Before Christmas\"); Martin Short (\"Mars Attacks! \"); and Martin Landau (\"Ed Wood\" and \"Sleepy Hollow\").",
+        "title": "Frankenweenie (2012 film)",
+        "start": 0,
+        "end": 604,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 144
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 145,
+            "end": 315
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 316,
+            "end": 549
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 550,
+            "end": 604
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a7e928355429934daa2fc34",
+          "url": "https://en.wikipedia.org/wiki/Frankenweenie_%282012_film%29",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.026515151515151516
+      },
+      {
+        "evidence_id": "E11",
+        "chunk_id": "7c834f63-59eb-5491-822e-b40b19c18b0d",
+        "document_id": "d433ed10-b3b3-5154-aa3f-879894fbb735",
+        "revision_id": "fed89d26-72d4-5fb6-b0c6-7d5330dfffb9",
+        "strategy": "b",
+        "text": "Edward Davis Wood Jr. (October 10, 1924 – December 10, 1978) was an American filmmaker, actor, writer, producer, and director.",
+        "title": "Ed Wood",
+        "start": 0,
+        "end": 126,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 126
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "validation",
+          "record_id": "5a8b57f25542995d1e6f1371",
+          "url": "https://en.wikipedia.org/wiki/Ed_Wood",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.01639344262295082
+      }
+    ],
+    "search_trace": [
+      {
+        "query": "Scott Derrickson nationality Ed Wood nationality",
+        "strategy": "b",
+        "profile": "1a8846753a25",
+        "embedding_usage": {
+          "model": "text-embedding-3-small",
+          "input_tokens": 0,
+          "api_calls": 0,
+          "cache_hits": 1,
+          "estimated_cost_usd": 0.0
+        },
+        "document_ranking": [
+          "16425200-adfa-590e-818a-040f96dc5632",
+          "e83cdec8-c290-511a-93e3-62f0b93af1f3",
+          "0dabad12-d231-5ba8-92c8-0ac1d4185d52",
+          "17dc7aa0-dd2c-599e-9b41-fffb99341278",
+          "8465a76e-bedc-5ba4-b0e8-8523d03a0ca2",
+          "e2039bba-ba3a-575f-900a-b4f735c5beb6",
+          "c2a4c8c8-0267-528c-b741-0104d69d8bd2",
+          "dd505c30-9328-522a-93d5-55e7bffd10e2",
+          "1a53540b-9d0b-5595-9c00-2688652b2c07",
+          "2cbfe2d7-58ee-5e30-956d-3826ddbbcfd8"
+        ],
+        "candidate_counts": {
+          "dense": 30,
+          "bm25": 30,
+          "active_dense": 30,
+          "active_bm25": 30
+        },
+        "evidence": [
+          {
+            "evidence_id": "E1",
+            "chunk_id": "fde7d1c7-4e58-5173-a908-cb901bb43d90",
+            "document_id": "16425200-adfa-590e-818a-040f96dc5632",
+            "revision_id": "d6301fea-1106-5ad2-a2f0-71139589dc57",
+            "strategy": "b",
+            "text": "Scott Derrickson (born July 16, 1966) is an American director, screenwriter and producer. He lives in Los Angeles, California. He is best known for directing horror films such as \"Sinister\", \"The Exorcism of Emily Rose\", and \"Deliver Us From Evil\", as well as the 2016 Marvel Cinematic Universe installment, \"Doctor Strange.\"",
+            "title": "Scott Derrickson",
+            "start": 0,
+            "end": 325,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 89
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 90,
+                "end": 126
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 127,
+                "end": 325
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5a8b57f25542995d1e6f1371",
+              "url": "https://en.wikipedia.org/wiki/Scott_Derrickson",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03252247488101534
+          },
+          {
+            "evidence_id": "E2",
+            "chunk_id": "7623ea13-bae6-5f82-8715-6b8b72355454",
+            "document_id": "e83cdec8-c290-511a-93e3-62f0b93af1f3",
+            "revision_id": "f11f30eb-fca1-576a-a3d1-74afc5783148",
+            "strategy": "b",
+            "text": "The Sinister Urge is a 1960 crime drama film that was written and directed by Ed Wood. The film was featured in episode 613 of the cult television show \"Mystery Science Theater 3000\".",
+            "title": "The Sinister Urge (film)",
+            "start": 0,
+            "end": 183,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 86
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 87,
+                "end": 183
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a724d4e5542990c210a40db",
+              "url": "https://en.wikipedia.org/wiki/The_Sinister_Urge_%28film%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.02900988017658188
+          },
+          {
+            "evidence_id": "E3",
+            "chunk_id": "df12911c-9eac-5f18-8abb-c754bce4c77b",
+            "document_id": "0dabad12-d231-5ba8-92c8-0ac1d4185d52",
+            "revision_id": "4563484d-8f3d-551c-be31-d5f9240d97b1",
+            "strategy": "b",
+            "text": "Timothy Walter Burton ( ; born August 25, 1958) is an American film director, producer, artist, writer, and animator. He is known for his dark, gothic, eccentric, and quirky fantasy films such as \"Beetlejuice\" (1988), \"Edward Scissorhands\" (1990), the animated musical \"The Nightmare Before Christmas\" (1993), the biographical film \"Ed Wood\" (1994), the horror fantasy \"Sleepy Hollow\" (1999), and later efforts such as \"Corpse Bride\" (2005), \"\" (2007), \"Dark Shadows\" (2012), and \"Frankenweenie\" (2012). He is also known for blockbusters such as the adventure comedy \"Pee-wee's Big Adventure\" (1985), the superhero films \"Batman\" (1989) and its first sequel \"Batman Returns\" (1992), the sci-fi film \"Planet of the Apes\" (2001), the fantasy drama \"Big Fish\" (2003), the musical adventure film \"Charlie and the Chocolate Factory\" (2005), and the fantasy film \"Alice in Wonderland\" (2010), which garnered a worldwide gross of over $1 billion.",
+            "title": "Tim Burton",
+            "start": 0,
+            "end": 939,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 117
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 118,
+                "end": 503
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 504,
+                "end": 939
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ab9664a55429970cfb8eab8",
+              "url": "https://en.wikipedia.org/wiki/Tim_Burton",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.0266900790166813
+          },
+          {
+            "evidence_id": "E4",
+            "chunk_id": "a1adae35-5431-5085-94e0-75cdc8e071f5",
+            "document_id": "17dc7aa0-dd2c-599e-9b41-fffb99341278",
+            "revision_id": "9106caa5-803d-5494-9272-49e5e7e18ebd",
+            "strategy": "b",
+            "text": "Final Curtain was a television pilot written and directed by Ed Wood in 1957. It starred Duke Moore as an actor wandering an empty theater after dark, where he is haunted by creepy sounds and eerie sights. The film is narrated by Dudley Manlove. Both Moore and Manlove also appear in Wood's cult film \"Plan 9 from Outer Space\". Wood had hoped to use the film as the pilot for a television series he intended to produce called \"Portraits of Terror.\"",
+            "title": "Final Curtain (film)",
+            "start": 0,
+            "end": 448,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 77
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 78,
+                "end": 205
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 206,
+                "end": 245
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 246,
+                "end": 327
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 328,
+                "end": 448
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a908c1155429933b8a2054e",
+              "url": "https://en.wikipedia.org/wiki/Final_Curtain_%28film%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.026262626262626265
+          },
+          {
+            "evidence_id": "E5",
+            "chunk_id": "37989801-2a15-57f2-b9cb-07b2be8e6dc2",
+            "document_id": "8465a76e-bedc-5ba4-b0e8-8523d03a0ca2",
+            "revision_id": "96a7da3d-8aad-570f-8a19-bd97eb379d2b",
+            "strategy": "b",
+            "text": "That Darn Cat is a 1997 American mystery comedy film starring Christina Ricci and Doug E. Doug. It is a remake of the 1965 film \"That Darn Cat! \", which in turn was based on the book \"Undercover Cat\" by Gordon and Mildred Gordon. It is directed by British TV veteran Bob Spiers (most famous for \"Fawlty Towers\", as well as \"Spice World\") and written by Scott Alexander and Larry Karaszewski, best known for \"Ed Wood\" and the first two \"Problem Child\" films.",
+            "title": "That Darn Cat (1997 film)",
+            "start": 0,
+            "end": 457,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 95
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 96,
+                "end": 143
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 144,
+                "end": 229
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 230,
+                "end": 457
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a87ed9d5542993e715ac011",
+              "url": "https://en.wikipedia.org/wiki/That_Darn_Cat_%281997_film%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.01639344262295082
+          },
+          {
+            "evidence_id": "E6",
+            "chunk_id": "0a5cb6cf-ff39-535d-9efb-bffcf4d8db39",
+            "document_id": "e2039bba-ba3a-575f-900a-b4f735c5beb6",
+            "revision_id": "a255d133-9937-582e-8338-f588cdf22262",
+            "strategy": "b",
+            "text": "James Howard Woods (born April 18, 1947) is an American actor and producer. He is known primarily for playing villainous roles, and has appeared in a variety of films, including \"The Way We Were\" (1973), \"The Onion Field\" (1979), \"Videodrome\" (1983), \"Once Upon a Time in America\" (1984), \"Best Seller\" (1987), \"Chaplin\" (1992), \"Casino\" (1995), \"Nixon\" (1995), \"Vampires\" (1998), \"Straw Dogs\" (2011) and \"White House Down\" (2013). On television, he is known for portraying the titular protagonist of \"Shark\" (2006–2008), and for playing himself on eight episodes of the animated series \"Family Guy\", as well as on one episode of \"The Simpsons\".",
+            "title": "James Woods",
+            "start": 0,
+            "end": 645,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 75
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 76,
+                "end": 431
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 432,
+                "end": 645
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a87828f5542996e4f308816",
+              "url": "https://en.wikipedia.org/wiki/James_Woods",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.016129032258064516
+          },
+          {
+            "evidence_id": "E7",
+            "chunk_id": "014bb30e-7f20-584b-9502-5e93ed019b67",
+            "document_id": "c2a4c8c8-0267-528c-b741-0104d69d8bd2",
+            "revision_id": "b1292b39-67c5-541c-82bb-a8c6e689f4ea",
+            "strategy": "b",
+            "text": "Derek Westerman is an American screenwriter, film director, and film producer born and raised in Toledo, Ohio. His debut work was the independent web comedy series Bad Dads, a series of five, three-minute shorts featuring Michael Cera and Will Hines, which premiered on the website CollegeHumor during its 2011 Spring Season of original web shows. \"Bad Dads\" premiered at the Dallas International Film Festival, Palm Springs International Festival of Short Films, L.A. Comedy Shorts Film Festival, and was featured at the 2011 Just for Laughs comedy festival in Chicago, Illinois and Montreal, Quebec.",
+            "title": "Derek Westerman",
+            "start": 0,
+            "end": 601,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 110
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 111,
+                "end": 347
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 348,
+                "end": 601
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a8f20d655429924144829dc",
+              "url": "https://en.wikipedia.org/wiki/Derek_Westerman",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015873015873015872
+          },
+          {
+            "evidence_id": "E8",
+            "chunk_id": "b20d29e4-bf23-5b68-9501-8fe093022dea",
+            "document_id": "dd505c30-9328-522a-93d5-55e7bffd10e2",
+            "revision_id": "dd38725d-5ec7-5480-b28c-983ed953b660",
+            "strategy": "b",
+            "text": "Sinister 2 is a 2015 American supernatural horror film directed by Ciaran Foy and written by Scott Derrickson and C. Robert Cargill. The sequel to the 2012 film \"Sinister\", the film stars James Ransone, reprising his role from the original film, and Shannyn Sossamon as a mother whose sons are tormented by the ghostly children taken by Bughuul at their rural farmhouse.",
+            "title": "Sinister 2",
+            "start": 0,
+            "end": 370,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 132
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 133,
+                "end": 370
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5adc49cf55429944faac24c5",
+              "url": "https://en.wikipedia.org/wiki/Sinister_2",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015873015873015872
+          }
+        ],
+        "round": 1,
+        "tool_call_id": "call_LkFxUGqdz4iNIXDY72m2qgDn",
+        "executed": true,
+        "follow_up": null,
+        "requested_query": "Scott Derrickson nationality Ed Wood nationality",
+        "query_adjusted": false
+      },
+      {
+        "query": "Ed Wood nationality",
+        "strategy": "b",
+        "profile": "1a8846753a25",
+        "embedding_usage": {
+          "model": "text-embedding-3-small",
+          "input_tokens": 0,
+          "api_calls": 0,
+          "cache_hits": 1,
+          "estimated_cost_usd": 0.0
+        },
+        "document_ranking": [
+          "0dabad12-d231-5ba8-92c8-0ac1d4185d52",
+          "a61dc965-d54b-5848-a68e-71f30fa3c330",
+          "235a4fe1-f274-504e-8c88-623a6f99995b",
+          "d433ed10-b3b3-5154-aa3f-879894fbb735",
+          "17dc7aa0-dd2c-599e-9b41-fffb99341278",
+          "e2039bba-ba3a-575f-900a-b4f735c5beb6",
+          "e83cdec8-c290-511a-93e3-62f0b93af1f3",
+          "8f7b4c73-b6a9-532a-93b8-0dfd2023efbf",
+          "c44cb645-141c-5f20-a947-89ea4fe4ac7a",
+          "8465a76e-bedc-5ba4-b0e8-8523d03a0ca2"
+        ],
+        "candidate_counts": {
+          "dense": 30,
+          "bm25": 30,
+          "active_dense": 30,
+          "active_bm25": 30
+        },
+        "evidence": [
+          {
+            "evidence_id": "E3",
+            "chunk_id": "df12911c-9eac-5f18-8abb-c754bce4c77b",
+            "document_id": "0dabad12-d231-5ba8-92c8-0ac1d4185d52",
+            "revision_id": "4563484d-8f3d-551c-be31-d5f9240d97b1",
+            "strategy": "b",
+            "text": "Timothy Walter Burton ( ; born August 25, 1958) is an American film director, producer, artist, writer, and animator. He is known for his dark, gothic, eccentric, and quirky fantasy films such as \"Beetlejuice\" (1988), \"Edward Scissorhands\" (1990), the animated musical \"The Nightmare Before Christmas\" (1993), the biographical film \"Ed Wood\" (1994), the horror fantasy \"Sleepy Hollow\" (1999), and later efforts such as \"Corpse Bride\" (2005), \"\" (2007), \"Dark Shadows\" (2012), and \"Frankenweenie\" (2012). He is also known for blockbusters such as the adventure comedy \"Pee-wee's Big Adventure\" (1985), the superhero films \"Batman\" (1989) and its first sequel \"Batman Returns\" (1992), the sci-fi film \"Planet of the Apes\" (2001), the fantasy drama \"Big Fish\" (2003), the musical adventure film \"Charlie and the Chocolate Factory\" (2005), and the fantasy film \"Alice in Wonderland\" (2010), which garnered a worldwide gross of over $1 billion.",
+            "title": "Tim Burton",
+            "start": 0,
+            "end": 939,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 117
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 118,
+                "end": 503
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 504,
+                "end": 939
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ab9664a55429970cfb8eab8",
+              "url": "https://en.wikipedia.org/wiki/Tim_Burton",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.029910714285714284
+          },
+          {
+            "evidence_id": "E9",
+            "chunk_id": "b6611d62-0776-542f-90fa-0d054ad1ed4a",
+            "document_id": "a61dc965-d54b-5848-a68e-71f30fa3c330",
+            "revision_id": "1b40e124-2dd7-5ccc-a78a-53e97542e94b",
+            "strategy": "b",
+            "text": "Jim Wood (born c. 1936) is a former American football player. He played college football at the end position at Oklahoma State University from 1956 to 1958. He was selected by the American Football Coaches Association as a first-team end on its 1958 College Football All-America Team, and as a third-team player by the Associated Press. At the end of the 1958 season, an experiment was conducted in which data from 145 football coaches was input into a Univac computer to determine who was the best college football player in the country. The computer ranked Wood as the nation's second best player behind George Deiderich of Vanderbilt. Wood capped his collegiate career by leading Oklahoma State to a 15-6 victory over Florida State in the 1958 Bluegrass Bowl.",
+            "title": "Jim Wood (American football)",
+            "start": 0,
+            "end": 762,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 61
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 62,
+                "end": 156
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 157,
+                "end": 336
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 337,
+                "end": 538
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 539,
+                "end": 637
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 638,
+                "end": 762
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ac2ac6c55429921a00ab02a",
+              "url": "https://en.wikipedia.org/wiki/Jim_Wood_%28American_football%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.028850145288501453
+          },
+          {
+            "evidence_id": "E10",
+            "chunk_id": "c73d26a0-072d-544e-a2cc-530e642e4e94",
+            "document_id": "235a4fe1-f274-504e-8c88-623a6f99995b",
+            "revision_id": "0ba550df-0e89-5826-8d84-f15388758d1b",
+            "strategy": "b",
+            "text": "Frankenweenie is a 2012 American 3D stop-motion-animated fantasy horror comedy film directed by Tim Burton and produced by Walt Disney Pictures. It is a remake of Burton's 1984 short film of the same name and is a parody of and a homage to the 1931 film \"Frankenstein\" based on Mary Shelley's book of the same name. The voice cast includes four actors who worked with Burton on previous films: Winona Ryder (\"Beetlejuice\" and \"Edward Scissorhands\"); Catherine O'Hara (\"Beetlejuice\" and \"The Nightmare Before Christmas\"); Martin Short (\"Mars Attacks! \"); and Martin Landau (\"Ed Wood\" and \"Sleepy Hollow\").",
+            "title": "Frankenweenie (2012 film)",
+            "start": 0,
+            "end": 604,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 144
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 145,
+                "end": 315
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 316,
+                "end": 549
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 550,
+                "end": 604
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a7e928355429934daa2fc34",
+              "url": "https://en.wikipedia.org/wiki/Frankenweenie_%282012_film%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.026515151515151516
+          },
+          {
+            "evidence_id": "E11",
+            "chunk_id": "7c834f63-59eb-5491-822e-b40b19c18b0d",
+            "document_id": "d433ed10-b3b3-5154-aa3f-879894fbb735",
+            "revision_id": "fed89d26-72d4-5fb6-b0c6-7d5330dfffb9",
+            "strategy": "b",
+            "text": "Edward Davis Wood Jr. (October 10, 1924 – December 10, 1978) was an American filmmaker, actor, writer, producer, and director.",
+            "title": "Ed Wood",
+            "start": 0,
+            "end": 126,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 126
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5a8b57f25542995d1e6f1371",
+              "url": "https://en.wikipedia.org/wiki/Ed_Wood",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.01639344262295082
+          },
+          {
+            "evidence_id": "E4",
+            "chunk_id": "a1adae35-5431-5085-94e0-75cdc8e071f5",
+            "document_id": "17dc7aa0-dd2c-599e-9b41-fffb99341278",
+            "revision_id": "9106caa5-803d-5494-9272-49e5e7e18ebd",
+            "strategy": "b",
+            "text": "Final Curtain was a television pilot written and directed by Ed Wood in 1957. It starred Duke Moore as an actor wandering an empty theater after dark, where he is haunted by creepy sounds and eerie sights. The film is narrated by Dudley Manlove. Both Moore and Manlove also appear in Wood's cult film \"Plan 9 from Outer Space\". Wood had hoped to use the film as the pilot for a television series he intended to produce called \"Portraits of Terror.\"",
+            "title": "Final Curtain (film)",
+            "start": 0,
+            "end": 448,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 77
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 78,
+                "end": 205
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 206,
+                "end": 245
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 246,
+                "end": 327
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 328,
+                "end": 448
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a908c1155429933b8a2054e",
+              "url": "https://en.wikipedia.org/wiki/Final_Curtain_%28film%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.01639344262295082
+          },
+          {
+            "evidence_id": "E6",
+            "chunk_id": "0a5cb6cf-ff39-535d-9efb-bffcf4d8db39",
+            "document_id": "e2039bba-ba3a-575f-900a-b4f735c5beb6",
+            "revision_id": "a255d133-9937-582e-8338-f588cdf22262",
+            "strategy": "b",
+            "text": "James Howard Woods (born April 18, 1947) is an American actor and producer. He is known primarily for playing villainous roles, and has appeared in a variety of films, including \"The Way We Were\" (1973), \"The Onion Field\" (1979), \"Videodrome\" (1983), \"Once Upon a Time in America\" (1984), \"Best Seller\" (1987), \"Chaplin\" (1992), \"Casino\" (1995), \"Nixon\" (1995), \"Vampires\" (1998), \"Straw Dogs\" (2011) and \"White House Down\" (2013). On television, he is known for portraying the titular protagonist of \"Shark\" (2006–2008), and for playing himself on eight episodes of the animated series \"Family Guy\", as well as on one episode of \"The Simpsons\".",
+            "title": "James Woods",
+            "start": 0,
+            "end": 645,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 75
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 76,
+                "end": 431
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 432,
+                "end": 645
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a87828f5542996e4f308816",
+              "url": "https://en.wikipedia.org/wiki/James_Woods",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.016129032258064516
+          },
+          {
+            "evidence_id": "E2",
+            "chunk_id": "7623ea13-bae6-5f82-8715-6b8b72355454",
+            "document_id": "e83cdec8-c290-511a-93e3-62f0b93af1f3",
+            "revision_id": "f11f30eb-fca1-576a-a3d1-74afc5783148",
+            "strategy": "b",
+            "text": "The Sinister Urge is a 1960 crime drama film that was written and directed by Ed Wood. The film was featured in episode 613 of the cult television show \"Mystery Science Theater 3000\".",
+            "title": "The Sinister Urge (film)",
+            "start": 0,
+            "end": 183,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 86
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 87,
+                "end": 183
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a724d4e5542990c210a40db",
+              "url": "https://en.wikipedia.org/wiki/The_Sinister_Urge_%28film%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.016129032258064516
+          },
+          {
+            "evidence_id": "E12",
+            "chunk_id": "537f24b6-cf50-5a54-9142-c3a3ca2a4b07",
+            "document_id": "8f7b4c73-b6a9-532a-93b8-0dfd2023efbf",
+            "revision_id": "7d04b7d2-7838-5fdb-b1b5-b91867aa5260",
+            "strategy": "b",
+            "text": "Harvey B. Dunn (August 19, 1894 – February 21, 1968) was an American television and film actor. Dunn was best known for his appearances in several 1950s B movies including three Ed Wood films, \"Bride of the Monster\" (1955), \"Night of the Ghouls\" (1959), and \"The Sinister Urge\" (1961). He also appeared in Wood's television pilot, \"Crossroad Avenger: The Adventures of the Tucson Kid\". He co-starred in the 1959 cult film \"Teenagers from Outer Space\". Dunn additionally performed in a USO show \"Three Men or a Horse\", singing as part of a male quartet.",
+            "title": "Harvey B. Dunn",
+            "start": 0,
+            "end": 552,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 95
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 96,
+                "end": 285
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 286,
+                "end": 385
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 386,
+                "end": 451
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 452,
+                "end": 552
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a724d4e5542990c210a40db",
+              "url": "https://en.wikipedia.org/wiki/Harvey_B._Dunn",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015873015873015872
+          }
+        ],
+        "round": 2,
+        "tool_call_id": "call_43RuSOImIH8dWrnZiPS3lbbi",
+        "executed": true,
+        "follow_up": {
+          "evidence_id": "E2",
+          "entity": "Ed Wood"
+        },
+        "requested_query": "Ed Wood nationality",
+        "query_adjusted": false
+      }
+    ],
+    "workflow": "bounded_tools_v1",
+    "execution": {
+      "planning_rounds": 2,
+      "retrieval_rounds": 2,
+      "tool_calls": 2,
+      "searches": 2,
+      "llm_calls": 3,
+      "embedding_calls": 0,
+      "total_provider_calls": 3,
+      "stop_reason": "retrieval_limit",
+      "limits": {
+        "retrieval_rounds": 2,
+        "searches": 3,
+        "llm_calls": 3,
+        "embedding_calls": 3,
+        "total_provider_calls": 6
+      }
+    },
+    "configuration": {
+      "strategy": "b",
+      "profile": "1a8846753a25",
+      "embedding_model": "text-embedding-3-small",
+      "embedding_dimensions": 384,
+      "generation_model": "gpt-5.4-mini-2026-03-17",
+      "prompt_version": "bounded_tools_quote_ids_v1"
+    },
+    "usage": {
+      "planning": [
+        {
+          "input_tokens": 520,
+          "output_tokens": 30,
+          "estimated_cost_usd": 0.000525,
+          "model": "gpt-5.4-mini-2026-03-17"
+        },
+        {
+          "input_tokens": 1693,
+          "output_tokens": 35,
+          "estimated_cost_usd": 0.00142725,
+          "model": "gpt-5.4-mini-2026-03-17"
+        }
+      ],
+      "generation": {
+        "input_tokens": 4692,
+        "output_tokens": 77,
+        "estimated_cost_usd": 0.0038655,
+        "model": "gpt-5.4-mini-2026-03-17"
+      },
+      "embeddings": [
+        {
+          "model": "text-embedding-3-small",
+          "input_tokens": 0,
+          "api_calls": 0,
+          "cache_hits": 1,
+          "estimated_cost_usd": 0.0
+        },
+        {
+          "model": "text-embedding-3-small",
+          "input_tokens": 0,
+          "api_calls": 0,
+          "cache_hits": 1,
+          "estimated_cost_usd": 0.0
+        }
+      ],
+      "estimated_model_cost_usd": 0.00581775,
+      "estimated_total_cost_usd": 0.00581775
+    },
+    "latency_ms": 4779
+  },
+  "error": null,
+  "elapsed_ms": 4779,
+  "ledger_after": {
+    "calls": 512,
+    "reserved_usd": 1.31634212,
+    "estimated_actual_usd": 0.44709137,
+    "input_tokens": 7243694,
+    "output_tokens": 10339
+  }
+}

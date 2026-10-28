@@ -1,0 +1,1559 @@
+{
+  "case_id": "final-bridge-12",
+  "strategy": "a",
+  "question": "Brown State Fishing Lake is in a country that has a population of how many inhabitants ?",
+  "started_at": "2026-10-28T07:01:58.967475+00:00",
+  "ledger_before": {
+    "calls": 500,
+    "reserved_usd": 1.25467234,
+    "estimated_actual_usd": 0.42871534,
+    "input_tokens": 7222035,
+    "output_tokens": 9863
+  },
+  "result": {
+    "status": "answered",
+    "claims": [
+      {
+        "text": "Brown State Fishing Lake is in the United States.",
+        "citations": [
+          {
+            "evidence_id": "E1",
+            "quote": "Brown State Fishing Lake (sometimes also known as Brown State Fishing Lake And Wildlife Area) is a protected area in Brown County, Kansas in the United States."
+          }
+        ]
+      },
+      {
+        "text": "The United States has a population of about 82 million inhabitants.",
+        "citations": [
+          {
+            "evidence_id": "E9",
+            "quote": "With about 82 million inhabitants, Germany is the most populous member state of the European Union."
+          }
+        ]
+      }
+    ],
+    "conflicting_claims": [],
+    "answer": "Brown State Fishing Lake is in the United States. [E1] The United States has a population of about 82 million inhabitants. [E9]",
+    "evidence": [
+      {
+        "evidence_id": "E1",
+        "chunk_id": "6723a9ea-b12c-54bc-8848-c6c72f1cbb60",
+        "document_id": "d4b9a729-1221-53f3-90c9-028884706035",
+        "revision_id": "852d1917-ddb8-5f32-b6a3-f6ac2edd3160",
+        "strategy": "a",
+        "text": "Brown State Fishing Lake (sometimes also known as Brown State Fishing Lake And Wildlife Area) is a protected area in Brown County, Kansas in the United States. The lake is 62 acres (0.25 km2) in area and up to 13 feet (4 m) deep. The area was formerly known as Brown County State Park, and is 8 miles (13 km) east of Hiawatha, Kansas.",
+        "title": "Brown State Fishing Lake",
+        "start": 0,
+        "end": 334,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 159
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 160,
+            "end": 229
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 230,
+            "end": 334
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "validation",
+          "record_id": "5a75e05c55429976ec32bc5f",
+          "url": "https://en.wikipedia.org/wiki/Brown_State_Fishing_Lake",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.03278688524590164
+      },
+      {
+        "evidence_id": "E9",
+        "chunk_id": "9a484636-59df-517c-b261-0b1032471230",
+        "document_id": "1059f443-96cc-5354-8430-04931db6ae3d",
+        "revision_id": "7e7bcf04-a88a-5778-87c4-dbd2c91baef4",
+        "strategy": "a",
+        "text": "Germany ( ; German: \"Deutschland\" , ] ), officially the Federal Republic of Germany (German: \"Bundesrepublik Deutschland\" , ), is a federal parliamentary republic in central-western Europe. It includes 16 constituent states, covers an area of 357,021 km2 , and has a largely temperate seasonal climate. With about 82 million inhabitants, Germany is the most populous member state of the European Union. After the United States, it is the second most popular immigration destination in the world. Germany's capital and largest metropolis is Berlin, while its largest conurbation is the Ruhr, with its main centres of Dortmund and Essen. The country's other major cities are Hamburg, Munich, Cologne, Frankfurt, Stuttgart, Düsseldorf, Leipzig, Bremen, Dresden, Hannover and Nuremberg.",
+        "title": "Germany",
+        "start": 0,
+        "end": 782,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 189
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 190,
+            "end": 302
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 303,
+            "end": 402
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 403,
+            "end": 495
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 496,
+            "end": 635
+          },
+          {
+            "kind": "sentence",
+            "number": 5,
+            "start": 636,
+            "end": 782
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5adea1a45542992fa25da7e3",
+          "url": "https://en.wikipedia.org/wiki/Germany",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.026687875574407917
+      },
+      {
+        "evidence_id": "E5",
+        "chunk_id": "cdbdc4bb-a851-5c48-91b3-b1feffdba33f",
+        "document_id": "8665bae0-16e9-5562-bc2f-15c95ca11c37",
+        "revision_id": "9b3fc1c9-1619-5d9c-9539-25375439de30",
+        "strategy": "a",
+        "text": "Massachusetts ( or ), officially the Commonwealth of Massachusetts, is the most populous state in the New England region of the northeastern United States. It is bordered by the Atlantic Ocean to the east, the states of Connecticut and Rhode Island to the south, New Hampshire and Vermont to the north, and New York to the west. The state is named for the Massachusett tribe, which once inhabited the area. The capital of Massachusetts and the most populous city in New England is Boston. Over 80% of Massachusetts's population lives in the Greater Boston metropolitan area, a region influential upon American history, academia, and industry. Originally dependent on agriculture, fishing and trade, Massachusetts was transformed into a manufacturing center during the Industrial Revolution. During the 20th century, Massachusetts's economy shifted from manufacturing to services. Modern Massachusetts is a global leader in biotechnology, engineering, higher education, finance, and maritime trade.",
+        "title": "Massachusetts",
+        "start": 0,
+        "end": 997,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 155
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 156,
+            "end": 328
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 329,
+            "end": 406
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 407,
+            "end": 488
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 489,
+            "end": 642
+          },
+          {
+            "kind": "sentence",
+            "number": 5,
+            "start": 643,
+            "end": 790
+          },
+          {
+            "kind": "sentence",
+            "number": 6,
+            "start": 791,
+            "end": 879
+          },
+          {
+            "kind": "sentence",
+            "number": 7,
+            "start": 880,
+            "end": 997
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5ae618975542996de7b71b58",
+          "url": "https://en.wikipedia.org/wiki/Massachusetts",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.015873015873015872
+      },
+      {
+        "evidence_id": "E10",
+        "chunk_id": "1c06e423-0150-51f3-90a5-df85282bddbf",
+        "document_id": "f07368ec-c83d-5be7-a2b8-ce816398bd87",
+        "revision_id": "33017886-9029-57b3-a5ce-67013b575b5e",
+        "strategy": "a",
+        "text": "The history of New England is the history of the New England region of North America in the current-day United States. New England is the oldest clearly defined region of the United States, and it predates the history of the United States by over 150 years. While New England was originally inhabited by Indigenous peoples, English Pilgrims and especially Puritans, fleeing religious persecution in England, arrived in the 1620-1660 era. They dominated the region; their religion was later called Congregationalism. They and their descendants are called Yankees. Farming, fishing and lumbering prospered, as did whaling, sea trading, and merchandising.",
+        "title": "History of New England",
+        "start": 0,
+        "end": 652,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 118
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 119,
+            "end": 257
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 258,
+            "end": 437
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 438,
+            "end": 515
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 516,
+            "end": 652
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5ab95ddc554299753720f810",
+          "url": "https://en.wikipedia.org/wiki/History_of_New_England",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.023255813953488372
+      },
+      {
+        "evidence_id": "E2",
+        "chunk_id": "d0b1d0f0-d2fb-58a2-a7ca-35c1f7e5ea0c",
+        "document_id": "6e9621d9-47d0-5252-93b2-2d3137770cc5",
+        "revision_id": "e3ba554e-da88-5a74-920b-a7c88093c279",
+        "strategy": "a",
+        "text": "Pickerel Lake is a 955-acre spring-fed lake located in Day County, South Dakota, United States. Pickerel Lake is part of the Glacial Lakes Region that encompasses much of Northeast South Dakota and stretches along the Coteau des Prairies hills. The area was formed thousands of years ago by glacial activity. Many of the depressions left behind were filled by melting glaciers. This area is also referred to as the Prairie Pothole Region. Pickerel Lake is one of the deepest natural lakes in South Dakota. The name originated from an American Indian name meaning \"where you spear long fish.\" Excursion boats were common until the early 1900s. A fish hatchery was built in 1929 and abandoned in 1979, when a new facility was built at Blue Dog Lake.",
+        "title": "Pickerel Lake (South Dakota)",
+        "start": 0,
+        "end": 747,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 95
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 96,
+            "end": 244
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 245,
+            "end": 308
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 309,
+            "end": 377
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 378,
+            "end": 438
+          },
+          {
+            "kind": "sentence",
+            "number": 5,
+            "start": 439,
+            "end": 505
+          },
+          {
+            "kind": "sentence",
+            "number": 6,
+            "start": 506,
+            "end": 591
+          },
+          {
+            "kind": "sentence",
+            "number": 7,
+            "start": 592,
+            "end": 642
+          },
+          {
+            "kind": "sentence",
+            "number": 8,
+            "start": 643,
+            "end": 747
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a72cec755429901807daf45",
+          "url": "https://en.wikipedia.org/wiki/Pickerel_Lake_%28South_Dakota%29",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.02862400327131466
+      },
+      {
+        "evidence_id": "E11",
+        "chunk_id": "20a88127-5359-528f-b0c3-f78bcabdc4a4",
+        "document_id": "d44b0155-6d87-500d-b892-28316716a7cf",
+        "revision_id": "7210e31b-6460-5617-9800-1d93596e0bbf",
+        "strategy": "a",
+        "text": "In demographics, the world population is the total number of humans currently living. The world population was estimated to have reached 7.5 billion in April 2017 . The United Nations estimates it will further increase to 11.2 billion by the year 2100.",
+        "title": "World population",
+        "start": 0,
+        "end": 252,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 85
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 86,
+            "end": 164
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 165,
+            "end": 252
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a88f68f55429946c8d6e8e3",
+          "url": "https://en.wikipedia.org/wiki/World_population",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.01639344262295082
+      },
+      {
+        "evidence_id": "E3",
+        "chunk_id": "885bfde9-a317-59c1-bc0c-388cbdb53792",
+        "document_id": "e29ce70f-acd0-5668-aca4-11da719fe2ad",
+        "revision_id": "5b593d33-8b09-5bb5-b676-13b7889a4977",
+        "strategy": "a",
+        "text": "At 310 acre , Lake Sebago is the largest lake in Harriman State Park in the U.S. state of New York. The name is Algonquian for \"big water\". Operated by the Palisades Interstate Park Commission, Lake Sebago is surrounded by picnic lawns and play fields, and is popular with anglers fishing for landlocked salmon, lake trout, bass, perch and sunfish. The lake has a swimming beach, hand boat launch (electric motors only) and cabin camping. Lake Sebago lies near Sloatsburg. It is located just south of Lake Kanawauke and is accessible by auto from Seven Lakes Drive.",
+        "title": "Lake Sebago",
+        "start": 0,
+        "end": 565,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 99
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 100,
+            "end": 139
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 140,
+            "end": 348
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 349,
+            "end": 438
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 439,
+            "end": 472
+          },
+          {
+            "kind": "sentence",
+            "number": 5,
+            "start": 473,
+            "end": 565
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5ae384e45542992f92d82300",
+          "url": "https://en.wikipedia.org/wiki/Lake_Sebago",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.02803921568627451
+      },
+      {
+        "evidence_id": "E4",
+        "chunk_id": "548fc1df-6950-5769-b86d-06d0d9dcaac0",
+        "document_id": "0d367bcb-dcf4-5f10-80cf-d39f2ee0587b",
+        "revision_id": "ba5f146f-7ce7-516b-86d1-5a92c9162d94",
+        "strategy": "a",
+        "text": "Deam Lake State Recreation Area is an Indiana State Recreation Area in Clark County, Indiana in the United States. The park is 1300 acre and sits at an elevation of 535 ft . Deam Lake State Recreation area is open for year-round recreation, however the campground closes each year from the Sunday before Thanksgiving to March 1 of the following year. Much of the recreation is centered on Deam Lake. It is named for Charles C. Deam, the first state forester of Indiana.",
+        "title": "Deam Lake State Recreation Area",
+        "start": 0,
+        "end": 469,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 114
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 115,
+            "end": 173
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 174,
+            "end": 350
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 351,
+            "end": 399
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 400,
+            "end": 469
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a865a9f554299211dda2b07",
+          "url": "https://en.wikipedia.org/wiki/Deam_Lake_State_Recreation_Area",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.016129032258064516
+      }
+    ],
+    "search_trace": [
+      {
+        "query": "Brown State Fishing Lake country population inhabitants",
+        "strategy": "a",
+        "profile": "1a8846753a25",
+        "embedding_usage": {
+          "model": "text-embedding-3-small",
+          "input_tokens": 0,
+          "api_calls": 0,
+          "cache_hits": 1,
+          "estimated_cost_usd": 0.0
+        },
+        "document_ranking": [
+          "d4b9a729-1221-53f3-90c9-028884706035",
+          "6e9621d9-47d0-5252-93b2-2d3137770cc5",
+          "e29ce70f-acd0-5668-aca4-11da719fe2ad",
+          "0d367bcb-dcf4-5f10-80cf-d39f2ee0587b",
+          "8665bae0-16e9-5562-bc2f-15c95ca11c37",
+          "2d1c2bd6-79c5-5648-bdc4-f6bfff0bd0e7",
+          "df8c5780-f74e-529f-8a55-b0d0e77a467f",
+          "43f4dcc1-7571-5d74-9b5f-749f835fb3c4",
+          "1db06d64-b5c6-502d-8b5d-ea4b52b055a4",
+          "905780cd-db82-53c0-a02c-64c65bb7b24f"
+        ],
+        "candidate_counts": {
+          "dense": 30,
+          "bm25": 30,
+          "active_dense": 30,
+          "active_bm25": 30
+        },
+        "evidence": [
+          {
+            "evidence_id": "E1",
+            "chunk_id": "6723a9ea-b12c-54bc-8848-c6c72f1cbb60",
+            "document_id": "d4b9a729-1221-53f3-90c9-028884706035",
+            "revision_id": "852d1917-ddb8-5f32-b6a3-f6ac2edd3160",
+            "strategy": "a",
+            "text": "Brown State Fishing Lake (sometimes also known as Brown State Fishing Lake And Wildlife Area) is a protected area in Brown County, Kansas in the United States. The lake is 62 acres (0.25 km2) in area and up to 13 feet (4 m) deep. The area was formerly known as Brown County State Park, and is 8 miles (13 km) east of Hiawatha, Kansas.",
+            "title": "Brown State Fishing Lake",
+            "start": 0,
+            "end": 334,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 159
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 160,
+                "end": 229
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 230,
+                "end": 334
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5a75e05c55429976ec32bc5f",
+              "url": "https://en.wikipedia.org/wiki/Brown_State_Fishing_Lake",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03278688524590164
+          },
+          {
+            "evidence_id": "E2",
+            "chunk_id": "d0b1d0f0-d2fb-58a2-a7ca-35c1f7e5ea0c",
+            "document_id": "6e9621d9-47d0-5252-93b2-2d3137770cc5",
+            "revision_id": "e3ba554e-da88-5a74-920b-a7c88093c279",
+            "strategy": "a",
+            "text": "Pickerel Lake is a 955-acre spring-fed lake located in Day County, South Dakota, United States. Pickerel Lake is part of the Glacial Lakes Region that encompasses much of Northeast South Dakota and stretches along the Coteau des Prairies hills. The area was formed thousands of years ago by glacial activity. Many of the depressions left behind were filled by melting glaciers. This area is also referred to as the Prairie Pothole Region. Pickerel Lake is one of the deepest natural lakes in South Dakota. The name originated from an American Indian name meaning \"where you spear long fish.\" Excursion boats were common until the early 1900s. A fish hatchery was built in 1929 and abandoned in 1979, when a new facility was built at Blue Dog Lake.",
+            "title": "Pickerel Lake (South Dakota)",
+            "start": 0,
+            "end": 747,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 95
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 96,
+                "end": 244
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 245,
+                "end": 308
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 309,
+                "end": 377
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 378,
+                "end": 438
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 439,
+                "end": 505
+              },
+              {
+                "kind": "sentence",
+                "number": 6,
+                "start": 506,
+                "end": 591
+              },
+              {
+                "kind": "sentence",
+                "number": 7,
+                "start": 592,
+                "end": 642
+              },
+              {
+                "kind": "sentence",
+                "number": 8,
+                "start": 643,
+                "end": 747
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a72cec755429901807daf45",
+              "url": "https://en.wikipedia.org/wiki/Pickerel_Lake_%28South_Dakota%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.02862400327131466
+          },
+          {
+            "evidence_id": "E3",
+            "chunk_id": "885bfde9-a317-59c1-bc0c-388cbdb53792",
+            "document_id": "e29ce70f-acd0-5668-aca4-11da719fe2ad",
+            "revision_id": "5b593d33-8b09-5bb5-b676-13b7889a4977",
+            "strategy": "a",
+            "text": "At 310 acre , Lake Sebago is the largest lake in Harriman State Park in the U.S. state of New York. The name is Algonquian for \"big water\". Operated by the Palisades Interstate Park Commission, Lake Sebago is surrounded by picnic lawns and play fields, and is popular with anglers fishing for landlocked salmon, lake trout, bass, perch and sunfish. The lake has a swimming beach, hand boat launch (electric motors only) and cabin camping. Lake Sebago lies near Sloatsburg. It is located just south of Lake Kanawauke and is accessible by auto from Seven Lakes Drive.",
+            "title": "Lake Sebago",
+            "start": 0,
+            "end": 565,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 99
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 100,
+                "end": 139
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 140,
+                "end": 348
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 349,
+                "end": 438
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 439,
+                "end": 472
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 473,
+                "end": 565
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ae384e45542992f92d82300",
+              "url": "https://en.wikipedia.org/wiki/Lake_Sebago",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.02803921568627451
+          },
+          {
+            "evidence_id": "E4",
+            "chunk_id": "548fc1df-6950-5769-b86d-06d0d9dcaac0",
+            "document_id": "0d367bcb-dcf4-5f10-80cf-d39f2ee0587b",
+            "revision_id": "ba5f146f-7ce7-516b-86d1-5a92c9162d94",
+            "strategy": "a",
+            "text": "Deam Lake State Recreation Area is an Indiana State Recreation Area in Clark County, Indiana in the United States. The park is 1300 acre and sits at an elevation of 535 ft . Deam Lake State Recreation area is open for year-round recreation, however the campground closes each year from the Sunday before Thanksgiving to March 1 of the following year. Much of the recreation is centered on Deam Lake. It is named for Charles C. Deam, the first state forester of Indiana.",
+            "title": "Deam Lake State Recreation Area",
+            "start": 0,
+            "end": 469,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 114
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 115,
+                "end": 173
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 174,
+                "end": 350
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 351,
+                "end": 399
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 400,
+                "end": 469
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a865a9f554299211dda2b07",
+              "url": "https://en.wikipedia.org/wiki/Deam_Lake_State_Recreation_Area",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.016129032258064516
+          },
+          {
+            "evidence_id": "E5",
+            "chunk_id": "cdbdc4bb-a851-5c48-91b3-b1feffdba33f",
+            "document_id": "8665bae0-16e9-5562-bc2f-15c95ca11c37",
+            "revision_id": "9b3fc1c9-1619-5d9c-9539-25375439de30",
+            "strategy": "a",
+            "text": "Massachusetts ( or ), officially the Commonwealth of Massachusetts, is the most populous state in the New England region of the northeastern United States. It is bordered by the Atlantic Ocean to the east, the states of Connecticut and Rhode Island to the south, New Hampshire and Vermont to the north, and New York to the west. The state is named for the Massachusett tribe, which once inhabited the area. The capital of Massachusetts and the most populous city in New England is Boston. Over 80% of Massachusetts's population lives in the Greater Boston metropolitan area, a region influential upon American history, academia, and industry. Originally dependent on agriculture, fishing and trade, Massachusetts was transformed into a manufacturing center during the Industrial Revolution. During the 20th century, Massachusetts's economy shifted from manufacturing to services. Modern Massachusetts is a global leader in biotechnology, engineering, higher education, finance, and maritime trade.",
+            "title": "Massachusetts",
+            "start": 0,
+            "end": 997,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 155
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 156,
+                "end": 328
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 329,
+                "end": 406
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 407,
+                "end": 488
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 489,
+                "end": 642
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 643,
+                "end": 790
+              },
+              {
+                "kind": "sentence",
+                "number": 6,
+                "start": 791,
+                "end": 879
+              },
+              {
+                "kind": "sentence",
+                "number": 7,
+                "start": 880,
+                "end": 997
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ae618975542996de7b71b58",
+              "url": "https://en.wikipedia.org/wiki/Massachusetts",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.016129032258064516
+          },
+          {
+            "evidence_id": "E6",
+            "chunk_id": "b92c67da-5f64-5701-a5fa-2a0e2b2499cf",
+            "document_id": "2d1c2bd6-79c5-5648-bdc4-f6bfff0bd0e7",
+            "revision_id": "c1bbf8d1-f279-5ce3-bdbe-8300f3e4786a",
+            "strategy": "a",
+            "text": "Alaska is a state of the United States situated in the northwest extremity of the North American continent. According to the 2010 United States Census, Alaska is the 4th least populous state with 710,231 inhabitants but is the largest by land area spanning 570640.95 sqmi . s of 2014 , Alaska has 148 incorporated cities: four unified home rule municipalities, which are considered both boroughs and cities, ten home rule cities, nineteen first class cities and 115 second class cities. As reflected in the 2010 Census, Alaska's incorporated cities cover only % of the territory's land mass but are home to % of its population. The majority of the incorporated land mass consists of the four unified municipalities, each over 1700 sqmi in size. Only two other cities have an incorporated area exceeding 100 sqmi : Unalaska, which includes the fishing port of Dutch Harbor, and Valdez, which includes the terminus of the Trans-Alaska Pipeline System.",
+            "title": "List of cities in Alaska",
+            "start": 0,
+            "end": 949,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 107
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 108,
+                "end": 273
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 274,
+                "end": 486
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 487,
+                "end": 627
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 628,
+                "end": 744
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 745,
+                "end": 949
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a87483e5542994846c1cd49",
+              "url": "https://en.wikipedia.org/wiki/List_of_cities_in_Alaska",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015873015873015872
+          },
+          {
+            "evidence_id": "E7",
+            "chunk_id": "beedab9c-d60e-5faa-b0a6-181bf3a5b1d7",
+            "document_id": "df8c5780-f74e-529f-8a55-b0d0e77a467f",
+            "revision_id": "eb0df352-d04a-5c44-a47b-d47f28ba87fc",
+            "strategy": "a",
+            "text": "Readfield (/ˈɹid fild/) is a town in Kennebec County, Maine, United States. The population was 2,598 at the 2010 census. Readfield is home to the Kents Hill School, a preparatory school, Maranacook Community Schools, public schools for the district, a few summer camps, and the annual Readfield Heritage Days. A popular recreation spot in central Maine, the town contains nine lakes and ponds, including Maranacook Lake, and is part of the Winthrop Lakes Region. The town of Readfield was previously named Pond Town. Readfield is included in the Augusta, Maine micropolitan New England City and Town Area.",
+            "title": "Readfield, Maine",
+            "start": 0,
+            "end": 605,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 75
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 76,
+                "end": 120
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 121,
+                "end": 309
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 310,
+                "end": 462
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 463,
+                "end": 516
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 517,
+                "end": 605
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ac3d7f6554299204fd21e9c",
+              "url": "https://en.wikipedia.org/wiki/Readfield%2C_Maine",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015873015873015872
+          },
+          {
+            "evidence_id": "E8",
+            "chunk_id": "7c5fc040-dd6a-50a6-8bba-91b21aad8b92",
+            "document_id": "43f4dcc1-7571-5d74-9b5f-749f835fb3c4",
+            "revision_id": "5c1bbf78-b8db-5223-ba0f-f474fa88bd34",
+            "strategy": "a",
+            "text": "The Canadian Ice Fishing Championship is a two-day annual event held on Lake Simcoe, in Ontario, Canada. It was created in 1994, two years after the World Ice Fishing Championship was held in Georgina, Ontario. The \"Catch - Photograph - Release\" ice fishing tournament attracts anglers, mainly from Canada and the USA, but sometimes from other countries, who bring their ice fishing skills to this large, shallow lake. The first day is 'Big Fish Day', when anglers fish the deep water to try to catch the biggest fish. Scrutineers measure the length and width of each fish caught, and points are awarded for the fish each team submits to the judges.",
+            "title": "Canadian Ice Fishing Championship",
+            "start": 0,
+            "end": 649,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 104
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 105,
+                "end": 210
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 211,
+                "end": 418
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 419,
+                "end": 518
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 519,
+                "end": 649
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ae50e4f5542990ba0bbb1b0",
+              "url": "https://en.wikipedia.org/wiki/Canadian_Ice_Fishing_Championship",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015625
+          }
+        ],
+        "round": 1,
+        "tool_call_id": "call_R9gmVlbXkfuGnCKPuqCStPgH",
+        "executed": true,
+        "follow_up": null,
+        "requested_query": "Brown State Fishing Lake country population inhabitants",
+        "query_adjusted": false
+      },
+      {
+        "query": "United States population inhabitants",
+        "strategy": "a",
+        "profile": "1a8846753a25",
+        "embedding_usage": {
+          "model": "text-embedding-3-small",
+          "input_tokens": 4,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 8e-08
+        },
+        "document_ranking": [
+          "1059f443-96cc-5354-8430-04931db6ae3d",
+          "f07368ec-c83d-5be7-a2b8-ce816398bd87",
+          "d44b0155-6d87-500d-b892-28316716a7cf",
+          "96c10bdf-c001-5bb6-a7e8-328b58bee729",
+          "2199d0b7-3481-54fe-ae28-4a07c778b83f",
+          "71247dd2-df62-5aaf-85d9-3af2b27ac355",
+          "4c37203f-c463-5bb8-9b26-5a2fd03b81f4",
+          "8665bae0-16e9-5562-bc2f-15c95ca11c37",
+          "934e09fc-915e-5de9-a59f-97e73a976186",
+          "13a2c544-63fc-5473-8998-fcd16b8dc3fd"
+        ],
+        "candidate_counts": {
+          "dense": 30,
+          "bm25": 30,
+          "active_dense": 30,
+          "active_bm25": 30
+        },
+        "evidence": [
+          {
+            "evidence_id": "E9",
+            "chunk_id": "9a484636-59df-517c-b261-0b1032471230",
+            "document_id": "1059f443-96cc-5354-8430-04931db6ae3d",
+            "revision_id": "7e7bcf04-a88a-5778-87c4-dbd2c91baef4",
+            "strategy": "a",
+            "text": "Germany ( ; German: \"Deutschland\" , ] ), officially the Federal Republic of Germany (German: \"Bundesrepublik Deutschland\" , ), is a federal parliamentary republic in central-western Europe. It includes 16 constituent states, covers an area of 357,021 km2 , and has a largely temperate seasonal climate. With about 82 million inhabitants, Germany is the most populous member state of the European Union. After the United States, it is the second most popular immigration destination in the world. Germany's capital and largest metropolis is Berlin, while its largest conurbation is the Ruhr, with its main centres of Dortmund and Essen. The country's other major cities are Hamburg, Munich, Cologne, Frankfurt, Stuttgart, Düsseldorf, Leipzig, Bremen, Dresden, Hannover and Nuremberg.",
+            "title": "Germany",
+            "start": 0,
+            "end": 782,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 189
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 190,
+                "end": 302
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 303,
+                "end": 402
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 403,
+                "end": 495
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 496,
+                "end": 635
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 636,
+                "end": 782
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5adea1a45542992fa25da7e3",
+              "url": "https://en.wikipedia.org/wiki/Germany",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.026687875574407917
+          },
+          {
+            "evidence_id": "E10",
+            "chunk_id": "1c06e423-0150-51f3-90a5-df85282bddbf",
+            "document_id": "f07368ec-c83d-5be7-a2b8-ce816398bd87",
+            "revision_id": "33017886-9029-57b3-a5ce-67013b575b5e",
+            "strategy": "a",
+            "text": "The history of New England is the history of the New England region of North America in the current-day United States. New England is the oldest clearly defined region of the United States, and it predates the history of the United States by over 150 years. While New England was originally inhabited by Indigenous peoples, English Pilgrims and especially Puritans, fleeing religious persecution in England, arrived in the 1620-1660 era. They dominated the region; their religion was later called Congregationalism. They and their descendants are called Yankees. Farming, fishing and lumbering prospered, as did whaling, sea trading, and merchandising.",
+            "title": "History of New England",
+            "start": 0,
+            "end": 652,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 118
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 119,
+                "end": 257
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 258,
+                "end": 437
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 438,
+                "end": 515
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 516,
+                "end": 652
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ab95ddc554299753720f810",
+              "url": "https://en.wikipedia.org/wiki/History_of_New_England",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.023255813953488372
+          },
+          {
+            "evidence_id": "E11",
+            "chunk_id": "20a88127-5359-528f-b0c3-f78bcabdc4a4",
+            "document_id": "d44b0155-6d87-500d-b892-28316716a7cf",
+            "revision_id": "7210e31b-6460-5617-9800-1d93596e0bbf",
+            "strategy": "a",
+            "text": "In demographics, the world population is the total number of humans currently living. The world population was estimated to have reached 7.5 billion in April 2017 . The United Nations estimates it will further increase to 11.2 billion by the year 2100.",
+            "title": "World population",
+            "start": 0,
+            "end": 252,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 85
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 86,
+                "end": 164
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 165,
+                "end": 252
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a88f68f55429946c8d6e8e3",
+              "url": "https://en.wikipedia.org/wiki/World_population",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.01639344262295082
+          },
+          {
+            "evidence_id": "E12",
+            "chunk_id": "f1b37503-0381-5981-b572-9d4b3408a012",
+            "document_id": "96c10bdf-c001-5bb6-a7e8-328b58bee729",
+            "revision_id": "21f5a62c-a0e8-55e3-9203-3fbf9ef47a8e",
+            "strategy": "a",
+            "text": "Indianapolis (pronounced ), is the capital and largest city of the U.S. state of Indiana and the seat of Marion County. It is in the East North Central region of the Midwestern United States. With an estimated population of 855,164 in 2016, Indianapolis is the third most populous city in the Midwest and 15th most populous in the U.S. The city is the economic and cultural center of the Indianapolis metropolitan area, home to 2 million people, the 34th most populous metropolitan statistical area in the U.S. Its combined statistical area ranks 27th, with 2.38 million inhabitants. Indianapolis covers 368 sqmi , making it the 16th largest city by land area in the U.S.",
+            "title": "Indianapolis",
+            "start": 0,
+            "end": 671,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 119
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 120,
+                "end": 191
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 192,
+                "end": 335
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 336,
+                "end": 583
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 584,
+                "end": 671
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a8f1fe95542997ba9cb31d8",
+              "url": "https://en.wikipedia.org/wiki/Indianapolis",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.01639344262295082
+          },
+          {
+            "evidence_id": "E13",
+            "chunk_id": "77c6f20b-6bc0-5296-ad76-fc7d0758bc7b",
+            "document_id": "2199d0b7-3481-54fe-ae28-4a07c778b83f",
+            "revision_id": "ecb621a2-9fa7-5a98-bf67-96ebda3e2253",
+            "strategy": "a",
+            "text": "Southeast Kansas is a region of the U.S. state of Kansas. It can be roughly defined by Woodson County in the northwest, Bourbon County in the northeast, Cherokee County in the southeast, and Montgomery County in the southwest. Geographically it is dominated by a broad rolling landscape located between the Flint Hills to the west and includes the Ozarks to the southeast. Some notable towns there include Pittsburg, Parsons, Coffeyville, Independence, Chanute, Fort Scott, and Iola. The region has a land area of 13,624.13 km2 (5,260.30 sq mi) and a 2000 census population of 180,815 inhabitants. It has 6.43% of the state's land area and 6.726% of its population. It is dominated by a broad rolling landscape that includes the Ozarks. It receives more precipitation than any other part of Kansas. Southeast Kansas is located in the tallgrass prairie ecosystem of North America. Originally inhabited by several Native American tribes, frontier towns largely dependent on cattle ranching, and mining, were wracked by violence over the issue of slavery both before and during the American Civil War. Southeast Kansas offers one of the premier reconstructions of early life in the United States",
+            "title": "Southeast Kansas",
+            "start": 0,
+            "end": 1192,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 57
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 58,
+                "end": 226
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 227,
+                "end": 372
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 373,
+                "end": 483
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 484,
+                "end": 597
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 598,
+                "end": 665
+              },
+              {
+                "kind": "sentence",
+                "number": 6,
+                "start": 666,
+                "end": 736
+              },
+              {
+                "kind": "sentence",
+                "number": 7,
+                "start": 737,
+                "end": 798
+              },
+              {
+                "kind": "sentence",
+                "number": 8,
+                "start": 799,
+                "end": 879
+              },
+              {
+                "kind": "sentence",
+                "number": 9,
+                "start": 880,
+                "end": 1098
+              },
+              {
+                "kind": "sentence",
+                "number": 10,
+                "start": 1099,
+                "end": 1235
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5abe1be45542991f661060ce",
+              "url": "https://en.wikipedia.org/wiki/Southeast_Kansas",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.016129032258064516
+          },
+          {
+            "evidence_id": "E14",
+            "chunk_id": "959fb151-c82e-5d37-92de-1dc70cdc77e4",
+            "document_id": "71247dd2-df62-5aaf-85d9-3af2b27ac355",
+            "revision_id": "b3c3bc98-ae07-5542-a2d7-30ea6fb8da98",
+            "strategy": "a",
+            "text": "According to the 2011 census, the total population of the United Kingdom was around 63,182,000. <ref name=\"2http://www.ons.gov.uk/ons/dcp171778_292378.pdf |title=2011 Census: Population Estimates for the United Kingdom |publisher=Office for National Statistics |date=27 March 2011 |accessdate=18 December 2012 }}</ref> It is the 22nd-largest in the world. Its overall population density is 259 people per square kilometre (671 people per sq mi), with England having a significantly higher population density than Wales, Scotland and Northern Ireland. Almost one-third of the population lives in England's southeast, which is predominantly urban and suburban, with about 8 million in the capital city of London, the population density of which is just over 5,200 per square kilometre (13,468 per sq mi).",
+            "title": "Demography of the United Kingdom",
+            "start": 0,
+            "end": 802,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 95
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 96,
+                "end": 355
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 356,
+                "end": 550
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 551,
+                "end": 802
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ac3983a554299657fa290f5",
+              "url": "https://en.wikipedia.org/wiki/Demography_of_the_United_Kingdom",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.016129032258064516
+          },
+          {
+            "evidence_id": "E15",
+            "chunk_id": "9184f265-1d5f-5084-ae80-cd262cda973a",
+            "document_id": "4c37203f-c463-5bb8-9b26-5a2fd03b81f4",
+            "revision_id": "51e0075a-a9fb-5853-9723-e6ee48ecae50",
+            "strategy": "a",
+            "text": "Indian Americans or Indo-Americans are Americans whose ancestry belongs to any of the many ethnic groups of the Republic of India. As the most socio-economically successful minority ethnic group in the U.S., Indian Americans comprise 4 million people, representing around 1% of the U.S. population as of 2015. Indian Americans are the country's third-largest Asian group alone or in combination with other races after Chinese Americans and Filipino Americans, according to 2015 American Community Survey data. The U.S. Census Bureau uses the term Asian Indian to avoid confusion with the indigenous peoples of the Americas commonly referred to as American Indians (or Native Americans).",
+            "title": "Indian Americans",
+            "start": 0,
+            "end": 686,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 130
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 131,
+                "end": 309
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 310,
+                "end": 509
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 510,
+                "end": 686
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5adfe2ee55429942ec259b6a",
+              "url": "https://en.wikipedia.org/wiki/Indian_Americans",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015873015873015872
+          },
+          {
+            "evidence_id": "E5",
+            "chunk_id": "cdbdc4bb-a851-5c48-91b3-b1feffdba33f",
+            "document_id": "8665bae0-16e9-5562-bc2f-15c95ca11c37",
+            "revision_id": "9b3fc1c9-1619-5d9c-9539-25375439de30",
+            "strategy": "a",
+            "text": "Massachusetts ( or ), officially the Commonwealth of Massachusetts, is the most populous state in the New England region of the northeastern United States. It is bordered by the Atlantic Ocean to the east, the states of Connecticut and Rhode Island to the south, New Hampshire and Vermont to the north, and New York to the west. The state is named for the Massachusett tribe, which once inhabited the area. The capital of Massachusetts and the most populous city in New England is Boston. Over 80% of Massachusetts's population lives in the Greater Boston metropolitan area, a region influential upon American history, academia, and industry. Originally dependent on agriculture, fishing and trade, Massachusetts was transformed into a manufacturing center during the Industrial Revolution. During the 20th century, Massachusetts's economy shifted from manufacturing to services. Modern Massachusetts is a global leader in biotechnology, engineering, higher education, finance, and maritime trade.",
+            "title": "Massachusetts",
+            "start": 0,
+            "end": 997,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 155
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 156,
+                "end": 328
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 329,
+                "end": 406
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 407,
+                "end": 488
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 489,
+                "end": 642
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 643,
+                "end": 790
+              },
+              {
+                "kind": "sentence",
+                "number": 6,
+                "start": 791,
+                "end": 879
+              },
+              {
+                "kind": "sentence",
+                "number": 7,
+                "start": 880,
+                "end": 997
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ae618975542996de7b71b58",
+              "url": "https://en.wikipedia.org/wiki/Massachusetts",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015873015873015872
+          }
+        ],
+        "round": 2,
+        "tool_call_id": "call_30bcUJZbYANFeikweFm6Efhk",
+        "executed": true,
+        "follow_up": {
+          "evidence_id": "E1",
+          "entity": "United States"
+        },
+        "requested_query": "United States population inhabitants",
+        "query_adjusted": false
+      }
+    ],
+    "workflow": "bounded_tools_v1",
+    "execution": {
+      "planning_rounds": 2,
+      "retrieval_rounds": 2,
+      "tool_calls": 2,
+      "searches": 2,
+      "llm_calls": 3,
+      "embedding_calls": 1,
+      "total_provider_calls": 4,
+      "stop_reason": "retrieval_limit",
+      "limits": {
+        "retrieval_rounds": 2,
+        "searches": 3,
+        "llm_calls": 3,
+        "embedding_calls": 3,
+        "total_provider_calls": 6
+      }
+    },
+    "configuration": {
+      "strategy": "a",
+      "profile": "1a8846753a25",
+      "embedding_model": "text-embedding-3-small",
+      "embedding_dimensions": 384,
+      "generation_model": "gpt-5.4-mini-2026-03-17",
+      "prompt_version": "bounded_tools_quote_ids_v1"
+    },
+    "usage": {
+      "planning": [
+        {
+          "input_tokens": 525,
+          "output_tokens": 30,
+          "estimated_cost_usd": 0.00052875,
+          "model": "gpt-5.4-mini-2026-03-17"
+        },
+        {
+          "input_tokens": 1850,
+          "output_tokens": 36,
+          "estimated_cost_usd": 0.0015495,
+          "model": "gpt-5.4-mini-2026-03-17"
+        }
+      ],
+      "generation": {
+        "input_tokens": 5134,
+        "output_tokens": 93,
+        "estimated_cost_usd": 0.004269,
+        "model": "gpt-5.4-mini-2026-03-17"
+      },
+      "embeddings": [
+        {
+          "model": "text-embedding-3-small",
+          "input_tokens": 0,
+          "api_calls": 0,
+          "cache_hits": 1,
+          "estimated_cost_usd": 0.0
+        },
+        {
+          "model": "text-embedding-3-small",
+          "input_tokens": 4,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 8e-08
+        }
+      ],
+      "estimated_model_cost_usd": 0.0063472500000000005,
+      "estimated_total_cost_usd": 0.006347330000000001
+    },
+    "latency_ms": 4544
+  },
+  "error": null,
+  "elapsed_ms": 4544,
+  "ledger_after": {
+    "calls": 504,
+    "reserved_usd": 1.27531167,
+    "estimated_actual_usd": 0.43506267,
+    "input_tokens": 7229548,
+    "output_tokens": 10022
+  }
+}

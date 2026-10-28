@@ -1,0 +1,1163 @@
+{
+  "case_id": "final-comparison-06",
+  "strategy": "a",
+  "question": "Which writer was from England, Henry Roth or Robert Erskine Childers?",
+  "started_at": "2026-10-28T07:05:31.073023+00:00",
+  "ledger_before": {
+    "calls": 555,
+    "reserved_usd": 1.49262434,
+    "estimated_actual_usd": 0.49664459,
+    "input_tokens": 7300682,
+    "output_tokens": 11883
+  },
+  "result": {
+    "status": "answered",
+    "claims": [
+      {
+        "text": "Robert Erskine Childers was from England, as he was a British writer.",
+        "citations": [
+          {
+            "evidence_id": "E1",
+            "quote": "Robert Erskine Childers DSC (25 June 1870 – 24 November 1922), universally known as Erskine Childers, was a British writer, whose works included the influential novel \"The Riddle of the Sands\", and a Fenian revolutionary who smuggled guns to Ireland in his sailing yacht \"Asgard\"."
+          }
+        ]
+      },
+      {
+        "text": "Henry Roth was not from England; he was an American novelist and short story writer.",
+        "citations": [
+          {
+            "evidence_id": "E3",
+            "quote": "Henry Roth (February 8, 1906 – October 13, 1995) was an American novelist and short story writer."
+          }
+        ]
+      }
+    ],
+    "conflicting_claims": [],
+    "answer": "Robert Erskine Childers was from England, as he was a British writer. [E1] Henry Roth was not from England; he was an American novelist and short story writer. [E3]",
+    "evidence": [
+      {
+        "evidence_id": "E1",
+        "chunk_id": "b60d87cc-b3e5-552f-8157-6f0c04a1f8e3",
+        "document_id": "bb129362-3823-546a-9d9f-b5cd3bd1c595",
+        "revision_id": "d387feed-e3e3-53dc-bf27-5fcdb92d5a8a",
+        "strategy": "a",
+        "text": "Robert Erskine Childers DSC (25 June 1870 – 24 November 1922), universally known as Erskine Childers, was a British writer, whose works included the influential novel \"The Riddle of the Sands\", and a Fenian revolutionary who smuggled guns to Ireland in his sailing yacht \"Asgard\". He was executed by the authorities of the nascent Irish Free State during the Irish Civil War. He was the son of British Orientalist scholar Robert Caesar Childers; the cousin of Hugh Childers and Robert Barton; and the father of the fourth President of Ireland, Erskine Hamilton Childers.",
+        "title": "Robert Erskine Childers",
+        "start": 0,
+        "end": 570,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 280
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 281,
+            "end": 375
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 376,
+            "end": 570
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "validation",
+          "record_id": "5a8133725542995ce29dcbdb",
+          "url": "https://en.wikipedia.org/wiki/Robert_Erskine_Childers",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.03225806451612903
+      },
+      {
+        "evidence_id": "E2",
+        "chunk_id": "d62fad2b-ac5b-50dc-a0ab-d874213792ef",
+        "document_id": "ecd0bfec-9b1c-597c-afa6-f3d616096a43",
+        "revision_id": "d4bd5304-24d0-564b-830f-227ccd6b74d9",
+        "strategy": "a",
+        "text": "Erskine Barton Childers (11 March 1929 – 25 August 1996) was an Irish writer, BBC correspondent and United Nations senior civil servant. He was the eldest son of Erskine Hamilton Childers (Ireland's fourth President) and Ruth Ellen Dow Childers. His grandparents Mary Alden Childers and Robert Erskine Childers and the latter's double first cousin Robert Barton were all Irish nationalists involved heavily with the negotiation of Irish independence; which ultimately led to his grandfather's execution during the Irish Civil War. His great aunt was Gretchen Osgood Warren.",
+        "title": "Erskine Barton Childers",
+        "start": 0,
+        "end": 573,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 136
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 137,
+            "end": 245
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 246,
+            "end": 530
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 531,
+            "end": 573
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a90518255429933b8a204e1",
+          "url": "https://en.wikipedia.org/wiki/Erskine_Barton_Childers",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.031746031746031744
+      },
+      {
+        "evidence_id": "E5",
+        "chunk_id": "b5876d39-f74b-54e3-ad8f-7d555f52cdb8",
+        "document_id": "f225891e-fd60-5362-9bbb-1255a5c02fc7",
+        "revision_id": "429a3b61-d0bd-5fcb-a548-1821f2043206",
+        "strategy": "a",
+        "text": "Robert Caesar Childers (1838 – 25 July 1876) was a British Orientalist scholar, compiler of the first Pāli-English dictionary. Childers was the husband of Anna Barton of Ireland. He was the father of Irish nationalist Robert Erskine Childers and grandfather to the fourth President of Ireland, Erskine Hamilton Childers.",
+        "title": "Robert Caesar Childers",
+        "start": 0,
+        "end": 320,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 126
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 127,
+            "end": 178
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 179,
+            "end": 320
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a90518255429933b8a204e1",
+          "url": "https://en.wikipedia.org/wiki/Robert_Caesar_Childers",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.0315136476426799
+      },
+      {
+        "evidence_id": "E4",
+        "chunk_id": "d64ab3c4-be2c-5560-817e-ea30be0f2b7e",
+        "document_id": "9ecc092a-2574-54f5-9280-507bd470ac6e",
+        "revision_id": "021f18a0-59d3-5da2-a5a6-727be3ad4f7e",
+        "strategy": "a",
+        "text": "The Riddle of the Sands: A Record of Secret Service is a 1903 novel by Erskine Childers. The book, which enjoyed immense popularity in the years before World War I, is an early example of the espionage novel and was extremely influential in the genre of spy fiction. It has been made into feature-length films for both cinema and television.",
+        "title": "The Riddle of the Sands",
+        "start": 0,
+        "end": 341,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 88
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 89,
+            "end": 266
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 267,
+            "end": 341
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a90518255429933b8a204e1",
+          "url": "https://en.wikipedia.org/wiki/The_Riddle_of_the_Sands",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.030309988518943745
+      },
+      {
+        "evidence_id": "E8",
+        "chunk_id": "5d781dd3-c117-594d-be5e-0d8b5cf65844",
+        "document_id": "f14f1977-1aba-5819-b2fa-ccad921841f5",
+        "revision_id": "06659446-a661-5c8d-bc51-e19bbf7ff7e0",
+        "strategy": "a",
+        "text": "Mary Alden Osgood Childers, MBE (14 December 1875 – 1 January 1964) was an American-born Irish writer and Irish nationalist. She was the daughter of Dr Hamilton Osgood and Margaret Cushing Osgood of Beacon Hill, Boston, Massachusetts. Her older sister was Gretchen Osgood Warren. Molly married the writer and Irish nationalist, Robert Erskine Childers. Their son, Erskine Hamilton Childers, became the fourth President of Ireland.",
+        "title": "Molly Childers",
+        "start": 0,
+        "end": 430,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 124
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 125,
+            "end": 234
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 235,
+            "end": 279
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 280,
+            "end": 352
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 353,
+            "end": 430
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a90518255429933b8a204e1",
+          "url": "https://en.wikipedia.org/wiki/Molly_Childers",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.03131881575727918
+      },
+      {
+        "evidence_id": "E7",
+        "chunk_id": "f48a9784-503a-59b3-88a9-985edff0fc97",
+        "document_id": "86d6a2b8-3f2a-5822-a70a-67b38a8349c3",
+        "revision_id": "1d350faf-9c02-56c6-bbad-baf591cfc57a",
+        "strategy": "a",
+        "text": "Robert Childers Barton (4 March 1881 – 10 August 1975) was an Irish nationalist, politician and farmer who participated in the negotiations leading up to the signature of the Anglo-Irish Treaty. His father was Charles William Barton and his mother was Agnes Childers. His wife was Rachel Warren of Boston, daughter of Fiske Warren. His double first cousin and close friend was Robert Erskine Childers.",
+        "title": "Robert Barton",
+        "start": 0,
+        "end": 401,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 194
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 195,
+            "end": 267
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 268,
+            "end": 331
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 332,
+            "end": 401
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a90518255429933b8a204e1",
+          "url": "https://en.wikipedia.org/wiki/Robert_Barton",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.030776515151515152
+      },
+      {
+        "evidence_id": "E6",
+        "chunk_id": "c62280b9-0091-5a7d-83e8-2e5b6ad3ecd0",
+        "document_id": "b2db8c77-22c2-5c5f-91cd-ba5562281681",
+        "revision_id": "a54c5255-6725-5a32-a777-e2c276ad1644",
+        "strategy": "a",
+        "text": "Chester Erskine (November 29, 1905 – April 7, 1986) was a Hollywood and Broadway director, writer, and producer.",
+        "title": "Chester Erskine",
+        "start": 0,
+        "end": 112,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 112
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5ab82f225542992aa3b8c8aa",
+          "url": "https://en.wikipedia.org/wiki/Chester_Erskine",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.02964426877470356
+      },
+      {
+        "evidence_id": "E3",
+        "chunk_id": "6c0c4ae7-c909-5c5f-992c-2ad6445ea816",
+        "document_id": "4a1550e0-dcca-5e17-8956-39af9ad3a1ba",
+        "revision_id": "c985c4db-d68f-5050-82c0-baefcd1e799a",
+        "strategy": "a",
+        "text": "Henry Roth (February 8, 1906 – October 13, 1995) was an American novelist and short story writer.",
+        "title": "Henry Roth",
+        "start": 0,
+        "end": 97,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 97
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "validation",
+          "record_id": "5a8133725542995ce29dcbdb",
+          "url": "https://en.wikipedia.org/wiki/Henry_Roth",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.031099324975891997
+      }
+    ],
+    "search_trace": [
+      {
+        "query": "Henry Roth Robert Erskine Childers England writer birthplace nationality",
+        "strategy": "a",
+        "profile": "1a8846753a25",
+        "embedding_usage": {
+          "model": "text-embedding-3-small",
+          "input_tokens": 13,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 2.6e-07
+        },
+        "document_ranking": [
+          "bb129362-3823-546a-9d9f-b5cd3bd1c595",
+          "ecd0bfec-9b1c-597c-afa6-f3d616096a43",
+          "4a1550e0-dcca-5e17-8956-39af9ad3a1ba",
+          "9ecc092a-2574-54f5-9280-507bd470ac6e",
+          "f225891e-fd60-5362-9bbb-1255a5c02fc7",
+          "b2db8c77-22c2-5c5f-91cd-ba5562281681",
+          "86d6a2b8-3f2a-5822-a70a-67b38a8349c3",
+          "f14f1977-1aba-5819-b2fa-ccad921841f5",
+          "5515b541-e1a6-5ef6-874c-7982b2ca9e56",
+          "734c1c18-baf9-5205-a5d8-d037f238ddb0"
+        ],
+        "candidate_counts": {
+          "dense": 30,
+          "bm25": 30,
+          "active_dense": 30,
+          "active_bm25": 30
+        },
+        "evidence": [
+          {
+            "evidence_id": "E1",
+            "chunk_id": "b60d87cc-b3e5-552f-8157-6f0c04a1f8e3",
+            "document_id": "bb129362-3823-546a-9d9f-b5cd3bd1c595",
+            "revision_id": "d387feed-e3e3-53dc-bf27-5fcdb92d5a8a",
+            "strategy": "a",
+            "text": "Robert Erskine Childers DSC (25 June 1870 – 24 November 1922), universally known as Erskine Childers, was a British writer, whose works included the influential novel \"The Riddle of the Sands\", and a Fenian revolutionary who smuggled guns to Ireland in his sailing yacht \"Asgard\". He was executed by the authorities of the nascent Irish Free State during the Irish Civil War. He was the son of British Orientalist scholar Robert Caesar Childers; the cousin of Hugh Childers and Robert Barton; and the father of the fourth President of Ireland, Erskine Hamilton Childers.",
+            "title": "Robert Erskine Childers",
+            "start": 0,
+            "end": 570,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 280
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 281,
+                "end": 375
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 376,
+                "end": 570
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5a8133725542995ce29dcbdb",
+              "url": "https://en.wikipedia.org/wiki/Robert_Erskine_Childers",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03225806451612903
+          },
+          {
+            "evidence_id": "E2",
+            "chunk_id": "d62fad2b-ac5b-50dc-a0ab-d874213792ef",
+            "document_id": "ecd0bfec-9b1c-597c-afa6-f3d616096a43",
+            "revision_id": "d4bd5304-24d0-564b-830f-227ccd6b74d9",
+            "strategy": "a",
+            "text": "Erskine Barton Childers (11 March 1929 – 25 August 1996) was an Irish writer, BBC correspondent and United Nations senior civil servant. He was the eldest son of Erskine Hamilton Childers (Ireland's fourth President) and Ruth Ellen Dow Childers. His grandparents Mary Alden Childers and Robert Erskine Childers and the latter's double first cousin Robert Barton were all Irish nationalists involved heavily with the negotiation of Irish independence; which ultimately led to his grandfather's execution during the Irish Civil War. His great aunt was Gretchen Osgood Warren.",
+            "title": "Erskine Barton Childers",
+            "start": 0,
+            "end": 573,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 136
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 137,
+                "end": 245
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 246,
+                "end": 530
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 531,
+                "end": 573
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a90518255429933b8a204e1",
+              "url": "https://en.wikipedia.org/wiki/Erskine_Barton_Childers",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.032018442622950824
+          },
+          {
+            "evidence_id": "E3",
+            "chunk_id": "6c0c4ae7-c909-5c5f-992c-2ad6445ea816",
+            "document_id": "4a1550e0-dcca-5e17-8956-39af9ad3a1ba",
+            "revision_id": "c985c4db-d68f-5050-82c0-baefcd1e799a",
+            "strategy": "a",
+            "text": "Henry Roth (February 8, 1906 – October 13, 1995) was an American novelist and short story writer.",
+            "title": "Henry Roth",
+            "start": 0,
+            "end": 97,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 97
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5a8133725542995ce29dcbdb",
+              "url": "https://en.wikipedia.org/wiki/Henry_Roth",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.031099324975891997
+          },
+          {
+            "evidence_id": "E4",
+            "chunk_id": "d64ab3c4-be2c-5560-817e-ea30be0f2b7e",
+            "document_id": "9ecc092a-2574-54f5-9280-507bd470ac6e",
+            "revision_id": "021f18a0-59d3-5da2-a5a6-727be3ad4f7e",
+            "strategy": "a",
+            "text": "The Riddle of the Sands: A Record of Secret Service is a 1903 novel by Erskine Childers. The book, which enjoyed immense popularity in the years before World War I, is an early example of the espionage novel and was extremely influential in the genre of spy fiction. It has been made into feature-length films for both cinema and television.",
+            "title": "The Riddle of the Sands",
+            "start": 0,
+            "end": 341,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 88
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 89,
+                "end": 266
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 267,
+                "end": 341
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a90518255429933b8a204e1",
+              "url": "https://en.wikipedia.org/wiki/The_Riddle_of_the_Sands",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.029631255487269532
+          },
+          {
+            "evidence_id": "E5",
+            "chunk_id": "b5876d39-f74b-54e3-ad8f-7d555f52cdb8",
+            "document_id": "f225891e-fd60-5362-9bbb-1255a5c02fc7",
+            "revision_id": "429a3b61-d0bd-5fcb-a548-1821f2043206",
+            "strategy": "a",
+            "text": "Robert Caesar Childers (1838 – 25 July 1876) was a British Orientalist scholar, compiler of the first Pāli-English dictionary. Childers was the husband of Anna Barton of Ireland. He was the father of Irish nationalist Robert Erskine Childers and grandfather to the fourth President of Ireland, Erskine Hamilton Childers.",
+            "title": "Robert Caesar Childers",
+            "start": 0,
+            "end": 320,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 126
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 127,
+                "end": 178
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 179,
+                "end": 320
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a90518255429933b8a204e1",
+              "url": "https://en.wikipedia.org/wiki/Robert_Caesar_Childers",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.029083245521601686
+          },
+          {
+            "evidence_id": "E6",
+            "chunk_id": "c62280b9-0091-5a7d-83e8-2e5b6ad3ecd0",
+            "document_id": "b2db8c77-22c2-5c5f-91cd-ba5562281681",
+            "revision_id": "a54c5255-6725-5a32-a777-e2c276ad1644",
+            "strategy": "a",
+            "text": "Chester Erskine (November 29, 1905 – April 7, 1986) was a Hollywood and Broadway director, writer, and producer.",
+            "title": "Chester Erskine",
+            "start": 0,
+            "end": 112,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 112
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ab82f225542992aa3b8c8aa",
+              "url": "https://en.wikipedia.org/wiki/Chester_Erskine",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.02904040404040404
+          },
+          {
+            "evidence_id": "E7",
+            "chunk_id": "f48a9784-503a-59b3-88a9-985edff0fc97",
+            "document_id": "86d6a2b8-3f2a-5822-a70a-67b38a8349c3",
+            "revision_id": "1d350faf-9c02-56c6-bbad-baf591cfc57a",
+            "strategy": "a",
+            "text": "Robert Childers Barton (4 March 1881 – 10 August 1975) was an Irish nationalist, politician and farmer who participated in the negotiations leading up to the signature of the Anglo-Irish Treaty. His father was Charles William Barton and his mother was Agnes Childers. His wife was Rachel Warren of Boston, daughter of Fiske Warren. His double first cousin and close friend was Robert Erskine Childers.",
+            "title": "Robert Barton",
+            "start": 0,
+            "end": 401,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 194
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 195,
+                "end": 267
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 268,
+                "end": 331
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 332,
+                "end": 401
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a90518255429933b8a204e1",
+              "url": "https://en.wikipedia.org/wiki/Robert_Barton",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.02904040404040404
+          },
+          {
+            "evidence_id": "E8",
+            "chunk_id": "5d781dd3-c117-594d-be5e-0d8b5cf65844",
+            "document_id": "f14f1977-1aba-5819-b2fa-ccad921841f5",
+            "revision_id": "06659446-a661-5c8d-bc51-e19bbf7ff7e0",
+            "strategy": "a",
+            "text": "Mary Alden Osgood Childers, MBE (14 December 1875 – 1 January 1964) was an American-born Irish writer and Irish nationalist. She was the daughter of Dr Hamilton Osgood and Margaret Cushing Osgood of Beacon Hill, Boston, Massachusetts. Her older sister was Gretchen Osgood Warren. Molly married the writer and Irish nationalist, Robert Erskine Childers. Their son, Erskine Hamilton Childers, became the fourth President of Ireland.",
+            "title": "Molly Childers",
+            "start": 0,
+            "end": 430,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 124
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 125,
+                "end": 234
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 235,
+                "end": 279
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 280,
+                "end": 352
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 353,
+                "end": 430
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a90518255429933b8a204e1",
+              "url": "https://en.wikipedia.org/wiki/Molly_Childers",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015873015873015872
+          }
+        ],
+        "round": 1,
+        "tool_call_id": "call_CFdOPFM7ZFqUOdeVqQ9E4WKW",
+        "executed": true,
+        "follow_up": null,
+        "requested_query": "Henry Roth Robert Erskine Childers England writer birthplace nationality",
+        "query_adjusted": false
+      },
+      {
+        "query": "England Robert Erskine Childers born England writer",
+        "strategy": "a",
+        "profile": "1a8846753a25",
+        "embedding_usage": {
+          "model": "text-embedding-3-small",
+          "input_tokens": 10,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 2.0000000000000002e-07
+        },
+        "document_ranking": [
+          "bb129362-3823-546a-9d9f-b5cd3bd1c595",
+          "ecd0bfec-9b1c-597c-afa6-f3d616096a43",
+          "f225891e-fd60-5362-9bbb-1255a5c02fc7",
+          "f14f1977-1aba-5819-b2fa-ccad921841f5",
+          "86d6a2b8-3f2a-5822-a70a-67b38a8349c3",
+          "9ecc092a-2574-54f5-9280-507bd470ac6e",
+          "b2db8c77-22c2-5c5f-91cd-ba5562281681",
+          "35ca531a-7fa9-594f-ad80-7f77eb2c1a35",
+          "734c1c18-baf9-5205-a5d8-d037f238ddb0",
+          "13d46d2f-4ab8-5aa8-8e08-59883e653adc"
+        ],
+        "candidate_counts": {
+          "dense": 30,
+          "bm25": 30,
+          "active_dense": 30,
+          "active_bm25": 30
+        },
+        "evidence": [
+          {
+            "evidence_id": "E1",
+            "chunk_id": "b60d87cc-b3e5-552f-8157-6f0c04a1f8e3",
+            "document_id": "bb129362-3823-546a-9d9f-b5cd3bd1c595",
+            "revision_id": "d387feed-e3e3-53dc-bf27-5fcdb92d5a8a",
+            "strategy": "a",
+            "text": "Robert Erskine Childers DSC (25 June 1870 – 24 November 1922), universally known as Erskine Childers, was a British writer, whose works included the influential novel \"The Riddle of the Sands\", and a Fenian revolutionary who smuggled guns to Ireland in his sailing yacht \"Asgard\". He was executed by the authorities of the nascent Irish Free State during the Irish Civil War. He was the son of British Orientalist scholar Robert Caesar Childers; the cousin of Hugh Childers and Robert Barton; and the father of the fourth President of Ireland, Erskine Hamilton Childers.",
+            "title": "Robert Erskine Childers",
+            "start": 0,
+            "end": 570,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 280
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 281,
+                "end": 375
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 376,
+                "end": 570
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5a8133725542995ce29dcbdb",
+              "url": "https://en.wikipedia.org/wiki/Robert_Erskine_Childers",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03252247488101534
+          },
+          {
+            "evidence_id": "E2",
+            "chunk_id": "d62fad2b-ac5b-50dc-a0ab-d874213792ef",
+            "document_id": "ecd0bfec-9b1c-597c-afa6-f3d616096a43",
+            "revision_id": "d4bd5304-24d0-564b-830f-227ccd6b74d9",
+            "strategy": "a",
+            "text": "Erskine Barton Childers (11 March 1929 – 25 August 1996) was an Irish writer, BBC correspondent and United Nations senior civil servant. He was the eldest son of Erskine Hamilton Childers (Ireland's fourth President) and Ruth Ellen Dow Childers. His grandparents Mary Alden Childers and Robert Erskine Childers and the latter's double first cousin Robert Barton were all Irish nationalists involved heavily with the negotiation of Irish independence; which ultimately led to his grandfather's execution during the Irish Civil War. His great aunt was Gretchen Osgood Warren.",
+            "title": "Erskine Barton Childers",
+            "start": 0,
+            "end": 573,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 136
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 137,
+                "end": 245
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 246,
+                "end": 530
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 531,
+                "end": 573
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a90518255429933b8a204e1",
+              "url": "https://en.wikipedia.org/wiki/Erskine_Barton_Childers",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.031746031746031744
+          },
+          {
+            "evidence_id": "E5",
+            "chunk_id": "b5876d39-f74b-54e3-ad8f-7d555f52cdb8",
+            "document_id": "f225891e-fd60-5362-9bbb-1255a5c02fc7",
+            "revision_id": "429a3b61-d0bd-5fcb-a548-1821f2043206",
+            "strategy": "a",
+            "text": "Robert Caesar Childers (1838 – 25 July 1876) was a British Orientalist scholar, compiler of the first Pāli-English dictionary. Childers was the husband of Anna Barton of Ireland. He was the father of Irish nationalist Robert Erskine Childers and grandfather to the fourth President of Ireland, Erskine Hamilton Childers.",
+            "title": "Robert Caesar Childers",
+            "start": 0,
+            "end": 320,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 126
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 127,
+                "end": 178
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 179,
+                "end": 320
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a90518255429933b8a204e1",
+              "url": "https://en.wikipedia.org/wiki/Robert_Caesar_Childers",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.0315136476426799
+          },
+          {
+            "evidence_id": "E8",
+            "chunk_id": "5d781dd3-c117-594d-be5e-0d8b5cf65844",
+            "document_id": "f14f1977-1aba-5819-b2fa-ccad921841f5",
+            "revision_id": "06659446-a661-5c8d-bc51-e19bbf7ff7e0",
+            "strategy": "a",
+            "text": "Mary Alden Osgood Childers, MBE (14 December 1875 – 1 January 1964) was an American-born Irish writer and Irish nationalist. She was the daughter of Dr Hamilton Osgood and Margaret Cushing Osgood of Beacon Hill, Boston, Massachusetts. Her older sister was Gretchen Osgood Warren. Molly married the writer and Irish nationalist, Robert Erskine Childers. Their son, Erskine Hamilton Childers, became the fourth President of Ireland.",
+            "title": "Molly Childers",
+            "start": 0,
+            "end": 430,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 124
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 125,
+                "end": 234
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 235,
+                "end": 279
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 280,
+                "end": 352
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 353,
+                "end": 430
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a90518255429933b8a204e1",
+              "url": "https://en.wikipedia.org/wiki/Molly_Childers",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03131881575727918
+          },
+          {
+            "evidence_id": "E7",
+            "chunk_id": "f48a9784-503a-59b3-88a9-985edff0fc97",
+            "document_id": "86d6a2b8-3f2a-5822-a70a-67b38a8349c3",
+            "revision_id": "1d350faf-9c02-56c6-bbad-baf591cfc57a",
+            "strategy": "a",
+            "text": "Robert Childers Barton (4 March 1881 – 10 August 1975) was an Irish nationalist, politician and farmer who participated in the negotiations leading up to the signature of the Anglo-Irish Treaty. His father was Charles William Barton and his mother was Agnes Childers. His wife was Rachel Warren of Boston, daughter of Fiske Warren. His double first cousin and close friend was Robert Erskine Childers.",
+            "title": "Robert Barton",
+            "start": 0,
+            "end": 401,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 194
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 195,
+                "end": 267
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 268,
+                "end": 331
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 332,
+                "end": 401
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a90518255429933b8a204e1",
+              "url": "https://en.wikipedia.org/wiki/Robert_Barton",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.030776515151515152
+          },
+          {
+            "evidence_id": "E4",
+            "chunk_id": "d64ab3c4-be2c-5560-817e-ea30be0f2b7e",
+            "document_id": "9ecc092a-2574-54f5-9280-507bd470ac6e",
+            "revision_id": "021f18a0-59d3-5da2-a5a6-727be3ad4f7e",
+            "strategy": "a",
+            "text": "The Riddle of the Sands: A Record of Secret Service is a 1903 novel by Erskine Childers. The book, which enjoyed immense popularity in the years before World War I, is an early example of the espionage novel and was extremely influential in the genre of spy fiction. It has been made into feature-length films for both cinema and television.",
+            "title": "The Riddle of the Sands",
+            "start": 0,
+            "end": 341,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 88
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 89,
+                "end": 266
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 267,
+                "end": 341
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a90518255429933b8a204e1",
+              "url": "https://en.wikipedia.org/wiki/The_Riddle_of_the_Sands",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.030309988518943745
+          },
+          {
+            "evidence_id": "E6",
+            "chunk_id": "c62280b9-0091-5a7d-83e8-2e5b6ad3ecd0",
+            "document_id": "b2db8c77-22c2-5c5f-91cd-ba5562281681",
+            "revision_id": "a54c5255-6725-5a32-a777-e2c276ad1644",
+            "strategy": "a",
+            "text": "Chester Erskine (November 29, 1905 – April 7, 1986) was a Hollywood and Broadway director, writer, and producer.",
+            "title": "Chester Erskine",
+            "start": 0,
+            "end": 112,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 112
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ab82f225542992aa3b8c8aa",
+              "url": "https://en.wikipedia.org/wiki/Chester_Erskine",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.02964426877470356
+          },
+          {
+            "evidence_id": "E9",
+            "chunk_id": "ce1428db-79a8-5623-bf9e-f919bf761cbc",
+            "document_id": "35ca531a-7fa9-594f-ad80-7f77eb2c1a35",
+            "revision_id": "3dcb13cb-15c7-5f68-947f-b905151b5056",
+            "strategy": "a",
+            "text": "Robert Edric (born 14 April 1956) is the pseudonym of Gary Edric Armitage, a British novelist born in Sheffield. Nick Rennison has suggested that Edric might be \"the finest and most adventurous writer of historical fiction of his generation\".",
+            "title": "Robert Edric",
+            "start": 0,
+            "end": 242,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 112
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 113,
+                "end": 242
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ae23adc5542992decbdcc8f",
+              "url": "https://en.wikipedia.org/wiki/Robert_Edric",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.027364110201042444
+          }
+        ],
+        "round": 2,
+        "tool_call_id": "call_j1SEQkgNrdSZlJMIDnWsRP16",
+        "executed": true,
+        "follow_up": {
+          "evidence_id": "E1",
+          "entity": "Robert Erskine Childers"
+        },
+        "requested_query": "England Robert Erskine Childers born England writer",
+        "query_adjusted": false
+      }
+    ],
+    "workflow": "bounded_tools_v1",
+    "execution": {
+      "planning_rounds": 2,
+      "retrieval_rounds": 2,
+      "tool_calls": 2,
+      "searches": 2,
+      "llm_calls": 3,
+      "embedding_calls": 2,
+      "total_provider_calls": 5,
+      "stop_reason": "retrieval_limit",
+      "limits": {
+        "retrieval_rounds": 2,
+        "searches": 3,
+        "llm_calls": 3,
+        "embedding_calls": 3,
+        "total_provider_calls": 6
+      }
+    },
+    "configuration": {
+      "strategy": "a",
+      "profile": "1a8846753a25",
+      "embedding_model": "text-embedding-3-small",
+      "embedding_dimensions": 384,
+      "generation_model": "gpt-5.4-mini-2026-03-17",
+      "prompt_version": "bounded_tools_quote_ids_v1"
+    },
+    "usage": {
+      "planning": [
+        {
+          "input_tokens": 524,
+          "output_tokens": 35,
+          "estimated_cost_usd": 0.0005505,
+          "model": "gpt-5.4-mini-2026-03-17"
+        },
+        {
+          "input_tokens": 1354,
+          "output_tokens": 47,
+          "estimated_cost_usd": 0.001227,
+          "model": "gpt-5.4-mini-2026-03-17"
+        }
+      ],
+      "generation": {
+        "input_tokens": 3352,
+        "output_tokens": 98,
+        "estimated_cost_usd": 0.002955,
+        "model": "gpt-5.4-mini-2026-03-17"
+      },
+      "embeddings": [
+        {
+          "model": "text-embedding-3-small",
+          "input_tokens": 13,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 2.6e-07
+        },
+        {
+          "model": "text-embedding-3-small",
+          "input_tokens": 10,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 2.0000000000000002e-07
+        }
+      ],
+      "estimated_model_cost_usd": 0.004732500000000001,
+      "estimated_total_cost_usd": 0.0047329600000000005
+    },
+    "latency_ms": 7173
+  },
+  "error": null,
+  "elapsed_ms": 7173,
+  "ledger_after": {
+    "calls": 560,
+    "reserved_usd": 1.5111033,
+    "estimated_actual_usd": 0.50137755,
+    "input_tokens": 7305935,
+    "output_tokens": 12063
+  }
+}

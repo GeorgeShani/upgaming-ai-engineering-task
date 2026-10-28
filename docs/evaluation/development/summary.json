@@ -1,0 +1,176 @@
+{
+  "identity": "9b288d4bdc562919d1a7e1a78271d590453a5fd7c27f4c218bd391b948f0d07f",
+  "split": "development",
+  "expected_attempts": 16,
+  "recorded_attempts": 16,
+  "strategies": {
+    "a": {
+      "attempts": 8,
+      "successes": 8,
+      "errors": 0,
+      "status_accuracy": 1.0,
+      "supported_task_checks": 6,
+      "supported_task_rate": 0.75,
+      "retrieval_labelled_cases": 7,
+      "retrieval_initial": {
+        "recall_at_5": 0.8571428571428571,
+        "recall_at_10": 0.8571428571428571,
+        "mrr_at_10": 1.0
+      },
+      "retrieval_aggregate": {
+        "recall_at_5": 0.9285714285714286,
+        "recall_at_10": 0.9285714285714286,
+        "mrr_at_10": 0.9285714285714286
+      },
+      "multi_source_cases": 5,
+      "all_sources_retrieved": 0.8,
+      "all_sources_in_context": 0.8,
+      "all_sources_cited": 0.8,
+      "short_reference_cases": 6,
+      "answer_full": {
+        "exact_match": 0.0,
+        "token_f1": 0.19576719576719573
+      },
+      "answer_last_claim": {
+        "exact_match": 0.0,
+        "token_f1": 0.24136321195144725
+      },
+      "all_expected_facts": 0.7142857142857143,
+      "citation_counts": {
+        "total": 13,
+        "valid": 13,
+        "label_aligned": 13
+      },
+      "citation_validity": 1.0,
+      "labelled_citation_precision": 1.0,
+      "status_confusion": [
+        {
+          "expected": "answered",
+          "predicted": "answered",
+          "count": 6
+        },
+        {
+          "expected": "conflicting_evidence",
+          "predicted": "conflicting_evidence",
+          "count": 1
+        },
+        {
+          "expected": "insufficient_evidence",
+          "predicted": "insufficient_evidence",
+          "count": 1
+        }
+      ],
+      "detection": {
+        "insufficient_evidence": {
+          "true_positive": 1,
+          "expected": 1,
+          "predicted": 1,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "conflicting_evidence": {
+          "true_positive": 1,
+          "expected": 1,
+          "predicted": 1,
+          "precision": 1.0,
+          "recall": 1.0
+        }
+      },
+      "latency": {
+        "measured_attempts": 8,
+        "median_ms": 5322.0,
+        "p95_ms": 8628.499999999998
+      },
+      "known_estimated_cost_usd": 0.04405243,
+      "reserved_cost_usd": 0.15601243,
+      "input_tokens": 50252,
+      "output_tokens": 1448,
+      "provider_calls": 37,
+      "embedding_cache_hits": 4
+    },
+    "b": {
+      "attempts": 8,
+      "successes": 7,
+      "errors": 1,
+      "status_accuracy": 0.875,
+      "supported_task_checks": 5,
+      "supported_task_rate": 0.625,
+      "retrieval_labelled_cases": 7,
+      "retrieval_initial": {
+        "recall_at_5": 0.7142857142857143,
+        "recall_at_10": 0.7142857142857143,
+        "mrr_at_10": 0.8571428571428571
+      },
+      "retrieval_aggregate": {
+        "recall_at_5": 0.7857142857142857,
+        "recall_at_10": 0.7857142857142857,
+        "mrr_at_10": 0.7857142857142857
+      },
+      "multi_source_cases": 5,
+      "all_sources_retrieved": 0.6,
+      "all_sources_in_context": 0.6,
+      "all_sources_cited": 0.6,
+      "short_reference_cases": 6,
+      "answer_full": {
+        "exact_match": 0.0,
+        "token_f1": 0.24915824915824913
+      },
+      "answer_last_claim": {
+        "exact_match": 0.0,
+        "token_f1": 0.3318394024276377
+      },
+      "all_expected_facts": 0.7142857142857143,
+      "citation_counts": {
+        "total": 10,
+        "valid": 10,
+        "label_aligned": 10
+      },
+      "citation_validity": 1.0,
+      "labelled_citation_precision": 1.0,
+      "status_confusion": [
+        {
+          "expected": "answered",
+          "predicted": "answered",
+          "count": 6
+        },
+        {
+          "expected": "conflicting_evidence",
+          "predicted": "error",
+          "count": 1
+        },
+        {
+          "expected": "insufficient_evidence",
+          "predicted": "insufficient_evidence",
+          "count": 1
+        }
+      ],
+      "detection": {
+        "insufficient_evidence": {
+          "true_positive": 1,
+          "expected": 1,
+          "predicted": 1,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "conflicting_evidence": {
+          "true_positive": 0,
+          "expected": 1,
+          "predicted": 0,
+          "precision": null,
+          "recall": 0.0
+        }
+      },
+      "latency": {
+        "measured_attempts": 8,
+        "median_ms": 5080.0,
+        "p95_ms": 6091.849999999999
+      },
+      "known_estimated_cost_usd": 0.04223703,
+      "reserved_cost_usd": 0.15419703,
+      "input_tokens": 48310,
+      "output_tokens": 1365,
+      "provider_calls": 37,
+      "embedding_cache_hits": 1
+    }
+  }
+}

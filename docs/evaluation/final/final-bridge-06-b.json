@@ -1,0 +1,1424 @@
+{
+  "case_id": "final-bridge-06",
+  "strategy": "b",
+  "question": "The arena where the Lewiston Maineiacs played their home games can seat how many people?",
+  "started_at": "2026-10-28T07:00:50.005823+00:00",
+  "ledger_before": {
+    "calls": 437,
+    "reserved_usd": 0.99626512,
+    "estimated_actual_usd": 0.35450287,
+    "input_tokens": 7135268,
+    "output_tokens": 7778
+  },
+  "result": {
+    "status": "answered",
+    "claims": [
+      {
+        "text": "The Androscoggin Bank Colisée can seat 3,677 people.",
+        "citations": [
+          {
+            "evidence_id": "E1",
+            "quote": "The Androscoggin Bank Colisée (formerly Central Maine Civic Center and Lewiston Colisee) is a 4,000 capacity (3,677 seated) multi-purpose arena, in Lewiston, Maine, that opened in 1958. In 1965 it was the location of the World Heavyweight Title fight during which one of the most famous sports photographs of the century was taken of Muhammed Ali standing over Sonny Liston."
+          }
+        ]
+      }
+    ],
+    "conflicting_claims": [],
+    "answer": "The Androscoggin Bank Colisée can seat 3,677 people. [E1]",
+    "evidence": [
+      {
+        "evidence_id": "E2",
+        "chunk_id": "f8634424-38ce-521e-a11d-8a19c58dcd3f",
+        "document_id": "9ed3dad6-f4fd-5098-9e09-008a5be5a0c0",
+        "revision_id": "23d86605-099e-5559-b085-0b2ff70ba4f0",
+        "strategy": "b",
+        "text": "The Lewiston Maineiacs were a junior ice hockey team of the Quebec Major Junior Hockey League based in Lewiston, Maine. The team played its home games at the Androscoggin Bank Colisée. They were the second QMJHL team in the United States, and the only one to play a full season. They won the President's Cup in 2007.",
+        "title": "Lewiston Maineiacs",
+        "start": 0,
+        "end": 316,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 119
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 120,
+            "end": 184
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 185,
+            "end": 278
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 279,
+            "end": 316
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "validation",
+          "record_id": "5a87ab905542996e4f3088c1",
+          "url": "https://en.wikipedia.org/wiki/Lewiston_Maineiacs",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.03252247488101534
+      },
+      {
+        "evidence_id": "E1",
+        "chunk_id": "86749b87-3013-5827-be6d-a85d19e8c550",
+        "document_id": "59035b4e-3864-5b2b-a1fb-88cfd55c5a05",
+        "revision_id": "b44638c8-5cba-5a5b-b130-80a8c7b6e18a",
+        "strategy": "b",
+        "text": "The Androscoggin Bank Colisée (formerly Central Maine Civic Center and Lewiston Colisee) is a 4,000 capacity (3,677 seated) multi-purpose arena, in Lewiston, Maine, that opened in 1958. In 1965 it was the location of the World Heavyweight Title fight during which one of the most famous sports photographs of the century was taken of Muhammed Ali standing over Sonny Liston.",
+        "title": "Androscoggin Bank Colisée",
+        "start": 0,
+        "end": 374,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 185
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 186,
+            "end": 374
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "validation",
+          "record_id": "5a87ab905542996e4f3088c1",
+          "url": "https://en.wikipedia.org/wiki/Androscoggin_Bank_Colis%C3%A9e",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.03252247488101534
+      },
+      {
+        "evidence_id": "E5",
+        "chunk_id": "377d91fb-b899-5718-bb58-0cc91292f625",
+        "document_id": "9cd59ad0-e5eb-5599-a576-185cabe0bff6",
+        "revision_id": "93303760-b0d3-5c83-ba1e-8039585eb6cd",
+        "strategy": "b",
+        "text": "The Videotron Centre (French: \"Centre Vidéotron\") is an indoor arena in Quebec City, Quebec, Canada. The 18,259-seat arena replaced Colisée Pepsi as Quebec City's primary venue for indoor events. The new arena is primarily used for ice hockey, serving as the home area of the Quebec Remparts of the QMJHL and has been prospected as a venue for a new or re-located National Hockey League team in Quebec City, and as part of a Winter Olympic Games bid. The building opened on September 8, 2015. It is now the seventh-largest indoor arena in Canada.",
+        "title": "Videotron Centre",
+        "start": 0,
+        "end": 546,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 100
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 101,
+            "end": 195
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 196,
+            "end": 450
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 451,
+            "end": 492
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 493,
+            "end": 546
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a7d52655542990b8f50397b",
+          "url": "https://en.wikipedia.org/wiki/Videotron_Centre",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.015384615384615385
+      },
+      {
+        "evidence_id": "E7",
+        "chunk_id": "203feccb-89c2-56f3-8d2d-95d60483793c",
+        "document_id": "47dac91b-340e-5ac9-9433-2800704f6222",
+        "revision_id": "d63a991e-bca3-5d56-8afb-f3d5a56fd0af",
+        "strategy": "b",
+        "text": "Morse Field at Harold Alfond Sports Stadium is a 10,000-seat multi-purpose stadium in Orono, Maine. The stadium opened as Alumni Field in 1947 and underwent extensive renovations from 1996 to 1998. It is home to the University of Maine Black Bears football team. The wood and steel grandstands, built in the 1940s, were condemned and demolished in 1996, replaced with the current east grandstand, along with a temporary structure on the west side, adjacent to Alfond Arena. The current west grandstand, lights, press and luxury levels, as well as concessions and restroom amenities were completed prior to the 1998 season. The stadium was rededicated to Harold Alfond, a longtime Maine booster, at Maine's first home night game on September 12, 1998, a 52-28 win over New Hampshire in the Battle for the Brice-Cowell Musket. The field is named for Phillip and Susan Morse, who donated the lights, original Astroturf and scoreboard. In the summer of 2008, new FieldTurf was installed to replace the old AstroTurf.",
+        "title": "Alfond Stadium (University of Maine)",
+        "start": 0,
+        "end": 1012,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 99
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 100,
+            "end": 197
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 198,
+            "end": 262
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 263,
+            "end": 473
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 474,
+            "end": 622
+          },
+          {
+            "kind": "sentence",
+            "number": 5,
+            "start": 623,
+            "end": 824
+          },
+          {
+            "kind": "sentence",
+            "number": 6,
+            "start": 825,
+            "end": 931
+          },
+          {
+            "kind": "sentence",
+            "number": 7,
+            "start": 932,
+            "end": 1012
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a888a8a5542997e5c09a603",
+          "url": "https://en.wikipedia.org/wiki/Alfond_Stadium_%28University_of_Maine%29",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.015625
+      },
+      {
+        "evidence_id": "E3",
+        "chunk_id": "7b0c72c5-4ef2-5ba8-bacb-312646fa7db8",
+        "document_id": "407b6627-4e3d-5175-a84a-f8b9f754d54c",
+        "revision_id": "7580144a-9c70-51eb-b8b4-8316fb502888",
+        "strategy": "b",
+        "text": "The Cedar Rapids Ice Arena is a 3,850-seat multipurpose arena in Cedar Rapids, Iowa, located adjacent to Veterans Memorial Stadium. The arena opened on January 8, 2000, and is owned by the city of Cedar Rapids. It is home to the Cedar Rapids RoughRiders of the United States Hockey League as well as several local youth hockey teams. The University of Iowa Hawkeyes club hockey team plays some of their home games at the facility. The arena contains separate sheets of ice for ice hockey games and for public and figure ice skating.",
+        "title": "Cedar Rapids Ice Arena",
+        "start": 0,
+        "end": 532,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 131
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 132,
+            "end": 210
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 211,
+            "end": 333
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 334,
+            "end": 430
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 431,
+            "end": 532
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a7d52655542990b8f50397b",
+          "url": "https://en.wikipedia.org/wiki/Cedar_Rapids_Ice_Arena",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.02946912242686891
+      },
+      {
+        "evidence_id": "E9",
+        "chunk_id": "d4785159-7c78-5c56-8a32-cd77f0d11ad2",
+        "document_id": "c95e2317-30cf-58af-b3b4-b7f721212a89",
+        "revision_id": "14ccfce5-b343-5d01-999c-cf9fade00093",
+        "strategy": "b",
+        "text": "Bengal Field is an outdoor athletic stadium in the western United States, in Lewiston, Idaho. Opened in 1934 as a multi-sport athletic field, it is currently the football stadium for Lewiston High School, located a few blocks to the northwest. The natural grass field runs conventionally north-south, with the main grandstand on the west sideline. The elevation of the field is approximately 860 ft above sea level.",
+        "title": "Bengal Field",
+        "start": 0,
+        "end": 415,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 93
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 94,
+            "end": 243
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 244,
+            "end": 347
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 348,
+            "end": 415
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5ab27447554299449642c8ac",
+          "url": "https://en.wikipedia.org/wiki/Bengal_Field",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.024809741248097414
+      },
+      {
+        "evidence_id": "E10",
+        "chunk_id": "30585cf5-374c-5532-8821-c1d622a81778",
+        "document_id": "a2565b49-11b9-5e63-aab9-ebb9193d45ee",
+        "revision_id": "2518b0c0-65b4-516c-8a2c-03193c5a3cfb",
+        "strategy": "b",
+        "text": "Merrill Auditorium is a 1,900-seat auditorium located in Portland, Maine, United States. Originally known as Portland City Hall Auditorium, it is located in the eastern section of Portland City Hall. Organizations such as Portland Ovations and the Portland Symphony Orchestra use the auditorium as a primary performance space. PortTIX is the official box office of the Merrill Auditorium.",
+        "title": "Merrill Auditorium",
+        "start": 0,
+        "end": 388,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 88
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 89,
+            "end": 199
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 200,
+            "end": 326
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 327,
+            "end": 388
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a7c62dc55429907fabeef78",
+          "url": "https://en.wikipedia.org/wiki/Merrill_Auditorium",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.015873015873015872
+      },
+      {
+        "evidence_id": "E4",
+        "chunk_id": "60fdcd0d-f7c4-5810-88cf-375af2cd0f0e",
+        "document_id": "4acbe904-62c2-542e-8b74-d1c803fc889b",
+        "revision_id": "d4b3ffdf-69c0-56fd-a5c6-9e003fd488a0",
+        "strategy": "b",
+        "text": "Žalgirio Arena is a multi-purpose indoor arena in the New Town of Kaunas, Lithuania. The arena is located on an island of the Nemunas River. It is the largest indoor arena in the Baltics. The arena's maximum possible seating capacity for basketball games is 15,552, and 20,000 spectators for concerts (when the stage is in the middle, and 17,000 when stage is in the side of the arena). The Žalgiris Arena replaced the Kaunas Sports Hall as a major venue in the city.",
+        "title": "Žalgiris Arena",
+        "start": 0,
+        "end": 467,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 84
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 85,
+            "end": 140
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 141,
+            "end": 187
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 188,
+            "end": 386
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 387,
+            "end": 467
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a8037815542996402f6a482",
+          "url": "https://en.wikipedia.org/wiki/%C5%BDalgiris_Arena",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.02854251012145749
+      }
+    ],
+    "search_trace": [
+      {
+        "query": "Lewiston Maineiacs home arena seating capacity",
+        "strategy": "b",
+        "profile": "1a8846753a25",
+        "embedding_usage": {
+          "model": "text-embedding-3-small",
+          "input_tokens": 10,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 2.0000000000000002e-07
+        },
+        "document_ranking": [
+          "59035b4e-3864-5b2b-a1fb-88cfd55c5a05",
+          "9ed3dad6-f4fd-5098-9e09-008a5be5a0c0",
+          "407b6627-4e3d-5175-a84a-f8b9f754d54c",
+          "4acbe904-62c2-542e-8b74-d1c803fc889b",
+          "9cd59ad0-e5eb-5599-a576-185cabe0bff6",
+          "bb14e2ec-7076-5ca5-9f4a-9342b26d6021",
+          "47dac91b-340e-5ac9-9433-2800704f6222",
+          "5be449c5-4fdb-5714-bfa9-19ea361d697f",
+          "f2ba7198-36c4-5460-8cdb-738bd0f5fdc9",
+          "1414c410-33fa-5ad5-b2be-794fa98576bd"
+        ],
+        "candidate_counts": {
+          "dense": 30,
+          "bm25": 30,
+          "active_dense": 30,
+          "active_bm25": 30
+        },
+        "evidence": [
+          {
+            "evidence_id": "E1",
+            "chunk_id": "86749b87-3013-5827-be6d-a85d19e8c550",
+            "document_id": "59035b4e-3864-5b2b-a1fb-88cfd55c5a05",
+            "revision_id": "b44638c8-5cba-5a5b-b130-80a8c7b6e18a",
+            "strategy": "b",
+            "text": "The Androscoggin Bank Colisée (formerly Central Maine Civic Center and Lewiston Colisee) is a 4,000 capacity (3,677 seated) multi-purpose arena, in Lewiston, Maine, that opened in 1958. In 1965 it was the location of the World Heavyweight Title fight during which one of the most famous sports photographs of the century was taken of Muhammed Ali standing over Sonny Liston.",
+            "title": "Androscoggin Bank Colisée",
+            "start": 0,
+            "end": 374,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 185
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 186,
+                "end": 374
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5a87ab905542996e4f3088c1",
+              "url": "https://en.wikipedia.org/wiki/Androscoggin_Bank_Colis%C3%A9e",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03252247488101534
+          },
+          {
+            "evidence_id": "E2",
+            "chunk_id": "f8634424-38ce-521e-a11d-8a19c58dcd3f",
+            "document_id": "9ed3dad6-f4fd-5098-9e09-008a5be5a0c0",
+            "revision_id": "23d86605-099e-5559-b085-0b2ff70ba4f0",
+            "strategy": "b",
+            "text": "The Lewiston Maineiacs were a junior ice hockey team of the Quebec Major Junior Hockey League based in Lewiston, Maine. The team played its home games at the Androscoggin Bank Colisée. They were the second QMJHL team in the United States, and the only one to play a full season. They won the President's Cup in 2007.",
+            "title": "Lewiston Maineiacs",
+            "start": 0,
+            "end": 316,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 119
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 120,
+                "end": 184
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 185,
+                "end": 278
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 279,
+                "end": 316
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5a87ab905542996e4f3088c1",
+              "url": "https://en.wikipedia.org/wiki/Lewiston_Maineiacs",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03252247488101534
+          },
+          {
+            "evidence_id": "E3",
+            "chunk_id": "7b0c72c5-4ef2-5ba8-bacb-312646fa7db8",
+            "document_id": "407b6627-4e3d-5175-a84a-f8b9f754d54c",
+            "revision_id": "7580144a-9c70-51eb-b8b4-8316fb502888",
+            "strategy": "b",
+            "text": "The Cedar Rapids Ice Arena is a 3,850-seat multipurpose arena in Cedar Rapids, Iowa, located adjacent to Veterans Memorial Stadium. The arena opened on January 8, 2000, and is owned by the city of Cedar Rapids. It is home to the Cedar Rapids RoughRiders of the United States Hockey League as well as several local youth hockey teams. The University of Iowa Hawkeyes club hockey team plays some of their home games at the facility. The arena contains separate sheets of ice for ice hockey games and for public and figure ice skating.",
+            "title": "Cedar Rapids Ice Arena",
+            "start": 0,
+            "end": 532,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 131
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 132,
+                "end": 210
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 211,
+                "end": 333
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 334,
+                "end": 430
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 431,
+                "end": 532
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a7d52655542990b8f50397b",
+              "url": "https://en.wikipedia.org/wiki/Cedar_Rapids_Ice_Arena",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.02946912242686891
+          },
+          {
+            "evidence_id": "E4",
+            "chunk_id": "60fdcd0d-f7c4-5810-88cf-375af2cd0f0e",
+            "document_id": "4acbe904-62c2-542e-8b74-d1c803fc889b",
+            "revision_id": "d4b3ffdf-69c0-56fd-a5c6-9e003fd488a0",
+            "strategy": "b",
+            "text": "Žalgirio Arena is a multi-purpose indoor arena in the New Town of Kaunas, Lithuania. The arena is located on an island of the Nemunas River. It is the largest indoor arena in the Baltics. The arena's maximum possible seating capacity for basketball games is 15,552, and 20,000 spectators for concerts (when the stage is in the middle, and 17,000 when stage is in the side of the arena). The Žalgiris Arena replaced the Kaunas Sports Hall as a major venue in the city.",
+            "title": "Žalgiris Arena",
+            "start": 0,
+            "end": 467,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 84
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 85,
+                "end": 140
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 141,
+                "end": 187
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 188,
+                "end": 386
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 387,
+                "end": 467
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a8037815542996402f6a482",
+              "url": "https://en.wikipedia.org/wiki/%C5%BDalgiris_Arena",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.02854251012145749
+          },
+          {
+            "evidence_id": "E5",
+            "chunk_id": "377d91fb-b899-5718-bb58-0cc91292f625",
+            "document_id": "9cd59ad0-e5eb-5599-a576-185cabe0bff6",
+            "revision_id": "93303760-b0d3-5c83-ba1e-8039585eb6cd",
+            "strategy": "b",
+            "text": "The Videotron Centre (French: \"Centre Vidéotron\") is an indoor arena in Quebec City, Quebec, Canada. The 18,259-seat arena replaced Colisée Pepsi as Quebec City's primary venue for indoor events. The new arena is primarily used for ice hockey, serving as the home area of the Quebec Remparts of the QMJHL and has been prospected as a venue for a new or re-located National Hockey League team in Quebec City, and as part of a Winter Olympic Games bid. The building opened on September 8, 2015. It is now the seventh-largest indoor arena in Canada.",
+            "title": "Videotron Centre",
+            "start": 0,
+            "end": 546,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 100
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 101,
+                "end": 195
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 196,
+                "end": 450
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 451,
+                "end": 492
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 493,
+                "end": 546
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a7d52655542990b8f50397b",
+              "url": "https://en.wikipedia.org/wiki/Videotron_Centre",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.028438886647841874
+          },
+          {
+            "evidence_id": "E6",
+            "chunk_id": "b717b55d-e21b-5d4a-8399-e0cfb3cd1c8f",
+            "document_id": "bb14e2ec-7076-5ca5-9f4a-9342b26d6021",
+            "revision_id": "9dcea839-feb8-5750-a3cb-06e5471d06d0",
+            "strategy": "b",
+            "text": "The Gersten Pavilion is a 3900-seat multi-purpose arena in Los Angeles, California. It is the home of the Loyola Marymount University Lions. It was built in 1981. It was also the part-time practice home for the Los Angeles Lakers. It was the site for the weightlifting competition for the 1984 Summer Olympics. On March 4, 1990, LMU star Hank Gathers died during a West Coast Conference men's basketball tournament game from cardiomyopathy. The tourney was promptly suspended and LMU was awarded the NCAA bid based on their regular season title. The facility also hosted the WCC tournament in 1997. The arena is known among LMU alumni as \"Hank's House\" in honor of Gathers.",
+            "title": "Gersten Pavilion",
+            "start": 0,
+            "end": 673,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 83
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 84,
+                "end": 140
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 141,
+                "end": 162
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 163,
+                "end": 230
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 231,
+                "end": 310
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 311,
+                "end": 440
+              },
+              {
+                "kind": "sentence",
+                "number": 6,
+                "start": 441,
+                "end": 545
+              },
+              {
+                "kind": "sentence",
+                "number": 7,
+                "start": 546,
+                "end": 598
+              },
+              {
+                "kind": "sentence",
+                "number": 8,
+                "start": 599,
+                "end": 673
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5abaefb355429939ce03dd6c",
+              "url": "https://en.wikipedia.org/wiki/Gersten_Pavilion",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.023709315375982042
+          },
+          {
+            "evidence_id": "E7",
+            "chunk_id": "203feccb-89c2-56f3-8d2d-95d60483793c",
+            "document_id": "47dac91b-340e-5ac9-9433-2800704f6222",
+            "revision_id": "d63a991e-bca3-5d56-8afb-f3d5a56fd0af",
+            "strategy": "b",
+            "text": "Morse Field at Harold Alfond Sports Stadium is a 10,000-seat multi-purpose stadium in Orono, Maine. The stadium opened as Alumni Field in 1947 and underwent extensive renovations from 1996 to 1998. It is home to the University of Maine Black Bears football team. The wood and steel grandstands, built in the 1940s, were condemned and demolished in 1996, replaced with the current east grandstand, along with a temporary structure on the west side, adjacent to Alfond Arena. The current west grandstand, lights, press and luxury levels, as well as concessions and restroom amenities were completed prior to the 1998 season. The stadium was rededicated to Harold Alfond, a longtime Maine booster, at Maine's first home night game on September 12, 1998, a 52-28 win over New Hampshire in the Battle for the Brice-Cowell Musket. The field is named for Phillip and Susan Morse, who donated the lights, original Astroturf and scoreboard. In the summer of 2008, new FieldTurf was installed to replace the old AstroTurf.",
+            "title": "Alfond Stadium (University of Maine)",
+            "start": 0,
+            "end": 1012,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 99
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 100,
+                "end": 197
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 198,
+                "end": 262
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 263,
+                "end": 473
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 474,
+                "end": 622
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 623,
+                "end": 824
+              },
+              {
+                "kind": "sentence",
+                "number": 6,
+                "start": 825,
+                "end": 931
+              },
+              {
+                "kind": "sentence",
+                "number": 7,
+                "start": 932,
+                "end": 1012
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a888a8a5542997e5c09a603",
+              "url": "https://en.wikipedia.org/wiki/Alfond_Stadium_%28University_of_Maine%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015873015873015872
+          },
+          {
+            "evidence_id": "E8",
+            "chunk_id": "6225eb3f-19c6-5b00-8e67-809d86d070b8",
+            "document_id": "5be449c5-4fdb-5714-bfa9-19ea361d697f",
+            "revision_id": "90a705c7-491c-5822-87fe-866047620057",
+            "strategy": "b",
+            "text": "Galatasaray S.K., for sponsorship reasons Galatasaray Odeabank, is a professional basketball team based in the city of Istanbul in Turkey. It is a part of the Galatasaray Sports Club. The team competes in the Turkish Basketball Super League and EuroCup. Galatasaray plays its home matches in Abdi İpekçi Arena, which has a seating capacity for 12,270 spectators. The team has been crowned Turkish national champions five times so far.",
+            "title": "Galatasaray S.K. (men's basketball)",
+            "start": 0,
+            "end": 434,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 138
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 139,
+                "end": 183
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 184,
+                "end": 253
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 254,
+                "end": 362
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 363,
+                "end": 434
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a7147955542994082a3e754",
+              "url": "https://en.wikipedia.org/wiki/Galatasaray_S.K._%28men%27s_basketball%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015873015873015872
+          }
+        ],
+        "round": 1,
+        "tool_call_id": "call_4vP3R2DQZ2shVNZ4YE5drSYt",
+        "executed": true,
+        "follow_up": null,
+        "requested_query": "Lewiston Maineiacs home arena seating capacity",
+        "query_adjusted": false
+      },
+      {
+        "query": "Androscoggin Bank Colisée capacity seated Lewiston Maineiacs",
+        "strategy": "b",
+        "profile": "1a8846753a25",
+        "embedding_usage": {
+          "model": "text-embedding-3-small",
+          "input_tokens": 16,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 3.2e-07
+        },
+        "document_ranking": [
+          "59035b4e-3864-5b2b-a1fb-88cfd55c5a05",
+          "9ed3dad6-f4fd-5098-9e09-008a5be5a0c0",
+          "c95e2317-30cf-58af-b3b4-b7f721212a89",
+          "a2565b49-11b9-5e63-aab9-ebb9193d45ee",
+          "a8517b98-363b-5a9e-a138-eaf5ac9d9ed8",
+          "47dac91b-340e-5ac9-9433-2800704f6222",
+          "a2b30867-7692-5bc7-af40-c53399b5675f",
+          "9cd59ad0-e5eb-5599-a576-185cabe0bff6",
+          "1414c410-33fa-5ad5-b2be-794fa98576bd",
+          "891044fc-4298-53d8-92e5-8c097d6d8b58"
+        ],
+        "candidate_counts": {
+          "dense": 30,
+          "bm25": 30,
+          "active_dense": 30,
+          "active_bm25": 30
+        },
+        "evidence": [
+          {
+            "evidence_id": "E1",
+            "chunk_id": "86749b87-3013-5827-be6d-a85d19e8c550",
+            "document_id": "59035b4e-3864-5b2b-a1fb-88cfd55c5a05",
+            "revision_id": "b44638c8-5cba-5a5b-b130-80a8c7b6e18a",
+            "strategy": "b",
+            "text": "The Androscoggin Bank Colisée (formerly Central Maine Civic Center and Lewiston Colisee) is a 4,000 capacity (3,677 seated) multi-purpose arena, in Lewiston, Maine, that opened in 1958. In 1965 it was the location of the World Heavyweight Title fight during which one of the most famous sports photographs of the century was taken of Muhammed Ali standing over Sonny Liston.",
+            "title": "Androscoggin Bank Colisée",
+            "start": 0,
+            "end": 374,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 185
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 186,
+                "end": 374
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5a87ab905542996e4f3088c1",
+              "url": "https://en.wikipedia.org/wiki/Androscoggin_Bank_Colis%C3%A9e",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03252247488101534
+          },
+          {
+            "evidence_id": "E2",
+            "chunk_id": "f8634424-38ce-521e-a11d-8a19c58dcd3f",
+            "document_id": "9ed3dad6-f4fd-5098-9e09-008a5be5a0c0",
+            "revision_id": "23d86605-099e-5559-b085-0b2ff70ba4f0",
+            "strategy": "b",
+            "text": "The Lewiston Maineiacs were a junior ice hockey team of the Quebec Major Junior Hockey League based in Lewiston, Maine. The team played its home games at the Androscoggin Bank Colisée. They were the second QMJHL team in the United States, and the only one to play a full season. They won the President's Cup in 2007.",
+            "title": "Lewiston Maineiacs",
+            "start": 0,
+            "end": 316,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 119
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 120,
+                "end": 184
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 185,
+                "end": 278
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 279,
+                "end": 316
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5a87ab905542996e4f3088c1",
+              "url": "https://en.wikipedia.org/wiki/Lewiston_Maineiacs",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03252247488101534
+          },
+          {
+            "evidence_id": "E9",
+            "chunk_id": "d4785159-7c78-5c56-8a32-cd77f0d11ad2",
+            "document_id": "c95e2317-30cf-58af-b3b4-b7f721212a89",
+            "revision_id": "14ccfce5-b343-5d01-999c-cf9fade00093",
+            "strategy": "b",
+            "text": "Bengal Field is an outdoor athletic stadium in the western United States, in Lewiston, Idaho. Opened in 1934 as a multi-sport athletic field, it is currently the football stadium for Lewiston High School, located a few blocks to the northwest. The natural grass field runs conventionally north-south, with the main grandstand on the west sideline. The elevation of the field is approximately 860 ft above sea level.",
+            "title": "Bengal Field",
+            "start": 0,
+            "end": 415,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 93
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 94,
+                "end": 243
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 244,
+                "end": 347
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 348,
+                "end": 415
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ab27447554299449642c8ac",
+              "url": "https://en.wikipedia.org/wiki/Bengal_Field",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.024809741248097414
+          },
+          {
+            "evidence_id": "E10",
+            "chunk_id": "30585cf5-374c-5532-8821-c1d622a81778",
+            "document_id": "a2565b49-11b9-5e63-aab9-ebb9193d45ee",
+            "revision_id": "2518b0c0-65b4-516c-8a2c-03193c5a3cfb",
+            "strategy": "b",
+            "text": "Merrill Auditorium is a 1,900-seat auditorium located in Portland, Maine, United States. Originally known as Portland City Hall Auditorium, it is located in the eastern section of Portland City Hall. Organizations such as Portland Ovations and the Portland Symphony Orchestra use the auditorium as a primary performance space. PortTIX is the official box office of the Merrill Auditorium.",
+            "title": "Merrill Auditorium",
+            "start": 0,
+            "end": 388,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 88
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 89,
+                "end": 199
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 200,
+                "end": 326
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 327,
+                "end": 388
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a7c62dc55429907fabeef78",
+              "url": "https://en.wikipedia.org/wiki/Merrill_Auditorium",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015873015873015872
+          },
+          {
+            "evidence_id": "E11",
+            "chunk_id": "6b3f8c5c-f6aa-5320-b5c1-1e48ad9ab080",
+            "document_id": "a8517b98-363b-5a9e-a138-eaf5ac9d9ed8",
+            "revision_id": "e45b6403-803f-5378-a30e-7d49c663c3f9",
+            "strategy": "b",
+            "text": "State Route 196 (SR 196) is a state highway in the U.S. state of Maine. It connects Lewiston to Brunswick, following the Androscoggin River valley.",
+            "title": "Maine State Route 196",
+            "start": 0,
+            "end": 147,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 71
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 72,
+                "end": 147
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ab99152554299753720f836",
+              "url": "https://en.wikipedia.org/wiki/Maine_State_Route_196",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015873015873015872
+          },
+          {
+            "evidence_id": "E7",
+            "chunk_id": "203feccb-89c2-56f3-8d2d-95d60483793c",
+            "document_id": "47dac91b-340e-5ac9-9433-2800704f6222",
+            "revision_id": "d63a991e-bca3-5d56-8afb-f3d5a56fd0af",
+            "strategy": "b",
+            "text": "Morse Field at Harold Alfond Sports Stadium is a 10,000-seat multi-purpose stadium in Orono, Maine. The stadium opened as Alumni Field in 1947 and underwent extensive renovations from 1996 to 1998. It is home to the University of Maine Black Bears football team. The wood and steel grandstands, built in the 1940s, were condemned and demolished in 1996, replaced with the current east grandstand, along with a temporary structure on the west side, adjacent to Alfond Arena. The current west grandstand, lights, press and luxury levels, as well as concessions and restroom amenities were completed prior to the 1998 season. The stadium was rededicated to Harold Alfond, a longtime Maine booster, at Maine's first home night game on September 12, 1998, a 52-28 win over New Hampshire in the Battle for the Brice-Cowell Musket. The field is named for Phillip and Susan Morse, who donated the lights, original Astroturf and scoreboard. In the summer of 2008, new FieldTurf was installed to replace the old AstroTurf.",
+            "title": "Alfond Stadium (University of Maine)",
+            "start": 0,
+            "end": 1012,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 99
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 100,
+                "end": 197
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 198,
+                "end": 262
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 263,
+                "end": 473
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 474,
+                "end": 622
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 623,
+                "end": 824
+              },
+              {
+                "kind": "sentence",
+                "number": 6,
+                "start": 825,
+                "end": 931
+              },
+              {
+                "kind": "sentence",
+                "number": 7,
+                "start": 932,
+                "end": 1012
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a888a8a5542997e5c09a603",
+              "url": "https://en.wikipedia.org/wiki/Alfond_Stadium_%28University_of_Maine%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015625
+          },
+          {
+            "evidence_id": "E12",
+            "chunk_id": "6547043c-916c-5219-a9c7-40ec2af99eda",
+            "document_id": "a2b30867-7692-5bc7-af40-c53399b5675f",
+            "revision_id": "72aec0fb-bb45-5fab-b555-5b354d1c6cf7",
+            "strategy": "b",
+            "text": "The city of Portland, Maine, is the hub city of a metropolitan area in southern Maine, in the United States. The region is commonly known as Greater Portland or the Portland metropolitan area. For statistical purposes, the U.S. federal government defines three different representations of the Portland metropolitan area. The Portland–South Portland–Biddeford, Maine, metropolitan statistical area is a region consisting of three counties in Maine, anchored by the city of Portland and the smaller cities of South Portland and Biddeford. As of the 2010 census, the MSA had a population of 514,098. A larger combined statistical area (CSA), the Portland–Lewiston–South Portland combined statistical area, is defined as the combination of this metropolitan statistical area (MSA) with the adjacent Lewiston–Auburn MSA. The CSA comprises four counties in southern Maine. The Portland–South Portland metropolitan New England city and town area is defined on the basis of cities and towns rather than entire counties. It consists of most of Cumberland and York counties plus the town of Durham in Androscoggin County.",
+            "title": "Portland metropolitan area, Maine",
+            "start": 0,
+            "end": 1112,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 108
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 109,
+                "end": 192
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 193,
+                "end": 321
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 322,
+                "end": 537
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 538,
+                "end": 597
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 598,
+                "end": 816
+              },
+              {
+                "kind": "sentence",
+                "number": 6,
+                "start": 817,
+                "end": 867
+              },
+              {
+                "kind": "sentence",
+                "number": 7,
+                "start": 868,
+                "end": 1012
+              },
+              {
+                "kind": "sentence",
+                "number": 8,
+                "start": 1013,
+                "end": 1112
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ac3d7f6554299204fd21e9c",
+              "url": "https://en.wikipedia.org/wiki/Portland_metropolitan_area%2C_Maine",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015625
+          },
+          {
+            "evidence_id": "E5",
+            "chunk_id": "377d91fb-b899-5718-bb58-0cc91292f625",
+            "document_id": "9cd59ad0-e5eb-5599-a576-185cabe0bff6",
+            "revision_id": "93303760-b0d3-5c83-ba1e-8039585eb6cd",
+            "strategy": "b",
+            "text": "The Videotron Centre (French: \"Centre Vidéotron\") is an indoor arena in Quebec City, Quebec, Canada. The 18,259-seat arena replaced Colisée Pepsi as Quebec City's primary venue for indoor events. The new arena is primarily used for ice hockey, serving as the home area of the Quebec Remparts of the QMJHL and has been prospected as a venue for a new or re-located National Hockey League team in Quebec City, and as part of a Winter Olympic Games bid. The building opened on September 8, 2015. It is now the seventh-largest indoor arena in Canada.",
+            "title": "Videotron Centre",
+            "start": 0,
+            "end": 546,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 100
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 101,
+                "end": 195
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 196,
+                "end": 450
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 451,
+                "end": 492
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 493,
+                "end": 546
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a7d52655542990b8f50397b",
+              "url": "https://en.wikipedia.org/wiki/Videotron_Centre",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015384615384615385
+          }
+        ],
+        "round": 2,
+        "tool_call_id": "call_mQoeUBmX851IteScSgxVAXY7",
+        "executed": true,
+        "follow_up": {
+          "evidence_id": "E2",
+          "entity": "Androscoggin Bank Colisée"
+        },
+        "requested_query": "Androscoggin Bank Colisée capacity seated Lewiston Maineiacs",
+        "query_adjusted": false
+      }
+    ],
+    "workflow": "bounded_tools_v1",
+    "execution": {
+      "planning_rounds": 2,
+      "retrieval_rounds": 2,
+      "tool_calls": 2,
+      "searches": 2,
+      "llm_calls": 3,
+      "embedding_calls": 2,
+      "total_provider_calls": 5,
+      "stop_reason": "retrieval_limit",
+      "limits": {
+        "retrieval_rounds": 2,
+        "searches": 3,
+        "llm_calls": 3,
+        "embedding_calls": 3,
+        "total_provider_calls": 6
+      }
+    },
+    "configuration": {
+      "strategy": "b",
+      "profile": "1a8846753a25",
+      "embedding_model": "text-embedding-3-small",
+      "embedding_dimensions": 384,
+      "generation_model": "gpt-5.4-mini-2026-03-17",
+      "prompt_version": "bounded_tools_quote_ids_v1"
+    },
+    "usage": {
+      "planning": [
+        {
+          "input_tokens": 527,
+          "output_tokens": 32,
+          "estimated_cost_usd": 0.00053925,
+          "model": "gpt-5.4-mini-2026-03-17"
+        },
+        {
+          "input_tokens": 1716,
+          "output_tokens": 52,
+          "estimated_cost_usd": 0.001521,
+          "model": "gpt-5.4-mini-2026-03-17"
+        }
+      ],
+      "generation": {
+        "input_tokens": 4630,
+        "output_tokens": 59,
+        "estimated_cost_usd": 0.003738,
+        "model": "gpt-5.4-mini-2026-03-17"
+      },
+      "embeddings": [
+        {
+          "model": "text-embedding-3-small",
+          "input_tokens": 10,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 2.0000000000000002e-07
+        },
+        {
+          "model": "text-embedding-3-small",
+          "input_tokens": 16,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 3.2e-07
+        }
+      ],
+      "estimated_model_cost_usd": 0.00579825,
+      "estimated_total_cost_usd": 0.00579877
+    },
+    "latency_ms": 5128
+  },
+  "error": null,
+  "elapsed_ms": 5128,
+  "ledger_after": {
+    "calls": 442,
+    "reserved_usd": 1.01632964,
+    "estimated_actual_usd": 0.36030164,
+    "input_tokens": 7142167,
+    "output_tokens": 7921
+  }
+}

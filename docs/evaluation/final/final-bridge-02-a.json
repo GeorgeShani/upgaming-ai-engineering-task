@@ -1,0 +1,1350 @@
+{
+  "case_id": "final-bridge-02",
+  "strategy": "a",
+  "question": "What science fantasy young adult series, told in first person, has a set of companion books narrating the stories of enslaved worlds and alien species?",
+  "started_at": "2026-10-28T07:00:12.530319+00:00",
+  "ledger_before": {
+    "calls": 404,
+    "reserved_usd": 0.85927229,
+    "estimated_actual_usd": 0.31573979,
+    "input_tokens": 7091060,
+    "output_tokens": 6507
+  },
+  "result": {
+    "status": "answered",
+    "claims": [
+      {
+        "text": "The series is Animorphs.",
+        "citations": [
+          {
+            "evidence_id": "E1",
+            "quote": "Animorphs is a science fantasy series of young adult books written by Katherine Applegate and her husband Michael Grant, writing together under the name K. A. Applegate, and published by Scholastic. It is told in first person, with all six main characters taking turns narrating the books through their own perspectives. Horror, war, dehumanization, sanity, morality, innocence, leadership, freedom and growing up are the core themes of the series."
+          }
+        ]
+      },
+      {
+        "text": "Animorphs is told in first person.",
+        "citations": [
+          {
+            "evidence_id": "E1",
+            "quote": "It is told in first person, with all six main characters taking turns narrating the books through their own perspectives."
+          }
+        ]
+      },
+      {
+        "text": "It has companion books, including The Hork-Bajir Chronicles, which tells how the Yeerks enslaved the Hork-Bajir.",
+        "citations": [
+          {
+            "evidence_id": "E2",
+            "quote": "The Hork-Bajir Chronicles is the second companion book to the \"Animorphs\" series, written by K. A. Applegate. With respect to continuity within the series, it takes place before book #23, \"The Pretender\", although the events told in the story occur between the time of \"The Ellimist Chronicles\" and \"The Andalite Chronicles\". The book is introduced by Tobias, who flies to the valley of the free Hork-Bajir, where Jara Hamee tells him the story of how the Yeerks enslaved the Hork-Bajir, and how Aldrea, an Andalite, and her companion, Dak Hamee, a Hork-Bajir, tried to save their world from the invasion. Jara Hamee's story is narrated from the points of view of Aldrea, Dak Hamee, and Esplin 9466, alternating in similar fashion to the \"Megamorphs\" books."
+          },
+          {
+            "evidence_id": "E2",
+            "quote": "The book is introduced by Tobias, who flies to the valley of the free Hork-Bajir, where Jara Hamee tells him the story of how the Yeerks enslaved the Hork-Bajir, and how Aldrea, an Andalite, and her companion, Dak Hamee, a Hork-Bajir, tried to save their world from the invasion."
+          }
+        ]
+      }
+    ],
+    "conflicting_claims": [],
+    "answer": "The series is Animorphs. [E1] Animorphs is told in first person. [E1] It has companion books, including The Hork-Bajir Chronicles, which tells how the Yeerks enslaved the Hork-Bajir. [E2]",
+    "evidence": [
+      {
+        "evidence_id": "E2",
+        "chunk_id": "e01dbf96-aa3f-5fbe-8cc8-84353a9de721",
+        "document_id": "04a61d3d-e3e4-5e97-839c-8d7c06e45a93",
+        "revision_id": "ffa15c80-5ee3-5fec-a2fe-0d7d06411bf3",
+        "strategy": "a",
+        "text": "The Hork-Bajir Chronicles is the second companion book to the \"Animorphs\" series, written by K. A. Applegate. With respect to continuity within the series, it takes place before book #23, \"The Pretender\", although the events told in the story occur between the time of \"The Ellimist Chronicles\" and \"The Andalite Chronicles\". The book is introduced by Tobias, who flies to the valley of the free Hork-Bajir, where Jara Hamee tells him the story of how the Yeerks enslaved the Hork-Bajir, and how Aldrea, an Andalite, and her companion, Dak Hamee, a Hork-Bajir, tried to save their world from the invasion. Jara Hamee's story is narrated from the points of view of Aldrea, Dak Hamee, and Esplin 9466, alternating in similar fashion to the \"Megamorphs\" books.",
+        "title": "The Hork-Bajir Chronicles",
+        "start": 0,
+        "end": 757,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 109
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 110,
+            "end": 325
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 326,
+            "end": 605
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 606,
+            "end": 757
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "validation",
+          "record_id": "5a85ea095542994775f606a8",
+          "url": "https://en.wikipedia.org/wiki/The_Hork-Bajir_Chronicles",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.03200204813108039
+      },
+      {
+        "evidence_id": "E1",
+        "chunk_id": "ed5fbad8-892c-55d9-9359-54bf07eb1149",
+        "document_id": "b1b5fb0d-b548-5212-8998-79b0ea12d936",
+        "revision_id": "482b3ba9-58d3-5534-b958-0e63461917bd",
+        "strategy": "a",
+        "text": "Animorphs is a science fantasy series of young adult books written by Katherine Applegate and her husband Michael Grant, writing together under the name K. A. Applegate, and published by Scholastic. It is told in first person, with all six main characters taking turns narrating the books through their own perspectives. Horror, war, dehumanization, sanity, morality, innocence, leadership, freedom and growing up are the core themes of the series.",
+        "title": "Animorphs",
+        "start": 0,
+        "end": 448,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 198
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 199,
+            "end": 320
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 321,
+            "end": 448
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "validation",
+          "record_id": "5a85ea095542994775f606a8",
+          "url": "https://en.wikipedia.org/wiki/Animorphs",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.031544957774465976
+      },
+      {
+        "evidence_id": "E9",
+        "chunk_id": "cfb58f6c-35fc-5fd6-b75b-77bfa0f4c0c3",
+        "document_id": "6317c940-9a9e-540b-a1e6-a34d6d2c7446",
+        "revision_id": "89928e7d-9395-575f-b610-315088960f69",
+        "strategy": "a",
+        "text": "The Attack is the 26th book in the Animorphs series, written by K.A. Applegate. It has the distinction of being the last book in the series written by Applegate on a regular schedule; with \"The Separation\", the final two books in the regular series; \"The Answer\" and \"The Beginning\", two Megamorphs books; \"Elfangor's Secret\" and \"Back to Before\", and the chronicles; \"Visser\", and \"The Ellimist Chronicles\" being the only other Animorphs related books written by her after this was published. It is narrated by Jake.",
+        "title": "The Attack (novel)",
+        "start": 0,
+        "end": 517,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 79
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 80,
+            "end": 493
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 494,
+            "end": 517
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a848d2b5542992ef85e2426",
+          "url": "https://en.wikipedia.org/wiki/The_Attack_%28novel%29",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.031746031746031744
+      },
+      {
+        "evidence_id": "E3",
+        "chunk_id": "0b15aebc-aaca-5747-a379-9aebbb3cd910",
+        "document_id": "f012598e-2fca-508a-a0c5-041c2496b9d4",
+        "revision_id": "56762096-9405-5f54-a687-70a922323ffa",
+        "strategy": "a",
+        "text": "The Inheritance Cycle is a young adult tetralogy of high fantasy novels written by American author Christopher Paolini. Set in the fictional world of Alagaësia ( ), the novels focus on the adventures of a teenage boy named Eragon and his dragon, Saphira, as they struggle to overthrow the evil king Galbatorix. The series was originally intended to be a trilogy (named the \"Inheritance Trilogy\") until Paolini announced on October 30, 2007, while working on the third novel, that he believed the story was too complex to conclude in just three books.",
+        "title": "Inheritance Cycle",
+        "start": 0,
+        "end": 550,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 119
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 120,
+            "end": 310
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 311,
+            "end": 550
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5adc05f35542996e685252ac",
+          "url": "https://en.wikipedia.org/wiki/Inheritance_Cycle",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.028006267136701922
+      },
+      {
+        "evidence_id": "E10",
+        "chunk_id": "a2e26c4e-667f-5075-96f4-58e0c56b26ba",
+        "document_id": "c0b73937-bf3e-5408-9316-485bfa1fec23",
+        "revision_id": "52a8c05e-dff8-52cc-bfba-e39361be72ac",
+        "strategy": "a",
+        "text": "The Unknown is the 14th book in the Animorphs series, written by K.A. Applegate. It is narrated by Cassie. The front cover quote is, \"Never underestimate the power of a morph...\". All books after \"The Unknown\" were dedicated to Applegate's son, Jake, as well as her husband and co-writer, Michael.",
+        "title": "The Unknown (novel)",
+        "start": 0,
+        "end": 297,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 80
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 81,
+            "end": 106
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 107,
+            "end": 179
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 180,
+            "end": 297
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5ae4f14d5542990ba0bbb1a4",
+          "url": "https://en.wikipedia.org/wiki/The_Unknown_%28novel%29",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.031009615384615385
+      },
+      {
+        "evidence_id": "E4",
+        "chunk_id": "ef4efba6-b99b-5d47-b4da-86dcadf92348",
+        "document_id": "99786b9c-3f71-54a0-a10d-68692d848833",
+        "revision_id": "3d506cde-ea1a-5a2c-bb7f-a5e65866a481",
+        "strategy": "a",
+        "text": "The Sin Eater's Daughter is a young adult fantasy series written by Melinda Salisbury and published by Scholastic Press. The first book in the series, \"The Sin Eater’s Daughter\", was published on 24 February 2015 and marked Salisbury's first book in print. The second book in the series, \"The Sleeping Prince\", was published the following year along with a short story prequel, \"The King of Rats\". The third book in the series, \"The Scarecrow Queen\", was released in 2017. A fourth book, \"The Heart Collector\", was also published in 2017, it is a collection of 3 short stories from the same fictional universe, including the previously released \"The King of Rats\", as well as 2 new stories, \"The Heart Collector\" and \"Mully No-Hands\".",
+        "title": "The Sin Eater’s Daughter",
+        "start": 0,
+        "end": 734,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 120
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 121,
+            "end": 256
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 257,
+            "end": 397
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 398,
+            "end": 472
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 473,
+            "end": 734
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a84a4735542991dd0999d56",
+          "url": "https://en.wikipedia.org/wiki/The_Sin_Eater%E2%80%99s_Daughter",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.026973565905412694
+      },
+      {
+        "evidence_id": "E5",
+        "chunk_id": "16267964-7e83-587d-8856-4a09fef229d9",
+        "document_id": "4cf9d6df-76bb-5728-981e-8a40880c3cea",
+        "revision_id": "e7722bd7-7b77-54d4-9ef8-af8143824f72",
+        "strategy": "a",
+        "text": "Red Queen is a young adult fantasy novel written by American writer Victoria Aveyard. It was her first series and her first novel. It was published in February 2015. Its sequels are \"Glass Sword\" and \"King's Cage\". Red Queen won the 2015 Goodreads Choice Award for Debut Goodreads Author and was nominated for the 2015 Goodreads Choice Award for Young Adult Fantasy & Science Fiction.",
+        "title": "Red Queen (novel)",
+        "start": 0,
+        "end": 384,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 85
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 86,
+            "end": 130
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 131,
+            "end": 165
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 166,
+            "end": 214
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 215,
+            "end": 384
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a77a0205542995d83181225",
+          "url": "https://en.wikipedia.org/wiki/Red_Queen_%28novel%29",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.026050420168067225
+      },
+      {
+        "evidence_id": "E11",
+        "chunk_id": "d00ed588-5a93-5f75-a67a-9f0b6377de0a",
+        "document_id": "ebaa086a-aceb-53d5-b6ea-2e1c3267d15e",
+        "revision_id": "6cbcb2cc-1cb9-502d-a697-f44c22e77c5e",
+        "strategy": "a",
+        "text": "The Solution is the 22nd book in the Animorphs series, written by K.A. Applegate. It is narrated by Rachel. It is the last book in the David trilogy.",
+        "title": "The Solution (novel)",
+        "start": 0,
+        "end": 149,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 81
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 82,
+            "end": 107
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 108,
+            "end": 149
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5ab98f57554299743d22eb71",
+          "url": "https://en.wikipedia.org/wiki/The_Solution_%28novel%29",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.031009615384615385
+      }
+    ],
+    "search_trace": [
+      {
+        "query": "science fantasy young adult series first person companion books narrating stories of enslaved worlds and alien species",
+        "strategy": "a",
+        "profile": "1a8846753a25",
+        "embedding_usage": {
+          "model": "text-embedding-3-small",
+          "input_tokens": 0,
+          "api_calls": 0,
+          "cache_hits": 1,
+          "estimated_cost_usd": 0.0
+        },
+        "document_ranking": [
+          "b1b5fb0d-b548-5212-8998-79b0ea12d936",
+          "04a61d3d-e3e4-5e97-839c-8d7c06e45a93",
+          "f012598e-2fca-508a-a0c5-041c2496b9d4",
+          "99786b9c-3f71-54a0-a10d-68692d848833",
+          "4cf9d6df-76bb-5728-981e-8a40880c3cea",
+          "d1ccb08a-9823-59db-b286-24a9c40fec5b",
+          "b24fc9fa-19d3-573c-ad5a-2fb5a4b4a3d7",
+          "df711013-4c3c-5f7a-a80d-80f3a6935065",
+          "9fd736fd-ead5-507a-95c3-992c86595773",
+          "1e2e4433-d079-5ccd-8d33-7f586fabf092"
+        ],
+        "candidate_counts": {
+          "dense": 30,
+          "bm25": 30,
+          "active_dense": 30,
+          "active_bm25": 30
+        },
+        "evidence": [
+          {
+            "evidence_id": "E1",
+            "chunk_id": "ed5fbad8-892c-55d9-9359-54bf07eb1149",
+            "document_id": "b1b5fb0d-b548-5212-8998-79b0ea12d936",
+            "revision_id": "482b3ba9-58d3-5534-b958-0e63461917bd",
+            "strategy": "a",
+            "text": "Animorphs is a science fantasy series of young adult books written by Katherine Applegate and her husband Michael Grant, writing together under the name K. A. Applegate, and published by Scholastic. It is told in first person, with all six main characters taking turns narrating the books through their own perspectives. Horror, war, dehumanization, sanity, morality, innocence, leadership, freedom and growing up are the core themes of the series.",
+            "title": "Animorphs",
+            "start": 0,
+            "end": 448,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 198
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 199,
+                "end": 320
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 321,
+                "end": 448
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5a85ea095542994775f606a8",
+              "url": "https://en.wikipedia.org/wiki/Animorphs",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03278688524590164
+          },
+          {
+            "evidence_id": "E2",
+            "chunk_id": "e01dbf96-aa3f-5fbe-8cc8-84353a9de721",
+            "document_id": "04a61d3d-e3e4-5e97-839c-8d7c06e45a93",
+            "revision_id": "ffa15c80-5ee3-5fec-a2fe-0d7d06411bf3",
+            "strategy": "a",
+            "text": "The Hork-Bajir Chronicles is the second companion book to the \"Animorphs\" series, written by K. A. Applegate. With respect to continuity within the series, it takes place before book #23, \"The Pretender\", although the events told in the story occur between the time of \"The Ellimist Chronicles\" and \"The Andalite Chronicles\". The book is introduced by Tobias, who flies to the valley of the free Hork-Bajir, where Jara Hamee tells him the story of how the Yeerks enslaved the Hork-Bajir, and how Aldrea, an Andalite, and her companion, Dak Hamee, a Hork-Bajir, tried to save their world from the invasion. Jara Hamee's story is narrated from the points of view of Aldrea, Dak Hamee, and Esplin 9466, alternating in similar fashion to the \"Megamorphs\" books.",
+            "title": "The Hork-Bajir Chronicles",
+            "start": 0,
+            "end": 757,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 109
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 110,
+                "end": 325
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 326,
+                "end": 605
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 606,
+                "end": 757
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5a85ea095542994775f606a8",
+              "url": "https://en.wikipedia.org/wiki/The_Hork-Bajir_Chronicles",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03200204813108039
+          },
+          {
+            "evidence_id": "E3",
+            "chunk_id": "0b15aebc-aaca-5747-a379-9aebbb3cd910",
+            "document_id": "f012598e-2fca-508a-a0c5-041c2496b9d4",
+            "revision_id": "56762096-9405-5f54-a687-70a922323ffa",
+            "strategy": "a",
+            "text": "The Inheritance Cycle is a young adult tetralogy of high fantasy novels written by American author Christopher Paolini. Set in the fictional world of Alagaësia ( ), the novels focus on the adventures of a teenage boy named Eragon and his dragon, Saphira, as they struggle to overthrow the evil king Galbatorix. The series was originally intended to be a trilogy (named the \"Inheritance Trilogy\") until Paolini announced on October 30, 2007, while working on the third novel, that he believed the story was too complex to conclude in just three books.",
+            "title": "Inheritance Cycle",
+            "start": 0,
+            "end": 550,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 119
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 120,
+                "end": 310
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 311,
+                "end": 550
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5adc05f35542996e685252ac",
+              "url": "https://en.wikipedia.org/wiki/Inheritance_Cycle",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.028006267136701922
+          },
+          {
+            "evidence_id": "E4",
+            "chunk_id": "ef4efba6-b99b-5d47-b4da-86dcadf92348",
+            "document_id": "99786b9c-3f71-54a0-a10d-68692d848833",
+            "revision_id": "3d506cde-ea1a-5a2c-bb7f-a5e65866a481",
+            "strategy": "a",
+            "text": "The Sin Eater's Daughter is a young adult fantasy series written by Melinda Salisbury and published by Scholastic Press. The first book in the series, \"The Sin Eater’s Daughter\", was published on 24 February 2015 and marked Salisbury's first book in print. The second book in the series, \"The Sleeping Prince\", was published the following year along with a short story prequel, \"The King of Rats\". The third book in the series, \"The Scarecrow Queen\", was released in 2017. A fourth book, \"The Heart Collector\", was also published in 2017, it is a collection of 3 short stories from the same fictional universe, including the previously released \"The King of Rats\", as well as 2 new stories, \"The Heart Collector\" and \"Mully No-Hands\".",
+            "title": "The Sin Eater’s Daughter",
+            "start": 0,
+            "end": 734,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 120
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 121,
+                "end": 256
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 257,
+                "end": 397
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 398,
+                "end": 472
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 473,
+                "end": 734
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a84a4735542991dd0999d56",
+              "url": "https://en.wikipedia.org/wiki/The_Sin_Eater%E2%80%99s_Daughter",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.026973565905412694
+          },
+          {
+            "evidence_id": "E5",
+            "chunk_id": "16267964-7e83-587d-8856-4a09fef229d9",
+            "document_id": "4cf9d6df-76bb-5728-981e-8a40880c3cea",
+            "revision_id": "e7722bd7-7b77-54d4-9ef8-af8143824f72",
+            "strategy": "a",
+            "text": "Red Queen is a young adult fantasy novel written by American writer Victoria Aveyard. It was her first series and her first novel. It was published in February 2015. Its sequels are \"Glass Sword\" and \"King's Cage\". Red Queen won the 2015 Goodreads Choice Award for Debut Goodreads Author and was nominated for the 2015 Goodreads Choice Award for Young Adult Fantasy & Science Fiction.",
+            "title": "Red Queen (novel)",
+            "start": 0,
+            "end": 384,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 85
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 86,
+                "end": 130
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 131,
+                "end": 165
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 166,
+                "end": 214
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 215,
+                "end": 384
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a77a0205542995d83181225",
+              "url": "https://en.wikipedia.org/wiki/Red_Queen_%28novel%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.026050420168067225
+          },
+          {
+            "evidence_id": "E6",
+            "chunk_id": "536a508e-75bc-5d05-95bf-9837e34e8148",
+            "document_id": "d1ccb08a-9823-59db-b286-24a9c40fec5b",
+            "revision_id": "316bcd71-8891-5921-a4c4-11ceb3aaaa3d",
+            "strategy": "a",
+            "text": "Isaac Asimov's Magical Worlds of Fantasy is a series of twelve themed paperback fantasy and science fiction anthologies edited by Isaac Asimov, Martin H. Greenberg and Charles G. Waugh, a companion set to the ten volume \"Isaac Asimov's Wonderful Worlds of Science Fiction\", produced by the same editors. It was published by Signet/New American Library from 1983 to 1991. Volumes 1 and 2 were also issued in hardcover in an omnibus collection titled \"Isaac Asimov's Magical Worlds of Fantasy: Witches & Wizards\".",
+            "title": "Isaac Asimov's Magical Worlds of Fantasy",
+            "start": 0,
+            "end": 511,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 303
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 304,
+                "end": 370
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 371,
+                "end": 511
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a8411c65542992ef85e23a9",
+              "url": "https://en.wikipedia.org/wiki/Isaac_Asimov%27s_Magical_Worlds_of_Fantasy",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.024393871783430016
+          },
+          {
+            "evidence_id": "E7",
+            "chunk_id": "4e571aed-e055-5640-afae-628f67beeeae",
+            "document_id": "b24fc9fa-19d3-573c-ad5a-2fb5a4b4a3d7",
+            "revision_id": "f27077d6-b6fa-51ba-b258-92b9c7503856",
+            "strategy": "a",
+            "text": "The Quentaris Chronicles is a shared universe series of fantasy books initially published by Lothian Books, but now published by Ford Street Press. The books in the series are written by various Australian authors including Isobelle Carmody, Pamela Freeman and John Heffernan. Though they are written by different authors and usually star new characters, they are all set in the magical city of Quentaris. There are also several recurring characters that play minor roles e.g. Stanas the water magician. The series editors are Paul Collins and Michael Pryor.",
+            "title": "The Quentaris Chronicles",
+            "start": 0,
+            "end": 558,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 147
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 148,
+                "end": 276
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 277,
+                "end": 405
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 406,
+                "end": 503
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 504,
+                "end": 558
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a864ad25542991e77181602",
+              "url": "https://en.wikipedia.org/wiki/The_Quentaris_Chronicles",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.016129032258064516
+          },
+          {
+            "evidence_id": "E8",
+            "chunk_id": "c69850b0-c894-56f9-8fc6-46815c2fc7af",
+            "document_id": "df711013-4c3c-5f7a-a80d-80f3a6935065",
+            "revision_id": "95968632-02d8-5f77-9a52-e4daac7ac8b3",
+            "strategy": "a",
+            "text": "Unknown (also known as Unknown Worlds) was an American pulp fantasy fiction magazine, published from 1939 to 1943 by Street & Smith, and edited by John W. Campbell. \"Unknown\" was a companion to Street & Smith's science fiction pulp, \"Astounding Science Fiction\", which was also edited by Campbell at the time; many authors and illustrators contributed to both magazines. The leading fantasy magazine in the 1930s was \"Weird Tales\", which focused on shock and horror. Campbell wanted to publish a fantasy magazine with more finesse and humor than \"Weird Tales\", and put his plans into action when Eric Frank Russell sent him the manuscript of his novel \"Sinister Barrier\", about aliens who own the human race. \"Unknown\"' s first issue appeared in March 1939; in addition to \"Sinister Barrier\", it included H. L. Gold's \"Trouble With Water\", a humorous fantasy about a New Yorker who meets a water gnome. Gold's story was the first of many in \"Unknown\" to combine commonplace reality with the fantastic.",
+            "title": "Unknown (magazine)",
+            "start": 0,
+            "end": 1001,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 164
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 165,
+                "end": 370
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 371,
+                "end": 466
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 467,
+                "end": 708
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 709,
+                "end": 902
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 903,
+                "end": 1001
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ac1cd165542994ab5c67e27",
+              "url": "https://en.wikipedia.org/wiki/Unknown_%28magazine%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015873015873015872
+          }
+        ],
+        "round": 1,
+        "tool_call_id": "call_W87L4UHJddNMcTm6vpsVE4S2",
+        "executed": true,
+        "follow_up": null,
+        "requested_query": "science fantasy young adult series first person companion books narrating stories of enslaved worlds and alien species",
+        "query_adjusted": false
+      },
+      {
+        "query": "Yeerks companion books enslaved worlds alien species narrated from points of view of alien species and enslaved worlds Animorphs",
+        "strategy": "a",
+        "profile": "1a8846753a25",
+        "embedding_usage": {
+          "model": "text-embedding-3-small",
+          "input_tokens": 24,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 4.8e-07
+        },
+        "document_ranking": [
+          "04a61d3d-e3e4-5e97-839c-8d7c06e45a93",
+          "6317c940-9a9e-540b-a1e6-a34d6d2c7446",
+          "b1b5fb0d-b548-5212-8998-79b0ea12d936",
+          "c0b73937-bf3e-5408-9316-485bfa1fec23",
+          "ebaa086a-aceb-53d5-b6ea-2e1c3267d15e",
+          "0c310259-8eec-5634-8d47-5d996e0ff355",
+          "7a6fd206-68e6-59d5-a009-aa82a397309b",
+          "84d5d3e8-5bad-5135-a6cb-b6e40f71563a",
+          "6bab3c7f-4bb8-59ea-b831-f08d98475200",
+          "1e2e4433-d079-5ccd-8d33-7f586fabf092"
+        ],
+        "candidate_counts": {
+          "dense": 30,
+          "bm25": 30,
+          "active_dense": 30,
+          "active_bm25": 30
+        },
+        "evidence": [
+          {
+            "evidence_id": "E2",
+            "chunk_id": "e01dbf96-aa3f-5fbe-8cc8-84353a9de721",
+            "document_id": "04a61d3d-e3e4-5e97-839c-8d7c06e45a93",
+            "revision_id": "ffa15c80-5ee3-5fec-a2fe-0d7d06411bf3",
+            "strategy": "a",
+            "text": "The Hork-Bajir Chronicles is the second companion book to the \"Animorphs\" series, written by K. A. Applegate. With respect to continuity within the series, it takes place before book #23, \"The Pretender\", although the events told in the story occur between the time of \"The Ellimist Chronicles\" and \"The Andalite Chronicles\". The book is introduced by Tobias, who flies to the valley of the free Hork-Bajir, where Jara Hamee tells him the story of how the Yeerks enslaved the Hork-Bajir, and how Aldrea, an Andalite, and her companion, Dak Hamee, a Hork-Bajir, tried to save their world from the invasion. Jara Hamee's story is narrated from the points of view of Aldrea, Dak Hamee, and Esplin 9466, alternating in similar fashion to the \"Megamorphs\" books.",
+            "title": "The Hork-Bajir Chronicles",
+            "start": 0,
+            "end": 757,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 109
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 110,
+                "end": 325
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 326,
+                "end": 605
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 606,
+                "end": 757
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5a85ea095542994775f606a8",
+              "url": "https://en.wikipedia.org/wiki/The_Hork-Bajir_Chronicles",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03252247488101534
+          },
+          {
+            "evidence_id": "E9",
+            "chunk_id": "cfb58f6c-35fc-5fd6-b75b-77bfa0f4c0c3",
+            "document_id": "6317c940-9a9e-540b-a1e6-a34d6d2c7446",
+            "revision_id": "89928e7d-9395-575f-b610-315088960f69",
+            "strategy": "a",
+            "text": "The Attack is the 26th book in the Animorphs series, written by K.A. Applegate. It has the distinction of being the last book in the series written by Applegate on a regular schedule; with \"The Separation\", the final two books in the regular series; \"The Answer\" and \"The Beginning\", two Megamorphs books; \"Elfangor's Secret\" and \"Back to Before\", and the chronicles; \"Visser\", and \"The Ellimist Chronicles\" being the only other Animorphs related books written by her after this was published. It is narrated by Jake.",
+            "title": "The Attack (novel)",
+            "start": 0,
+            "end": 517,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 79
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 80,
+                "end": 493
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 494,
+                "end": 517
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a848d2b5542992ef85e2426",
+              "url": "https://en.wikipedia.org/wiki/The_Attack_%28novel%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.031746031746031744
+          },
+          {
+            "evidence_id": "E1",
+            "chunk_id": "ed5fbad8-892c-55d9-9359-54bf07eb1149",
+            "document_id": "b1b5fb0d-b548-5212-8998-79b0ea12d936",
+            "revision_id": "482b3ba9-58d3-5534-b958-0e63461917bd",
+            "strategy": "a",
+            "text": "Animorphs is a science fantasy series of young adult books written by Katherine Applegate and her husband Michael Grant, writing together under the name K. A. Applegate, and published by Scholastic. It is told in first person, with all six main characters taking turns narrating the books through their own perspectives. Horror, war, dehumanization, sanity, morality, innocence, leadership, freedom and growing up are the core themes of the series.",
+            "title": "Animorphs",
+            "start": 0,
+            "end": 448,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 198
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 199,
+                "end": 320
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 321,
+                "end": 448
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5a85ea095542994775f606a8",
+              "url": "https://en.wikipedia.org/wiki/Animorphs",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.031544957774465976
+          },
+          {
+            "evidence_id": "E10",
+            "chunk_id": "a2e26c4e-667f-5075-96f4-58e0c56b26ba",
+            "document_id": "c0b73937-bf3e-5408-9316-485bfa1fec23",
+            "revision_id": "52a8c05e-dff8-52cc-bfba-e39361be72ac",
+            "strategy": "a",
+            "text": "The Unknown is the 14th book in the Animorphs series, written by K.A. Applegate. It is narrated by Cassie. The front cover quote is, \"Never underestimate the power of a morph...\". All books after \"The Unknown\" were dedicated to Applegate's son, Jake, as well as her husband and co-writer, Michael.",
+            "title": "The Unknown (novel)",
+            "start": 0,
+            "end": 297,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 80
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 81,
+                "end": 106
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 107,
+                "end": 179
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 180,
+                "end": 297
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ae4f14d5542990ba0bbb1a4",
+              "url": "https://en.wikipedia.org/wiki/The_Unknown_%28novel%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.031009615384615385
+          },
+          {
+            "evidence_id": "E11",
+            "chunk_id": "d00ed588-5a93-5f75-a67a-9f0b6377de0a",
+            "document_id": "ebaa086a-aceb-53d5-b6ea-2e1c3267d15e",
+            "revision_id": "6cbcb2cc-1cb9-502d-a697-f44c22e77c5e",
+            "strategy": "a",
+            "text": "The Solution is the 22nd book in the Animorphs series, written by K.A. Applegate. It is narrated by Rachel. It is the last book in the David trilogy.",
+            "title": "The Solution (novel)",
+            "start": 0,
+            "end": 149,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 81
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 82,
+                "end": 107
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 108,
+                "end": 149
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ab98f57554299743d22eb71",
+              "url": "https://en.wikipedia.org/wiki/The_Solution_%28novel%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.031009615384615385
+          },
+          {
+            "evidence_id": "E12",
+            "chunk_id": "14458ffa-620b-59c8-b63d-9ba855248dc3",
+            "document_id": "0c310259-8eec-5634-8d47-5d996e0ff355",
+            "revision_id": "80002457-8b58-56d3-bd82-e2b9bc429491",
+            "strategy": "a",
+            "text": "Katherine Alice Applegate (born October 9, 1956 in Ann Arbor, Michigan) is an American young adult and children's fiction writer, best known as the author of the \"Animorphs\", \"Remnants\", \"Everworld\", and other book series. She won the 2013 Newbery Medal for her 2012 children's novel \"The One and Only Ivan\". Applegate's most popular books are science fiction, fantasy, and adventure novels. She won the Best New Children's Book Series Award in 1997 in \"Publishers Weekly\". Her book \"Home of the Brave\" has won two awards. She also wrote a chapter book series in 2008-9 called \"Roscoe Riley Rules\".",
+            "title": "K. A. Applegate",
+            "start": 0,
+            "end": 598,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 222
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 223,
+                "end": 308
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 309,
+                "end": 391
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 392,
+                "end": 473
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 474,
+                "end": 522
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 523,
+                "end": 598
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ae67fc15542996d980e7b9b",
+              "url": "https://en.wikipedia.org/wiki/K._A._Applegate",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.027526395173453996
+          },
+          {
+            "evidence_id": "E13",
+            "chunk_id": "148d962e-54b0-5539-a62f-0bfeea39d1a6",
+            "document_id": "7a6fd206-68e6-59d5-a009-aa82a397309b",
+            "revision_id": "91997a5a-84c4-5803-8094-74ea5fba0492",
+            "strategy": "a",
+            "text": "\"Pilot\" is the series premiere of the 2009 reimagining of the 1983 miniseries \"V\" created by Kenneth Johnson. The episode's teleplay was written by Scott Peters, with story credit going to Johnson and Peters. Yves Simoneau directed the episode, which originally aired in the United States on ABC on November 3, 2009. The episode sees spaceships appear over 29 of the world's major cities. Though the alien \"Visitors\" claim to come in peace, it transpires that they have been infiltrating the planet for decades, and are planning on enslaving the human species.",
+            "title": "Pilot (V)",
+            "start": 0,
+            "end": 560,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 109
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 110,
+                "end": 208
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 209,
+                "end": 316
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 317,
+                "end": 388
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 389,
+                "end": 560
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ab83b8355429919ba4e2278",
+              "url": "https://en.wikipedia.org/wiki/Pilot_%28V%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.016129032258064516
+          },
+          {
+            "evidence_id": "E14",
+            "chunk_id": "bc0e1b32-8e4e-53cb-86c7-25dfc13b41d1",
+            "document_id": "84d5d3e8-5bad-5135-a6cb-b6e40f71563a",
+            "revision_id": "ef20e792-5be5-566c-b516-b7023fb10d24",
+            "strategy": "a",
+            "text": "Narnian creatures are any non-human inhabitants of Narnia, the fantasy world created by C. S. Lewis as a setting for his \"The Chronicles of Narnia\". This is a series of commentaries on the creatures of Narnia. Entries include information on physical, habitual, and behavioural elements of the creatures, as well as noting any important members of the species. Each commentary draws on specific references and citations from the books and officially sanctioned Disney films. Many animals that are found in our world are also present in Narnia, and some species include talking variations. At the birth of Narnia, Aslan the lion stares at certain animals and breathes upon them. This enabled them to think and talk in a manner similar to humans, and also altered their size (MN). Smaller talking beasts – such as rodents, birds and small mammals – are generally larger than their non-talking counterparts, whereas larger talking beasts are generally smaller than average . There is never any mention of talking fish or insects, although there are Naiads, or water-spirits. Lewis freely drew on various sources for inspiration; the creatures contained in this list include many from classical mythology and English folklore.",
+            "title": "List of Narnian creatures",
+            "start": 0,
+            "end": 1221,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 148
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 149,
+                "end": 209
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 210,
+                "end": 359
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 360,
+                "end": 473
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 474,
+                "end": 587
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 588,
+                "end": 676
+              },
+              {
+                "kind": "sentence",
+                "number": 6,
+                "start": 677,
+                "end": 777
+              },
+              {
+                "kind": "sentence",
+                "number": 7,
+                "start": 778,
+                "end": 970
+              },
+              {
+                "kind": "sentence",
+                "number": 8,
+                "start": 971,
+                "end": 1070
+              },
+              {
+                "kind": "sentence",
+                "number": 9,
+                "start": 1071,
+                "end": 1221
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ae31a9c55429928c42395ef",
+              "url": "https://en.wikipedia.org/wiki/List_of_Narnian_creatures",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015151515151515152
+          }
+        ],
+        "round": 2,
+        "tool_call_id": "call_3dZA8xqiE1dfj0jpWZD2ybMA",
+        "executed": true,
+        "follow_up": {
+          "evidence_id": "E2",
+          "entity": "Yeerks"
+        },
+        "requested_query": "companion books enslaved worlds alien species narrated from points of view of alien species and enslaved worlds Animorphs",
+        "query_adjusted": true
+      }
+    ],
+    "workflow": "bounded_tools_v1",
+    "execution": {
+      "planning_rounds": 2,
+      "retrieval_rounds": 2,
+      "tool_calls": 2,
+      "searches": 2,
+      "llm_calls": 3,
+      "embedding_calls": 1,
+      "total_provider_calls": 4,
+      "stop_reason": "retrieval_limit",
+      "limits": {
+        "retrieval_rounds": 2,
+        "searches": 3,
+        "llm_calls": 3,
+        "embedding_calls": 3,
+        "total_provider_calls": 6
+      }
+    },
+    "configuration": {
+      "strategy": "a",
+      "profile": "1a8846753a25",
+      "embedding_model": "text-embedding-3-small",
+      "embedding_dimensions": 384,
+      "generation_model": "gpt-5.4-mini-2026-03-17",
+      "prompt_version": "bounded_tools_quote_ids_v1"
+    },
+    "usage": {
+      "planning": [
+        {
+          "input_tokens": 538,
+          "output_tokens": 42,
+          "estimated_cost_usd": 0.0005925,
+          "model": "gpt-5.4-mini-2026-03-17"
+        },
+        {
+          "input_tokens": 1863,
+          "output_tokens": 56,
+          "estimated_cost_usd": 0.00164925,
+          "model": "gpt-5.4-mini-2026-03-17"
+        }
+      ],
+      "generation": {
+        "input_tokens": 4589,
+        "output_tokens": 150,
+        "estimated_cost_usd": 0.00411675,
+        "model": "gpt-5.4-mini-2026-03-17"
+      },
+      "embeddings": [
+        {
+          "model": "text-embedding-3-small",
+          "input_tokens": 0,
+          "api_calls": 0,
+          "cache_hits": 1,
+          "estimated_cost_usd": 0.0
+        },
+        {
+          "model": "text-embedding-3-small",
+          "input_tokens": 24,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 4.8e-07
+        }
+      ],
+      "estimated_model_cost_usd": 0.0063585,
+      "estimated_total_cost_usd": 0.006358979999999999
+    },
+    "latency_ms": 5385
+  },
+  "error": null,
+  "elapsed_ms": 5385,
+  "ledger_after": {
+    "calls": 408,
+    "reserved_usd": 0.87960452,
+    "estimated_actual_usd": 0.32209877,
+    "input_tokens": 7098074,
+    "output_tokens": 6755
+  }
+}

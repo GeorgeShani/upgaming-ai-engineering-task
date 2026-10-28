@@ -1,0 +1,1235 @@
+{
+  "case_id": "final-bridge-05",
+  "strategy": "a",
+  "question": "Who was known by his stage name Aladin and helped organizations improve their performance as a consultant?",
+  "started_at": "2026-10-28T07:00:39.332083+00:00",
+  "ledger_before": {
+    "calls": 427,
+    "reserved_usd": 0.9560297,
+    "estimated_actual_usd": 0.34238195,
+    "input_tokens": 7121288,
+    "output_tokens": 7407
+  },
+  "result": {
+    "status": "answered",
+    "claims": [
+      {
+        "text": "Eenasul Fateh was known by his stage name Aladin.",
+        "citations": [
+          {
+            "evidence_id": "E2",
+            "quote": "Eenasul Fateh (Bengali: ঈনাসুল ফাতেহ ; born 3 April 1959), also known by his stage name Aladin, is a Bangladeshi-British cultural practitioner, magician, live artist and former international management consultant."
+          }
+        ]
+      },
+      {
+        "text": "Management consulting is the practice of helping organizations improve their performance.",
+        "citations": [
+          {
+            "evidence_id": "E1",
+            "quote": "Management consulting is the practice of helping organizations to improve their performance, operating primarily through the analysis of existing organizational problems and the development of plans for improvement."
+          }
+        ]
+      }
+    ],
+    "conflicting_claims": [],
+    "answer": "Eenasul Fateh was known by his stage name Aladin. [E2] Management consulting is the practice of helping organizations improve their performance. [E1]",
+    "evidence": [
+      {
+        "evidence_id": "E2",
+        "chunk_id": "ef231fb0-83b7-5c85-b1f5-373c22bc955d",
+        "document_id": "9bb0a65f-8eb4-55c0-b2cc-97b2f53f2b0d",
+        "revision_id": "8e205027-045b-5c1f-ae68-6f73c48f174a",
+        "strategy": "a",
+        "text": "Eenasul Fateh (Bengali: ঈনাসুল ফাতেহ ; born 3 April 1959), also known by his stage name Aladin, is a Bangladeshi-British cultural practitioner, magician, live artist and former international management consultant.",
+        "title": "Eenasul Fateh",
+        "start": 0,
+        "end": 213,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 213
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "validation",
+          "record_id": "5a85b2d95542997b5ce40028",
+          "url": "https://en.wikipedia.org/wiki/Eenasul_Fateh",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.03252247488101534
+      },
+      {
+        "evidence_id": "E1",
+        "chunk_id": "a0475818-59e3-5ad8-bd07-2f6b93726189",
+        "document_id": "b6634fa7-016e-5aba-a80a-31b66d2b0e53",
+        "revision_id": "b9814e42-2841-5774-bdb3-8d55f7030674",
+        "strategy": "a",
+        "text": "Management consulting is the practice of helping organizations to improve their performance, operating primarily through the analysis of existing organizational problems and the development of plans for improvement. Organizations may draw upon the services of management consultants for a number of reasons, including gaining external (and presumably objective) advice and access to the consultants' specialized expertise.",
+        "title": "Management consulting",
+        "start": 0,
+        "end": 422,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 215
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 216,
+            "end": 422
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "validation",
+          "record_id": "5a85b2d95542997b5ce40028",
+          "url": "https://en.wikipedia.org/wiki/Management_consulting",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.03252247488101534
+      },
+      {
+        "evidence_id": "E5",
+        "chunk_id": "09a14afe-9fcc-5bf9-9838-813ec4798463",
+        "document_id": "cb281d99-223b-5e92-a448-dbe432301d9a",
+        "revision_id": "57cb0e91-e1e7-5475-8617-bb622c0f9eb2",
+        "strategy": "a",
+        "text": "Debriefings are most effective when conducted interactively between the participants of the immersive activity and the assessment or observation personnel. Self-facilitated After Action Reviews (AAR) or debriefings are common in small unit and crew activities, and in a training context are shown to improve Knowledge, Skills, and Abilities (KSAs) significantly when conducted formally using pre-defined measures of performance derived from front-end analysis. Debriefing organization can be based on linear or non-linear (or a combination of both) organization of markers used for recall. Typically the structure will use: Temporal, Spatial, Objective, and/or Performance derived markers to bring focus to a specific activity.",
+        "title": "Debriefing",
+        "start": 0,
+        "end": 727,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 155
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 156,
+            "end": 460
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 461,
+            "end": 589
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 590,
+            "end": 727
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a81eb8a55429926c1cdadc2",
+          "url": "https://en.wikipedia.org/wiki/Debriefing",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.030536130536130537
+      },
+      {
+        "evidence_id": "E4",
+        "chunk_id": "dbec8ee9-0dcf-5a93-850c-5e72ecb559ea",
+        "document_id": "0acfd1b5-251c-5364-8cb0-04b1a04ac0fc",
+        "revision_id": "d2538080-d7c1-56a1-af59-e2a72217b8cd",
+        "strategy": "a",
+        "text": "Diamond Management & Technology Consultants (casually referred to as Diamond) was an independent management consulting firm founded in 1994, headquartered in Chicago, IL with satellite offices in Hartford, CT, New York City, Washington DC, London, and Mumbai. It was acquired by the British firm, PwC in 2010. Diamond was a smaller player among companies such as Mercer Management Consulting, Deloitte Consulting, and Accenture. The industry segments under which Diamond operated include consumer packaged goods, financial services, and health-care, among numerous others.",
+        "title": "Diamond Management &amp; Technology Consultants",
+        "start": 0,
+        "end": 572,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 259
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 260,
+            "end": 309
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 310,
+            "end": 428
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 429,
+            "end": 572
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a8c5b3e5542995e66a475d2",
+          "url": "https://en.wikipedia.org/wiki/Diamond_Management_%26amp%3B_Technology_Consultants",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.03007688828584351
+      },
+      {
+        "evidence_id": "E6",
+        "chunk_id": "3b862247-b51e-5ade-8bd4-1961e3bf2f71",
+        "document_id": "617e6f07-a5fd-5e54-a0ec-fdb74a1941bb",
+        "revision_id": "97d31c06-b225-5784-8398-996590531728",
+        "strategy": "a",
+        "text": "Amritt Ventures is a global management consulting firm based in the Los Angeles area. The stated purpose of the company is to aid North American and European firms in becoming familiar with routine Asian business practices, specifically in marketing their products to India and China, both of which are BRIC countries. Amritt has recently been ranked as one of the Top 10 Consulting Companies of India. Their executives have contributed to various financial magazines, including BusinessWeek and advised both US companies and the US president on doing business with India. Notable clients of Amritt include Kraft Foods, Johnson & Johnson, the British company Reckitt Benckiser, and the French media conglomerate Vivendi.",
+        "title": "Amritt",
+        "start": 0,
+        "end": 720,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 85
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 86,
+            "end": 318
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 319,
+            "end": 402
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 403,
+            "end": 572
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 573,
+            "end": 720
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a8c5b3e5542995e66a475d2",
+          "url": "https://en.wikipedia.org/wiki/Amritt",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.028474711270410194
+      },
+      {
+        "evidence_id": "E7",
+        "chunk_id": "186a52b1-5332-5b44-b106-b6315042a018",
+        "document_id": "9a10f574-fa7d-5fe8-9398-e57ab60d27c5",
+        "revision_id": "f19c6bf1-b2c4-5439-b162-2f9e7f8d63ef",
+        "strategy": "a",
+        "text": " develop green food standards, organizing and guiding the development and management of Green Food; trademark green logo management, review, approve green flag products; commissioned and coordinating the work of local agencies and green environment and product quality monitoring; organize research, technology promotion, training, advocacy, information services, green building demonstration bases, as well as foreign economic and technological exchanges and cooperation. The main partners consist of some organizations namely China Organic Food Certification Center(abbreviated COFCC),State Food and Nutrition Consultant Committee, Food and Agricultural Organization of the United Nations and Development Research Center of the State Council as well as some media networks as supporters. It has already published couples reports named\" Green Food Products Bulletin\",\"Green Fashion\",and \"Brief Report of the Center\"to the public.",
+        "title": "China Green Food Development Center",
+        "start": 1120,
+        "end": 2050,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 6,
+            "start": 1000,
+            "end": 1592
+          },
+          {
+            "kind": "sentence",
+            "number": 7,
+            "start": 1593,
+            "end": 1909
+          },
+          {
+            "kind": "sentence",
+            "number": 8,
+            "start": 1910,
+            "end": 2050
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5adcf2f25542994ed6169c33",
+          "url": "https://en.wikipedia.org/wiki/China_Green_Food_Development_Center",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.027820121951219513
+      },
+      {
+        "evidence_id": "E3",
+        "chunk_id": "9bb88619-8e04-592a-b3a7-46a43bb7b890",
+        "document_id": "4f39a33a-9efc-5f8f-961e-f7f27eefa79b",
+        "revision_id": "255625f0-4f46-5a73-84c4-47cd4010450d",
+        "strategy": "a",
+        "text": "A heart transplant, or a cardiac transplant, is a surgical transplant procedure performed on patients with end-stage heart failure or severe coronary artery disease when other medical or surgical treatments have failed. As of 2016, the most common procedure is to take a functioning heart (with or without transplantation of a lung or lungs; a cadaveric donor cardiectomy) from a recently deceased organ donor (the cadaveric allograft), and implant it into the patient. The patient's own heart is either removed (the cardiectomy for the recipient) and replaced with the donor heart (orthotopic procedure) or, much less commonly, the recipient's diseased heart is left in place to support the donor heart (heterotopic, or \"piggyback,\" transplant procedure). Approximately 3500 heart transplants are performed every year in the world, more than half of which occur in the US. Post-operation survival periods average 15 years. Heart transplantation is not considered to be a cure for heart disease, but a life-saving treatment intended to improve the quality of life for recipients.",
+        "title": "Heart transplantation",
+        "start": 0,
+        "end": 1079,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 219
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 220,
+            "end": 469
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 470,
+            "end": 756
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 757,
+            "end": 873
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 874,
+            "end": 923
+          },
+          {
+            "kind": "sentence",
+            "number": 5,
+            "start": 924,
+            "end": 1079
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5ae1582f554299422ee99664",
+          "url": "https://en.wikipedia.org/wiki/Heart_transplantation",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.015873015873015872
+      },
+      {
+        "evidence_id": "E9",
+        "chunk_id": "e001fee0-99f6-558b-9aa8-3e4a624e73c9",
+        "document_id": "5d9f69e4-f171-5ed3-8d1d-513eda6ea307",
+        "revision_id": "86ee0d9d-a25e-5485-93fd-5a981978fa03",
+        "strategy": "a",
+        "text": "The Bachelor of Public Administration (BPA or B.P.A.) degree is one of several Bachelor's level management degrees that provides training in the public policy field as well as public management. A bachelor's degree in public administration provides a background for those interested in pursuing careers in governmental agencies, non-governmental organizations, management in hospitals or public health institution, consulting in private firms, school boards, and human resources. Careers in international agencies, urban or regional planning, city management, financial planning, public finance and public relations also at the local, state/provincial, national/federal and supranational levels, as well as in the nonprofit sector. Through its history, the BPA degree has become more interdisciplinary by drawing from fields such as economics, management, sociology, political science, and regional planning in order to equip BPA graduates with skills and knowledge covering a broad range of topics and disciplines relevant to the public sector. A core curriculum of a typical BPA program usually includes courses on economics, public finance, research methods / statistics, policy analysis, ethics, public management, leadership, planning & GIS, program evaluation/performance measurement and human resources management.",
+        "title": "Bachelor of Public Administration",
+        "start": 0,
+        "end": 1321,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 194
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 195,
+            "end": 479
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 480,
+            "end": 731
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 732,
+            "end": 1045
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 1046,
+            "end": 1321
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5ae356e55542992f92d82297",
+          "url": "https://en.wikipedia.org/wiki/Bachelor_of_Public_Administration",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.029386529386529386
+      }
+    ],
+    "search_trace": [
+      {
+        "query": "\"stage name Aladin\" consultant organizations improve their performance",
+        "strategy": "a",
+        "profile": "1a8846753a25",
+        "embedding_usage": {
+          "model": "text-embedding-3-small",
+          "input_tokens": 11,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 2.2e-07
+        },
+        "document_ranking": [
+          "b6634fa7-016e-5aba-a80a-31b66d2b0e53",
+          "9bb0a65f-8eb4-55c0-b2cc-97b2f53f2b0d",
+          "4f39a33a-9efc-5f8f-961e-f7f27eefa79b",
+          "0acfd1b5-251c-5364-8cb0-04b1a04ac0fc",
+          "cb281d99-223b-5e92-a448-dbe432301d9a",
+          "617e6f07-a5fd-5e54-a0ec-fdb74a1941bb",
+          "9a10f574-fa7d-5fe8-9398-e57ab60d27c5",
+          "ccb8b080-e6fd-599a-b0e3-392a4d6a7201",
+          "d16f611b-1993-5238-a4fd-bd9a09c7b036",
+          "d9dc5549-fd6d-53dc-933c-98633d5ff19a"
+        ],
+        "candidate_counts": {
+          "dense": 30,
+          "bm25": 30,
+          "active_dense": 30,
+          "active_bm25": 30
+        },
+        "evidence": [
+          {
+            "evidence_id": "E1",
+            "chunk_id": "a0475818-59e3-5ad8-bd07-2f6b93726189",
+            "document_id": "b6634fa7-016e-5aba-a80a-31b66d2b0e53",
+            "revision_id": "b9814e42-2841-5774-bdb3-8d55f7030674",
+            "strategy": "a",
+            "text": "Management consulting is the practice of helping organizations to improve their performance, operating primarily through the analysis of existing organizational problems and the development of plans for improvement. Organizations may draw upon the services of management consultants for a number of reasons, including gaining external (and presumably objective) advice and access to the consultants' specialized expertise.",
+            "title": "Management consulting",
+            "start": 0,
+            "end": 422,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 215
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 216,
+                "end": 422
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5a85b2d95542997b5ce40028",
+              "url": "https://en.wikipedia.org/wiki/Management_consulting",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03252247488101534
+          },
+          {
+            "evidence_id": "E2",
+            "chunk_id": "ef231fb0-83b7-5c85-b1f5-373c22bc955d",
+            "document_id": "9bb0a65f-8eb4-55c0-b2cc-97b2f53f2b0d",
+            "revision_id": "8e205027-045b-5c1f-ae68-6f73c48f174a",
+            "strategy": "a",
+            "text": "Eenasul Fateh (Bengali: ঈনাসুল ফাতেহ ; born 3 April 1959), also known by his stage name Aladin, is a Bangladeshi-British cultural practitioner, magician, live artist and former international management consultant.",
+            "title": "Eenasul Fateh",
+            "start": 0,
+            "end": 213,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 213
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5a85b2d95542997b5ce40028",
+              "url": "https://en.wikipedia.org/wiki/Eenasul_Fateh",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03252247488101534
+          },
+          {
+            "evidence_id": "E3",
+            "chunk_id": "9bb88619-8e04-592a-b3a7-46a43bb7b890",
+            "document_id": "4f39a33a-9efc-5f8f-961e-f7f27eefa79b",
+            "revision_id": "255625f0-4f46-5a73-84c4-47cd4010450d",
+            "strategy": "a",
+            "text": "A heart transplant, or a cardiac transplant, is a surgical transplant procedure performed on patients with end-stage heart failure or severe coronary artery disease when other medical or surgical treatments have failed. As of 2016, the most common procedure is to take a functioning heart (with or without transplantation of a lung or lungs; a cadaveric donor cardiectomy) from a recently deceased organ donor (the cadaveric allograft), and implant it into the patient. The patient's own heart is either removed (the cardiectomy for the recipient) and replaced with the donor heart (orthotopic procedure) or, much less commonly, the recipient's diseased heart is left in place to support the donor heart (heterotopic, or \"piggyback,\" transplant procedure). Approximately 3500 heart transplants are performed every year in the world, more than half of which occur in the US. Post-operation survival periods average 15 years. Heart transplantation is not considered to be a cure for heart disease, but a life-saving treatment intended to improve the quality of life for recipients.",
+            "title": "Heart transplantation",
+            "start": 0,
+            "end": 1079,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 219
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 220,
+                "end": 469
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 470,
+                "end": 756
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 757,
+                "end": 873
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 874,
+                "end": 923
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 924,
+                "end": 1079
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ae1582f554299422ee99664",
+              "url": "https://en.wikipedia.org/wiki/Heart_transplantation",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015873015873015872
+          },
+          {
+            "evidence_id": "E4",
+            "chunk_id": "dbec8ee9-0dcf-5a93-850c-5e72ecb559ea",
+            "document_id": "0acfd1b5-251c-5364-8cb0-04b1a04ac0fc",
+            "revision_id": "d2538080-d7c1-56a1-af59-e2a72217b8cd",
+            "strategy": "a",
+            "text": "Diamond Management & Technology Consultants (casually referred to as Diamond) was an independent management consulting firm founded in 1994, headquartered in Chicago, IL with satellite offices in Hartford, CT, New York City, Washington DC, London, and Mumbai. It was acquired by the British firm, PwC in 2010. Diamond was a smaller player among companies such as Mercer Management Consulting, Deloitte Consulting, and Accenture. The industry segments under which Diamond operated include consumer packaged goods, financial services, and health-care, among numerous others.",
+            "title": "Diamond Management &amp; Technology Consultants",
+            "start": 0,
+            "end": 572,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 259
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 260,
+                "end": 309
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 310,
+                "end": 428
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 429,
+                "end": 572
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a8c5b3e5542995e66a475d2",
+              "url": "https://en.wikipedia.org/wiki/Diamond_Management_%26amp%3B_Technology_Consultants",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015873015873015872
+          },
+          {
+            "evidence_id": "E5",
+            "chunk_id": "09a14afe-9fcc-5bf9-9838-813ec4798463",
+            "document_id": "cb281d99-223b-5e92-a448-dbe432301d9a",
+            "revision_id": "57cb0e91-e1e7-5475-8617-bb622c0f9eb2",
+            "strategy": "a",
+            "text": "Debriefings are most effective when conducted interactively between the participants of the immersive activity and the assessment or observation personnel. Self-facilitated After Action Reviews (AAR) or debriefings are common in small unit and crew activities, and in a training context are shown to improve Knowledge, Skills, and Abilities (KSAs) significantly when conducted formally using pre-defined measures of performance derived from front-end analysis. Debriefing organization can be based on linear or non-linear (or a combination of both) organization of markers used for recall. Typically the structure will use: Temporal, Spatial, Objective, and/or Performance derived markers to bring focus to a specific activity.",
+            "title": "Debriefing",
+            "start": 0,
+            "end": 727,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 155
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 156,
+                "end": 460
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 461,
+                "end": 589
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 590,
+                "end": 727
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a81eb8a55429926c1cdadc2",
+              "url": "https://en.wikipedia.org/wiki/Debriefing",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015625
+          },
+          {
+            "evidence_id": "E6",
+            "chunk_id": "3b862247-b51e-5ade-8bd4-1961e3bf2f71",
+            "document_id": "617e6f07-a5fd-5e54-a0ec-fdb74a1941bb",
+            "revision_id": "97d31c06-b225-5784-8398-996590531728",
+            "strategy": "a",
+            "text": "Amritt Ventures is a global management consulting firm based in the Los Angeles area. The stated purpose of the company is to aid North American and European firms in becoming familiar with routine Asian business practices, specifically in marketing their products to India and China, both of which are BRIC countries. Amritt has recently been ranked as one of the Top 10 Consulting Companies of India. Their executives have contributed to various financial magazines, including BusinessWeek and advised both US companies and the US president on doing business with India. Notable clients of Amritt include Kraft Foods, Johnson & Johnson, the British company Reckitt Benckiser, and the French media conglomerate Vivendi.",
+            "title": "Amritt",
+            "start": 0,
+            "end": 720,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 85
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 86,
+                "end": 318
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 319,
+                "end": 402
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 403,
+                "end": 572
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 573,
+                "end": 720
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a8c5b3e5542995e66a475d2",
+              "url": "https://en.wikipedia.org/wiki/Amritt",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015625
+          },
+          {
+            "evidence_id": "E7",
+            "chunk_id": "186a52b1-5332-5b44-b106-b6315042a018",
+            "document_id": "9a10f574-fa7d-5fe8-9398-e57ab60d27c5",
+            "revision_id": "f19c6bf1-b2c4-5439-b162-2f9e7f8d63ef",
+            "strategy": "a",
+            "text": " develop green food standards, organizing and guiding the development and management of Green Food; trademark green logo management, review, approve green flag products; commissioned and coordinating the work of local agencies and green environment and product quality monitoring; organize research, technology promotion, training, advocacy, information services, green building demonstration bases, as well as foreign economic and technological exchanges and cooperation. The main partners consist of some organizations namely China Organic Food Certification Center(abbreviated COFCC),State Food and Nutrition Consultant Committee, Food and Agricultural Organization of the United Nations and Development Research Center of the State Council as well as some media networks as supporters. It has already published couples reports named\" Green Food Products Bulletin\",\"Green Fashion\",and \"Brief Report of the Center\"to the public.",
+            "title": "China Green Food Development Center",
+            "start": 1120,
+            "end": 2050,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 6,
+                "start": 1000,
+                "end": 1592
+              },
+              {
+                "kind": "sentence",
+                "number": 7,
+                "start": 1593,
+                "end": 1909
+              },
+              {
+                "kind": "sentence",
+                "number": 8,
+                "start": 1910,
+                "end": 2050
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5adcf2f25542994ed6169c33",
+              "url": "https://en.wikipedia.org/wiki/China_Green_Food_Development_Center",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015384615384615385
+          },
+          {
+            "evidence_id": "E8",
+            "chunk_id": "31d743f2-4a5b-5964-956b-634809bbc987",
+            "document_id": "ccb8b080-e6fd-599a-b0e3-392a4d6a7201",
+            "revision_id": "bf3a30da-90b1-5fd1-ac75-6915810fc122",
+            "strategy": "a",
+            "text": "Arthur Andersen LLP, based in Chicago, is an American holding company and formerly one of the \"Big Five\" accounting firms among PricewaterhouseCoopers, Deloitte Touche Tohmatsu, Ernst & Young and KPMG, providing auditing, tax, and consulting services to large corporations. In 2002, the firm voluntarily surrendered its licenses to practice as Certified Public Accountants in the United States after being found guilty of criminal charges relating to the firm's handling of the auditing of Enron, an energy corporation based in Texas, which had filed for bankruptcy in 2001.",
+            "title": "Arthur Andersen",
+            "start": 0,
+            "end": 574,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 273
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 274,
+                "end": 574
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5adf69055542995ec70e8ff6",
+              "url": "https://en.wikipedia.org/wiki/Arthur_Andersen",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015384615384615385
+          }
+        ],
+        "round": 1,
+        "tool_call_id": "call_CY7yYXjPWTKcjfbwfSEPqOVF",
+        "executed": true,
+        "follow_up": null,
+        "requested_query": "\"stage name Aladin\" consultant organizations improve their performance",
+        "query_adjusted": false
+      },
+      {
+        "query": "Eenasul Fateh consulted organizations improve performance management consultant",
+        "strategy": "a",
+        "profile": "1a8846753a25",
+        "embedding_usage": {
+          "model": "text-embedding-3-small",
+          "input_tokens": 11,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 2.2e-07
+        },
+        "document_ranking": [
+          "b6634fa7-016e-5aba-a80a-31b66d2b0e53",
+          "cb281d99-223b-5e92-a448-dbe432301d9a",
+          "0acfd1b5-251c-5364-8cb0-04b1a04ac0fc",
+          "5d9f69e4-f171-5ed3-8d1d-513eda6ea307",
+          "9bb0a65f-8eb4-55c0-b2cc-97b2f53f2b0d",
+          "617e6f07-a5fd-5e54-a0ec-fdb74a1941bb",
+          "9a10f574-fa7d-5fe8-9398-e57ab60d27c5",
+          "a6862beb-efc3-5bb0-8c34-4708cd9978d9",
+          "2e3bc8ff-a625-55e7-a4f7-72b3de3d154a",
+          "2c0d9a81-866b-5968-8102-56c79e0a19cd"
+        ],
+        "candidate_counts": {
+          "dense": 30,
+          "bm25": 30,
+          "active_dense": 30,
+          "active_bm25": 30
+        },
+        "evidence": [
+          {
+            "evidence_id": "E1",
+            "chunk_id": "a0475818-59e3-5ad8-bd07-2f6b93726189",
+            "document_id": "b6634fa7-016e-5aba-a80a-31b66d2b0e53",
+            "revision_id": "b9814e42-2841-5774-bdb3-8d55f7030674",
+            "strategy": "a",
+            "text": "Management consulting is the practice of helping organizations to improve their performance, operating primarily through the analysis of existing organizational problems and the development of plans for improvement. Organizations may draw upon the services of management consultants for a number of reasons, including gaining external (and presumably objective) advice and access to the consultants' specialized expertise.",
+            "title": "Management consulting",
+            "start": 0,
+            "end": 422,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 215
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 216,
+                "end": 422
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5a85b2d95542997b5ce40028",
+              "url": "https://en.wikipedia.org/wiki/Management_consulting",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03252247488101534
+          },
+          {
+            "evidence_id": "E5",
+            "chunk_id": "09a14afe-9fcc-5bf9-9838-813ec4798463",
+            "document_id": "cb281d99-223b-5e92-a448-dbe432301d9a",
+            "revision_id": "57cb0e91-e1e7-5475-8617-bb622c0f9eb2",
+            "strategy": "a",
+            "text": "Debriefings are most effective when conducted interactively between the participants of the immersive activity and the assessment or observation personnel. Self-facilitated After Action Reviews (AAR) or debriefings are common in small unit and crew activities, and in a training context are shown to improve Knowledge, Skills, and Abilities (KSAs) significantly when conducted formally using pre-defined measures of performance derived from front-end analysis. Debriefing organization can be based on linear or non-linear (or a combination of both) organization of markers used for recall. Typically the structure will use: Temporal, Spatial, Objective, and/or Performance derived markers to bring focus to a specific activity.",
+            "title": "Debriefing",
+            "start": 0,
+            "end": 727,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 155
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 156,
+                "end": 460
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 461,
+                "end": 589
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 590,
+                "end": 727
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a81eb8a55429926c1cdadc2",
+              "url": "https://en.wikipedia.org/wiki/Debriefing",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.030536130536130537
+          },
+          {
+            "evidence_id": "E4",
+            "chunk_id": "dbec8ee9-0dcf-5a93-850c-5e72ecb559ea",
+            "document_id": "0acfd1b5-251c-5364-8cb0-04b1a04ac0fc",
+            "revision_id": "d2538080-d7c1-56a1-af59-e2a72217b8cd",
+            "strategy": "a",
+            "text": "Diamond Management & Technology Consultants (casually referred to as Diamond) was an independent management consulting firm founded in 1994, headquartered in Chicago, IL with satellite offices in Hartford, CT, New York City, Washington DC, London, and Mumbai. It was acquired by the British firm, PwC in 2010. Diamond was a smaller player among companies such as Mercer Management Consulting, Deloitte Consulting, and Accenture. The industry segments under which Diamond operated include consumer packaged goods, financial services, and health-care, among numerous others.",
+            "title": "Diamond Management &amp; Technology Consultants",
+            "start": 0,
+            "end": 572,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 259
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 260,
+                "end": 309
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 310,
+                "end": 428
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 429,
+                "end": 572
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a8c5b3e5542995e66a475d2",
+              "url": "https://en.wikipedia.org/wiki/Diamond_Management_%26amp%3B_Technology_Consultants",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03007688828584351
+          },
+          {
+            "evidence_id": "E9",
+            "chunk_id": "e001fee0-99f6-558b-9aa8-3e4a624e73c9",
+            "document_id": "5d9f69e4-f171-5ed3-8d1d-513eda6ea307",
+            "revision_id": "86ee0d9d-a25e-5485-93fd-5a981978fa03",
+            "strategy": "a",
+            "text": "The Bachelor of Public Administration (BPA or B.P.A.) degree is one of several Bachelor's level management degrees that provides training in the public policy field as well as public management. A bachelor's degree in public administration provides a background for those interested in pursuing careers in governmental agencies, non-governmental organizations, management in hospitals or public health institution, consulting in private firms, school boards, and human resources. Careers in international agencies, urban or regional planning, city management, financial planning, public finance and public relations also at the local, state/provincial, national/federal and supranational levels, as well as in the nonprofit sector. Through its history, the BPA degree has become more interdisciplinary by drawing from fields such as economics, management, sociology, political science, and regional planning in order to equip BPA graduates with skills and knowledge covering a broad range of topics and disciplines relevant to the public sector. A core curriculum of a typical BPA program usually includes courses on economics, public finance, research methods / statistics, policy analysis, ethics, public management, leadership, planning & GIS, program evaluation/performance measurement and human resources management.",
+            "title": "Bachelor of Public Administration",
+            "start": 0,
+            "end": 1321,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 194
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 195,
+                "end": 479
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 480,
+                "end": 731
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 732,
+                "end": 1045
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 1046,
+                "end": 1321
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ae356e55542992f92d82297",
+              "url": "https://en.wikipedia.org/wiki/Bachelor_of_Public_Administration",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.029386529386529386
+          },
+          {
+            "evidence_id": "E2",
+            "chunk_id": "ef231fb0-83b7-5c85-b1f5-373c22bc955d",
+            "document_id": "9bb0a65f-8eb4-55c0-b2cc-97b2f53f2b0d",
+            "revision_id": "8e205027-045b-5c1f-ae68-6f73c48f174a",
+            "strategy": "a",
+            "text": "Eenasul Fateh (Bengali: ঈনাসুল ফাতেহ ; born 3 April 1959), also known by his stage name Aladin, is a Bangladeshi-British cultural practitioner, magician, live artist and former international management consultant.",
+            "title": "Eenasul Fateh",
+            "start": 0,
+            "end": 213,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 213
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5a85b2d95542997b5ce40028",
+              "url": "https://en.wikipedia.org/wiki/Eenasul_Fateh",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.029051670471052088
+          },
+          {
+            "evidence_id": "E6",
+            "chunk_id": "3b862247-b51e-5ade-8bd4-1961e3bf2f71",
+            "document_id": "617e6f07-a5fd-5e54-a0ec-fdb74a1941bb",
+            "revision_id": "97d31c06-b225-5784-8398-996590531728",
+            "strategy": "a",
+            "text": "Amritt Ventures is a global management consulting firm based in the Los Angeles area. The stated purpose of the company is to aid North American and European firms in becoming familiar with routine Asian business practices, specifically in marketing their products to India and China, both of which are BRIC countries. Amritt has recently been ranked as one of the Top 10 Consulting Companies of India. Their executives have contributed to various financial magazines, including BusinessWeek and advised both US companies and the US president on doing business with India. Notable clients of Amritt include Kraft Foods, Johnson & Johnson, the British company Reckitt Benckiser, and the French media conglomerate Vivendi.",
+            "title": "Amritt",
+            "start": 0,
+            "end": 720,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 85
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 86,
+                "end": 318
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 319,
+                "end": 402
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 403,
+                "end": 572
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 573,
+                "end": 720
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a8c5b3e5542995e66a475d2",
+              "url": "https://en.wikipedia.org/wiki/Amritt",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.028474711270410194
+          },
+          {
+            "evidence_id": "E7",
+            "chunk_id": "186a52b1-5332-5b44-b106-b6315042a018",
+            "document_id": "9a10f574-fa7d-5fe8-9398-e57ab60d27c5",
+            "revision_id": "f19c6bf1-b2c4-5439-b162-2f9e7f8d63ef",
+            "strategy": "a",
+            "text": " develop green food standards, organizing and guiding the development and management of Green Food; trademark green logo management, review, approve green flag products; commissioned and coordinating the work of local agencies and green environment and product quality monitoring; organize research, technology promotion, training, advocacy, information services, green building demonstration bases, as well as foreign economic and technological exchanges and cooperation. The main partners consist of some organizations namely China Organic Food Certification Center(abbreviated COFCC),State Food and Nutrition Consultant Committee, Food and Agricultural Organization of the United Nations and Development Research Center of the State Council as well as some media networks as supporters. It has already published couples reports named\" Green Food Products Bulletin\",\"Green Fashion\",and \"Brief Report of the Center\"to the public.",
+            "title": "China Green Food Development Center",
+            "start": 1120,
+            "end": 2050,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 6,
+                "start": 1000,
+                "end": 1592
+              },
+              {
+                "kind": "sentence",
+                "number": 7,
+                "start": 1593,
+                "end": 1909
+              },
+              {
+                "kind": "sentence",
+                "number": 8,
+                "start": 1910,
+                "end": 2050
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5adcf2f25542994ed6169c33",
+              "url": "https://en.wikipedia.org/wiki/China_Green_Food_Development_Center",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.027820121951219513
+          },
+          {
+            "evidence_id": "E10",
+            "chunk_id": "de7e6d1f-05af-52c9-85f7-eeb4663695c0",
+            "document_id": "a6862beb-efc3-5bb0-8c34-4708cd9978d9",
+            "revision_id": "225b59b7-bde4-51ee-9c4a-23ac10a81872",
+            "strategy": "a",
+            "text": "Muzaffar Khan (born February 4, 1969) is an investor, entrepreneur, philanthropist, author, academic, investor and film producer born in Karachi, Pakistan. He was Senior Strategist at Moore Capital Management LLC. Khan retired in 2003 to become the Vice Chairman of ACOPS, an international environmental charity and consultant to the Man Environmental Capital Opportunities (Man ECO) division of Man Group, a British alternative investment management business with about $75 billion under management. Early in his career, he worked in private banking at Citibank and then as a foreign exchange trader at Barclays Capital.",
+            "title": "Muzaffar Khan",
+            "start": 0,
+            "end": 621,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 155
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 156,
+                "end": 213
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 214,
+                "end": 500
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 501,
+                "end": 621
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a8f20d655429924144829dc",
+              "url": "https://en.wikipedia.org/wiki/Muzaffar_Khan",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.024562989752863168
+          }
+        ],
+        "round": 2,
+        "tool_call_id": "call_hNHBzellVyyvnbtFMdIOSmzh",
+        "executed": true,
+        "follow_up": {
+          "evidence_id": "E2",
+          "entity": "Eenasul Fateh"
+        },
+        "requested_query": "Eenasul Fateh consulted organizations improve performance management consultant",
+        "query_adjusted": false
+      }
+    ],
+    "workflow": "bounded_tools_v1",
+    "execution": {
+      "planning_rounds": 2,
+      "retrieval_rounds": 2,
+      "tool_calls": 2,
+      "searches": 2,
+      "llm_calls": 3,
+      "embedding_calls": 2,
+      "total_provider_calls": 5,
+      "stop_reason": "retrieval_limit",
+      "limits": {
+        "retrieval_rounds": 2,
+        "searches": 3,
+        "llm_calls": 3,
+        "embedding_calls": 3,
+        "total_provider_calls": 6
+      }
+    },
+    "configuration": {
+      "strategy": "a",
+      "profile": "1a8846753a25",
+      "embedding_model": "text-embedding-3-small",
+      "embedding_dimensions": 384,
+      "generation_model": "gpt-5.4-mini-2026-03-17",
+      "prompt_version": "bounded_tools_quote_ids_v1"
+    },
+    "usage": {
+      "planning": [
+        {
+          "input_tokens": 527,
+          "output_tokens": 34,
+          "estimated_cost_usd": 0.00054825,
+          "model": "gpt-5.4-mini-2026-03-17"
+        },
+        {
+          "input_tokens": 1687,
+          "output_tokens": 47,
+          "estimated_cost_usd": 0.00147675,
+          "model": "gpt-5.4-mini-2026-03-17"
+        }
+      ],
+      "generation": {
+        "input_tokens": 4936,
+        "output_tokens": 96,
+        "estimated_cost_usd": 0.004134,
+        "model": "gpt-5.4-mini-2026-03-17"
+      },
+      "embeddings": [
+        {
+          "model": "text-embedding-3-small",
+          "input_tokens": 11,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 2.2e-07
+        },
+        {
+          "model": "text-embedding-3-small",
+          "input_tokens": 11,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 2.2e-07
+        }
+      ],
+      "estimated_model_cost_usd": 0.0061589999999999995,
+      "estimated_total_cost_usd": 0.0061594399999999995
+    },
+    "latency_ms": 5254
+  },
+  "error": null,
+  "elapsed_ms": 5254,
+  "ledger_after": {
+    "calls": 432,
+    "reserved_usd": 0.97631314,
+    "estimated_actual_usd": 0.34854139,
+    "input_tokens": 7128460,
+    "output_tokens": 7584
+  }
+}

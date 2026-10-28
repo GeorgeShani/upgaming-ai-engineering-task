@@ -1,0 +1,813 @@
+[
+  {
+    "case_id": "development-bridge-01",
+    "strategy": "a",
+    "category": "bridge",
+    "status": "answered",
+    "status_correct": true,
+    "supported_task_check": true,
+    "retrieval_initial": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "required_sources": 2,
+    "multi_source": true,
+    "all_sources_retrieved": true,
+    "all_sources_in_context": true,
+    "all_sources_cited": true,
+    "answer_full": {
+      "exact_match": 0.0,
+      "token_f1": 0.2222222222222222
+    },
+    "answer_last_claim": {
+      "exact_match": 0.0,
+      "token_f1": 0.35294117647058826
+    },
+    "expected_fact_checks": {
+      "the North Atlantic Conference": true
+    },
+    "all_expected_facts": true,
+    "citations": {
+      "total": 2,
+      "valid": 2,
+      "label_aligned": 2
+    },
+    "citation_details": [
+      {
+        "claim_index": 0,
+        "evidence_id": "E1",
+        "quote": "The Vermont Catamounts men's soccer team represents the University of Vermont in all NCAA Division I men's college soccer competitions. The team competes in the America East Conference.",
+        "document_id": "c3bbe7be-f3e6-5752-ba9b-73d3043faf06",
+        "valid": true,
+        "label_aligned": true
+      },
+      {
+        "claim_index": 1,
+        "evidence_id": "E3",
+        "quote": "The America East Conference is a collegiate athletic conference affiliated with the NCAA Division I, whose members are located mainly in the Northeastern United States. The conference was known as the Eastern College Athletic Conference-North from 1979 to 1988 and the North Atlantic Conference from 1988 to 1996.",
+        "document_id": "2e15a777-e170-53b1-b34a-e4ddd0a95606",
+        "valid": true,
+        "label_aligned": true
+      }
+    ]
+  },
+  {
+    "case_id": "development-bridge-01",
+    "strategy": "b",
+    "category": "bridge",
+    "status": "answered",
+    "status_correct": true,
+    "supported_task_check": true,
+    "retrieval_initial": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "required_sources": 2,
+    "multi_source": true,
+    "all_sources_retrieved": true,
+    "all_sources_in_context": true,
+    "all_sources_cited": true,
+    "answer_full": {
+      "exact_match": 0.0,
+      "token_f1": 0.2222222222222222
+    },
+    "answer_last_claim": {
+      "exact_match": 0.0,
+      "token_f1": 0.35294117647058826
+    },
+    "expected_fact_checks": {
+      "the North Atlantic Conference": true
+    },
+    "all_expected_facts": true,
+    "citations": {
+      "total": 2,
+      "valid": 2,
+      "label_aligned": 2
+    },
+    "citation_details": [
+      {
+        "claim_index": 0,
+        "evidence_id": "E1",
+        "quote": "The Vermont Catamounts men's soccer team represents the University of Vermont in all NCAA Division I men's college soccer competitions. The team competes in the America East Conference.",
+        "document_id": "c3bbe7be-f3e6-5752-ba9b-73d3043faf06",
+        "valid": true,
+        "label_aligned": true
+      },
+      {
+        "claim_index": 1,
+        "evidence_id": "E3",
+        "quote": "The America East Conference is a collegiate athletic conference affiliated with the NCAA Division I, whose members are located mainly in the Northeastern United States. The conference was known as the Eastern College Athletic Conference-North from 1979 to 1988 and the North Atlantic Conference from 1988 to 1996.",
+        "document_id": "2e15a777-e170-53b1-b34a-e4ddd0a95606",
+        "valid": true,
+        "label_aligned": true
+      }
+    ]
+  },
+  {
+    "case_id": "development-bridge-02",
+    "strategy": "b",
+    "category": "bridge",
+    "status": "answered",
+    "status_correct": true,
+    "supported_task_check": true,
+    "retrieval_initial": {
+      "recall_at_5": 0.5,
+      "recall_at_10": 0.5,
+      "mrr_at_10": 1.0
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 0.5
+    },
+    "required_sources": 2,
+    "multi_source": true,
+    "all_sources_retrieved": true,
+    "all_sources_in_context": true,
+    "all_sources_cited": true,
+    "answer_full": {
+      "exact_match": 0.0,
+      "token_f1": 0.2727272727272727
+    },
+    "answer_last_claim": {
+      "exact_match": 0.0,
+      "token_f1": 0.4
+    },
+    "expected_fact_checks": {
+      "1969 until 1974": true
+    },
+    "all_expected_facts": true,
+    "citations": {
+      "total": 2,
+      "valid": 2,
+      "label_aligned": 2
+    },
+    "citation_details": [
+      {
+        "claim_index": 0,
+        "evidence_id": "E1",
+        "quote": "His other roles included Assistant Secretary for Health and Scientific Affairs in the Department of Health, Education, and Welfare (now the United States Department of Health and Human Services) during the Nixon administration and Dean of the University of Southern California's medical school.",
+        "document_id": "dd3eb721-7c42-57bf-9777-03324193bc82",
+        "valid": true,
+        "label_aligned": true
+      },
+      {
+        "claim_index": 1,
+        "evidence_id": "E10",
+        "quote": "Richard Milhous Nixon (January 9, 1913 – April 22, 1994) was the 37th President of the United States from 1969 until 1974, when he resigned from office, the only U.S. president to do so. He had previously served as the 36th Vice President of the United States from 1953 to 1961, and prior to that as a U.S. Representative and also Senator from California.",
+        "document_id": "a32660ca-4199-5c58-9ded-759d1562ebab",
+        "valid": true,
+        "label_aligned": true
+      }
+    ]
+  },
+  {
+    "case_id": "development-bridge-02",
+    "strategy": "a",
+    "category": "bridge",
+    "status": "answered",
+    "status_correct": true,
+    "supported_task_check": true,
+    "retrieval_initial": {
+      "recall_at_5": 0.5,
+      "recall_at_10": 0.5,
+      "mrr_at_10": 1.0
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 0.5
+    },
+    "required_sources": 2,
+    "multi_source": true,
+    "all_sources_retrieved": true,
+    "all_sources_in_context": true,
+    "all_sources_cited": true,
+    "answer_full": {
+      "exact_match": 0.0,
+      "token_f1": 0.2857142857142857
+    },
+    "answer_last_claim": {
+      "exact_match": 0.0,
+      "token_f1": 0.42857142857142855
+    },
+    "expected_fact_checks": {
+      "1969 until 1974": true
+    },
+    "all_expected_facts": true,
+    "citations": {
+      "total": 2,
+      "valid": 2,
+      "label_aligned": 2
+    },
+    "citation_details": [
+      {
+        "claim_index": 0,
+        "evidence_id": "E1",
+        "quote": "His other roles included Assistant Secretary for Health and Scientific Affairs in the Department of Health, Education, and Welfare (now the United States Department of Health and Human Services) during the Nixon administration and Dean of the University of Southern California's medical school.",
+        "document_id": "dd3eb721-7c42-57bf-9777-03324193bc82",
+        "valid": true,
+        "label_aligned": true
+      },
+      {
+        "claim_index": 1,
+        "evidence_id": "E10",
+        "quote": "Richard Milhous Nixon (January 9, 1913 – April 22, 1994) was the 37th President of the United States from 1969 until 1974, when he resigned from office, the only U.S. president to do so. He had previously served as the 36th Vice President of the United States from 1953 to 1961, and prior to that as a U.S. Representative and also Senator from California.",
+        "document_id": "a32660ca-4199-5c58-9ded-759d1562ebab",
+        "valid": true,
+        "label_aligned": true
+      }
+    ]
+  },
+  {
+    "case_id": "development-comparison-01",
+    "strategy": "a",
+    "category": "comparison",
+    "status": "answered",
+    "status_correct": true,
+    "supported_task_check": false,
+    "retrieval_initial": {
+      "recall_at_5": 0.5,
+      "recall_at_10": 0.5,
+      "mrr_at_10": 1.0
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 0.5,
+      "recall_at_10": 0.5,
+      "mrr_at_10": 1.0
+    },
+    "required_sources": 2,
+    "multi_source": true,
+    "all_sources_retrieved": false,
+    "all_sources_in_context": false,
+    "all_sources_cited": false,
+    "answer_full": {
+      "exact_match": 0.0,
+      "token_f1": 0.0
+    },
+    "answer_last_claim": {
+      "exact_match": 0.0,
+      "token_f1": 0.0
+    },
+    "expected_fact_checks": {
+      "Fujioka, Gunma": false
+    },
+    "all_expected_facts": false,
+    "citations": {
+      "total": 1,
+      "valid": 1,
+      "label_aligned": 1
+    },
+    "citation_details": [
+      {
+        "claim_index": 0,
+        "evidence_id": "E1",
+        "quote": "Buck-Tick (stylized as BUCK-TICK) is a Japanese rock band, formed in Fujioka, Gunma in 1983.",
+        "document_id": "faba2080-a4ab-5ecd-909b-d09383b8f463",
+        "valid": true,
+        "label_aligned": true
+      }
+    ]
+  },
+  {
+    "case_id": "development-comparison-01",
+    "strategy": "b",
+    "category": "comparison",
+    "status": "answered",
+    "status_correct": true,
+    "supported_task_check": false,
+    "retrieval_initial": {
+      "recall_at_5": 0.5,
+      "recall_at_10": 0.5,
+      "mrr_at_10": 1.0
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 0.5,
+      "recall_at_10": 0.5,
+      "mrr_at_10": 1.0
+    },
+    "required_sources": 2,
+    "multi_source": true,
+    "all_sources_retrieved": false,
+    "all_sources_in_context": false,
+    "all_sources_cited": false,
+    "answer_full": {
+      "exact_match": 0.0,
+      "token_f1": 0.3333333333333333
+    },
+    "answer_last_claim": {
+      "exact_match": 0.0,
+      "token_f1": 0.5714285714285714
+    },
+    "expected_fact_checks": {
+      "Fujioka, Gunma": true
+    },
+    "all_expected_facts": true,
+    "citations": {
+      "total": 2,
+      "valid": 2,
+      "label_aligned": 2
+    },
+    "citation_details": [
+      {
+        "claim_index": 0,
+        "evidence_id": "E1",
+        "quote": "Buck-Tick (stylized as BUCK-TICK) is a Japanese rock band, formed in Fujioka, Gunma in 1983.",
+        "document_id": "faba2080-a4ab-5ecd-909b-d09383b8f463",
+        "valid": true,
+        "label_aligned": true
+      },
+      {
+        "claim_index": 1,
+        "evidence_id": "E1",
+        "quote": "Buck-Tick (stylized as BUCK-TICK) is a Japanese rock band, formed in Fujioka, Gunma in 1983.",
+        "document_id": "faba2080-a4ab-5ecd-909b-d09383b8f463",
+        "valid": true,
+        "label_aligned": true
+      }
+    ]
+  },
+  {
+    "case_id": "development-comparison-02",
+    "strategy": "b",
+    "category": "comparison",
+    "status": "answered",
+    "status_correct": true,
+    "supported_task_check": false,
+    "retrieval_initial": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "required_sources": 2,
+    "multi_source": true,
+    "all_sources_retrieved": true,
+    "all_sources_in_context": true,
+    "all_sources_cited": true,
+    "answer_full": {
+      "exact_match": 0.0,
+      "token_f1": 0.0
+    },
+    "answer_last_claim": {
+      "exact_match": 0.0,
+      "token_f1": 0.0
+    },
+    "expected_fact_checks": {
+      "no": false
+    },
+    "all_expected_facts": false,
+    "citations": {
+      "total": 2,
+      "valid": 2,
+      "label_aligned": 2
+    },
+    "citation_details": [
+      {
+        "claim_index": 0,
+        "evidence_id": "E2",
+        "quote": "Freakonomics: The Movie is a 2010 American documentary film based on the 2005 book \"Freakonomics: A Rogue Economist Explores the Hidden Side of Everything\" by economist Steven D. Levitt and writer Stephen J. Dubner. The film premiered at the Tribeca Film Festival in April 2010 with a theatrical release later in the year. The film received a lukewarm reception and a 65% fresh rating at Rottentomatoes.",
+        "document_id": "d741f9b5-f913-534b-8336-e80f225f4236",
+        "valid": true,
+        "label_aligned": true
+      },
+      {
+        "claim_index": 1,
+        "evidence_id": "E1",
+        "quote": "In The Realm of the Hackers is a 2003 Australian documentary directed by Kevin Anderson about the prominent hacker community, centered in Melbourne, Australia in the late 1980s until early 1990.",
+        "document_id": "bf26a9ab-712a-5103-b55a-a98a07999139",
+        "valid": true,
+        "label_aligned": true
+      }
+    ]
+  },
+  {
+    "case_id": "development-comparison-02",
+    "strategy": "a",
+    "category": "comparison",
+    "status": "answered",
+    "status_correct": true,
+    "supported_task_check": false,
+    "retrieval_initial": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "required_sources": 2,
+    "multi_source": true,
+    "all_sources_retrieved": true,
+    "all_sources_in_context": true,
+    "all_sources_cited": true,
+    "answer_full": {
+      "exact_match": 0.0,
+      "token_f1": 0.0
+    },
+    "answer_last_claim": {
+      "exact_match": 0.0,
+      "token_f1": 0.0
+    },
+    "expected_fact_checks": {
+      "no": false
+    },
+    "all_expected_facts": false,
+    "citations": {
+      "total": 4,
+      "valid": 4,
+      "label_aligned": 4
+    },
+    "citation_details": [
+      {
+        "claim_index": 0,
+        "evidence_id": "E2",
+        "quote": "Freakonomics: The Movie is a 2010 American documentary film based on the 2005 book \"Freakonomics: A Rogue Economist Explores the Hidden Side of Everything\" by economist Steven D. Levitt and writer Stephen J. Dubner. The film premiered at the Tribeca Film Festival in April 2010 with a theatrical release later in the year. The film received a lukewarm reception and a 65% fresh rating at Rottentomatoes.",
+        "document_id": "d741f9b5-f913-534b-8336-e80f225f4236",
+        "valid": true,
+        "label_aligned": true
+      },
+      {
+        "claim_index": 1,
+        "evidence_id": "E1",
+        "quote": "In The Realm of the Hackers is a 2003 Australian documentary directed by Kevin Anderson about the prominent hacker community, centered in Melbourne, Australia in the late 1980s until early 1990.",
+        "document_id": "bf26a9ab-712a-5103-b55a-a98a07999139",
+        "valid": true,
+        "label_aligned": true
+      },
+      {
+        "claim_index": 2,
+        "evidence_id": "E2",
+        "quote": "Freakonomics: The Movie is a 2010 American documentary film based on the 2005 book \"Freakonomics: A Rogue Economist Explores the Hidden Side of Everything\" by economist Steven D. Levitt and writer Stephen J. Dubner. The film premiered at the Tribeca Film Festival in April 2010 with a theatrical release later in the year. The film received a lukewarm reception and a 65% fresh rating at Rottentomatoes.",
+        "document_id": "d741f9b5-f913-534b-8336-e80f225f4236",
+        "valid": true,
+        "label_aligned": true
+      },
+      {
+        "claim_index": 2,
+        "evidence_id": "E1",
+        "quote": "In The Realm of the Hackers is a 2003 Australian documentary directed by Kevin Anderson about the prominent hacker community, centered in Melbourne, Australia in the late 1980s until early 1990.",
+        "document_id": "bf26a9ab-712a-5103-b55a-a98a07999139",
+        "valid": true,
+        "label_aligned": true
+      }
+    ]
+  },
+  {
+    "case_id": "development-conflict-01",
+    "strategy": "a",
+    "category": "conflict",
+    "status": "conflicting_evidence",
+    "status_correct": true,
+    "supported_task_check": true,
+    "retrieval_initial": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "required_sources": 2,
+    "multi_source": true,
+    "all_sources_retrieved": true,
+    "all_sources_in_context": true,
+    "all_sources_cited": true,
+    "answer_full": null,
+    "answer_last_claim": null,
+    "expected_fact_checks": {
+      "3 attempts": true,
+      "5 attempts": true
+    },
+    "all_expected_facts": true,
+    "citations": {
+      "total": 2,
+      "valid": 2,
+      "label_aligned": 2
+    },
+    "citation_details": [
+      {
+        "claim_index": 0,
+        "evidence_id": "E1",
+        "quote": "For fictional case NOVA-CONFLICT-DEVELOPMENT-01, the retry limit of payment-router at 12:00 UTC on 2026-03-12 was 3 attempts.",
+        "document_id": "ec1b5fd7-2b87-5ab4-bcaa-b28c5b5ff414",
+        "valid": true,
+        "label_aligned": true
+      },
+      {
+        "claim_index": 1,
+        "evidence_id": "E2",
+        "quote": "For fictional case NOVA-CONFLICT-DEVELOPMENT-01, the retry limit of payment-router at 12:00 UTC on 2026-03-12 was 5 attempts.",
+        "document_id": "f551791a-713a-5cef-8201-27a0f58c2620",
+        "valid": true,
+        "label_aligned": true
+      }
+    ]
+  },
+  {
+    "case_id": "development-conflict-01",
+    "strategy": "b",
+    "category": "conflict",
+    "status": "error",
+    "status_correct": false,
+    "supported_task_check": false,
+    "retrieval_initial": {
+      "recall_at_5": 0.0,
+      "recall_at_10": 0.0,
+      "mrr_at_10": 0.0
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 0.0,
+      "recall_at_10": 0.0,
+      "mrr_at_10": 0.0
+    },
+    "required_sources": 2,
+    "multi_source": true,
+    "all_sources_retrieved": false,
+    "all_sources_in_context": false,
+    "all_sources_cited": false,
+    "answer_full": null,
+    "answer_last_claim": null,
+    "expected_fact_checks": {
+      "3 attempts": false,
+      "5 attempts": false
+    },
+    "all_expected_facts": false,
+    "citations": {
+      "total": 0,
+      "valid": 0,
+      "label_aligned": 0
+    },
+    "citation_details": []
+  },
+  {
+    "case_id": "development-simple-01",
+    "strategy": "b",
+    "category": "simple",
+    "status": "answered",
+    "status_correct": true,
+    "supported_task_check": true,
+    "retrieval_initial": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "required_sources": 1,
+    "multi_source": false,
+    "all_sources_retrieved": true,
+    "all_sources_in_context": true,
+    "all_sources_cited": true,
+    "answer_full": {
+      "exact_match": 0.0,
+      "token_f1": 0.3333333333333333
+    },
+    "answer_last_claim": {
+      "exact_match": 0.0,
+      "token_f1": 0.3333333333333333
+    },
+    "expected_fact_checks": {
+      "11 minutes": true
+    },
+    "all_expected_facts": true,
+    "citations": {
+      "total": 1,
+      "valid": 1,
+      "label_aligned": 1
+    },
+    "citation_details": [
+      {
+        "claim_index": 0,
+        "evidence_id": "E1",
+        "quote": "For fictional incident NOVA-DEVELOPMENT-01, the documented recovery time was 11 minutes.",
+        "document_id": "3f1c93d9-1f49-5eda-84e7-8035cd747e19",
+        "valid": true,
+        "label_aligned": true
+      }
+    ]
+  },
+  {
+    "case_id": "development-simple-01",
+    "strategy": "a",
+    "category": "simple",
+    "status": "answered",
+    "status_correct": true,
+    "supported_task_check": true,
+    "retrieval_initial": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "required_sources": 1,
+    "multi_source": false,
+    "all_sources_retrieved": true,
+    "all_sources_in_context": true,
+    "all_sources_cited": true,
+    "answer_full": {
+      "exact_match": 0.0,
+      "token_f1": 0.3333333333333333
+    },
+    "answer_last_claim": {
+      "exact_match": 0.0,
+      "token_f1": 0.3333333333333333
+    },
+    "expected_fact_checks": {
+      "11 minutes": true
+    },
+    "all_expected_facts": true,
+    "citations": {
+      "total": 1,
+      "valid": 1,
+      "label_aligned": 1
+    },
+    "citation_details": [
+      {
+        "claim_index": 0,
+        "evidence_id": "E1",
+        "quote": "For fictional incident NOVA-DEVELOPMENT-01, the documented recovery time was 11 minutes.",
+        "document_id": "3f1c93d9-1f49-5eda-84e7-8035cd747e19",
+        "valid": true,
+        "label_aligned": true
+      }
+    ]
+  },
+  {
+    "case_id": "development-simple-02",
+    "strategy": "a",
+    "category": "simple",
+    "status": "answered",
+    "status_correct": true,
+    "supported_task_check": true,
+    "retrieval_initial": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "required_sources": 1,
+    "multi_source": false,
+    "all_sources_retrieved": true,
+    "all_sources_in_context": true,
+    "all_sources_cited": true,
+    "answer_full": {
+      "exact_match": 0.0,
+      "token_f1": 0.3333333333333333
+    },
+    "answer_last_claim": {
+      "exact_match": 0.0,
+      "token_f1": 0.3333333333333333
+    },
+    "expected_fact_checks": {
+      "12 minutes": true
+    },
+    "all_expected_facts": true,
+    "citations": {
+      "total": 1,
+      "valid": 1,
+      "label_aligned": 1
+    },
+    "citation_details": [
+      {
+        "claim_index": 0,
+        "evidence_id": "E1",
+        "quote": "For fictional incident NOVA-DEVELOPMENT-02, the documented recovery time was 12 minutes.",
+        "document_id": "6bcc25b0-533e-5dfb-8988-947487358bf6",
+        "valid": true,
+        "label_aligned": true
+      }
+    ]
+  },
+  {
+    "case_id": "development-simple-02",
+    "strategy": "b",
+    "category": "simple",
+    "status": "answered",
+    "status_correct": true,
+    "supported_task_check": true,
+    "retrieval_initial": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "required_sources": 1,
+    "multi_source": false,
+    "all_sources_retrieved": true,
+    "all_sources_in_context": true,
+    "all_sources_cited": true,
+    "answer_full": {
+      "exact_match": 0.0,
+      "token_f1": 0.3333333333333333
+    },
+    "answer_last_claim": {
+      "exact_match": 0.0,
+      "token_f1": 0.3333333333333333
+    },
+    "expected_fact_checks": {
+      "12 minutes": true
+    },
+    "all_expected_facts": true,
+    "citations": {
+      "total": 1,
+      "valid": 1,
+      "label_aligned": 1
+    },
+    "citation_details": [
+      {
+        "claim_index": 0,
+        "evidence_id": "E1",
+        "quote": "For fictional incident NOVA-DEVELOPMENT-02, the documented recovery time was 12 minutes.",
+        "document_id": "6bcc25b0-533e-5dfb-8988-947487358bf6",
+        "valid": true,
+        "label_aligned": true
+      }
+    ]
+  },
+  {
+    "case_id": "development-unanswerable-01",
+    "strategy": "b",
+    "category": "unanswerable",
+    "status": "insufficient_evidence",
+    "status_correct": true,
+    "supported_task_check": true,
+    "retrieval_initial": null,
+    "retrieval_aggregate": null,
+    "required_sources": 0,
+    "multi_source": false,
+    "all_sources_retrieved": null,
+    "all_sources_in_context": null,
+    "all_sources_cited": null,
+    "answer_full": null,
+    "answer_last_claim": null,
+    "expected_fact_checks": {},
+    "all_expected_facts": null,
+    "citations": {
+      "total": 0,
+      "valid": 0,
+      "label_aligned": 0
+    },
+    "citation_details": []
+  },
+  {
+    "case_id": "development-unanswerable-01",
+    "strategy": "a",
+    "category": "unanswerable",
+    "status": "insufficient_evidence",
+    "status_correct": true,
+    "supported_task_check": true,
+    "retrieval_initial": null,
+    "retrieval_aggregate": null,
+    "required_sources": 0,
+    "multi_source": false,
+    "all_sources_retrieved": null,
+    "all_sources_in_context": null,
+    "all_sources_cited": null,
+    "answer_full": null,
+    "answer_last_claim": null,
+    "expected_fact_checks": {},
+    "all_expected_facts": null,
+    "citations": {
+      "total": 0,
+      "valid": 0,
+      "label_aligned": 0
+    },
+    "citation_details": []
+  }
+]

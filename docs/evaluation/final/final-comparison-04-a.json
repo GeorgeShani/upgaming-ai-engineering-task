@@ -1,0 +1,1607 @@
+{
+  "case_id": "final-comparison-04",
+  "strategy": "a",
+  "question": "Are Random House Tower and 888 7th Avenue both used for real estate?",
+  "started_at": "2026-10-28T07:02:42.122916+00:00",
+  "ledger_before": {
+    "calls": 536,
+    "reserved_usd": 1.41448026,
+    "estimated_actual_usd": 0.47473776,
+    "input_tokens": 7275584,
+    "output_tokens": 11185
+  },
+  "result": {
+    "status": "answered",
+    "claims": [
+      {
+        "text": "Random House Tower is used as the headquarters of book publisher Random House and a luxury apartment complex, so it is used for real estate-related residential use.",
+        "citations": [
+          {
+            "evidence_id": "E1",
+            "quote": "The Random House Tower, also known as the Park Imperial Apartments, is a 52-story mixed-use tower in New York City, United States, that is used as the headquarters of book publisher Random House and a luxury apartment complex. The book publisher entrance is on Broadway and goes up to 27 floors, while the apartment complex entrance is on West 56th Street."
+          }
+        ]
+      },
+      {
+        "text": "888 7th Avenue carries the Vornado Realty Trust corporate headquarters.",
+        "citations": [
+          {
+            "evidence_id": "E2",
+            "quote": "It currently carries the Vornado Realty Trust corporate headquarters."
+          }
+        ]
+      }
+    ],
+    "conflicting_claims": [],
+    "answer": "Random House Tower is used as the headquarters of book publisher Random House and a luxury apartment complex, so it is used for real estate-related residential use. [E1] 888 7th Avenue carries the Vornado Realty Trust corporate headquarters. [E2]",
+    "evidence": [
+      {
+        "evidence_id": "E2",
+        "chunk_id": "9ade12c2-56f0-5e2a-b421-4529c86bc3a6",
+        "document_id": "eaf48bfb-600f-5f05-ac0f-0b653686ed19",
+        "revision_id": "5c497427-ae9e-5184-bf01-6adeead9d340",
+        "strategy": "a",
+        "text": "888 7th Avenue is a 628 ft (191m) tall modern-style office skyscraper in Midtown Manhattan which was completed in 1969 and has 46 floors. Emery Roth & Sons designed the building, which is tied with Central Park Place for the 65th tallest building in New York City. It currently carries the Vornado Realty Trust corporate headquarters. Previously known as the Arlen Building, its namesake being the company responsible for its construction, Arlen Realty & Development Corporation. The Red Eye Grill is located in the building at street level.",
+        "title": "888 7th Avenue",
+        "start": 0,
+        "end": 541,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 137
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 138,
+            "end": 264
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 265,
+            "end": 334
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 335,
+            "end": 479
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 480,
+            "end": 541
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "validation",
+          "record_id": "5ab56e32554299637185c594",
+          "url": "https://en.wikipedia.org/wiki/888_7th_Avenue",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.03225806451612903
+      },
+      {
+        "evidence_id": "E3",
+        "chunk_id": "215b57c0-4f86-544c-806d-c021b78b2df0",
+        "document_id": "913ed588-897e-5436-bd8e-d5c92911c52b",
+        "revision_id": "051da616-5ec0-55ba-a25b-2874e24257c4",
+        "strategy": "a",
+        "text": "750 Seventh Avenue is a 615 ft (187m) tall Class-A office skyscraper in New York City. It was completed in 1989 in the postmodern style and has 36 floors. Kevin Roche John Dinkeloo & Associates designed the building, and it is owned by Hines, a Texas based real estate investment company. The building's continuous helix design, culminating in a chimney-like extension, was caused by the New York City Building Code, which requires setbacks. The 84 exterior column transfers exist because of the owner's requirement for a column-free space. It is tied with the New York Life Building for the 74th tallest building in New York City. It is also LEED certified.",
+        "title": "750 7th Avenue",
+        "start": 0,
+        "end": 658,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 86
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 87,
+            "end": 154
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 155,
+            "end": 288
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 289,
+            "end": 441
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 442,
+            "end": 540
+          },
+          {
+            "kind": "sentence",
+            "number": 5,
+            "start": 541,
+            "end": 631
+          },
+          {
+            "kind": "sentence",
+            "number": 6,
+            "start": 632,
+            "end": 658
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a8b63755542997f31a41cfe",
+          "url": "https://en.wikipedia.org/wiki/750_7th_Avenue",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.030834914611005692
+      },
+      {
+        "evidence_id": "E7",
+        "chunk_id": "292d0ce0-0942-51dc-8298-b88200ab94d8",
+        "document_id": "78861498-a279-5cfe-829f-28549dfb9a07",
+        "revision_id": "d3ab85a1-128b-58a0-bc3c-c3962dd47877",
+        "strategy": "a",
+        "text": "75 Rockefeller Plaza is a skyscraper in New York City, originally built as an extension to Rockefeller Center. It was completed in 1947 in early Modernist style. It was originally the Esso Building, built for the Standard Oil Company (Esso). At completion it was the tallest completely air-conditioned building in New York City, and the first one in Rockefeller Center. After Standard Oil's successor, Exxon, moved to the newly built 1251 Avenue of the Americas, the building became known as the Time Warner Building, after the Time Warner media conglomerate, until they moved to the Time Warner Center. It is owned by Mohamed Al Fayed and managed and leased by RXR Realty.",
+        "title": "75 Rockefeller Plaza",
+        "start": 0,
+        "end": 673,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 110
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 111,
+            "end": 161
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 162,
+            "end": 241
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 242,
+            "end": 369
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 370,
+            "end": 603
+          },
+          {
+            "kind": "sentence",
+            "number": 5,
+            "start": 604,
+            "end": 673
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a89b19a5542992e4fca8376",
+          "url": "https://en.wikipedia.org/wiki/75_Rockefeller_Plaza",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.029273504273504274
+      },
+      {
+        "evidence_id": "E6",
+        "chunk_id": "46f8f0c6-1412-5847-8011-321658d3593d",
+        "document_id": "8a812bac-cfe2-510a-a851-966aeec86de7",
+        "revision_id": "8f3cfeb6-8740-57fa-8301-e0a34a90910d",
+        "strategy": "a",
+        "text": "100 East 53rd Street (formerly known as 610 Lexington Avenue) is a residential skyscraper under construction in Midtown Manhattan, New York City. The building’s architect is Norman Foster. Upon completion, it will rise 64 stories or 711 ft . It was supposed to feature a Shangri-La Hotel and condos but as a result of the financial crisis that began in 2007 and the downturn in the residential real estate market, the building's construction was put on indefinite hold in 2009 and the hotel idea was later abandoned. In March 2012, Aby Rosen and Michael Fuchs of RFR Holding LLC regained control of the site, and announced their intentions to carry on with the project. Excavation work began in early 2014. The building topped out on January 13, 2016. It should be complete by spring 2017, according to a 2015 update. The building will feature 94 condominium units including, one-bedrooms, two-bedrooms, three-bedrooms, and two four bedroom duplexes.",
+        "title": "100 East 53rd Street",
+        "start": 0,
+        "end": 950,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 145
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 146,
+            "end": 188
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 189,
+            "end": 241
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 242,
+            "end": 516
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 517,
+            "end": 669
+          },
+          {
+            "kind": "sentence",
+            "number": 5,
+            "start": 670,
+            "end": 706
+          },
+          {
+            "kind": "sentence",
+            "number": 6,
+            "start": 707,
+            "end": 751
+          },
+          {
+            "kind": "sentence",
+            "number": 7,
+            "start": 752,
+            "end": 817
+          },
+          {
+            "kind": "sentence",
+            "number": 8,
+            "start": 818,
+            "end": 950
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5adf476c5542993a75d2647a",
+          "url": "https://en.wikipedia.org/wiki/100_East_53rd_Street",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.027598020555767037
+      },
+      {
+        "evidence_id": "E1",
+        "chunk_id": "6736b4dd-07db-5e09-95ed-5abd91eee61c",
+        "document_id": "3eb9c66d-51b4-50a7-8421-852509713c5f",
+        "revision_id": "e2b0e06c-3272-5744-953b-fb93558cbeaf",
+        "strategy": "a",
+        "text": "The Random House Tower, also known as the Park Imperial Apartments, is a 52-story mixed-use tower in New York City, United States, that is used as the headquarters of book publisher Random House and a luxury apartment complex. The book publisher entrance is on Broadway and goes up to 27 floors, while the apartment complex entrance is on West 56th Street.",
+        "title": "Random House Tower",
+        "start": 0,
+        "end": 356,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 226
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 227,
+            "end": 356
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "validation",
+          "record_id": "5ab56e32554299637185c594",
+          "url": "https://en.wikipedia.org/wiki/Random_House_Tower",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.03278688524590164
+      },
+      {
+        "evidence_id": "E4",
+        "chunk_id": "b97c1cc3-4ab2-52e1-b26a-e3c3a0126a6d",
+        "document_id": "09e1a060-e217-51d8-b0ce-6ee1b0d9774b",
+        "revision_id": "c1cb1302-80c4-5a00-b08e-82e0208ad413",
+        "strategy": "a",
+        "text": "Manhattan West is a 5400000 sqft mixed-use development by Brookfield Properties. The project consists of two large office towers and two smaller residential towers, as well as a 1.5 acre public park. The towers will be built on a platform over Penn Station storage tracks along Ninth Avenue. The buildings will be built close to the developing Hudson Yards region between 31st and 33rd streets. These two buildings have been proposed as of 2010 . Upon its completion the taller west tower will extend 995 ft up to its roof and will be one of the tallest buildings in New York City and the world.",
+        "title": "Manhattan West",
+        "start": 0,
+        "end": 595,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 80
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 81,
+            "end": 199
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 200,
+            "end": 291
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 292,
+            "end": 394
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 395,
+            "end": 446
+          },
+          {
+            "kind": "sentence",
+            "number": 5,
+            "start": 447,
+            "end": 595
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a80d30655429938b61421fe",
+          "url": "https://en.wikipedia.org/wiki/Manhattan_West",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.02946912242686891
+      },
+      {
+        "evidence_id": "E5",
+        "chunk_id": "1da67f7e-69ec-5178-b3b8-69766991f9a7",
+        "document_id": "4f1b55b5-b26f-59e1-9471-2a0662b3cb03",
+        "revision_id": "4a6788ea-2bc4-5570-a0c4-9590cd86f716",
+        "strategy": "a",
+        "text": "Daniel Rose (born 1929) is an American real estate developer, philanthropist and essayist. He is best known professionally for developing the large-scale Pentagon City complex adjacent to Reagan National Airport; building the One Financial Center office tower that anchored the redevelopment of downtown Boston; and conceiving and reinventing a New York real estate apartment complex into the internationally renowned Manhattan Plaza for the Performing Arts. A forceful advocate for private philanthropy and public service, he founded the acclaimed innner-city youth education program, the Harlem Educational Activities Fund, established a wide range of academic and professional educational programs, and served multiple government administrations in unpaid advisory roles. His award-winning essays and speeches have covered subjects as diverse as economics, inner city education, racial problems, real estate, food & wine, and housing.",
+        "title": "Daniel Rose (real estate developer)",
+        "start": 0,
+        "end": 937,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 90
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 91,
+            "end": 458
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 459,
+            "end": 774
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 775,
+            "end": 937
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a7663d95542992d0ec060d6",
+          "url": "https://en.wikipedia.org/wiki/Daniel_Rose_%28real_estate_developer%29",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.028068137824235385
+      },
+      {
+        "evidence_id": "E9",
+        "chunk_id": "681e5775-0c78-5a67-b30c-e23620ca3011",
+        "document_id": "d0b6b71e-f325-5854-a02c-97e57f4040a0",
+        "revision_id": "d5dd9a93-c41f-55a8-bd6f-8eedb228cb27",
+        "strategy": "a",
+        "text": "Louis Myerberg Dubin (born January 31, 1963) is a prominent fourth-generation real estate developer notable for developing upscale condominiums, typically in large east-coast United States cities. His firm Athena often sold condominiums to middle and upper-middle class buyers by touting affordability and panoramic skyline views. In addition, his firm converted landmark buildings into luxury condominiums, some of which were bought by luminaries such as Charles Bronfman. He designed buildings to feature art prominently by artist-sculptors such as Jonathan Cramer. He was described by \"New York Magazine\" as being one of the \"new generation of uptown A-listers\". His views are quoted in newspapers and magazines, and he has made appearances on real estate talk shows. During the real estate bust beginning 2008, his firm was hit hard, and he formed a new firm, LMD Worldwide LLC. In June 2012, Dubin joined the Florida real estate developer The St. Joe Company as an Executive Vice President and a member of its management team.",
+        "title": "Louis Dubin",
+        "start": 0,
+        "end": 1031,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 196
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 197,
+            "end": 330
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 331,
+            "end": 473
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 474,
+            "end": 567
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 568,
+            "end": 665
+          },
+          {
+            "kind": "sentence",
+            "number": 5,
+            "start": 666,
+            "end": 770
+          },
+          {
+            "kind": "sentence",
+            "number": 6,
+            "start": 771,
+            "end": 882
+          },
+          {
+            "kind": "sentence",
+            "number": 7,
+            "start": 883,
+            "end": 1031
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a7663d95542992d0ec060d6",
+          "url": "https://en.wikipedia.org/wiki/Louis_Dubin",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.027583600982429624
+      }
+    ],
+    "search_trace": [
+      {
+        "query": "Random House Tower and 888 7th Avenue real estate use",
+        "strategy": "a",
+        "profile": "1a8846753a25",
+        "embedding_usage": {
+          "model": "text-embedding-3-small",
+          "input_tokens": 13,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 2.6e-07
+        },
+        "document_ranking": [
+          "3eb9c66d-51b4-50a7-8421-852509713c5f",
+          "eaf48bfb-600f-5f05-ac0f-0b653686ed19",
+          "913ed588-897e-5436-bd8e-d5c92911c52b",
+          "09e1a060-e217-51d8-b0ce-6ee1b0d9774b",
+          "4f1b55b5-b26f-59e1-9471-2a0662b3cb03",
+          "8a812bac-cfe2-510a-a851-966aeec86de7",
+          "78861498-a279-5cfe-829f-28549dfb9a07",
+          "cefbe3fa-30a0-5369-9051-14056c9caffd",
+          "c9660692-5541-5d78-9852-d17663b5af79",
+          "2e807174-1f4d-5115-8d42-4a9d0009a080"
+        ],
+        "candidate_counts": {
+          "dense": 30,
+          "bm25": 30,
+          "active_dense": 30,
+          "active_bm25": 30
+        },
+        "evidence": [
+          {
+            "evidence_id": "E1",
+            "chunk_id": "6736b4dd-07db-5e09-95ed-5abd91eee61c",
+            "document_id": "3eb9c66d-51b4-50a7-8421-852509713c5f",
+            "revision_id": "e2b0e06c-3272-5744-953b-fb93558cbeaf",
+            "strategy": "a",
+            "text": "The Random House Tower, also known as the Park Imperial Apartments, is a 52-story mixed-use tower in New York City, United States, that is used as the headquarters of book publisher Random House and a luxury apartment complex. The book publisher entrance is on Broadway and goes up to 27 floors, while the apartment complex entrance is on West 56th Street.",
+            "title": "Random House Tower",
+            "start": 0,
+            "end": 356,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 226
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 227,
+                "end": 356
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5ab56e32554299637185c594",
+              "url": "https://en.wikipedia.org/wiki/Random_House_Tower",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03278688524590164
+          },
+          {
+            "evidence_id": "E2",
+            "chunk_id": "9ade12c2-56f0-5e2a-b421-4529c86bc3a6",
+            "document_id": "eaf48bfb-600f-5f05-ac0f-0b653686ed19",
+            "revision_id": "5c497427-ae9e-5184-bf01-6adeead9d340",
+            "strategy": "a",
+            "text": "888 7th Avenue is a 628 ft (191m) tall modern-style office skyscraper in Midtown Manhattan which was completed in 1969 and has 46 floors. Emery Roth & Sons designed the building, which is tied with Central Park Place for the 65th tallest building in New York City. It currently carries the Vornado Realty Trust corporate headquarters. Previously known as the Arlen Building, its namesake being the company responsible for its construction, Arlen Realty & Development Corporation. The Red Eye Grill is located in the building at street level.",
+            "title": "888 7th Avenue",
+            "start": 0,
+            "end": 541,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 137
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 138,
+                "end": 264
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 265,
+                "end": 334
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 335,
+                "end": 479
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 480,
+                "end": 541
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5ab56e32554299637185c594",
+              "url": "https://en.wikipedia.org/wiki/888_7th_Avenue",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03225806451612903
+          },
+          {
+            "evidence_id": "E3",
+            "chunk_id": "215b57c0-4f86-544c-806d-c021b78b2df0",
+            "document_id": "913ed588-897e-5436-bd8e-d5c92911c52b",
+            "revision_id": "051da616-5ec0-55ba-a25b-2874e24257c4",
+            "strategy": "a",
+            "text": "750 Seventh Avenue is a 615 ft (187m) tall Class-A office skyscraper in New York City. It was completed in 1989 in the postmodern style and has 36 floors. Kevin Roche John Dinkeloo & Associates designed the building, and it is owned by Hines, a Texas based real estate investment company. The building's continuous helix design, culminating in a chimney-like extension, was caused by the New York City Building Code, which requires setbacks. The 84 exterior column transfers exist because of the owner's requirement for a column-free space. It is tied with the New York Life Building for the 74th tallest building in New York City. It is also LEED certified.",
+            "title": "750 7th Avenue",
+            "start": 0,
+            "end": 658,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 86
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 87,
+                "end": 154
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 155,
+                "end": 288
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 289,
+                "end": 441
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 442,
+                "end": 540
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 541,
+                "end": 631
+              },
+              {
+                "kind": "sentence",
+                "number": 6,
+                "start": 632,
+                "end": 658
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a8b63755542997f31a41cfe",
+              "url": "https://en.wikipedia.org/wiki/750_7th_Avenue",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.02976190476190476
+          },
+          {
+            "evidence_id": "E4",
+            "chunk_id": "b97c1cc3-4ab2-52e1-b26a-e3c3a0126a6d",
+            "document_id": "09e1a060-e217-51d8-b0ce-6ee1b0d9774b",
+            "revision_id": "c1cb1302-80c4-5a00-b08e-82e0208ad413",
+            "strategy": "a",
+            "text": "Manhattan West is a 5400000 sqft mixed-use development by Brookfield Properties. The project consists of two large office towers and two smaller residential towers, as well as a 1.5 acre public park. The towers will be built on a platform over Penn Station storage tracks along Ninth Avenue. The buildings will be built close to the developing Hudson Yards region between 31st and 33rd streets. These two buildings have been proposed as of 2010 . Upon its completion the taller west tower will extend 995 ft up to its roof and will be one of the tallest buildings in New York City and the world.",
+            "title": "Manhattan West",
+            "start": 0,
+            "end": 595,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 80
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 81,
+                "end": 199
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 200,
+                "end": 291
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 292,
+                "end": 394
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 395,
+                "end": 446
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 447,
+                "end": 595
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a80d30655429938b61421fe",
+              "url": "https://en.wikipedia.org/wiki/Manhattan_West",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.02946912242686891
+          },
+          {
+            "evidence_id": "E5",
+            "chunk_id": "1da67f7e-69ec-5178-b3b8-69766991f9a7",
+            "document_id": "4f1b55b5-b26f-59e1-9471-2a0662b3cb03",
+            "revision_id": "4a6788ea-2bc4-5570-a0c4-9590cd86f716",
+            "strategy": "a",
+            "text": "Daniel Rose (born 1929) is an American real estate developer, philanthropist and essayist. He is best known professionally for developing the large-scale Pentagon City complex adjacent to Reagan National Airport; building the One Financial Center office tower that anchored the redevelopment of downtown Boston; and conceiving and reinventing a New York real estate apartment complex into the internationally renowned Manhattan Plaza for the Performing Arts. A forceful advocate for private philanthropy and public service, he founded the acclaimed innner-city youth education program, the Harlem Educational Activities Fund, established a wide range of academic and professional educational programs, and served multiple government administrations in unpaid advisory roles. His award-winning essays and speeches have covered subjects as diverse as economics, inner city education, racial problems, real estate, food & wine, and housing.",
+            "title": "Daniel Rose (real estate developer)",
+            "start": 0,
+            "end": 937,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 90
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 91,
+                "end": 458
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 459,
+                "end": 774
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 775,
+                "end": 937
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a7663d95542992d0ec060d6",
+              "url": "https://en.wikipedia.org/wiki/Daniel_Rose_%28real_estate_developer%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.028068137824235385
+          },
+          {
+            "evidence_id": "E6",
+            "chunk_id": "46f8f0c6-1412-5847-8011-321658d3593d",
+            "document_id": "8a812bac-cfe2-510a-a851-966aeec86de7",
+            "revision_id": "8f3cfeb6-8740-57fa-8301-e0a34a90910d",
+            "strategy": "a",
+            "text": "100 East 53rd Street (formerly known as 610 Lexington Avenue) is a residential skyscraper under construction in Midtown Manhattan, New York City. The building’s architect is Norman Foster. Upon completion, it will rise 64 stories or 711 ft . It was supposed to feature a Shangri-La Hotel and condos but as a result of the financial crisis that began in 2007 and the downturn in the residential real estate market, the building's construction was put on indefinite hold in 2009 and the hotel idea was later abandoned. In March 2012, Aby Rosen and Michael Fuchs of RFR Holding LLC regained control of the site, and announced their intentions to carry on with the project. Excavation work began in early 2014. The building topped out on January 13, 2016. It should be complete by spring 2017, according to a 2015 update. The building will feature 94 condominium units including, one-bedrooms, two-bedrooms, three-bedrooms, and two four bedroom duplexes.",
+            "title": "100 East 53rd Street",
+            "start": 0,
+            "end": 950,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 145
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 146,
+                "end": 188
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 189,
+                "end": 241
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 242,
+                "end": 516
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 517,
+                "end": 669
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 670,
+                "end": 706
+              },
+              {
+                "kind": "sentence",
+                "number": 6,
+                "start": 707,
+                "end": 751
+              },
+              {
+                "kind": "sentence",
+                "number": 7,
+                "start": 752,
+                "end": 817
+              },
+              {
+                "kind": "sentence",
+                "number": 8,
+                "start": 818,
+                "end": 950
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5adf476c5542993a75d2647a",
+              "url": "https://en.wikipedia.org/wiki/100_East_53rd_Street",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.027051561365286855
+          },
+          {
+            "evidence_id": "E7",
+            "chunk_id": "292d0ce0-0942-51dc-8298-b88200ab94d8",
+            "document_id": "78861498-a279-5cfe-829f-28549dfb9a07",
+            "revision_id": "d3ab85a1-128b-58a0-bc3c-c3962dd47877",
+            "strategy": "a",
+            "text": "75 Rockefeller Plaza is a skyscraper in New York City, originally built as an extension to Rockefeller Center. It was completed in 1947 in early Modernist style. It was originally the Esso Building, built for the Standard Oil Company (Esso). At completion it was the tallest completely air-conditioned building in New York City, and the first one in Rockefeller Center. After Standard Oil's successor, Exxon, moved to the newly built 1251 Avenue of the Americas, the building became known as the Time Warner Building, after the Time Warner media conglomerate, until they moved to the Time Warner Center. It is owned by Mohamed Al Fayed and managed and leased by RXR Realty.",
+            "title": "75 Rockefeller Plaza",
+            "start": 0,
+            "end": 673,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 110
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 111,
+                "end": 161
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 162,
+                "end": 241
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 242,
+                "end": 369
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 370,
+                "end": 603
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 604,
+                "end": 673
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a89b19a5542992e4fca8376",
+              "url": "https://en.wikipedia.org/wiki/75_Rockefeller_Plaza",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015625
+          },
+          {
+            "evidence_id": "E8",
+            "chunk_id": "a68632a2-fcb5-5c8c-b6c5-08f644159591",
+            "document_id": "cefbe3fa-30a0-5369-9051-14056c9caffd",
+            "revision_id": "e5f578e3-3f42-58ae-b63a-4fa867ac1b6b",
+            "strategy": "a",
+            "text": "Kenwood Academy (formerly known as Kenwood High School) is a public 4–year high school located in the Hyde Park–Kenwood neighborhood on the south side of Chicago, Illinois, United States. Operated by the Chicago Public Schools (CPS) district, Kenwood opened in 1969. Kenwood limits acceptance of high school students to those living in its attendance area: from Lake Michigan to Cottage Grove Avenue east to west, and 47th to the Midway Plaisance north to south. The school is bounded by E. Hyde Park Boulevard on the south, S. Lake Park Avenue on the east, S. Blackstone Avenue on the west, and E. 50th Street on the north.The school's football field, however, extends the campus north to E. 49th Street along S. Lake Park Avenue. In addition to being a local high school, Kenwood has a magnet program that accepts students entering into 7th grade who pass a rigorous admissions test. The magnet program accepts students citywide using a random lottery with a standing of 6 or higher in both reading and math. Kenwood was recognized as a \"School of Distinction\" for its academic achievement and a Model School by the International Center for Leadership in",
+            "title": "Kenwood Academy",
+            "start": 0,
+            "end": 1156,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 187
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 188,
+                "end": 266
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 267,
+                "end": 462
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 463,
+                "end": 731
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 732,
+                "end": 885
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 886,
+                "end": 1010
+              },
+              {
+                "kind": "sentence",
+                "number": 6,
+                "start": 1011,
+                "end": 1175
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a79e0015542994bb9457114",
+              "url": "https://en.wikipedia.org/wiki/Kenwood_Academy",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015625
+          }
+        ],
+        "round": 1,
+        "tool_call_id": "call_yUZVoNOvHeU0jAXuCt69eOYJ",
+        "executed": true,
+        "follow_up": null,
+        "requested_query": "Random House Tower and 888 7th Avenue real estate use",
+        "query_adjusted": false
+      },
+      {
+        "query": "Vornado Realty Trust 888 7th Avenue real estate",
+        "strategy": "a",
+        "profile": "1a8846753a25",
+        "embedding_usage": {
+          "model": "text-embedding-3-small",
+          "input_tokens": 12,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 2.4e-07
+        },
+        "document_ranking": [
+          "eaf48bfb-600f-5f05-ac0f-0b653686ed19",
+          "913ed588-897e-5436-bd8e-d5c92911c52b",
+          "78861498-a279-5cfe-829f-28549dfb9a07",
+          "8a812bac-cfe2-510a-a851-966aeec86de7",
+          "d0b6b71e-f325-5854-a02c-97e57f4040a0",
+          "f930c357-96a6-55d8-91e6-7d2285eed6f9",
+          "2e807174-1f4d-5115-8d42-4a9d0009a080",
+          "5f9edf45-31d5-5686-a6c2-274d1cbb614a",
+          "e1eb6ea1-3022-57c1-bca7-d21a57329119",
+          "09e1a060-e217-51d8-b0ce-6ee1b0d9774b"
+        ],
+        "candidate_counts": {
+          "dense": 30,
+          "bm25": 30,
+          "active_dense": 30,
+          "active_bm25": 30
+        },
+        "evidence": [
+          {
+            "evidence_id": "E2",
+            "chunk_id": "9ade12c2-56f0-5e2a-b421-4529c86bc3a6",
+            "document_id": "eaf48bfb-600f-5f05-ac0f-0b653686ed19",
+            "revision_id": "5c497427-ae9e-5184-bf01-6adeead9d340",
+            "strategy": "a",
+            "text": "888 7th Avenue is a 628 ft (191m) tall modern-style office skyscraper in Midtown Manhattan which was completed in 1969 and has 46 floors. Emery Roth & Sons designed the building, which is tied with Central Park Place for the 65th tallest building in New York City. It currently carries the Vornado Realty Trust corporate headquarters. Previously known as the Arlen Building, its namesake being the company responsible for its construction, Arlen Realty & Development Corporation. The Red Eye Grill is located in the building at street level.",
+            "title": "888 7th Avenue",
+            "start": 0,
+            "end": 541,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 137
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 138,
+                "end": 264
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 265,
+                "end": 334
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 335,
+                "end": 479
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 480,
+                "end": 541
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5ab56e32554299637185c594",
+              "url": "https://en.wikipedia.org/wiki/888_7th_Avenue",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03278688524590164
+          },
+          {
+            "evidence_id": "E3",
+            "chunk_id": "215b57c0-4f86-544c-806d-c021b78b2df0",
+            "document_id": "913ed588-897e-5436-bd8e-d5c92911c52b",
+            "revision_id": "051da616-5ec0-55ba-a25b-2874e24257c4",
+            "strategy": "a",
+            "text": "750 Seventh Avenue is a 615 ft (187m) tall Class-A office skyscraper in New York City. It was completed in 1989 in the postmodern style and has 36 floors. Kevin Roche John Dinkeloo & Associates designed the building, and it is owned by Hines, a Texas based real estate investment company. The building's continuous helix design, culminating in a chimney-like extension, was caused by the New York City Building Code, which requires setbacks. The 84 exterior column transfers exist because of the owner's requirement for a column-free space. It is tied with the New York Life Building for the 74th tallest building in New York City. It is also LEED certified.",
+            "title": "750 7th Avenue",
+            "start": 0,
+            "end": 658,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 86
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 87,
+                "end": 154
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 155,
+                "end": 288
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 289,
+                "end": 441
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 442,
+                "end": 540
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 541,
+                "end": 631
+              },
+              {
+                "kind": "sentence",
+                "number": 6,
+                "start": 632,
+                "end": 658
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a8b63755542997f31a41cfe",
+              "url": "https://en.wikipedia.org/wiki/750_7th_Avenue",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.030834914611005692
+          },
+          {
+            "evidence_id": "E7",
+            "chunk_id": "292d0ce0-0942-51dc-8298-b88200ab94d8",
+            "document_id": "78861498-a279-5cfe-829f-28549dfb9a07",
+            "revision_id": "d3ab85a1-128b-58a0-bc3c-c3962dd47877",
+            "strategy": "a",
+            "text": "75 Rockefeller Plaza is a skyscraper in New York City, originally built as an extension to Rockefeller Center. It was completed in 1947 in early Modernist style. It was originally the Esso Building, built for the Standard Oil Company (Esso). At completion it was the tallest completely air-conditioned building in New York City, and the first one in Rockefeller Center. After Standard Oil's successor, Exxon, moved to the newly built 1251 Avenue of the Americas, the building became known as the Time Warner Building, after the Time Warner media conglomerate, until they moved to the Time Warner Center. It is owned by Mohamed Al Fayed and managed and leased by RXR Realty.",
+            "title": "75 Rockefeller Plaza",
+            "start": 0,
+            "end": 673,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 110
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 111,
+                "end": 161
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 162,
+                "end": 241
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 242,
+                "end": 369
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 370,
+                "end": 603
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 604,
+                "end": 673
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a89b19a5542992e4fca8376",
+              "url": "https://en.wikipedia.org/wiki/75_Rockefeller_Plaza",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.029273504273504274
+          },
+          {
+            "evidence_id": "E6",
+            "chunk_id": "46f8f0c6-1412-5847-8011-321658d3593d",
+            "document_id": "8a812bac-cfe2-510a-a851-966aeec86de7",
+            "revision_id": "8f3cfeb6-8740-57fa-8301-e0a34a90910d",
+            "strategy": "a",
+            "text": "100 East 53rd Street (formerly known as 610 Lexington Avenue) is a residential skyscraper under construction in Midtown Manhattan, New York City. The building’s architect is Norman Foster. Upon completion, it will rise 64 stories or 711 ft . It was supposed to feature a Shangri-La Hotel and condos but as a result of the financial crisis that began in 2007 and the downturn in the residential real estate market, the building's construction was put on indefinite hold in 2009 and the hotel idea was later abandoned. In March 2012, Aby Rosen and Michael Fuchs of RFR Holding LLC regained control of the site, and announced their intentions to carry on with the project. Excavation work began in early 2014. The building topped out on January 13, 2016. It should be complete by spring 2017, according to a 2015 update. The building will feature 94 condominium units including, one-bedrooms, two-bedrooms, three-bedrooms, and two four bedroom duplexes.",
+            "title": "100 East 53rd Street",
+            "start": 0,
+            "end": 950,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 145
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 146,
+                "end": 188
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 189,
+                "end": 241
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 242,
+                "end": 516
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 517,
+                "end": 669
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 670,
+                "end": 706
+              },
+              {
+                "kind": "sentence",
+                "number": 6,
+                "start": 707,
+                "end": 751
+              },
+              {
+                "kind": "sentence",
+                "number": 7,
+                "start": 752,
+                "end": 817
+              },
+              {
+                "kind": "sentence",
+                "number": 8,
+                "start": 818,
+                "end": 950
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5adf476c5542993a75d2647a",
+              "url": "https://en.wikipedia.org/wiki/100_East_53rd_Street",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.027598020555767037
+          },
+          {
+            "evidence_id": "E9",
+            "chunk_id": "681e5775-0c78-5a67-b30c-e23620ca3011",
+            "document_id": "d0b6b71e-f325-5854-a02c-97e57f4040a0",
+            "revision_id": "d5dd9a93-c41f-55a8-bd6f-8eedb228cb27",
+            "strategy": "a",
+            "text": "Louis Myerberg Dubin (born January 31, 1963) is a prominent fourth-generation real estate developer notable for developing upscale condominiums, typically in large east-coast United States cities. His firm Athena often sold condominiums to middle and upper-middle class buyers by touting affordability and panoramic skyline views. In addition, his firm converted landmark buildings into luxury condominiums, some of which were bought by luminaries such as Charles Bronfman. He designed buildings to feature art prominently by artist-sculptors such as Jonathan Cramer. He was described by \"New York Magazine\" as being one of the \"new generation of uptown A-listers\". His views are quoted in newspapers and magazines, and he has made appearances on real estate talk shows. During the real estate bust beginning 2008, his firm was hit hard, and he formed a new firm, LMD Worldwide LLC. In June 2012, Dubin joined the Florida real estate developer The St. Joe Company as an Executive Vice President and a member of its management team.",
+            "title": "Louis Dubin",
+            "start": 0,
+            "end": 1031,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 196
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 197,
+                "end": 330
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 331,
+                "end": 473
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 474,
+                "end": 567
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 568,
+                "end": 665
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 666,
+                "end": 770
+              },
+              {
+                "kind": "sentence",
+                "number": 6,
+                "start": 771,
+                "end": 882
+              },
+              {
+                "kind": "sentence",
+                "number": 7,
+                "start": 883,
+                "end": 1031
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a7663d95542992d0ec060d6",
+              "url": "https://en.wikipedia.org/wiki/Louis_Dubin",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.027583600982429624
+          },
+          {
+            "evidence_id": "E10",
+            "chunk_id": "46a0cbb9-bb21-55b4-83d4-085e6716e72a",
+            "document_id": "f930c357-96a6-55d8-91e6-7d2285eed6f9",
+            "revision_id": "9006c9e4-9367-5036-8f04-3289d0b509a8",
+            "strategy": "a",
+            "text": "Jay Papasan is an American writer and business executive. He is best known for co-authoring, with Gary Keller, books such as \"The Millionaire Real Estate Investor\", which became both a New York Times best-seller and a BusinessWeek best-seller, and \"The ONE Thing\", which reached #1 on the Wall Street Journal business best-seller list. Papasan is the vice president of publishing and executive editor at KellerINK, the publishing arm of Keller Williams Realty. He and his wife Wendy are owners of \"The Papasan Real Estate Team\". In 2014 he was named one of the \"Most Powerful People in Real Estate\" by Swanepoel Power 200.",
+            "title": "Jay Papasan",
+            "start": 0,
+            "end": 622,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 57
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 58,
+                "end": 335
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 336,
+                "end": 460
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 461,
+                "end": 528
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 529,
+                "end": 622
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a7149f45542994082a3e777",
+              "url": "https://en.wikipedia.org/wiki/Jay_Papasan",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.016129032258064516
+          },
+          {
+            "evidence_id": "E11",
+            "chunk_id": "885e3164-b929-57b2-971b-b0da0c2eb62e",
+            "document_id": "2e807174-1f4d-5115-8d42-4a9d0009a080",
+            "revision_id": "395b1d47-65cd-5610-88fa-f9924fbbc0fa",
+            "strategy": "a",
+            "text": "\"Mystery on Fifth Avenue\" is the title of a \"New York Times\" article written by Penelope Green in June 2008 about a mystery apartment on Fifth Avenue in New York City. The apartment, a 4,200-square-foot luxury co-op formerly inhabited by Marjorie Merriweather Post and E.F. Hutton, was purchased by Wall Street mogul Steven B. Klinsky and his wife Maureen Sherry for $8.5 million. They hired architectural designer Eric Clough and his firm 212box for the renovation, during which Clough embedded an extensive mystery in the apartment in the form of riddles, ciphers, puzzles, and hidden objects, for Klinsky and Sherry's four children. It was done without his clients' knowledge, and they did not discover the mystery until several months after moving in.",
+            "title": "Mystery on Fifth Avenue",
+            "start": 0,
+            "end": 755,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 167
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 168,
+                "end": 380
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 381,
+                "end": 635
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 636,
+                "end": 755
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a7e8a9c55429949594199fb",
+              "url": "https://en.wikipedia.org/wiki/Mystery_on_Fifth_Avenue",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015873015873015872
+          },
+          {
+            "evidence_id": "E12",
+            "chunk_id": "9054bca1-7541-555a-8e40-60eeee846fa8",
+            "document_id": "5f9edf45-31d5-5686-a6c2-274d1cbb614a",
+            "revision_id": "54badc0a-eb39-557c-a864-ab1b8bae8d19",
+            "strategy": "a",
+            "text": "Elmvale Acres Shopping Centre is an open-air mall located in the Elmvale Acres neighbourhood of Ottawa, Ontario, Canada. It opened in 1961, making it one of the oldest shopping centres in the city. The mall is just a short 10-minute drive south of St. Laurent Shopping Centre. The shopping centre is also just a 3-minute drive from the Canadian Museum of Science of Technology (closed until 2017). The Smythe Medical Centre is located just across from the north end of the mall. The mall is bounded by Smythe Road to the north, Othello Avenue to the west, Russell Road to the east, and St. Laurent Boulevard to the south. The shopping centre has approximately 60 shops and services including Dollar Plus, LCBO, Loblaws, Rexall Pharma Plus, Royal Bank, The Beer Store, and the Ottawa Public Library. The shopping centre is adjacent to the Elmvale Transit Station. The size of the total complex is 147,332 square feet. The shopping centre is currently owned by Rio-Can Real Estate Investment Trust.",
+            "title": "Elmvale Acres Shopping Centre",
+            "start": 0,
+            "end": 996,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 120
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 121,
+                "end": 197
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 198,
+                "end": 276
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 277,
+                "end": 397
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 398,
+                "end": 478
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 479,
+                "end": 621
+              },
+              {
+                "kind": "sentence",
+                "number": 6,
+                "start": 622,
+                "end": 798
+              },
+              {
+                "kind": "sentence",
+                "number": 7,
+                "start": 799,
+                "end": 862
+              },
+              {
+                "kind": "sentence",
+                "number": 8,
+                "start": 863,
+                "end": 916
+              },
+              {
+                "kind": "sentence",
+                "number": 9,
+                "start": 917,
+                "end": 996
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5abd15b955429933744ab718",
+              "url": "https://en.wikipedia.org/wiki/Elmvale_Acres_Shopping_Centre",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015873015873015872
+          }
+        ],
+        "round": 2,
+        "tool_call_id": "call_Cq4wgkgxJTwdVKlrHDELb4jX",
+        "executed": true,
+        "follow_up": {
+          "evidence_id": "E2",
+          "entity": "Vornado Realty Trust"
+        },
+        "requested_query": "888 7th Avenue real estate",
+        "query_adjusted": true
+      }
+    ],
+    "workflow": "bounded_tools_v1",
+    "execution": {
+      "planning_rounds": 2,
+      "retrieval_rounds": 2,
+      "tool_calls": 2,
+      "searches": 2,
+      "llm_calls": 3,
+      "embedding_calls": 2,
+      "total_provider_calls": 5,
+      "stop_reason": "retrieval_limit",
+      "limits": {
+        "retrieval_rounds": 2,
+        "searches": 3,
+        "llm_calls": 3,
+        "embedding_calls": 3,
+        "total_provider_calls": 6
+      }
+    },
+    "configuration": {
+      "strategy": "a",
+      "profile": "1a8846753a25",
+      "embedding_model": "text-embedding-3-small",
+      "embedding_dimensions": 384,
+      "generation_model": "gpt-5.4-mini-2026-03-17",
+      "prompt_version": "bounded_tools_quote_ids_v1"
+    },
+    "usage": {
+      "planning": [
+        {
+          "input_tokens": 525,
+          "output_tokens": 36,
+          "estimated_cost_usd": 0.00055575,
+          "model": "gpt-5.4-mini-2026-03-17"
+        },
+        {
+          "input_tokens": 1935,
+          "output_tokens": 41,
+          "estimated_cost_usd": 0.00163575,
+          "model": "gpt-5.4-mini-2026-03-17"
+        }
+      ],
+      "generation": {
+        "input_tokens": 5716,
+        "output_tokens": 108,
+        "estimated_cost_usd": 0.004773,
+        "model": "gpt-5.4-mini-2026-03-17"
+      },
+      "embeddings": [
+        {
+          "model": "text-embedding-3-small",
+          "input_tokens": 13,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 2.6e-07
+        },
+        {
+          "model": "text-embedding-3-small",
+          "input_tokens": 12,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 2.4e-07
+        }
+      ],
+      "estimated_model_cost_usd": 0.0069645,
+      "estimated_total_cost_usd": 0.006965
+    },
+    "latency_ms": 4943
+  },
+  "error": null,
+  "elapsed_ms": 4943,
+  "ledger_after": {
+    "calls": 541,
+    "reserved_usd": 1.43569601,
+    "estimated_actual_usd": 0.48170276,
+    "input_tokens": 7283785,
+    "output_tokens": 11370
+  }
+}

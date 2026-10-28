@@ -1,0 +1,1305 @@
+{
+  "case_id": "final-bridge-05",
+  "strategy": "b",
+  "question": "Who was known by his stage name Aladin and helped organizations improve their performance as a consultant?",
+  "started_at": "2026-10-28T07:00:44.606199+00:00",
+  "ledger_before": {
+    "calls": 432,
+    "reserved_usd": 0.97631314,
+    "estimated_actual_usd": 0.34854139,
+    "input_tokens": 7128460,
+    "output_tokens": 7584
+  },
+  "result": {
+    "status": "answered",
+    "claims": [
+      {
+        "text": "Eenasul Fateh was known by his stage name Aladin.",
+        "citations": [
+          {
+            "evidence_id": "E2",
+            "quote": "Eenasul Fateh (Bengali: ঈনাসুল ফাতেহ ; born 3 April 1959), also known by his stage name Aladin, is a Bangladeshi-British cultural practitioner, magician, live artist and former international management consultant."
+          }
+        ]
+      },
+      {
+        "text": "He was a former international management consultant, and management consulting is the practice of helping organizations improve their performance.",
+        "citations": [
+          {
+            "evidence_id": "E2",
+            "quote": "Eenasul Fateh (Bengali: ঈনাসুল ফাতেহ ; born 3 April 1959), also known by his stage name Aladin, is a Bangladeshi-British cultural practitioner, magician, live artist and former international management consultant."
+          },
+          {
+            "evidence_id": "E1",
+            "quote": "Management consulting is the practice of helping organizations to improve their performance, operating primarily through the analysis of existing organizational problems and the development of plans for improvement."
+          }
+        ]
+      }
+    ],
+    "conflicting_claims": [],
+    "answer": "Eenasul Fateh was known by his stage name Aladin. [E2] He was a former international management consultant, and management consulting is the practice of helping organizations improve their performance. [E2] [E1]",
+    "evidence": [
+      {
+        "evidence_id": "E2",
+        "chunk_id": "695fbcf5-d2e5-538f-8b14-4f18b2f2b072",
+        "document_id": "9bb0a65f-8eb4-55c0-b2cc-97b2f53f2b0d",
+        "revision_id": "8e205027-045b-5c1f-ae68-6f73c48f174a",
+        "strategy": "b",
+        "text": "Eenasul Fateh (Bengali: ঈনাসুল ফাতেহ ; born 3 April 1959), also known by his stage name Aladin, is a Bangladeshi-British cultural practitioner, magician, live artist and former international management consultant.",
+        "title": "Eenasul Fateh",
+        "start": 0,
+        "end": 213,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 213
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "validation",
+          "record_id": "5a85b2d95542997b5ce40028",
+          "url": "https://en.wikipedia.org/wiki/Eenasul_Fateh",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.03225806451612903
+      },
+      {
+        "evidence_id": "E1",
+        "chunk_id": "aa3abbf8-e6fe-5997-92b8-372ea85fa886",
+        "document_id": "b6634fa7-016e-5aba-a80a-31b66d2b0e53",
+        "revision_id": "b9814e42-2841-5774-bdb3-8d55f7030674",
+        "strategy": "b",
+        "text": "Management consulting is the practice of helping organizations to improve their performance, operating primarily through the analysis of existing organizational problems and the development of plans for improvement. Organizations may draw upon the services of management consultants for a number of reasons, including gaining external (and presumably objective) advice and access to the consultants' specialized expertise.",
+        "title": "Management consulting",
+        "start": 0,
+        "end": 422,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 215
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 216,
+            "end": 422
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "validation",
+          "record_id": "5a85b2d95542997b5ce40028",
+          "url": "https://en.wikipedia.org/wiki/Management_consulting",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.031754032258064516
+      },
+      {
+        "evidence_id": "E5",
+        "chunk_id": "474120d7-ce4d-5e53-a181-9fd07d29761e",
+        "document_id": "0acfd1b5-251c-5364-8cb0-04b1a04ac0fc",
+        "revision_id": "d2538080-d7c1-56a1-af59-e2a72217b8cd",
+        "strategy": "b",
+        "text": "Diamond Management & Technology Consultants (casually referred to as Diamond) was an independent management consulting firm founded in 1994, headquartered in Chicago, IL with satellite offices in Hartford, CT, New York City, Washington DC, London, and Mumbai. It was acquired by the British firm, PwC in 2010. Diamond was a smaller player among companies such as Mercer Management Consulting, Deloitte Consulting, and Accenture. The industry segments under which Diamond operated include consumer packaged goods, financial services, and health-care, among numerous others.",
+        "title": "Diamond Management &amp; Technology Consultants",
+        "start": 0,
+        "end": 572,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 259
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 260,
+            "end": 309
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 310,
+            "end": 428
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 429,
+            "end": 572
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a8c5b3e5542995e66a475d2",
+          "url": "https://en.wikipedia.org/wiki/Diamond_Management_%26amp%3B_Technology_Consultants",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.024614919963757174
+      },
+      {
+        "evidence_id": "E9",
+        "chunk_id": "3f04b5e6-159f-5418-829c-318c0c215256",
+        "document_id": "a6862beb-efc3-5bb0-8c34-4708cd9978d9",
+        "revision_id": "225b59b7-bde4-51ee-9c4a-23ac10a81872",
+        "strategy": "b",
+        "text": "Muzaffar Khan (born February 4, 1969) is an investor, entrepreneur, philanthropist, author, academic, investor and film producer born in Karachi, Pakistan. He was Senior Strategist at Moore Capital Management LLC. Khan retired in 2003 to become the Vice Chairman of ACOPS, an international environmental charity and consultant to the Man Environmental Capital Opportunities (Man ECO) division of Man Group, a British alternative investment management business with about $75 billion under management. Early in his career, he worked in private banking at Citibank and then as a foreign exchange trader at Barclays Capital.",
+        "title": "Muzaffar Khan",
+        "start": 0,
+        "end": 621,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 155
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 156,
+            "end": 213
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 214,
+            "end": 500
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 501,
+            "end": 621
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a8f20d655429924144829dc",
+          "url": "https://en.wikipedia.org/wiki/Muzaffar_Khan",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.030834914611005692
+      },
+      {
+        "evidence_id": "E3",
+        "chunk_id": "b6a3a24d-b8e1-5491-a8ac-7bd3d41db859",
+        "document_id": "4f39a33a-9efc-5f8f-961e-f7f27eefa79b",
+        "revision_id": "255625f0-4f46-5a73-84c4-47cd4010450d",
+        "strategy": "b",
+        "text": "A heart transplant, or a cardiac transplant, is a surgical transplant procedure performed on patients with end-stage heart failure or severe coronary artery disease when other medical or surgical treatments have failed. As of 2016, the most common procedure is to take a functioning heart (with or without transplantation of a lung or lungs; a cadaveric donor cardiectomy) from a recently deceased organ donor (the cadaveric allograft), and implant it into the patient. The patient's own heart is either removed (the cardiectomy for the recipient) and replaced with the donor heart (orthotopic procedure) or, much less commonly, the recipient's diseased heart is left in place to support the donor heart (heterotopic, or \"piggyback,\" transplant procedure). Approximately 3500 heart transplants are performed every year in the world, more than half of which occur in the US. Post-operation survival periods average 15 years. Heart transplantation is not considered to be a cure for heart disease, but a life-saving treatment intended to improve the quality of life for recipients.",
+        "title": "Heart transplantation",
+        "start": 0,
+        "end": 1079,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 219
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 220,
+            "end": 469
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 470,
+            "end": 756
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 757,
+            "end": 873
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 874,
+            "end": 923
+          },
+          {
+            "kind": "sentence",
+            "number": 5,
+            "start": 924,
+            "end": 1079
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5ae1582f554299422ee99664",
+          "url": "https://en.wikipedia.org/wiki/Heart_transplantation",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.015873015873015872
+      },
+      {
+        "evidence_id": "E4",
+        "chunk_id": "f2fdc6fa-2ecc-5111-845e-9faa3abbbf2f",
+        "document_id": "d9dc5549-fd6d-53dc-933c-98633d5ff19a",
+        "revision_id": "28c83145-4f4d-5727-8441-5ad0d4492311",
+        "strategy": "b",
+        "text": "Albert \"Aldo\" Bensadoun, is originally an Algerian-Canadian businessman, investor and philanthropist. He is the founder and executive chairman of the ALDO Group, a retail shoe company based in Montreal, Quebec, Canada. Bensadoun is a sponsor of the ALDO Racing team, which has competed four times in the Dakar Rally.",
+        "title": "Aldo Bensadoun",
+        "start": 0,
+        "end": 316,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 101
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 102,
+            "end": 218
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 219,
+            "end": 316
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a84bf205542991dd0999dd2",
+          "url": "https://en.wikipedia.org/wiki/Aldo_Bensadoun",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.015873015873015872
+      },
+      {
+        "evidence_id": "E10",
+        "chunk_id": "8f05366b-5a56-5bda-98d6-d2f81efbd519",
+        "document_id": "2e3bc8ff-a625-55e7-a4f7-72b3de3d154a",
+        "revision_id": "81e753d6-96c1-5831-bb1f-28559e48a2de",
+        "strategy": "b",
+        "text": "Yasaman (Yassi) Hadjibashi is a business, data and technology executive. She currently leads, defines and executes the innvoation agenda for Barclays Africa Group including the RISE Innovation Hub in Cape Town as their Group Chief Creation Officer. Formerly the group's first ever Chief Data Officer, she led their big data transformation across the African continent, launching an award-winning portfolio of data products. She joined Barclays in 2010 and has worked in senior management positions in product innovation and execution across digital and mobile, as well as client/customer experience and design. She has been fundamental in establishing big data capabilities as a group-wide function across Barclays, whilst defining the bank’s next generation Data strategy and driving the execution of a number of key big data initiatives.",
+        "title": "Yasaman Hadjibashi",
+        "start": 0,
+        "end": 839,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 72
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 73,
+            "end": 248
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 249,
+            "end": 423
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 424,
+            "end": 610
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 611,
+            "end": 839
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a7321ea5542994cef4bc46f",
+          "url": "https://en.wikipedia.org/wiki/Yasaman_Hadjibashi",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.015873015873015872
+      },
+      {
+        "evidence_id": "E11",
+        "chunk_id": "d74cdbe7-c421-56eb-90d6-1f47e618bd6c",
+        "document_id": "5d9f69e4-f171-5ed3-8d1d-513eda6ea307",
+        "revision_id": "86ee0d9d-a25e-5485-93fd-5a981978fa03",
+        "strategy": "b",
+        "text": "The Bachelor of Public Administration (BPA or B.P.A.) degree is one of several Bachelor's level management degrees that provides training in the public policy field as well as public management. A bachelor's degree in public administration provides a background for those interested in pursuing careers in governmental agencies, non-governmental organizations, management in hospitals or public health institution, consulting in private firms, school boards, and human resources. Careers in international agencies, urban or regional planning, city management, financial planning, public finance and public relations also at the local, state/provincial, national/federal and supranational levels, as well as in the nonprofit sector. Through its history, the BPA degree has become more interdisciplinary by drawing from fields such as economics, management, sociology, political science, and regional planning in order to equip BPA graduates with skills and knowledge covering a broad range of topics and disciplines relevant to the public sector. A core curriculum of a typical BPA program usually includes courses on economics, public finance, research methods / statistics, policy analysis, ethics, public management, leadership, planning & GIS, program evaluation/performance measurement and human resources management.",
+        "title": "Bachelor of Public Administration",
+        "start": 0,
+        "end": 1321,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 194
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 195,
+            "end": 479
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 480,
+            "end": 731
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 732,
+            "end": 1045
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 1046,
+            "end": 1321
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5ae356e55542992f92d82297",
+          "url": "https://en.wikipedia.org/wiki/Bachelor_of_Public_Administration",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.015873015873015872
+      }
+    ],
+    "search_trace": [
+      {
+        "query": "stage name Aladin consultant helped organizations improve their performance",
+        "strategy": "b",
+        "profile": "1a8846753a25",
+        "embedding_usage": {
+          "model": "text-embedding-3-small",
+          "input_tokens": 10,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 2.0000000000000002e-07
+        },
+        "document_ranking": [
+          "b6634fa7-016e-5aba-a80a-31b66d2b0e53",
+          "9bb0a65f-8eb4-55c0-b2cc-97b2f53f2b0d",
+          "4f39a33a-9efc-5f8f-961e-f7f27eefa79b",
+          "d9dc5549-fd6d-53dc-933c-98633d5ff19a",
+          "0acfd1b5-251c-5364-8cb0-04b1a04ac0fc",
+          "da0d7cc9-5cc3-5d34-85df-552cf8e6d774",
+          "b6f8fe6d-58f9-5eb7-9d88-e6a4403bb611",
+          "053f8cc8-35ec-5ff2-b018-82eab44a4afd",
+          "617e6f07-a5fd-5e54-a0ec-fdb74a1941bb",
+          "cb281d99-223b-5e92-a448-dbe432301d9a"
+        ],
+        "candidate_counts": {
+          "dense": 30,
+          "bm25": 30,
+          "active_dense": 30,
+          "active_bm25": 30
+        },
+        "evidence": [
+          {
+            "evidence_id": "E1",
+            "chunk_id": "aa3abbf8-e6fe-5997-92b8-372ea85fa886",
+            "document_id": "b6634fa7-016e-5aba-a80a-31b66d2b0e53",
+            "revision_id": "b9814e42-2841-5774-bdb3-8d55f7030674",
+            "strategy": "b",
+            "text": "Management consulting is the practice of helping organizations to improve their performance, operating primarily through the analysis of existing organizational problems and the development of plans for improvement. Organizations may draw upon the services of management consultants for a number of reasons, including gaining external (and presumably objective) advice and access to the consultants' specialized expertise.",
+            "title": "Management consulting",
+            "start": 0,
+            "end": 422,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 215
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 216,
+                "end": 422
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5a85b2d95542997b5ce40028",
+              "url": "https://en.wikipedia.org/wiki/Management_consulting",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03278688524590164
+          },
+          {
+            "evidence_id": "E2",
+            "chunk_id": "695fbcf5-d2e5-538f-8b14-4f18b2f2b072",
+            "document_id": "9bb0a65f-8eb4-55c0-b2cc-97b2f53f2b0d",
+            "revision_id": "8e205027-045b-5c1f-ae68-6f73c48f174a",
+            "strategy": "b",
+            "text": "Eenasul Fateh (Bengali: ঈনাসুল ফাতেহ ; born 3 April 1959), also known by his stage name Aladin, is a Bangladeshi-British cultural practitioner, magician, live artist and former international management consultant.",
+            "title": "Eenasul Fateh",
+            "start": 0,
+            "end": 213,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 213
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5a85b2d95542997b5ce40028",
+              "url": "https://en.wikipedia.org/wiki/Eenasul_Fateh",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03225806451612903
+          },
+          {
+            "evidence_id": "E3",
+            "chunk_id": "b6a3a24d-b8e1-5491-a8ac-7bd3d41db859",
+            "document_id": "4f39a33a-9efc-5f8f-961e-f7f27eefa79b",
+            "revision_id": "255625f0-4f46-5a73-84c4-47cd4010450d",
+            "strategy": "b",
+            "text": "A heart transplant, or a cardiac transplant, is a surgical transplant procedure performed on patients with end-stage heart failure or severe coronary artery disease when other medical or surgical treatments have failed. As of 2016, the most common procedure is to take a functioning heart (with or without transplantation of a lung or lungs; a cadaveric donor cardiectomy) from a recently deceased organ donor (the cadaveric allograft), and implant it into the patient. The patient's own heart is either removed (the cardiectomy for the recipient) and replaced with the donor heart (orthotopic procedure) or, much less commonly, the recipient's diseased heart is left in place to support the donor heart (heterotopic, or \"piggyback,\" transplant procedure). Approximately 3500 heart transplants are performed every year in the world, more than half of which occur in the US. Post-operation survival periods average 15 years. Heart transplantation is not considered to be a cure for heart disease, but a life-saving treatment intended to improve the quality of life for recipients.",
+            "title": "Heart transplantation",
+            "start": 0,
+            "end": 1079,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 219
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 220,
+                "end": 469
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 470,
+                "end": 756
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 757,
+                "end": 873
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 874,
+                "end": 923
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 924,
+                "end": 1079
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ae1582f554299422ee99664",
+              "url": "https://en.wikipedia.org/wiki/Heart_transplantation",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015873015873015872
+          },
+          {
+            "evidence_id": "E4",
+            "chunk_id": "f2fdc6fa-2ecc-5111-845e-9faa3abbbf2f",
+            "document_id": "d9dc5549-fd6d-53dc-933c-98633d5ff19a",
+            "revision_id": "28c83145-4f4d-5727-8441-5ad0d4492311",
+            "strategy": "b",
+            "text": "Albert \"Aldo\" Bensadoun, is originally an Algerian-Canadian businessman, investor and philanthropist. He is the founder and executive chairman of the ALDO Group, a retail shoe company based in Montreal, Quebec, Canada. Bensadoun is a sponsor of the ALDO Racing team, which has competed four times in the Dakar Rally.",
+            "title": "Aldo Bensadoun",
+            "start": 0,
+            "end": 316,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 101
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 102,
+                "end": 218
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 219,
+                "end": 316
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a84bf205542991dd0999dd2",
+              "url": "https://en.wikipedia.org/wiki/Aldo_Bensadoun",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015873015873015872
+          },
+          {
+            "evidence_id": "E5",
+            "chunk_id": "474120d7-ce4d-5e53-a181-9fd07d29761e",
+            "document_id": "0acfd1b5-251c-5364-8cb0-04b1a04ac0fc",
+            "revision_id": "d2538080-d7c1-56a1-af59-e2a72217b8cd",
+            "strategy": "b",
+            "text": "Diamond Management & Technology Consultants (casually referred to as Diamond) was an independent management consulting firm founded in 1994, headquartered in Chicago, IL with satellite offices in Hartford, CT, New York City, Washington DC, London, and Mumbai. It was acquired by the British firm, PwC in 2010. Diamond was a smaller player among companies such as Mercer Management Consulting, Deloitte Consulting, and Accenture. The industry segments under which Diamond operated include consumer packaged goods, financial services, and health-care, among numerous others.",
+            "title": "Diamond Management &amp; Technology Consultants",
+            "start": 0,
+            "end": 572,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 259
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 260,
+                "end": 309
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 310,
+                "end": 428
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 429,
+                "end": 572
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a8c5b3e5542995e66a475d2",
+              "url": "https://en.wikipedia.org/wiki/Diamond_Management_%26amp%3B_Technology_Consultants",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015625
+          },
+          {
+            "evidence_id": "E6",
+            "chunk_id": "f965d087-65be-5082-bac4-847238242bc0",
+            "document_id": "da0d7cc9-5cc3-5d34-85df-552cf8e6d774",
+            "revision_id": "55cb2527-baf4-50ee-8bf3-202fccb2d6f8",
+            "strategy": "b",
+            "text": "Erwin Vervecken (born 23 March 1972) is a former Belgian professional cyclist specialising in cyclo-cross. Vervecken was professional cyclists for 16 seasons (1995–2010) and works since his retirement as an external sportive consultant for sportmarketing company Golazo where he helps organizing cyclocross and mountainbike races and does the coordination of the UCI Gran Fondo World Series. He's also writing for the cycling magazine cycling.be",
+            "title": "Erwin Vervecken",
+            "start": 0,
+            "end": 445,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 106
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 107,
+                "end": 391
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 392,
+                "end": 445
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ae1d963554299492dc91ba2",
+              "url": "https://en.wikipedia.org/wiki/Erwin_Vervecken",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015625
+          },
+          {
+            "evidence_id": "E7",
+            "chunk_id": "41d6688d-d21d-5558-95cf-1d635f3ce647",
+            "document_id": "b6f8fe6d-58f9-5eb7-9d88-e6a4403bb611",
+            "revision_id": "187c6d97-6f0a-5418-ac40-42b44458c149",
+            "strategy": "b",
+            "text": "Big Data Maturity Models (BDMM) are the artefacts used to measure Big Data maturity. These models help organizations to create structure around their Big Data capabilities and to identify where to start. They provide tools that assist organizations to define goals around their big data program and to communicate their big data vision to the entire organization. BDMMs also provide a methodology to measure and monitor the state of a company’s big data capability, the effort required to complete their current stage or phase of maturity and to progress to the next stage. Additionally, BDMMs measure and manage the speed of both the progress and adoption of big data programs in the organization.",
+            "title": "Big Data Maturity Model",
+            "start": 0,
+            "end": 698,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 84
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 85,
+                "end": 203
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 204,
+                "end": 363
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 364,
+                "end": 573
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 574,
+                "end": 698
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a7321ea5542994cef4bc46f",
+              "url": "https://en.wikipedia.org/wiki/Big_Data_Maturity_Model",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015384615384615385
+          },
+          {
+            "evidence_id": "E8",
+            "chunk_id": "4738778e-427d-5bea-ba99-f749a9696271",
+            "document_id": "053f8cc8-35ec-5ff2-b018-82eab44a4afd",
+            "revision_id": "e13fe282-ef88-5e05-abb7-ffee039f06bb",
+            "strategy": "b",
+            "text": "He serves as chairman on the board of directors of The Global Automakers and is also a member of the executive advisory board for Daniels College of Business at the University of Denver (DU), his alma mater. He was named “Marketer of the Year” by Advertising Age in 2006, an Automotive News “All Star” in 2007 and honored at Industry Leader of the year.",
+            "title": "Jim Lentz",
+            "start": 2014,
+            "end": 2367,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 12,
+                "start": 2014,
+                "end": 2221
+              },
+              {
+                "kind": "sentence",
+                "number": 13,
+                "start": 2222,
+                "end": 2367
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5add10095542990d50227daf",
+              "url": "https://en.wikipedia.org/wiki/Jim_Lentz",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015384615384615385
+          }
+        ],
+        "round": 1,
+        "tool_call_id": "call_0IvxSzqN5a8LtSSkaL90BOau",
+        "executed": true,
+        "follow_up": null,
+        "requested_query": "stage name Aladin consultant helped organizations improve their performance",
+        "query_adjusted": false
+      },
+      {
+        "query": "Eenasul Fateh Aladin former international management consultant organizations improve performance",
+        "strategy": "b",
+        "profile": "1a8846753a25",
+        "embedding_usage": {
+          "model": "text-embedding-3-small",
+          "input_tokens": 14,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 2.8e-07
+        },
+        "document_ranking": [
+          "9bb0a65f-8eb4-55c0-b2cc-97b2f53f2b0d",
+          "b6634fa7-016e-5aba-a80a-31b66d2b0e53",
+          "a6862beb-efc3-5bb0-8c34-4708cd9978d9",
+          "0acfd1b5-251c-5364-8cb0-04b1a04ac0fc",
+          "2e3bc8ff-a625-55e7-a4f7-72b3de3d154a",
+          "5d9f69e4-f171-5ed3-8d1d-513eda6ea307",
+          "3abf8d3c-4f1c-57aa-9722-ac8c723ec345",
+          "97e5abc9-9362-5c65-b539-57ccdea99fad",
+          "78295d34-bcec-57be-aaae-fd1e11b950f9",
+          "4d88807f-8f2e-5651-ace4-9a7103b461b4"
+        ],
+        "candidate_counts": {
+          "dense": 30,
+          "bm25": 30,
+          "active_dense": 30,
+          "active_bm25": 30
+        },
+        "evidence": [
+          {
+            "evidence_id": "E2",
+            "chunk_id": "695fbcf5-d2e5-538f-8b14-4f18b2f2b072",
+            "document_id": "9bb0a65f-8eb4-55c0-b2cc-97b2f53f2b0d",
+            "revision_id": "8e205027-045b-5c1f-ae68-6f73c48f174a",
+            "strategy": "b",
+            "text": "Eenasul Fateh (Bengali: ঈনাসুল ফাতেহ ; born 3 April 1959), also known by his stage name Aladin, is a Bangladeshi-British cultural practitioner, magician, live artist and former international management consultant.",
+            "title": "Eenasul Fateh",
+            "start": 0,
+            "end": 213,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 213
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5a85b2d95542997b5ce40028",
+              "url": "https://en.wikipedia.org/wiki/Eenasul_Fateh",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03278688524590164
+          },
+          {
+            "evidence_id": "E1",
+            "chunk_id": "aa3abbf8-e6fe-5997-92b8-372ea85fa886",
+            "document_id": "b6634fa7-016e-5aba-a80a-31b66d2b0e53",
+            "revision_id": "b9814e42-2841-5774-bdb3-8d55f7030674",
+            "strategy": "b",
+            "text": "Management consulting is the practice of helping organizations to improve their performance, operating primarily through the analysis of existing organizational problems and the development of plans for improvement. Organizations may draw upon the services of management consultants for a number of reasons, including gaining external (and presumably objective) advice and access to the consultants' specialized expertise.",
+            "title": "Management consulting",
+            "start": 0,
+            "end": 422,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 215
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 216,
+                "end": 422
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5a85b2d95542997b5ce40028",
+              "url": "https://en.wikipedia.org/wiki/Management_consulting",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.031754032258064516
+          },
+          {
+            "evidence_id": "E9",
+            "chunk_id": "3f04b5e6-159f-5418-829c-318c0c215256",
+            "document_id": "a6862beb-efc3-5bb0-8c34-4708cd9978d9",
+            "revision_id": "225b59b7-bde4-51ee-9c4a-23ac10a81872",
+            "strategy": "b",
+            "text": "Muzaffar Khan (born February 4, 1969) is an investor, entrepreneur, philanthropist, author, academic, investor and film producer born in Karachi, Pakistan. He was Senior Strategist at Moore Capital Management LLC. Khan retired in 2003 to become the Vice Chairman of ACOPS, an international environmental charity and consultant to the Man Environmental Capital Opportunities (Man ECO) division of Man Group, a British alternative investment management business with about $75 billion under management. Early in his career, he worked in private banking at Citibank and then as a foreign exchange trader at Barclays Capital.",
+            "title": "Muzaffar Khan",
+            "start": 0,
+            "end": 621,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 155
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 156,
+                "end": 213
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 214,
+                "end": 500
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 501,
+                "end": 621
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a8f20d655429924144829dc",
+              "url": "https://en.wikipedia.org/wiki/Muzaffar_Khan",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.030834914611005692
+          },
+          {
+            "evidence_id": "E5",
+            "chunk_id": "474120d7-ce4d-5e53-a181-9fd07d29761e",
+            "document_id": "0acfd1b5-251c-5364-8cb0-04b1a04ac0fc",
+            "revision_id": "d2538080-d7c1-56a1-af59-e2a72217b8cd",
+            "strategy": "b",
+            "text": "Diamond Management & Technology Consultants (casually referred to as Diamond) was an independent management consulting firm founded in 1994, headquartered in Chicago, IL with satellite offices in Hartford, CT, New York City, Washington DC, London, and Mumbai. It was acquired by the British firm, PwC in 2010. Diamond was a smaller player among companies such as Mercer Management Consulting, Deloitte Consulting, and Accenture. The industry segments under which Diamond operated include consumer packaged goods, financial services, and health-care, among numerous others.",
+            "title": "Diamond Management &amp; Technology Consultants",
+            "start": 0,
+            "end": 572,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 259
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 260,
+                "end": 309
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 310,
+                "end": 428
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 429,
+                "end": 572
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a8c5b3e5542995e66a475d2",
+              "url": "https://en.wikipedia.org/wiki/Diamond_Management_%26amp%3B_Technology_Consultants",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.024614919963757174
+          },
+          {
+            "evidence_id": "E10",
+            "chunk_id": "8f05366b-5a56-5bda-98d6-d2f81efbd519",
+            "document_id": "2e3bc8ff-a625-55e7-a4f7-72b3de3d154a",
+            "revision_id": "81e753d6-96c1-5831-bb1f-28559e48a2de",
+            "strategy": "b",
+            "text": "Yasaman (Yassi) Hadjibashi is a business, data and technology executive. She currently leads, defines and executes the innvoation agenda for Barclays Africa Group including the RISE Innovation Hub in Cape Town as their Group Chief Creation Officer. Formerly the group's first ever Chief Data Officer, she led their big data transformation across the African continent, launching an award-winning portfolio of data products. She joined Barclays in 2010 and has worked in senior management positions in product innovation and execution across digital and mobile, as well as client/customer experience and design. She has been fundamental in establishing big data capabilities as a group-wide function across Barclays, whilst defining the bank’s next generation Data strategy and driving the execution of a number of key big data initiatives.",
+            "title": "Yasaman Hadjibashi",
+            "start": 0,
+            "end": 839,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 72
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 73,
+                "end": 248
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 249,
+                "end": 423
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 424,
+                "end": 610
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 611,
+                "end": 839
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a7321ea5542994cef4bc46f",
+              "url": "https://en.wikipedia.org/wiki/Yasaman_Hadjibashi",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015873015873015872
+          },
+          {
+            "evidence_id": "E11",
+            "chunk_id": "d74cdbe7-c421-56eb-90d6-1f47e618bd6c",
+            "document_id": "5d9f69e4-f171-5ed3-8d1d-513eda6ea307",
+            "revision_id": "86ee0d9d-a25e-5485-93fd-5a981978fa03",
+            "strategy": "b",
+            "text": "The Bachelor of Public Administration (BPA or B.P.A.) degree is one of several Bachelor's level management degrees that provides training in the public policy field as well as public management. A bachelor's degree in public administration provides a background for those interested in pursuing careers in governmental agencies, non-governmental organizations, management in hospitals or public health institution, consulting in private firms, school boards, and human resources. Careers in international agencies, urban or regional planning, city management, financial planning, public finance and public relations also at the local, state/provincial, national/federal and supranational levels, as well as in the nonprofit sector. Through its history, the BPA degree has become more interdisciplinary by drawing from fields such as economics, management, sociology, political science, and regional planning in order to equip BPA graduates with skills and knowledge covering a broad range of topics and disciplines relevant to the public sector. A core curriculum of a typical BPA program usually includes courses on economics, public finance, research methods / statistics, policy analysis, ethics, public management, leadership, planning & GIS, program evaluation/performance measurement and human resources management.",
+            "title": "Bachelor of Public Administration",
+            "start": 0,
+            "end": 1321,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 194
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 195,
+                "end": 479
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 480,
+                "end": 731
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 732,
+                "end": 1045
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 1046,
+                "end": 1321
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ae356e55542992f92d82297",
+              "url": "https://en.wikipedia.org/wiki/Bachelor_of_Public_Administration",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015873015873015872
+          },
+          {
+            "evidence_id": "E12",
+            "chunk_id": "168b1d1c-98a7-5604-880f-038effd4166d",
+            "document_id": "3abf8d3c-4f1c-57aa-9722-ac8c723ec345",
+            "revision_id": "95dce1c3-ad85-5416-a644-5726761d36ab",
+            "strategy": "b",
+            "text": "He oversaw HSBC's global credit card services, its North American consumer lending and mortgage services businesses and its first mortgage operation. He was also responsible for corporate marketing, strategic planning and corporate development for HSBC North America Holdings Inc. and had responsibility for the strategic management of credit cards throughout the HSBC Group. Mehta served as group executive of Credit Card Services, Auto Finance and Canada of Household International Inc., since July 2002. He worked at MasterCard’s U.S. region board since March 2000. Mehta joined Household International Inc., in 1998. He served as senior vice president of The Boston Consulting Group in Los Angeles and co-leader of Boston Consulting Group Financial Services Practice in the United States. Mehta served as a director of Global Board of MasterCard Incorporated since March 17, 2005. He served as unit chairman of HSBC Holdings PLC and served as its board member since March 2005. He served as vice chairman and director of HSBC Financial Corporation Limited., (Formerly Household International Inc.). He has been a director of Avant Credit Corporation since December 18, 2014. He has been an independent director of The Allstate Corporation since February 19, 2014.",
+            "title": "Bobby Mehta",
+            "start": 1810,
+            "end": 3077,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 18,
+                "start": 1810,
+                "end": 1959
+              },
+              {
+                "kind": "sentence",
+                "number": 19,
+                "start": 1960,
+                "end": 2185
+              },
+              {
+                "kind": "sentence",
+                "number": 20,
+                "start": 2186,
+                "end": 2316
+              },
+              {
+                "kind": "sentence",
+                "number": 21,
+                "start": 2317,
+                "end": 2378
+              },
+              {
+                "kind": "sentence",
+                "number": 22,
+                "start": 2379,
+                "end": 2430
+              },
+              {
+                "kind": "sentence",
+                "number": 23,
+                "start": 2431,
+                "end": 2602
+              },
+              {
+                "kind": "sentence",
+                "number": 24,
+                "start": 2603,
+                "end": 2694
+              },
+              {
+                "kind": "sentence",
+                "number": 25,
+                "start": 2695,
+                "end": 2791
+              },
+              {
+                "kind": "sentence",
+                "number": 26,
+                "start": 2792,
+                "end": 2912
+              },
+              {
+                "kind": "sentence",
+                "number": 27,
+                "start": 2913,
+                "end": 2988
+              },
+              {
+                "kind": "sentence",
+                "number": 28,
+                "start": 2989,
+                "end": 3077
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a9048fe5542995651fb5106",
+              "url": "https://en.wikipedia.org/wiki/Bobby_Mehta",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015625
+          },
+          {
+            "evidence_id": "E13",
+            "chunk_id": "7e35c13f-3cd5-5752-bc97-820132fd6710",
+            "document_id": "97e5abc9-9362-5c65-b539-57ccdea99fad",
+            "revision_id": "eb122bec-1692-5382-9565-39141ab44767",
+            "strategy": "b",
+            "text": "Linda Y. Cureton (born in 1959, in Bethesda, Maryland) is the Chief Executive Officer (CEO) and Founder of Muse Technologies, Inc. The Former NASA CIO, Ms. Cureton launched her new company in April 2013. Muse Technologies, Inc. will provide IT-Enabled Leadership, strategic planning, program management and information technology consulting to both private and government sector organizations. Ms. Cureton attended Washington, DC public schools and was in the very first graduating class of Duke Ellington School of the Arts in 1977. In 1980, she graduated from Howard University with a BS in Mathematics. She later received a Master of Science degree and post-Masters advanced certificate in Applied Mathematics at Johns Hopkins University. Linda is well known as a strong leader and innovator. While CIO, she created the popular NASA CIO blog and continues to be a prolific blogger.",
+            "title": "Linda Y. Cureton",
+            "start": 0,
+            "end": 884,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 130
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 131,
+                "end": 203
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 204,
+                "end": 393
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 394,
+                "end": 533
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 534,
+                "end": 605
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 606,
+                "end": 741
+              },
+              {
+                "kind": "sentence",
+                "number": 6,
+                "start": 742,
+                "end": 795
+              },
+              {
+                "kind": "sentence",
+                "number": 7,
+                "start": 796,
+                "end": 884
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a7d195e5542995ed0d165e7",
+              "url": "https://en.wikipedia.org/wiki/Linda_Y._Cureton",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015384615384615385
+          }
+        ],
+        "round": 2,
+        "tool_call_id": "call_GxpfdQ3SWEvF8uAkMGKPP62w",
+        "executed": true,
+        "follow_up": {
+          "evidence_id": "E2",
+          "entity": "Eenasul Fateh"
+        },
+        "requested_query": "Eenasul Fateh Aladin former international management consultant organizations improve performance",
+        "query_adjusted": false
+      }
+    ],
+    "workflow": "bounded_tools_v1",
+    "execution": {
+      "planning_rounds": 2,
+      "retrieval_rounds": 2,
+      "tool_calls": 2,
+      "searches": 2,
+      "llm_calls": 3,
+      "embedding_calls": 2,
+      "total_provider_calls": 5,
+      "stop_reason": "retrieval_limit",
+      "limits": {
+        "retrieval_rounds": 2,
+        "searches": 3,
+        "llm_calls": 3,
+        "embedding_calls": 3,
+        "total_provider_calls": 6
+      }
+    },
+    "configuration": {
+      "strategy": "b",
+      "profile": "1a8846753a25",
+      "embedding_model": "text-embedding-3-small",
+      "embedding_dimensions": 384,
+      "generation_model": "gpt-5.4-mini-2026-03-17",
+      "prompt_version": "bounded_tools_quote_ids_v1"
+    },
+    "usage": {
+      "planning": [
+        {
+          "input_tokens": 527,
+          "output_tokens": 33,
+          "estimated_cost_usd": 0.00054375,
+          "model": "gpt-5.4-mini-2026-03-17"
+        },
+        {
+          "input_tokens": 1528,
+          "output_tokens": 49,
+          "estimated_cost_usd": 0.0013665,
+          "model": "gpt-5.4-mini-2026-03-17"
+        }
+      ],
+      "generation": {
+        "input_tokens": 4729,
+        "output_tokens": 112,
+        "estimated_cost_usd": 0.00405075,
+        "model": "gpt-5.4-mini-2026-03-17"
+      },
+      "embeddings": [
+        {
+          "model": "text-embedding-3-small",
+          "input_tokens": 10,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 2.0000000000000002e-07
+        },
+        {
+          "model": "text-embedding-3-small",
+          "input_tokens": 14,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 2.8e-07
+        }
+      ],
+      "estimated_model_cost_usd": 0.005960999999999999,
+      "estimated_total_cost_usd": 0.005961479999999999
+    },
+    "latency_ms": 5389
+  },
+  "error": null,
+  "elapsed_ms": 5390,
+  "ledger_after": {
+    "calls": 437,
+    "reserved_usd": 0.99626512,
+    "estimated_actual_usd": 0.35450287,
+    "input_tokens": 7135268,
+    "output_tokens": 7778
+  }
+}

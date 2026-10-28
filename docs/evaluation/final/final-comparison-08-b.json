@@ -1,0 +1,1457 @@
+{
+  "case_id": "final-comparison-08",
+  "strategy": "b",
+  "question": "Are both Dictyosperma, and Huernia described as a genus?",
+  "started_at": "2026-10-28T07:05:48.494587+00:00",
+  "ledger_before": {
+    "calls": 570,
+    "reserved_usd": 1.55021098,
+    "estimated_actual_usd": 0.5121344800000001,
+    "input_tokens": 7318595,
+    "output_tokens": 12353
+  },
+  "result": {
+    "status": "answered",
+    "claims": [
+      {
+        "text": "Dictyosperma is described as a genus.",
+        "citations": [
+          {
+            "evidence_id": "E2",
+            "quote": "Dictyosperma is a monotypic genus of flowering plant in the palm family found in the Mascarene Islands in the Indian Ocean (Mauritius, Réunion and Rodrigues)."
+          }
+        ]
+      },
+      {
+        "text": "Huernia is described as a genus.",
+        "citations": [
+          {
+            "evidence_id": "E1",
+            "quote": "The genus Huernia (family Apocynaceae, subfamily Asclepiadoideae) consists of stem succulents from Eastern and Southern Africa, first described as a genus in 1810."
+          }
+        ]
+      }
+    ],
+    "conflicting_claims": [],
+    "answer": "Dictyosperma is described as a genus. [E2] Huernia is described as a genus. [E1]",
+    "evidence": [
+      {
+        "evidence_id": "E2",
+        "chunk_id": "d412fb69-e58f-513a-a2ed-cc9a98afc546",
+        "document_id": "3ad13cd4-29b6-5e56-a7c0-8cb1cb32b3de",
+        "revision_id": "94464243-dc4b-51b6-9b11-6d0fc52dfc39",
+        "strategy": "b",
+        "text": "Dictyosperma is a monotypic genus of flowering plant in the palm family found in the Mascarene Islands in the Indian Ocean (Mauritius, Réunion and Rodrigues). The sole species, Dictyosperma album, is widely cultivated in the tropics but has been farmed to near extinction in its native habitat. It is commonly called princess palm or hurricane palm, the latter owing to its ability to withstand strong winds by easily shedding leaves. It is closely related to, and resembles, palms in the \"Archontophoenix\" genus. The genus is named from two Greek words meaning \"net\" and \"seed\" and the epithet is Latin for \"white\", the common color of the crownshaft at the top of the trunk.",
+        "title": "Dictyosperma",
+        "start": 0,
+        "end": 676,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 158
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 159,
+            "end": 294
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 295,
+            "end": 434
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 435,
+            "end": 513
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 514,
+            "end": 676
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "validation",
+          "record_id": "5abd259d55429924427fcf1a",
+          "url": "https://en.wikipedia.org/wiki/Dictyosperma",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.03177805800756621
+      },
+      {
+        "evidence_id": "E6",
+        "chunk_id": "59fe72d6-aa22-5b07-a38f-5415e286a34f",
+        "document_id": "251f99fa-bdee-51ee-ba0b-333cf85598d9",
+        "revision_id": "ef5c48b0-edc6-53a8-8113-3d4015ddae72",
+        "strategy": "b",
+        "text": "Typhonodorum is a monotypic genus of flowering plants in the family Araceae. The single species making up this genus is Typhonodorum lindleyanum. The genus is native to Madagascar, the Comores, Zanzibar, and Mauritius. This genus is believed to be closely related to \"Peltandra\" even though \"Peltandra\" is only found in North America and there don't appear to exist closely related genera in the African mainland. There isn't fossil evidence to link the two genera so it has been proposed that there once was a genus in Africa from which the two genera had originated. The African mainland genus spread to North America and to Madagascar 50 million years ago before it broke off. Then the African genus became extinct and the North American and Madagascan genera remained.",
+        "title": "Typhonodorum",
+        "start": 0,
+        "end": 772,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 76
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 77,
+            "end": 145
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 146,
+            "end": 218
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 219,
+            "end": 413
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 414,
+            "end": 568
+          },
+          {
+            "kind": "sentence",
+            "number": 5,
+            "start": 569,
+            "end": 679
+          },
+          {
+            "kind": "sentence",
+            "number": 6,
+            "start": 680,
+            "end": 772
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5ae52beb5542990ba0bbb1e1",
+          "url": "https://en.wikipedia.org/wiki/Typhonodorum",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.029827662395050816
+      },
+      {
+        "evidence_id": "E4",
+        "chunk_id": "c4342531-09be-5695-b4d9-3492cb62dd01",
+        "document_id": "6b6edf7a-ca7b-5ece-bbdc-df0b2d51ea0c",
+        "revision_id": "7f934eab-9ecf-5fa7-974f-0f6d2846db8a",
+        "strategy": "b",
+        "text": "Diocirea is a genus of flowering plants in the figwort family, Scrophulariaceae. The genus is endemic to a small area in the south-west of Western Australia and is intermediate in character between \"Eremophila\" and \"Myoporum\". There are four members of the genus, all of which are small shrubs with stems and leaves which produce a resin making the plants appear bluish-green. Neither the genus, nor any of the species had been described before 2007 although a few specimens had been collected as \"Eremophila elachantha\". Despite their limited distribution, they often occur in populations of several thousand individual plants, forming a dense ground cover.",
+        "title": "Diocirea",
+        "start": 0,
+        "end": 658,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 80
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 81,
+            "end": 226
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 227,
+            "end": 376
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 377,
+            "end": 521
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 522,
+            "end": 658
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5ababc1755429966062415f1",
+          "url": "https://en.wikipedia.org/wiki/Diocirea",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.026878868258178604
+      },
+      {
+        "evidence_id": "E7",
+        "chunk_id": "9e0d91b8-8cb3-50fb-911f-b278c0fb2773",
+        "document_id": "85c5ad32-2b82-51cf-b4b8-ae18565a63af",
+        "revision_id": "e6dd595e-f5ae-59ae-b69c-0fa7cfbf289c",
+        "strategy": "b",
+        "text": "Delosperma ('delos'=evident, 'sperma'=seed) is a genus of around 100 species of succulent plants, formerly included in \"Mesembryanthemum\" in the family Aizoaceae. The family is common in southern and eastern Africa.",
+        "title": "Delosperma",
+        "start": 0,
+        "end": 215,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 162
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 163,
+            "end": 215
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5abe43295542991f6610610e",
+          "url": "https://en.wikipedia.org/wiki/Delosperma",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.016129032258064516
+      },
+      {
+        "evidence_id": "E8",
+        "chunk_id": "efc81b01-381d-5851-833c-b9fd11b26e31",
+        "document_id": "6336ea21-3b52-522b-a6b9-2e7cd1731fa2",
+        "revision_id": "7ca508e0-34ab-56fa-ba2d-23cd345eac2f",
+        "strategy": "b",
+        "text": "Zeltnera is a genus of flowering plants in the gentian family. It was erected in 2004 when the genus \"Centaurium\" (the centauries) was split. Genetic analysis revealed that \"Centaurium\" was polyphyletic, made up of plants that could be grouped into four clades. Each became a genus. \"Centaurium\" remained, but it is now limited to the Eurasian species. The Mexican species now belong to genus \"Gyrandra\", and the Mediterranean and Australian plants are in genus \"Schenkia\". The new name \"Zeltnera\" was given to this genus, which contains most of the North American centauries. There are about 25 species.",
+        "title": "Zeltnera",
+        "start": 0,
+        "end": 604,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 62
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 63,
+            "end": 141
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 142,
+            "end": 282
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 283,
+            "end": 352
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 353,
+            "end": 473
+          },
+          {
+            "kind": "sentence",
+            "number": 5,
+            "start": 474,
+            "end": 576
+          },
+          {
+            "kind": "sentence",
+            "number": 6,
+            "start": 577,
+            "end": 604
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5adf60615542995ec70e8fda",
+          "url": "https://en.wikipedia.org/wiki/Zeltnera",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.015873015873015872
+      },
+      {
+        "evidence_id": "E1",
+        "chunk_id": "7ff0027b-b284-5abd-80a5-a9a538b639c9",
+        "document_id": "dc312fcd-d3c5-52ad-940f-746f5ef305eb",
+        "revision_id": "00022dc0-c2d3-54b1-a278-5bbf8f309f36",
+        "strategy": "b",
+        "text": "The genus Huernia (family Apocynaceae, subfamily Asclepiadoideae) consists of stem succulents from Eastern and Southern Africa, first described as a genus in 1810. The flowers are five-lobed, usually somewhat more funnel- or bell-shaped than in the closely related genus \"Stapelia\", and often striped vividly in contrasting colours or tones, some glossy, others matt and wrinkled depending on the species concerned. To pollinate, the flowers attract flies by emitting a scent similar to that of carrion. The genus is considered close to the genera \"Stapelia\" and \"Hoodia\". The name is in honour of Justin Heurnius (1587–1652) a Dutch missionary who is reputed to have been the first collector of South African Cape plants. His name was actually mis-spelt by the collector.",
+        "title": "Huernia",
+        "start": 0,
+        "end": 772,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 163
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 164,
+            "end": 415
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 416,
+            "end": 503
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 504,
+            "end": 572
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 573,
+            "end": 722
+          },
+          {
+            "kind": "sentence",
+            "number": 5,
+            "start": 723,
+            "end": 772
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "validation",
+          "record_id": "5abd259d55429924427fcf1a",
+          "url": "https://en.wikipedia.org/wiki/Huernia",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.03252247488101534
+      },
+      {
+        "evidence_id": "E9",
+        "chunk_id": "29051f84-a3c0-5c06-9e6b-445d2911c2a1",
+        "document_id": "353a0549-2716-5bb3-bf02-75709bf1307b",
+        "revision_id": "706c2e0b-a514-5954-b32a-6a49d628d32d",
+        "strategy": "b",
+        "text": "Dacrydium is a genus of conifers belonging to the podocarp family Podocarpaceae. Sixteen species of evergreen dioecious trees and shrubs are presently recognized. The genus was first described by Solander in 1786, and formerly included many more species, which were divided into sections A, B, and C by Florin in 1931. The revisions of de Laubenfels and Quinn (see references), reclassified the former section A as the new genus \"Falcatifolium\", divided Section C into new genera \"Lepidothamnus, Lagarostrobos\" and \"Halocarpus\", and retained Section B as genus \"Dacrydium\".",
+        "title": "Dacrydium",
+        "start": 0,
+        "end": 573,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 80
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 81,
+            "end": 162
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 163,
+            "end": 318
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 319,
+            "end": 573
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5ab33e2455429969a97a810b",
+          "url": "https://en.wikipedia.org/wiki/Dacrydium",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.027529761904761904
+      },
+      {
+        "evidence_id": "E3",
+        "chunk_id": "638bd0fb-c6dc-51f3-bafd-b489a246c99b",
+        "document_id": "95d7c322-3527-5d80-88b1-16de618b65db",
+        "revision_id": "d3fee956-6e7d-5643-8791-889451c0afea",
+        "strategy": "b",
+        "text": "Hymenaea L. is a genus in the flowering plant family Fabaceae (legume family). Of fourteen living species in the genus, all but one are native to the tropics of the Americas, with one additional species (\"Hymenaea verrucosa\") on the east coast of Africa. Some authors place the African species in a separate monotypic genus, \"Trachylobium\". In the neotropics, \"Hymenaea\" is distributed through the Caribbean islands, and from southern Mexico to Brazil. Linnaeus named the genus in 1753 in Species Plantarum for Hymenaios, the Greek god of marriage ceremonies. The name is a reference to the paired leaflets.",
+        "title": "Hymenaea",
+        "start": 0,
+        "end": 607,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 78
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 79,
+            "end": 254
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 255,
+            "end": 340
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 341,
+            "end": 452
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 453,
+            "end": 559
+          },
+          {
+            "kind": "sentence",
+            "number": 5,
+            "start": 560,
+            "end": 607
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5ab707c05542991d32223760",
+          "url": "https://en.wikipedia.org/wiki/Hymenaea",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.02736726874657909
+      }
+    ],
+    "search_trace": [
+      {
+        "query": "Dictyosperma Huernia genus",
+        "strategy": "b",
+        "profile": "1a8846753a25",
+        "embedding_usage": {
+          "model": "text-embedding-3-small",
+          "input_tokens": 9,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 1.8e-07
+        },
+        "document_ranking": [
+          "dc312fcd-d3c5-52ad-940f-746f5ef305eb",
+          "3ad13cd4-29b6-5e56-a7c0-8cb1cb32b3de",
+          "95d7c322-3527-5d80-88b1-16de618b65db",
+          "6b6edf7a-ca7b-5ece-bbdc-df0b2d51ea0c",
+          "c41ddff5-37dd-5229-9db7-2f4f50b6c6c2",
+          "251f99fa-bdee-51ee-ba0b-333cf85598d9",
+          "85c5ad32-2b82-51cf-b4b8-ae18565a63af",
+          "6336ea21-3b52-522b-a6b9-2e7cd1731fa2",
+          "8ebf5d4c-2060-5042-8f70-79343360d812",
+          "d7201b79-6561-506e-ba11-c1709ca824c8"
+        ],
+        "candidate_counts": {
+          "dense": 30,
+          "bm25": 30,
+          "active_dense": 30,
+          "active_bm25": 30
+        },
+        "evidence": [
+          {
+            "evidence_id": "E1",
+            "chunk_id": "7ff0027b-b284-5abd-80a5-a9a538b639c9",
+            "document_id": "dc312fcd-d3c5-52ad-940f-746f5ef305eb",
+            "revision_id": "00022dc0-c2d3-54b1-a278-5bbf8f309f36",
+            "strategy": "b",
+            "text": "The genus Huernia (family Apocynaceae, subfamily Asclepiadoideae) consists of stem succulents from Eastern and Southern Africa, first described as a genus in 1810. The flowers are five-lobed, usually somewhat more funnel- or bell-shaped than in the closely related genus \"Stapelia\", and often striped vividly in contrasting colours or tones, some glossy, others matt and wrinkled depending on the species concerned. To pollinate, the flowers attract flies by emitting a scent similar to that of carrion. The genus is considered close to the genera \"Stapelia\" and \"Hoodia\". The name is in honour of Justin Heurnius (1587–1652) a Dutch missionary who is reputed to have been the first collector of South African Cape plants. His name was actually mis-spelt by the collector.",
+            "title": "Huernia",
+            "start": 0,
+            "end": 772,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 163
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 164,
+                "end": 415
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 416,
+                "end": 503
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 504,
+                "end": 572
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 573,
+                "end": 722
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 723,
+                "end": 772
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5abd259d55429924427fcf1a",
+              "url": "https://en.wikipedia.org/wiki/Huernia",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03252247488101534
+          },
+          {
+            "evidence_id": "E2",
+            "chunk_id": "d412fb69-e58f-513a-a2ed-cc9a98afc546",
+            "document_id": "3ad13cd4-29b6-5e56-a7c0-8cb1cb32b3de",
+            "revision_id": "94464243-dc4b-51b6-9b11-6d0fc52dfc39",
+            "strategy": "b",
+            "text": "Dictyosperma is a monotypic genus of flowering plant in the palm family found in the Mascarene Islands in the Indian Ocean (Mauritius, Réunion and Rodrigues). The sole species, Dictyosperma album, is widely cultivated in the tropics but has been farmed to near extinction in its native habitat. It is commonly called princess palm or hurricane palm, the latter owing to its ability to withstand strong winds by easily shedding leaves. It is closely related to, and resembles, palms in the \"Archontophoenix\" genus. The genus is named from two Greek words meaning \"net\" and \"seed\" and the epithet is Latin for \"white\", the common color of the crownshaft at the top of the trunk.",
+            "title": "Dictyosperma",
+            "start": 0,
+            "end": 676,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 158
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 159,
+                "end": 294
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 295,
+                "end": 434
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 435,
+                "end": 513
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 514,
+                "end": 676
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5abd259d55429924427fcf1a",
+              "url": "https://en.wikipedia.org/wiki/Dictyosperma",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03177805800756621
+          },
+          {
+            "evidence_id": "E3",
+            "chunk_id": "638bd0fb-c6dc-51f3-bafd-b489a246c99b",
+            "document_id": "95d7c322-3527-5d80-88b1-16de618b65db",
+            "revision_id": "d3fee956-6e7d-5643-8791-889451c0afea",
+            "strategy": "b",
+            "text": "Hymenaea L. is a genus in the flowering plant family Fabaceae (legume family). Of fourteen living species in the genus, all but one are native to the tropics of the Americas, with one additional species (\"Hymenaea verrucosa\") on the east coast of Africa. Some authors place the African species in a separate monotypic genus, \"Trachylobium\". In the neotropics, \"Hymenaea\" is distributed through the Caribbean islands, and from southern Mexico to Brazil. Linnaeus named the genus in 1753 in Species Plantarum for Hymenaios, the Greek god of marriage ceremonies. The name is a reference to the paired leaflets.",
+            "title": "Hymenaea",
+            "start": 0,
+            "end": 607,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 78
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 79,
+                "end": 254
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 255,
+                "end": 340
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 341,
+                "end": 452
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 453,
+                "end": 559
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 560,
+                "end": 607
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ab707c05542991d32223760",
+              "url": "https://en.wikipedia.org/wiki/Hymenaea",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.02736726874657909
+          },
+          {
+            "evidence_id": "E4",
+            "chunk_id": "c4342531-09be-5695-b4d9-3492cb62dd01",
+            "document_id": "6b6edf7a-ca7b-5ece-bbdc-df0b2d51ea0c",
+            "revision_id": "7f934eab-9ecf-5fa7-974f-0f6d2846db8a",
+            "strategy": "b",
+            "text": "Diocirea is a genus of flowering plants in the figwort family, Scrophulariaceae. The genus is endemic to a small area in the south-west of Western Australia and is intermediate in character between \"Eremophila\" and \"Myoporum\". There are four members of the genus, all of which are small shrubs with stems and leaves which produce a resin making the plants appear bluish-green. Neither the genus, nor any of the species had been described before 2007 although a few specimens had been collected as \"Eremophila elachantha\". Despite their limited distribution, they often occur in populations of several thousand individual plants, forming a dense ground cover.",
+            "title": "Diocirea",
+            "start": 0,
+            "end": 658,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 80
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 81,
+                "end": 226
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 227,
+                "end": 376
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 377,
+                "end": 521
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 522,
+                "end": 658
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ababc1755429966062415f1",
+              "url": "https://en.wikipedia.org/wiki/Diocirea",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.02452153110047847
+          },
+          {
+            "evidence_id": "E5",
+            "chunk_id": "da9fb637-ad70-5f53-8680-0aa9771fe599",
+            "document_id": "c41ddff5-37dd-5229-9db7-2f4f50b6c6c2",
+            "revision_id": "2d12b572-cdd6-54ee-bb64-230fb7b12109",
+            "strategy": "b",
+            "text": "Huperzia is a genus of lycophyte plants, sometimes known as the firmosses or fir clubmosses. This genus was originally included in the related genus \"Lycopodium\", from which it differs in having undifferentiated sporangial leaves, and the sporangia not formed into apical cones. The common name \"firmoss\", used for some of the north temperate species, refers to their superficial resemblance to branches of fir (\"Abies\"), a conifer. In Australia, the epiphytic species are commonly known as tassel ferns.",
+            "title": "Huperzia",
+            "start": 0,
+            "end": 504,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 92
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 93,
+                "end": 278
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 279,
+                "end": 432
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 433,
+                "end": 504
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ab51c455542990594ba9d0a",
+              "url": "https://en.wikipedia.org/wiki/Huperzia",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.016129032258064516
+          },
+          {
+            "evidence_id": "E6",
+            "chunk_id": "59fe72d6-aa22-5b07-a38f-5415e286a34f",
+            "document_id": "251f99fa-bdee-51ee-ba0b-333cf85598d9",
+            "revision_id": "ef5c48b0-edc6-53a8-8113-3d4015ddae72",
+            "strategy": "b",
+            "text": "Typhonodorum is a monotypic genus of flowering plants in the family Araceae. The single species making up this genus is Typhonodorum lindleyanum. The genus is native to Madagascar, the Comores, Zanzibar, and Mauritius. This genus is believed to be closely related to \"Peltandra\" even though \"Peltandra\" is only found in North America and there don't appear to exist closely related genera in the African mainland. There isn't fossil evidence to link the two genera so it has been proposed that there once was a genus in Africa from which the two genera had originated. The African mainland genus spread to North America and to Madagascar 50 million years ago before it broke off. Then the African genus became extinct and the North American and Madagascan genera remained.",
+            "title": "Typhonodorum",
+            "start": 0,
+            "end": 772,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 76
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 77,
+                "end": 145
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 146,
+                "end": 218
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 219,
+                "end": 413
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 414,
+                "end": 568
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 569,
+                "end": 679
+              },
+              {
+                "kind": "sentence",
+                "number": 6,
+                "start": 680,
+                "end": 772
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ae52beb5542990ba0bbb1e1",
+              "url": "https://en.wikipedia.org/wiki/Typhonodorum",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015873015873015872
+          },
+          {
+            "evidence_id": "E7",
+            "chunk_id": "9e0d91b8-8cb3-50fb-911f-b278c0fb2773",
+            "document_id": "85c5ad32-2b82-51cf-b4b8-ae18565a63af",
+            "revision_id": "e6dd595e-f5ae-59ae-b69c-0fa7cfbf289c",
+            "strategy": "b",
+            "text": "Delosperma ('delos'=evident, 'sperma'=seed) is a genus of around 100 species of succulent plants, formerly included in \"Mesembryanthemum\" in the family Aizoaceae. The family is common in southern and eastern Africa.",
+            "title": "Delosperma",
+            "start": 0,
+            "end": 215,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 162
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 163,
+                "end": 215
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5abe43295542991f6610610e",
+              "url": "https://en.wikipedia.org/wiki/Delosperma",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015625
+          },
+          {
+            "evidence_id": "E8",
+            "chunk_id": "efc81b01-381d-5851-833c-b9fd11b26e31",
+            "document_id": "6336ea21-3b52-522b-a6b9-2e7cd1731fa2",
+            "revision_id": "7ca508e0-34ab-56fa-ba2d-23cd345eac2f",
+            "strategy": "b",
+            "text": "Zeltnera is a genus of flowering plants in the gentian family. It was erected in 2004 when the genus \"Centaurium\" (the centauries) was split. Genetic analysis revealed that \"Centaurium\" was polyphyletic, made up of plants that could be grouped into four clades. Each became a genus. \"Centaurium\" remained, but it is now limited to the Eurasian species. The Mexican species now belong to genus \"Gyrandra\", and the Mediterranean and Australian plants are in genus \"Schenkia\". The new name \"Zeltnera\" was given to this genus, which contains most of the North American centauries. There are about 25 species.",
+            "title": "Zeltnera",
+            "start": 0,
+            "end": 604,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 62
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 63,
+                "end": 141
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 142,
+                "end": 282
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 283,
+                "end": 352
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 353,
+                "end": 473
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 474,
+                "end": 576
+              },
+              {
+                "kind": "sentence",
+                "number": 6,
+                "start": 577,
+                "end": 604
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5adf60615542995ec70e8fda",
+              "url": "https://en.wikipedia.org/wiki/Zeltnera",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015625
+          }
+        ],
+        "round": 1,
+        "tool_call_id": "call_ufzh6BBszaZ6k1VhNub5DW3o",
+        "executed": true,
+        "follow_up": null,
+        "requested_query": "Dictyosperma Huernia genus",
+        "query_adjusted": false
+      },
+      {
+        "query": "Dictyosperma genus",
+        "strategy": "b",
+        "profile": "1a8846753a25",
+        "embedding_usage": {
+          "model": "text-embedding-3-small",
+          "input_tokens": 6,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 1.2e-07
+        },
+        "document_ranking": [
+          "3ad13cd4-29b6-5e56-a7c0-8cb1cb32b3de",
+          "251f99fa-bdee-51ee-ba0b-333cf85598d9",
+          "353a0549-2716-5bb3-bf02-75709bf1307b",
+          "6b6edf7a-ca7b-5ece-bbdc-df0b2d51ea0c",
+          "f977cb0c-99a1-5720-850b-d4fbd6fbf8af",
+          "85c5ad32-2b82-51cf-b4b8-ae18565a63af",
+          "b13e47e6-475a-52cf-b30d-b4175eb40978",
+          "6336ea21-3b52-522b-a6b9-2e7cd1731fa2",
+          "8ebf5d4c-2060-5042-8f70-79343360d812",
+          "3ad56f96-c823-5ab9-8945-7606ef19c0aa"
+        ],
+        "candidate_counts": {
+          "dense": 30,
+          "bm25": 30,
+          "active_dense": 30,
+          "active_bm25": 30
+        },
+        "evidence": [
+          {
+            "evidence_id": "E2",
+            "chunk_id": "d412fb69-e58f-513a-a2ed-cc9a98afc546",
+            "document_id": "3ad13cd4-29b6-5e56-a7c0-8cb1cb32b3de",
+            "revision_id": "94464243-dc4b-51b6-9b11-6d0fc52dfc39",
+            "strategy": "b",
+            "text": "Dictyosperma is a monotypic genus of flowering plant in the palm family found in the Mascarene Islands in the Indian Ocean (Mauritius, Réunion and Rodrigues). The sole species, Dictyosperma album, is widely cultivated in the tropics but has been farmed to near extinction in its native habitat. It is commonly called princess palm or hurricane palm, the latter owing to its ability to withstand strong winds by easily shedding leaves. It is closely related to, and resembles, palms in the \"Archontophoenix\" genus. The genus is named from two Greek words meaning \"net\" and \"seed\" and the epithet is Latin for \"white\", the common color of the crownshaft at the top of the trunk.",
+            "title": "Dictyosperma",
+            "start": 0,
+            "end": 676,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 158
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 159,
+                "end": 294
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 295,
+                "end": 434
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 435,
+                "end": 513
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 514,
+                "end": 676
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5abd259d55429924427fcf1a",
+              "url": "https://en.wikipedia.org/wiki/Dictyosperma",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03278688524590164
+          },
+          {
+            "evidence_id": "E6",
+            "chunk_id": "59fe72d6-aa22-5b07-a38f-5415e286a34f",
+            "document_id": "251f99fa-bdee-51ee-ba0b-333cf85598d9",
+            "revision_id": "ef5c48b0-edc6-53a8-8113-3d4015ddae72",
+            "strategy": "b",
+            "text": "Typhonodorum is a monotypic genus of flowering plants in the family Araceae. The single species making up this genus is Typhonodorum lindleyanum. The genus is native to Madagascar, the Comores, Zanzibar, and Mauritius. This genus is believed to be closely related to \"Peltandra\" even though \"Peltandra\" is only found in North America and there don't appear to exist closely related genera in the African mainland. There isn't fossil evidence to link the two genera so it has been proposed that there once was a genus in Africa from which the two genera had originated. The African mainland genus spread to North America and to Madagascar 50 million years ago before it broke off. Then the African genus became extinct and the North American and Madagascan genera remained.",
+            "title": "Typhonodorum",
+            "start": 0,
+            "end": 772,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 76
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 77,
+                "end": 145
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 146,
+                "end": 218
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 219,
+                "end": 413
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 414,
+                "end": 568
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 569,
+                "end": 679
+              },
+              {
+                "kind": "sentence",
+                "number": 6,
+                "start": 680,
+                "end": 772
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ae52beb5542990ba0bbb1e1",
+              "url": "https://en.wikipedia.org/wiki/Typhonodorum",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.029827662395050816
+          },
+          {
+            "evidence_id": "E9",
+            "chunk_id": "29051f84-a3c0-5c06-9e6b-445d2911c2a1",
+            "document_id": "353a0549-2716-5bb3-bf02-75709bf1307b",
+            "revision_id": "706c2e0b-a514-5954-b32a-6a49d628d32d",
+            "strategy": "b",
+            "text": "Dacrydium is a genus of conifers belonging to the podocarp family Podocarpaceae. Sixteen species of evergreen dioecious trees and shrubs are presently recognized. The genus was first described by Solander in 1786, and formerly included many more species, which were divided into sections A, B, and C by Florin in 1931. The revisions of de Laubenfels and Quinn (see references), reclassified the former section A as the new genus \"Falcatifolium\", divided Section C into new genera \"Lepidothamnus, Lagarostrobos\" and \"Halocarpus\", and retained Section B as genus \"Dacrydium\".",
+            "title": "Dacrydium",
+            "start": 0,
+            "end": 573,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 80
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 81,
+                "end": 162
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 163,
+                "end": 318
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 319,
+                "end": 573
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ab33e2455429969a97a810b",
+              "url": "https://en.wikipedia.org/wiki/Dacrydium",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.027529761904761904
+          },
+          {
+            "evidence_id": "E4",
+            "chunk_id": "c4342531-09be-5695-b4d9-3492cb62dd01",
+            "document_id": "6b6edf7a-ca7b-5ece-bbdc-df0b2d51ea0c",
+            "revision_id": "7f934eab-9ecf-5fa7-974f-0f6d2846db8a",
+            "strategy": "b",
+            "text": "Diocirea is a genus of flowering plants in the figwort family, Scrophulariaceae. The genus is endemic to a small area in the south-west of Western Australia and is intermediate in character between \"Eremophila\" and \"Myoporum\". There are four members of the genus, all of which are small shrubs with stems and leaves which produce a resin making the plants appear bluish-green. Neither the genus, nor any of the species had been described before 2007 although a few specimens had been collected as \"Eremophila elachantha\". Despite their limited distribution, they often occur in populations of several thousand individual plants, forming a dense ground cover.",
+            "title": "Diocirea",
+            "start": 0,
+            "end": 658,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 80
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 81,
+                "end": 226
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 227,
+                "end": 376
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 377,
+                "end": 521
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 522,
+                "end": 658
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ababc1755429966062415f1",
+              "url": "https://en.wikipedia.org/wiki/Diocirea",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.026878868258178604
+          },
+          {
+            "evidence_id": "E10",
+            "chunk_id": "56a9f101-8992-541a-a359-900dfe86726a",
+            "document_id": "f977cb0c-99a1-5720-850b-d4fbd6fbf8af",
+            "revision_id": "aa1c61c7-f847-59b7-83a7-4fc98a287372",
+            "strategy": "b",
+            "text": "The genus Sonerila Roxb. belongs to family Melastomaceae. This genus is characterized by presence of three petals (along with the genera \"Stussenia\" & \"Lithobium\") as opposed to five in the other members of the family. Most members of the genus prefer growing in shady habitats. It is a large genus including about 175 species.",
+            "title": "Sonerila",
+            "start": 0,
+            "end": 327,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 24
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 25,
+                "end": 57
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 58,
+                "end": 218
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 219,
+                "end": 278
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 279,
+                "end": 327
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ab753de55429928e1fe384a",
+              "url": "https://en.wikipedia.org/wiki/Sonerila",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.026553280111072546
+          },
+          {
+            "evidence_id": "E7",
+            "chunk_id": "9e0d91b8-8cb3-50fb-911f-b278c0fb2773",
+            "document_id": "85c5ad32-2b82-51cf-b4b8-ae18565a63af",
+            "revision_id": "e6dd595e-f5ae-59ae-b69c-0fa7cfbf289c",
+            "strategy": "b",
+            "text": "Delosperma ('delos'=evident, 'sperma'=seed) is a genus of around 100 species of succulent plants, formerly included in \"Mesembryanthemum\" in the family Aizoaceae. The family is common in southern and eastern Africa.",
+            "title": "Delosperma",
+            "start": 0,
+            "end": 215,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 162
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 163,
+                "end": 215
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5abe43295542991f6610610e",
+              "url": "https://en.wikipedia.org/wiki/Delosperma",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.016129032258064516
+          },
+          {
+            "evidence_id": "E11",
+            "chunk_id": "32ce87de-92f7-5215-b320-e2214a3a02a6",
+            "document_id": "b13e47e6-475a-52cf-b30d-b4175eb40978",
+            "revision_id": "94586c95-067b-5b00-92f7-7abec9cb13c8",
+            "strategy": "b",
+            "text": "Dichopogon is a genus of perennial herbs, native to Australia and New Guinea. It is included in the genus \"Arthropodium\" by some authorities, although recognized as a distinct genus by others. In the APG III classification system, it is placed in the family Asparagaceae, subfamily Lomandroideae (formerly the family Laxmanniaceae).",
+            "title": "Dichopogon",
+            "start": 0,
+            "end": 332,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 77
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 78,
+                "end": 192
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 193,
+                "end": 332
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ac3029e55429921a00ab0d5",
+              "url": "https://en.wikipedia.org/wiki/Dichopogon",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015873015873015872
+          },
+          {
+            "evidence_id": "E8",
+            "chunk_id": "efc81b01-381d-5851-833c-b9fd11b26e31",
+            "document_id": "6336ea21-3b52-522b-a6b9-2e7cd1731fa2",
+            "revision_id": "7ca508e0-34ab-56fa-ba2d-23cd345eac2f",
+            "strategy": "b",
+            "text": "Zeltnera is a genus of flowering plants in the gentian family. It was erected in 2004 when the genus \"Centaurium\" (the centauries) was split. Genetic analysis revealed that \"Centaurium\" was polyphyletic, made up of plants that could be grouped into four clades. Each became a genus. \"Centaurium\" remained, but it is now limited to the Eurasian species. The Mexican species now belong to genus \"Gyrandra\", and the Mediterranean and Australian plants are in genus \"Schenkia\". The new name \"Zeltnera\" was given to this genus, which contains most of the North American centauries. There are about 25 species.",
+            "title": "Zeltnera",
+            "start": 0,
+            "end": 604,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 62
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 63,
+                "end": 141
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 142,
+                "end": 282
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 283,
+                "end": 352
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 353,
+                "end": 473
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 474,
+                "end": 576
+              },
+              {
+                "kind": "sentence",
+                "number": 6,
+                "start": 577,
+                "end": 604
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5adf60615542995ec70e8fda",
+              "url": "https://en.wikipedia.org/wiki/Zeltnera",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015873015873015872
+          }
+        ],
+        "round": 2,
+        "tool_call_id": "call_9gi0ORCH84kL503I5MLrq1Jz",
+        "executed": true,
+        "follow_up": {
+          "evidence_id": "E2",
+          "entity": "Dictyosperma"
+        },
+        "requested_query": "Dictyosperma genus",
+        "query_adjusted": false
+      }
+    ],
+    "workflow": "bounded_tools_v1",
+    "execution": {
+      "planning_rounds": 2,
+      "retrieval_rounds": 2,
+      "tool_calls": 2,
+      "searches": 2,
+      "llm_calls": 3,
+      "embedding_calls": 2,
+      "total_provider_calls": 5,
+      "stop_reason": "retrieval_limit",
+      "limits": {
+        "retrieval_rounds": 2,
+        "searches": 3,
+        "llm_calls": 3,
+        "embedding_calls": 3,
+        "total_provider_calls": 6
+      }
+    },
+    "configuration": {
+      "strategy": "b",
+      "profile": "1a8846753a25",
+      "embedding_model": "text-embedding-3-small",
+      "embedding_dimensions": 384,
+      "generation_model": "gpt-5.4-mini-2026-03-17",
+      "prompt_version": "bounded_tools_quote_ids_v1"
+    },
+    "usage": {
+      "planning": [
+        {
+          "input_tokens": 525,
+          "output_tokens": 32,
+          "estimated_cost_usd": 0.00053775,
+          "model": "gpt-5.4-mini-2026-03-17"
+        },
+        {
+          "input_tokens": 1804,
+          "output_tokens": 41,
+          "estimated_cost_usd": 0.0015375,
+          "model": "gpt-5.4-mini-2026-03-17"
+        }
+      ],
+      "generation": {
+        "input_tokens": 5414,
+        "output_tokens": 84,
+        "estimated_cost_usd": 0.0044385,
+        "model": "gpt-5.4-mini-2026-03-17"
+      },
+      "embeddings": [
+        {
+          "model": "text-embedding-3-small",
+          "input_tokens": 9,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 1.8e-07
+        },
+        {
+          "model": "text-embedding-3-small",
+          "input_tokens": 6,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 1.2e-07
+        }
+      ],
+      "estimated_model_cost_usd": 0.00651375,
+      "estimated_total_cost_usd": 0.0065140499999999995
+    },
+    "latency_ms": 4884
+  },
+  "error": null,
+  "elapsed_ms": 4884,
+  "ledger_after": {
+    "calls": 575,
+    "reserved_usd": 1.57128853,
+    "estimated_actual_usd": 0.51864853,
+    "input_tokens": 7326353,
+    "output_tokens": 12510
+  }
+}

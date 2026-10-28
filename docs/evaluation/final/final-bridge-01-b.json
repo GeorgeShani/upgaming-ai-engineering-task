@@ -1,0 +1,1691 @@
+{
+  "case_id": "final-bridge-01",
+  "strategy": "b",
+  "question": "What government position was held by the woman who portrayed Corliss Archer in the film Kiss and Tell?",
+  "started_at": "2026-10-28T07:00:01.401143+00:00",
+  "ledger_before": {
+    "calls": 394,
+    "reserved_usd": 0.81838563,
+    "estimated_actual_usd": 0.30284613,
+    "input_tokens": 7076698,
+    "output_tokens": 6026
+  },
+  "result": {
+    "status": "answered",
+    "claims": [
+      {
+        "text": "The woman who portrayed Corliss Archer was Shirley Temple Black, who served as United States ambassador to Ghana and to Czechoslovakia and also as Chief of Protocol of the United States.",
+        "citations": [
+          {
+            "evidence_id": "E1",
+            "quote": "Kiss and Tell is a 1945 American comedy film starring then 17-year-old Shirley Temple as Corliss Archer."
+          },
+          {
+            "evidence_id": "E9",
+            "quote": "As an adult, she was named United States ambassador to Ghana and to Czechoslovakia and also served as Chief of Protocol of the United States."
+          }
+        ]
+      }
+    ],
+    "conflicting_claims": [],
+    "answer": "The woman who portrayed Corliss Archer was Shirley Temple Black, who served as United States ambassador to Ghana and to Czechoslovakia and also as Chief of Protocol of the United States. [E1] [E9]",
+    "evidence": [
+      {
+        "evidence_id": "E1",
+        "chunk_id": "48177e9c-7322-5e42-acf2-09805c073ffd",
+        "document_id": "29641596-314a-52c9-a3ec-d5ba06cffe02",
+        "revision_id": "42baf12e-9239-51c9-aa38-0568e5642775",
+        "strategy": "b",
+        "text": "Kiss and Tell is a 1945 American comedy film starring then 17-year-old Shirley Temple as Corliss Archer. In the film, two teenage girls cause their respective parents much concern when they start to become interested in boys. The parents' bickering about which girl is the worse influence causes more problems than it solves.",
+        "title": "Kiss and Tell (1945 film)",
+        "start": 0,
+        "end": 325,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 104
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 105,
+            "end": 225
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 226,
+            "end": 325
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "validation",
+          "record_id": "5a8c7595554299585d9e36b6",
+          "url": "https://en.wikipedia.org/wiki/Kiss_and_Tell_%281945_film%29",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.03278688524590164
+      },
+      {
+        "evidence_id": "E9",
+        "chunk_id": "c05d8079-44e5-583c-b147-d4b06e987595",
+        "document_id": "67fa2482-e299-5cea-a27c-717b218aa2d6",
+        "revision_id": "959747cc-5be0-5fd3-a736-c9df5aac0892",
+        "strategy": "b",
+        "text": "Shirley Temple Black (April 23, 1928 – February 10, 2014) was an American actress, singer, dancer, businesswoman, and diplomat who was Hollywood's number one box-office draw as a child actress from 1935 to 1938. As an adult, she was named United States ambassador to Ghana and to Czechoslovakia and also served as Chief of Protocol of the United States.",
+        "title": "Shirley Temple",
+        "start": 0,
+        "end": 353,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 211
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 212,
+            "end": 353
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "validation",
+          "record_id": "5a8c7595554299585d9e36b6",
+          "url": "https://en.wikipedia.org/wiki/Shirley_Temple",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.03278688524590164
+      },
+      {
+        "evidence_id": "E12",
+        "chunk_id": "787d1988-3f89-531e-92a8-3ccd752de08c",
+        "document_id": "9735e358-091d-566c-ad11-55613c3adeb6",
+        "revision_id": "3e07477c-0d04-54ec-8641-353b365f7bdd",
+        "strategy": "b",
+        "text": "Jane Withers (born April 12, 1926) is an American actress, model, and singer. Beginning a prolific career as a child actress at the age of three, Withers is a Young Artist Award–Former Child Star \"Lifetime Achievement\" Award honoree, best known for being one of the most popular child film stars of the 1930s and early 1940s, as well as for her portrayal of \"Josephine the Plumber\" in a series of TV commercials for Comet cleanser in the 1960s and early 1970s and probably best known for playing the obnoxious Joy Smythe in the movie she paired with Shirley Temple, \"Bright Eyes\". Also a singer, she debuted the Jule Styne-Sammy Cahn torch song \"Guess I'll Hang My Tears Out to Dry\" in 1944 in \"Glad To See You\", a musical intended for Broadway which closed out of town in Philadelphia.",
+        "title": "Jane Withers",
+        "start": 0,
+        "end": 786,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 77
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 78,
+            "end": 580
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 581,
+            "end": 786
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a8c54035542995e66a475c3",
+          "url": "https://en.wikipedia.org/wiki/Jane_Withers",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.031754032258064516
+      },
+      {
+        "evidence_id": "E11",
+        "chunk_id": "475e8a3a-73a3-5f53-86de-f2a0bcfdc39a",
+        "document_id": "0fdf15cf-2db1-5309-acd1-77109db1725a",
+        "revision_id": "c8e17d5b-ed91-54e1-830d-6138b60a9c97",
+        "strategy": "b",
+        "text": "Cynthia Jane Williams (born August 22, 1947) is an American actress known for starring as Shirley Feeney in the television situation-comedy \"Laverne & Shirley\", for her role as Laurie Henderson in the film \"American Graffiti.\" , and for playing the mysterious Ann in \"The Conversation.\"",
+        "title": "Cindy Williams",
+        "start": 0,
+        "end": 286,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 226
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 227,
+            "end": 286
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a7bcf32554299294a54ab03",
+          "url": "https://en.wikipedia.org/wiki/Cindy_Williams",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.03007688828584351
+      },
+      {
+        "evidence_id": "E13",
+        "chunk_id": "5a83d9c0-ba6f-5780-a17a-1b2d700838f2",
+        "document_id": "24ba29ed-7906-53ba-be31-caa7455cebd2",
+        "revision_id": "005efdda-af67-57a4-9862-f484bc21aca8",
+        "strategy": "b",
+        "text": "Shirley Mae Jones (born March 31, 1934) is an American singer and actress of stage, film and television. In her six decades of show business, she has starred as wholesome characters in a number of well-known musical films, such as \"Oklahoma! \" (1955), \"Carousel\" (1956), and \"The Music Man\" (1962). She won the Academy Award for Best Supporting Actress for playing a vengeful prostitute in \"Elmer Gantry\" (1960). She played the lead role of Shirley Partridge, the widowed mother of five children, in the musical situation-comedy television series \"The Partridge Family\" (1970–74), which co-starred her real-life stepson David Cassidy, son of Jack Cassidy.",
+        "title": "Shirley Jones",
+        "start": 0,
+        "end": 655,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 104
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 105,
+            "end": 241
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 242,
+            "end": 298
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 299,
+            "end": 412
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 413,
+            "end": 655
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5abde93155429976d4830a1f",
+          "url": "https://en.wikipedia.org/wiki/Shirley_Jones",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.030798389007344232
+      },
+      {
+        "evidence_id": "E2",
+        "chunk_id": "86524561-295e-5772-af13-31ffad78afa4",
+        "document_id": "8349f1da-7d64-590d-b848-74edbf2491f1",
+        "revision_id": "e314c3cb-2e4f-51ce-b7a6-27895f4ab3be",
+        "strategy": "b",
+        "text": "Kitty Carlisle (born Catherine Conn; also known as Kitty Carlisle Hart; September 3, 1910April 17, 2007) was an American singer, actress and spokeswoman for the arts. She is best remembered as a regular panelist on the television game show \"To Tell the Truth\". Carlisle served 20 years on the New York State Council on the Arts. In 1991, she received the National Medal of Arts from President George H. W. Bush. Eight years later, in 1999, she was inducted into the American Theater Hall of Fame.",
+        "title": "Kitty Carlisle",
+        "start": 0,
+        "end": 496,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 166
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 167,
+            "end": 260
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 261,
+            "end": 328
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 329,
+            "end": 411
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 412,
+            "end": 496
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5ae23d705542996483e64938",
+          "url": "https://en.wikipedia.org/wiki/Kitty_Carlisle",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.016129032258064516
+      },
+      {
+        "evidence_id": "E10",
+        "chunk_id": "d3f8c6d1-6acf-5ef3-bafb-40e997127021",
+        "document_id": "b0a19fc4-f89d-5019-a912-f57156c9bdc1",
+        "revision_id": "8a3020b6-b7c2-58fe-8188-9402a003fdb0",
+        "strategy": "b",
+        "text": "Toby Tarnow (born June 15, 1937 in Gravelbourg, Saskatchewan, Canada) is a Canadian actress. She was the first actress to portray the popular Anne Shirley of Anne of Green Gables in Canadian radio then in Canadian television in a 1956 television movie. Her most popular works include the princess on the Canadian \"Howdy Doody Show\", a regular panelist on the Canadian \"To Tell the Truth\", a regular role in CTV'S forensic police drama \"The Collaborators\" (1973–74), a regular on the children's show, \"Mr. Dressup\", a continuing character on the American soap opera \"Moment of Truth\", and a continuing role in the miniseries \"Amerika\" and a children's television show, \"Nursery School Time with Miss Toby and Hoppy\". In August 1989, she moved to New Hampshire.",
+        "title": "Toby Tarnow",
+        "start": 0,
+        "end": 759,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 92
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 93,
+            "end": 252
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 253,
+            "end": 715
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 716,
+            "end": 759
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5ae78e11554299540e5a55ff",
+          "url": "https://en.wikipedia.org/wiki/Toby_Tarnow",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.029138513513513514
+      },
+      {
+        "evidence_id": "E3",
+        "chunk_id": "f3ad410c-59a4-58da-b223-97ff34269faf",
+        "document_id": "fa43a0de-3106-5ad3-bd5a-484577aa26b6",
+        "revision_id": "23ba554c-5656-5c88-8198-d67be81e5606",
+        "strategy": "b",
+        "text": "Carole Post is the Deputy Chief Operating Officer of USF Health at the University of South Florida. She was formerly the Executive Vice President at New York Law School and serves as the school's Chief Operating Officer and first Chief Strategy Officer. Before her tenure at New York Law School, she served as the Commissioner of the New York City Department of Information Technology and Telecommunications (DoITT) and New York City's Chief Information Officer (CIO). She was appointed by Mayor Michael R. Bloomberg on December 30, 2009 and assumed the official position on January 19, 2010. She is the first woman to have held this office at the City of New York. Post modernized New York City government practices and infrastructure to advance open government and improve services to the public.",
+        "title": "Carole Post",
+        "start": 0,
+        "end": 798,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 99
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 100,
+            "end": 253
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 254,
+            "end": 468
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 469,
+            "end": 592
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 593,
+            "end": 665
+          },
+          {
+            "kind": "sentence",
+            "number": 5,
+            "start": 666,
+            "end": 798
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5ac023975542997d642959c5",
+          "url": "https://en.wikipedia.org/wiki/Carole_Post",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.016129032258064516
+      }
+    ],
+    "search_trace": [
+      {
+        "query": "Kiss and Tell Corliss Archer portrayed by woman government position held",
+        "strategy": "b",
+        "profile": "1a8846753a25",
+        "embedding_usage": {
+          "model": "text-embedding-3-small",
+          "input_tokens": 0,
+          "api_calls": 0,
+          "cache_hits": 1,
+          "estimated_cost_usd": 0.0
+        },
+        "document_ranking": [
+          "29641596-314a-52c9-a3ec-d5ba06cffe02",
+          "8349f1da-7d64-590d-b848-74edbf2491f1",
+          "fa43a0de-3106-5ad3-bd5a-484577aa26b6",
+          "d0fce6bf-4a3d-5415-b771-c576bda3d803",
+          "85579e03-64b8-548d-a6ff-784887f9df3d",
+          "0d89bfc6-2a4d-5843-9646-ed1d022c6b10",
+          "e30442f1-d165-58d9-8d37-eccd9b5b1cbd",
+          "f5bbccdb-c711-50e8-9252-026a6c46736b",
+          "1fd71902-6cb1-5a7b-aca8-f772f271b888",
+          "cadb47b7-6e80-5106-8ab3-33f0c68e62c2"
+        ],
+        "candidate_counts": {
+          "dense": 30,
+          "bm25": 30,
+          "active_dense": 30,
+          "active_bm25": 30
+        },
+        "evidence": [
+          {
+            "evidence_id": "E1",
+            "chunk_id": "48177e9c-7322-5e42-acf2-09805c073ffd",
+            "document_id": "29641596-314a-52c9-a3ec-d5ba06cffe02",
+            "revision_id": "42baf12e-9239-51c9-aa38-0568e5642775",
+            "strategy": "b",
+            "text": "Kiss and Tell is a 1945 American comedy film starring then 17-year-old Shirley Temple as Corliss Archer. In the film, two teenage girls cause their respective parents much concern when they start to become interested in boys. The parents' bickering about which girl is the worse influence causes more problems than it solves.",
+            "title": "Kiss and Tell (1945 film)",
+            "start": 0,
+            "end": 325,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 104
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 105,
+                "end": 225
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 226,
+                "end": 325
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5a8c7595554299585d9e36b6",
+              "url": "https://en.wikipedia.org/wiki/Kiss_and_Tell_%281945_film%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03278688524590164
+          },
+          {
+            "evidence_id": "E2",
+            "chunk_id": "86524561-295e-5772-af13-31ffad78afa4",
+            "document_id": "8349f1da-7d64-590d-b848-74edbf2491f1",
+            "revision_id": "e314c3cb-2e4f-51ce-b7a6-27895f4ab3be",
+            "strategy": "b",
+            "text": "Kitty Carlisle (born Catherine Conn; also known as Kitty Carlisle Hart; September 3, 1910April 17, 2007) was an American singer, actress and spokeswoman for the arts. She is best remembered as a regular panelist on the television game show \"To Tell the Truth\". Carlisle served 20 years on the New York State Council on the Arts. In 1991, she received the National Medal of Arts from President George H. W. Bush. Eight years later, in 1999, she was inducted into the American Theater Hall of Fame.",
+            "title": "Kitty Carlisle",
+            "start": 0,
+            "end": 496,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 166
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 167,
+                "end": 260
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 261,
+                "end": 328
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 329,
+                "end": 411
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 412,
+                "end": 496
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ae23d705542996483e64938",
+              "url": "https://en.wikipedia.org/wiki/Kitty_Carlisle",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.016129032258064516
+          },
+          {
+            "evidence_id": "E3",
+            "chunk_id": "f3ad410c-59a4-58da-b223-97ff34269faf",
+            "document_id": "fa43a0de-3106-5ad3-bd5a-484577aa26b6",
+            "revision_id": "23ba554c-5656-5c88-8198-d67be81e5606",
+            "strategy": "b",
+            "text": "Carole Post is the Deputy Chief Operating Officer of USF Health at the University of South Florida. She was formerly the Executive Vice President at New York Law School and serves as the school's Chief Operating Officer and first Chief Strategy Officer. Before her tenure at New York Law School, she served as the Commissioner of the New York City Department of Information Technology and Telecommunications (DoITT) and New York City's Chief Information Officer (CIO). She was appointed by Mayor Michael R. Bloomberg on December 30, 2009 and assumed the official position on January 19, 2010. She is the first woman to have held this office at the City of New York. Post modernized New York City government practices and infrastructure to advance open government and improve services to the public.",
+            "title": "Carole Post",
+            "start": 0,
+            "end": 798,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 99
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 100,
+                "end": 253
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 254,
+                "end": 468
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 469,
+                "end": 592
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 593,
+                "end": 665
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 666,
+                "end": 798
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ac023975542997d642959c5",
+              "url": "https://en.wikipedia.org/wiki/Carole_Post",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.016129032258064516
+          },
+          {
+            "evidence_id": "E4",
+            "chunk_id": "3cf08f95-17e0-5d0d-b19f-c5f1a41ac296",
+            "document_id": "d0fce6bf-4a3d-5415-b771-c576bda3d803",
+            "revision_id": "cd7593c6-860f-5176-9e8f-67708af2116a",
+            "strategy": "b",
+            "text": "Archer is an American adult animated spy sitcom created by Adam Reed for the FX network. The series focuses on the life and exploits of Sterling Archer, the self-proclaimed '\"world's greatest secret agent.\" The first four seasons focus on him working for the fictional spy agency ISIS, under his mother, Malory. Since then, they have become drug dealers, arms dealers, CIA agents, private investigators and most recently, post-World War II detectives with the first episode taking place in 1947. The series premiered on September 17, 2009. On June 21, 2016, FX renewed the series for an eighth, ninth, and tenth season, each to consist of eight episodes. The eighth season premiered on April 5, 2017, with the series moving to sister network FXX.",
+            "title": "Archer (TV series)",
+            "start": 0,
+            "end": 746,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 88
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 89,
+                "end": 206
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 207,
+                "end": 311
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 312,
+                "end": 495
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 496,
+                "end": 539
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 540,
+                "end": 654
+              },
+              {
+                "kind": "sentence",
+                "number": 6,
+                "start": 655,
+                "end": 746
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ab67cbe5542995eadef0006",
+              "url": "https://en.wikipedia.org/wiki/Archer_%28TV_series%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015873015873015872
+          },
+          {
+            "evidence_id": "E5",
+            "chunk_id": "a87f8c16-d48c-5cc5-9c52-e488074d6769",
+            "document_id": "85579e03-64b8-548d-a6ff-784887f9df3d",
+            "revision_id": "fbf29d0e-753b-588c-a7ee-fe8a3916b372",
+            "strategy": "b",
+            "text": "Juliet Sharp is a recurring character who exclusively appeared in the \"Gossip Girl\" television adaptation. The character was created by \"Gossip Girl\" producer Stephanie Savage and is portrayed by actress Katie Cassidy. The series portrays her as a scheming and secretive but caring woman who develops into a formidable antagonist as her agenda against Serena van der Woodsen progressed. The actions of character has drawn comparisons to another villain of \"Gossip Girl\", Georgina Sparks, and received positive reviews for her inclusion in the series. Juliet only appears during the first half of the fourth season, though she returns in the series finale.",
+            "title": "Juliet Sharp",
+            "start": 0,
+            "end": 655,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 106
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 107,
+                "end": 218
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 219,
+                "end": 386
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 387,
+                "end": 550
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 551,
+                "end": 655
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a7d08ee554299683c1c6413",
+              "url": "https://en.wikipedia.org/wiki/Juliet_Sharp",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015873015873015872
+          },
+          {
+            "evidence_id": "E6",
+            "chunk_id": "3f2dab2d-9d7c-5d41-915d-001ab10ab9b9",
+            "document_id": "0d89bfc6-2a4d-5843-9646-ed1d022c6b10",
+            "revision_id": "9da9ee8c-d3de-5c55-82ee-a9be0bd0811c",
+            "strategy": "b",
+            "text": "Kevin Corke is an American journalist and is, presently, a White House Correspondent for Fox News Channel in Washington D.C. Corke was a national news correspondent based in Washington D.C. for NBC from 2004-2008. Most of his work there involved coverage of the Bush Administration as a member of the White House Press Corps. Additionally, Corke frequently reported from The Pentagon, U.S. Supreme Court and other locations in Washington D.C. Corke also figured prominently in NBC's coverage of the Virginia Tech shooting.",
+            "title": "Kevin Corke",
+            "start": 0,
+            "end": 522,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 213
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 214,
+                "end": 325
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 326,
+                "end": 522
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ab26a70554299449642c895",
+              "url": "https://en.wikipedia.org/wiki/Kevin_Corke",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015625
+          },
+          {
+            "evidence_id": "E7",
+            "chunk_id": "aa267541-f9f5-5b68-abb6-af1e5669516e",
+            "document_id": "e30442f1-d165-58d9-8d37-eccd9b5b1cbd",
+            "revision_id": "8ee1404b-ac95-5199-88d2-727f32c87745",
+            "strategy": "b",
+            "text": "The Lady in the Van is a 2015 British comedy-drama film directed by Nicholas Hytner, and starring Maggie Smith and Alex Jennings. It was written by Alan Bennett, and it tells the true story of his interactions with Mary Shepherd, an elderly woman who lived in a dilapidated van on his driveway in London for 15 years. He had previously published the story as a 1989 essay, 1990 book, 1999 stage play, and 2009 radio play on BBC Radio 4. Smith had previously portrayed Shepherd twice: in the 1999 stage play, which earned her a Best Actress nomination at the 2000 Olivier Awards and in the 2009 radio adaptation.",
+            "title": "The Lady in the Van",
+            "start": 0,
+            "end": 611,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 129
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 130,
+                "end": 317
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 318,
+                "end": 436
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 437,
+                "end": 611
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ae6a7b25542996d980e7c71",
+              "url": "https://en.wikipedia.org/wiki/The_Lady_in_the_Van",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015625
+          },
+          {
+            "evidence_id": "E8",
+            "chunk_id": "5c65a6ed-e6cb-5d27-93fd-dd7a635e3328",
+            "document_id": "f5bbccdb-c711-50e8-9252-026a6c46736b",
+            "revision_id": "633a3d58-2cd6-59df-89b7-e0d91e8a8eeb",
+            "strategy": "b",
+            "text": "Diane Roark is an American whistleblower who served as a Republican staffer on the House Intelligence Committee from 1985 to 2002. She was, right after 9/11, \"the House Intelligence Committee staffer in charge of oversight of the NSA\". Along with William Binney, Ed Loomis, and J. Kirk Wiebe, she filed a complaint to the Department of Defense's Inspector General (DoD IG) about the National Security Agency's highly classified Trailblazer Project. Her house was raided by armed FBI agents in 2007 after she was wrongly suspected of leaking to \"The New York Times\" reporter James Risen and to Siobhan Gorman at the \"The Baltimore Sun\" in stories about NSA warrantless surveillance. This led to her suing the government in 2012 because they did not return her computer, which they had seized during the raid, and because the government failed to clear her name.",
+            "title": "Diane Roark",
+            "start": 0,
+            "end": 860,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 130
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 131,
+                "end": 235
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 236,
+                "end": 448
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 449,
+                "end": 681
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 682,
+                "end": 860
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ae780e85542997ec2727672",
+              "url": "https://en.wikipedia.org/wiki/Diane_Roark",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015384615384615385
+          }
+        ],
+        "round": 1,
+        "tool_call_id": "call_N2pbuSnWjyPSNDMyFOxCxd5y",
+        "executed": true,
+        "follow_up": null,
+        "requested_query": "Kiss and Tell Corliss Archer portrayed by woman government position held",
+        "query_adjusted": false
+      },
+      {
+        "query": "\"Kiss and Tell\" Shirley Temple Corliss Archer government position held by actress",
+        "strategy": "b",
+        "profile": "1a8846753a25",
+        "embedding_usage": {
+          "model": "text-embedding-3-small",
+          "input_tokens": 17,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 3.4000000000000003e-07
+        },
+        "document_ranking": [
+          "29641596-314a-52c9-a3ec-d5ba06cffe02",
+          "67fa2482-e299-5cea-a27c-717b218aa2d6",
+          "b0a19fc4-f89d-5019-a912-f57156c9bdc1",
+          "0fdf15cf-2db1-5309-acd1-77109db1725a",
+          "9735e358-091d-566c-ad11-55613c3adeb6",
+          "24ba29ed-7906-53ba-be31-caa7455cebd2",
+          "df575a6b-4f8e-5399-bce4-5b5ce24cd79d",
+          "b1145624-345c-5fa2-b939-ed782ff7b977",
+          "19043a9f-3dbe-517a-8cff-b02fea982f64",
+          "8349f1da-7d64-590d-b848-74edbf2491f1"
+        ],
+        "candidate_counts": {
+          "dense": 30,
+          "bm25": 30,
+          "active_dense": 30,
+          "active_bm25": 30
+        },
+        "evidence": [
+          {
+            "evidence_id": "E1",
+            "chunk_id": "48177e9c-7322-5e42-acf2-09805c073ffd",
+            "document_id": "29641596-314a-52c9-a3ec-d5ba06cffe02",
+            "revision_id": "42baf12e-9239-51c9-aa38-0568e5642775",
+            "strategy": "b",
+            "text": "Kiss and Tell is a 1945 American comedy film starring then 17-year-old Shirley Temple as Corliss Archer. In the film, two teenage girls cause their respective parents much concern when they start to become interested in boys. The parents' bickering about which girl is the worse influence causes more problems than it solves.",
+            "title": "Kiss and Tell (1945 film)",
+            "start": 0,
+            "end": 325,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 104
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 105,
+                "end": 225
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 226,
+                "end": 325
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5a8c7595554299585d9e36b6",
+              "url": "https://en.wikipedia.org/wiki/Kiss_and_Tell_%281945_film%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03278688524590164
+          },
+          {
+            "evidence_id": "E9",
+            "chunk_id": "c05d8079-44e5-583c-b147-d4b06e987595",
+            "document_id": "67fa2482-e299-5cea-a27c-717b218aa2d6",
+            "revision_id": "959747cc-5be0-5fd3-a736-c9df5aac0892",
+            "strategy": "b",
+            "text": "Shirley Temple Black (April 23, 1928 – February 10, 2014) was an American actress, singer, dancer, businesswoman, and diplomat who was Hollywood's number one box-office draw as a child actress from 1935 to 1938. As an adult, she was named United States ambassador to Ghana and to Czechoslovakia and also served as Chief of Protocol of the United States.",
+            "title": "Shirley Temple",
+            "start": 0,
+            "end": 353,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 211
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 212,
+                "end": 353
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5a8c7595554299585d9e36b6",
+              "url": "https://en.wikipedia.org/wiki/Shirley_Temple",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03225806451612903
+          },
+          {
+            "evidence_id": "E10",
+            "chunk_id": "d3f8c6d1-6acf-5ef3-bafb-40e997127021",
+            "document_id": "b0a19fc4-f89d-5019-a912-f57156c9bdc1",
+            "revision_id": "8a3020b6-b7c2-58fe-8188-9402a003fdb0",
+            "strategy": "b",
+            "text": "Toby Tarnow (born June 15, 1937 in Gravelbourg, Saskatchewan, Canada) is a Canadian actress. She was the first actress to portray the popular Anne Shirley of Anne of Green Gables in Canadian radio then in Canadian television in a 1956 television movie. Her most popular works include the princess on the Canadian \"Howdy Doody Show\", a regular panelist on the Canadian \"To Tell the Truth\", a regular role in CTV'S forensic police drama \"The Collaborators\" (1973–74), a regular on the children's show, \"Mr. Dressup\", a continuing character on the American soap opera \"Moment of Truth\", and a continuing role in the miniseries \"Amerika\" and a children's television show, \"Nursery School Time with Miss Toby and Hoppy\". In August 1989, she moved to New Hampshire.",
+            "title": "Toby Tarnow",
+            "start": 0,
+            "end": 759,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 92
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 93,
+                "end": 252
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 253,
+                "end": 715
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 716,
+                "end": 759
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ae78e11554299540e5a55ff",
+              "url": "https://en.wikipedia.org/wiki/Toby_Tarnow",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.029138513513513514
+          },
+          {
+            "evidence_id": "E11",
+            "chunk_id": "475e8a3a-73a3-5f53-86de-f2a0bcfdc39a",
+            "document_id": "0fdf15cf-2db1-5309-acd1-77109db1725a",
+            "revision_id": "c8e17d5b-ed91-54e1-830d-6138b60a9c97",
+            "strategy": "b",
+            "text": "Cynthia Jane Williams (born August 22, 1947) is an American actress known for starring as Shirley Feeney in the television situation-comedy \"Laverne & Shirley\", for her role as Laurie Henderson in the film \"American Graffiti.\" , and for playing the mysterious Ann in \"The Conversation.\"",
+            "title": "Cindy Williams",
+            "start": 0,
+            "end": 286,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 226
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 227,
+                "end": 286
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a7bcf32554299294a54ab03",
+              "url": "https://en.wikipedia.org/wiki/Cindy_Williams",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.028594771241830064
+          },
+          {
+            "evidence_id": "E12",
+            "chunk_id": "787d1988-3f89-531e-92a8-3ccd752de08c",
+            "document_id": "9735e358-091d-566c-ad11-55613c3adeb6",
+            "revision_id": "3e07477c-0d04-54ec-8641-353b365f7bdd",
+            "strategy": "b",
+            "text": "Jane Withers (born April 12, 1926) is an American actress, model, and singer. Beginning a prolific career as a child actress at the age of three, Withers is a Young Artist Award–Former Child Star \"Lifetime Achievement\" Award honoree, best known for being one of the most popular child film stars of the 1930s and early 1940s, as well as for her portrayal of \"Josephine the Plumber\" in a series of TV commercials for Comet cleanser in the 1960s and early 1970s and probably best known for playing the obnoxious Joy Smythe in the movie she paired with Shirley Temple, \"Bright Eyes\". Also a singer, she debuted the Jule Styne-Sammy Cahn torch song \"Guess I'll Hang My Tears Out to Dry\" in 1944 in \"Glad To See You\", a musical intended for Broadway which closed out of town in Philadelphia.",
+            "title": "Jane Withers",
+            "start": 0,
+            "end": 786,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 77
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 78,
+                "end": 580
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 581,
+                "end": 786
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a8c54035542995e66a475c3",
+              "url": "https://en.wikipedia.org/wiki/Jane_Withers",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.02821869488536155
+          },
+          {
+            "evidence_id": "E13",
+            "chunk_id": "5a83d9c0-ba6f-5780-a17a-1b2d700838f2",
+            "document_id": "24ba29ed-7906-53ba-be31-caa7455cebd2",
+            "revision_id": "005efdda-af67-57a4-9862-f484bc21aca8",
+            "strategy": "b",
+            "text": "Shirley Mae Jones (born March 31, 1934) is an American singer and actress of stage, film and television. In her six decades of show business, she has starred as wholesome characters in a number of well-known musical films, such as \"Oklahoma! \" (1955), \"Carousel\" (1956), and \"The Music Man\" (1962). She won the Academy Award for Best Supporting Actress for playing a vengeful prostitute in \"Elmer Gantry\" (1960). She played the lead role of Shirley Partridge, the widowed mother of five children, in the musical situation-comedy television series \"The Partridge Family\" (1970–74), which co-starred her real-life stepson David Cassidy, son of Jack Cassidy.",
+            "title": "Shirley Jones",
+            "start": 0,
+            "end": 655,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 104
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 105,
+                "end": 241
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 242,
+                "end": 298
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 299,
+                "end": 412
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 413,
+                "end": 655
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5abde93155429976d4830a1f",
+              "url": "https://en.wikipedia.org/wiki/Shirley_Jones",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.02625745950554135
+          },
+          {
+            "evidence_id": "E14",
+            "chunk_id": "956294c8-79a1-5632-b198-dee5cf9cda7c",
+            "document_id": "df575a6b-4f8e-5399-bce4-5b5ce24cd79d",
+            "revision_id": "f653c9f6-ee87-5abd-854a-db89fd000f31",
+            "strategy": "b",
+            "text": "Sally Margaret Field (born November 6, 1946) is an American actress and director. Field began her career on television, starring on the sitcoms \"Gidget\" (1965–66), \"The Flying Nun\" (1967–70), and \"The Girl with Something Extra\" (1973–74). She ventured into film with \"Smokey and the Bandit\" (1977) and later \"Norma Rae\" (1979), for which she received the Academy Award for Best Actress. She later received Golden Globe Award nominations for her performances in \"Absence of Malice\" (1981) and \"Kiss Me Goodbye\" (1982), before receiving her second Academy Award for Best Actress for \"Places in the Heart\" (1984). Field received further nominations for the Golden Globe Award for Best Actress for \"Murphy's Romance\" (1985) and \"Steel Magnolias\" (1989).",
+            "title": "Sally Field",
+            "start": 0,
+            "end": 749,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 81
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 82,
+                "end": 238
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 239,
+                "end": 386
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 387,
+                "end": 610
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 611,
+                "end": 749
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ae5324c55429908b6326569",
+              "url": "https://en.wikipedia.org/wiki/Sally_Field",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.023542445644647556
+          },
+          {
+            "evidence_id": "E15",
+            "chunk_id": "01ee1123-0e1b-59d1-922c-c374e41f063a",
+            "document_id": "b1145624-345c-5fa2-b939-ed782ff7b977",
+            "revision_id": "66fe10f2-9c2a-54d7-a466-efc8dacf22cb",
+            "strategy": "b",
+            "text": "Shirley Carter is a fictional character from the BBC soap opera \"EastEnders\", played by Linda Henry. She first appeared on 5 December 2006. This is Henry's second role in \"EastEnders\", as she previously played prostitute Lorraine Salter (1991–1992). Henry took a break from the show in September 2012, departing alongside on-screen daughter, Carly. She returned on 3 December 2012. Shirley is one of to appear in the internet spin-off series \"\". Some of her storylines have included trying and failing to rebuild relationships with her children Carly (Kellie Shirley) and Deano (Matt Di Angelo), a friendship with Heather Trott (Cheryl Fergison), a volatile relationship with Phil Mitchell (Steve McFadden), the introduction of her son Mick (Danny Dyer), who at first was believed to be her brother, and his family, an affair with Phil, despite his being in a relationship with Sharon Rickman (Letitia Dean) and accidentally shooting Phil. Former \"EastEnders\" executive producer Dominic Treadwell-Collins has described her as a \"new icon\" of the show.",
+            "title": "Shirley Carter",
+            "start": 0,
+            "end": 1051,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 100
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 101,
+                "end": 139
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 140,
+                "end": 249
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 250,
+                "end": 348
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 349,
+                "end": 381
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 382,
+                "end": 445
+              },
+              {
+                "kind": "sentence",
+                "number": 6,
+                "start": 446,
+                "end": 939
+              },
+              {
+                "kind": "sentence",
+                "number": 7,
+                "start": 940,
+                "end": 1051
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a90be1855429916514e754c",
+              "url": "https://en.wikipedia.org/wiki/Shirley_Carter",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015873015873015872
+          }
+        ],
+        "round": 2,
+        "tool_call_id": "call_RM7cTTLgyXd2tqLFQty8lnNb",
+        "executed": true,
+        "follow_up": {
+          "evidence_id": "E1",
+          "entity": "Shirley Temple"
+        },
+        "requested_query": "\"Kiss and Tell\" Shirley Temple Corliss Archer government position held by actress",
+        "query_adjusted": false
+      },
+      {
+        "query": "Shirley Temple government position held actress",
+        "strategy": "b",
+        "profile": "1a8846753a25",
+        "embedding_usage": {
+          "model": "text-embedding-3-small",
+          "input_tokens": 8,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 1.6e-07
+        },
+        "document_ranking": [
+          "67fa2482-e299-5cea-a27c-717b218aa2d6",
+          "9735e358-091d-566c-ad11-55613c3adeb6",
+          "24ba29ed-7906-53ba-be31-caa7455cebd2",
+          "0fdf15cf-2db1-5309-acd1-77109db1725a",
+          "29641596-314a-52c9-a3ec-d5ba06cffe02",
+          "19043a9f-3dbe-517a-8cff-b02fea982f64",
+          "97931ee5-02b1-58e8-ba82-51d2db5afa41",
+          "ed4877db-c6e6-51ee-b07a-f34210379cd8",
+          "fe702656-624f-5bb4-a9fd-6c8a1180ff63",
+          "fcb80d8e-5cc3-5946-81de-cc94fff56223"
+        ],
+        "candidate_counts": {
+          "dense": 30,
+          "bm25": 30,
+          "active_dense": 30,
+          "active_bm25": 30
+        },
+        "evidence": [
+          {
+            "evidence_id": "E9",
+            "chunk_id": "c05d8079-44e5-583c-b147-d4b06e987595",
+            "document_id": "67fa2482-e299-5cea-a27c-717b218aa2d6",
+            "revision_id": "959747cc-5be0-5fd3-a736-c9df5aac0892",
+            "strategy": "b",
+            "text": "Shirley Temple Black (April 23, 1928 – February 10, 2014) was an American actress, singer, dancer, businesswoman, and diplomat who was Hollywood's number one box-office draw as a child actress from 1935 to 1938. As an adult, she was named United States ambassador to Ghana and to Czechoslovakia and also served as Chief of Protocol of the United States.",
+            "title": "Shirley Temple",
+            "start": 0,
+            "end": 353,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 211
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 212,
+                "end": 353
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5a8c7595554299585d9e36b6",
+              "url": "https://en.wikipedia.org/wiki/Shirley_Temple",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03278688524590164
+          },
+          {
+            "evidence_id": "E12",
+            "chunk_id": "787d1988-3f89-531e-92a8-3ccd752de08c",
+            "document_id": "9735e358-091d-566c-ad11-55613c3adeb6",
+            "revision_id": "3e07477c-0d04-54ec-8641-353b365f7bdd",
+            "strategy": "b",
+            "text": "Jane Withers (born April 12, 1926) is an American actress, model, and singer. Beginning a prolific career as a child actress at the age of three, Withers is a Young Artist Award–Former Child Star \"Lifetime Achievement\" Award honoree, best known for being one of the most popular child film stars of the 1930s and early 1940s, as well as for her portrayal of \"Josephine the Plumber\" in a series of TV commercials for Comet cleanser in the 1960s and early 1970s and probably best known for playing the obnoxious Joy Smythe in the movie she paired with Shirley Temple, \"Bright Eyes\". Also a singer, she debuted the Jule Styne-Sammy Cahn torch song \"Guess I'll Hang My Tears Out to Dry\" in 1944 in \"Glad To See You\", a musical intended for Broadway which closed out of town in Philadelphia.",
+            "title": "Jane Withers",
+            "start": 0,
+            "end": 786,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 77
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 78,
+                "end": 580
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 581,
+                "end": 786
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a8c54035542995e66a475c3",
+              "url": "https://en.wikipedia.org/wiki/Jane_Withers",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.031754032258064516
+          },
+          {
+            "evidence_id": "E13",
+            "chunk_id": "5a83d9c0-ba6f-5780-a17a-1b2d700838f2",
+            "document_id": "24ba29ed-7906-53ba-be31-caa7455cebd2",
+            "revision_id": "005efdda-af67-57a4-9862-f484bc21aca8",
+            "strategy": "b",
+            "text": "Shirley Mae Jones (born March 31, 1934) is an American singer and actress of stage, film and television. In her six decades of show business, she has starred as wholesome characters in a number of well-known musical films, such as \"Oklahoma! \" (1955), \"Carousel\" (1956), and \"The Music Man\" (1962). She won the Academy Award for Best Supporting Actress for playing a vengeful prostitute in \"Elmer Gantry\" (1960). She played the lead role of Shirley Partridge, the widowed mother of five children, in the musical situation-comedy television series \"The Partridge Family\" (1970–74), which co-starred her real-life stepson David Cassidy, son of Jack Cassidy.",
+            "title": "Shirley Jones",
+            "start": 0,
+            "end": 655,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 104
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 105,
+                "end": 241
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 242,
+                "end": 298
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 299,
+                "end": 412
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 413,
+                "end": 655
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5abde93155429976d4830a1f",
+              "url": "https://en.wikipedia.org/wiki/Shirley_Jones",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.030798389007344232
+          },
+          {
+            "evidence_id": "E11",
+            "chunk_id": "475e8a3a-73a3-5f53-86de-f2a0bcfdc39a",
+            "document_id": "0fdf15cf-2db1-5309-acd1-77109db1725a",
+            "revision_id": "c8e17d5b-ed91-54e1-830d-6138b60a9c97",
+            "strategy": "b",
+            "text": "Cynthia Jane Williams (born August 22, 1947) is an American actress known for starring as Shirley Feeney in the television situation-comedy \"Laverne & Shirley\", for her role as Laurie Henderson in the film \"American Graffiti.\" , and for playing the mysterious Ann in \"The Conversation.\"",
+            "title": "Cindy Williams",
+            "start": 0,
+            "end": 286,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 226
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 227,
+                "end": 286
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a7bcf32554299294a54ab03",
+              "url": "https://en.wikipedia.org/wiki/Cindy_Williams",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03007688828584351
+          },
+          {
+            "evidence_id": "E1",
+            "chunk_id": "48177e9c-7322-5e42-acf2-09805c073ffd",
+            "document_id": "29641596-314a-52c9-a3ec-d5ba06cffe02",
+            "revision_id": "42baf12e-9239-51c9-aa38-0568e5642775",
+            "strategy": "b",
+            "text": "Kiss and Tell is a 1945 American comedy film starring then 17-year-old Shirley Temple as Corliss Archer. In the film, two teenage girls cause their respective parents much concern when they start to become interested in boys. The parents' bickering about which girl is the worse influence causes more problems than it solves.",
+            "title": "Kiss and Tell (1945 film)",
+            "start": 0,
+            "end": 325,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 104
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 105,
+                "end": 225
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 226,
+                "end": 325
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5a8c7595554299585d9e36b6",
+              "url": "https://en.wikipedia.org/wiki/Kiss_and_Tell_%281945_film%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.02976190476190476
+          },
+          {
+            "evidence_id": "E16",
+            "chunk_id": "acc582a5-faa3-5cc6-bbfa-4e6b59f33ad6",
+            "document_id": "19043a9f-3dbe-517a-8cff-b02fea982f64",
+            "revision_id": "2021b532-7439-5951-9ec4-f9f517a7bf9d",
+            "strategy": "b",
+            "text": "Shirley's World is a television series aired first by American Broadcasting Company during the U.S. 1971-72 television season. The sitcom was co-produced by the British ITC Entertainment and American producer Sheldon Leonard; it starred Shirley MacLaine as a photojournalist and John Gregson as her editor at \"World Illustrated\" magazine.",
+            "title": "Shirley's World",
+            "start": 0,
+            "end": 338,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 126
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 127,
+                "end": 338
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a8c738d554299653c1aa06f",
+              "url": "https://en.wikipedia.org/wiki/Shirley%27s_World",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.016129032258064516
+          },
+          {
+            "evidence_id": "E17",
+            "chunk_id": "cfd8fd92-606b-5b19-856b-4296d305fedf",
+            "document_id": "97931ee5-02b1-58e8-ba82-51d2db5afa41",
+            "revision_id": "095ff7ac-b47c-56c5-b404-34431353509c",
+            "strategy": "b",
+            "text": "Roger L. McGee (December 9, 1926 – October 27, 2013) was an American film actor whose career spanned from the 1930s to the 1950s. His earliest work included shorts for Shirley Temple and \"Our Gang\", including \"Our Gang Follies of 1938\". His film roles included \"Nothing but Trouble\" in 1944 and \"Forbidden Planet\" in 1956, in which he played Lindstrom.",
+            "title": "Roger McGee",
+            "start": 0,
+            "end": 352,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 129
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 130,
+                "end": 236
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 237,
+                "end": 352
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a80df7c55429938b6142229",
+              "url": "https://en.wikipedia.org/wiki/Roger_McGee",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015625
+          },
+          {
+            "evidence_id": "E18",
+            "chunk_id": "0439005a-65dc-5298-8c93-4acd13255ae2",
+            "document_id": "ed4877db-c6e6-51ee-b07a-f34210379cd8",
+            "revision_id": "c0c33edb-2922-5531-b5b5-8f535b930e46",
+            "strategy": "b",
+            "text": "Gladys Veronica Li (born 1948), Senior Counsel at the Hong Kong Bar with a busy constitutional law and human rights practice, is a founding member of the Hong Kong Civic Party. She began to take an interest in public affairs on her return to Hong Kong in 1982, after 10 years' practice as a barrister in England. She became a member of the lobby group which sought to inform British MPs in the late 1980s about lack of democracy, absence of human rights protections and the importance of the rule of law in Hong Kong. She was Chairman of the Hong Kong Bar Association in 1995 and 1996. Mild-mannered but forthright in her convictions, Ms Li has also been a member of the Article 23 Concern Group and the Article 45 Concern Group.",
+            "title": "Gladys Li",
+            "start": 0,
+            "end": 729,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 176
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 177,
+                "end": 312
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 313,
+                "end": 517
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 518,
+                "end": 585
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 586,
+                "end": 729
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ae11286554299422ee995f4",
+              "url": "https://en.wikipedia.org/wiki/Gladys_Li",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015384615384615385
+          }
+        ],
+        "round": 2,
+        "tool_call_id": "call_roWrXZ9VN1G2tPSsXivhStHy",
+        "executed": true,
+        "follow_up": null,
+        "requested_query": "Shirley Temple government position held actress",
+        "query_adjusted": false
+      }
+    ],
+    "workflow": "bounded_tools_v1",
+    "execution": {
+      "planning_rounds": 2,
+      "retrieval_rounds": 2,
+      "tool_calls": 3,
+      "searches": 3,
+      "llm_calls": 3,
+      "embedding_calls": 2,
+      "total_provider_calls": 5,
+      "stop_reason": "retrieval_limit",
+      "limits": {
+        "retrieval_rounds": 2,
+        "searches": 3,
+        "llm_calls": 3,
+        "embedding_calls": 3,
+        "total_provider_calls": 6
+      }
+    },
+    "configuration": {
+      "strategy": "b",
+      "profile": "1a8846753a25",
+      "embedding_model": "text-embedding-3-small",
+      "embedding_dimensions": 384,
+      "generation_model": "gpt-5.4-mini-2026-03-17",
+      "prompt_version": "bounded_tools_quote_ids_v1"
+    },
+    "usage": {
+      "planning": [
+        {
+          "input_tokens": 529,
+          "output_tokens": 37,
+          "estimated_cost_usd": 0.00056325,
+          "model": "gpt-5.4-mini-2026-03-17"
+        },
+        {
+          "input_tokens": 1792,
+          "output_tokens": 93,
+          "estimated_cost_usd": 0.0017625,
+          "model": "gpt-5.4-mini-2026-03-17"
+        }
+      ],
+      "generation": {
+        "input_tokens": 4748,
+        "output_tokens": 101,
+        "estimated_cost_usd": 0.0040155,
+        "model": "gpt-5.4-mini-2026-03-17"
+      },
+      "embeddings": [
+        {
+          "model": "text-embedding-3-small",
+          "input_tokens": 0,
+          "api_calls": 0,
+          "cache_hits": 1,
+          "estimated_cost_usd": 0.0
+        },
+        {
+          "model": "text-embedding-3-small",
+          "input_tokens": 17,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 3.4000000000000003e-07
+        },
+        {
+          "model": "text-embedding-3-small",
+          "input_tokens": 8,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 1.6e-07
+        }
+      ],
+      "estimated_model_cost_usd": 0.00634125,
+      "estimated_total_cost_usd": 0.006341749999999999
+    },
+    "latency_ms": 5809
+  },
+  "error": null,
+  "elapsed_ms": 5809,
+  "ledger_after": {
+    "calls": 399,
+    "reserved_usd": 0.83869538,
+    "estimated_actual_usd": 0.30918788,
+    "input_tokens": 7083792,
+    "output_tokens": 6257
+  }
+}

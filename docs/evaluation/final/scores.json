@@ -1,0 +1,4030 @@
+[
+  {
+    "case_id": "final-bridge-01",
+    "strategy": "a",
+    "category": "bridge",
+    "status": "answered",
+    "status_correct": true,
+    "supported_task_check": true,
+    "retrieval_initial": {
+      "recall_at_5": 0.5,
+      "recall_at_10": 0.5,
+      "mrr_at_10": 0.5
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "required_sources": 2,
+    "multi_source": true,
+    "all_sources_retrieved": true,
+    "all_sources_in_context": true,
+    "all_sources_cited": true,
+    "answer_full": {
+      "exact_match": 0.0,
+      "token_f1": 0.15789473684210525
+    },
+    "answer_last_claim": {
+      "exact_match": 0.0,
+      "token_f1": 0.24
+    },
+    "expected_fact_checks": {
+      "Chief of Protocol": true
+    },
+    "all_expected_facts": true,
+    "citations": {
+      "total": 3,
+      "valid": 3,
+      "label_aligned": 3
+    },
+    "citation_details": [
+      {
+        "claim_index": 0,
+        "evidence_id": "E2",
+        "quote": "Kiss and Tell is a 1945 American comedy film starring then 17-year-old Shirley Temple as Corliss Archer.",
+        "document_id": "29641596-314a-52c9-a3ec-d5ba06cffe02",
+        "valid": true,
+        "label_aligned": true
+      },
+      {
+        "claim_index": 0,
+        "evidence_id": "E9",
+        "quote": "Shirley Temple Black (April 23, 1928 – February 10, 2014) was an American actress, singer, dancer, businesswoman, and diplomat who was Hollywood's number one box-office draw as a child actress from 1935 to 1938. As an adult, she was named United States ambassador to Ghana and to Czechoslovakia and also served as Chief of Protocol of the United States.",
+        "document_id": "67fa2482-e299-5cea-a27c-717b218aa2d6",
+        "valid": true,
+        "label_aligned": true
+      },
+      {
+        "claim_index": 1,
+        "evidence_id": "E9",
+        "quote": "As an adult, she was named United States ambassador to Ghana and to Czechoslovakia and also served as Chief of Protocol of the United States.",
+        "document_id": "67fa2482-e299-5cea-a27c-717b218aa2d6",
+        "valid": true,
+        "label_aligned": true
+      }
+    ]
+  },
+  {
+    "case_id": "final-bridge-01",
+    "strategy": "b",
+    "category": "bridge",
+    "status": "answered",
+    "status_correct": true,
+    "supported_task_check": true,
+    "retrieval_initial": {
+      "recall_at_5": 0.5,
+      "recall_at_10": 0.5,
+      "mrr_at_10": 1.0
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "required_sources": 2,
+    "multi_source": true,
+    "all_sources_retrieved": true,
+    "all_sources_in_context": true,
+    "all_sources_cited": true,
+    "answer_full": {
+      "exact_match": 0.0,
+      "token_f1": 0.1875
+    },
+    "answer_last_claim": {
+      "exact_match": 0.0,
+      "token_f1": 0.1875
+    },
+    "expected_fact_checks": {
+      "Chief of Protocol": true
+    },
+    "all_expected_facts": true,
+    "citations": {
+      "total": 2,
+      "valid": 2,
+      "label_aligned": 2
+    },
+    "citation_details": [
+      {
+        "claim_index": 0,
+        "evidence_id": "E1",
+        "quote": "Kiss and Tell is a 1945 American comedy film starring then 17-year-old Shirley Temple as Corliss Archer.",
+        "document_id": "29641596-314a-52c9-a3ec-d5ba06cffe02",
+        "valid": true,
+        "label_aligned": true
+      },
+      {
+        "claim_index": 0,
+        "evidence_id": "E9",
+        "quote": "As an adult, she was named United States ambassador to Ghana and to Czechoslovakia and also served as Chief of Protocol of the United States.",
+        "document_id": "67fa2482-e299-5cea-a27c-717b218aa2d6",
+        "valid": true,
+        "label_aligned": true
+      }
+    ]
+  },
+  {
+    "case_id": "final-bridge-02",
+    "strategy": "b",
+    "category": "bridge",
+    "status": "answered",
+    "status_correct": true,
+    "supported_task_check": true,
+    "retrieval_initial": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "required_sources": 2,
+    "multi_source": true,
+    "all_sources_retrieved": true,
+    "all_sources_in_context": true,
+    "all_sources_cited": true,
+    "answer_full": {
+      "exact_match": 0.0,
+      "token_f1": 0.0625
+    },
+    "answer_last_claim": {
+      "exact_match": 0.0,
+      "token_f1": 0.0
+    },
+    "expected_fact_checks": {
+      "Animorphs": true
+    },
+    "all_expected_facts": true,
+    "citations": {
+      "total": 5,
+      "valid": 5,
+      "label_aligned": 4
+    },
+    "citation_details": [
+      {
+        "claim_index": 0,
+        "evidence_id": "E1",
+        "quote": "Animorphs is a science fantasy series of young adult books written by Katherine Applegate and her husband Michael Grant, writing together under the name K. A. Applegate, and published by Scholastic. It is told in first person, with all six main characters taking turns narrating the books through their own perspectives. Horror, war, dehumanization, sanity, morality, innocence, leadership, freedom and growing up are the core themes of the series.",
+        "document_id": "b1b5fb0d-b548-5212-8998-79b0ea12d936",
+        "valid": true,
+        "label_aligned": true
+      },
+      {
+        "claim_index": 0,
+        "evidence_id": "E1",
+        "quote": "It is told in first person, with all six main characters taking turns narrating the books through their own perspectives.",
+        "document_id": "b1b5fb0d-b548-5212-8998-79b0ea12d936",
+        "valid": true,
+        "label_aligned": true
+      },
+      {
+        "claim_index": 1,
+        "evidence_id": "E2",
+        "quote": "The Hork-Bajir Chronicles is the second companion book to the \"Animorphs\" series, written by K. A. Applegate. With respect to continuity within the series, it takes place before book #23, \"The Pretender\", although the events told in the story occur between the time of \"The Ellimist Chronicles\" and \"The Andalite Chronicles\". The book is introduced by Tobias, who flies to the valley of the free Hork-Bajir, where Jara Hamee tells him the story of how the Yeerks enslaved the Hork-Bajir, and how Aldrea, an Andalite, and her companion, Dak Hamee, a Hork-Bajir, tried to save their world from the invasion. Jara Hamee's story is narrated from the points of view of Aldrea, Dak Hamee, and Esplin 9466, alternating in similar fashion to the \"Megamorphs\" books.",
+        "document_id": "04a61d3d-e3e4-5e97-839c-8d7c06e45a93",
+        "valid": true,
+        "label_aligned": true
+      },
+      {
+        "claim_index": 1,
+        "evidence_id": "E2",
+        "quote": "The book is introduced by Tobias, who flies to the valley of the free Hork-Bajir, where Jara Hamee tells him the story of how the Yeerks enslaved the Hork-Bajir, and how Aldrea, an Andalite, and her companion, Dak Hamee, a Hork-Bajir, tried to save their world from the invasion.",
+        "document_id": "04a61d3d-e3e4-5e97-839c-8d7c06e45a93",
+        "valid": true,
+        "label_aligned": true
+      },
+      {
+        "claim_index": 1,
+        "evidence_id": "E2",
+        "quote": "Jara Hamee's story is narrated from the points of view of Aldrea, Dak Hamee, and Esplin 9466, alternating in similar fashion to the \"Megamorphs\" books.",
+        "document_id": "04a61d3d-e3e4-5e97-839c-8d7c06e45a93",
+        "valid": true,
+        "label_aligned": false
+      }
+    ]
+  },
+  {
+    "case_id": "final-bridge-02",
+    "strategy": "a",
+    "category": "bridge",
+    "status": "answered",
+    "status_correct": true,
+    "supported_task_check": true,
+    "retrieval_initial": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "required_sources": 2,
+    "multi_source": true,
+    "all_sources_retrieved": true,
+    "all_sources_in_context": true,
+    "all_sources_cited": true,
+    "answer_full": {
+      "exact_match": 0.0,
+      "token_f1": 0.08695652173913043
+    },
+    "answer_last_claim": {
+      "exact_match": 0.0,
+      "token_f1": 0.0
+    },
+    "expected_fact_checks": {
+      "Animorphs": true
+    },
+    "all_expected_facts": true,
+    "citations": {
+      "total": 4,
+      "valid": 4,
+      "label_aligned": 4
+    },
+    "citation_details": [
+      {
+        "claim_index": 0,
+        "evidence_id": "E1",
+        "quote": "Animorphs is a science fantasy series of young adult books written by Katherine Applegate and her husband Michael Grant, writing together under the name K. A. Applegate, and published by Scholastic. It is told in first person, with all six main characters taking turns narrating the books through their own perspectives. Horror, war, dehumanization, sanity, morality, innocence, leadership, freedom and growing up are the core themes of the series.",
+        "document_id": "b1b5fb0d-b548-5212-8998-79b0ea12d936",
+        "valid": true,
+        "label_aligned": true
+      },
+      {
+        "claim_index": 1,
+        "evidence_id": "E1",
+        "quote": "It is told in first person, with all six main characters taking turns narrating the books through their own perspectives.",
+        "document_id": "b1b5fb0d-b548-5212-8998-79b0ea12d936",
+        "valid": true,
+        "label_aligned": true
+      },
+      {
+        "claim_index": 2,
+        "evidence_id": "E2",
+        "quote": "The Hork-Bajir Chronicles is the second companion book to the \"Animorphs\" series, written by K. A. Applegate. With respect to continuity within the series, it takes place before book #23, \"The Pretender\", although the events told in the story occur between the time of \"The Ellimist Chronicles\" and \"The Andalite Chronicles\". The book is introduced by Tobias, who flies to the valley of the free Hork-Bajir, where Jara Hamee tells him the story of how the Yeerks enslaved the Hork-Bajir, and how Aldrea, an Andalite, and her companion, Dak Hamee, a Hork-Bajir, tried to save their world from the invasion. Jara Hamee's story is narrated from the points of view of Aldrea, Dak Hamee, and Esplin 9466, alternating in similar fashion to the \"Megamorphs\" books.",
+        "document_id": "04a61d3d-e3e4-5e97-839c-8d7c06e45a93",
+        "valid": true,
+        "label_aligned": true
+      },
+      {
+        "claim_index": 2,
+        "evidence_id": "E2",
+        "quote": "The book is introduced by Tobias, who flies to the valley of the free Hork-Bajir, where Jara Hamee tells him the story of how the Yeerks enslaved the Hork-Bajir, and how Aldrea, an Andalite, and her companion, Dak Hamee, a Hork-Bajir, tried to save their world from the invasion.",
+        "document_id": "04a61d3d-e3e4-5e97-839c-8d7c06e45a93",
+        "valid": true,
+        "label_aligned": true
+      }
+    ]
+  },
+  {
+    "case_id": "final-bridge-03",
+    "strategy": "a",
+    "category": "bridge",
+    "status": "answered",
+    "status_correct": true,
+    "supported_task_check": true,
+    "retrieval_initial": {
+      "recall_at_5": 0.5,
+      "recall_at_10": 0.5,
+      "mrr_at_10": 1.0
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "required_sources": 2,
+    "multi_source": true,
+    "all_sources_retrieved": true,
+    "all_sources_in_context": true,
+    "all_sources_cited": true,
+    "answer_full": {
+      "exact_match": 0.0,
+      "token_f1": 0.5
+    },
+    "answer_last_claim": {
+      "exact_match": 0.0,
+      "token_f1": 0.5
+    },
+    "expected_fact_checks": {
+      "Greenwich Village, New York City": true
+    },
+    "all_expected_facts": true,
+    "citations": {
+      "total": 2,
+      "valid": 2,
+      "label_aligned": 2
+    },
+    "citation_details": [
+      {
+        "claim_index": 0,
+        "evidence_id": "E1",
+        "quote": "Big Stone Gap is a 2014 American drama romantic comedy film written and directed by Adriana Trigiani and produced by Donna Gigliotti for Altar Identity Studios, a subsidiary of Media Society.",
+        "document_id": "a19f65d5-8897-5803-8c87-c360223e71bc",
+        "valid": true,
+        "label_aligned": true
+      },
+      {
+        "claim_index": 0,
+        "evidence_id": "E9",
+        "quote": "Adriana Trigiani is an Italian American best-selling author of sixteen books, television writer, film director, and entrepreneur based in Greenwich Village, New York City.",
+        "document_id": "f6497e4b-d0f3-570a-847d-1359bd70d226",
+        "valid": true,
+        "label_aligned": true
+      }
+    ]
+  },
+  {
+    "case_id": "final-bridge-03",
+    "strategy": "b",
+    "category": "bridge",
+    "status": "answered",
+    "status_correct": true,
+    "supported_task_check": true,
+    "retrieval_initial": {
+      "recall_at_5": 0.5,
+      "recall_at_10": 0.5,
+      "mrr_at_10": 1.0
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "required_sources": 2,
+    "multi_source": true,
+    "all_sources_retrieved": true,
+    "all_sources_in_context": true,
+    "all_sources_cited": true,
+    "answer_full": {
+      "exact_match": 0.0,
+      "token_f1": 0.43478260869565216
+    },
+    "answer_last_claim": {
+      "exact_match": 0.0,
+      "token_f1": 0.6666666666666666
+    },
+    "expected_fact_checks": {
+      "Greenwich Village, New York City": true
+    },
+    "all_expected_facts": true,
+    "citations": {
+      "total": 2,
+      "valid": 2,
+      "label_aligned": 2
+    },
+    "citation_details": [
+      {
+        "claim_index": 0,
+        "evidence_id": "E1",
+        "quote": "Big Stone Gap is a 2014 American drama romantic comedy film written and directed by Adriana Trigiani and produced by Donna Gigliotti for Altar Identity Studios, a subsidiary of Media Society.",
+        "document_id": "a19f65d5-8897-5803-8c87-c360223e71bc",
+        "valid": true,
+        "label_aligned": true
+      },
+      {
+        "claim_index": 1,
+        "evidence_id": "E9",
+        "quote": "Adriana Trigiani is an Italian American best-selling author of sixteen books, television writer, film director, and entrepreneur based in Greenwich Village, New York City.",
+        "document_id": "f6497e4b-d0f3-570a-847d-1359bd70d226",
+        "valid": true,
+        "label_aligned": true
+      }
+    ]
+  },
+  {
+    "case_id": "final-bridge-04",
+    "strategy": "b",
+    "category": "bridge",
+    "status": "answered",
+    "status_correct": true,
+    "supported_task_check": true,
+    "retrieval_initial": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "required_sources": 2,
+    "multi_source": true,
+    "all_sources_retrieved": true,
+    "all_sources_in_context": true,
+    "all_sources_cited": true,
+    "answer_full": {
+      "exact_match": 0.0,
+      "token_f1": 0.2222222222222222
+    },
+    "answer_last_claim": {
+      "exact_match": 0.0,
+      "token_f1": 0.2222222222222222
+    },
+    "expected_fact_checks": {
+      "YG Entertainment": true
+    },
+    "all_expected_facts": true,
+    "citations": {
+      "total": 2,
+      "valid": 2,
+      "label_aligned": 2
+    },
+    "citation_details": [
+      {
+        "claim_index": 0,
+        "evidence_id": "E1",
+        "quote": "Winner (Hangul: 위너), often stylized as WINNER, is a South Korean boy group formed in 2013 by YG Entertainment and debuted in 2014. It currently consists of four members, Jinwoo, Seunghoon, Mino and Seungyoon. Originally a five-piece group with Taehyun, who later departed from the group in November 2016.",
+        "document_id": "b11e8d38-543e-53cb-a40a-16c41fb7ebce",
+        "valid": true,
+        "label_aligned": true
+      },
+      {
+        "claim_index": 0,
+        "evidence_id": "E2",
+        "quote": "2014 S/S is the debut album of South Korean group WINNER.",
+        "document_id": "bb84f2bf-1830-5368-b37f-04d6a608ccd6",
+        "valid": true,
+        "label_aligned": true
+      }
+    ]
+  },
+  {
+    "case_id": "final-bridge-04",
+    "strategy": "a",
+    "category": "bridge",
+    "status": "answered",
+    "status_correct": true,
+    "supported_task_check": true,
+    "retrieval_initial": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "required_sources": 2,
+    "multi_source": true,
+    "all_sources_retrieved": true,
+    "all_sources_in_context": true,
+    "all_sources_cited": true,
+    "answer_full": {
+      "exact_match": 0.0,
+      "token_f1": 0.26666666666666666
+    },
+    "answer_last_claim": {
+      "exact_match": 0.0,
+      "token_f1": 0.26666666666666666
+    },
+    "expected_fact_checks": {
+      "YG Entertainment": true
+    },
+    "all_expected_facts": true,
+    "citations": {
+      "total": 2,
+      "valid": 2,
+      "label_aligned": 2
+    },
+    "citation_details": [
+      {
+        "claim_index": 0,
+        "evidence_id": "E2",
+        "quote": "2014 S/S is the debut album of South Korean group WINNER.",
+        "document_id": "bb84f2bf-1830-5368-b37f-04d6a608ccd6",
+        "valid": true,
+        "label_aligned": true
+      },
+      {
+        "claim_index": 0,
+        "evidence_id": "E1",
+        "quote": "Winner (Hangul: 위너), often stylized as WINNER, is a South Korean boy group formed in 2013 by YG Entertainment and debuted in 2014.",
+        "document_id": "b11e8d38-543e-53cb-a40a-16c41fb7ebce",
+        "valid": true,
+        "label_aligned": true
+      }
+    ]
+  },
+  {
+    "case_id": "final-bridge-05",
+    "strategy": "a",
+    "category": "bridge",
+    "status": "answered",
+    "status_correct": true,
+    "supported_task_check": true,
+    "retrieval_initial": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "required_sources": 2,
+    "multi_source": true,
+    "all_sources_retrieved": true,
+    "all_sources_in_context": true,
+    "all_sources_cited": true,
+    "answer_full": {
+      "exact_match": 0.0,
+      "token_f1": 0.19047619047619047
+    },
+    "answer_last_claim": {
+      "exact_match": 0.0,
+      "token_f1": 0.0
+    },
+    "expected_fact_checks": {
+      "Eenasul Fateh": true
+    },
+    "all_expected_facts": true,
+    "citations": {
+      "total": 2,
+      "valid": 2,
+      "label_aligned": 2
+    },
+    "citation_details": [
+      {
+        "claim_index": 0,
+        "evidence_id": "E2",
+        "quote": "Eenasul Fateh (Bengali: ঈনাসুল ফাতেহ ; born 3 April 1959), also known by his stage name Aladin, is a Bangladeshi-British cultural practitioner, magician, live artist and former international management consultant.",
+        "document_id": "9bb0a65f-8eb4-55c0-b2cc-97b2f53f2b0d",
+        "valid": true,
+        "label_aligned": true
+      },
+      {
+        "claim_index": 1,
+        "evidence_id": "E1",
+        "quote": "Management consulting is the practice of helping organizations to improve their performance, operating primarily through the analysis of existing organizational problems and the development of plans for improvement.",
+        "document_id": "b6634fa7-016e-5aba-a80a-31b66d2b0e53",
+        "valid": true,
+        "label_aligned": true
+      }
+    ]
+  },
+  {
+    "case_id": "final-bridge-05",
+    "strategy": "b",
+    "category": "bridge",
+    "status": "answered",
+    "status_correct": true,
+    "supported_task_check": true,
+    "retrieval_initial": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "required_sources": 2,
+    "multi_source": true,
+    "all_sources_retrieved": true,
+    "all_sources_in_context": true,
+    "all_sources_cited": true,
+    "answer_full": {
+      "exact_match": 0.0,
+      "token_f1": 0.14285714285714285
+    },
+    "answer_last_claim": {
+      "exact_match": 0.0,
+      "token_f1": 0.0
+    },
+    "expected_fact_checks": {
+      "Eenasul Fateh": true
+    },
+    "all_expected_facts": true,
+    "citations": {
+      "total": 3,
+      "valid": 3,
+      "label_aligned": 3
+    },
+    "citation_details": [
+      {
+        "claim_index": 0,
+        "evidence_id": "E2",
+        "quote": "Eenasul Fateh (Bengali: ঈনাসুল ফাতেহ ; born 3 April 1959), also known by his stage name Aladin, is a Bangladeshi-British cultural practitioner, magician, live artist and former international management consultant.",
+        "document_id": "9bb0a65f-8eb4-55c0-b2cc-97b2f53f2b0d",
+        "valid": true,
+        "label_aligned": true
+      },
+      {
+        "claim_index": 1,
+        "evidence_id": "E2",
+        "quote": "Eenasul Fateh (Bengali: ঈনাসুল ফাতেহ ; born 3 April 1959), also known by his stage name Aladin, is a Bangladeshi-British cultural practitioner, magician, live artist and former international management consultant.",
+        "document_id": "9bb0a65f-8eb4-55c0-b2cc-97b2f53f2b0d",
+        "valid": true,
+        "label_aligned": true
+      },
+      {
+        "claim_index": 1,
+        "evidence_id": "E1",
+        "quote": "Management consulting is the practice of helping organizations to improve their performance, operating primarily through the analysis of existing organizational problems and the development of plans for improvement.",
+        "document_id": "b6634fa7-016e-5aba-a80a-31b66d2b0e53",
+        "valid": true,
+        "label_aligned": true
+      }
+    ]
+  },
+  {
+    "case_id": "final-bridge-06",
+    "strategy": "b",
+    "category": "bridge",
+    "status": "answered",
+    "status_correct": true,
+    "supported_task_check": false,
+    "retrieval_initial": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "required_sources": 2,
+    "multi_source": true,
+    "all_sources_retrieved": true,
+    "all_sources_in_context": true,
+    "all_sources_cited": false,
+    "answer_full": {
+      "exact_match": 0.0,
+      "token_f1": 0.2222222222222222
+    },
+    "answer_last_claim": {
+      "exact_match": 0.0,
+      "token_f1": 0.2222222222222222
+    },
+    "expected_fact_checks": {
+      "3,677 seated": false
+    },
+    "all_expected_facts": false,
+    "citations": {
+      "total": 1,
+      "valid": 1,
+      "label_aligned": 1
+    },
+    "citation_details": [
+      {
+        "claim_index": 0,
+        "evidence_id": "E1",
+        "quote": "The Androscoggin Bank Colisée (formerly Central Maine Civic Center and Lewiston Colisee) is a 4,000 capacity (3,677 seated) multi-purpose arena, in Lewiston, Maine, that opened in 1958. In 1965 it was the location of the World Heavyweight Title fight during which one of the most famous sports photographs of the century was taken of Muhammed Ali standing over Sonny Liston.",
+        "document_id": "59035b4e-3864-5b2b-a1fb-88cfd55c5a05",
+        "valid": true,
+        "label_aligned": true
+      }
+    ]
+  },
+  {
+    "case_id": "final-bridge-06",
+    "strategy": "a",
+    "category": "bridge",
+    "status": "answered",
+    "status_correct": true,
+    "supported_task_check": false,
+    "retrieval_initial": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "required_sources": 2,
+    "multi_source": true,
+    "all_sources_retrieved": true,
+    "all_sources_in_context": true,
+    "all_sources_cited": false,
+    "answer_full": {
+      "exact_match": 0.0,
+      "token_f1": 0.2222222222222222
+    },
+    "answer_last_claim": {
+      "exact_match": 0.0,
+      "token_f1": 0.2222222222222222
+    },
+    "expected_fact_checks": {
+      "3,677 seated": false
+    },
+    "all_expected_facts": false,
+    "citations": {
+      "total": 1,
+      "valid": 1,
+      "label_aligned": 1
+    },
+    "citation_details": [
+      {
+        "claim_index": 0,
+        "evidence_id": "E2",
+        "quote": "The Androscoggin Bank Colisée (formerly Central Maine Civic Center and Lewiston Colisee) is a 4,000 capacity (3,677 seated) multi-purpose arena, in Lewiston, Maine, that opened in 1958. In 1965 it was the location of the World Heavyweight Title fight during which one of the most famous sports photographs of the century was taken of Muhammed Ali standing over Sonny Liston.",
+        "document_id": "59035b4e-3864-5b2b-a1fb-88cfd55c5a05",
+        "valid": true,
+        "label_aligned": true
+      }
+    ]
+  },
+  {
+    "case_id": "final-bridge-07",
+    "strategy": "a",
+    "category": "bridge",
+    "status": "answered",
+    "status_correct": true,
+    "supported_task_check": true,
+    "retrieval_initial": {
+      "recall_at_5": 0.5,
+      "recall_at_10": 0.5,
+      "mrr_at_10": 1.0
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "required_sources": 2,
+    "multi_source": true,
+    "all_sources_retrieved": true,
+    "all_sources_in_context": true,
+    "all_sources_cited": true,
+    "answer_full": {
+      "exact_match": 0.0,
+      "token_f1": 0.4444444444444444
+    },
+    "answer_last_claim": {
+      "exact_match": 0.0,
+      "token_f1": 0.4444444444444444
+    },
+    "expected_fact_checks": {
+      "Terry Richardson": true
+    },
+    "all_expected_facts": true,
+    "citations": {
+      "total": 2,
+      "valid": 2,
+      "label_aligned": 2
+    },
+    "citation_details": [
+      {
+        "claim_index": 0,
+        "evidence_id": "E9",
+        "quote": "Terrence \"Uncle Terry\" Richardson (born August 14, 1965) is an American fashion and portrait photographer who has shot advertising campaigns for Marc Jacobs, Aldo, Supreme, Sisley, Tom Ford, and Yves Saint Laurent among others. He has also done work for magazines such as \"Rolling Stone\", \"GQ\", \"Vogue\", \"Vanity Fair\", \"Harper's Bazaar\", \"i-D\", and \"Vice\".",
+        "document_id": "e92618f6-fe57-5b82-8f6b-021763561909",
+        "valid": true,
+        "label_aligned": true
+      },
+      {
+        "claim_index": 0,
+        "evidence_id": "E1",
+        "quote": "Annie Morton (born October 8, 1970) is an American model born in Pennsylvania. She has appeared on the covers of \"British Vogue\", \"ID\", \"Marie Claire\", and other magazines. She has been photographed by Helmut Newton; Peter Lindbergh; Annie Leibovitz; Richard Avedon; Juergen Teller; Paul Jasmin, Mary Ellen Mark and Terry Richardson, and modeled for Donna Karan, Givenchy, Guerlain, Chanel, \"Harper's Bazaar\", \"Sports Illustrated\" and Victoria's Secret. A long time vegetarian, an advocate for organic lifestyle choices and natural healthcare. She co-founded Tsi-La Organics, a \"Green Luxury\" company that creates and sells vegan, organic perfume and skin care products.",
+        "document_id": "bbaab7bc-52ce-5c5b-8f6e-352d95947b89",
+        "valid": true,
+        "label_aligned": true
+      }
+    ]
+  },
+  {
+    "case_id": "final-bridge-07",
+    "strategy": "b",
+    "category": "bridge",
+    "status": "answered",
+    "status_correct": true,
+    "supported_task_check": true,
+    "retrieval_initial": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "required_sources": 2,
+    "multi_source": true,
+    "all_sources_retrieved": true,
+    "all_sources_in_context": true,
+    "all_sources_cited": true,
+    "answer_full": {
+      "exact_match": 0.0,
+      "token_f1": 0.4444444444444444
+    },
+    "answer_last_claim": {
+      "exact_match": 0.0,
+      "token_f1": 0.4444444444444444
+    },
+    "expected_fact_checks": {
+      "Terry Richardson": true
+    },
+    "all_expected_facts": true,
+    "citations": {
+      "total": 2,
+      "valid": 2,
+      "label_aligned": 2
+    },
+    "citation_details": [
+      {
+        "claim_index": 0,
+        "evidence_id": "E1",
+        "quote": "Annie Morton (born October 8, 1970) is an American model born in Pennsylvania.",
+        "document_id": "bbaab7bc-52ce-5c5b-8f6e-352d95947b89",
+        "valid": true,
+        "label_aligned": true
+      },
+      {
+        "claim_index": 0,
+        "evidence_id": "E4",
+        "quote": "Terrence \"Uncle Terry\" Richardson (born August 14, 1965) is an American fashion and portrait photographer who has shot advertising campaigns for Marc Jacobs, Aldo, Supreme, Sisley, Tom Ford, and Yves Saint Laurent among others. He has also done work for magazines such as \"Rolling Stone\", \"GQ\", \"Vogue\", \"Vanity Fair\", \"Harper's Bazaar\", \"i-D\", and \"Vice\".",
+        "document_id": "e92618f6-fe57-5b82-8f6b-021763561909",
+        "valid": true,
+        "label_aligned": true
+      }
+    ]
+  },
+  {
+    "case_id": "final-bridge-08",
+    "strategy": "b",
+    "category": "bridge",
+    "status": "answered",
+    "status_correct": true,
+    "supported_task_check": true,
+    "retrieval_initial": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "required_sources": 2,
+    "multi_source": true,
+    "all_sources_retrieved": true,
+    "all_sources_in_context": true,
+    "all_sources_cited": true,
+    "answer_full": {
+      "exact_match": 0.0,
+      "token_f1": 0.25
+    },
+    "answer_last_claim": {
+      "exact_match": 0.0,
+      "token_f1": 0.36363636363636365
+    },
+    "expected_fact_checks": {
+      "Kansas Song": true
+    },
+    "all_expected_facts": true,
+    "citations": {
+      "total": 2,
+      "valid": 2,
+      "label_aligned": 2
+    },
+    "citation_details": [
+      {
+        "claim_index": 0,
+        "evidence_id": "E1",
+        "quote": "The University of Kansas, often referred to as KU or Kansas, is a public research university in the U.S. state of Kansas. The main campus in Lawrence, one of the largest college towns in Kansas, is on Mount Oread, the highest elevation in Lawrence. Two branch campuses are in the Kansas City metropolitan area: the Edwards Campus in Overland Park, and the university's medical school and hospital in Kansas City. There are also educational and research sites in Parsons, Topeka, Garden City, Hays, and Leavenworth, and branches of the medical school in Wichita and Salina. The university is one of the 62 members of the Association of American Universities.",
+        "document_id": "a1e4ebd0-ffa6-50c0-89f8-a20261f3cdcb",
+        "valid": true,
+        "label_aligned": true
+      },
+      {
+        "claim_index": 1,
+        "evidence_id": "E3",
+        "quote": "Kansas Song (We’re From Kansas) is a fight song of the University of Kansas.",
+        "document_id": "6e8adb7c-791b-52f7-b77e-bef489d2a0ca",
+        "valid": true,
+        "label_aligned": true
+      }
+    ]
+  },
+  {
+    "case_id": "final-bridge-08",
+    "strategy": "a",
+    "category": "bridge",
+    "status": "answered",
+    "status_correct": true,
+    "supported_task_check": true,
+    "retrieval_initial": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "required_sources": 2,
+    "multi_source": true,
+    "all_sources_retrieved": true,
+    "all_sources_in_context": true,
+    "all_sources_cited": true,
+    "answer_full": {
+      "exact_match": 0.0,
+      "token_f1": 0.13333333333333333
+    },
+    "answer_last_claim": {
+      "exact_match": 0.0,
+      "token_f1": 0.36363636363636365
+    },
+    "expected_fact_checks": {
+      "Kansas Song": true
+    },
+    "all_expected_facts": true,
+    "citations": {
+      "total": 2,
+      "valid": 2,
+      "label_aligned": 2
+    },
+    "citation_details": [
+      {
+        "claim_index": 0,
+        "evidence_id": "E1",
+        "quote": "The University of Kansas, often referred to as KU or Kansas, is a public research university in the U.S. state of Kansas. The main campus in Lawrence, one of the largest college towns in Kansas, is on Mount Oread, the highest elevation in Lawrence. Two branch campuses are in the Kansas City metropolitan area: the Edwards Campus in Overland Park, and the university's medical school and hospital in Kansas City. There are also educational and research sites in Parsons, Topeka, Garden City, Hays, and Leavenworth, and branches of the medical school in Wichita and Salina. The university is one of the 62 members of the Association of American Universities.",
+        "document_id": "a1e4ebd0-ffa6-50c0-89f8-a20261f3cdcb",
+        "valid": true,
+        "label_aligned": true
+      },
+      {
+        "claim_index": 1,
+        "evidence_id": "E3",
+        "quote": "Kansas Song (We’re From Kansas) is a fight song of the University of Kansas.",
+        "document_id": "6e8adb7c-791b-52f7-b77e-bef489d2a0ca",
+        "valid": true,
+        "label_aligned": true
+      }
+    ]
+  },
+  {
+    "case_id": "final-bridge-09",
+    "strategy": "a",
+    "category": "bridge",
+    "status": "answered",
+    "status_correct": true,
+    "supported_task_check": true,
+    "retrieval_initial": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 0.5
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "required_sources": 2,
+    "multi_source": true,
+    "all_sources_retrieved": true,
+    "all_sources_in_context": true,
+    "all_sources_cited": true,
+    "answer_full": {
+      "exact_match": 0.0,
+      "token_f1": 0.2857142857142857
+    },
+    "answer_last_claim": {
+      "exact_match": 0.0,
+      "token_f1": 0.2857142857142857
+    },
+    "expected_fact_checks": {
+      "David Weissman": true
+    },
+    "all_expected_facts": true,
+    "citations": {
+      "total": 2,
+      "valid": 2,
+      "label_aligned": 2
+    },
+    "citation_details": [
+      {
+        "claim_index": 0,
+        "evidence_id": "E2",
+        "quote": "David Weissman is a screenwriter and director. His film credits include \"The Family Man\" (2000), \"Evolution\" (2001), and \"\"When in Rome\"\" (2010).",
+        "document_id": "4d1c64fb-0924-5f82-92f6-0a32f44e0b9e",
+        "valid": true,
+        "label_aligned": true
+      },
+      {
+        "claim_index": 0,
+        "evidence_id": "E3",
+        "quote": "The Family Man is a 2000 American romantic comedy-drama film directed by Brett Ratner, written by David Diamond and David Weissman, and starring Nicolas Cage and Téa Leoni.",
+        "document_id": "4880d96e-79b5-51d6-9621-df2342f93796",
+        "valid": true,
+        "label_aligned": true
+      }
+    ]
+  },
+  {
+    "case_id": "final-bridge-09",
+    "strategy": "b",
+    "category": "bridge",
+    "status": "answered",
+    "status_correct": true,
+    "supported_task_check": true,
+    "retrieval_initial": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 0.5
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "required_sources": 2,
+    "multi_source": true,
+    "all_sources_retrieved": true,
+    "all_sources_in_context": true,
+    "all_sources_cited": true,
+    "answer_full": {
+      "exact_match": 0.0,
+      "token_f1": 0.2857142857142857
+    },
+    "answer_last_claim": {
+      "exact_match": 0.0,
+      "token_f1": 0.2857142857142857
+    },
+    "expected_fact_checks": {
+      "David Weissman": true
+    },
+    "all_expected_facts": true,
+    "citations": {
+      "total": 2,
+      "valid": 2,
+      "label_aligned": 2
+    },
+    "citation_details": [
+      {
+        "claim_index": 0,
+        "evidence_id": "E3",
+        "quote": "The Family Man is a 2000 American romantic comedy-drama film directed by Brett Ratner, written by David Diamond and David Weissman, and starring Nicolas Cage and Téa Leoni.",
+        "document_id": "4880d96e-79b5-51d6-9621-df2342f93796",
+        "valid": true,
+        "label_aligned": true
+      },
+      {
+        "claim_index": 0,
+        "evidence_id": "E2",
+        "quote": "David Weissman is a screenwriter and director. His film credits include \"The Family Man\" (2000), \"Evolution\" (2001), and \"\"When in Rome\"\" (2010).",
+        "document_id": "4d1c64fb-0924-5f82-92f6-0a32f44e0b9e",
+        "valid": true,
+        "label_aligned": true
+      }
+    ]
+  },
+  {
+    "case_id": "final-bridge-10",
+    "strategy": "b",
+    "category": "bridge",
+    "status": "answered",
+    "status_correct": true,
+    "supported_task_check": false,
+    "retrieval_initial": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "required_sources": 2,
+    "multi_source": true,
+    "all_sources_retrieved": true,
+    "all_sources_in_context": true,
+    "all_sources_cited": false,
+    "answer_full": {
+      "exact_match": 0.0,
+      "token_f1": 0.2
+    },
+    "answer_last_claim": {
+      "exact_match": 0.0,
+      "token_f1": 0.2
+    },
+    "expected_fact_checks": {
+      "1999": true
+    },
+    "all_expected_facts": true,
+    "citations": {
+      "total": 1,
+      "valid": 1,
+      "label_aligned": 1
+    },
+    "citation_details": [
+      {
+        "claim_index": 0,
+        "evidence_id": "E5",
+        "quote": "\"Oh My God\" is a song by Guns N' Roses released in 1999 on the soundtrack to the film \"End of Days\". The song was sent out to radio stations in November 1999 as a promo for the soundtrack and the band. Despite being the band's first recorded release in almost five years, it was never issued as a stand-alone single for public retail.",
+        "document_id": "77158163-24e0-5bde-9844-2ddb60365409",
+        "valid": true,
+        "label_aligned": true
+      }
+    ]
+  },
+  {
+    "case_id": "final-bridge-10",
+    "strategy": "a",
+    "category": "bridge",
+    "status": "answered",
+    "status_correct": true,
+    "supported_task_check": true,
+    "retrieval_initial": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 0.5,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "required_sources": 2,
+    "multi_source": true,
+    "all_sources_retrieved": true,
+    "all_sources_in_context": true,
+    "all_sources_cited": true,
+    "answer_full": {
+      "exact_match": 0.0,
+      "token_f1": 0.2
+    },
+    "answer_last_claim": {
+      "exact_match": 0.0,
+      "token_f1": 0.2
+    },
+    "expected_fact_checks": {
+      "1999": true
+    },
+    "all_expected_facts": true,
+    "citations": {
+      "total": 2,
+      "valid": 2,
+      "label_aligned": 2
+    },
+    "citation_details": [
+      {
+        "claim_index": 0,
+        "evidence_id": "E3",
+        "quote": "The song was sent out to radio stations in November 1999 as a promo for the soundtrack and the band.",
+        "document_id": "77158163-24e0-5bde-9844-2ddb60365409",
+        "valid": true,
+        "label_aligned": true
+      },
+      {
+        "claim_index": 0,
+        "evidence_id": "E1",
+        "quote": "End of Days is a 1999 American fantasy action horror thriller film directed by Peter Hyams and starring Arnold Schwarzenegger, Gabriel Byrne, Robin Tunney, Kevin Pollak, Rod Steiger, CCH Pounder, and Udo Kier. The film follows former New York Police Department detective Jericho Cane (Schwarzenegger) after he saves a banker (Byrne) from an assassin, finds himself embroiled in a religious conflict, and must protect an innocent young woman (Tunney) who is chosen by evil forces to conceive the Antichrist with Satan.",
+        "document_id": "6476de34-2532-5dca-aa31-da334a21111c",
+        "valid": true,
+        "label_aligned": true
+      }
+    ]
+  },
+  {
+    "case_id": "final-bridge-11",
+    "strategy": "a",
+    "category": "bridge",
+    "status": "answered",
+    "status_correct": true,
+    "supported_task_check": true,
+    "retrieval_initial": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "required_sources": 2,
+    "multi_source": true,
+    "all_sources_retrieved": true,
+    "all_sources_in_context": true,
+    "all_sources_cited": true,
+    "answer_full": {
+      "exact_match": 0.0,
+      "token_f1": 0.36363636363636365
+    },
+    "answer_last_claim": {
+      "exact_match": 0.0,
+      "token_f1": 0.6153846153846154
+    },
+    "expected_fact_checks": {
+      "from 1986 to 2013": true
+    },
+    "all_expected_facts": true,
+    "citations": {
+      "total": 2,
+      "valid": 2,
+      "label_aligned": 2
+    },
+    "citation_details": [
+      {
+        "claim_index": 0,
+        "evidence_id": "E1",
+        "quote": "Instead, he had drafted in young players like Nicky Butt, David Beckham, Paul Scholes and the Neville brothers, Gary and Phil.",
+        "document_id": "25716a25-cc78-508a-84b3-4279e5ebba68",
+        "valid": true,
+        "label_aligned": true
+      },
+      {
+        "claim_index": 1,
+        "evidence_id": "E2",
+        "quote": "Sir Alexander Chapman Ferguson, CBE (born 31 December 1941) is a Scottish former football manager and player who managed Manchester United from 1986 to 2013.",
+        "document_id": "fb336186-8d75-5821-9323-e862bfef508a",
+        "valid": true,
+        "label_aligned": true
+      }
+    ]
+  },
+  {
+    "case_id": "final-bridge-11",
+    "strategy": "b",
+    "category": "bridge",
+    "status": "answered",
+    "status_correct": true,
+    "supported_task_check": true,
+    "retrieval_initial": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "required_sources": 2,
+    "multi_source": true,
+    "all_sources_retrieved": true,
+    "all_sources_in_context": true,
+    "all_sources_cited": true,
+    "answer_full": {
+      "exact_match": 0.0,
+      "token_f1": 0.3333333333333333
+    },
+    "answer_last_claim": {
+      "exact_match": 0.0,
+      "token_f1": 0.5714285714285714
+    },
+    "expected_fact_checks": {
+      "from 1986 to 2013": true
+    },
+    "all_expected_facts": true,
+    "citations": {
+      "total": 2,
+      "valid": 2,
+      "label_aligned": 2
+    },
+    "citation_details": [
+      {
+        "claim_index": 0,
+        "evidence_id": "E1",
+        "quote": "Instead, he had drafted in young players like Nicky Butt, David Beckham, Paul Scholes and the Neville brothers, Gary and Phil.",
+        "document_id": "25716a25-cc78-508a-84b3-4279e5ebba68",
+        "valid": true,
+        "label_aligned": true
+      },
+      {
+        "claim_index": 1,
+        "evidence_id": "E2",
+        "quote": "Sir Alexander Chapman Ferguson, CBE (born 31 December 1941) is a Scottish former football manager and player who managed Manchester United from 1986 to 2013.",
+        "document_id": "fb336186-8d75-5821-9323-e862bfef508a",
+        "valid": true,
+        "label_aligned": true
+      }
+    ]
+  },
+  {
+    "case_id": "final-bridge-12",
+    "strategy": "b",
+    "category": "bridge",
+    "status": "answered",
+    "status_correct": true,
+    "supported_task_check": false,
+    "retrieval_initial": {
+      "recall_at_5": 0.5,
+      "recall_at_10": 0.5,
+      "mrr_at_10": 1.0
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 0.5,
+      "recall_at_10": 0.5,
+      "mrr_at_10": 0.5
+    },
+    "required_sources": 2,
+    "multi_source": true,
+    "all_sources_retrieved": false,
+    "all_sources_in_context": false,
+    "all_sources_cited": false,
+    "answer_full": {
+      "exact_match": 0.0,
+      "token_f1": 0.0
+    },
+    "answer_last_claim": {
+      "exact_match": 0.0,
+      "token_f1": 0.0
+    },
+    "expected_fact_checks": {
+      "9,984": false
+    },
+    "all_expected_facts": false,
+    "citations": {
+      "total": 2,
+      "valid": 2,
+      "label_aligned": 1
+    },
+    "citation_details": [
+      {
+        "claim_index": 0,
+        "evidence_id": "E1",
+        "quote": "Brown State Fishing Lake (sometimes also known as Brown State Fishing Lake And Wildlife Area) is a protected area in Brown County, Kansas in the United States.",
+        "document_id": "d4b9a729-1221-53f3-90c9-028884706035",
+        "valid": true,
+        "label_aligned": true
+      },
+      {
+        "claim_index": 1,
+        "evidence_id": "E11",
+        "quote": "The world population was estimated to have reached 7.5 billion in April 2017 .",
+        "document_id": "d44b0155-6d87-500d-b892-28316716a7cf",
+        "valid": true,
+        "label_aligned": false
+      }
+    ]
+  },
+  {
+    "case_id": "final-bridge-12",
+    "strategy": "a",
+    "category": "bridge",
+    "status": "answered",
+    "status_correct": true,
+    "supported_task_check": false,
+    "retrieval_initial": {
+      "recall_at_5": 0.5,
+      "recall_at_10": 0.5,
+      "mrr_at_10": 1.0
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 0.5,
+      "recall_at_10": 0.5,
+      "mrr_at_10": 0.3333333333333333
+    },
+    "required_sources": 2,
+    "multi_source": true,
+    "all_sources_retrieved": false,
+    "all_sources_in_context": false,
+    "all_sources_cited": false,
+    "answer_full": {
+      "exact_match": 0.0,
+      "token_f1": 0.0
+    },
+    "answer_last_claim": {
+      "exact_match": 0.0,
+      "token_f1": 0.0
+    },
+    "expected_fact_checks": {
+      "9,984": false
+    },
+    "all_expected_facts": false,
+    "citations": {
+      "total": 2,
+      "valid": 2,
+      "label_aligned": 1
+    },
+    "citation_details": [
+      {
+        "claim_index": 0,
+        "evidence_id": "E1",
+        "quote": "Brown State Fishing Lake (sometimes also known as Brown State Fishing Lake And Wildlife Area) is a protected area in Brown County, Kansas in the United States.",
+        "document_id": "d4b9a729-1221-53f3-90c9-028884706035",
+        "valid": true,
+        "label_aligned": true
+      },
+      {
+        "claim_index": 1,
+        "evidence_id": "E9",
+        "quote": "With about 82 million inhabitants, Germany is the most populous member state of the European Union.",
+        "document_id": "1059f443-96cc-5354-8430-04931db6ae3d",
+        "valid": true,
+        "label_aligned": false
+      }
+    ]
+  },
+  {
+    "case_id": "final-comparison-01",
+    "strategy": "a",
+    "category": "comparison",
+    "status": "answered",
+    "status_correct": true,
+    "supported_task_check": false,
+    "retrieval_initial": {
+      "recall_at_5": 0.5,
+      "recall_at_10": 0.5,
+      "mrr_at_10": 1.0
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 0.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 0.16666666666666666
+    },
+    "required_sources": 2,
+    "multi_source": true,
+    "all_sources_retrieved": true,
+    "all_sources_in_context": false,
+    "all_sources_cited": false,
+    "answer_full": {
+      "exact_match": 0.0,
+      "token_f1": 0.0
+    },
+    "answer_last_claim": {
+      "exact_match": 0.0,
+      "token_f1": 0.0
+    },
+    "expected_fact_checks": {
+      "yes": true
+    },
+    "all_expected_facts": true,
+    "citations": {
+      "total": 2,
+      "valid": 2,
+      "label_aligned": 1
+    },
+    "citation_details": [
+      {
+        "claim_index": 0,
+        "evidence_id": "E1",
+        "quote": "Scott Derrickson (born July 16, 1966) is an American director, screenwriter and producer.",
+        "document_id": "16425200-adfa-590e-818a-040f96dc5632",
+        "valid": true,
+        "label_aligned": true
+      },
+      {
+        "claim_index": 1,
+        "evidence_id": "E4",
+        "quote": "Final Curtain was a television pilot written and directed by Ed Wood in 1957.",
+        "document_id": "17dc7aa0-dd2c-599e-9b41-fffb99341278",
+        "valid": true,
+        "label_aligned": false
+      }
+    ]
+  },
+  {
+    "case_id": "final-comparison-01",
+    "strategy": "b",
+    "category": "comparison",
+    "status": "answered",
+    "status_correct": true,
+    "supported_task_check": true,
+    "retrieval_initial": {
+      "recall_at_5": 0.5,
+      "recall_at_10": 0.5,
+      "mrr_at_10": 1.0
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 0.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 0.16666666666666666
+    },
+    "required_sources": 2,
+    "multi_source": true,
+    "all_sources_retrieved": true,
+    "all_sources_in_context": true,
+    "all_sources_cited": true,
+    "answer_full": {
+      "exact_match": 0.0,
+      "token_f1": 0.0
+    },
+    "answer_last_claim": {
+      "exact_match": 0.0,
+      "token_f1": 0.0
+    },
+    "expected_fact_checks": {
+      "yes": true
+    },
+    "all_expected_facts": true,
+    "citations": {
+      "total": 2,
+      "valid": 2,
+      "label_aligned": 2
+    },
+    "citation_details": [
+      {
+        "claim_index": 0,
+        "evidence_id": "E1",
+        "quote": "Scott Derrickson (born July 16, 1966) is an American director, screenwriter and producer.",
+        "document_id": "16425200-adfa-590e-818a-040f96dc5632",
+        "valid": true,
+        "label_aligned": true
+      },
+      {
+        "claim_index": 1,
+        "evidence_id": "E11",
+        "quote": "Edward Davis Wood Jr. (October 10, 1924 – December 10, 1978) was an American filmmaker, actor, writer, producer, and director.",
+        "document_id": "d433ed10-b3b3-5154-aa3f-879894fbb735",
+        "valid": true,
+        "label_aligned": true
+      }
+    ]
+  },
+  {
+    "case_id": "final-comparison-02",
+    "strategy": "b",
+    "category": "comparison",
+    "status": "answered",
+    "status_correct": true,
+    "supported_task_check": true,
+    "retrieval_initial": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "required_sources": 2,
+    "multi_source": true,
+    "all_sources_retrieved": true,
+    "all_sources_in_context": true,
+    "all_sources_cited": true,
+    "answer_full": {
+      "exact_match": 0.0,
+      "token_f1": 0.0
+    },
+    "answer_last_claim": {
+      "exact_match": 0.0,
+      "token_f1": 0.0
+    },
+    "expected_fact_checks": {
+      "no": true
+    },
+    "all_expected_facts": true,
+    "citations": {
+      "total": 2,
+      "valid": 2,
+      "label_aligned": 2
+    },
+    "citation_details": [
+      {
+        "claim_index": 0,
+        "evidence_id": "E2",
+        "quote": "The Laleli Mosque (Turkish: \"Laleli Camii, or Tulip Mosque\" ) is an 18th-century Ottoman imperial mosque located in Laleli, Fatih, Istanbul, Turkey.",
+        "document_id": "ac5bbcbf-8282-592f-bf78-913d4bedd4ca",
+        "valid": true,
+        "label_aligned": true
+      },
+      {
+        "claim_index": 0,
+        "evidence_id": "E1",
+        "quote": "The Esma Sultan Mansion (Turkish: \"Esma Sultan Yalısı\" ), a historical yalı (English: waterside mansion ) located at Bosphorus in Ortaköy neighborhood of Istanbul, Turkey and named after its original owner Esma Sultan, is used today as a cultural center after being redeveloped.",
+        "document_id": "f7a39ca9-e08b-5b25-b51a-72424e833d39",
+        "valid": true,
+        "label_aligned": true
+      }
+    ]
+  },
+  {
+    "case_id": "final-comparison-02",
+    "strategy": "a",
+    "category": "comparison",
+    "status": "answered",
+    "status_correct": true,
+    "supported_task_check": true,
+    "retrieval_initial": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "required_sources": 2,
+    "multi_source": true,
+    "all_sources_retrieved": true,
+    "all_sources_in_context": true,
+    "all_sources_cited": true,
+    "answer_full": {
+      "exact_match": 0.0,
+      "token_f1": 0.0
+    },
+    "answer_last_claim": {
+      "exact_match": 0.0,
+      "token_f1": 0.0
+    },
+    "expected_fact_checks": {
+      "no": true
+    },
+    "all_expected_facts": true,
+    "citations": {
+      "total": 2,
+      "valid": 2,
+      "label_aligned": 2
+    },
+    "citation_details": [
+      {
+        "claim_index": 0,
+        "evidence_id": "E2",
+        "quote": "The Laleli Mosque (Turkish: \"Laleli Camii, or Tulip Mosque\" ) is an 18th-century Ottoman imperial mosque located in Laleli, Fatih, Istanbul, Turkey.",
+        "document_id": "ac5bbcbf-8282-592f-bf78-913d4bedd4ca",
+        "valid": true,
+        "label_aligned": true
+      },
+      {
+        "claim_index": 1,
+        "evidence_id": "E1",
+        "quote": "The Esma Sultan Mansion (Turkish: \"Esma Sultan Yalısı\" ), a historical yalı (English: waterside mansion ) located at Bosphorus in Ortaköy neighborhood of Istanbul, Turkey and named after its original owner Esma Sultan, is used today as a cultural center after being redeveloped.",
+        "document_id": "f7a39ca9-e08b-5b25-b51a-72424e833d39",
+        "valid": true,
+        "label_aligned": true
+      }
+    ]
+  },
+  {
+    "case_id": "final-comparison-03",
+    "strategy": "a",
+    "category": "comparison",
+    "status": "answered",
+    "status_correct": true,
+    "supported_task_check": true,
+    "retrieval_initial": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 0.5,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 0.5
+    },
+    "required_sources": 2,
+    "multi_source": true,
+    "all_sources_retrieved": true,
+    "all_sources_in_context": true,
+    "all_sources_cited": true,
+    "answer_full": {
+      "exact_match": 0.0,
+      "token_f1": 0.0
+    },
+    "answer_last_claim": {
+      "exact_match": 0.0,
+      "token_f1": 0.0
+    },
+    "expected_fact_checks": {
+      "yes": true
+    },
+    "all_expected_facts": true,
+    "citations": {
+      "total": 2,
+      "valid": 2,
+      "label_aligned": 2
+    },
+    "citation_details": [
+      {
+        "claim_index": 0,
+        "evidence_id": "E1",
+        "quote": "Local H is an American rock band originally formed by guitarist and vocalist Scott Lucas, bassist Matt Garcia, drummer Joe Daniels, and lead guitarist John Sparkman in Zion, Illinois in 1987.",
+        "document_id": "44bb9dd4-6a62-5d1a-ae9a-c8ae11eb9ab7",
+        "valid": true,
+        "label_aligned": true
+      },
+      {
+        "claim_index": 1,
+        "evidence_id": "E5",
+        "quote": "For Against is a United States post-punk/dream pop band from Lincoln, Nebraska.",
+        "document_id": "56620235-87e3-5f68-8f82-079afa4be0fd",
+        "valid": true,
+        "label_aligned": true
+      }
+    ]
+  },
+  {
+    "case_id": "final-comparison-03",
+    "strategy": "b",
+    "category": "comparison",
+    "status": "answered",
+    "status_correct": true,
+    "supported_task_check": false,
+    "retrieval_initial": {
+      "recall_at_5": 0.0,
+      "recall_at_10": 0.5,
+      "mrr_at_10": 0.16666666666666666
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 0.5,
+      "recall_at_10": 0.5,
+      "mrr_at_10": 0.3333333333333333
+    },
+    "required_sources": 2,
+    "multi_source": true,
+    "all_sources_retrieved": true,
+    "all_sources_in_context": false,
+    "all_sources_cited": false,
+    "answer_full": {
+      "exact_match": 0.0,
+      "token_f1": 0.0
+    },
+    "answer_last_claim": {
+      "exact_match": 0.0,
+      "token_f1": 0.0
+    },
+    "expected_fact_checks": {
+      "yes": false
+    },
+    "all_expected_facts": false,
+    "citations": {
+      "total": 2,
+      "valid": 2,
+      "label_aligned": 2
+    },
+    "citation_details": [
+      {
+        "claim_index": 0,
+        "evidence_id": "E10",
+        "quote": "For Against is a United States post-punk/dream pop band from Lincoln, Nebraska.",
+        "document_id": "56620235-87e3-5f68-8f82-079afa4be0fd",
+        "valid": true,
+        "label_aligned": true
+      },
+      {
+        "claim_index": 1,
+        "evidence_id": "E10",
+        "quote": "For Against is a United States post-punk/dream pop band from Lincoln, Nebraska.",
+        "document_id": "56620235-87e3-5f68-8f82-079afa4be0fd",
+        "valid": true,
+        "label_aligned": true
+      }
+    ]
+  },
+  {
+    "case_id": "final-comparison-04",
+    "strategy": "b",
+    "category": "comparison",
+    "status": "answered",
+    "status_correct": true,
+    "supported_task_check": false,
+    "retrieval_initial": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 0.5,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "required_sources": 2,
+    "multi_source": true,
+    "all_sources_retrieved": true,
+    "all_sources_in_context": true,
+    "all_sources_cited": true,
+    "answer_full": {
+      "exact_match": 0.0,
+      "token_f1": 0.0
+    },
+    "answer_last_claim": {
+      "exact_match": 0.0,
+      "token_f1": 0.0
+    },
+    "expected_fact_checks": {
+      "no": false
+    },
+    "all_expected_facts": false,
+    "citations": {
+      "total": 2,
+      "valid": 2,
+      "label_aligned": 2
+    },
+    "citation_details": [
+      {
+        "claim_index": 0,
+        "evidence_id": "E1",
+        "quote": "The Random House Tower, also known as the Park Imperial Apartments, is a 52-story mixed-use tower in New York City, United States, that is used as the headquarters of book publisher Random House and a luxury apartment complex. The book publisher entrance is on Broadway and goes up to 27 floors, while the apartment complex entrance is on West 56th Street.",
+        "document_id": "3eb9c66d-51b4-50a7-8421-852509713c5f",
+        "valid": true,
+        "label_aligned": true
+      },
+      {
+        "claim_index": 1,
+        "evidence_id": "E2",
+        "quote": "It currently carries the Vornado Realty Trust corporate headquarters.",
+        "document_id": "eaf48bfb-600f-5f05-ac0f-0b653686ed19",
+        "valid": true,
+        "label_aligned": true
+      }
+    ]
+  },
+  {
+    "case_id": "final-comparison-04",
+    "strategy": "a",
+    "category": "comparison",
+    "status": "answered",
+    "status_correct": true,
+    "supported_task_check": false,
+    "retrieval_initial": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 0.5,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "required_sources": 2,
+    "multi_source": true,
+    "all_sources_retrieved": true,
+    "all_sources_in_context": true,
+    "all_sources_cited": true,
+    "answer_full": {
+      "exact_match": 0.0,
+      "token_f1": 0.0
+    },
+    "answer_last_claim": {
+      "exact_match": 0.0,
+      "token_f1": 0.0
+    },
+    "expected_fact_checks": {
+      "no": false
+    },
+    "all_expected_facts": false,
+    "citations": {
+      "total": 2,
+      "valid": 2,
+      "label_aligned": 2
+    },
+    "citation_details": [
+      {
+        "claim_index": 0,
+        "evidence_id": "E1",
+        "quote": "The Random House Tower, also known as the Park Imperial Apartments, is a 52-story mixed-use tower in New York City, United States, that is used as the headquarters of book publisher Random House and a luxury apartment complex. The book publisher entrance is on Broadway and goes up to 27 floors, while the apartment complex entrance is on West 56th Street.",
+        "document_id": "3eb9c66d-51b4-50a7-8421-852509713c5f",
+        "valid": true,
+        "label_aligned": true
+      },
+      {
+        "claim_index": 1,
+        "evidence_id": "E2",
+        "quote": "It currently carries the Vornado Realty Trust corporate headquarters.",
+        "document_id": "eaf48bfb-600f-5f05-ac0f-0b653686ed19",
+        "valid": true,
+        "label_aligned": true
+      }
+    ]
+  },
+  {
+    "case_id": "final-comparison-05",
+    "strategy": "a",
+    "category": "comparison",
+    "status": "answered",
+    "status_correct": true,
+    "supported_task_check": true,
+    "retrieval_initial": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "required_sources": 2,
+    "multi_source": true,
+    "all_sources_retrieved": true,
+    "all_sources_in_context": true,
+    "all_sources_cited": true,
+    "answer_full": {
+      "exact_match": 0.0,
+      "token_f1": 0.0
+    },
+    "answer_last_claim": {
+      "exact_match": 0.0,
+      "token_f1": 0.0
+    },
+    "expected_fact_checks": {
+      "yes": true
+    },
+    "all_expected_facts": true,
+    "citations": {
+      "total": 2,
+      "valid": 2,
+      "label_aligned": 2
+    },
+    "citation_details": [
+      {
+        "claim_index": 0,
+        "evidence_id": "E1",
+        "quote": "Giuseppe Fortunino Francesco Verdi (] ; 9 or 10 October 1813 – 27 January 1901) was an Italian opera composer.",
+        "document_id": "b9a38711-3957-575f-9b94-aa03bdd5498c",
+        "valid": true,
+        "label_aligned": true
+      },
+      {
+        "claim_index": 1,
+        "evidence_id": "E2",
+        "quote": "Charles Louis Ambroise Thomas (5 August 1811 – 12 February 1896) was a French composer, best known for his operas \"Mignon\" (1866) and \"Hamlet\" (1868, after Shakespeare) and as Director of the Conservatoire de Paris from 1871 till his death.",
+        "document_id": "e33e9958-d8aa-5d5b-9790-3d326e362d6e",
+        "valid": true,
+        "label_aligned": true
+      }
+    ]
+  },
+  {
+    "case_id": "final-comparison-05",
+    "strategy": "b",
+    "category": "comparison",
+    "status": "answered",
+    "status_correct": true,
+    "supported_task_check": false,
+    "retrieval_initial": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "required_sources": 2,
+    "multi_source": true,
+    "all_sources_retrieved": true,
+    "all_sources_in_context": true,
+    "all_sources_cited": true,
+    "answer_full": {
+      "exact_match": 0.0,
+      "token_f1": 0.0
+    },
+    "answer_last_claim": {
+      "exact_match": 0.0,
+      "token_f1": 0.0
+    },
+    "expected_fact_checks": {
+      "yes": false
+    },
+    "all_expected_facts": false,
+    "citations": {
+      "total": 2,
+      "valid": 2,
+      "label_aligned": 2
+    },
+    "citation_details": [
+      {
+        "claim_index": 0,
+        "evidence_id": "E1",
+        "quote": "Giuseppe Fortunino Francesco Verdi (] ; 9 or 10 October 1813 – 27 January 1901) was an Italian opera composer.",
+        "document_id": "b9a38711-3957-575f-9b94-aa03bdd5498c",
+        "valid": true,
+        "label_aligned": true
+      },
+      {
+        "claim_index": 1,
+        "evidence_id": "E2",
+        "quote": "Charles Louis Ambroise Thomas (5 August 1811 – 12 February 1896) was a French composer, best known for his operas \"Mignon\" (1866) and \"Hamlet\" (1868, after Shakespeare) and as Director of the Conservatoire de Paris from 1871 till his death.",
+        "document_id": "e33e9958-d8aa-5d5b-9790-3d326e362d6e",
+        "valid": true,
+        "label_aligned": true
+      }
+    ]
+  },
+  {
+    "case_id": "final-comparison-06",
+    "strategy": "b",
+    "category": "comparison",
+    "status": "error",
+    "status_correct": false,
+    "supported_task_check": false,
+    "retrieval_initial": {
+      "recall_at_5": 0.0,
+      "recall_at_10": 0.0,
+      "mrr_at_10": 0.0
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 0.0,
+      "recall_at_10": 0.0,
+      "mrr_at_10": 0.0
+    },
+    "required_sources": 2,
+    "multi_source": true,
+    "all_sources_retrieved": false,
+    "all_sources_in_context": false,
+    "all_sources_cited": false,
+    "answer_full": {
+      "exact_match": 0.0,
+      "token_f1": 0.0
+    },
+    "answer_last_claim": {
+      "exact_match": 0.0,
+      "token_f1": 0.0
+    },
+    "expected_fact_checks": {
+      "Robert Erskine Childers DSC": false
+    },
+    "all_expected_facts": false,
+    "citations": {
+      "total": 0,
+      "valid": 0,
+      "label_aligned": 0
+    },
+    "citation_details": []
+  },
+  {
+    "case_id": "final-comparison-06",
+    "strategy": "a",
+    "category": "comparison",
+    "status": "answered",
+    "status_correct": true,
+    "supported_task_check": false,
+    "retrieval_initial": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 0.5,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "required_sources": 2,
+    "multi_source": true,
+    "all_sources_retrieved": true,
+    "all_sources_in_context": true,
+    "all_sources_cited": true,
+    "answer_full": {
+      "exact_match": 0.0,
+      "token_f1": 0.20689655172413793
+    },
+    "answer_last_claim": {
+      "exact_match": 0.0,
+      "token_f1": 0.0
+    },
+    "expected_fact_checks": {
+      "Robert Erskine Childers DSC": false
+    },
+    "all_expected_facts": false,
+    "citations": {
+      "total": 2,
+      "valid": 2,
+      "label_aligned": 2
+    },
+    "citation_details": [
+      {
+        "claim_index": 0,
+        "evidence_id": "E1",
+        "quote": "Robert Erskine Childers DSC (25 June 1870 – 24 November 1922), universally known as Erskine Childers, was a British writer, whose works included the influential novel \"The Riddle of the Sands\", and a Fenian revolutionary who smuggled guns to Ireland in his sailing yacht \"Asgard\".",
+        "document_id": "bb129362-3823-546a-9d9f-b5cd3bd1c595",
+        "valid": true,
+        "label_aligned": true
+      },
+      {
+        "claim_index": 1,
+        "evidence_id": "E3",
+        "quote": "Henry Roth (February 8, 1906 – October 13, 1995) was an American novelist and short story writer.",
+        "document_id": "4a1550e0-dcca-5e17-8956-39af9ad3a1ba",
+        "valid": true,
+        "label_aligned": true
+      }
+    ]
+  },
+  {
+    "case_id": "final-comparison-07",
+    "strategy": "a",
+    "category": "comparison",
+    "status": "answered",
+    "status_correct": true,
+    "supported_task_check": true,
+    "retrieval_initial": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "required_sources": 2,
+    "multi_source": true,
+    "all_sources_retrieved": true,
+    "all_sources_in_context": true,
+    "all_sources_cited": true,
+    "answer_full": {
+      "exact_match": 0.0,
+      "token_f1": 0.46153846153846156
+    },
+    "answer_last_claim": {
+      "exact_match": 0.0,
+      "token_f1": 0.46153846153846156
+    },
+    "expected_fact_checks": {
+      "Badly Drawn Boy": true
+    },
+    "all_expected_facts": true,
+    "citations": {
+      "total": 3,
+      "valid": 3,
+      "label_aligned": 3
+    },
+    "citation_details": [
+      {
+        "claim_index": 0,
+        "evidence_id": "E2",
+        "quote": "Damon Michael Gough (born 2 October 1969, in Dunstable, Bedfordshire), known by the stage name Badly Drawn Boy, is an English indie singer-songwriter and multi-instrumentalist.",
+        "document_id": "2b449073-64de-5ec5-bcde-d3d36acf8639",
+        "valid": true,
+        "label_aligned": true
+      },
+      {
+        "claim_index": 0,
+        "evidence_id": "E1",
+        "quote": "Wolf Alice are a four-piece alternative rock band from North London, formed initially as a two-person band in 2010. Its members since 2012 are Ellie Rowsell (vocals, guitar), Joff Oddie (guitars, vocals), Theo Ellis (bass), and Joel Amey (drums, vocals).",
+        "document_id": "1b84714c-4434-577b-b5ff-f7ccfe5441cd",
+        "valid": true,
+        "label_aligned": true
+      },
+      {
+        "claim_index": 0,
+        "evidence_id": "E1",
+        "quote": "Its members since 2012 are Ellie Rowsell (vocals, guitar), Joff Oddie (guitars, vocals), Theo Ellis (bass), and Joel Amey (drums, vocals).",
+        "document_id": "1b84714c-4434-577b-b5ff-f7ccfe5441cd",
+        "valid": true,
+        "label_aligned": true
+      }
+    ]
+  },
+  {
+    "case_id": "final-comparison-07",
+    "strategy": "b",
+    "category": "comparison",
+    "status": "insufficient_evidence",
+    "status_correct": false,
+    "supported_task_check": false,
+    "retrieval_initial": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "required_sources": 2,
+    "multi_source": true,
+    "all_sources_retrieved": true,
+    "all_sources_in_context": true,
+    "all_sources_cited": false,
+    "answer_full": {
+      "exact_match": 0.0,
+      "token_f1": 0.0
+    },
+    "answer_last_claim": {
+      "exact_match": 0.0,
+      "token_f1": 0.0
+    },
+    "expected_fact_checks": {
+      "Badly Drawn Boy": false
+    },
+    "all_expected_facts": false,
+    "citations": {
+      "total": 0,
+      "valid": 0,
+      "label_aligned": 0
+    },
+    "citation_details": []
+  },
+  {
+    "case_id": "final-comparison-08",
+    "strategy": "b",
+    "category": "comparison",
+    "status": "answered",
+    "status_correct": true,
+    "supported_task_check": false,
+    "retrieval_initial": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 0.5,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "required_sources": 2,
+    "multi_source": true,
+    "all_sources_retrieved": true,
+    "all_sources_in_context": true,
+    "all_sources_cited": true,
+    "answer_full": {
+      "exact_match": 0.0,
+      "token_f1": 0.0
+    },
+    "answer_last_claim": {
+      "exact_match": 0.0,
+      "token_f1": 0.0
+    },
+    "expected_fact_checks": {
+      "yes": false
+    },
+    "all_expected_facts": false,
+    "citations": {
+      "total": 2,
+      "valid": 2,
+      "label_aligned": 2
+    },
+    "citation_details": [
+      {
+        "claim_index": 0,
+        "evidence_id": "E2",
+        "quote": "Dictyosperma is a monotypic genus of flowering plant in the palm family found in the Mascarene Islands in the Indian Ocean (Mauritius, Réunion and Rodrigues).",
+        "document_id": "3ad13cd4-29b6-5e56-a7c0-8cb1cb32b3de",
+        "valid": true,
+        "label_aligned": true
+      },
+      {
+        "claim_index": 1,
+        "evidence_id": "E1",
+        "quote": "The genus Huernia (family Apocynaceae, subfamily Asclepiadoideae) consists of stem succulents from Eastern and Southern Africa, first described as a genus in 1810.",
+        "document_id": "dc312fcd-d3c5-52ad-940f-746f5ef305eb",
+        "valid": true,
+        "label_aligned": true
+      }
+    ]
+  },
+  {
+    "case_id": "final-comparison-08",
+    "strategy": "a",
+    "category": "comparison",
+    "status": "answered",
+    "status_correct": true,
+    "supported_task_check": false,
+    "retrieval_initial": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "required_sources": 2,
+    "multi_source": true,
+    "all_sources_retrieved": true,
+    "all_sources_in_context": true,
+    "all_sources_cited": true,
+    "answer_full": {
+      "exact_match": 0.0,
+      "token_f1": 0.0
+    },
+    "answer_last_claim": {
+      "exact_match": 0.0,
+      "token_f1": 0.0
+    },
+    "expected_fact_checks": {
+      "yes": false
+    },
+    "all_expected_facts": false,
+    "citations": {
+      "total": 2,
+      "valid": 2,
+      "label_aligned": 2
+    },
+    "citation_details": [
+      {
+        "claim_index": 0,
+        "evidence_id": "E2",
+        "quote": "Dictyosperma is a monotypic genus of flowering plant in the palm family found in the Mascarene Islands in the Indian Ocean (Mauritius, Réunion and Rodrigues).",
+        "document_id": "3ad13cd4-29b6-5e56-a7c0-8cb1cb32b3de",
+        "valid": true,
+        "label_aligned": true
+      },
+      {
+        "claim_index": 1,
+        "evidence_id": "E1",
+        "quote": "The genus Huernia (family Apocynaceae, subfamily Asclepiadoideae) consists of stem succulents from Eastern and Southern Africa, first described as a genus in 1810.",
+        "document_id": "dc312fcd-d3c5-52ad-940f-746f5ef305eb",
+        "valid": true,
+        "label_aligned": true
+      }
+    ]
+  },
+  {
+    "case_id": "final-conflict-01",
+    "strategy": "a",
+    "category": "conflict",
+    "status": "error",
+    "status_correct": false,
+    "supported_task_check": false,
+    "retrieval_initial": {
+      "recall_at_5": 0.0,
+      "recall_at_10": 0.0,
+      "mrr_at_10": 0.0
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 0.0,
+      "recall_at_10": 0.0,
+      "mrr_at_10": 0.0
+    },
+    "required_sources": 2,
+    "multi_source": true,
+    "all_sources_retrieved": false,
+    "all_sources_in_context": false,
+    "all_sources_cited": false,
+    "answer_full": null,
+    "answer_last_claim": null,
+    "expected_fact_checks": {
+      "3 attempts": false,
+      "5 attempts": false
+    },
+    "all_expected_facts": false,
+    "citations": {
+      "total": 0,
+      "valid": 0,
+      "label_aligned": 0
+    },
+    "citation_details": []
+  },
+  {
+    "case_id": "final-conflict-01",
+    "strategy": "b",
+    "category": "conflict",
+    "status": "conflicting_evidence",
+    "status_correct": true,
+    "supported_task_check": true,
+    "retrieval_initial": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "required_sources": 2,
+    "multi_source": true,
+    "all_sources_retrieved": true,
+    "all_sources_in_context": true,
+    "all_sources_cited": true,
+    "answer_full": null,
+    "answer_last_claim": null,
+    "expected_fact_checks": {
+      "3 attempts": true,
+      "5 attempts": true
+    },
+    "all_expected_facts": true,
+    "citations": {
+      "total": 2,
+      "valid": 2,
+      "label_aligned": 2
+    },
+    "citation_details": [
+      {
+        "claim_index": 0,
+        "evidence_id": "E1",
+        "quote": "For fictional case NOVA-CONFLICT-FINAL-01, the retry limit of payment-router at 12:00 UTC on 2026-03-12 was 5 attempts.",
+        "document_id": "b77e38e6-5b66-5930-9b2b-dfd5d100598e",
+        "valid": true,
+        "label_aligned": true
+      },
+      {
+        "claim_index": 1,
+        "evidence_id": "E3",
+        "quote": "For fictional case NOVA-CONFLICT-FINAL-01, the retry limit of payment-router at 12:00 UTC on 2026-03-12 was 3 attempts.",
+        "document_id": "11ccc494-a6b4-54d3-9672-477e073d11e6",
+        "valid": true,
+        "label_aligned": true
+      }
+    ]
+  },
+  {
+    "case_id": "final-conflict-02",
+    "strategy": "b",
+    "category": "conflict",
+    "status": "conflicting_evidence",
+    "status_correct": true,
+    "supported_task_check": true,
+    "retrieval_initial": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "required_sources": 2,
+    "multi_source": true,
+    "all_sources_retrieved": true,
+    "all_sources_in_context": true,
+    "all_sources_cited": true,
+    "answer_full": null,
+    "answer_last_claim": null,
+    "expected_fact_checks": {
+      "4 attempts": true,
+      "6 attempts": true
+    },
+    "all_expected_facts": true,
+    "citations": {
+      "total": 2,
+      "valid": 2,
+      "label_aligned": 2
+    },
+    "citation_details": [
+      {
+        "claim_index": 0,
+        "evidence_id": "E1",
+        "quote": "For fictional case NOVA-CONFLICT-FINAL-02, the retry limit of payment-router at 12:00 UTC on 2026-03-12 was 6 attempts.",
+        "document_id": "a752c076-bc20-5d8c-8fb0-af31102901e2",
+        "valid": true,
+        "label_aligned": true
+      },
+      {
+        "claim_index": 1,
+        "evidence_id": "E2",
+        "quote": "For fictional case NOVA-CONFLICT-FINAL-02, the retry limit of payment-router at 12:00 UTC on 2026-03-12 was 4 attempts.",
+        "document_id": "d743534e-3e2e-5f62-86a8-5575e55667dc",
+        "valid": true,
+        "label_aligned": true
+      }
+    ]
+  },
+  {
+    "case_id": "final-conflict-02",
+    "strategy": "a",
+    "category": "conflict",
+    "status": "conflicting_evidence",
+    "status_correct": true,
+    "supported_task_check": true,
+    "retrieval_initial": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "required_sources": 2,
+    "multi_source": true,
+    "all_sources_retrieved": true,
+    "all_sources_in_context": true,
+    "all_sources_cited": true,
+    "answer_full": null,
+    "answer_last_claim": null,
+    "expected_fact_checks": {
+      "4 attempts": true,
+      "6 attempts": true
+    },
+    "all_expected_facts": true,
+    "citations": {
+      "total": 2,
+      "valid": 2,
+      "label_aligned": 2
+    },
+    "citation_details": [
+      {
+        "claim_index": 0,
+        "evidence_id": "E1",
+        "quote": "For fictional case NOVA-CONFLICT-FINAL-02, the retry limit of payment-router at 12:00 UTC on 2026-03-12 was 6 attempts.",
+        "document_id": "a752c076-bc20-5d8c-8fb0-af31102901e2",
+        "valid": true,
+        "label_aligned": true
+      },
+      {
+        "claim_index": 1,
+        "evidence_id": "E3",
+        "quote": "For fictional case NOVA-CONFLICT-FINAL-02, the retry limit of payment-router at 12:00 UTC on 2026-03-12 was 4 attempts.",
+        "document_id": "d743534e-3e2e-5f62-86a8-5575e55667dc",
+        "valid": true,
+        "label_aligned": true
+      }
+    ]
+  },
+  {
+    "case_id": "final-conflict-03",
+    "strategy": "a",
+    "category": "conflict",
+    "status": "conflicting_evidence",
+    "status_correct": true,
+    "supported_task_check": true,
+    "retrieval_initial": {
+      "recall_at_5": 0.5,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 0.3333333333333333
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "required_sources": 2,
+    "multi_source": true,
+    "all_sources_retrieved": true,
+    "all_sources_in_context": true,
+    "all_sources_cited": true,
+    "answer_full": null,
+    "answer_last_claim": null,
+    "expected_fact_checks": {
+      "5 attempts": true,
+      "7 attempts": true
+    },
+    "all_expected_facts": true,
+    "citations": {
+      "total": 2,
+      "valid": 2,
+      "label_aligned": 2
+    },
+    "citation_details": [
+      {
+        "claim_index": 0,
+        "evidence_id": "E3",
+        "quote": "For fictional case NOVA-CONFLICT-FINAL-03, the retry limit of payment-router at 12:00 UTC on 2026-03-12 was 7 attempts.",
+        "document_id": "0afa0c08-4f25-560e-be08-7af09cb4c157",
+        "valid": true,
+        "label_aligned": true
+      },
+      {
+        "claim_index": 1,
+        "evidence_id": "E6",
+        "quote": "For fictional case NOVA-CONFLICT-FINAL-03, the retry limit of payment-router at 12:00 UTC on 2026-03-12 was 5 attempts.",
+        "document_id": "febd5a29-0f9c-5de6-87d1-176fbdc60b31",
+        "valid": true,
+        "label_aligned": true
+      }
+    ]
+  },
+  {
+    "case_id": "final-conflict-03",
+    "strategy": "b",
+    "category": "conflict",
+    "status": "conflicting_evidence",
+    "status_correct": true,
+    "supported_task_check": true,
+    "retrieval_initial": {
+      "recall_at_5": 0.5,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 0.3333333333333333
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "required_sources": 2,
+    "multi_source": true,
+    "all_sources_retrieved": true,
+    "all_sources_in_context": true,
+    "all_sources_cited": true,
+    "answer_full": null,
+    "answer_last_claim": null,
+    "expected_fact_checks": {
+      "5 attempts": true,
+      "7 attempts": true
+    },
+    "all_expected_facts": true,
+    "citations": {
+      "total": 2,
+      "valid": 2,
+      "label_aligned": 2
+    },
+    "citation_details": [
+      {
+        "claim_index": 0,
+        "evidence_id": "E3",
+        "quote": "For fictional case NOVA-CONFLICT-FINAL-03, the retry limit of payment-router at 12:00 UTC on 2026-03-12 was 7 attempts.",
+        "document_id": "0afa0c08-4f25-560e-be08-7af09cb4c157",
+        "valid": true,
+        "label_aligned": true
+      },
+      {
+        "claim_index": 1,
+        "evidence_id": "E6",
+        "quote": "For fictional case NOVA-CONFLICT-FINAL-03, the retry limit of payment-router at 12:00 UTC on 2026-03-12 was 5 attempts.",
+        "document_id": "febd5a29-0f9c-5de6-87d1-176fbdc60b31",
+        "valid": true,
+        "label_aligned": true
+      }
+    ]
+  },
+  {
+    "case_id": "final-conflict-04",
+    "strategy": "b",
+    "category": "conflict",
+    "status": "conflicting_evidence",
+    "status_correct": true,
+    "supported_task_check": true,
+    "retrieval_initial": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "required_sources": 2,
+    "multi_source": true,
+    "all_sources_retrieved": true,
+    "all_sources_in_context": true,
+    "all_sources_cited": true,
+    "answer_full": null,
+    "answer_last_claim": null,
+    "expected_fact_checks": {
+      "6 attempts": true,
+      "8 attempts": true
+    },
+    "all_expected_facts": true,
+    "citations": {
+      "total": 2,
+      "valid": 2,
+      "label_aligned": 2
+    },
+    "citation_details": [
+      {
+        "claim_index": 0,
+        "evidence_id": "E2",
+        "quote": "For fictional case NOVA-CONFLICT-FINAL-04, the retry limit of payment-router at 12:00 UTC on 2026-03-12 was 6 attempts.",
+        "document_id": "5d6c1b54-f713-51ea-a190-3f77dd50c854",
+        "valid": true,
+        "label_aligned": true
+      },
+      {
+        "claim_index": 1,
+        "evidence_id": "E1",
+        "quote": "For fictional case NOVA-CONFLICT-FINAL-04, the retry limit of payment-router at 12:00 UTC on 2026-03-12 was 8 attempts.",
+        "document_id": "d5c22cc6-cc91-56be-bf3d-78bf487a984b",
+        "valid": true,
+        "label_aligned": true
+      }
+    ]
+  },
+  {
+    "case_id": "final-conflict-04",
+    "strategy": "a",
+    "category": "conflict",
+    "status": "conflicting_evidence",
+    "status_correct": true,
+    "supported_task_check": true,
+    "retrieval_initial": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "required_sources": 2,
+    "multi_source": true,
+    "all_sources_retrieved": true,
+    "all_sources_in_context": true,
+    "all_sources_cited": true,
+    "answer_full": null,
+    "answer_last_claim": null,
+    "expected_fact_checks": {
+      "6 attempts": true,
+      "8 attempts": true
+    },
+    "all_expected_facts": true,
+    "citations": {
+      "total": 2,
+      "valid": 2,
+      "label_aligned": 2
+    },
+    "citation_details": [
+      {
+        "claim_index": 0,
+        "evidence_id": "E1",
+        "quote": "For fictional case NOVA-CONFLICT-FINAL-04, the retry limit of payment-router at 12:00 UTC on 2026-03-12 was 8 attempts.",
+        "document_id": "d5c22cc6-cc91-56be-bf3d-78bf487a984b",
+        "valid": true,
+        "label_aligned": true
+      },
+      {
+        "claim_index": 1,
+        "evidence_id": "E2",
+        "quote": "For fictional case NOVA-CONFLICT-FINAL-04, the retry limit of payment-router at 12:00 UTC on 2026-03-12 was 6 attempts.",
+        "document_id": "5d6c1b54-f713-51ea-a190-3f77dd50c854",
+        "valid": true,
+        "label_aligned": true
+      }
+    ]
+  },
+  {
+    "case_id": "final-conflict-05",
+    "strategy": "a",
+    "category": "conflict",
+    "status": "conflicting_evidence",
+    "status_correct": true,
+    "supported_task_check": true,
+    "retrieval_initial": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "required_sources": 2,
+    "multi_source": true,
+    "all_sources_retrieved": true,
+    "all_sources_in_context": true,
+    "all_sources_cited": true,
+    "answer_full": null,
+    "answer_last_claim": null,
+    "expected_fact_checks": {
+      "7 attempts": true,
+      "9 attempts": true
+    },
+    "all_expected_facts": true,
+    "citations": {
+      "total": 2,
+      "valid": 2,
+      "label_aligned": 2
+    },
+    "citation_details": [
+      {
+        "claim_index": 0,
+        "evidence_id": "E1",
+        "quote": "For fictional case NOVA-CONFLICT-FINAL-05, the retry limit of payment-router at 12:00 UTC on 2026-03-12 was 9 attempts.",
+        "document_id": "e44b6786-5501-5243-b1da-5bdbbe3cbc0f",
+        "valid": true,
+        "label_aligned": true
+      },
+      {
+        "claim_index": 1,
+        "evidence_id": "E2",
+        "quote": "For fictional case NOVA-CONFLICT-FINAL-05, the retry limit of payment-router at 12:00 UTC on 2026-03-12 was 7 attempts.",
+        "document_id": "b10fb184-401b-596f-9228-01306557c668",
+        "valid": true,
+        "label_aligned": true
+      }
+    ]
+  },
+  {
+    "case_id": "final-conflict-05",
+    "strategy": "b",
+    "category": "conflict",
+    "status": "conflicting_evidence",
+    "status_correct": true,
+    "supported_task_check": true,
+    "retrieval_initial": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "required_sources": 2,
+    "multi_source": true,
+    "all_sources_retrieved": true,
+    "all_sources_in_context": true,
+    "all_sources_cited": true,
+    "answer_full": null,
+    "answer_last_claim": null,
+    "expected_fact_checks": {
+      "7 attempts": true,
+      "9 attempts": true
+    },
+    "all_expected_facts": true,
+    "citations": {
+      "total": 2,
+      "valid": 2,
+      "label_aligned": 2
+    },
+    "citation_details": [
+      {
+        "claim_index": 0,
+        "evidence_id": "E1",
+        "quote": "For fictional case NOVA-CONFLICT-FINAL-05, the retry limit of payment-router at 12:00 UTC on 2026-03-12 was 9 attempts.",
+        "document_id": "e44b6786-5501-5243-b1da-5bdbbe3cbc0f",
+        "valid": true,
+        "label_aligned": true
+      },
+      {
+        "claim_index": 1,
+        "evidence_id": "E2",
+        "quote": "For fictional case NOVA-CONFLICT-FINAL-05, the retry limit of payment-router at 12:00 UTC on 2026-03-12 was 7 attempts.",
+        "document_id": "b10fb184-401b-596f-9228-01306557c668",
+        "valid": true,
+        "label_aligned": true
+      }
+    ]
+  },
+  {
+    "case_id": "final-conflict-06",
+    "strategy": "b",
+    "category": "conflict",
+    "status": "conflicting_evidence",
+    "status_correct": true,
+    "supported_task_check": true,
+    "retrieval_initial": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "required_sources": 2,
+    "multi_source": true,
+    "all_sources_retrieved": true,
+    "all_sources_in_context": true,
+    "all_sources_cited": true,
+    "answer_full": null,
+    "answer_last_claim": null,
+    "expected_fact_checks": {
+      "8 attempts": true,
+      "10 attempts": true
+    },
+    "all_expected_facts": true,
+    "citations": {
+      "total": 2,
+      "valid": 2,
+      "label_aligned": 2
+    },
+    "citation_details": [
+      {
+        "claim_index": 0,
+        "evidence_id": "E1",
+        "quote": "For fictional case NOVA-CONFLICT-FINAL-06, the retry limit of payment-router at 12:00 UTC on 2026-03-12 was 10 attempts.",
+        "document_id": "85d73deb-1c99-5d74-9d5d-d831b6615e52",
+        "valid": true,
+        "label_aligned": true
+      },
+      {
+        "claim_index": 1,
+        "evidence_id": "E2",
+        "quote": "For fictional case NOVA-CONFLICT-FINAL-06, the retry limit of payment-router at 12:00 UTC on 2026-03-12 was 8 attempts.",
+        "document_id": "817fb9b8-260e-5857-b8e0-9476d7eb7577",
+        "valid": true,
+        "label_aligned": true
+      }
+    ]
+  },
+  {
+    "case_id": "final-conflict-06",
+    "strategy": "a",
+    "category": "conflict",
+    "status": "error",
+    "status_correct": false,
+    "supported_task_check": false,
+    "retrieval_initial": {
+      "recall_at_5": 0.0,
+      "recall_at_10": 0.0,
+      "mrr_at_10": 0.0
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 0.0,
+      "recall_at_10": 0.0,
+      "mrr_at_10": 0.0
+    },
+    "required_sources": 2,
+    "multi_source": true,
+    "all_sources_retrieved": false,
+    "all_sources_in_context": false,
+    "all_sources_cited": false,
+    "answer_full": null,
+    "answer_last_claim": null,
+    "expected_fact_checks": {
+      "8 attempts": false,
+      "10 attempts": false
+    },
+    "all_expected_facts": false,
+    "citations": {
+      "total": 0,
+      "valid": 0,
+      "label_aligned": 0
+    },
+    "citation_details": []
+  },
+  {
+    "case_id": "final-simple-01",
+    "strategy": "a",
+    "category": "simple",
+    "status": "answered",
+    "status_correct": true,
+    "supported_task_check": true,
+    "retrieval_initial": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "required_sources": 1,
+    "multi_source": false,
+    "all_sources_retrieved": true,
+    "all_sources_in_context": true,
+    "all_sources_cited": true,
+    "answer_full": {
+      "exact_match": 0.0,
+      "token_f1": 0.3333333333333333
+    },
+    "answer_last_claim": {
+      "exact_match": 0.0,
+      "token_f1": 0.3333333333333333
+    },
+    "expected_fact_checks": {
+      "11 minutes": true
+    },
+    "all_expected_facts": true,
+    "citations": {
+      "total": 1,
+      "valid": 1,
+      "label_aligned": 1
+    },
+    "citation_details": [
+      {
+        "claim_index": 0,
+        "evidence_id": "E1",
+        "quote": "For fictional incident NOVA-FINAL-01, the documented recovery time was 11 minutes.",
+        "document_id": "e1cda322-5e78-5a01-9f42-260106b0154a",
+        "valid": true,
+        "label_aligned": true
+      }
+    ]
+  },
+  {
+    "case_id": "final-simple-01",
+    "strategy": "b",
+    "category": "simple",
+    "status": "answered",
+    "status_correct": true,
+    "supported_task_check": true,
+    "retrieval_initial": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "required_sources": 1,
+    "multi_source": false,
+    "all_sources_retrieved": true,
+    "all_sources_in_context": true,
+    "all_sources_cited": true,
+    "answer_full": {
+      "exact_match": 0.0,
+      "token_f1": 0.3333333333333333
+    },
+    "answer_last_claim": {
+      "exact_match": 0.0,
+      "token_f1": 0.3333333333333333
+    },
+    "expected_fact_checks": {
+      "11 minutes": true
+    },
+    "all_expected_facts": true,
+    "citations": {
+      "total": 1,
+      "valid": 1,
+      "label_aligned": 1
+    },
+    "citation_details": [
+      {
+        "claim_index": 0,
+        "evidence_id": "E1",
+        "quote": "For fictional incident NOVA-FINAL-01, the documented recovery time was 11 minutes.",
+        "document_id": "e1cda322-5e78-5a01-9f42-260106b0154a",
+        "valid": true,
+        "label_aligned": true
+      }
+    ]
+  },
+  {
+    "case_id": "final-simple-02",
+    "strategy": "b",
+    "category": "simple",
+    "status": "answered",
+    "status_correct": true,
+    "supported_task_check": true,
+    "retrieval_initial": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "required_sources": 1,
+    "multi_source": false,
+    "all_sources_retrieved": true,
+    "all_sources_in_context": true,
+    "all_sources_cited": true,
+    "answer_full": {
+      "exact_match": 0.0,
+      "token_f1": 0.3333333333333333
+    },
+    "answer_last_claim": {
+      "exact_match": 0.0,
+      "token_f1": 0.3333333333333333
+    },
+    "expected_fact_checks": {
+      "12 minutes": true
+    },
+    "all_expected_facts": true,
+    "citations": {
+      "total": 1,
+      "valid": 1,
+      "label_aligned": 1
+    },
+    "citation_details": [
+      {
+        "claim_index": 0,
+        "evidence_id": "E1",
+        "quote": "For fictional incident NOVA-FINAL-02, the documented recovery time was 12 minutes.",
+        "document_id": "a6d6d7b7-b44e-589e-a154-cf6743aad84b",
+        "valid": true,
+        "label_aligned": true
+      }
+    ]
+  },
+  {
+    "case_id": "final-simple-02",
+    "strategy": "a",
+    "category": "simple",
+    "status": "answered",
+    "status_correct": true,
+    "supported_task_check": true,
+    "retrieval_initial": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "required_sources": 1,
+    "multi_source": false,
+    "all_sources_retrieved": true,
+    "all_sources_in_context": true,
+    "all_sources_cited": true,
+    "answer_full": {
+      "exact_match": 0.0,
+      "token_f1": 0.3333333333333333
+    },
+    "answer_last_claim": {
+      "exact_match": 0.0,
+      "token_f1": 0.3333333333333333
+    },
+    "expected_fact_checks": {
+      "12 minutes": true
+    },
+    "all_expected_facts": true,
+    "citations": {
+      "total": 1,
+      "valid": 1,
+      "label_aligned": 1
+    },
+    "citation_details": [
+      {
+        "claim_index": 0,
+        "evidence_id": "E1",
+        "quote": "For fictional incident NOVA-FINAL-02, the documented recovery time was 12 minutes.",
+        "document_id": "a6d6d7b7-b44e-589e-a154-cf6743aad84b",
+        "valid": true,
+        "label_aligned": true
+      }
+    ]
+  },
+  {
+    "case_id": "final-simple-03",
+    "strategy": "a",
+    "category": "simple",
+    "status": "answered",
+    "status_correct": true,
+    "supported_task_check": true,
+    "retrieval_initial": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "required_sources": 1,
+    "multi_source": false,
+    "all_sources_retrieved": true,
+    "all_sources_in_context": true,
+    "all_sources_cited": true,
+    "answer_full": {
+      "exact_match": 0.0,
+      "token_f1": 0.3333333333333333
+    },
+    "answer_last_claim": {
+      "exact_match": 0.0,
+      "token_f1": 0.3333333333333333
+    },
+    "expected_fact_checks": {
+      "13 minutes": true
+    },
+    "all_expected_facts": true,
+    "citations": {
+      "total": 1,
+      "valid": 1,
+      "label_aligned": 1
+    },
+    "citation_details": [
+      {
+        "claim_index": 0,
+        "evidence_id": "E1",
+        "quote": "For fictional incident NOVA-FINAL-03, the documented recovery time was 13 minutes.",
+        "document_id": "3c63e1d5-56f8-5a4b-a92b-ffab6b72b30a",
+        "valid": true,
+        "label_aligned": true
+      }
+    ]
+  },
+  {
+    "case_id": "final-simple-03",
+    "strategy": "b",
+    "category": "simple",
+    "status": "answered",
+    "status_correct": true,
+    "supported_task_check": true,
+    "retrieval_initial": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "required_sources": 1,
+    "multi_source": false,
+    "all_sources_retrieved": true,
+    "all_sources_in_context": true,
+    "all_sources_cited": true,
+    "answer_full": {
+      "exact_match": 0.0,
+      "token_f1": 0.3333333333333333
+    },
+    "answer_last_claim": {
+      "exact_match": 0.0,
+      "token_f1": 0.3333333333333333
+    },
+    "expected_fact_checks": {
+      "13 minutes": true
+    },
+    "all_expected_facts": true,
+    "citations": {
+      "total": 1,
+      "valid": 1,
+      "label_aligned": 1
+    },
+    "citation_details": [
+      {
+        "claim_index": 0,
+        "evidence_id": "E1",
+        "quote": "For fictional incident NOVA-FINAL-03, the documented recovery time was 13 minutes.",
+        "document_id": "3c63e1d5-56f8-5a4b-a92b-ffab6b72b30a",
+        "valid": true,
+        "label_aligned": true
+      }
+    ]
+  },
+  {
+    "case_id": "final-simple-04",
+    "strategy": "b",
+    "category": "simple",
+    "status": "answered",
+    "status_correct": true,
+    "supported_task_check": true,
+    "retrieval_initial": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "required_sources": 1,
+    "multi_source": false,
+    "all_sources_retrieved": true,
+    "all_sources_in_context": true,
+    "all_sources_cited": true,
+    "answer_full": {
+      "exact_match": 0.0,
+      "token_f1": 0.3333333333333333
+    },
+    "answer_last_claim": {
+      "exact_match": 0.0,
+      "token_f1": 0.3333333333333333
+    },
+    "expected_fact_checks": {
+      "14 minutes": true
+    },
+    "all_expected_facts": true,
+    "citations": {
+      "total": 1,
+      "valid": 1,
+      "label_aligned": 1
+    },
+    "citation_details": [
+      {
+        "claim_index": 0,
+        "evidence_id": "E1",
+        "quote": "For fictional incident NOVA-FINAL-04, the documented recovery time was 14 minutes.",
+        "document_id": "4889e67e-2a12-55ee-a061-863a4f252f3a",
+        "valid": true,
+        "label_aligned": true
+      }
+    ]
+  },
+  {
+    "case_id": "final-simple-04",
+    "strategy": "a",
+    "category": "simple",
+    "status": "answered",
+    "status_correct": true,
+    "supported_task_check": true,
+    "retrieval_initial": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "required_sources": 1,
+    "multi_source": false,
+    "all_sources_retrieved": true,
+    "all_sources_in_context": true,
+    "all_sources_cited": true,
+    "answer_full": {
+      "exact_match": 0.0,
+      "token_f1": 0.3333333333333333
+    },
+    "answer_last_claim": {
+      "exact_match": 0.0,
+      "token_f1": 0.3333333333333333
+    },
+    "expected_fact_checks": {
+      "14 minutes": true
+    },
+    "all_expected_facts": true,
+    "citations": {
+      "total": 1,
+      "valid": 1,
+      "label_aligned": 1
+    },
+    "citation_details": [
+      {
+        "claim_index": 0,
+        "evidence_id": "E1",
+        "quote": "For fictional incident NOVA-FINAL-04, the documented recovery time was 14 minutes.",
+        "document_id": "4889e67e-2a12-55ee-a061-863a4f252f3a",
+        "valid": true,
+        "label_aligned": true
+      }
+    ]
+  },
+  {
+    "case_id": "final-simple-05",
+    "strategy": "a",
+    "category": "simple",
+    "status": "answered",
+    "status_correct": true,
+    "supported_task_check": true,
+    "retrieval_initial": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "required_sources": 1,
+    "multi_source": false,
+    "all_sources_retrieved": true,
+    "all_sources_in_context": true,
+    "all_sources_cited": true,
+    "answer_full": {
+      "exact_match": 0.0,
+      "token_f1": 0.3333333333333333
+    },
+    "answer_last_claim": {
+      "exact_match": 0.0,
+      "token_f1": 0.3333333333333333
+    },
+    "expected_fact_checks": {
+      "15 minutes": true
+    },
+    "all_expected_facts": true,
+    "citations": {
+      "total": 1,
+      "valid": 1,
+      "label_aligned": 1
+    },
+    "citation_details": [
+      {
+        "claim_index": 0,
+        "evidence_id": "E1",
+        "quote": "For fictional incident NOVA-FINAL-05, the documented recovery time was 15 minutes.",
+        "document_id": "b786e9fa-204e-5656-9738-104613760424",
+        "valid": true,
+        "label_aligned": true
+      }
+    ]
+  },
+  {
+    "case_id": "final-simple-05",
+    "strategy": "b",
+    "category": "simple",
+    "status": "answered",
+    "status_correct": true,
+    "supported_task_check": true,
+    "retrieval_initial": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "required_sources": 1,
+    "multi_source": false,
+    "all_sources_retrieved": true,
+    "all_sources_in_context": true,
+    "all_sources_cited": true,
+    "answer_full": {
+      "exact_match": 0.0,
+      "token_f1": 0.3333333333333333
+    },
+    "answer_last_claim": {
+      "exact_match": 0.0,
+      "token_f1": 0.3333333333333333
+    },
+    "expected_fact_checks": {
+      "15 minutes": true
+    },
+    "all_expected_facts": true,
+    "citations": {
+      "total": 1,
+      "valid": 1,
+      "label_aligned": 1
+    },
+    "citation_details": [
+      {
+        "claim_index": 0,
+        "evidence_id": "E1",
+        "quote": "For fictional incident NOVA-FINAL-05, the documented recovery time was 15 minutes.",
+        "document_id": "b786e9fa-204e-5656-9738-104613760424",
+        "valid": true,
+        "label_aligned": true
+      }
+    ]
+  },
+  {
+    "case_id": "final-simple-06",
+    "strategy": "b",
+    "category": "simple",
+    "status": "answered",
+    "status_correct": true,
+    "supported_task_check": true,
+    "retrieval_initial": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "required_sources": 1,
+    "multi_source": false,
+    "all_sources_retrieved": true,
+    "all_sources_in_context": true,
+    "all_sources_cited": true,
+    "answer_full": {
+      "exact_match": 0.0,
+      "token_f1": 0.3333333333333333
+    },
+    "answer_last_claim": {
+      "exact_match": 0.0,
+      "token_f1": 0.3333333333333333
+    },
+    "expected_fact_checks": {
+      "16 minutes": true
+    },
+    "all_expected_facts": true,
+    "citations": {
+      "total": 1,
+      "valid": 1,
+      "label_aligned": 1
+    },
+    "citation_details": [
+      {
+        "claim_index": 0,
+        "evidence_id": "E1",
+        "quote": "For fictional incident NOVA-FINAL-06, the documented recovery time was 16 minutes.",
+        "document_id": "598294c1-0880-5144-aca2-197ff033a358",
+        "valid": true,
+        "label_aligned": true
+      }
+    ]
+  },
+  {
+    "case_id": "final-simple-06",
+    "strategy": "a",
+    "category": "simple",
+    "status": "answered",
+    "status_correct": true,
+    "supported_task_check": true,
+    "retrieval_initial": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "required_sources": 1,
+    "multi_source": false,
+    "all_sources_retrieved": true,
+    "all_sources_in_context": true,
+    "all_sources_cited": true,
+    "answer_full": {
+      "exact_match": 0.0,
+      "token_f1": 0.3333333333333333
+    },
+    "answer_last_claim": {
+      "exact_match": 0.0,
+      "token_f1": 0.3333333333333333
+    },
+    "expected_fact_checks": {
+      "16 minutes": true
+    },
+    "all_expected_facts": true,
+    "citations": {
+      "total": 1,
+      "valid": 1,
+      "label_aligned": 1
+    },
+    "citation_details": [
+      {
+        "claim_index": 0,
+        "evidence_id": "E1",
+        "quote": "For fictional incident NOVA-FINAL-06, the documented recovery time was 16 minutes.",
+        "document_id": "598294c1-0880-5144-aca2-197ff033a358",
+        "valid": true,
+        "label_aligned": true
+      }
+    ]
+  },
+  {
+    "case_id": "final-simple-07",
+    "strategy": "a",
+    "category": "simple",
+    "status": "answered",
+    "status_correct": true,
+    "supported_task_check": true,
+    "retrieval_initial": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "required_sources": 1,
+    "multi_source": false,
+    "all_sources_retrieved": true,
+    "all_sources_in_context": true,
+    "all_sources_cited": true,
+    "answer_full": {
+      "exact_match": 0.0,
+      "token_f1": 0.3333333333333333
+    },
+    "answer_last_claim": {
+      "exact_match": 0.0,
+      "token_f1": 0.3333333333333333
+    },
+    "expected_fact_checks": {
+      "17 minutes": true
+    },
+    "all_expected_facts": true,
+    "citations": {
+      "total": 1,
+      "valid": 1,
+      "label_aligned": 1
+    },
+    "citation_details": [
+      {
+        "claim_index": 0,
+        "evidence_id": "E1",
+        "quote": "For fictional incident NOVA-FINAL-07, the documented recovery time was 17 minutes.",
+        "document_id": "4bef0dc0-3635-50ec-8723-53e51a8c3f1e",
+        "valid": true,
+        "label_aligned": true
+      }
+    ]
+  },
+  {
+    "case_id": "final-simple-07",
+    "strategy": "b",
+    "category": "simple",
+    "status": "answered",
+    "status_correct": true,
+    "supported_task_check": true,
+    "retrieval_initial": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "required_sources": 1,
+    "multi_source": false,
+    "all_sources_retrieved": true,
+    "all_sources_in_context": true,
+    "all_sources_cited": true,
+    "answer_full": {
+      "exact_match": 0.0,
+      "token_f1": 0.3333333333333333
+    },
+    "answer_last_claim": {
+      "exact_match": 0.0,
+      "token_f1": 0.3333333333333333
+    },
+    "expected_fact_checks": {
+      "17 minutes": true
+    },
+    "all_expected_facts": true,
+    "citations": {
+      "total": 1,
+      "valid": 1,
+      "label_aligned": 1
+    },
+    "citation_details": [
+      {
+        "claim_index": 0,
+        "evidence_id": "E1",
+        "quote": "For fictional incident NOVA-FINAL-07, the documented recovery time was 17 minutes.",
+        "document_id": "4bef0dc0-3635-50ec-8723-53e51a8c3f1e",
+        "valid": true,
+        "label_aligned": true
+      }
+    ]
+  },
+  {
+    "case_id": "final-simple-08",
+    "strategy": "b",
+    "category": "simple",
+    "status": "answered",
+    "status_correct": true,
+    "supported_task_check": true,
+    "retrieval_initial": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "required_sources": 1,
+    "multi_source": false,
+    "all_sources_retrieved": true,
+    "all_sources_in_context": true,
+    "all_sources_cited": true,
+    "answer_full": {
+      "exact_match": 0.0,
+      "token_f1": 0.3333333333333333
+    },
+    "answer_last_claim": {
+      "exact_match": 0.0,
+      "token_f1": 0.3333333333333333
+    },
+    "expected_fact_checks": {
+      "18 minutes": true
+    },
+    "all_expected_facts": true,
+    "citations": {
+      "total": 1,
+      "valid": 1,
+      "label_aligned": 1
+    },
+    "citation_details": [
+      {
+        "claim_index": 0,
+        "evidence_id": "E1",
+        "quote": "For fictional incident NOVA-FINAL-08, the documented recovery time was 18 minutes.",
+        "document_id": "768e3a11-92fd-56fd-84fa-9355d82a0718",
+        "valid": true,
+        "label_aligned": true
+      }
+    ]
+  },
+  {
+    "case_id": "final-simple-08",
+    "strategy": "a",
+    "category": "simple",
+    "status": "answered",
+    "status_correct": true,
+    "supported_task_check": true,
+    "retrieval_initial": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "retrieval_aggregate": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr_at_10": 1.0
+    },
+    "required_sources": 1,
+    "multi_source": false,
+    "all_sources_retrieved": true,
+    "all_sources_in_context": true,
+    "all_sources_cited": true,
+    "answer_full": {
+      "exact_match": 0.0,
+      "token_f1": 0.3333333333333333
+    },
+    "answer_last_claim": {
+      "exact_match": 0.0,
+      "token_f1": 0.3333333333333333
+    },
+    "expected_fact_checks": {
+      "18 minutes": true
+    },
+    "all_expected_facts": true,
+    "citations": {
+      "total": 1,
+      "valid": 1,
+      "label_aligned": 1
+    },
+    "citation_details": [
+      {
+        "claim_index": 0,
+        "evidence_id": "E1",
+        "quote": "For fictional incident NOVA-FINAL-08, the documented recovery time was 18 minutes.",
+        "document_id": "768e3a11-92fd-56fd-84fa-9355d82a0718",
+        "valid": true,
+        "label_aligned": true
+      }
+    ]
+  },
+  {
+    "case_id": "final-unanswerable-01",
+    "strategy": "a",
+    "category": "unanswerable",
+    "status": "insufficient_evidence",
+    "status_correct": true,
+    "supported_task_check": true,
+    "retrieval_initial": null,
+    "retrieval_aggregate": null,
+    "required_sources": 0,
+    "multi_source": false,
+    "all_sources_retrieved": null,
+    "all_sources_in_context": null,
+    "all_sources_cited": null,
+    "answer_full": null,
+    "answer_last_claim": null,
+    "expected_fact_checks": {},
+    "all_expected_facts": null,
+    "citations": {
+      "total": 0,
+      "valid": 0,
+      "label_aligned": 0
+    },
+    "citation_details": []
+  },
+  {
+    "case_id": "final-unanswerable-01",
+    "strategy": "b",
+    "category": "unanswerable",
+    "status": "insufficient_evidence",
+    "status_correct": true,
+    "supported_task_check": true,
+    "retrieval_initial": null,
+    "retrieval_aggregate": null,
+    "required_sources": 0,
+    "multi_source": false,
+    "all_sources_retrieved": null,
+    "all_sources_in_context": null,
+    "all_sources_cited": null,
+    "answer_full": null,
+    "answer_last_claim": null,
+    "expected_fact_checks": {},
+    "all_expected_facts": null,
+    "citations": {
+      "total": 0,
+      "valid": 0,
+      "label_aligned": 0
+    },
+    "citation_details": []
+  },
+  {
+    "case_id": "final-unanswerable-02",
+    "strategy": "b",
+    "category": "unanswerable",
+    "status": "insufficient_evidence",
+    "status_correct": true,
+    "supported_task_check": true,
+    "retrieval_initial": null,
+    "retrieval_aggregate": null,
+    "required_sources": 0,
+    "multi_source": false,
+    "all_sources_retrieved": null,
+    "all_sources_in_context": null,
+    "all_sources_cited": null,
+    "answer_full": null,
+    "answer_last_claim": null,
+    "expected_fact_checks": {},
+    "all_expected_facts": null,
+    "citations": {
+      "total": 0,
+      "valid": 0,
+      "label_aligned": 0
+    },
+    "citation_details": []
+  },
+  {
+    "case_id": "final-unanswerable-02",
+    "strategy": "a",
+    "category": "unanswerable",
+    "status": "insufficient_evidence",
+    "status_correct": true,
+    "supported_task_check": true,
+    "retrieval_initial": null,
+    "retrieval_aggregate": null,
+    "required_sources": 0,
+    "multi_source": false,
+    "all_sources_retrieved": null,
+    "all_sources_in_context": null,
+    "all_sources_cited": null,
+    "answer_full": null,
+    "answer_last_claim": null,
+    "expected_fact_checks": {},
+    "all_expected_facts": null,
+    "citations": {
+      "total": 0,
+      "valid": 0,
+      "label_aligned": 0
+    },
+    "citation_details": []
+  },
+  {
+    "case_id": "final-unanswerable-03",
+    "strategy": "a",
+    "category": "unanswerable",
+    "status": "insufficient_evidence",
+    "status_correct": true,
+    "supported_task_check": true,
+    "retrieval_initial": null,
+    "retrieval_aggregate": null,
+    "required_sources": 0,
+    "multi_source": false,
+    "all_sources_retrieved": null,
+    "all_sources_in_context": null,
+    "all_sources_cited": null,
+    "answer_full": null,
+    "answer_last_claim": null,
+    "expected_fact_checks": {},
+    "all_expected_facts": null,
+    "citations": {
+      "total": 0,
+      "valid": 0,
+      "label_aligned": 0
+    },
+    "citation_details": []
+  },
+  {
+    "case_id": "final-unanswerable-03",
+    "strategy": "b",
+    "category": "unanswerable",
+    "status": "insufficient_evidence",
+    "status_correct": true,
+    "supported_task_check": true,
+    "retrieval_initial": null,
+    "retrieval_aggregate": null,
+    "required_sources": 0,
+    "multi_source": false,
+    "all_sources_retrieved": null,
+    "all_sources_in_context": null,
+    "all_sources_cited": null,
+    "answer_full": null,
+    "answer_last_claim": null,
+    "expected_fact_checks": {},
+    "all_expected_facts": null,
+    "citations": {
+      "total": 0,
+      "valid": 0,
+      "label_aligned": 0
+    },
+    "citation_details": []
+  },
+  {
+    "case_id": "final-unanswerable-04",
+    "strategy": "b",
+    "category": "unanswerable",
+    "status": "insufficient_evidence",
+    "status_correct": true,
+    "supported_task_check": true,
+    "retrieval_initial": null,
+    "retrieval_aggregate": null,
+    "required_sources": 0,
+    "multi_source": false,
+    "all_sources_retrieved": null,
+    "all_sources_in_context": null,
+    "all_sources_cited": null,
+    "answer_full": null,
+    "answer_last_claim": null,
+    "expected_fact_checks": {},
+    "all_expected_facts": null,
+    "citations": {
+      "total": 0,
+      "valid": 0,
+      "label_aligned": 0
+    },
+    "citation_details": []
+  },
+  {
+    "case_id": "final-unanswerable-04",
+    "strategy": "a",
+    "category": "unanswerable",
+    "status": "insufficient_evidence",
+    "status_correct": true,
+    "supported_task_check": true,
+    "retrieval_initial": null,
+    "retrieval_aggregate": null,
+    "required_sources": 0,
+    "multi_source": false,
+    "all_sources_retrieved": null,
+    "all_sources_in_context": null,
+    "all_sources_cited": null,
+    "answer_full": null,
+    "answer_last_claim": null,
+    "expected_fact_checks": {},
+    "all_expected_facts": null,
+    "citations": {
+      "total": 0,
+      "valid": 0,
+      "label_aligned": 0
+    },
+    "citation_details": []
+  },
+  {
+    "case_id": "final-unanswerable-05",
+    "strategy": "a",
+    "category": "unanswerable",
+    "status": "insufficient_evidence",
+    "status_correct": true,
+    "supported_task_check": true,
+    "retrieval_initial": null,
+    "retrieval_aggregate": null,
+    "required_sources": 0,
+    "multi_source": false,
+    "all_sources_retrieved": null,
+    "all_sources_in_context": null,
+    "all_sources_cited": null,
+    "answer_full": null,
+    "answer_last_claim": null,
+    "expected_fact_checks": {},
+    "all_expected_facts": null,
+    "citations": {
+      "total": 0,
+      "valid": 0,
+      "label_aligned": 0
+    },
+    "citation_details": []
+  },
+  {
+    "case_id": "final-unanswerable-05",
+    "strategy": "b",
+    "category": "unanswerable",
+    "status": "insufficient_evidence",
+    "status_correct": true,
+    "supported_task_check": true,
+    "retrieval_initial": null,
+    "retrieval_aggregate": null,
+    "required_sources": 0,
+    "multi_source": false,
+    "all_sources_retrieved": null,
+    "all_sources_in_context": null,
+    "all_sources_cited": null,
+    "answer_full": null,
+    "answer_last_claim": null,
+    "expected_fact_checks": {},
+    "all_expected_facts": null,
+    "citations": {
+      "total": 0,
+      "valid": 0,
+      "label_aligned": 0
+    },
+    "citation_details": []
+  },
+  {
+    "case_id": "final-unanswerable-06",
+    "strategy": "b",
+    "category": "unanswerable",
+    "status": "insufficient_evidence",
+    "status_correct": true,
+    "supported_task_check": true,
+    "retrieval_initial": null,
+    "retrieval_aggregate": null,
+    "required_sources": 0,
+    "multi_source": false,
+    "all_sources_retrieved": null,
+    "all_sources_in_context": null,
+    "all_sources_cited": null,
+    "answer_full": null,
+    "answer_last_claim": null,
+    "expected_fact_checks": {},
+    "all_expected_facts": null,
+    "citations": {
+      "total": 0,
+      "valid": 0,
+      "label_aligned": 0
+    },
+    "citation_details": []
+  },
+  {
+    "case_id": "final-unanswerable-06",
+    "strategy": "a",
+    "category": "unanswerable",
+    "status": "insufficient_evidence",
+    "status_correct": true,
+    "supported_task_check": true,
+    "retrieval_initial": null,
+    "retrieval_aggregate": null,
+    "required_sources": 0,
+    "multi_source": false,
+    "all_sources_retrieved": null,
+    "all_sources_in_context": null,
+    "all_sources_cited": null,
+    "answer_full": null,
+    "answer_last_claim": null,
+    "expected_fact_checks": {},
+    "all_expected_facts": null,
+    "citations": {
+      "total": 0,
+      "valid": 0,
+      "label_aligned": 0
+    },
+    "citation_details": []
+  }
+]

@@ -7,3 +7,4 @@
 *.tsx text eol=lf
 *.css text eol=lf
 *.mjs text eol=lf
+docs/evaluation/** text eol=lf

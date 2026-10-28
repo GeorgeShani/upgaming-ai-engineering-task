@@ -1,0 +1,1287 @@
+{
+  "case_id": "final-bridge-07",
+  "strategy": "a",
+  "question": "Who is older, Annie Morton or Terry Richardson?",
+  "started_at": "2026-10-28T07:00:59.646741+00:00",
+  "ledger_before": {
+    "calls": 446,
+    "reserved_usd": 1.03657161,
+    "estimated_actual_usd": 0.36622836000000003,
+    "input_tokens": 7149258,
+    "output_tokens": 8058
+  },
+  "result": {
+    "status": "answered",
+    "claims": [
+      {
+        "text": "Terry Richardson is older than Annie Morton.",
+        "citations": [
+          {
+            "evidence_id": "E9",
+            "quote": "Terrence \"Uncle Terry\" Richardson (born August 14, 1965) is an American fashion and portrait photographer who has shot advertising campaigns for Marc Jacobs, Aldo, Supreme, Sisley, Tom Ford, and Yves Saint Laurent among others. He has also done work for magazines such as \"Rolling Stone\", \"GQ\", \"Vogue\", \"Vanity Fair\", \"Harper's Bazaar\", \"i-D\", and \"Vice\"."
+          },
+          {
+            "evidence_id": "E1",
+            "quote": "Annie Morton (born October 8, 1970) is an American model born in Pennsylvania. She has appeared on the covers of \"British Vogue\", \"ID\", \"Marie Claire\", and other magazines. She has been photographed by Helmut Newton; Peter Lindbergh; Annie Leibovitz; Richard Avedon; Juergen Teller; Paul Jasmin, Mary Ellen Mark and Terry Richardson, and modeled for Donna Karan, Givenchy, Guerlain, Chanel, \"Harper's Bazaar\", \"Sports Illustrated\" and Victoria's Secret. A long time vegetarian, an advocate for organic lifestyle choices and natural healthcare. She co-founded Tsi-La Organics, a \"Green Luxury\" company that creates and sells vegan, organic perfume and skin care products."
+          }
+        ]
+      }
+    ],
+    "conflicting_claims": [],
+    "answer": "Terry Richardson is older than Annie Morton. [E9] [E1]",
+    "evidence": [
+      {
+        "evidence_id": "E9",
+        "chunk_id": "6271536b-b8fb-5e56-9aef-6abae1d96e8a",
+        "document_id": "e92618f6-fe57-5b82-8f6b-021763561909",
+        "revision_id": "8c8fe874-00c9-5458-b7a3-86351af76c6d",
+        "strategy": "a",
+        "text": "Terrence \"Uncle Terry\" Richardson (born August 14, 1965) is an American fashion and portrait photographer who has shot advertising campaigns for Marc Jacobs, Aldo, Supreme, Sisley, Tom Ford, and Yves Saint Laurent among others. He has also done work for magazines such as \"Rolling Stone\", \"GQ\", \"Vogue\", \"Vanity Fair\", \"Harper's Bazaar\", \"i-D\", and \"Vice\".",
+        "title": "Terry Richardson",
+        "start": 0,
+        "end": 356,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 227
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 228,
+            "end": 356
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "validation",
+          "record_id": "5a7bbb64554299042af8f7cc",
+          "url": "https://en.wikipedia.org/wiki/Terry_Richardson",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.03278688524590164
+      },
+      {
+        "evidence_id": "E1",
+        "chunk_id": "cc9c2a46-9a52-5ff5-9d21-f38c8d21a74c",
+        "document_id": "bbaab7bc-52ce-5c5b-8f6e-352d95947b89",
+        "revision_id": "227a2d4c-8cb8-5ce8-a61d-f039914fd69b",
+        "strategy": "a",
+        "text": "Annie Morton (born October 8, 1970) is an American model born in Pennsylvania. She has appeared on the covers of \"British Vogue\", \"ID\", \"Marie Claire\", and other magazines. She has been photographed by Helmut Newton; Peter Lindbergh; Annie Leibovitz; Richard Avedon; Juergen Teller; Paul Jasmin, Mary Ellen Mark and Terry Richardson, and modeled for Donna Karan, Givenchy, Guerlain, Chanel, \"Harper's Bazaar\", \"Sports Illustrated\" and Victoria's Secret. A long time vegetarian, an advocate for organic lifestyle choices and natural healthcare. She co-founded Tsi-La Organics, a \"Green Luxury\" company that creates and sells vegan, organic perfume and skin care products.",
+        "title": "Annie Morton",
+        "start": 0,
+        "end": 670,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 78
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 79,
+            "end": 172
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 173,
+            "end": 453
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 454,
+            "end": 543
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 544,
+            "end": 670
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "validation",
+          "record_id": "5a7bbb64554299042af8f7cc",
+          "url": "https://en.wikipedia.org/wiki/Annie_Morton",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.03278688524590164
+      },
+      {
+        "evidence_id": "E10",
+        "chunk_id": "5507b7db-09f7-5685-b3d7-c9f5620378b2",
+        "document_id": "19d09117-b4d6-5b0b-83b1-11a9bec1aa5d",
+        "revision_id": "69cfe68a-da3f-579a-ba5d-68305b562adc",
+        "strategy": "a",
+        "text": "Terry Date (born January 31, 1956) is an American record producer and engineer, specializing in the rock genres, especially heavy metal. He is well known for his work with Overkill, Metal Church, Slipknot, Pantera, Soulfly, White Zombie, Deftones, Dark Angel, Dream Theater, Slayer, Soundgarden and Limp Bizkit.",
+        "title": "Terry Date",
+        "start": 0,
+        "end": 311,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 136
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 137,
+            "end": 311
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5ade62605542992fa25da76a",
+          "url": "https://en.wikipedia.org/wiki/Terry_Date",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.03200204813108039
+      },
+      {
+        "evidence_id": "E2",
+        "chunk_id": "d4d323f0-421a-55b4-a563-e22b3ec795cf",
+        "document_id": "b83eba2e-61e9-5395-8343-673d5a712b88",
+        "revision_id": "c6f74df8-d368-5eec-8897-333bcb625e97",
+        "strategy": "a",
+        "text": "Honner, born at Enniskillen, Ireland, 21 Dec. 1812, was a daughter of Eugene Macarthy, actor and manager, who died in the Dramatic College at Maybury, Surrey, 14 May 1866, aged 78. Educated at Cork, she lost her mother at an early age, and being thrown on her own resources, with a younger brother to support, made a first appearance on the stage at a theatre in the south of Ireland. She afterwards played in Dublin, and as the hero of juvenile tragedy attracted the notice of Edmund Kean and William Charles Macready. Her first important character was Rosalie Somers in Thomas Morton's \"Town and Country\", which she played to Edmund Kean. An engagement in Scotland followed, and she became a popular favourite. In 1831 she was engaged by John Farrell for the Pavilion Theatre, London, where for two seasons she was the leading attraction. In 1833 she transferred her services to the Coburg Theatre, and, on the retirement of G. B. Davidge the lessee, removed to Sadler's Wells, where Robert William Honner was the manager.",
+        "title": "Maria Honner",
+        "start": 0,
+        "end": 1024,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 180
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 181,
+            "end": 384
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 385,
+            "end": 519
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 520,
+            "end": 640
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 641,
+            "end": 712
+          },
+          {
+            "kind": "sentence",
+            "number": 5,
+            "start": 713,
+            "end": 840
+          },
+          {
+            "kind": "sentence",
+            "number": 6,
+            "start": 841,
+            "end": 1024
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a8cefa355429941ae14df54",
+          "url": "https://en.wikipedia.org/wiki/Maria_Honner",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.0251821349382325
+      },
+      {
+        "evidence_id": "E11",
+        "chunk_id": "55446625-527d-521a-a487-5dfe595cb32f",
+        "document_id": "3ff0a5c9-2875-5d35-9e44-d7e4cea00a94",
+        "revision_id": "bcb1bd6f-da22-51c6-8502-75d7e5000dd9",
+        "strategy": "a",
+        "text": "Terry Ray (born February 12, 1961) is an American actor, screenwriter, and producer. Some of his work includes \"Gaydar\" and \"Cost of Living\" (2009). Ray is the creator and writer of \"here! TV\"'s sitcom \"From Here on OUT\", the first original gay sitcom created by a gay network. Terry stars in the sitcom, along with Juliet Mills, Suzanne Whang and T.J. Hoban. <br><br>Terry Ray's 1987 appearance on Scrabble (game show) is noted as number 3 in the \"10 Great Gay Moments in Game Show History\", after Charles Nelson Reilly and Paul Lynde. In the same appearance, Terry was also named as one of the \"5 Weirdest Game Show Contestants Ever\", by Movieline. <br><br>Terry’s first professional writing job was the stage performance “Hollywood Goes Classical\" at the venerable Dorothy Chandler Pavilion starring Mickey Rooney, Michael York, Dean Jones, Rhonda Fleming and several other classic film stars. He wrote and starred in two more shows at the Dorothy Chandler Pavilion, one co-starring Amanda Bynes and the other Hilary Duff. <br><br>Terry is also",
+        "title": "Terry Ray (actor)",
+        "start": 0,
+        "end": 1047,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 84
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 85,
+            "end": 148
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 149,
+            "end": 188
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 189,
+            "end": 277
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 278,
+            "end": 359
+          },
+          {
+            "kind": "sentence",
+            "number": 5,
+            "start": 360,
+            "end": 536
+          },
+          {
+            "kind": "sentence",
+            "number": 6,
+            "start": 537,
+            "end": 650
+          },
+          {
+            "kind": "sentence",
+            "number": 7,
+            "start": 651,
+            "end": 896
+          },
+          {
+            "kind": "sentence",
+            "number": 8,
+            "start": 897,
+            "end": 1025
+          },
+          {
+            "kind": "sentence",
+            "number": 9,
+            "start": 1026,
+            "end": 1114
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a81e1aa554299676cceb12e",
+          "url": "https://en.wikipedia.org/wiki/Terry_Ray_%28actor%29",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.02792120864410021
+      },
+      {
+        "evidence_id": "E3",
+        "chunk_id": "b251fff3-890d-5c62-9626-a93997210380",
+        "document_id": "7a5db45f-b106-5d36-85db-a163e512b9af",
+        "revision_id": "adeee8e3-8eb9-5448-a5cd-53d2c0658a01",
+        "strategy": "a",
+        "text": "Jo Ann Terry-Grissom (born August 4, 1938 in Indianapolis, Indiana) is a retired female hurdler from the United States, who represented her native country at two consecutive Summer Olympics, starting in 1960. Affiliated with the Tennessee State University she won the 80 m hurdles event at the 1963 Pan American Games.",
+        "title": "Jo Ann Terry",
+        "start": 0,
+        "end": 318,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 208
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 209,
+            "end": 318
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5ac12fda5542994d76dccdb0",
+          "url": "https://en.wikipedia.org/wiki/Jo_Ann_Terry",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.016129032258064516
+      },
+      {
+        "evidence_id": "E4",
+        "chunk_id": "d546c467-cb41-57a4-ab78-c35edd48801e",
+        "document_id": "536fcab4-b694-53a8-8d10-944623196e45",
+        "revision_id": "aaf110dc-1c0e-5093-98ea-caaca85df35d",
+        "strategy": "a",
+        "text": "Akhund Mullah Mohammad Kashani, known as lunar tiles in 1833 was born in Kashan. In place of his birth date and age of his birth is not mentioned during the 84 years of his life, to guess. According to Syed Jalaluddin Homai, he, along with Jahangir Khan Qashqai as two distinguished professor in philosophy and jurisprudence, literature and jurisprudence have. He taught for fifty years and foster outstanding students in the fields of intellectual and traditional sciences. He died in 1914 in Isfahan and was buried in Takht-e Foulad.",
+        "title": "Akhund Mullah Mohammad Kashani",
+        "start": 0,
+        "end": 535,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 80
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 81,
+            "end": 188
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 189,
+            "end": 360
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 361,
+            "end": 474
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 475,
+            "end": 535
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a7a0f085542990783324e20",
+          "url": "https://en.wikipedia.org/wiki/Akhund_Mullah_Mohammad_Kashani",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.016129032258064516
+      },
+      {
+        "evidence_id": "E12",
+        "chunk_id": "ee6d5713-e50e-53c8-aeba-d53651b53ab2",
+        "document_id": "10b0dd49-913c-55bd-aca6-0633588874ef",
+        "revision_id": "ec020906-76cc-5cf0-8919-191599d3c3a6",
+        "strategy": "a",
+        "text": "Terry Brands (born April 9, 1968 in Omaha, Nebraska) is an American Olympic wrestler who won a bronze medal at the 2000 Summer Olympics, after losing the semi-final match to the famous Iranian wrestler, Alireza Dabir. While wrestling at the University of Iowa, Brands won NCAA titles in 1990 and 1992, both at 126 pounds. He was a two-time world freestyle champion at 58 kg, winning titles in 1993 and 1995. Terry became the head wrestling coach at The University of Tennessee at Chattanooga in the spring of 2002 where he coached the likes of Christopher Bird and Matthew Wilbanks.",
+        "title": "Terry Brands",
+        "start": 0,
+        "end": 582,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 217
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 218,
+            "end": 321
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 322,
+            "end": 407
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 408,
+            "end": 582
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a7735995542994aec3b7225",
+          "url": "https://en.wikipedia.org/wiki/Terry_Brands",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.026262626262626265
+      }
+    ],
+    "search_trace": [
+      {
+        "query": "Annie Morton Terry Richardson ages birth dates older",
+        "strategy": "a",
+        "profile": "1a8846753a25",
+        "embedding_usage": {
+          "model": "text-embedding-3-small",
+          "input_tokens": 9,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 1.8e-07
+        },
+        "document_ranking": [
+          "bbaab7bc-52ce-5c5b-8f6e-352d95947b89",
+          "b83eba2e-61e9-5395-8343-673d5a712b88",
+          "7a5db45f-b106-5d36-85db-a163e512b9af",
+          "536fcab4-b694-53a8-8d10-944623196e45",
+          "fd91bc39-5321-5720-bbd1-b3d6dba37227",
+          "368e6e68-a6c2-5bce-aa49-2ceea60e59f7",
+          "4ef73b16-cea3-55f9-b968-ea1702e44b2c",
+          "f2b9080b-1e33-5933-af2a-fb184b902072",
+          "e60b312e-9cec-58ff-bd65-5cf3778866d5",
+          "f81a04be-6c60-5947-84d4-460e2aa766f7"
+        ],
+        "candidate_counts": {
+          "dense": 30,
+          "bm25": 30,
+          "active_dense": 30,
+          "active_bm25": 30
+        },
+        "evidence": [
+          {
+            "evidence_id": "E1",
+            "chunk_id": "cc9c2a46-9a52-5ff5-9d21-f38c8d21a74c",
+            "document_id": "bbaab7bc-52ce-5c5b-8f6e-352d95947b89",
+            "revision_id": "227a2d4c-8cb8-5ce8-a61d-f039914fd69b",
+            "strategy": "a",
+            "text": "Annie Morton (born October 8, 1970) is an American model born in Pennsylvania. She has appeared on the covers of \"British Vogue\", \"ID\", \"Marie Claire\", and other magazines. She has been photographed by Helmut Newton; Peter Lindbergh; Annie Leibovitz; Richard Avedon; Juergen Teller; Paul Jasmin, Mary Ellen Mark and Terry Richardson, and modeled for Donna Karan, Givenchy, Guerlain, Chanel, \"Harper's Bazaar\", \"Sports Illustrated\" and Victoria's Secret. A long time vegetarian, an advocate for organic lifestyle choices and natural healthcare. She co-founded Tsi-La Organics, a \"Green Luxury\" company that creates and sells vegan, organic perfume and skin care products.",
+            "title": "Annie Morton",
+            "start": 0,
+            "end": 670,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 78
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 79,
+                "end": 172
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 173,
+                "end": 453
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 454,
+                "end": 543
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 544,
+                "end": 670
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5a7bbb64554299042af8f7cc",
+              "url": "https://en.wikipedia.org/wiki/Annie_Morton",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03278688524590164
+          },
+          {
+            "evidence_id": "E2",
+            "chunk_id": "d4d323f0-421a-55b4-a563-e22b3ec795cf",
+            "document_id": "b83eba2e-61e9-5395-8343-673d5a712b88",
+            "revision_id": "c6f74df8-d368-5eec-8897-333bcb625e97",
+            "strategy": "a",
+            "text": "Honner, born at Enniskillen, Ireland, 21 Dec. 1812, was a daughter of Eugene Macarthy, actor and manager, who died in the Dramatic College at Maybury, Surrey, 14 May 1866, aged 78. Educated at Cork, she lost her mother at an early age, and being thrown on her own resources, with a younger brother to support, made a first appearance on the stage at a theatre in the south of Ireland. She afterwards played in Dublin, and as the hero of juvenile tragedy attracted the notice of Edmund Kean and William Charles Macready. Her first important character was Rosalie Somers in Thomas Morton's \"Town and Country\", which she played to Edmund Kean. An engagement in Scotland followed, and she became a popular favourite. In 1831 she was engaged by John Farrell for the Pavilion Theatre, London, where for two seasons she was the leading attraction. In 1833 she transferred her services to the Coburg Theatre, and, on the retirement of G. B. Davidge the lessee, removed to Sadler's Wells, where Robert William Honner was the manager.",
+            "title": "Maria Honner",
+            "start": 0,
+            "end": 1024,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 180
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 181,
+                "end": 384
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 385,
+                "end": 519
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 520,
+                "end": 640
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 641,
+                "end": 712
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 713,
+                "end": 840
+              },
+              {
+                "kind": "sentence",
+                "number": 6,
+                "start": 841,
+                "end": 1024
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a8cefa355429941ae14df54",
+              "url": "https://en.wikipedia.org/wiki/Maria_Honner",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.0251821349382325
+          },
+          {
+            "evidence_id": "E3",
+            "chunk_id": "b251fff3-890d-5c62-9626-a93997210380",
+            "document_id": "7a5db45f-b106-5d36-85db-a163e512b9af",
+            "revision_id": "adeee8e3-8eb9-5448-a5cd-53d2c0658a01",
+            "strategy": "a",
+            "text": "Jo Ann Terry-Grissom (born August 4, 1938 in Indianapolis, Indiana) is a retired female hurdler from the United States, who represented her native country at two consecutive Summer Olympics, starting in 1960. Affiliated with the Tennessee State University she won the 80 m hurdles event at the 1963 Pan American Games.",
+            "title": "Jo Ann Terry",
+            "start": 0,
+            "end": 318,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 208
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 209,
+                "end": 318
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ac12fda5542994d76dccdb0",
+              "url": "https://en.wikipedia.org/wiki/Jo_Ann_Terry",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.016129032258064516
+          },
+          {
+            "evidence_id": "E4",
+            "chunk_id": "d546c467-cb41-57a4-ab78-c35edd48801e",
+            "document_id": "536fcab4-b694-53a8-8d10-944623196e45",
+            "revision_id": "aaf110dc-1c0e-5093-98ea-caaca85df35d",
+            "strategy": "a",
+            "text": "Akhund Mullah Mohammad Kashani, known as lunar tiles in 1833 was born in Kashan. In place of his birth date and age of his birth is not mentioned during the 84 years of his life, to guess. According to Syed Jalaluddin Homai, he, along with Jahangir Khan Qashqai as two distinguished professor in philosophy and jurisprudence, literature and jurisprudence have. He taught for fifty years and foster outstanding students in the fields of intellectual and traditional sciences. He died in 1914 in Isfahan and was buried in Takht-e Foulad.",
+            "title": "Akhund Mullah Mohammad Kashani",
+            "start": 0,
+            "end": 535,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 80
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 81,
+                "end": 188
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 189,
+                "end": 360
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 361,
+                "end": 474
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 475,
+                "end": 535
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a7a0f085542990783324e20",
+              "url": "https://en.wikipedia.org/wiki/Akhund_Mullah_Mohammad_Kashani",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.016129032258064516
+          },
+          {
+            "evidence_id": "E5",
+            "chunk_id": "13a0abca-295b-55d3-98c0-4303a705bfac",
+            "document_id": "fd91bc39-5321-5720-bbd1-b3d6dba37227",
+            "revision_id": "f821dec4-414e-58b0-ae50-1015759422b6",
+            "strategy": "a",
+            "text": "James Joseph Richardson (born December 12, 1935) is an African-American man who was wrongly convicted in 1968 for the October 1967 murders of his seven children. They died after eating a poisoned lunch containing the organic phosphate pesticide parathion. At the time of the murders Richardson, a migrant farm worker, was living in Arcadia, Florida, with his wife Annie Mae Richardson and the children. At a trial in Fort Myers, Florida, an all-white jury found him guilty of murdering the children and sentenced him to death. As a result of the United States Supreme Court's 1972 \"Furman v. Georgia\" decision finding the death penalty unconstitutional, his sentence was reduced to life imprisonment; he was then exonerated in 1989, after 21 years, when his case was revisited by appointed Miami-Dade County prosecutor Janet Reno. He now lives in Wichita, Kansas.",
+            "title": "James Joseph Richardson",
+            "start": 0,
+            "end": 863,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 161
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 162,
+                "end": 255
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 256,
+                "end": 402
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 403,
+                "end": 526
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 527,
+                "end": 830
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 831,
+                "end": 863
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a799f685542996c55b2dc2a",
+              "url": "https://en.wikipedia.org/wiki/James_Joseph_Richardson",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015873015873015872
+          },
+          {
+            "evidence_id": "E6",
+            "chunk_id": "d2dca0c1-dd17-5936-b009-cdea9d351bdf",
+            "document_id": "368e6e68-a6c2-5bce-aa49-2ceea60e59f7",
+            "revision_id": "7e6fb882-f37e-5c33-99e1-7e699054788e",
+            "strategy": "a",
+            "text": "Dorothy Anne Todd (24 January 1909 – 6 May 1993) was an English actress and producer.",
+            "title": "Ann Todd",
+            "start": 0,
+            "end": 85,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 85
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ac247955542994d76dccf06",
+              "url": "https://en.wikipedia.org/wiki/Ann_Todd",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015873015873015872
+          },
+          {
+            "evidence_id": "E7",
+            "chunk_id": "52611247-2381-5c51-9c0c-d0fa3d7a7e43",
+            "document_id": "4ef73b16-cea3-55f9-b968-ea1702e44b2c",
+            "revision_id": "66cb15d1-b1a6-5e6d-924b-70040eadc452",
+            "strategy": "a",
+            "text": "Annie Chapman (born Eliza Ann Smith, c. 1841 – 8 September 1888), was a victim of the notorious unidentified serial killer Jack the Ripper, who killed and mutilated several women in the Whitechapel area of London from late August to early November 1888.",
+            "title": "Annie Chapman",
+            "start": 0,
+            "end": 253,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 253
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ac55e785542993e66e82372",
+              "url": "https://en.wikipedia.org/wiki/Annie_Chapman",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015625
+          },
+          {
+            "evidence_id": "E8",
+            "chunk_id": "96f6c42c-d6fa-5e9e-9937-bcd95ef6adb6",
+            "document_id": "f2b9080b-1e33-5933-af2a-fb184b902072",
+            "revision_id": "771dbf4b-3fd7-5b12-9e78-e2aedb15a907",
+            "strategy": "a",
+            "text": "The art of the Upper Paleolithic is amongst the oldest art known (sometimes called prehistoric art). Older possible examples include the incised ochre from Blombos Cave. Upper Paleolithic art is found in Aurignacian Europe and the Levant some 40,000 years ago, and on the island of Sulawesi in Indonesia at a similar date, suggesting a much older origin perhaps in Africa. Cave art in Europe continued to the Mesolithic (at the beginnings of the Holocene) about 12,000 years ago. As this corresponds to the final phase of the last glacial period, Upper Paleolithic art is also known as \"Ice Age art\".",
+            "title": "Art of the Upper Paleolithic",
+            "start": 0,
+            "end": 600,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 100
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 101,
+                "end": 169
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 170,
+                "end": 372
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 373,
+                "end": 479
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 480,
+                "end": 600
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ab27f82554299706120963e",
+              "url": "https://en.wikipedia.org/wiki/Art_of_the_Upper_Paleolithic",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015625
+          }
+        ],
+        "round": 1,
+        "tool_call_id": "call_cd303ad195e64fdc8530d234b3df0c3e",
+        "executed": true,
+        "follow_up": null,
+        "requested_query": "Annie Morton Terry Richardson ages birth dates older",
+        "query_adjusted": false
+      },
+      {
+        "query": "Terry Richardson born date age",
+        "strategy": "a",
+        "profile": "1a8846753a25",
+        "embedding_usage": {
+          "model": "text-embedding-3-small",
+          "input_tokens": 6,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 1.2e-07
+        },
+        "document_ranking": [
+          "e92618f6-fe57-5b82-8f6b-021763561909",
+          "19d09117-b4d6-5b0b-83b1-11a9bec1aa5d",
+          "3ff0a5c9-2875-5d35-9e44-d7e4cea00a94",
+          "10b0dd49-913c-55bd-aca6-0633588874ef",
+          "d15dacc1-daf1-5c6e-8d92-e3355b22bfee",
+          "d7dcc7b6-117b-5cdc-a7c8-495a895191e3",
+          "2aebaae1-57d5-5957-816d-f05dbd37aa1a",
+          "dae7ed9c-2267-5aa5-bfd2-8eb280002938",
+          "bbaab7bc-52ce-5c5b-8f6e-352d95947b89",
+          "f3914b44-f449-5635-a615-779f9544db0c"
+        ],
+        "candidate_counts": {
+          "dense": 30,
+          "bm25": 30,
+          "active_dense": 30,
+          "active_bm25": 30
+        },
+        "evidence": [
+          {
+            "evidence_id": "E9",
+            "chunk_id": "6271536b-b8fb-5e56-9aef-6abae1d96e8a",
+            "document_id": "e92618f6-fe57-5b82-8f6b-021763561909",
+            "revision_id": "8c8fe874-00c9-5458-b7a3-86351af76c6d",
+            "strategy": "a",
+            "text": "Terrence \"Uncle Terry\" Richardson (born August 14, 1965) is an American fashion and portrait photographer who has shot advertising campaigns for Marc Jacobs, Aldo, Supreme, Sisley, Tom Ford, and Yves Saint Laurent among others. He has also done work for magazines such as \"Rolling Stone\", \"GQ\", \"Vogue\", \"Vanity Fair\", \"Harper's Bazaar\", \"i-D\", and \"Vice\".",
+            "title": "Terry Richardson",
+            "start": 0,
+            "end": 356,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 227
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 228,
+                "end": 356
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5a7bbb64554299042af8f7cc",
+              "url": "https://en.wikipedia.org/wiki/Terry_Richardson",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03278688524590164
+          },
+          {
+            "evidence_id": "E10",
+            "chunk_id": "5507b7db-09f7-5685-b3d7-c9f5620378b2",
+            "document_id": "19d09117-b4d6-5b0b-83b1-11a9bec1aa5d",
+            "revision_id": "69cfe68a-da3f-579a-ba5d-68305b562adc",
+            "strategy": "a",
+            "text": "Terry Date (born January 31, 1956) is an American record producer and engineer, specializing in the rock genres, especially heavy metal. He is well known for his work with Overkill, Metal Church, Slipknot, Pantera, Soulfly, White Zombie, Deftones, Dark Angel, Dream Theater, Slayer, Soundgarden and Limp Bizkit.",
+            "title": "Terry Date",
+            "start": 0,
+            "end": 311,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 136
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 137,
+                "end": 311
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ade62605542992fa25da76a",
+              "url": "https://en.wikipedia.org/wiki/Terry_Date",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03200204813108039
+          },
+          {
+            "evidence_id": "E11",
+            "chunk_id": "55446625-527d-521a-a487-5dfe595cb32f",
+            "document_id": "3ff0a5c9-2875-5d35-9e44-d7e4cea00a94",
+            "revision_id": "bcb1bd6f-da22-51c6-8502-75d7e5000dd9",
+            "strategy": "a",
+            "text": "Terry Ray (born February 12, 1961) is an American actor, screenwriter, and producer. Some of his work includes \"Gaydar\" and \"Cost of Living\" (2009). Ray is the creator and writer of \"here! TV\"'s sitcom \"From Here on OUT\", the first original gay sitcom created by a gay network. Terry stars in the sitcom, along with Juliet Mills, Suzanne Whang and T.J. Hoban. <br><br>Terry Ray's 1987 appearance on Scrabble (game show) is noted as number 3 in the \"10 Great Gay Moments in Game Show History\", after Charles Nelson Reilly and Paul Lynde. In the same appearance, Terry was also named as one of the \"5 Weirdest Game Show Contestants Ever\", by Movieline. <br><br>Terry’s first professional writing job was the stage performance “Hollywood Goes Classical\" at the venerable Dorothy Chandler Pavilion starring Mickey Rooney, Michael York, Dean Jones, Rhonda Fleming and several other classic film stars. He wrote and starred in two more shows at the Dorothy Chandler Pavilion, one co-starring Amanda Bynes and the other Hilary Duff. <br><br>Terry is also",
+            "title": "Terry Ray (actor)",
+            "start": 0,
+            "end": 1047,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 84
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 85,
+                "end": 148
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 149,
+                "end": 188
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 189,
+                "end": 277
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 278,
+                "end": 359
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 360,
+                "end": 536
+              },
+              {
+                "kind": "sentence",
+                "number": 6,
+                "start": 537,
+                "end": 650
+              },
+              {
+                "kind": "sentence",
+                "number": 7,
+                "start": 651,
+                "end": 896
+              },
+              {
+                "kind": "sentence",
+                "number": 8,
+                "start": 897,
+                "end": 1025
+              },
+              {
+                "kind": "sentence",
+                "number": 9,
+                "start": 1026,
+                "end": 1114
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a81e1aa554299676cceb12e",
+              "url": "https://en.wikipedia.org/wiki/Terry_Ray_%28actor%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.02792120864410021
+          },
+          {
+            "evidence_id": "E12",
+            "chunk_id": "ee6d5713-e50e-53c8-aeba-d53651b53ab2",
+            "document_id": "10b0dd49-913c-55bd-aca6-0633588874ef",
+            "revision_id": "ec020906-76cc-5cf0-8919-191599d3c3a6",
+            "strategy": "a",
+            "text": "Terry Brands (born April 9, 1968 in Omaha, Nebraska) is an American Olympic wrestler who won a bronze medal at the 2000 Summer Olympics, after losing the semi-final match to the famous Iranian wrestler, Alireza Dabir. While wrestling at the University of Iowa, Brands won NCAA titles in 1990 and 1992, both at 126 pounds. He was a two-time world freestyle champion at 58 kg, winning titles in 1993 and 1995. Terry became the head wrestling coach at The University of Tennessee at Chattanooga in the spring of 2002 where he coached the likes of Christopher Bird and Matthew Wilbanks.",
+            "title": "Terry Brands",
+            "start": 0,
+            "end": 582,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 217
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 218,
+                "end": 321
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 322,
+                "end": 407
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 408,
+                "end": 582
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a7735995542994aec3b7225",
+              "url": "https://en.wikipedia.org/wiki/Terry_Brands",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.026262626262626265
+          },
+          {
+            "evidence_id": "E13",
+            "chunk_id": "3cb27e9e-12b0-5a22-bc0c-96cd7e93a7ed",
+            "document_id": "d15dacc1-daf1-5c6e-8d92-e3355b22bfee",
+            "revision_id": "b1e814a2-a32f-5e9b-8761-3b87256cd8f3",
+            "strategy": "a",
+            "text": "Brandon Quantavius Richardson (born September 23, 1984) is an American actor. He has played roles in \"Regular Show\", \"The Heat\", \"Meet the Browns\", \"\", \"Magic Mike XXL\", \"Horrible Bosses 2\" and \"Jurassic World\". He is known for 2011 VH1 reality television \"Tough Love\" starring Steven Ward.",
+            "title": "Brandon Richardson",
+            "start": 0,
+            "end": 290,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 77
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 78,
+                "end": 211
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 212,
+                "end": 290
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ac495d75542996feb3fe8ee",
+              "url": "https://en.wikipedia.org/wiki/Brandon_Richardson",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.026190476190476188
+          },
+          {
+            "evidence_id": "E14",
+            "chunk_id": "43b3d913-1c12-50e0-aab7-9b926ee74aca",
+            "document_id": "d7dcc7b6-117b-5cdc-a7c8-495a895191e3",
+            "revision_id": "17b5ee5f-d946-5721-ad28-dcc22f90288e",
+            "strategy": "a",
+            "text": "Terrence B. \"Terry\" Miller (November 10, 1942 – April 13, 1989) was an American businessman and politician. Miller served as the fourth Lieutenant Governor of Alaska from 1978 to 1982. His political career, which began while he was in his early 20s, lasted over two decades and was cut short by his death from bone cancer at age 46.",
+            "title": "Terry Miller (politician)",
+            "start": 0,
+            "end": 332,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 107
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 108,
+                "end": 184
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 185,
+                "end": 332
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a866fee5542991e77181657",
+              "url": "https://en.wikipedia.org/wiki/Terry_Miller_%28politician%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.02591362126245847
+          },
+          {
+            "evidence_id": "E15",
+            "chunk_id": "a4f5bae3-9f8e-55a5-bddd-42481042dd2b",
+            "document_id": "2aebaae1-57d5-5957-816d-f05dbd37aa1a",
+            "revision_id": "820b5cc5-3caf-5d18-a0c4-d2494e451067",
+            "strategy": "a",
+            "text": "Alan Richardson (born 4 November 1948 in Fitzwilliam) is an English amateur and professional featherweight boxer of the 1960s, and '70s, he was the 1969 Amateur Boxing Association of England featherweight boxing champion, won bronze medals in both the 1969 European Amateur Boxing Championships and the 1970 British Commonwealth Games, and was British professional featherweight boxing champion from Tuesday 15 March 1977 to Thursday 20 April 1978.",
+            "title": "Alan Richardson (boxer)",
+            "start": 0,
+            "end": 448,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 448
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a86363b5542994775f6071d",
+              "url": "https://en.wikipedia.org/wiki/Alan_Richardson_%28boxer%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.0251414204902577
+          },
+          {
+            "evidence_id": "E16",
+            "chunk_id": "be83ed7d-6c26-5997-9e33-63245132f62c",
+            "document_id": "dae7ed9c-2267-5aa5-bfd2-8eb280002938",
+            "revision_id": "3e96977d-b9bf-5532-a32e-270f0ba8d644",
+            "strategy": "a",
+            "text": "Mark Richardson (born 18 May 1970, Leeds) is an English drummer, of the UK rock band Skunk Anansie and formerly of Little Angels and Feeder.",
+            "title": "Mark Richardson (musician)",
+            "start": 0,
+            "end": 140,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 140
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a8cde63554299441c6b9f3c",
+              "url": "https://en.wikipedia.org/wiki/Mark_Richardson_%28musician%29",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.024695121951219513
+          }
+        ],
+        "round": 2,
+        "tool_call_id": "call_seTIyZEB8deRJpCOocmmgerl",
+        "executed": true,
+        "follow_up": null,
+        "requested_query": "Terry Richardson born date age",
+        "query_adjusted": false
+      }
+    ],
+    "workflow": "bounded_tools_v1",
+    "execution": {
+      "planning_rounds": 2,
+      "retrieval_rounds": 2,
+      "tool_calls": 2,
+      "searches": 2,
+      "llm_calls": 3,
+      "embedding_calls": 2,
+      "total_provider_calls": 5,
+      "stop_reason": "retrieval_limit",
+      "limits": {
+        "retrieval_rounds": 2,
+        "searches": 3,
+        "llm_calls": 3,
+        "embedding_calls": 3,
+        "total_provider_calls": 6
+      }
+    },
+    "configuration": {
+      "strategy": "a",
+      "profile": "1a8846753a25",
+      "embedding_model": "text-embedding-3-small",
+      "embedding_dimensions": 384,
+      "generation_model": "gpt-5.4-mini-2026-03-17",
+      "prompt_version": "bounded_tools_quote_ids_v1"
+    },
+    "usage": {
+      "planning": [
+        {
+          "input_tokens": 518,
+          "output_tokens": 32,
+          "estimated_cost_usd": 0.0005325,
+          "model": "gpt-5.4-mini-2026-03-17"
+        },
+        {
+          "input_tokens": 1691,
+          "output_tokens": 29,
+          "estimated_cost_usd": 0.00139875,
+          "model": "gpt-5.4-mini-2026-03-17"
+        }
+      ],
+      "generation": {
+        "input_tokens": 5442,
+        "output_tokens": 65,
+        "estimated_cost_usd": 0.004374,
+        "model": "gpt-5.4-mini-2026-03-17"
+      },
+      "embeddings": [
+        {
+          "model": "text-embedding-3-small",
+          "input_tokens": 9,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 1.8e-07
+        },
+        {
+          "model": "text-embedding-3-small",
+          "input_tokens": 6,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 1.2e-07
+        }
+      ],
+      "estimated_model_cost_usd": 0.00630525,
+      "estimated_total_cost_usd": 0.00630555
+    },
+    "latency_ms": 4860
+  },
+  "error": null,
+  "elapsed_ms": 4860,
+  "ledger_after": {
+    "calls": 451,
+    "reserved_usd": 1.05746691,
+    "estimated_actual_usd": 0.37253391,
+    "input_tokens": 7156924,
+    "output_tokens": 8184
+  }
+}

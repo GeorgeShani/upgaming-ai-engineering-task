@@ -1,0 +1,1158 @@
+{
+  "case_id": "final-bridge-07",
+  "strategy": "b",
+  "question": "Who is older, Annie Morton or Terry Richardson?",
+  "started_at": "2026-10-28T07:01:04.537462+00:00",
+  "ledger_before": {
+    "calls": 451,
+    "reserved_usd": 1.05746691,
+    "estimated_actual_usd": 0.37253391,
+    "input_tokens": 7156924,
+    "output_tokens": 8184
+  },
+  "result": {
+    "status": "answered",
+    "claims": [
+      {
+        "text": "Annie Morton is older than Terry Richardson.",
+        "citations": [
+          {
+            "evidence_id": "E1",
+            "quote": "Annie Morton (born October 8, 1970) is an American model born in Pennsylvania."
+          },
+          {
+            "evidence_id": "E4",
+            "quote": "Terrence \"Uncle Terry\" Richardson (born August 14, 1965) is an American fashion and portrait photographer who has shot advertising campaigns for Marc Jacobs, Aldo, Supreme, Sisley, Tom Ford, and Yves Saint Laurent among others. He has also done work for magazines such as \"Rolling Stone\", \"GQ\", \"Vogue\", \"Vanity Fair\", \"Harper's Bazaar\", \"i-D\", and \"Vice\"."
+          }
+        ]
+      }
+    ],
+    "conflicting_claims": [],
+    "answer": "Annie Morton is older than Terry Richardson. [E1] [E4]",
+    "evidence": [
+      {
+        "evidence_id": "E1",
+        "chunk_id": "03f41dc8-3316-515f-a5ce-14ea3fe17c93",
+        "document_id": "bbaab7bc-52ce-5c5b-8f6e-352d95947b89",
+        "revision_id": "227a2d4c-8cb8-5ce8-a61d-f039914fd69b",
+        "strategy": "b",
+        "text": "Annie Morton (born October 8, 1970) is an American model born in Pennsylvania. She has appeared on the covers of \"British Vogue\", \"ID\", \"Marie Claire\", and other magazines. She has been photographed by Helmut Newton; Peter Lindbergh; Annie Leibovitz; Richard Avedon; Juergen Teller; Paul Jasmin, Mary Ellen Mark and Terry Richardson, and modeled for Donna Karan, Givenchy, Guerlain, Chanel, \"Harper's Bazaar\", \"Sports Illustrated\" and Victoria's Secret. A long time vegetarian, an advocate for organic lifestyle choices and natural healthcare. She co-founded Tsi-La Organics, a \"Green Luxury\" company that creates and sells vegan, organic perfume and skin care products.",
+        "title": "Annie Morton",
+        "start": 0,
+        "end": 670,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 78
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 79,
+            "end": 172
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 173,
+            "end": 453
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 454,
+            "end": 543
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 544,
+            "end": 670
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "validation",
+          "record_id": "5a7bbb64554299042af8f7cc",
+          "url": "https://en.wikipedia.org/wiki/Annie_Morton",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.03278688524590164
+      },
+      {
+        "evidence_id": "E4",
+        "chunk_id": "044c97d5-aea9-58bc-88c2-b27610ca6593",
+        "document_id": "e92618f6-fe57-5b82-8f6b-021763561909",
+        "revision_id": "8c8fe874-00c9-5458-b7a3-86351af76c6d",
+        "strategy": "b",
+        "text": "Terrence \"Uncle Terry\" Richardson (born August 14, 1965) is an American fashion and portrait photographer who has shot advertising campaigns for Marc Jacobs, Aldo, Supreme, Sisley, Tom Ford, and Yves Saint Laurent among others. He has also done work for magazines such as \"Rolling Stone\", \"GQ\", \"Vogue\", \"Vanity Fair\", \"Harper's Bazaar\", \"i-D\", and \"Vice\".",
+        "title": "Terry Richardson",
+        "start": 0,
+        "end": 356,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 227
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 228,
+            "end": 356
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "validation",
+          "record_id": "5a7bbb64554299042af8f7cc",
+          "url": "https://en.wikipedia.org/wiki/Terry_Richardson",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.03225806451612903
+      },
+      {
+        "evidence_id": "E2",
+        "chunk_id": "0f09545a-9912-538c-aba6-7e3d375043ae",
+        "document_id": "fd91bc39-5321-5720-bbd1-b3d6dba37227",
+        "revision_id": "f821dec4-414e-58b0-ae50-1015759422b6",
+        "strategy": "b",
+        "text": "James Joseph Richardson (born December 12, 1935) is an African-American man who was wrongly convicted in 1968 for the October 1967 murders of his seven children. They died after eating a poisoned lunch containing the organic phosphate pesticide parathion. At the time of the murders Richardson, a migrant farm worker, was living in Arcadia, Florida, with his wife Annie Mae Richardson and the children. At a trial in Fort Myers, Florida, an all-white jury found him guilty of murdering the children and sentenced him to death. As a result of the United States Supreme Court's 1972 \"Furman v. Georgia\" decision finding the death penalty unconstitutional, his sentence was reduced to life imprisonment; he was then exonerated in 1989, after 21 years, when his case was revisited by appointed Miami-Dade County prosecutor Janet Reno. He now lives in Wichita, Kansas.",
+        "title": "James Joseph Richardson",
+        "start": 0,
+        "end": 863,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 161
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 162,
+            "end": 255
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 256,
+            "end": 402
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 403,
+            "end": 526
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 527,
+            "end": 830
+          },
+          {
+            "kind": "sentence",
+            "number": 5,
+            "start": 831,
+            "end": 863
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a799f685542996c55b2dc2a",
+          "url": "https://en.wikipedia.org/wiki/James_Joseph_Richardson",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.015873015873015872
+      },
+      {
+        "evidence_id": "E3",
+        "chunk_id": "e151d7a2-4fb2-5d6d-a0fb-6533d6a5f41f",
+        "document_id": "7a5db45f-b106-5d36-85db-a163e512b9af",
+        "revision_id": "adeee8e3-8eb9-5448-a5cd-53d2c0658a01",
+        "strategy": "b",
+        "text": "Jo Ann Terry-Grissom (born August 4, 1938 in Indianapolis, Indiana) is a retired female hurdler from the United States, who represented her native country at two consecutive Summer Olympics, starting in 1960. Affiliated with the Tennessee State University she won the 80 m hurdles event at the 1963 Pan American Games.",
+        "title": "Jo Ann Terry",
+        "start": 0,
+        "end": 318,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 208
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 209,
+            "end": 318
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5ac12fda5542994d76dccdb0",
+          "url": "https://en.wikipedia.org/wiki/Jo_Ann_Terry",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.015873015873015872
+      },
+      {
+        "evidence_id": "E5",
+        "chunk_id": "efef253f-1b07-5bb0-a243-87f08a5d2cda",
+        "document_id": "4ef73b16-cea3-55f9-b968-ea1702e44b2c",
+        "revision_id": "66cb15d1-b1a6-5e6d-924b-70040eadc452",
+        "strategy": "b",
+        "text": "Annie Chapman (born Eliza Ann Smith, c. 1841 – 8 September 1888), was a victim of the notorious unidentified serial killer Jack the Ripper, who killed and mutilated several women in the Whitechapel area of London from late August to early November 1888.",
+        "title": "Annie Chapman",
+        "start": 0,
+        "end": 253,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 253
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5ac55e785542993e66e82372",
+          "url": "https://en.wikipedia.org/wiki/Annie_Chapman",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.029857397504456328
+      },
+      {
+        "evidence_id": "E7",
+        "chunk_id": "23a4b4d6-e02b-5425-80c1-eca69e3d3a2e",
+        "document_id": "569967e6-d5c3-5185-8c6a-c3e4e9730a6a",
+        "revision_id": "0a3547c2-7989-5c3f-a739-d414ff9efc4d",
+        "strategy": "b",
+        "text": "Albert Finney (born 9 May 1936) is an English actor. Beginning in the theatre, Finney was especially successful in plays by William Shakespeare before he switched to films. He achieved prominence in films in the early 1960s, his debut being \"The Entertainer\", directed by Tony Richardson, who had directed him in theatre plays various times before. He became a leading Free Cinema figure, and has maintained a successful career in theatre, film and television. He is known for his roles in \"Saturday Night and Sunday Morning\" (1960), \"Tom Jones\" (1963), \"Scrooge\" (1970), \"Annie\" (1982), \"The Dresser\" (1983), \"Miller's Crossing\" (1990), \"Big Fish\" (2003), \"The Bourne Ultimatum\" (2007), \"Before the Devil Knows You're Dead\" (2007), \"The Bourne Legacy\" (2012), and the James Bond film \"Skyfall\" (2012).",
+        "title": "Albert Finney",
+        "start": 0,
+        "end": 802,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 52
+          },
+          {
+            "kind": "sentence",
+            "number": 1,
+            "start": 53,
+            "end": 172
+          },
+          {
+            "kind": "sentence",
+            "number": 2,
+            "start": 173,
+            "end": 348
+          },
+          {
+            "kind": "sentence",
+            "number": 3,
+            "start": 349,
+            "end": 460
+          },
+          {
+            "kind": "sentence",
+            "number": 4,
+            "start": 461,
+            "end": 802
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5add39295542990dbb2f7dd5",
+          "url": "https://en.wikipedia.org/wiki/Albert_Finney",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.015625
+      },
+      {
+        "evidence_id": "E6",
+        "chunk_id": "004e6dae-f9cb-5843-82c9-552b1f444229",
+        "document_id": "027ceb3c-b9bf-5a8e-9be4-ec17f4c4d114",
+        "revision_id": "0d3d03ba-6fc2-5bd9-aa92-85bc0e4b5811",
+        "strategy": "b",
+        "text": "Deborah Frances Tannen (born June 7, 1945) is an American academic and professor of linguistics at Georgetown University in Washington, D.C. She has been McGraw Distinguished Lecturer at Princeton University and was a fellow at the Center for Advanced Study in the Behavioral Sciences following a term in residence at the Institute for Advanced Study in Princeton, NJ.",
+        "title": "Deborah Tannen",
+        "start": 0,
+        "end": 368,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 368
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5a8a7b3b55429930ff3c0df1",
+          "url": "https://en.wikipedia.org/wiki/Deborah_Tannen",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.015625
+      },
+      {
+        "evidence_id": "E9",
+        "chunk_id": "f85165a6-f2c8-57fb-ad83-71abcb707a4a",
+        "document_id": "2cc246bc-0a3f-51e5-b868-7651287abc26",
+        "revision_id": "8ef79c78-d23f-5450-b7a2-542bcc890906",
+        "strategy": "b",
+        "text": "Mary Harron (born January 12, 1953) is a Canadian filmmaker and screenwriter best known for her socially-conscious independent films like \"I Shot Andy Warhol\", \"American Psycho\" and \"The Notorious Bettie Page\".",
+        "title": "Mary Harron",
+        "start": 0,
+        "end": 210,
+        "locations": [
+          {
+            "kind": "sentence",
+            "number": 0,
+            "start": 0,
+            "end": 210
+          }
+        ],
+        "metadata": {
+          "kind": "hotpotqa",
+          "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+          "split": "train",
+          "record_id": "5ae01c0855429925eb1afc15",
+          "url": "https://en.wikipedia.org/wiki/Mary_Harron",
+          "license": "CC-BY-SA-4.0"
+        },
+        "fusion_score": 0.015625
+      }
+    ],
+    "search_trace": [
+      {
+        "query": "Annie Morton Terry Richardson ages older who is older",
+        "strategy": "b",
+        "profile": "1a8846753a25",
+        "embedding_usage": {
+          "model": "text-embedding-3-small",
+          "input_tokens": 10,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 2.0000000000000002e-07
+        },
+        "document_ranking": [
+          "bbaab7bc-52ce-5c5b-8f6e-352d95947b89",
+          "fd91bc39-5321-5720-bbd1-b3d6dba37227",
+          "7a5db45f-b106-5d36-85db-a163e512b9af",
+          "e92618f6-fe57-5b82-8f6b-021763561909",
+          "4ef73b16-cea3-55f9-b968-ea1702e44b2c",
+          "027ceb3c-b9bf-5a8e-9be4-ec17f4c4d114",
+          "569967e6-d5c3-5185-8c6a-c3e4e9730a6a",
+          "dec31a51-061b-5641-b87a-a32d8ca5422f",
+          "2dac5c8d-2120-5657-bce1-b98b441013a3",
+          "f3914b44-f449-5635-a615-779f9544db0c"
+        ],
+        "candidate_counts": {
+          "dense": 30,
+          "bm25": 30,
+          "active_dense": 30,
+          "active_bm25": 30
+        },
+        "evidence": [
+          {
+            "evidence_id": "E1",
+            "chunk_id": "03f41dc8-3316-515f-a5ce-14ea3fe17c93",
+            "document_id": "bbaab7bc-52ce-5c5b-8f6e-352d95947b89",
+            "revision_id": "227a2d4c-8cb8-5ce8-a61d-f039914fd69b",
+            "strategy": "b",
+            "text": "Annie Morton (born October 8, 1970) is an American model born in Pennsylvania. She has appeared on the covers of \"British Vogue\", \"ID\", \"Marie Claire\", and other magazines. She has been photographed by Helmut Newton; Peter Lindbergh; Annie Leibovitz; Richard Avedon; Juergen Teller; Paul Jasmin, Mary Ellen Mark and Terry Richardson, and modeled for Donna Karan, Givenchy, Guerlain, Chanel, \"Harper's Bazaar\", \"Sports Illustrated\" and Victoria's Secret. A long time vegetarian, an advocate for organic lifestyle choices and natural healthcare. She co-founded Tsi-La Organics, a \"Green Luxury\" company that creates and sells vegan, organic perfume and skin care products.",
+            "title": "Annie Morton",
+            "start": 0,
+            "end": 670,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 78
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 79,
+                "end": 172
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 173,
+                "end": 453
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 454,
+                "end": 543
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 544,
+                "end": 670
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5a7bbb64554299042af8f7cc",
+              "url": "https://en.wikipedia.org/wiki/Annie_Morton",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03278688524590164
+          },
+          {
+            "evidence_id": "E2",
+            "chunk_id": "0f09545a-9912-538c-aba6-7e3d375043ae",
+            "document_id": "fd91bc39-5321-5720-bbd1-b3d6dba37227",
+            "revision_id": "f821dec4-414e-58b0-ae50-1015759422b6",
+            "strategy": "b",
+            "text": "James Joseph Richardson (born December 12, 1935) is an African-American man who was wrongly convicted in 1968 for the October 1967 murders of his seven children. They died after eating a poisoned lunch containing the organic phosphate pesticide parathion. At the time of the murders Richardson, a migrant farm worker, was living in Arcadia, Florida, with his wife Annie Mae Richardson and the children. At a trial in Fort Myers, Florida, an all-white jury found him guilty of murdering the children and sentenced him to death. As a result of the United States Supreme Court's 1972 \"Furman v. Georgia\" decision finding the death penalty unconstitutional, his sentence was reduced to life imprisonment; he was then exonerated in 1989, after 21 years, when his case was revisited by appointed Miami-Dade County prosecutor Janet Reno. He now lives in Wichita, Kansas.",
+            "title": "James Joseph Richardson",
+            "start": 0,
+            "end": 863,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 161
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 162,
+                "end": 255
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 256,
+                "end": 402
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 403,
+                "end": 526
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 527,
+                "end": 830
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 831,
+                "end": 863
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a799f685542996c55b2dc2a",
+              "url": "https://en.wikipedia.org/wiki/James_Joseph_Richardson",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.016129032258064516
+          },
+          {
+            "evidence_id": "E3",
+            "chunk_id": "e151d7a2-4fb2-5d6d-a0fb-6533d6a5f41f",
+            "document_id": "7a5db45f-b106-5d36-85db-a163e512b9af",
+            "revision_id": "adeee8e3-8eb9-5448-a5cd-53d2c0658a01",
+            "strategy": "b",
+            "text": "Jo Ann Terry-Grissom (born August 4, 1938 in Indianapolis, Indiana) is a retired female hurdler from the United States, who represented her native country at two consecutive Summer Olympics, starting in 1960. Affiliated with the Tennessee State University she won the 80 m hurdles event at the 1963 Pan American Games.",
+            "title": "Jo Ann Terry",
+            "start": 0,
+            "end": 318,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 208
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 209,
+                "end": 318
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ac12fda5542994d76dccdb0",
+              "url": "https://en.wikipedia.org/wiki/Jo_Ann_Terry",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.016129032258064516
+          },
+          {
+            "evidence_id": "E4",
+            "chunk_id": "044c97d5-aea9-58bc-88c2-b27610ca6593",
+            "document_id": "e92618f6-fe57-5b82-8f6b-021763561909",
+            "revision_id": "8c8fe874-00c9-5458-b7a3-86351af76c6d",
+            "strategy": "b",
+            "text": "Terrence \"Uncle Terry\" Richardson (born August 14, 1965) is an American fashion and portrait photographer who has shot advertising campaigns for Marc Jacobs, Aldo, Supreme, Sisley, Tom Ford, and Yves Saint Laurent among others. He has also done work for magazines such as \"Rolling Stone\", \"GQ\", \"Vogue\", \"Vanity Fair\", \"Harper's Bazaar\", \"i-D\", and \"Vice\".",
+            "title": "Terry Richardson",
+            "start": 0,
+            "end": 356,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 227
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 228,
+                "end": 356
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5a7bbb64554299042af8f7cc",
+              "url": "https://en.wikipedia.org/wiki/Terry_Richardson",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015873015873015872
+          },
+          {
+            "evidence_id": "E5",
+            "chunk_id": "efef253f-1b07-5bb0-a243-87f08a5d2cda",
+            "document_id": "4ef73b16-cea3-55f9-b968-ea1702e44b2c",
+            "revision_id": "66cb15d1-b1a6-5e6d-924b-70040eadc452",
+            "strategy": "b",
+            "text": "Annie Chapman (born Eliza Ann Smith, c. 1841 – 8 September 1888), was a victim of the notorious unidentified serial killer Jack the Ripper, who killed and mutilated several women in the Whitechapel area of London from late August to early November 1888.",
+            "title": "Annie Chapman",
+            "start": 0,
+            "end": 253,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 253
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ac55e785542993e66e82372",
+              "url": "https://en.wikipedia.org/wiki/Annie_Chapman",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015873015873015872
+          },
+          {
+            "evidence_id": "E6",
+            "chunk_id": "004e6dae-f9cb-5843-82c9-552b1f444229",
+            "document_id": "027ceb3c-b9bf-5a8e-9be4-ec17f4c4d114",
+            "revision_id": "0d3d03ba-6fc2-5bd9-aa92-85bc0e4b5811",
+            "strategy": "b",
+            "text": "Deborah Frances Tannen (born June 7, 1945) is an American academic and professor of linguistics at Georgetown University in Washington, D.C. She has been McGraw Distinguished Lecturer at Princeton University and was a fellow at the Center for Advanced Study in the Behavioral Sciences following a term in residence at the Institute for Advanced Study in Princeton, NJ.",
+            "title": "Deborah Tannen",
+            "start": 0,
+            "end": 368,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 368
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a8a7b3b55429930ff3c0df1",
+              "url": "https://en.wikipedia.org/wiki/Deborah_Tannen",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015625
+          },
+          {
+            "evidence_id": "E7",
+            "chunk_id": "23a4b4d6-e02b-5425-80c1-eca69e3d3a2e",
+            "document_id": "569967e6-d5c3-5185-8c6a-c3e4e9730a6a",
+            "revision_id": "0a3547c2-7989-5c3f-a739-d414ff9efc4d",
+            "strategy": "b",
+            "text": "Albert Finney (born 9 May 1936) is an English actor. Beginning in the theatre, Finney was especially successful in plays by William Shakespeare before he switched to films. He achieved prominence in films in the early 1960s, his debut being \"The Entertainer\", directed by Tony Richardson, who had directed him in theatre plays various times before. He became a leading Free Cinema figure, and has maintained a successful career in theatre, film and television. He is known for his roles in \"Saturday Night and Sunday Morning\" (1960), \"Tom Jones\" (1963), \"Scrooge\" (1970), \"Annie\" (1982), \"The Dresser\" (1983), \"Miller's Crossing\" (1990), \"Big Fish\" (2003), \"The Bourne Ultimatum\" (2007), \"Before the Devil Knows You're Dead\" (2007), \"The Bourne Legacy\" (2012), and the James Bond film \"Skyfall\" (2012).",
+            "title": "Albert Finney",
+            "start": 0,
+            "end": 802,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 52
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 53,
+                "end": 172
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 173,
+                "end": 348
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 349,
+                "end": 460
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 461,
+                "end": 802
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5add39295542990dbb2f7dd5",
+              "url": "https://en.wikipedia.org/wiki/Albert_Finney",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015625
+          },
+          {
+            "evidence_id": "E8",
+            "chunk_id": "735d691d-1400-5500-866f-e92eb7afc6be",
+            "document_id": "dec31a51-061b-5641-b87a-a32d8ca5422f",
+            "revision_id": "54c55a71-d272-534a-88d7-6cbda07c4206",
+            "strategy": "b",
+            "text": "Michelle Terry is an Olivier award winning English actress and writer, known for extensive work for Shakespeare’s Globe, RSC, National Theatre and television work, notably writing and starring in Sky's \"The Café\". Terry will take up the role of artistic director at Shakespeare's Globe in April 2018 .",
+            "title": "Michelle Terry",
+            "start": 0,
+            "end": 301,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 213
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 214,
+                "end": 301
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a80a881554299485f598684",
+              "url": "https://en.wikipedia.org/wiki/Michelle_Terry",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015384615384615385
+          }
+        ],
+        "round": 1,
+        "tool_call_id": "call_XhuqCbTzxirgjcUoRdgCtoWD",
+        "executed": true,
+        "follow_up": null,
+        "requested_query": "Annie Morton Terry Richardson ages older who is older",
+        "query_adjusted": false
+      },
+      {
+        "query": "Annie Morton born October 8 1970 Terry Richardson born August 14 1965 older compare",
+        "strategy": "b",
+        "profile": "1a8846753a25",
+        "embedding_usage": {
+          "model": "text-embedding-3-small",
+          "input_tokens": 21,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 4.2e-07
+        },
+        "document_ranking": [
+          "bbaab7bc-52ce-5c5b-8f6e-352d95947b89",
+          "e92618f6-fe57-5b82-8f6b-021763561909",
+          "4ef73b16-cea3-55f9-b968-ea1702e44b2c",
+          "fd91bc39-5321-5720-bbd1-b3d6dba37227",
+          "7a5db45f-b106-5d36-85db-a163e512b9af",
+          "569967e6-d5c3-5185-8c6a-c3e4e9730a6a",
+          "2cc246bc-0a3f-51e5-b868-7651287abc26",
+          "2dac5c8d-2120-5657-bce1-b98b441013a3",
+          "a6b1d7e8-6946-53d4-82be-67818821442c",
+          "5c906784-3aeb-5518-b038-f50451cd34bb"
+        ],
+        "candidate_counts": {
+          "dense": 30,
+          "bm25": 30,
+          "active_dense": 30,
+          "active_bm25": 30
+        },
+        "evidence": [
+          {
+            "evidence_id": "E1",
+            "chunk_id": "03f41dc8-3316-515f-a5ce-14ea3fe17c93",
+            "document_id": "bbaab7bc-52ce-5c5b-8f6e-352d95947b89",
+            "revision_id": "227a2d4c-8cb8-5ce8-a61d-f039914fd69b",
+            "strategy": "b",
+            "text": "Annie Morton (born October 8, 1970) is an American model born in Pennsylvania. She has appeared on the covers of \"British Vogue\", \"ID\", \"Marie Claire\", and other magazines. She has been photographed by Helmut Newton; Peter Lindbergh; Annie Leibovitz; Richard Avedon; Juergen Teller; Paul Jasmin, Mary Ellen Mark and Terry Richardson, and modeled for Donna Karan, Givenchy, Guerlain, Chanel, \"Harper's Bazaar\", \"Sports Illustrated\" and Victoria's Secret. A long time vegetarian, an advocate for organic lifestyle choices and natural healthcare. She co-founded Tsi-La Organics, a \"Green Luxury\" company that creates and sells vegan, organic perfume and skin care products.",
+            "title": "Annie Morton",
+            "start": 0,
+            "end": 670,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 78
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 79,
+                "end": 172
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 173,
+                "end": 453
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 454,
+                "end": 543
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 544,
+                "end": 670
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5a7bbb64554299042af8f7cc",
+              "url": "https://en.wikipedia.org/wiki/Annie_Morton",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03278688524590164
+          },
+          {
+            "evidence_id": "E4",
+            "chunk_id": "044c97d5-aea9-58bc-88c2-b27610ca6593",
+            "document_id": "e92618f6-fe57-5b82-8f6b-021763561909",
+            "revision_id": "8c8fe874-00c9-5458-b7a3-86351af76c6d",
+            "strategy": "b",
+            "text": "Terrence \"Uncle Terry\" Richardson (born August 14, 1965) is an American fashion and portrait photographer who has shot advertising campaigns for Marc Jacobs, Aldo, Supreme, Sisley, Tom Ford, and Yves Saint Laurent among others. He has also done work for magazines such as \"Rolling Stone\", \"GQ\", \"Vogue\", \"Vanity Fair\", \"Harper's Bazaar\", \"i-D\", and \"Vice\".",
+            "title": "Terry Richardson",
+            "start": 0,
+            "end": 356,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 227
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 228,
+                "end": 356
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "validation",
+              "record_id": "5a7bbb64554299042af8f7cc",
+              "url": "https://en.wikipedia.org/wiki/Terry_Richardson",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.03225806451612903
+          },
+          {
+            "evidence_id": "E5",
+            "chunk_id": "efef253f-1b07-5bb0-a243-87f08a5d2cda",
+            "document_id": "4ef73b16-cea3-55f9-b968-ea1702e44b2c",
+            "revision_id": "66cb15d1-b1a6-5e6d-924b-70040eadc452",
+            "strategy": "b",
+            "text": "Annie Chapman (born Eliza Ann Smith, c. 1841 – 8 September 1888), was a victim of the notorious unidentified serial killer Jack the Ripper, who killed and mutilated several women in the Whitechapel area of London from late August to early November 1888.",
+            "title": "Annie Chapman",
+            "start": 0,
+            "end": 253,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 253
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ac55e785542993e66e82372",
+              "url": "https://en.wikipedia.org/wiki/Annie_Chapman",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.029857397504456328
+          },
+          {
+            "evidence_id": "E2",
+            "chunk_id": "0f09545a-9912-538c-aba6-7e3d375043ae",
+            "document_id": "fd91bc39-5321-5720-bbd1-b3d6dba37227",
+            "revision_id": "f821dec4-414e-58b0-ae50-1015759422b6",
+            "strategy": "b",
+            "text": "James Joseph Richardson (born December 12, 1935) is an African-American man who was wrongly convicted in 1968 for the October 1967 murders of his seven children. They died after eating a poisoned lunch containing the organic phosphate pesticide parathion. At the time of the murders Richardson, a migrant farm worker, was living in Arcadia, Florida, with his wife Annie Mae Richardson and the children. At a trial in Fort Myers, Florida, an all-white jury found him guilty of murdering the children and sentenced him to death. As a result of the United States Supreme Court's 1972 \"Furman v. Georgia\" decision finding the death penalty unconstitutional, his sentence was reduced to life imprisonment; he was then exonerated in 1989, after 21 years, when his case was revisited by appointed Miami-Dade County prosecutor Janet Reno. He now lives in Wichita, Kansas.",
+            "title": "James Joseph Richardson",
+            "start": 0,
+            "end": 863,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 161
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 162,
+                "end": 255
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 256,
+                "end": 402
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 403,
+                "end": 526
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 527,
+                "end": 830
+              },
+              {
+                "kind": "sentence",
+                "number": 5,
+                "start": 831,
+                "end": 863
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5a799f685542996c55b2dc2a",
+              "url": "https://en.wikipedia.org/wiki/James_Joseph_Richardson",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015873015873015872
+          },
+          {
+            "evidence_id": "E3",
+            "chunk_id": "e151d7a2-4fb2-5d6d-a0fb-6533d6a5f41f",
+            "document_id": "7a5db45f-b106-5d36-85db-a163e512b9af",
+            "revision_id": "adeee8e3-8eb9-5448-a5cd-53d2c0658a01",
+            "strategy": "b",
+            "text": "Jo Ann Terry-Grissom (born August 4, 1938 in Indianapolis, Indiana) is a retired female hurdler from the United States, who represented her native country at two consecutive Summer Olympics, starting in 1960. Affiliated with the Tennessee State University she won the 80 m hurdles event at the 1963 Pan American Games.",
+            "title": "Jo Ann Terry",
+            "start": 0,
+            "end": 318,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 208
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 209,
+                "end": 318
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ac12fda5542994d76dccdb0",
+              "url": "https://en.wikipedia.org/wiki/Jo_Ann_Terry",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015873015873015872
+          },
+          {
+            "evidence_id": "E7",
+            "chunk_id": "23a4b4d6-e02b-5425-80c1-eca69e3d3a2e",
+            "document_id": "569967e6-d5c3-5185-8c6a-c3e4e9730a6a",
+            "revision_id": "0a3547c2-7989-5c3f-a739-d414ff9efc4d",
+            "strategy": "b",
+            "text": "Albert Finney (born 9 May 1936) is an English actor. Beginning in the theatre, Finney was especially successful in plays by William Shakespeare before he switched to films. He achieved prominence in films in the early 1960s, his debut being \"The Entertainer\", directed by Tony Richardson, who had directed him in theatre plays various times before. He became a leading Free Cinema figure, and has maintained a successful career in theatre, film and television. He is known for his roles in \"Saturday Night and Sunday Morning\" (1960), \"Tom Jones\" (1963), \"Scrooge\" (1970), \"Annie\" (1982), \"The Dresser\" (1983), \"Miller's Crossing\" (1990), \"Big Fish\" (2003), \"The Bourne Ultimatum\" (2007), \"Before the Devil Knows You're Dead\" (2007), \"The Bourne Legacy\" (2012), and the James Bond film \"Skyfall\" (2012).",
+            "title": "Albert Finney",
+            "start": 0,
+            "end": 802,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 52
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 53,
+                "end": 172
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 173,
+                "end": 348
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 349,
+                "end": 460
+              },
+              {
+                "kind": "sentence",
+                "number": 4,
+                "start": 461,
+                "end": 802
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5add39295542990dbb2f7dd5",
+              "url": "https://en.wikipedia.org/wiki/Albert_Finney",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015625
+          },
+          {
+            "evidence_id": "E9",
+            "chunk_id": "f85165a6-f2c8-57fb-ad83-71abcb707a4a",
+            "document_id": "2cc246bc-0a3f-51e5-b868-7651287abc26",
+            "revision_id": "8ef79c78-d23f-5450-b7a2-542bcc890906",
+            "strategy": "b",
+            "text": "Mary Harron (born January 12, 1953) is a Canadian filmmaker and screenwriter best known for her socially-conscious independent films like \"I Shot Andy Warhol\", \"American Psycho\" and \"The Notorious Bettie Page\".",
+            "title": "Mary Harron",
+            "start": 0,
+            "end": 210,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 210
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ae01c0855429925eb1afc15",
+              "url": "https://en.wikipedia.org/wiki/Mary_Harron",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015625
+          },
+          {
+            "evidence_id": "E10",
+            "chunk_id": "74bf167a-82b5-5be0-9a41-7e4cf2a43910",
+            "document_id": "2dac5c8d-2120-5657-bce1-b98b441013a3",
+            "revision_id": "39907133-2614-5224-95ce-c3b78d3cfc09",
+            "strategy": "b",
+            "text": "Howard Henry Lederer (born October 30, 1963) is an American professional poker player. He has won two World Series of Poker bracelets and holds two World Poker Tour titles. Lederer has also contributed to several books on poker strategy and has provided commentary for poker programming. He is known by poker fans and players as \"The Professor\" and is the older brother of professional poker player Annie Duke.",
+            "title": "Howard Lederer",
+            "start": 0,
+            "end": 410,
+            "locations": [
+              {
+                "kind": "sentence",
+                "number": 0,
+                "start": 0,
+                "end": 86
+              },
+              {
+                "kind": "sentence",
+                "number": 1,
+                "start": 87,
+                "end": 172
+              },
+              {
+                "kind": "sentence",
+                "number": 2,
+                "start": 173,
+                "end": 287
+              },
+              {
+                "kind": "sentence",
+                "number": 3,
+                "start": 288,
+                "end": 410
+              }
+            ],
+            "metadata": {
+              "kind": "hotpotqa",
+              "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+              "split": "train",
+              "record_id": "5ae4bb405542995ad6573e31",
+              "url": "https://en.wikipedia.org/wiki/Howard_Lederer",
+              "license": "CC-BY-SA-4.0"
+            },
+            "fusion_score": 0.015384615384615385
+          }
+        ],
+        "round": 2,
+        "tool_call_id": "call_2eDBeKrG2lcqI5Rb6lpkQhxV",
+        "executed": true,
+        "follow_up": {
+          "evidence_id": "E1",
+          "entity": "Terry Richardson"
+        },
+        "requested_query": "Annie Morton born October 8 1970 Terry Richardson born August 14 1965 older compare",
+        "query_adjusted": false
+      }
+    ],
+    "workflow": "bounded_tools_v1",
+    "execution": {
+      "planning_rounds": 2,
+      "retrieval_rounds": 2,
+      "tool_calls": 2,
+      "searches": 2,
+      "llm_calls": 3,
+      "embedding_calls": 2,
+      "total_provider_calls": 5,
+      "stop_reason": "retrieval_limit",
+      "limits": {
+        "retrieval_rounds": 2,
+        "searches": 3,
+        "llm_calls": 3,
+        "embedding_calls": 3,
+        "total_provider_calls": 6
+      }
+    },
+    "configuration": {
+      "strategy": "b",
+      "profile": "1a8846753a25",
+      "embedding_model": "text-embedding-3-small",
+      "embedding_dimensions": 384,
+      "generation_model": "gpt-5.4-mini-2026-03-17",
+      "prompt_version": "bounded_tools_quote_ids_v1"
+    },
+    "usage": {
+      "planning": [
+        {
+          "input_tokens": 518,
+          "output_tokens": 33,
+          "estimated_cost_usd": 0.000537,
+          "model": "gpt-5.4-mini-2026-03-17"
+        },
+        {
+          "input_tokens": 1603,
+          "output_tokens": 54,
+          "estimated_cost_usd": 0.00144525,
+          "model": "gpt-5.4-mini-2026-03-17"
+        }
+      ],
+      "generation": {
+        "input_tokens": 4198,
+        "output_tokens": 65,
+        "estimated_cost_usd": 0.003441,
+        "model": "gpt-5.4-mini-2026-03-17"
+      },
+      "embeddings": [
+        {
+          "model": "text-embedding-3-small",
+          "input_tokens": 10,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 2.0000000000000002e-07
+        },
+        {
+          "model": "text-embedding-3-small",
+          "input_tokens": 21,
+          "api_calls": 1,
+          "cache_hits": 0,
+          "estimated_cost_usd": 4.2e-07
+        }
+      ],
+      "estimated_model_cost_usd": 0.00542325,
+      "estimated_total_cost_usd": 0.00542387
+    },
+    "latency_ms": 4992
+  },
+  "error": null,
+  "elapsed_ms": 4993,
+  "ledger_after": {
+    "calls": 456,
+    "reserved_usd": 1.07717303,
+    "estimated_actual_usd": 0.37795778,
+    "input_tokens": 7163274,
+    "output_tokens": 8336
+  }
+}
