@@ -46,6 +46,19 @@ async def verify(prepared):
         assert len(documents) >= 50_000
         assert len({item["content_sha256"] for item in documents.values()}) == len(documents)
         before = await cloud_snapshot(store, index, documents)
+        expected_manifests = {
+            key: {
+                "document_id": key,
+                "content_sha256": value["content_sha256"],
+                "revision_id": revisions[key],
+                "index_profile": index.profile,
+                "index_status": "ready",
+            }
+            for key, value in documents.items()
+        }
+        assert before["active_manifests_sha256"] == digest(expected_manifests), (
+            "Active revision identities differ from the canonical corpus."
+        )
         strategies = {}
         for strategy, collection in index.collections.items():
             found, cursor, physical, inactive = set(), None, 0, 0
@@ -96,6 +109,7 @@ async def verify(prepared):
         "strategies": strategies,
         "paid_calls": 0,
         "cloud_writes": 0,
+        "canonical_revision_identity_verified": True,
     }
 
 

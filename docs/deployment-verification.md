@@ -2,6 +2,19 @@
 
 Public app: https://upgaming-ai-engineering-task.onrender.com/.
 
+The actual cloud restart receipt is [cloud-persistence.json](deployment/cloud-persistence.json).
+It records a successful 13→21 minute replacement, stale-tag rejection, deletion, changed
+server boot ID and correct cited answers before/after the new Render instance. All owned
+sources were cleaned up. The two successful question estimates total $0.00872823; upload
+embedding usage retains conservative reservations because that route does not expose usage.
+The failed first probe and ETag reproduction are retained rather than presented as successes.
+
+The project ledger after these checks has $0.71511932 known estimated usage and $2.47683284
+conservative reservations against its unchanged $4.50 ceiling. These totals exclude unknown
+public visitor activity and are not provider invoices. The per-instance Render guard remains
+$1. The [whole-corpus audit](deployment/corpus-verification.json) records current counts;
+the [delivery verification](delivery-verification.json) records the final automated checks.
+
 One Docker Web Service serves FastAPI and the compiled React interface. Qdrant Cloud stores
 canonical extracted text, document manifests/revisions and both vector indexes. Node builds
 the frontend but does not run in the production image. Python listens on `0.0.0.0:$PORT`.

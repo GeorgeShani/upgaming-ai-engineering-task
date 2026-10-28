@@ -65,15 +65,15 @@ does not claim that George has completed his review. Estimates are focused worki
 
 ## Session 9: Deployment verification (1 hour; depends on 8)
 
-- [ ] Confirm >=50,000 actual unique records and expected chunk counts.
-- [ ] Restart app and confirm uploaded/updated/deleted data persists correctly.
-- [ ] Verify public workflows, secrets, free-tier restrictions, and spending target.
+- [x] Confirm 50,024 unique records and all 52,246 A / 52,307 B active chunks, including content/revision identity.
+- [x] Recreate the actual Render process and confirm uploaded/updated/deleted data and cited retrieval persist correctly.
+- [x] Verify public workflows, known-secret redaction, upload limits, user-confirmed Free/$1 configuration and recorded budget; document reset/public-traffic limitations.
 - [ ] George: reproduce restart checks.
 
 ## Session 10: Delivery and rehearsal (2 hours; depends on 9)
 
-- [ ] Final README, architecture/trade-offs, demo URL, evaluation report, AI usage, journal.
-- [ ] Meaningful GitHub history and complete reproduction instructions.
+- [ ] Final README, architecture/trade-offs, demo URL, evaluation report, AI usage, journal and submission/rehearsal guides.
+- [ ] Meaningful GitHub history and reproduction instructions, with final checks and frozen evaluation scores reproduced.
 - [ ] George: explain pipeline, calculate fusion, diagnose retrieval, change a setting/test without AI.
 
 ## Contingency (2 hours)

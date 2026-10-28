@@ -1492,3 +1492,49 @@ question cost estimate is $0.00436898. Checkpoint/ownership and conservative spe
 locally. The next tooling/documentation commit triggers the fresh Render process; after-restart
 verification is not yet claimed at this checkpoint. All 158 backend tests pass with warnings
 treated as errors; five client tests, 21 browser checks, production build and formatting pass.
+
+## Session 9 — cloud restart and corpus verification completed
+
+**What was verified:** The real Render service changed from boot
+`2a6078a30d2d4cb5b445266241820050` on `76b4073` to
+`a42c79d3f3d9469686633ba4abf7cea8` on `a4789c4`. This was a normal Git-triggered redeploy
+creating a fresh process, not a browser refresh. The probe's replaced 21-minute text, document
+ID, active revision and exact document revision tag survived. Its deleted document stayed
+404. Both real investigations answered 21 minutes and cited the updated source/revision;
+returned evidence/search traces contained neither the deleted source nor an inactive revision
+of the updated source. All probe sources, including the failed first run, were cleaned up.
+The raw successful receipt is `docs/deployment/cloud-persistence.json`.
+
+**Corpus audit:** After cleanup, a read-only audit verified **50,024 distinct canonical sources**,
+all source hashes/profiles, and **52,246 active A / 52,307 active B chunks**, checking every
+eligible point's ID, source/revision, offsets and text hash against the prepared corpus.
+Physical totals are 52,258/52,319, each including 12 retained inactive points from earlier
+tests and these probes. Source identity was unchanged at the end. A supplemental deterministic
+revision-signature check also matched; the verifier now enforces it directly on future runs.
+This distinction matters: a physical point count alone could conceal missing active chunks.
+No model calls or cloud writes were used for the audit. Evidence:
+`docs/deployment/corpus-verification.json`.
+
+**Costs and operating limits:** The two successful public questions added $0.00872823 known
+estimated usage. Upload/replacement costs are not returned by that API, so conservative local
+reservations remain rather than inventing exact usage. The host ledger is now $0.71511932
+known estimated usage / $2.47683284 reserved against the unchanged $4.50 ceiling. Remote
+public visitor activity is not measured by this ledger. George confirmed Free/$1 configuration;
+Render's local budget can still reset. Neither amount is an invoice or global hard cap.
+The public surface check validates readiness, assets, private-path rejection, unauthorized
+writes and invalid questions. A real authenticated 5,000,001-byte upload is rejected with 413
+before indexing. API rate/concurrency/provider-error guards are covered by offline tests;
+no paid public load test was performed.
+
+**Choices / alternatives:** Qdrant owns durable state; a local-only document database would
+lose it on Free hosting. Render's normal redeploy provides the same fresh-instance storage
+boundary as its restart action, without requiring a new control-plane credential. Checkpointed
+owned-source probes are more work than ad hoc manual edits, but provide safe cleanup, exact
+receipts and no automatic paid resubmission. Single-process mutation locks simplify this demo;
+multiple writers would require distributed coordination. The ETag failure and earlier Docker
+readiness failure remain documented, not converted into passing evidence.
+
+**My understanding (George):** [ ] Reproduce the cloud phases; [ ] explain boot vs release ID;
+[ ] trace the revision header through a proxy; [ ] explain active vs physical point counts and
+the ledger reset limitation. These remain independent learning work.
+
