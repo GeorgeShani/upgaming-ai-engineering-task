@@ -1666,3 +1666,16 @@ before commit/push. No independent understanding, human review or new benchmark 
 and one public development answer. Record that result separately, then George can follow the
 walkthrough and add his own understanding entry. A fresh independently reviewed held-out study
 remains a separate next step.
+
+**Post-push verification:** Main commit `5911d65710cd71966f7d5030b52aee399de97938` was pushed and
+confirmed by Render's public release header. Health/dependency checks were ready and the served
+JavaScript contained the new review UI. A single public development question returned the fictional
+incident's 11 minutes; its claim passed the new review and its quote, chunk text and revision matched
+the current canonical source. This cost an estimated $0.00502692. A prior $0.08 local reservation
+mirrors that hosted request; the root ledger is now 810 rows / $2.71349773 reserved / $0.75203288
+estimated actual. No source mutation or paid retry was performed. The public result is saved in
+`docs/grounding-checks/public-development-simple-01.json`, with checks in
+`docs/grounding-verification.json`. Application code remains at the verified release; this final
+documentation-only commit uses `[skip render]` to avoid restarting it unnecessarily. Receipt
+JSON uses LF newlines, matching `.gitattributes`; its hashes and current source fingerprints
+were checked again before this evidence commit.

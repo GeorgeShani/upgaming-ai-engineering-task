@@ -30,18 +30,18 @@
     "review_estimated_cost_usd": 0.0071775,
     "pipeline_estimated_cost_usd": 0.02470914,
     "raw_receipts": {
-      "correct-age": "8583d1fff9cc3d7df39cc344bb1bcbdd9eb73dd799cf4e9086e5be897c53df95",
-      "development-bridge-01": "684343e0807d21db88247473b7d0bad48dac273b83155f9e14633ebb8ced8535",
-      "development-bridge-02": "b7da7818db32735a76b63c01521283bbf04ab11cf399d184a96edafa6b801a66",
-      "development-conflict-01": "120eb4b765a70d4b860f03ae92e5c9759b43e74ba3dab584ac043a1660ac5bda",
-      "development-unanswerable-01": "760abed85f2312dba031eca11adf1428deedc1b699b7cfcbff09a4210a3293bc",
-      "missing-premise": "f4b65137e0918c3902d1e42cf0f7e405bc1b53ca1f56b6380e0c13b221152139",
-      "nationality-scope": "b9b0c5cd76c8e6aa68844855f78b1d20b85b0919d3ea2e441b4c9425965abc0c",
-      "reversed-age": "d53c51c784344e2bb93b409af211900907ce9fafbff47e783a01b42c1beea465",
-      "scaled-populations": "71d3e76e053802346b47854b5ec26168605da640c058be1f3c542355d7916dc3",
-      "supported-location": "b546d6ddbebfc8f67177d03c0287cbb902dfdb3bcf8f011adaa1b1b847b64eb8",
-      "wrong-band": "0273cff85bc509a65bcf46ca0f8cca944710abfbf7bb6bf3a5b69a30b3eb3c95",
-      "wrong-entity": "ab3b41d50672b8066ca890324416602acbcdcb07a3ab1f975ac5c1135e8f7e7d"
+      "correct-age": "f7bc3034af43c607d717b5c1e25c61ed9d096fb09fb82b1fc6587148e9649c0f",
+      "development-bridge-01": "cb96fc35bc01cc693b55dd35b55df03b898a1298c2d0baaa41035aaee9c7053a",
+      "development-bridge-02": "c940da17079a75d6dddb63b7b0f86c09fca57b20cff369e0c8e6337cf35f104b",
+      "development-conflict-01": "c707177418139ba364c5caa87ef1b7813dea9c631566cedd515a72a3091c9637",
+      "development-unanswerable-01": "234a61ff4a42c234e076428ee8ab99be41127b55b2548a22962e5b0c85c8bd67",
+      "missing-premise": "852d0730ae4140850ea75a1d92ae145b33a36e7824f0db5934d751d9d115a4c0",
+      "nationality-scope": "80175fa0461d923a2fbacb87f68f61d69f287bce8b33f6cd9aa1e8cc2f8c1f1f",
+      "reversed-age": "80a2ab662ffc908331663905ac30b6ab2078071a597a270e6e0f829a2c12905b",
+      "scaled-populations": "caad3fe53bcc81f983f8699fb4d344fa3593f778165d6587a916d64ac2ee1271",
+      "supported-location": "300f6f8dc52fd87353d44fcb2ca141474233293e39bacf71bcacc9fcc7120ab8",
+      "wrong-band": "c10decf9507210d9b95424d240aec5a1e945d3f97682219c826d0ede5b22a091",
+      "wrong-entity": "4a8c2b1b0cae3e2f81f1d3f2914b80fa1f7ae9d8462f1cfa520c2de4d0845cc5"
     }
   },
   "ledger_before": {
@@ -75,13 +75,33 @@
     "scripts/verify_claim_grounding.py": "cca79367e64d19f8a44af4da1e8d964440e153ce70c25cae466625c56382c281"
   },
   "deployment": {
-    "status": "pending push and Render release verification",
-    "previous_revision": "a4789c447eed137f96f23659947b2f994d434ea4"
+    "status": "passed",
+    "url": "https://upgaming-ai-engineering-task.onrender.com/",
+    "application_commit": "5911d65710cd71966f7d5030b52aee399de97938",
+    "checked_at": "2026-10-28T16:52:45.349289+00:00",
+    "health": "ready",
+    "review_ui_present_in_served_asset": true,
+    "workflow": "bounded_tools_verified_v2",
+    "review_outcome": "passed",
+    "development_answer": "11 minutes",
+    "citation_source_checks_passed": true,
+    "estimated_cost_usd": 0.00502692,
+    "receipt": "docs/grounding-checks/public-development-simple-01.json",
+    "receipt_sha256": "e268c5009268a32f454f98fd52fa34f02f75fc9ee5cbb527759e6b5971f936b5"
   },
   "limitations": [
     "Same-model review can approve unsupported claims or reject supported claims.",
     "Python checks supplied arithmetic, not the meaning of English claims or omitted comparisons.",
     "Development checks are selected regressions, not a held-out accuracy measurement.",
     "George independent review and rehearsal remain pending."
-  ]
+  ],
+  "ledger_after_public_smoke": {
+    "calls": 810,
+    "reserved_usd": 2.71349773,
+    "estimated_actual_usd": 0.75203288,
+    "input_tokens": 7583964,
+    "output_tokens": 21670
+  },
+  "ledger_note": "One root ledger row conservatively mirrors the hosted question; public visitor costs remain outside this local record.",
+  "receipt_hash_normalization": "LF newlines, matching repository .gitattributes"
 }

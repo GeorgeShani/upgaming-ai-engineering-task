@@ -77,11 +77,17 @@ cloud persistence probes reserve $0.08. These are application guards, not a prov
 - The frozen evaluation archive still reproduces all 96 earlier attempts, scores and summaries
   offline. Its source fingerprints differ because this changes the application. Its model outputs,
   labels and scores were not rewritten or rerun as held-out evidence for the new workflow.
+- After the tested change was committed/pushed, Render served application commit `5911d65`.
+  Health was ready and the served frontend contained the review details. One public development
+  question returned the fictional incident's **11 minutes**, with `verification.outcome=passed`
+  and a citation matching the active canonical source. Estimated usage: **$0.00502692**, mirrored
+  conservatively into the local ledger before/after the request. Its separate public receipt is
+  `grounding-checks/public-development-simple-01.json`; it is not an additional held-out case.
 
 The raw receipts retain the inputs, verdicts, usage and unsuccessful drafts for **developer
 inspection only**. These synthetic facts are explicitly fictional and were not added to Qdrant.
 No corpus mutation or reindexing was needed. Full automated and deployment check receipts are
-recorded in `docs/grounding-verification.json` when completed.
+recorded in `docs/grounding-verification.json`.
 
 ## Verify it yourself
 

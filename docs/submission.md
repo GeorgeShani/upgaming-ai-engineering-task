@@ -7,6 +7,11 @@ Live demo: https://upgaming-ai-engineering-task.onrender.com/
 The repository contains the implementation, genuine incremental commit history and technical
 reports. Review the independent rehearsal before presenting it as work you can defend.
 
+The subsequent [grounding fix](claim-grounding.md) adds a separate claim review and numeric
+comparison checks. Its development and deployed-release receipts are in
+[grounding verification](grounding-verification.json). The archived comparative study still
+measures the earlier workflow; these regressions do not replace a new held-out evaluation.
+
 ## Deliverables
 
 | Required artifact | Location |
