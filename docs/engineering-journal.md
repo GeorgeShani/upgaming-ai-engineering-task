@@ -1438,3 +1438,16 @@ keyboard; [ ] distinguish fixture tests from live semantic accuracy.
 **Resume point:** Push the verified UI to main and verify the public build after Render
 redeploys. Complete public restart/persistence checks before marking deployment verification
 complete. Delivery/rehearsal remains slice 10.
+
+**Public UI verification completed:** Pushed UI commit `8f236b2` directly to main; Render
+automatically deployed it. The public release header matches its full commit SHA. Compiled JS
+and CSS match the new build; the live UI shows the new question heading and library shortcut.
+Public liveness/readiness, static assets, hidden private paths, absent test-reset route,
+unauthorized-write rejection and pre-provider question validation all pass. Sanitized evidence:
+`docs/deployment/public-ui-verification.json`. No real question or source mutation was submitted
+in this public check. The browser opened the library and a canonical dataset source, returned
+to Investigate, and confirmed no horizontal overflow at 1440 and 390 px. Desktop/mobile
+screenshots are under ignored artifacts. Cloud restart/update/delete persistence is still
+pending; the earlier local Docker readiness failure is not overwritten or counted as success.
+George requested the available Impeccable update be deferred to a later session; no skill
+update was performed.

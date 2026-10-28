@@ -1,0 +1,38 @@
+{
+  "liveness_http": 200,
+  "instance_id": "4016f5665acc4f06b1330d3aa97a41b4",
+  "release_revision": "8f236b25e3e8d21b03725628038fa055631752f8",
+  "health": {
+    "status": "ready",
+    "dependencies": {
+      "openai": "reachable",
+      "qdrant": "reachable"
+    }
+  },
+  "compiled_assets": [
+    "/assets/index-X-AifHhH.js",
+    "/assets/index-BodD1BKy.css"
+  ],
+  "private_paths_hidden": true,
+  "test_reset_absent": true,
+  "anonymous_mutations_rejected": true,
+  "invalid_question_rejected": true,
+  "known_secrets_absent_from_checked_content": true,
+  "url": "https://upgaming-ai-engineering-task.onrender.com",
+  "checked_at": "2026-10-28T11:55:12.788371+00:00",
+  "scope": "Public UI assets, readiness and unprivileged HTTP surface; no paid generation or source mutation",
+  "passed": true,
+  "assets": [
+    {
+      "path": "/assets/index-X-AifHhH.js",
+      "sha256": "981fae09a118c58d73df5b44e0ac70da80db7a118684a7e64997600404b7177b",
+      "bytes": 248747
+    },
+    {
+      "path": "/assets/index-BodD1BKy.css",
+      "sha256": "d767b886793bb9029efb3af1d15da0fd7da31f9c3b970c9222ba2bc654b72fff",
+      "bytes": 14588
+    }
+  ],
+  "new_ui_markers_present": true
+}

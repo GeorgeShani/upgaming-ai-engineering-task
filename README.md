@@ -1,14 +1,14 @@
 # AI Investigation Engine
 
 An evidence-based investigation engine built in small, reviewed sessions for the Applied AI
-assignment. **Current stage: Session 8, measured comparative evaluation.** The website supports
+assignment. **Current stage: Session 9, deployment verification and UI refinement.** The website supports
 document upload/inspection/replacement/deletion, questions, cited evidence and search traces.
 Two chunking configurations, dense/BM25 retrieval, custom rank fusion, resumable
 local indexing, and validated cited answers are implemented. The investigation uses real model
 tool calls, evidence-grounded follow-ups, and a required verification round. The full 50,024-source
 import is complete. The 96-attempt development/final A/B comparison is archived; A remains the
 development-selected default. The report records semantic citation failures and experimental
-limitations. Public deployment verification and final rehearsal remain later slices.
+limitations. Cloud restart verification and final rehearsal remain outstanding.
 Public app: [Investigation Engine](https://upgaming-ai-engineering-task.onrender.com/).
 The public page and dependency readiness were checked on 2026-10-28. The cloud restart
 verification remains pending. See the [UI refinement walkthrough](docs/ui-refinement.md)
