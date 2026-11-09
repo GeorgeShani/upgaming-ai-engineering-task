@@ -1,0 +1,168 @@
+{
+  "checked_at": "2026-11-09T11:45:32.823806+00:00",
+  "scope": "AI-assisted worked learning checkpoints, not a personal competency certificate",
+  "script_sha256_lf": "269424525dc71366121b39674149c4bbbe6eaac62d3ff35002afd52f5c3bc441",
+  "fixtures": {
+    "cases": 48,
+    "sources": 72,
+    "hashes_ids_and_support_quotes_checked": true,
+    "reference_review": "pending George's independent review",
+    "semantic_gold_certification": false
+  },
+  "local_api": {
+    "scope": "real local API routes; in-memory HTTP fakes; application recreation only",
+    "liveness_http": 200,
+    "health_http": 200,
+    "duplicate_reported": true,
+    "document_trace": {
+      "document_id": "be1c1337-a603-4f05-aa9d-ebf1845c0abf",
+      "created_revision": "fdc558b5-1cff-4647-8e15-2fa434ebd9b2",
+      "active_revision_after_replace": "48086877-5c08-4676-a012-09c07346cccd",
+      "original_text": "A fictional source fact.",
+      "updated_text": "A changed source fact.",
+      "returned_answer": "A changed source fact. [E1]"
+    },
+    "revision_changed": true,
+    "stale_write_http": 412,
+    "changed_revision_cited": true,
+    "provider_failure_http": 502,
+    "new_app_boot_id": true,
+    "source_revision_and_deletion_survive_app_recreation": true,
+    "new_local_ledger_is_empty": true,
+    "deleted_source_abstention": true,
+    "real_cloud_restart_performed": false
+  },
+  "practice_change": {
+    "scope": "AI-assisted isolated source-copy experiment, not George's unaided exercise",
+    "baseline_ids": [
+      "a",
+      "b",
+      "c"
+    ],
+    "practice_ids": [
+      "a",
+      "c"
+    ],
+    "production_source_unchanged": true
+  },
+  "saved_receipts": {
+    "scope": "offline inspection of historical real-model/cloud receipts, no new live requests",
+    "bridge_citations": [
+      {
+        "claim": "The Vermont Catamounts men's soccer team competes in the America East Conference.",
+        "evidence_id": "E1",
+        "quote": "The Vermont Catamounts men's soccer team represents the University of Vermont in all NCAA Division I men's college soccer competitions. The team competes in the America East Conference.",
+        "document_id": "c3bbe7be-f3e6-5752-ba9b-73d3043faf06",
+        "title": "Vermont Catamounts men's soccer",
+        "literal_quote_valid": true
+      },
+      {
+        "claim": "The America East Conference was known as the North Atlantic Conference from 1988 to 1996.",
+        "evidence_id": "E3",
+        "quote": "The America East Conference is a collegiate athletic conference affiliated with the NCAA Division I, whose members are located mainly in the Northeastern United States. The conference was known as the Eastern College Athletic Conference-North from 1979 to 1988 and the North Atlantic Conference from 1988 to 1996.",
+        "document_id": "2e15a777-e170-53b1-b34a-e4ddd0a95606",
+        "title": "America East Conference",
+        "literal_quote_valid": true
+      }
+    ],
+    "examples": {
+      "development-bridge-01": {
+        "status": "answered",
+        "answer": "The Vermont Catamounts men's soccer team competes in the America East Conference. [E1] The America East Conference was known as the North Atlantic Conference from 1988 to 1996. [E3]",
+        "retrieval_rounds": 2
+      },
+      "development-conflict-01": {
+        "status": "conflicting_evidence",
+        "answer": "Sources conflict. For fictional case NOVA-CONFLICT-DEVELOPMENT-01, payment-router's retry limit at 12:00 UTC on 2026-03-12 was 3 attempts. [E1] For fictional case NOVA-CONFLICT-DEVELOPMENT-01, payment-router's retry limit at 12:00 UTC on 2026-03-12 was 5 attempts. [E2]",
+        "retrieval_rounds": 2
+      },
+      "development-unanswerable-01": {
+        "status": "insufficient_evidence",
+        "answer": "The retrieved sources do not provide enough evidence to answer this question.",
+        "retrieval_rounds": 2
+      },
+      "correct-age": {
+        "outcome": "passed",
+        "review": {
+          "claims": [
+            {
+              "claim_index": 0,
+              "verdict": "supported",
+              "reason": "supported",
+              "comparison": {
+                "left": {
+                  "citation_index": 1,
+                  "literal": "1972",
+                  "scale": "one"
+                },
+                "operator": "lt",
+                "right": {
+                  "citation_index": 0,
+                  "literal": "1986",
+                  "scale": "one"
+                }
+              }
+            }
+          ],
+          "answers_question": true,
+          "conflict_supported": false
+        }
+      },
+      "reversed-age": {
+        "outcome": "withheld",
+        "review": {
+          "claims": [
+            {
+              "claim_index": 0,
+              "verdict": "unsupported",
+              "reason": "unsupported_relation",
+              "comparison": {
+                "left": {
+                  "citation_index": 0,
+                  "literal": "1986",
+                  "scale": "one"
+                },
+                "operator": "gt",
+                "right": {
+                  "citation_index": 1,
+                  "literal": "1972",
+                  "scale": "one"
+                }
+              }
+            }
+          ],
+          "answers_question": true,
+          "conflict_supported": false
+        }
+      }
+    },
+    "historical_cloud_restart": {
+      "passed": true,
+      "recorded_at": "2026-10-28T12:20:23.643853+00:00",
+      "persisted": {
+        "text": true,
+        "revision": true,
+        "etag": true,
+        "deletion": true
+      }
+    }
+  },
+  "hand_metrics": {
+    "recall_at_5": 0.5,
+    "recall_at_10": 0.5,
+    "mrr_at_10": 1.0
+  },
+  "rrf": {
+    "a": 0.032266458495966696,
+    "b": 0.03252247488101534,
+    "winner": "b"
+  },
+  "paid_calls": 0,
+  "real_cloud_writes": 0,
+  "george_independent_review": "pending",
+  "frozen_fixture_sha256": {
+    "source-documents.jsonl": "22be27ee79d97ed7b5644c44ba627f07b0fbcb669d37b0b09761de6496e957a9",
+    "evaluation/final.jsonl": "bd6ce03083e204c94991515d5449448685267933b9def44899aeb53bb2062dbf",
+    "evaluation/development.jsonl": "e204a912aa5ffba1e6fd2529f833ea9c6b876db96f93d045fc0ea8abaf22600d"
+  }
+}

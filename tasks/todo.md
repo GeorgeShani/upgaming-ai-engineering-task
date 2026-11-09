@@ -3,6 +3,10 @@
 Keep implementation verification separate from George's learning review. A checked code item
 does not claim that George has completed his review. Estimates are focused working time.
 
+All eleven `George:` items now have worked resolutions and checked assisted-work evidence.
+Their personal checkboxes remain for George's own demonstration; the agent cannot complete
+manual human review or a no-AI exercise on his behalf.
+
 ## Session 1: Skeleton and early deployment (1 hour)
 
 - [x] Save the accepted plan and committed learning workflow.
@@ -11,7 +15,8 @@ does not claim that George has completed his review. Estimates are focused worki
 - [x] Commit the verified local foundation.
 - [x] Set up real OpenAI and Qdrant credentials; verify provider access.
 - [x] Publish the first Render deployment and verify its public page and dependency readiness.
-- [ ] George: run locally, trace a health request, explain liveness vs dependency readiness.
+- [ ] George: run locally, trace a health request, explain liveness vs dependency readiness. [Worked resolution](../docs/george-checkpoints.md#checkpoint-1).
+- [x] Assisted checkpoint 1: Local health-request trace and liveness/readiness checks verified.
 
 ## Session 2: Corpus and evaluation fixtures (2 hours; explicitly started by George)
 
@@ -19,7 +24,8 @@ does not claim that George has completed his review. Estimates are focused worki
 - [x] Clearly labelled synthetic incident corpus.
 - [x] Freeze 40 final questions (8 simple / 12 bridge / 8 comparison / 6 absent / 6 conflict).
 - [x] Separate development examples; prevent questions/answers/labels entering the corpus.
-- [ ] George: verify gold answers/support and explain records versus chunks.
+- [ ] George: verify gold answers/support and explain records versus chunks. [Worked resolution](../docs/george-checkpoints.md#checkpoint-2).
+- [x] Assisted checkpoint 2: All 48 frozen cases/support quotes checked mechanically; full reference worksheet and caveats prepared.
 
 ## Session 3: Document lifecycle (2 hours; depends on 2)
 
@@ -27,60 +33,69 @@ does not claim that George has completed his review. Estimates are focused worki
 - [x] Persistent canonical documents, listing, inspection, replacement, and deletion.
 - [x] Revision eligibility gate rejects inactive/deleted candidates after failures; mutation admin token.
 - [x] Tests protect parsing, duplicates, replacement, and deletion.
-- [ ] George: trace a document through the lifecycle.
+- [ ] George: trace a document through the lifecycle. [Worked resolution](../docs/george-checkpoints.md#checkpoint-3).
+- [x] Assisted checkpoint 3: Document creation, duplication, replacement, stale edit, retrieval and deletion traced through local API routes.
 
 ## Session 4: Chunking and retrieval (2 hours; depends on 3)
 
 - [x] Two specified token/sentence chunkers with boundary and location tests.
 - [x] Dense and BM25 sparse retrieval plus tested custom RRF and document diversity cap.
 - [x] Benchmark 1,000 records, estimate resources/cost, start resumable bulk indexing.
-- [ ] George: calculate RRF and explain rank versus confidence.
+- [ ] George: calculate RRF and explain rank versus confidence. [Worked resolution](../docs/george-checkpoints.md#checkpoint-4).
+- [x] Assisted checkpoint 4: RRF worked calculation and rank-versus-confidence explanation verified.
 
 ## Session 5: First cited answer (2 hours; depends on 4)
 
 - [x] End-to-end real retrieval and generation with structured evidence references.
 - [x] Validate citation IDs and quote text; test invalid evidence rejection.
-- [ ] George: inspect every citation in one answer and identify the model's context.
+- [ ] George: inspect every citation in one answer and identify the model's context. [Worked resolution](../docs/george-checkpoints.md#checkpoint-5).
+- [x] Assisted checkpoint 5: Every citation in one saved answer inspected; writer inputs reconstructed and labelled.
 
 ## Session 6: Multi-step investigation (2 hours; depends on 5)
 
 - [x] Real validated search tool; <=2 rounds and <=3 searches.
 - [x] Follow-up entity search, conflicts, abstention, provider errors, bounded retries/context.
 - [x] Investigations are rate-limited; usage and cost recorded.
-- [ ] George: demonstrate and explain multi-step, conflicting, absent, and failing cases.
+- [ ] George: demonstrate and explain multi-step, conflicting, absent, and failing cases. [Worked resolution](../docs/george-checkpoints.md#checkpoint-6).
+- [x] Assisted checkpoint 6: Bridge/conflict/abstention examples reviewed and local provider-failure behavior verified.
 
 ## Session 7: Complete React workflows (2 hours; depends on 6)
 
 - [x] Upload/list/inspect/replace/delete UI, question form, status, citations, search trace.
 - [x] Loading/error/empty states and safe document rendering.
 - [x] Browser smoke test: upload -> ask -> open citation -> delete.
-- [ ] George: run the entire workflow and distinguish errors from evidence limitations.
+- [ ] George: run the entire workflow and distinguish errors from evidence limitations. [Worked resolution](../docs/george-checkpoints.md#checkpoint-7).
+- [x] Assisted checkpoint 7: Complete browser workflow and error-versus-evidence demonstrations verified.
 
 ## Session 8: Comparative evaluation (2 hours; depends on 7 and completed indexes)
 
 - [x] Choose deployment config from development examples before final results.
 - [x] Run both chunking configurations with otherwise identical settings.
 - [x] Save raw results and required metrics, cost/latency, failure analysis, reproduction commands.
-- [ ] George: explain metrics and manually review disputed citations.
+- [ ] George: explain metrics and manually review disputed citations. [Worked resolution](../docs/george-checkpoints.md#checkpoint-8).
+- [x] Assisted checkpoint 8: Metric calculations, archived-score reproduction and source-relative disputed-citation resolutions prepared.
 
 ## Session 9: Deployment verification (1 hour; depends on 8)
 
 - [x] Confirm 50,024 unique records and all 52,246 A / 52,307 B active chunks, including content/revision identity.
 - [x] Recreate the actual Render process and confirm uploaded/updated/deleted data and cited retrieval persist correctly.
 - [x] Verify public workflows, known-secret redaction, upload limits, user-confirmed Free/$1 configuration and recorded budget; document reset/public-traffic limitations.
-- [ ] George: reproduce restart checks.
+- [ ] George: reproduce restart checks. [Worked resolution](../docs/george-checkpoints.md#checkpoint-9).
+- [x] Assisted checkpoint 9: Historical restart proof reviewed; repeat commands prepared and isolated application recreation verified.
 
 ## Session 10: Delivery and rehearsal (2 hours; depends on 9)
 
 - [x] Final README, architecture/trade-offs, demo URL, evaluation report, AI usage, journal and submission/rehearsal guides.
 - [x] Meaningful GitHub history and reproduction instructions, with final checks and frozen evaluation scores reproduced.
-- [ ] George: explain pipeline, calculate fusion, diagnose retrieval, change a setting/test without AI.
+- [ ] George: explain pipeline, calculate fusion, diagnose retrieval, change a setting/test without AI. [Worked resolution](../docs/george-checkpoints.md#checkpoint-10).
+- [x] Assisted checkpoint 10: Pipeline/failure walkthrough and AI-assisted isolated setting-change experiment completed.
 
 ## Contingency (2 hours)
 
 - [x] Final handoff: reread all eight PDF pages, verify mandatory build/submission coverage, refresh complete corpus/test/public evidence and documentation, and add the live URL to GitHub description/Website.
 
 - [x] Follow-up: support review, numeric comparison checks, development regressions and an honest account of remaining semantic limits (`docs/claim-grounding.md`).
-- [ ] George: inspect a rejected and an accepted draft, and explain why arithmetic cannot establish the meaning of a claim.
+- [ ] George: inspect a rejected and an accepted draft, and explain why arithmetic cannot establish the meaning of a claim. [Worked resolution](../docs/george-checkpoints.md#checkpoint-11).
+- [x] Assisted checkpoint 11: Accepted/rejected drafts and arithmetic-versus-meaning distinction inspected.
 
 - [ ] Use for unmet requirements or misunderstandings before optional features.

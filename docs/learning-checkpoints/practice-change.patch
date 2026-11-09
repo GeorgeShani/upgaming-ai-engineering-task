@@ -1,0 +1,5 @@
+--- production/fusion.py
++++ practice/fusion.py
+@@ -4 +4 @@
+-def fuse(rankings, limit=8, per_document=2):
++def fuse(rankings, limit=8, per_document=1):

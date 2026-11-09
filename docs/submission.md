@@ -27,7 +27,7 @@ measures the earlier workflow; these regressions do not replace a new held-out e
 | Two chunking configurations, hybrid retrieval and custom algorithm | [Retrieval walkthrough](retrieval-and-first-answer.md) and `backend/app/retrieval/` |
 | Comparative methodology, metrics, raw outputs and limitations | [Evaluation report](evaluation-report.md), [methodology](evaluation-methodology.md), [archive](evaluation/manifest.json) |
 | Honest AI assistance record | [AI usage report](ai-usage-report.md), [engineering journal](engineering-journal.md) |
-| Independent code defence/practice | [Rehearsal guide](interview-rehearsal.md); George's completion remains pending |
+| Independent code defence/practice | [Worked checkpoints](george-checkpoints.md); personal interview preparation stays local and George's completion remains pending |
 
 ## Requirement map
 

@@ -1,0 +1,23 @@
+{
+  "checked_at": "2026-11-09T11:40:44.826838+00:00",
+  "assisted_resolutions": 11,
+  "personal_checkpoints_unverified": 11,
+  "backend_tests_passed": 185,
+  "backend_warnings_as_errors": true,
+  "browser_tests_passed": 22,
+  "ruff_lint_format": "passed",
+  "archive_reproduction": "96 attempts/scores/summaries reproduced offline",
+  "scope": "Codex-assisted technical exercises; no personal competency assertion",
+  "paid_calls": 0,
+  "real_cloud_writes": 0,
+  "new_real_cloud_restart": false,
+  "receipt_sha256_lf": {
+    "archive-reproduction.json": "fc81b83be3dfe6287e552b1fd0643ef725ba381be9d4093bcfe16bf8408a0cec",
+    "browser.json": "05f35cc213fd077e3e61b500b38ba08a040f82b4a4ecaa2510a827c4e2999b11",
+    "gold-reference-worksheet.md": "ee8f275adf595ca1ef7860a25822fb25823c13ad1dd3f370cd624155153248fe",
+    "practice-change.patch": "28961874cb1a1797965e4489054523e702a1153a4cd0334982d183acce024827",
+    "verification.json": "1bfb3ccbafa53c9491aaf743f7dd9defaa3d6e926fd1891b8f552c32cf942a34",
+    "writer-context-reconstructed.json": "fa6f68fff836fb040d387f97bc3246e1c460acba76239a43ed6ba7f75b4f7c45"
+  },
+  "packaging_checked_at": "2026-11-09T11:45:48.413653+00:00"
+}

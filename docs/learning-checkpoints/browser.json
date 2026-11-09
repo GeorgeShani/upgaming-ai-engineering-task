@@ -1,0 +1,101 @@
+{
+  "scope": "Fresh local browser fixture, not real-provider semantic evaluation",
+  "stats": {
+    "startTime": "2026-11-09T11:33:48.023Z",
+    "duration": 60295.923,
+    "expected": 22,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "checks": [
+    {
+      "title": "browse shortcut preserves a draft, moves focus, and never submits a question",
+      "passed": true
+    },
+    {
+      "title": "renders conflicting_evidence as an evidence result, not an API error",
+      "passed": true
+    },
+    {
+      "title": "renders insufficient_evidence as an evidence result, not an API error",
+      "passed": true
+    },
+    {
+      "title": "HTTP 429 is an actionable error and is not retried automatically",
+      "passed": true
+    },
+    {
+      "title": "HTTP 502 is an actionable error and is not retried automatically",
+      "passed": true
+    },
+    {
+      "title": "HTTP 503 is an actionable error and is not retried automatically",
+      "passed": true
+    },
+    {
+      "title": "a withheld draft explains the evidence review without exposing rejected claims",
+      "passed": true
+    },
+    {
+      "title": "pending questions cannot submit a second paid request",
+      "passed": true
+    },
+    {
+      "title": "question validation explains that no paid request was submitted",
+      "passed": true
+    },
+    {
+      "title": "trace distinguishes a proposed query from its grounded executed query",
+      "passed": true
+    },
+    {
+      "title": "invalid file types stay client-side and incorrect tokens are rejected by the server",
+      "passed": true
+    },
+    {
+      "title": "cursor pagination moves forwards and backwards without loading the whole corpus",
+      "passed": true
+    },
+    {
+      "title": "late source responses cannot replace the newly opened document",
+      "passed": true
+    },
+    {
+      "title": "upload -> question -> citation -> trace -> delete through the real API",
+      "passed": true
+    },
+    {
+      "title": "duplicate upload reuses a source; replacement changes its revision",
+      "passed": true
+    },
+    {
+      "title": "stale replacement is blocked until current text and ETag are reloaded",
+      "passed": true
+    },
+    {
+      "title": "old citations stay snapshots after the document changes or disappears",
+      "passed": true
+    },
+    {
+      "title": "source text is escaped, token clears on reload, and the dialog is keyboard accessible",
+      "passed": true
+    },
+    {
+      "title": "workspace and source dialog fit at 320px",
+      "passed": true
+    },
+    {
+      "title": "workspace and source dialog fit at 768px",
+      "passed": true
+    },
+    {
+      "title": "workspace and source dialog fit at 1024px",
+      "passed": true
+    },
+    {
+      "title": "workspace and source dialog fit at 1440px",
+      "passed": true
+    }
+  ]
+}

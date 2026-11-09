@@ -1734,3 +1734,59 @@ checks, documentation and authorized GitHub metadata update. George requested th
 handoff check. Next: use the repository demo link and rehearsal guide, inspect the known
 limitations, and prepare to defend or modify the implementation without AI. This final
 documentation-only commit uses `[skip render]` and preserves the verified application release.
+
+## Worked resolutions for George's checklist — 9 November 2026
+
+**What changed:** All eleven `George:` checkpoints in `tasks/todo.md` now link to specific
+sections in `docs/george-checkpoints.md`, each with a worked explanation, evidence and a
+repeatable action. Eleven assisted-work items are checked. Original personal checkboxes
+remain unchecked because independent understanding, manual review and performance without AI
+have not been observed. This is a completed assisted resolution package, not a certificate
+that George performed the exercises.
+
+**Why / alternative:** George requested resolution of the remaining named tasks. Simply
+ticking personal boxes would fabricate learning evidence; leaving only vague instructions
+would not resolve the technical work. The package provides concrete answers and verification
+while keeping the personal demonstrations explicit.
+
+**Mechanism:** `scripts/verify_learning_checkpoints.py` runs real local API routes against
+in-memory HTTP fakes, tracing upload/duplicate/replace/stale-write/question/delete behavior.
+It recreates the application against the surviving fake external store, validates historical
+real-model/restart receipts, reconstructs one writer context with that limitation labelled,
+generates the full frozen reference worksheet, and runs a cap-2-to-cap-1 fusion experiment in
+an isolated source copy. It asserts the production source is unchanged. It also validates
+the recorded grounding code fingerprints before describing reconstructed input as matching.
+
+**Verification:** The free demonstration passes; all 48 evaluation cases and 72 fixture
+source records pass structural/hash/quotation validation. This is not semantic certification
+of every gold answer; nine known label/scope caveats and disputed citations remain visible.
+All 185 backend and 22 browser tests pass freshly; both archived evaluation summaries and
+every score reproduce offline. The guide covers every citation in the saved two-claim bridge,
+the exact RRF arithmetic, conflict/abstention/provider failure, and accepted/rejected age drafts.
+Receipts are under `docs/learning-checkpoints/`. An initial demonstration wrapper passed a
+plain dict to the typed citation validator; converting it through `AnswerDraft` corrected that
+helper error before the successful run.
+
+**AI contribution:** Codex wrote/executed these assisted demonstrations and explanations.
+No real provider calls, paid investigations, production data writes or new Render restart were
+performed. Fresh local application recreation is explicitly distinguished from the older
+successful actual cloud restart. Personal no-AI tasks and independent ratings remain George's.
+
+**My understanding / resume (George):** Read the matching worked section, reproduce the action,
+explain the result in my own words, and only then check the original personal item. For the
+restart exercise, follow the two-phase instructions and record an actual changed boot ID;
+the prepared commands and an old receipt alone do not complete a new rehearsal.
+
+## Keep personal interview preparation untracked — 9 November 2026
+
+George requested committing the checkpoint work while keeping interview preparation local.
+The question bank, coding practice, rehearsal and personal preparation notes are covered by
+`/docs/interview*.md` in `.gitignore`. The previously tracked rehearsal is removed from the
+current index while its local file is preserved. The interview-specific journal entry is
+retained in the ignored preparation notes. Public README/submission/audit/checkpoint links
+point to committed worked examples, so a fresh checkout does not depend on private files.
+
+The checkpoint script, worked resolutions, receipts and honest pending personal checklist
+remain part of the commit. Earlier verified backend/browser results are recorded in those
+receipts; this packaging change requires checking staged files, ignore rules, links and
+fingerprints rather than repeating paid or cloud operations.

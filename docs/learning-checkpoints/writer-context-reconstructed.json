@@ -1,0 +1,276 @@
+{
+  "scope": "Reconstructed from saved evidence and matching writer code; not a captured wire request",
+  "instructions_source": "backend/app/investigations/service.py:INSTRUCTIONS",
+  "context": {
+    "question": "The Vermont Catamounts men's soccer team currently competes in a conference that was formerly known as what from 1988 to 1996?",
+    "evidence": [
+      {
+        "evidence_id": "E3",
+        "title": "America East Conference",
+        "text": "The America East Conference is a collegiate athletic conference affiliated with the NCAA Division I, whose members are located mainly in the Northeastern United States. The conference was known as the Eastern College Athletic Conference-North from 1979 to 1988 and the North Atlantic Conference from 1988 to 1996."
+      },
+      {
+        "evidence_id": "E1",
+        "title": "Vermont Catamounts men's soccer",
+        "text": "The Vermont Catamounts men's soccer team represents the University of Vermont in all NCAA Division I men's college soccer competitions. The team competes in the America East Conference."
+      },
+      {
+        "evidence_id": "E2",
+        "title": "2013 Conference USA men's soccer season",
+        "text": "The 2013 Conference USA men's soccer season will be the 19th season of men's varsity soccer in the conference. The season will mark the arrival of the Charlotte 49ers from the Atlantic 10 Conference, the Florida Atlantic Owls from the Mid-American Conference, the New Mexico Lobos from the Mountain Pacific Sports Federation, and the Old Dominion Monarchs from the Colonial Athletic Association. It will also be the last C-USA season for the Tulsa Golden Hurricane, which will join the American Athletic Conference in July 2014. The 2013 Conference USA Men's Soccer Tournament will be held November 13–17 at Transamerica Field in Charlotte."
+      },
+      {
+        "evidence_id": "E9",
+        "title": "America East Conference Baseball Tournament",
+        "text": "The America East Conference Baseball Tournament, officially known as the America East Conference Baseball Championship, is the conference baseball championship of the NCAA Division I America East Conference. The top four finishers in the regular season of the conference's six eligible teams advance to the double-elimination tournament, which is in the midst of a five-year residency at LeLacheur Park in Lowell, Massachusetts. The winner of the tournament receives an automatic berth to the NCAA Division I Baseball Championship. Prior to 1998, the tournament was a six-team double-elimination format. After 2009, the conference also began allowing schools to host the championship on fields without lights."
+      },
+      {
+        "evidence_id": "E10",
+        "title": "American South Conference",
+        "text": "The American South Conference was an NCAA Division I athletic conference that existed from 1987–88 to 1990–91. The charter members were Arkansas State University, Lamar University, Louisiana Tech University, the University of New Orleans, the University of Southwestern Louisiana (now known as the University of Louisiana at Lafayette) and the University of Texas–Pan American (now merged into the University of Texas Rio Grande Valley). The University of Central Florida (UCF) became the only expansion school during the conference's final academic season before merging with the Sun Belt Conference. Losing all but three members, the Sun Belt merged with the American South conference. The combined conference retained the name of the older Sun Belt Conference. Craig Thompson, the American South's first and only commissioner, became commissioner of the merged Sun Belt. After serving as Sun Belt commissioner for eight years, he became commissioner of the newly formed Mountain West Conference in 1998."
+      },
+      {
+        "evidence_id": "E4",
+        "title": "Columbus Crew SC",
+        "text": "Columbus Crew Soccer Club is an American professional soccer club based in Columbus, Ohio. The Crew competes in Major League Soccer (MLS) as a member club of the league's Eastern Conference. The Crew began play in 1996 as one of the ten charter clubs of the league. The team is owned by Anthony Precourt and Precourt Sports Ventures LLC. Precourt became the second owner in the history of the club on July 30, 2013. The club's head coach is Gregg Berhalter, a former player of the United States men's national soccer team."
+      },
+      {
+        "evidence_id": "E11",
+        "title": "Luke Harangody",
+        "text": "Luke Harangody (born January 2, 1988) is an American professional basketball player for ratiopharm Ulm of the German Basketball Bundesliga. He completed his college career at the University of Notre Dame in 2010. He is the only men's player in the history of the Big East Conference to average 20 points and 10 rebounds per game in conference play for his career. He was the 2008 Big East Player of the Year, and was named to the second team on the 2008 Associated Press All-America team. He is also the first Notre Dame men's player to be a three-time first-team All-Big East selection (and just 11th overall) (2008–2010), and the first men's player to lead the conference in both scoring and rebounding in consecutive seasons (2008 and 2009)."
+      },
+      {
+        "evidence_id": "E12",
+        "title": "Providence Friars",
+        "text": "The Providence Friars is the name of the athletic teams of Providence College. They compete in the Big East Conference (NCAA Division I) for every sport except for ice hockey, where they compete in Hockey East. The Big East Conference was founded in 1979 by former athletic director and men's basketball coach Dave Gavitt. On December 15, 2012, Providence and the other seven Catholic, non-FBS schools announced that they were departing the Big East for a new conference; on March 7, 2013, it was officially confirmed that Providence's new conference would operate under the Big East name. The women's volleyball team, which had been an associate member of the America East Conference before the Big East split, remained in that conference for one more season before joining the Big East for the 2014 season."
+      }
+    ],
+    "quote_choices": [
+      {
+        "quote_id": "Q1",
+        "evidence_id": "E3",
+        "quote": "The America East Conference is a collegiate athletic conference affiliated with the NCAA Division I, whose members are located mainly in the Northeastern United States. The conference was known as the Eastern College Athletic Conference-North from 1979 to 1988 and the North Atlantic Conference from 1988 to 1996."
+      },
+      {
+        "quote_id": "Q2",
+        "evidence_id": "E3",
+        "quote": "The America East Conference is a collegiate athletic conference affiliated with the NCAA Division I, whose members are located mainly in the Northeastern United States."
+      },
+      {
+        "quote_id": "Q3",
+        "evidence_id": "E3",
+        "quote": "The conference was known as the Eastern College Athletic Conference-North from 1979 to 1988 and the North Atlantic Conference from 1988 to 1996."
+      },
+      {
+        "quote_id": "Q4",
+        "evidence_id": "E1",
+        "quote": "The Vermont Catamounts men's soccer team represents the University of Vermont in all NCAA Division I men's college soccer competitions. The team competes in the America East Conference."
+      },
+      {
+        "quote_id": "Q5",
+        "evidence_id": "E1",
+        "quote": "The Vermont Catamounts men's soccer team represents the University of Vermont in all NCAA Division I men's college soccer competitions."
+      },
+      {
+        "quote_id": "Q6",
+        "evidence_id": "E1",
+        "quote": "The team competes in the America East Conference."
+      },
+      {
+        "quote_id": "Q7",
+        "evidence_id": "E2",
+        "quote": "The 2013 Conference USA men's soccer season will be the 19th season of men's varsity soccer in the conference. The season will mark the arrival of the Charlotte 49ers from the Atlantic 10 Conference, the Florida Atlantic Owls from the Mid-American Conference, the New Mexico Lobos from the Mountain Pacific Sports Federation, and the Old Dominion Monarchs from the Colonial Athletic Association. It will also be the last C-USA season for the Tulsa Golden Hurricane, which will join the American Athletic Conference in July 2014. The 2013 Conference USA Men's Soccer Tournament will be held November 13–17 at Transamerica Field in Charlotte."
+      },
+      {
+        "quote_id": "Q8",
+        "evidence_id": "E2",
+        "quote": "The 2013 Conference USA men's soccer season will be the 19th season of men's varsity soccer in the conference."
+      },
+      {
+        "quote_id": "Q9",
+        "evidence_id": "E2",
+        "quote": "The season will mark the arrival of the Charlotte 49ers from the Atlantic 10 Conference, the Florida Atlantic Owls from the Mid-American Conference, the New Mexico Lobos from the Mountain Pacific Sports Federation, and the Old Dominion Monarchs from the Colonial Athletic Association."
+      },
+      {
+        "quote_id": "Q10",
+        "evidence_id": "E2",
+        "quote": "It will also be the last C-USA season for the Tulsa Golden Hurricane, which will join the American Athletic Conference in July 2014."
+      },
+      {
+        "quote_id": "Q11",
+        "evidence_id": "E2",
+        "quote": "The 2013 Conference USA Men's Soccer Tournament will be held November 13–17 at Transamerica Field in Charlotte."
+      },
+      {
+        "quote_id": "Q12",
+        "evidence_id": "E9",
+        "quote": "The America East Conference Baseball Tournament, officially known as the America East Conference Baseball Championship, is the conference baseball championship of the NCAA Division I America East Conference. The top four finishers in the regular season of the conference's six eligible teams advance to the double-elimination tournament, which is in the midst of a five-year residency at LeLacheur Park in Lowell, Massachusetts. The winner of the tournament receives an automatic berth to the NCAA Division I Baseball Championship. Prior to 1998, the tournament was a six-team double-elimination format. After 2009, the conference also began allowing schools to host the championship on fields without lights."
+      },
+      {
+        "quote_id": "Q13",
+        "evidence_id": "E9",
+        "quote": "The America East Conference Baseball Tournament, officially known as the America East Conference Baseball Championship, is the conference baseball championship of the NCAA Division I America East Conference."
+      },
+      {
+        "quote_id": "Q14",
+        "evidence_id": "E9",
+        "quote": "The top four finishers in the regular season of the conference's six eligible teams advance to the double-elimination tournament, which is in the midst of a five-year residency at LeLacheur Park in Lowell, Massachusetts."
+      },
+      {
+        "quote_id": "Q15",
+        "evidence_id": "E9",
+        "quote": "The winner of the tournament receives an automatic berth to the NCAA Division I Baseball Championship."
+      },
+      {
+        "quote_id": "Q16",
+        "evidence_id": "E9",
+        "quote": "Prior to 1998, the tournament was a six-team double-elimination format."
+      },
+      {
+        "quote_id": "Q17",
+        "evidence_id": "E9",
+        "quote": "After 2009, the conference also began allowing schools to host the championship on fields without lights."
+      },
+      {
+        "quote_id": "Q18",
+        "evidence_id": "E10",
+        "quote": "The American South Conference was an NCAA Division I athletic conference that existed from 1987–88 to 1990–91. The charter members were Arkansas State University, Lamar University, Louisiana Tech University, the University of New Orleans, the University of Southwestern Louisiana (now known as the University of Louisiana at Lafayette) and the University of Texas–Pan American (now merged into the University of Texas Rio Grande Valley). The University of Central Florida (UCF) became the only expansion school during the conference's final academic season before merging with the Sun Belt Conference. Losing all but three members, the Sun Belt merged with the American South conference. The combined conference retained the name of the older Sun Belt Conference. Craig Thompson, the American South's first and only commissioner, became commissioner of the merged Sun Belt. After serving as Sun Belt commissioner for eight years, he became commissioner of the newly formed Mountain West Conference in"
+      },
+      {
+        "quote_id": "Q19",
+        "evidence_id": "E10",
+        "quote": " 1998."
+      },
+      {
+        "quote_id": "Q20",
+        "evidence_id": "E10",
+        "quote": "The American South Conference was an NCAA Division I athletic conference that existed from 1987–88 to 1990–91."
+      },
+      {
+        "quote_id": "Q21",
+        "evidence_id": "E10",
+        "quote": "The charter members were Arkansas State University, Lamar University, Louisiana Tech University, the University of New Orleans, the University of Southwestern Louisiana (now known as the University of Louisiana at Lafayette) and the University of Texas–Pan American (now merged into the University of Texas Rio Grande Valley)."
+      },
+      {
+        "quote_id": "Q22",
+        "evidence_id": "E10",
+        "quote": "The University of Central Florida (UCF) became the only expansion school during the conference's final academic season before merging with the Sun Belt Conference."
+      },
+      {
+        "quote_id": "Q23",
+        "evidence_id": "E10",
+        "quote": "Losing all but three members, the Sun Belt merged with the American South conference."
+      },
+      {
+        "quote_id": "Q24",
+        "evidence_id": "E10",
+        "quote": "The combined conference retained the name of the older Sun Belt Conference."
+      },
+      {
+        "quote_id": "Q25",
+        "evidence_id": "E10",
+        "quote": "Craig Thompson, the American South's first and only commissioner, became commissioner of the merged Sun Belt."
+      },
+      {
+        "quote_id": "Q26",
+        "evidence_id": "E10",
+        "quote": "After serving as Sun Belt commissioner for eight years, he became commissioner of the newly formed Mountain West Conference in 1998."
+      },
+      {
+        "quote_id": "Q27",
+        "evidence_id": "E4",
+        "quote": "Columbus Crew Soccer Club is an American professional soccer club based in Columbus, Ohio. The Crew competes in Major League Soccer (MLS) as a member club of the league's Eastern Conference. The Crew began play in 1996 as one of the ten charter clubs of the league. The team is owned by Anthony Precourt and Precourt Sports Ventures LLC. Precourt became the second owner in the history of the club on July 30, 2013. The club's head coach is Gregg Berhalter, a former player of the United States men's national soccer team."
+      },
+      {
+        "quote_id": "Q28",
+        "evidence_id": "E4",
+        "quote": "Columbus Crew Soccer Club is an American professional soccer club based in Columbus, Ohio."
+      },
+      {
+        "quote_id": "Q29",
+        "evidence_id": "E4",
+        "quote": "The Crew competes in Major League Soccer (MLS) as a member club of the league's Eastern Conference."
+      },
+      {
+        "quote_id": "Q30",
+        "evidence_id": "E4",
+        "quote": "The Crew began play in 1996 as one of the ten charter clubs of the league."
+      },
+      {
+        "quote_id": "Q31",
+        "evidence_id": "E4",
+        "quote": "The team is owned by Anthony Precourt and Precourt Sports Ventures LLC."
+      },
+      {
+        "quote_id": "Q32",
+        "evidence_id": "E4",
+        "quote": "Precourt became the second owner in the history of the club on July 30, 2013."
+      },
+      {
+        "quote_id": "Q33",
+        "evidence_id": "E4",
+        "quote": "The club's head coach is Gregg Berhalter, a former player of the United States men's national soccer team."
+      },
+      {
+        "quote_id": "Q34",
+        "evidence_id": "E11",
+        "quote": "Luke Harangody (born January 2, 1988) is an American professional basketball player for ratiopharm Ulm of the German Basketball Bundesliga. He completed his college career at the University of Notre Dame in 2010. He is the only men's player in the history of the Big East Conference to average 20 points and 10 rebounds per game in conference play for his career. He was the 2008 Big East Player of the Year, and was named to the second team on the 2008 Associated Press All-America team. He is also the first Notre Dame men's player to be a three-time first-team All-Big East selection (and just 11th overall) (2008–2010), and the first men's player to lead the conference in both scoring and rebounding in consecutive seasons (2008 and 2009)."
+      },
+      {
+        "quote_id": "Q35",
+        "evidence_id": "E11",
+        "quote": "Luke Harangody (born January 2, 1988) is an American professional basketball player for ratiopharm Ulm of the German Basketball Bundesliga."
+      },
+      {
+        "quote_id": "Q36",
+        "evidence_id": "E11",
+        "quote": "He completed his college career at the University of Notre Dame in 2010."
+      },
+      {
+        "quote_id": "Q37",
+        "evidence_id": "E11",
+        "quote": "He is the only men's player in the history of the Big East Conference to average 20 points and 10 rebounds per game in conference play for his career."
+      },
+      {
+        "quote_id": "Q38",
+        "evidence_id": "E11",
+        "quote": "He was the 2008 Big East Player of the Year, and was named to the second team on the 2008 Associated Press All-America team."
+      },
+      {
+        "quote_id": "Q39",
+        "evidence_id": "E11",
+        "quote": "He is also the first Notre Dame men's player to be a three-time first-team All-Big East selection (and just 11th overall) (2008–2010), and the first men's player to lead the conference in both scoring and rebounding in consecutive seasons (2008 and 2009)."
+      },
+      {
+        "quote_id": "Q40",
+        "evidence_id": "E12",
+        "quote": "The Providence Friars is the name of the athletic teams of Providence College. They compete in the Big East Conference (NCAA Division I) for every sport except for ice hockey, where they compete in Hockey East. The Big East Conference was founded in 1979 by former athletic director and men's basketball coach Dave Gavitt. On December 15, 2012, Providence and the other seven Catholic, non-FBS schools announced that they were departing the Big East for a new conference; on March 7, 2013, it was officially confirmed that Providence's new conference would operate under the Big East name. The women's volleyball team, which had been an associate member of the America East Conference before the Big East split, remained in that conference for one more season before joining the Big East for the 2014 season."
+      },
+      {
+        "quote_id": "Q41",
+        "evidence_id": "E12",
+        "quote": "The Providence Friars is the name of the athletic teams of Providence College."
+      },
+      {
+        "quote_id": "Q42",
+        "evidence_id": "E12",
+        "quote": "They compete in the Big East Conference (NCAA Division I) for every sport except for ice hockey, where they compete in Hockey East."
+      },
+      {
+        "quote_id": "Q43",
+        "evidence_id": "E12",
+        "quote": "The Big East Conference was founded in 1979 by former athletic director and men's basketball coach Dave Gavitt."
+      },
+      {
+        "quote_id": "Q44",
+        "evidence_id": "E12",
+        "quote": "On December 15, 2012, Providence and the other seven Catholic, non-FBS schools announced that they were departing the Big East for a new conference; on March 7, 2013, it was officially confirmed that Providence's new conference would operate under the Big East name."
+      },
+      {
+        "quote_id": "Q45",
+        "evidence_id": "E12",
+        "quote": "The women's volleyball team, which had been an associate member of the America East Conference before the Big East split, remained in that conference for one more season before joining the Big East for the 2014 season."
+      }
+    ]
+  }
+}

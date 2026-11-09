@@ -220,7 +220,7 @@ required by this PDF.
 
 1. Independently review disputed source/claim cases and gold labels; do not equate mechanical
    validity or labelled quote alignment with semantic citation accuracy.
-2. Complete the [no-AI rehearsal](interview-rehearsal.md), including a local retrieval-setting
+2. Complete the [no-AI practice checkpoint](george-checkpoints.md#checkpoint-10), including a local retrieval-setting
    change and its test. Record what you actually understood/changed yourself.
 3. Present the chunker comparison as a limited experiment. Any stronger study should use
    fresh boundary-sensitive cases and a new recorded experiment, rather than tuning this final set.

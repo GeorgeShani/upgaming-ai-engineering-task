@@ -228,7 +228,7 @@ semantic citation support remain substantive limitations documented in the evalu
 [PDF requirement-by-requirement audit](docs/pdf-requirements-audit.md) records verified coverage,
 demonstrated quality limitations and independent-review items against all eight assignment pages.
 
-[Submission checklist](docs/submission.md) · [Interview rehearsal](docs/interview-rehearsal.md) ·
+[Submission checklist](docs/submission.md) · [Worked checkpoints](docs/george-checkpoints.md) ·
 [AI usage report](docs/ai-usage-report.md) · [Engineering journal](docs/engineering-journal.md) ·
 [Accepted plan](tasks/plan.md) · [Progress and independent-review checklist](tasks/todo.md).
 
@@ -238,5 +238,6 @@ Hands-on walkthroughs: [documents](docs/document-management.md),
 [metrics](docs/comparative-evaluation.md).
 
 Source data retains its recorded provenance/licences; fictional fixtures are explicitly labelled.
+Personal interview preparation is kept locally in ignored `docs/interview*.md` files.
 No repository-wide licence grant is implied. The assignment permits AI assistance and requires
 its disclosure; the interview's practical part must be completed without AI.
